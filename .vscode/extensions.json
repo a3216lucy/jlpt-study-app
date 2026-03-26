@@ -1,0 +1,19 @@
+{
+  // 推薦安裝清單
+  "recommendations": [
+    "doggy8088.angular-extension-pack",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    "visualstudioexptteam.vscodeintellicode",
+    "vscode-icons-team.vscode-icons",
+    "mhutchie.git-graph",
+    "SonarSource.sonarlint-vscode"
+  ],
+  // 不推薦安裝清單
+  "unwantedRecommendations": [
+    // tslint 已棄用
+    "ms-vscode.vscode-typescript-tslint-plugin"
+  ]
+}

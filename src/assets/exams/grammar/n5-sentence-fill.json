@@ -1,0 +1,770 @@
+{
+  "id": "grammar-n5-sentence-fill",
+  "title": "N5 句型填空",
+  "description": "由 grammar JSON 自動生成的 N5 句型填空題組。",
+  "level": "N5",
+  "category": "grammar",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "gq-f-n5-g003",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+  "questionText": "これは日本語の本＿＿＿。",
+  "questionTranslation": "這是日文書嗎？",
+  "options": [
+    {
+      "id": "n5-g003-wrong-3",
+      "text": "ではありません",
+      "isCorrect": false
+    },
+    {
+      "id": "n5-g003-wrong-2",
+      "text": "でしょう",
+      "isCorrect": false
+    },
+        {
+          "id": "n5-g003-correct",
+          "text": "ですか",
+          "isCorrect": true
+        },
+    {
+      "id": "n5-g003-wrong-1",
+      "text": "かもしれません",
+      "isCorrect": false
+    }
+  ],
+      "correctAnswer": "n5-g003-correct",
+      "explanation": "【〜は〜ですか】〜是〜嗎？（疑問句）\n結構：名詞A + は + 名詞B + ですか\n正確填入：ですか",
+      "tags": [
+        "n5-g003",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g015",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "富士山に登った＿＿＿。",
+      "questionTranslation": "曾經爬過富士山。",
+      "options": [
+        {
+          "id": "n5-g015-wrong-2",
+          "text": "ましょうか",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g015-wrong-1",
+          "text": "てから",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g015-correct",
+          "text": "ことがあります",
+          "isCorrect": true
+        },
+        {
+          "id": "n5-g015-wrong-3",
+          "text": "かもしれません",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n5-g015-correct",
+      "explanation": "【〜ことがあります】曾經〜過（表示經驗）\n結構：動詞た形 + ことがあります\n正確填入：ことがあります",
+      "tags": [
+        "n5-g015",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g046",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+  "questionText": "来週＿＿＿結果が出ます。",
+  "questionTranslation": "大約下週會出結果。",
+  "options": [
+    {
+      "id": "n5-g046-correct",
+      "text": "ごろ",
+          "isCorrect": true
+        },
+    {
+      "id": "n5-g046-wrong-2",
+      "text": "だけ",
+      "isCorrect": false
+    },
+    {
+      "id": "n5-g046-wrong-3",
+      "text": "でも",
+      "isCorrect": false
+    },
+    {
+      "id": "n5-g046-wrong-1",
+      "text": "から",
+      "isCorrect": false
+    }
+  ],
+      "correctAnswer": "n5-g046-correct",
+      "explanation": "【〜ごろ】大約〜時候（時間的大概）\n結構：時間名詞 + ごろ\n正確填入：ごろ",
+      "tags": [
+        "n5-g046",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g051",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "手を洗っ＿＿＿、食事をします。",
+      "questionTranslation": "洗手之後再吃飯。",
+      "options": [
+        {
+          "id": "n5-g051-wrong-1",
+          "text": "とき",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g051-wrong-3",
+          "text": "はどうですか",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g051-correct",
+          "text": "てから",
+          "isCorrect": true
+        },
+        {
+          "id": "n5-g051-wrong-2",
+          "text": "ながら",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n5-g051-correct",
+      "explanation": "【〜てから】做了〜之後再〜（先後順序）\n結構：動詞て形 + から\n正確填入：てから",
+      "tags": [
+        "n5-g051",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g007",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+  "questionText": "写真を撮っ＿＿＿。",
+  "questionTranslation": "可以拍照嗎？",
+  "options": [
+    {
+      "id": "n5-g007-wrong-2",
+      "text": "てください",
+      "isCorrect": false
+    },
+    {
+      "id": "n5-g007-wrong-1",
+      "text": "てはいけません",
+      "isCorrect": false
+    },
+        {
+          "id": "n5-g007-correct",
+          "text": "てもいいですか",
+          "isCorrect": true
+        },
+    {
+      "id": "n5-g007-wrong-3",
+      "text": "たいです",
+      "isCorrect": false
+    }
+  ],
+      "correctAnswer": "n5-g007-correct",
+      "explanation": "【〜てもいいですか】可以〜嗎？（請求許可）\n結構：動詞て形 + もいいですか\n正確填入：てもいいですか",
+      "tags": [
+        "n5-g007",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g036",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+  "questionText": "本やCD＿＿＿があります。",
+  "questionTranslation": "有書和 CD 等東西。",
+  "options": [
+    {
+      "id": "n5-g036-wrong-3",
+      "text": "だけ",
+      "isCorrect": false
+    },
+        {
+          "id": "n5-g036-correct",
+          "text": "など",
+          "isCorrect": true
+        },
+    {
+      "id": "n5-g036-wrong-1",
+      "text": "でも",
+      "isCorrect": false
+    },
+    {
+      "id": "n5-g036-wrong-2",
+      "text": "の方が",
+      "isCorrect": false
+    }
+  ],
+      "correctAnswer": "n5-g036-correct",
+      "explanation": "【〜や〜など】〜和〜等等（非全部列舉）\n結構：名詞A + や + 名詞B + など\n正確填入：など",
+      "tags": [
+        "n5-g036",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g025",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+  "questionText": "彼は来ない＿＿＿。",
+  "questionTranslation": "他也許不來。",
+  "options": [
+    {
+      "id": "n5-g025-wrong-3",
+      "text": "でしょう",
+      "isCorrect": false
+    },
+        {
+          "id": "n5-g025-correct",
+          "text": "かもしれません",
+          "isCorrect": true
+        },
+    {
+      "id": "n5-g025-wrong-2",
+      "text": "と思います",
+      "isCorrect": false
+    },
+    {
+      "id": "n5-g025-wrong-1",
+      "text": "です",
+      "isCorrect": false
+    }
+  ],
+      "correctAnswer": "n5-g025-correct",
+      "explanation": "【〜かもしれません】也許〜／說不定〜（不確定推測）\n結構：文（普通形）+ かもしれません\n正確填入：かもしれません",
+      "tags": [
+        "n5-g025",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g024",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "試験は難しい＿＿＿。",
+      "questionTranslation": "考試大概很難吧。",
+      "options": [
+        {
+          "id": "n5-g024-correct",
+          "text": "でしょう",
+          "isCorrect": true
+        },
+        {
+          "id": "n5-g024-wrong-2",
+          "text": "と思います",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g024-wrong-1",
+          "text": "です",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g024-wrong-3",
+          "text": "ではありません",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n5-g024-correct",
+      "explanation": "【〜でしょう】大概是〜吧（推測）\n結構：文（普通形）+ でしょう\n正確填入：でしょう",
+      "tags": [
+        "n5-g024",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g013",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "コーヒーを飲み＿＿＿。",
+      "questionTranslation": "要不要喝杯咖啡？",
+      "options": [
+        {
+          "id": "n5-g013-wrong-1",
+          "text": "ましょうか",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g013-wrong-2",
+          "text": "たいです",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g013-wrong-3",
+          "text": "てください",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g013-correct",
+          "text": "ませんか",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n5-g013-correct",
+      "explanation": "【〜ませんか】要不要〜？（禮貌邀請）\n結構：動詞ます形（去ます）+ ませんか\n正確填入：ませんか",
+      "tags": [
+        "n5-g013",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g045",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "少し＿＿＿待ってください。",
+      "questionTranslation": "請稍等一下。",
+      "options": [
+        {
+          "id": "n5-g045-wrong-1",
+          "text": "まで",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g045-wrong-2",
+          "text": "しか",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g045-wrong-3",
+          "text": "ごろ",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g045-correct",
+          "text": "だけ",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n5-g045-correct",
+      "explanation": "【〜だけ】只有〜／僅〜\n結構：名詞／動詞辞書形 + だけ\n正確填入：だけ",
+      "tags": [
+        "n5-g045",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g052",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "コーヒーを飲み＿＿＿新聞を読みます。",
+      "questionTranslation": "一邊喝咖啡一邊看報紙。",
+      "options": [
+        {
+          "id": "n5-g052-correct",
+          "text": "ながら",
+          "isCorrect": true
+        },
+        {
+          "id": "n5-g052-wrong-1",
+          "text": "てから",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g052-wrong-3",
+          "text": "ましょうか",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g052-wrong-2",
+          "text": "たいです",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n5-g052-correct",
+      "explanation": "【〜ながら】一邊〜一邊〜（同時動作）\n結構：動詞ます形（去ます）+ ながら\n正確填入：ながら",
+      "tags": [
+        "n5-g052",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g002",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "これは本＿＿＿。",
+      "questionTranslation": "這不是書。",
+      "options": [
+        {
+          "id": "n5-g002-wrong-3",
+          "text": "です",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g002-wrong-2",
+          "text": "でしょう",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g002-wrong-1",
+          "text": "かもしれません",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g002-correct",
+          "text": "ではありません",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n5-g002-correct",
+      "explanation": "【〜は〜ではありません】〜不是〜（否定判斷）\n結構：名詞A + は + 名詞B + ではありません\n正確填入：ではありません",
+      "tags": [
+        "n5-g002",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g012",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "窓を開け＿＿＿。",
+      "questionTranslation": "我來開窗吧？",
+      "options": [
+        {
+          "id": "n5-g012-wrong-2",
+          "text": "ませんか",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g012-wrong-3",
+          "text": "てください",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g012-wrong-1",
+          "text": "たいです",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g012-correct",
+          "text": "ましょうか",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n5-g012-correct",
+      "explanation": "【〜ましょうか】要〜嗎？／我來〜吧（提議、主動幫忙）\n結構：動詞ます形（去ます）+ ましょうか\n正確填入：ましょうか",
+      "tags": [
+        "n5-g012",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g022",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "コーヒーより緑茶＿＿＿好きです。",
+      "questionTranslation": "比起咖啡，我更喜歡綠茶。",
+      "options": [
+        {
+          "id": "n5-g022-correct",
+          "text": "の方が",
+          "isCorrect": true
+        },
+        {
+          "id": "n5-g022-wrong-1",
+          "text": "だけ",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g022-wrong-3",
+          "text": "でも",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g022-wrong-2",
+          "text": "でしょう",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n5-g022-correct",
+      "explanation": "【〜より〜の方が〜】比起〜，〜更〜（比較）\n結構：名詞A + より + 名詞B + の方が + 形容詞\n正確填入：の方が",
+      "tags": [
+        "n5-g022",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g008",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "授業中に携帯電話を使っ＿＿＿。",
+      "questionTranslation": "上課中不可以使用手機。",
+      "options": [
+        {
+          "id": "n5-g008-wrong-1",
+          "text": "てもいいです",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g008-correct",
+          "text": "てはいけません",
+          "isCorrect": true
+        },
+        {
+          "id": "n5-g008-wrong-3",
+          "text": "ないでください",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g008-wrong-2",
+          "text": "たいです",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n5-g008-correct",
+      "explanation": "【〜てはいけません】不可以〜（禁止）\n結構：動詞て形 + はいけません\n正確填入：てはいけません",
+      "tags": [
+        "n5-g008",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g043",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "熱がある＿＿＿、学校を休みます。",
+      "questionTranslation": "因為發燒，所以不去學校。",
+      "options": [
+        {
+          "id": "n5-g043-wrong-3",
+          "text": "けど",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g043-wrong-2",
+          "text": "から",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g043-correct",
+          "text": "ので",
+          "isCorrect": true
+        },
+        {
+          "id": "n5-g043-wrong-1",
+          "text": "でも",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n5-g043-correct",
+      "explanation": "【〜ので】因為〜所以〜（禮貌理由）\n結構：文（普通形）+ ので、文\n正確填入：ので",
+      "tags": [
+        "n5-g043",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g005",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+  "questionText": "この地図＿＿＿。",
+  "questionTranslation": "請給我這張地圖。",
+  "options": [
+    {
+      "id": "n5-g005-wrong-3",
+      "text": "はどうですか",
+          "isCorrect": false
+        },
+    {
+      "id": "n5-g005-wrong-2",
+      "text": "でもいいです",
+      "isCorrect": false
+    },
+        {
+          "id": "n5-g005-correct",
+          "text": "をください",
+          "isCorrect": true
+        },
+    {
+      "id": "n5-g005-wrong-1",
+      "text": "だけです",
+      "isCorrect": false
+    }
+  ],
+      "correctAnswer": "n5-g005-correct",
+      "explanation": "【〜をください】請給我〜\n結構：名詞 + をください\n正確填入：をください",
+      "tags": [
+        "n5-g005",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g027",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+  "questionText": "スーツを着＿＿＿。",
+  "questionTranslation": "不用穿西裝也可以。",
+  "options": [
+    {
+      "id": "n5-g027-wrong-1",
+      "text": "なければなりません",
+      "isCorrect": false
+    },
+        {
+          "id": "n5-g027-correct",
+          "text": "なくてもいいです",
+          "isCorrect": true
+        },
+        {
+          "id": "n5-g027-wrong-3",
+          "text": "ないでください",
+          "isCorrect": false
+        },
+    {
+      "id": "n5-g027-wrong-2",
+      "text": "たくないです",
+      "isCorrect": false
+    }
+  ],
+      "correctAnswer": "n5-g027-correct",
+      "explanation": "【〜なくてもいいです】不必〜／不用〜\n結構：動詞ない形（去ない）+ なくてもいいです\n正確填入：なくてもいいです",
+      "tags": [
+        "n5-g027",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g053",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+      "questionText": "週末は映画を見たり、買い物をし＿＿＿。",
+      "questionTranslation": "週末看電影、購物之類的。",
+      "options": [
+        {
+          "id": "n5-g053-correct",
+          "text": "たりします",
+          "isCorrect": true
+        },
+        {
+          "id": "n5-g053-wrong-2",
+          "text": "ています",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g053-wrong-1",
+          "text": "でも",
+          "isCorrect": false
+        },
+        {
+          "id": "n5-g053-wrong-3",
+          "text": "ので",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n5-g053-correct",
+      "explanation": "【〜たり〜たりします】做〜做〜等（舉例複數動作）\n結構：動詞た形 + り + 動詞た形 + り + します\n正確填入：たりします",
+      "tags": [
+        "n5-g053",
+        "n5",
+        "sentence-fill"
+      ]
+    },
+    {
+      "id": "gq-f-n5-g054",
+      "level": "N5",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的句型。",
+  "questionText": "誰＿＿＿間違えることがあります。",
+  "questionTranslation": "任何人都可能犯錯。",
+  "options": [
+    {
+      "id": "n5-g054-wrong-3",
+      "text": "だけ",
+      "isCorrect": false
+    },
+    {
+      "id": "n5-g054-wrong-1",
+      "text": "より",
+      "isCorrect": false
+    },
+    {
+      "id": "n5-g054-wrong-2",
+      "text": "とか",
+      "isCorrect": false
+    },
+        {
+          "id": "n5-g054-correct",
+          "text": "でも",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n5-g054-correct",
+      "explanation": "【〜でも】〜也好（即使〜也）\n結構：名詞 + でも\n正確填入：でも",
+      "tags": [
+        "n5-g054",
+        "n5",
+        "sentence-fill"
+      ]
+    }
+  ]
+}

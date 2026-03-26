@@ -1,0 +1,288 @@
+@if (!started()) {
+  <div
+    class="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(245,158,11,0.18),transparent_32%),linear-gradient(180deg,#fffaf2_0%,#f8fafc_100%)] p-6"
+  >
+    <div
+      class="relative w-full max-w-4xl overflow-hidden rounded-[1.9rem] border border-slate-200/70 bg-white p-6 shadow-[0_24px_60px_rgba(15,23,42,0.08),0_8px_20px_rgba(15,23,42,0.05)] sm:p-10"
+    >
+      <div
+        class="pointer-events-none absolute -right-14 -top-14 h-44 w-44 rounded-full bg-amber-100/80"
+      ></div>
+      <div
+        class="pointer-events-none absolute -bottom-16 -left-10 h-40 w-40 rounded-full bg-orange-100/70"
+      ></div>
+
+      <div class="relative z-10 mb-8 max-w-2xl">
+        <p class="text-sm font-bold uppercase tracking-[0.14em] text-amber-600">Sentence Quiz</p>
+        <h1 class="mt-2 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">句型測驗</h1>
+      </div>
+
+      <div class="relative z-10 grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
+        <section
+          class="rounded-[1.6rem] border border-slate-200 bg-[linear-gradient(180deg,#fffdf8_0%,#ffffff_100%)] p-5"
+        >
+          <p class="mb-1 text-[0.78rem] font-bold uppercase tracking-[0.08em] text-amber-600">
+            Step 1
+          </p>
+          <h2 class="text-xl font-extrabold text-slate-900">選擇句型題組</h2>
+
+          <div class="mt-4 grid gap-3">
+            @for (examType of examTypes; track examType.type) {
+              <button
+                (click)="selectedExamType.set(examType.type)"
+                [class]="
+                  'w-full rounded-3xl border px-5 py-5 text-left transition-all duration-150 ' +
+                  (selectedExamType() === examType.type
+                    ? 'border-amber-500 bg-[linear-gradient(135deg,#fff7ed_0%,#ffffff_100%)] shadow-[0_12px_24px_rgba(245,158,11,0.16)]'
+                    : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-amber-300 hover:bg-amber-50/50')
+                "
+              >
+                <p class="text-base font-extrabold text-slate-900">{{ examType.label }}</p>
+                <p class="mt-1 text-sm leading-6 text-slate-500">{{ examType.description }}</p>
+              </button>
+            }
+          </div>
+        </section>
+
+        <section class="rounded-[1.6rem] border border-slate-200 bg-white p-5">
+          <p class="mb-1 text-[0.78rem] font-bold uppercase tracking-[0.08em] text-amber-600">
+            Step 2
+          </p>
+          <h2 class="text-xl font-extrabold text-slate-900">選擇 JLPT 級別</h2>
+          <p class="mt-1 text-sm leading-6 text-slate-500">不同級別可對應不同的題組 JSON。</p>
+
+          <div class="mt-4 grid grid-cols-2 gap-3">
+            @for (level of levels; track level) {
+              <button
+                (click)="isLevelAvailable(level) && selectedLevel.set(level)"
+                [disabled]="!isLevelAvailable(level)"
+                [class]="
+                  'flex w-full flex-col items-start gap-1 rounded-2xl border px-4 py-4 text-left transition-all duration-150 ' +
+                  (!isLevelAvailable(level)
+                    ? 'cursor-not-allowed border-slate-200 bg-slate-50 text-slate-400 opacity-70'
+                    : selectedLevel() === level
+                      ? 'border-amber-500 bg-[linear-gradient(135deg,#fff7ed_0%,#ffffff_100%)] shadow-[0_12px_24px_rgba(245,158,11,0.16)]'
+                      : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-amber-300 hover:bg-amber-50/60 hover:shadow-[0_10px_20px_rgba(245,158,11,0.10)]')
+                "
+              >
+                <span class="text-base font-extrabold text-slate-800">{{ level }}</span>
+                <span
+                  [class]="
+                    'text-sm ' + (isLevelAvailable(level) ? 'text-slate-500' : 'text-slate-400')
+                  "
+                >
+                  {{ isLevelAvailable(level) ? levelDescription(level) : '題組準備中' }}
+                </span>
+              </button>
+            }
+          </div>
+
+          <div
+            class="mt-5 rounded-3xl border border-dashed border-amber-200 bg-amber-50/60 p-4 text-sm text-slate-700"
+          >
+            <p class="font-semibold text-slate-900">{{ examTitle() }}</p>
+            <p class="mt-1 leading-6 text-slate-600">{{ examDescription() }}</p>
+            <p class="mt-3 text-xs font-medium uppercase tracking-[0.08em] text-amber-700">
+              目前級別 {{ selectedLevel() }}
+            </p>
+          </div>
+        </section>
+      </div>
+
+      @if (loadError()) {
+        <div
+          class="relative z-10 mt-6 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700"
+        >
+          {{ loadError() }}
+        </div>
+      }
+
+      <div class="relative z-10 mt-6">
+        <p-button
+          label="開始句型測驗"
+          icon="pi pi-play"
+          [loading]="loading()"
+          (onClick)="startQuiz()"
+          styleClass="w-full justify-center text-lg py-3"
+        />
+      </div>
+    </div>
+  </div>
+}
+
+@if (showResult()) {
+  <div
+    class="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(245,158,11,0.18),transparent_32%),linear-gradient(180deg,#fffaf2_0%,#f8fafc_100%)] p-6"
+  >
+    <div
+      class="w-full max-w-2xl rounded-[1.8rem] border border-slate-200/70 bg-white p-6 text-center shadow-[0_24px_60px_rgba(15,23,42,0.08),0_8px_20px_rgba(15,23,42,0.05)] sm:p-10"
+    >
+      <div class="text-6xl">
+        {{ score() === questions().length ? '🏆' : score() >= 7 ? '🔥' : '📝' }}
+      </div>
+      <h2 class="mt-4 text-2xl font-bold text-slate-900">句型測驗完成</h2>
+      <p class="mt-2 text-slate-500">{{ examTitle() }} / {{ selectedLevel() }}</p>
+
+      <div class="mt-6 text-5xl font-black text-amber-600">
+        {{ score() }}
+        <span class="text-2xl font-semibold text-slate-300">/ {{ questions().length }}</span>
+      </div>
+      <p class="mt-2 text-slate-500">
+        正確率 {{ Math.round((score() / questions().length) * 100) }}%
+      </p>
+
+      <div class="mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-5 text-left">
+        <h3 class="text-base font-bold text-slate-900">錯題回顧</h3>
+        @for (result of results(); track result.questionId) {
+          @if (!result.isCorrect) {
+            @let question = questions()[results().indexOf(result)];
+            <div class="mt-3 rounded-2xl border border-red-200 bg-red-50 p-4">
+              <p class="text-sm font-semibold text-slate-900">
+                {{ question.questionText || question.prompt }}
+              </p>
+              @if (question.questionTranslation) {
+                <p class="mt-1 text-sm text-slate-500">{{ question.questionTranslation }}</p>
+              }
+              <p class="mt-2 text-sm leading-6 text-slate-600">{{ question.explanation }}</p>
+            </div>
+          }
+        }
+      </div>
+
+      @if (score() < questions().length) {
+        <div class="mt-6">
+          <p-button
+            label="用錯題再練一次"
+            icon="pi pi-history"
+            (onClick)="retryWrongQuestions()"
+            styleClass="mb-3 w-full justify-center"
+          />
+          <p-button
+            label="下載錯題 JSON"
+            icon="pi pi-download"
+            severity="secondary"
+            (onClick)="exportWrongQuestions()"
+            styleClass="w-full justify-center"
+          />
+        </div>
+      }
+
+      <div class="mt-4">
+        <p-button
+          label="再來一次"
+          icon="pi pi-refresh"
+          (onClick)="restart()"
+          styleClass="w-full justify-center"
+        />
+      </div>
+    </div>
+  </div>
+}
+
+@if (started() && !showResult()) {
+  <div
+    class="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(245,158,11,0.18),transparent_32%),linear-gradient(180deg,#fffaf2_0%,#f8fafc_100%)] p-4 sm:p-6"
+  >
+    <div
+      class="w-full max-w-4xl rounded-[1.8rem] border border-slate-200/70 bg-white p-5 shadow-[0_24px_60px_rgba(15,23,42,0.08),0_8px_20px_rgba(15,23,42,0.05)] sm:p-8"
+    >
+      <div class="mb-6 border-b border-slate-200 pb-5">
+        <div class="mb-3 flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <span class="text-sm text-slate-500"
+              >第 {{ currentIndex() + 1 }} 題 / 共 {{ questions().length }} 題</span
+            >
+            <span
+              class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-sm font-semibold text-amber-700"
+            >
+              {{ selectedLevel() }} 句型測驗
+            </span>
+          </div>
+          <button
+            type="button"
+            (click)="quitQuiz()"
+            class="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900"
+          >
+            返回選單
+          </button>
+        </div>
+        <p-progressbar [value]="progress()" [showValue]="false" />
+      </div>
+
+      <section
+        class="mb-6 rounded-[1.7rem] border border-slate-200 bg-[linear-gradient(135deg,rgba(255,247,237,0.92),rgba(255,255,255,0.98))] p-6"
+      >
+        <div
+          class="mb-4 inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-bold tracking-[0.04em] text-amber-700"
+        >
+          題目
+        </div>
+        <p class="text-sm font-semibold uppercase tracking-[0.08em] text-slate-400">
+          {{ currentQuestion().prompt }}
+        </p>
+        <h2 class="mt-4 text-3xl font-black leading-relaxed text-slate-900 sm:text-4xl">
+          {{ currentQuestion().questionText || currentQuestion().prompt }}
+        </h2>
+        @if (currentQuestion().questionTranslation) {
+          <p class="mt-4 text-base leading-7 text-slate-500">
+            {{ currentQuestion().questionTranslation }}
+          </p>
+        }
+      </section>
+
+      <section class="mb-5 rounded-[1.7rem] border border-slate-200 bg-white p-5 sm:p-6">
+        <div
+          class="mb-4 inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-bold tracking-[0.04em] text-amber-700"
+        >
+          四選一
+        </div>
+        <div class="grid grid-cols-1 gap-3">
+          @for (option of currentQuestion().options; track option.id) {
+            <button
+              (click)="selectOption(option)"
+              [disabled]="answered()"
+              [class]="
+                'flex w-full items-center gap-4 rounded-2xl border-2 px-4 py-4 text-left text-base font-semibold transition-all duration-150 ' +
+                optionCardClass(option)
+              "
+            >
+              <span
+                [class]="
+                  'inline-flex h-8 w-8 flex-none items-center justify-center rounded-full text-sm font-bold ' +
+                  optionPrefixClass(option)
+                "
+              >
+                {{ $index + 1 }}
+              </span>
+              <span class="leading-7">{{ option.text }}</span>
+            </button>
+          }
+        </div>
+      </section>
+
+      @if (answered()) {
+        <section
+          [class]="
+            'mb-5 rounded-2xl border p-4 text-sm ' +
+            (results()[results().length - 1]?.isCorrect
+              ? 'border-green-200 bg-green-50'
+              : 'border-red-200 bg-red-50')
+          "
+        >
+          <p class="mb-2 font-semibold">
+            {{ results()[results().length - 1]?.isCorrect ? '✅ 答對了！' : '❌ 答錯了' }}
+          </p>
+          <p class="leading-7 text-slate-600">{{ currentQuestion().explanation }}</p>
+        </section>
+
+        <p-button
+          [label]="isLast() ? '查看結果' : '下一題'"
+          [icon]="isLast() ? 'pi pi-check' : 'pi pi-arrow-right'"
+          iconPos="right"
+          (onClick)="next()"
+          styleClass="w-full justify-center"
+        />
+      }
+    </div>
+  </div>
+}

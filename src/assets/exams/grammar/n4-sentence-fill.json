@@ -1,0 +1,154 @@
+{
+  "id": "grammar-n4-sentence-fill",
+  "title": "N4 句型填空",
+  "description": "以 N4 常見句型為主的句子填空四選一題組。",
+  "level": "N4",
+  "category": "grammar",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n4-fill-001",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "友達に本を貸して＿＿＿。",
+      "questionTranslation": "借書給朋友了。",
+      "options": [
+        { "id": "n4-fill-001-correct", "text": "あげました", "isCorrect": true },
+        { "id": "n4-fill-001-wrong-1", "text": "もらいました", "isCorrect": false },
+        { "id": "n4-fill-001-wrong-2", "text": "くれました", "isCorrect": false },
+        { "id": "n4-fill-001-wrong-3", "text": "しまいました", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-001-correct",
+      "explanation": "自己為別人做事時，用「〜てあげます」。",
+      "tags": ["giving-action", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-002",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "先生に説明して＿＿＿。",
+      "questionTranslation": "請老師替我說明了。",
+      "options": [
+        { "id": "n4-fill-002-correct", "text": "もらいました", "isCorrect": true },
+        { "id": "n4-fill-002-wrong-1", "text": "あげました", "isCorrect": false },
+        { "id": "n4-fill-002-wrong-2", "text": "くれました", "isCorrect": false },
+        { "id": "n4-fill-002-wrong-3", "text": "みました", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-002-correct",
+      "explanation": "從別人那裡接受幫助時，用「〜てもらいます」。",
+      "tags": ["receiving-action", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-003",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "友達が手伝って＿＿＿。",
+      "questionTranslation": "朋友幫了我。",
+      "options": [
+        { "id": "n4-fill-003-correct", "text": "くれました", "isCorrect": true },
+        { "id": "n4-fill-003-wrong-1", "text": "あげました", "isCorrect": false },
+        { "id": "n4-fill-003-wrong-2", "text": "もらいました", "isCorrect": false },
+        { "id": "n4-fill-003-wrong-3", "text": "おきました", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-003-correct",
+      "explanation": "別人主動為我做事時，用「〜てくれます」。",
+      "tags": ["benefaction", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-004",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "会議の前に資料を準備して＿＿＿。",
+      "questionTranslation": "在會議前先把資料準備好。",
+      "options": [
+        { "id": "n4-fill-004-correct", "text": "おきました", "isCorrect": true },
+        { "id": "n4-fill-004-wrong-1", "text": "しまいました", "isCorrect": false },
+        { "id": "n4-fill-004-wrong-2", "text": "みました", "isCorrect": false },
+        { "id": "n4-fill-004-wrong-3", "text": "くれました", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-004-correct",
+      "explanation": "為了後續目的事先準備時，用「〜ておきます」。",
+      "tags": ["preparation", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-005",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "財布を忘れて＿＿＿。",
+      "questionTranslation": "不小心忘了帶錢包。",
+      "options": [
+        { "id": "n4-fill-005-correct", "text": "しまいました", "isCorrect": true },
+        { "id": "n4-fill-005-wrong-1", "text": "おきました", "isCorrect": false },
+        { "id": "n4-fill-005-wrong-2", "text": "みました", "isCorrect": false },
+        { "id": "n4-fill-005-wrong-3", "text": "あげました", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-005-correct",
+      "explanation": "表示遺憾或不小心做了某事時，用「〜てしまいます」。",
+      "tags": ["regret", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-006",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この料理を食べて＿＿＿。",
+      "questionTranslation": "請試著吃看看這道料理。",
+      "options": [
+        { "id": "n4-fill-006-correct", "text": "みてください", "isCorrect": true },
+        { "id": "n4-fill-006-wrong-1", "text": "しまってください", "isCorrect": false },
+        { "id": "n4-fill-006-wrong-2", "text": "おいてください", "isCorrect": false },
+        { "id": "n4-fill-006-wrong-3", "text": "あげてください", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-006-correct",
+      "explanation": "表示試試看某個動作時，用「〜てみます」。",
+      "tags": ["try", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-007",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この料理はおいし＿＿＿。",
+      "questionTranslation": "這道料理看起來很好吃。",
+      "options": [
+        { "id": "n4-fill-007-correct", "text": "そうです", "isCorrect": true },
+        { "id": "n4-fill-007-wrong-1", "text": "ようです", "isCorrect": false },
+        { "id": "n4-fill-007-wrong-2", "text": "らしいです", "isCorrect": false },
+        { "id": "n4-fill-007-wrong-3", "text": "はずです", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-007-correct",
+      "explanation": "根據眼前樣態判斷時，用樣態的「〜そうです」。",
+      "tags": ["appearance", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-008",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼はもう来る＿＿＿。",
+      "questionTranslation": "他應該快來了。",
+      "options": [
+        { "id": "n4-fill-008-correct", "text": "はずです", "isCorrect": true },
+        { "id": "n4-fill-008-wrong-1", "text": "そうです", "isCorrect": false },
+        { "id": "n4-fill-008-wrong-2", "text": "らしいです", "isCorrect": false },
+        { "id": "n4-fill-008-wrong-3", "text": "ために", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-008-correct",
+      "explanation": "根據已知情況判斷理應如此時，用「〜はずです」。",
+      "tags": ["expectation", "grammar-n4"]
+    }
+  ]
+}
