@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { QuizComponent } from '@features/pages/quiz/quiz';
-import { LargeQuizComponent } from '@features/pages/large-quiz/large-quiz';
+import { LargeQuizComponent } from '@app/layout/pages/large-quiz/large-quiz';
+import { QuizComponent } from '@app/layout/pages/quiz/quiz';
 
 export const mainLayoutRoutes: Routes = [
   {

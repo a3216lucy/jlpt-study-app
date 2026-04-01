@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "proxy:jisho": "node tools/jisho-proxy.mjs",
-    "build:jmdict": "node tools/generate-jmdict-quiz-json.mjs"
+    "build:jmdict": "node tools/generate-jmdict-quiz-json.mjs",
+    "build:grammar-exam": "node tools/generate-grammar-exam-json.mjs"
   },
   "prettier": {
     "printWidth": 100,

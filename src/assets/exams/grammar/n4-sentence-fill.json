@@ -67,7 +67,7 @@
       "type": "sentence-fill",
       "prompt": "請選出最適合填入空格的文型。",
       "questionText": "会議の前に資料を準備して＿＿＿。",
-      "questionTranslation": "在會議前先把資料準備好。",
+      "questionTranslation": "在會議前先把資料準備好了。",
       "options": [
         { "id": "n4-fill-004-correct", "text": "おきました", "isCorrect": true },
         { "id": "n4-fill-004-wrong-1", "text": "しまいました", "isCorrect": false },
@@ -129,7 +129,7 @@
         { "id": "n4-fill-007-wrong-3", "text": "はずです", "isCorrect": false }
       ],
       "correctAnswer": "n4-fill-007-correct",
-      "explanation": "根據眼前樣態判斷時，用樣態的「〜そうです」。",
+      "explanation": "根據眼前樣態判斷時，用「〜そうです（様態）」。い形容詞去い加そうです。",
       "tags": ["appearance", "grammar-n4"]
     },
     {
@@ -149,6 +149,582 @@
       "correctAnswer": "n4-fill-008-correct",
       "explanation": "根據已知情況判斷理應如此時，用「〜はずです」。",
       "tags": ["expectation", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-009",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "日本語が少しずつ上手になって＿＿＿。",
+      "questionTranslation": "日語慢慢地變好了（變化向現在累積）。",
+      "options": [
+        { "id": "n4-fill-009-correct", "text": "きました", "isCorrect": true },
+        { "id": "n4-fill-009-wrong-1", "text": "いきます", "isCorrect": false },
+        { "id": "n4-fill-009-wrong-2", "text": "しまいました", "isCorrect": false },
+        { "id": "n4-fill-009-wrong-3", "text": "もらいました", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-009-correct",
+      "explanation": "表示狀態逐漸變化累積到現在，用「〜てきます」（きました）。",
+      "tags": ["direction-toward", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-010",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "これからも一生懸命頑張って＿＿＿。",
+      "questionTranslation": "今後也會繼續努力下去。",
+      "options": [
+        { "id": "n4-fill-010-correct", "text": "いきます", "isCorrect": true },
+        { "id": "n4-fill-010-wrong-1", "text": "きました", "isCorrect": false },
+        { "id": "n4-fill-010-wrong-2", "text": "しまいます", "isCorrect": false },
+        { "id": "n4-fill-010-wrong-3", "text": "みます", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-010-correct",
+      "explanation": "表示狀態將持續發展向未來，用「〜ていきます」。",
+      "tags": ["direction-away", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-011",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "子どもに野菜を食べ＿＿＿。",
+      "questionTranslation": "讓孩子吃蔬菜。",
+      "options": [
+        { "id": "n4-fill-011-correct", "text": "させます", "isCorrect": true },
+        { "id": "n4-fill-011-wrong-1", "text": "られます", "isCorrect": false },
+        { "id": "n4-fill-011-wrong-2", "text": "てもらいます", "isCorrect": false },
+        { "id": "n4-fill-011-wrong-3", "text": "てあげます", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-011-correct",
+      "explanation": "讓/命令某人做某事時，用使役形「〜させます」。",
+      "tags": ["causative", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-012",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "先生に褒め＿＿＿。",
+      "questionTranslation": "被老師稱讚了。",
+      "options": [
+        { "id": "n4-fill-012-correct", "text": "られました", "isCorrect": true },
+        { "id": "n4-fill-012-wrong-1", "text": "てもらいました", "isCorrect": false },
+        { "id": "n4-fill-012-wrong-2", "text": "させました", "isCorrect": false },
+        { "id": "n4-fill-012-wrong-3", "text": "てくれました", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-012-correct",
+      "explanation": "被他人做某事時，用受身形「〜られます」。注意與てもらう（接受恩惠）的差別。",
+      "tags": ["passive", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-013",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "田中さんは来月結婚する＿＿＿。",
+      "questionTranslation": "聽說田中先生下個月要結婚了。",
+      "options": [
+        { "id": "n4-fill-013-correct", "text": "らしいです", "isCorrect": true },
+        { "id": "n4-fill-013-wrong-1", "text": "そうです", "isCorrect": false },
+        { "id": "n4-fill-013-wrong-2", "text": "ようです", "isCorrect": false },
+        { "id": "n4-fill-013-wrong-3", "text": "はずです", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-013-correct",
+      "explanation": "根據間接消息推測時，用「〜らしいです（伝聞）」。そうです（伝聞）也可以，但らしいです更強調來自外部資訊。",
+      "tags": ["hearsay", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-014",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼女は怒っている＿＿＿。",
+      "questionTranslation": "她好像生氣了。",
+      "options": [
+        { "id": "n4-fill-014-correct", "text": "ようです", "isCorrect": true },
+        { "id": "n4-fill-014-wrong-1", "text": "そうです", "isCorrect": false },
+        { "id": "n4-fill-014-wrong-2", "text": "らしいです", "isCorrect": false },
+        { "id": "n4-fill-014-wrong-3", "text": "はずです", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-014-correct",
+      "explanation": "根據眼前觀察做客觀推測時，用「〜ようです」。動詞て形+いる後接ようです。",
+      "tags": ["inference", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-015",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "試験に合格する＿＿＿、毎日勉強しています。",
+      "questionTranslation": "為了通過考試，每天都在讀書。",
+      "options": [
+        { "id": "n4-fill-015-correct", "text": "ために", "isCorrect": true },
+        { "id": "n4-fill-015-wrong-1", "text": "ように", "isCorrect": false },
+        { "id": "n4-fill-015-wrong-2", "text": "から", "isCorrect": false },
+        { "id": "n4-fill-015-wrong-3", "text": "ので", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-015-correct",
+      "explanation": "表示行為目的，前後主語可不同，用「〜ために」。動詞辞書形+ために。",
+      "tags": ["purpose", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-016",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "忘れない＿＿＿、手帳にメモしました。",
+      "questionTranslation": "為了不忘記，在手帳上記了筆記。",
+      "options": [
+        { "id": "n4-fill-016-correct", "text": "ように", "isCorrect": true },
+        { "id": "n4-fill-016-wrong-1", "text": "ために", "isCorrect": false },
+        { "id": "n4-fill-016-wrong-2", "text": "から", "isCorrect": false },
+        { "id": "n4-fill-016-wrong-3", "text": "ので", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-016-correct",
+      "explanation": "前接否定形或可能形表示目的時，用「〜ように」。ために前不能接否定形，この點是區別關鍵。",
+      "tags": ["purpose", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-017",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "練習を続けて、漢字が書ける＿＿＿。",
+      "questionTranslation": "持續練習後，變得能寫漢字了。",
+      "options": [
+        { "id": "n4-fill-017-correct", "text": "ようになりました", "isCorrect": true },
+        { "id": "n4-fill-017-wrong-1", "text": "ようにしました", "isCorrect": false },
+        { "id": "n4-fill-017-wrong-2", "text": "ことになりました", "isCorrect": false },
+        { "id": "n4-fill-017-wrong-3", "text": "ことにしました", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-017-correct",
+      "explanation": "能力或習慣自然發生改變時，用「〜ようになります」。ようにします是有意識的努力，要區分。",
+      "tags": ["change-of-state", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-018",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "健康のために、毎朝野菜を食べる＿＿＿。",
+      "questionTranslation": "為了健康，努力每天早上吃蔬菜。",
+      "options": [
+        { "id": "n4-fill-018-correct", "text": "ようにしています", "isCorrect": true },
+        { "id": "n4-fill-018-wrong-1", "text": "ようになっています", "isCorrect": false },
+        { "id": "n4-fill-018-wrong-2", "text": "ことにしています", "isCorrect": false },
+        { "id": "n4-fill-018-wrong-3", "text": "つもりです", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-018-correct",
+      "explanation": "有意識地努力維持某習慣時，用「〜ようにしています」。ようになっています是自然形成的狀態。",
+      "tags": ["deliberate-habit", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-019",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "宿題が終わっ＿＿＿、遊んでいいですよ。",
+      "questionTranslation": "功課做完了就可以去玩喔。",
+      "options": [
+        { "id": "n4-fill-019-correct", "text": "たら", "isCorrect": true },
+        { "id": "n4-fill-019-wrong-1", "text": "ば", "isCorrect": false },
+        { "id": "n4-fill-019-wrong-2", "text": "と", "isCorrect": false },
+        { "id": "n4-fill-019-wrong-3", "text": "なら", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-019-correct",
+      "explanation": "表示完成前件後可做後件，後件有命令／許可時，用「〜たら」。と、ば後不能接命令。",
+      "tags": ["conditional", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-020",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "もっと練習すれ＿＿＿、上手になりますよ。",
+      "questionTranslation": "只要多練習就會進步的。",
+      "options": [
+        { "id": "n4-fill-020-correct", "text": "ば", "isCorrect": true },
+        { "id": "n4-fill-020-wrong-1", "text": "たら", "isCorrect": false },
+        { "id": "n4-fill-020-wrong-2", "text": "と", "isCorrect": false },
+        { "id": "n4-fill-020-wrong-3", "text": "なら", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-020-correct",
+      "explanation": "句中已出現ば形（すれ___），填入ば完成假設條件句「〜ば」形。",
+      "tags": ["conditional-ba", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-021",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この角を右に曲がる＿＿＿、駅が見えます。",
+      "questionTranslation": "在這個轉角右轉就能看到車站。",
+      "options": [
+        { "id": "n4-fill-021-correct", "text": "と", "isCorrect": true },
+        { "id": "n4-fill-021-wrong-1", "text": "たら", "isCorrect": false },
+        { "id": "n4-fill-021-wrong-2", "text": "ば", "isCorrect": false },
+        { "id": "n4-fill-021-wrong-3", "text": "なら", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-021-correct",
+      "explanation": "表示自然規律或路線指引等機械性因果時，用「〜と」。這類情況後句為自然結果。",
+      "tags": ["conditional-to", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-022",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "東京に行く＿＿＿、新幹線が一番便利ですよ。",
+      "questionTranslation": "如果要去東京的話，新幹線最方便喔。",
+      "options": [
+        { "id": "n4-fill-022-correct", "text": "なら", "isCorrect": true },
+        { "id": "n4-fill-022-wrong-1", "text": "たら", "isCorrect": false },
+        { "id": "n4-fill-022-wrong-2", "text": "ば", "isCorrect": false },
+        { "id": "n4-fill-022-wrong-3", "text": "と", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-022-correct",
+      "explanation": "針對對方所說的話題給出建議時，用「〜なら」。なら帶有「既然你說〜的話」的語感。",
+      "tags": ["conditional-nara", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-023",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "環境問題＿＿＿、詳しく調べています。",
+      "questionTranslation": "正在詳細調查關於環境問題。",
+      "options": [
+        { "id": "n4-fill-023-correct", "text": "について", "isCorrect": true },
+        { "id": "n4-fill-023-wrong-1", "text": "によって", "isCorrect": false },
+        { "id": "n4-fill-023-wrong-2", "text": "に対して", "isCorrect": false },
+        { "id": "n4-fill-023-wrong-3", "text": "として", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-023-correct",
+      "explanation": "表示討論或研究的主題時，用「〜について」。",
+      "tags": ["topic", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-024",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "人＿＿＿考え方が違いますね。",
+      "questionTranslation": "每個人的想法都不一樣呢。",
+      "options": [
+        { "id": "n4-fill-024-correct", "text": "によって", "isCorrect": true },
+        { "id": "n4-fill-024-wrong-1", "text": "について", "isCorrect": false },
+        { "id": "n4-fill-024-wrong-2", "text": "に対して", "isCorrect": false },
+        { "id": "n4-fill-024-wrong-3", "text": "として", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-024-correct",
+      "explanation": "表示隨條件不同而有所差異時，用「〜によって」。",
+      "tags": ["variation", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-025",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "お客様＿＿＿、丁寧に対応することが大切です。",
+      "questionTranslation": "對客人，禮貌應對是很重要的。",
+      "options": [
+        { "id": "n4-fill-025-correct", "text": "に対して", "isCorrect": true },
+        { "id": "n4-fill-025-wrong-1", "text": "について", "isCorrect": false },
+        { "id": "n4-fill-025-wrong-2", "text": "によって", "isCorrect": false },
+        { "id": "n4-fill-025-wrong-3", "text": "として", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-025-correct",
+      "explanation": "表示行為或態度所針對的對象時，用「〜に対して」。",
+      "tags": ["target", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-026",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼はボランティア活動の代表＿＿＿活躍しています。",
+      "questionTranslation": "他以義工活動代表的身份活躍著。",
+      "options": [
+        { "id": "n4-fill-026-correct", "text": "として", "isCorrect": true },
+        { "id": "n4-fill-026-wrong-1", "text": "について", "isCorrect": false },
+        { "id": "n4-fill-026-wrong-2", "text": "に対して", "isCorrect": false },
+        { "id": "n4-fill-026-wrong-3", "text": "によって", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-026-correct",
+      "explanation": "表示以某身份、立場或資格做某事時，用「〜として」。",
+      "tags": ["role", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-027",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "「もったいない」＿＿＿言葉は日本特有の概念です。",
+      "questionTranslation": "「もったいない（可惜）」這個詞是日本特有的概念。",
+      "options": [
+        { "id": "n4-fill-027-correct", "text": "という", "isCorrect": true },
+        { "id": "n4-fill-027-wrong-1", "text": "といった", "isCorrect": false },
+        { "id": "n4-fill-027-wrong-2", "text": "というより", "isCorrect": false },
+        { "id": "n4-fill-027-wrong-3", "text": "とか", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-027-correct",
+      "explanation": "引用名稱或說明某詞語的含義時，用「〜という」。",
+      "tags": ["quotation", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-028",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "試験に合格できた＿＿＿、まだわかりません。",
+      "questionTranslation": "是否通過了考試，還不知道。",
+      "options": [
+        { "id": "n4-fill-028-correct", "text": "かどうか", "isCorrect": true },
+        { "id": "n4-fill-028-wrong-1", "text": "かもしれない", "isCorrect": false },
+        { "id": "n4-fill-028-wrong-2", "text": "だろうか", "isCorrect": false },
+        { "id": "n4-fill-028-wrong-3", "text": "か否か", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-028-correct",
+      "explanation": "表示「是否」的間接疑問時，用「〜かどうか」。後接わかる、知る等動詞。",
+      "tags": ["indirect-question", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-029",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この会社に入った＿＿＿で、まだ仕事に慣れていません。",
+      "questionTranslation": "剛進這家公司不久，還不習慣工作。",
+      "options": [
+        { "id": "n4-fill-029-correct", "text": "ばかり", "isCorrect": true },
+        { "id": "n4-fill-029-wrong-1", "text": "ところ", "isCorrect": false },
+        { "id": "n4-fill-029-wrong-2", "text": "まま", "isCorrect": false },
+        { "id": "n4-fill-029-wrong-3", "text": "ごろ", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-029-correct",
+      "explanation": "表示某動作完成後不久，用「〜たばかり」。たところ也表示剛完成，但ばかり強調時間短且帶有「還沒適應」的語感。",
+      "tags": ["just-done", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-030",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "テレビをつけた＿＿＿眠ってしまいました。",
+      "questionTranslation": "就這樣開著電視睡著了。",
+      "options": [
+        { "id": "n4-fill-030-correct", "text": "まま", "isCorrect": true },
+        { "id": "n4-fill-030-wrong-1", "text": "ながら", "isCorrect": false },
+        { "id": "n4-fill-030-wrong-2", "text": "ばかり", "isCorrect": false },
+        { "id": "n4-fill-030-wrong-3", "text": "ところで", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-030-correct",
+      "explanation": "保持某狀態不變地做另一件事時，用「〜たまま」。ながら是同時進行兩個動作。",
+      "tags": ["state-unchanged", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-031",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "東京は大阪＿＿＿暑くないです。",
+      "questionTranslation": "東京沒有大阪那麼熱。",
+      "options": [
+        { "id": "n4-fill-031-correct", "text": "ほど", "isCorrect": true },
+        { "id": "n4-fill-031-wrong-1", "text": "より", "isCorrect": false },
+        { "id": "n4-fill-031-wrong-2", "text": "だけ", "isCorrect": false },
+        { "id": "n4-fill-031-wrong-3", "text": "しか", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-031-correct",
+      "explanation": "用於「沒有A那麼B」的比較句型：AはB＿＿＿〜ない，填入「ほど」。より用於「比A更〜」。",
+      "tags": ["comparison", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-032",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼は英語＿＿＿、日本語も話せます。",
+      "questionTranslation": "他不只會英語，也會說日語。",
+      "options": [
+        { "id": "n4-fill-032-correct", "text": "だけでなく", "isCorrect": true },
+        { "id": "n4-fill-032-wrong-1", "text": "しか", "isCorrect": false },
+        { "id": "n4-fill-032-wrong-2", "text": "ばかり", "isCorrect": false },
+        { "id": "n4-fill-032-wrong-3", "text": "のみ", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-032-correct",
+      "explanation": "表示不只有前者，後者也成立時，用「〜だけでなく〜も」。",
+      "tags": ["addition", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-033",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "来月から毎日日記を書く＿＿＿。",
+      "questionTranslation": "決定從下個月開始每天寫日記。",
+      "options": [
+        { "id": "n4-fill-033-correct", "text": "ことにしました", "isCorrect": true },
+        { "id": "n4-fill-033-wrong-1", "text": "ことになりました", "isCorrect": false },
+        { "id": "n4-fill-033-wrong-2", "text": "ようになりました", "isCorrect": false },
+        { "id": "n4-fill-033-wrong-3", "text": "ことがあります", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-033-correct",
+      "explanation": "說話人自己做出決定時，用「〜ことにします」。ことになります是外部決定，非自身意志。",
+      "tags": ["personal-decision", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-034",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "来月、大阪に転勤する＿＿＿。",
+      "questionTranslation": "（被決定）下個月要調職去大阪了。",
+      "options": [
+        { "id": "n4-fill-034-correct", "text": "ことになりました", "isCorrect": true },
+        { "id": "n4-fill-034-wrong-1", "text": "ことにしました", "isCorrect": false },
+        { "id": "n4-fill-034-wrong-2", "text": "ようになりました", "isCorrect": false },
+        { "id": "n4-fill-034-wrong-3", "text": "つもりです", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-034-correct",
+      "explanation": "依外部情況或他人決定（非自身意志）時，用「〜ことになります」。",
+      "tags": ["external-decision", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-035",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "提出の締め切りは明日の朝9時＿＿＿です。",
+      "questionTranslation": "提交截止時間是明天早上9點之前。",
+      "options": [
+        { "id": "n4-fill-035-correct", "text": "までに", "isCorrect": true },
+        { "id": "n4-fill-035-wrong-1", "text": "まで", "isCorrect": false },
+        { "id": "n4-fill-035-wrong-2", "text": "ごろ", "isCorrect": false },
+        { "id": "n4-fill-035-wrong-3", "text": "ために", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-035-correct",
+      "explanation": "表示在某期限前完成動作，用「〜までに」。まで是「持續到那個時刻」，までに是「在那之前完成」。",
+      "tags": ["deadline", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-036",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "もう一度説明して＿＿＿か。",
+      "questionTranslation": "能否請您再說明一次？",
+      "options": [
+        { "id": "n4-fill-036-correct", "text": "いただけません", "isCorrect": true },
+        { "id": "n4-fill-036-wrong-1", "text": "くれません", "isCorrect": false },
+        { "id": "n4-fill-036-wrong-2", "text": "もらえません", "isCorrect": false },
+        { "id": "n4-fill-036-wrong-3", "text": "ください", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-036-correct",
+      "explanation": "非常禮貌地請求對方做某事時，用「〜ていただけませんか」，比てくれませんか更正式。",
+      "tags": ["polite-request", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-037",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "ニュース＿＿＿、大きな地震が起きたそうです。",
+      "questionTranslation": "根據新聞，聽說發生了大地震。",
+      "options": [
+        { "id": "n4-fill-037-correct", "text": "によると", "isCorrect": true },
+        { "id": "n4-fill-037-wrong-1", "text": "によって", "isCorrect": false },
+        { "id": "n4-fill-037-wrong-2", "text": "について", "isCorrect": false },
+        { "id": "n4-fill-037-wrong-3", "text": "において", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-037-correct",
+      "explanation": "引用消息來源時，用「〜によると／によれば」，後常接そうだ、らしい等傳聞表達。",
+      "tags": ["information-source", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-038",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "一生懸命練習した＿＿＿、うまくいきませんでした。",
+      "questionTranslation": "明明努力練習了，卻不順利。",
+      "options": [
+        { "id": "n4-fill-038-correct", "text": "のに", "isCorrect": true },
+        { "id": "n4-fill-038-wrong-1", "text": "ので", "isCorrect": false },
+        { "id": "n4-fill-038-wrong-2", "text": "から", "isCorrect": false },
+        { "id": "n4-fill-038-wrong-3", "text": "が", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-038-correct",
+      "explanation": "表示與期待相反、帶有不滿或遺憾語氣時，用「〜のに」。ので、から是正向因果關係，不帶不滿。",
+      "tags": ["contrast-regret", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-039",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "どんなに疲れ＿＿＿、毎日練習を続けます。",
+      "questionTranslation": "不管多累，每天都繼續練習。",
+      "options": [
+        { "id": "n4-fill-039-correct", "text": "ても", "isCorrect": true },
+        { "id": "n4-fill-039-wrong-1", "text": "のに", "isCorrect": false },
+        { "id": "n4-fill-039-wrong-2", "text": "たら", "isCorrect": false },
+        { "id": "n4-fill-039-wrong-3", "text": "ながら", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-039-correct",
+      "explanation": "即使前件成立，後件結果也不受影響，用「〜ても」。どんなに〜ても是固定搭配。",
+      "tags": ["concession", "grammar-n4"]
+    },
+    {
+      "id": "n4-fill-040",
+      "level": "N4",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "時間があと5分＿＿＿ありません。",
+      "questionTranslation": "只剩下5分鐘了（感覺不夠）。",
+      "options": [
+        { "id": "n4-fill-040-correct", "text": "しか", "isCorrect": true },
+        { "id": "n4-fill-040-wrong-1", "text": "だけ", "isCorrect": false },
+        { "id": "n4-fill-040-wrong-2", "text": "ばかり", "isCorrect": false },
+        { "id": "n4-fill-040-wrong-3", "text": "のみ", "isCorrect": false }
+      ],
+      "correctAnswer": "n4-fill-040-correct",
+      "explanation": "限定且帶「不夠/遺憾」語感時，用「〜しか〜ない」，後必須接否定。だけ是中性限定，不帶遺憾感。",
+      "tags": ["restriction-regret", "grammar-n4"]
     }
   ]
 }

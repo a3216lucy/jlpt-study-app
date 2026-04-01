@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, computed, inject, signal } from '@angular/core';
 import { ExamOption, ExamQuestion, ExamQuestionType } from '@features/models/exam-question.model';
 import { JlptLevel } from '@features/models/vocab.model';
-import { ExamService } from '@features/services/exam.service';
+import { ExamService, ExamSetGroupItem } from '@features/services/exam.service';
 import { ButtonModule } from 'primeng/button';
 import { ProgressBarModule } from 'primeng/progressbar';
 
@@ -13,7 +13,8 @@ interface ExamResult {
   timeSpentMs: number;
 }
 
-interface ExamTypeChoice {
+interface ExamGroupChoice {
+  id: string;
   category: 'grammar';
   type: ExamQuestionType;
   label: string;
@@ -31,8 +32,12 @@ export class LargeQuizComponent {
   private readonly wrongQuestionStorageKey = 'jlpt-app:sentence-wrong-questions';
   private examService = inject(ExamService);
 
+  readonly examGroups: readonly ExamGroupChoice[] = this.examService
+    .listExamGroups('grammar', 'sentence-fill')
+    .map((item) => this.toExamGroupChoice(item));
+
+  selectedExamGroup = signal<ExamGroupChoice['id']>(this.examGroups[0]?.id ?? 'standard-sentence-fill');
   selectedLevel = signal<JlptLevel>('N5');
-  selectedExamType = signal<ExamTypeChoice['type']>('sentence-fill');
   examTitle = signal('N5 句型填空');
   examDescription = signal('以句子填空四選一為主的句型測驗題組。');
   questions = signal<ExamQuestion[]>([]);
@@ -53,20 +58,16 @@ export class LargeQuizComponent {
   showResult = computed(() => this.started() && this.currentIndex() >= this.questions().length);
 
   readonly levels: JlptLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1'];
-  readonly examTypes: readonly ExamTypeChoice[] = [
-    {
-      category: 'grammar',
-      type: 'sentence-fill',
-      label: '句子填空',
-      description: '以完整句子挖空，四個選項中選出最適合的文型。',
-    },
-  ];
   readonly Math = Math;
   private startTime = 0;
 
+  constructor() {
+    this.syncSelectionPreview();
+  }
+
   startQuiz() {
-    const selectedType = this.currentExamType();
-    if (!this.examService.hasExamSet(selectedType.category, selectedType.type, this.selectedLevel())) {
+    const selectedGroup = this.currentExamGroup();
+    if (!selectedGroup || !this.examService.hasExamSetForGroup(selectedGroup.id, this.selectedLevel())) {
       this.loadError.set(`${this.selectedLevel()} 的句型測驗題組尚未準備完成。`);
       return;
     }
@@ -75,7 +76,7 @@ export class LargeQuizComponent {
     this.loading.set(true);
 
     this.examService
-      .getExamSet(selectedType.category, selectedType.type, this.selectedLevel())
+      .getExamSetForGroup(selectedGroup.id, this.selectedLevel())
       .subscribe({
         next: (examSet) => {
           this.examTitle.set(examSet.title);
@@ -92,7 +93,7 @@ export class LargeQuizComponent {
         error: () => {
           this.loading.set(false);
           this.loadError.set(
-            `無法載入 ${this.selectedLevel()} 句型測驗，請確認 assets/exams/grammar/${this.selectedLevel().toLowerCase()}-${selectedType.type}.json 是否存在。`,
+            `無法載入 ${this.selectedLevel()} 句型測驗，請確認對應的題組 JSON 是否存在。`,
           );
         },
       });
@@ -142,8 +143,34 @@ export class LargeQuizComponent {
   }
 
   isLevelAvailable(level: JlptLevel): boolean {
-    const selectedType = this.currentExamType();
-    return this.examService.hasExamSet(selectedType.category, selectedType.type, level);
+    return this.examService.hasExamSetForGroup(this.selectedExamGroup(), level);
+  }
+
+  selectLevel(level: JlptLevel) {
+    if (!this.isLevelAvailable(level)) {
+      return;
+    }
+
+    this.selectedLevel.set(level);
+    this.syncSelectionPreview();
+  }
+
+  selectExamGroup(examGroupId: string) {
+    const selected = this.examGroups.find((item) => item.id === examGroupId);
+    if (!selected) {
+      return;
+    }
+
+    this.selectedExamGroup.set(selected.id);
+
+    if (!this.isLevelAvailable(this.selectedLevel())) {
+      const fallbackLevel = this.examService.getAvailableLevelsForGroup(selected.id)[0];
+      if (fallbackLevel) {
+        this.selectedLevel.set(fallbackLevel);
+      }
+    }
+
+    this.syncSelectionPreview();
   }
 
   levelDescription(level: JlptLevel): string {
@@ -159,6 +186,8 @@ export class LargeQuizComponent {
       case 'N1':
         return '高階挑戰';
       case 'GEN':
+        return '綜合練習';
+      default:
         return '綜合練習';
     }
   }
@@ -208,7 +237,7 @@ export class LargeQuizComponent {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `wrong-questions-sentence-${this.selectedLevel().toLowerCase()}-${this.selectedExamType()}.json`;
+    link.download = `wrong-questions-sentence-${this.selectedLevel().toLowerCase()}-${this.selectedExamGroup()}.json`;
     link.click();
     URL.revokeObjectURL(url);
   }
@@ -265,15 +294,36 @@ export class LargeQuizComponent {
       this.wrongQuestionStorageKey,
       JSON.stringify({
         level: this.selectedLevel(),
-        type: this.selectedExamType(),
+        type: this.selectedExamGroup(),
         items: this.buildWrongQuestionExportPayload(),
         updatedAt: new Date().toISOString(),
       }),
     );
   }
 
-  private currentExamType(): ExamTypeChoice {
-    return this.examTypes.find((type) => type.type === this.selectedExamType()) ?? this.examTypes[0];
+  private currentExamGroup(): ExamGroupChoice {
+    return this.examGroups.find((group) => group.id === this.selectedExamGroup()) ?? this.examGroups[0];
+  }
+
+  private toExamGroupChoice(item: ExamSetGroupItem): ExamGroupChoice {
+    return {
+      id: item.id,
+      category: 'grammar',
+      type: item.type as ExamQuestionType,
+      label: item.label,
+      description: item.description,
+    };
+  }
+
+  private syncSelectionPreview() {
+    const selectedItem = this.examService.findExamSetForGroup(
+      this.selectedExamGroup(),
+      this.selectedLevel(),
+    );
+    const selectedGroup = this.currentExamGroup();
+
+    this.examTitle.set(selectedItem?.title ?? `${this.selectedLevel()} ${selectedGroup?.label ?? '句型測驗'}`);
+    this.examDescription.set(selectedItem?.description ?? selectedGroup?.description ?? '');
   }
 
   private randomizeQuestions(questions: ExamQuestion[]): ExamQuestion[] {

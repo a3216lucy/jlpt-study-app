@@ -134,6 +134,8 @@ export class QuizComponent {
         return '高階挑戰';
       case 'GEN':
         return '日常詞彙綜合';
+      default:
+        return '綜合練習';
     }
   }
 
@@ -146,9 +148,13 @@ export class QuizComponent {
   }
 
   playAudio() {
-    const audio = this.currentQuestion()?.audio;
-    if (!audio) return;
-    new Audio(`assets/audio/${audio}`).play();
+    const text = this.currentQuestion()?.furigana;
+    if (!text || !('speechSynthesis' in window)) return;
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'ja-JP';
+    utterance.rate = 0.85;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
   }
 
   questionHint(): string {

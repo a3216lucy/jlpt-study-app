@@ -8,6 +8,52 @@ import {
 
 @Injectable({ providedIn: 'root' })
 export class GrammarQuizService {
+  private getMeaningText(pattern: GrammarPattern): string {
+    if (pattern.meaning?.trim()) {
+      return pattern.meaning.trim();
+    }
+
+    if (pattern.meanings?.length) {
+      return pattern.meanings
+        .map((item) => item.label.trim())
+        .filter(Boolean)
+        .join('、');
+    }
+
+    return pattern.headword?.trim() || pattern.pattern;
+  }
+
+  private getStructureText(pattern: GrammarPattern): string {
+    if (pattern.structure?.trim()) {
+      return pattern.structure.trim();
+    }
+
+    if (pattern.formation?.length) {
+      return pattern.formation
+        .map((item) =>
+          [item.left, item.right ? `+ ${item.right}` : '', item.constraint ? `（${item.constraint}）` : '']
+            .filter(Boolean)
+            .join(' ')
+            .replace(/\s+/g, ' ')
+            .trim(),
+        )
+        .join(' / ');
+    }
+
+    return pattern.pattern;
+  }
+
+  private getHintText(pattern: GrammarPattern): string {
+    if (typeof pattern.notes === 'string') {
+      return pattern.notes.trim();
+    }
+
+    if (Array.isArray(pattern.notes)) {
+      return pattern.notes.filter(Boolean).join(' ');
+    }
+
+    return '';
+  }
 
   /** 純選義（看文型選中文意思） */
   generateMeaningChoice(patterns: GrammarPattern[], count = 10): GrammarQuizQuestion[] {
@@ -59,14 +105,21 @@ export class GrammarQuizService {
   // ─── Private builders ──────────────────────────────────────────
 
   private buildMeaningQuestion(pattern: GrammarPattern, allPatterns: GrammarPattern[]): GrammarQuizQuestion {
+    const meaningText = this.getMeaningText(pattern);
+    const structureText = this.getStructureText(pattern);
+    const hintText = this.getHintText(pattern);
     const distractors = this.shuffle(
       allPatterns.filter(p => p.id !== pattern.id)
     ).slice(0, 3);
 
-    const correct: GrammarQuizOption = { id: `${pattern.id}-correct`, text: pattern.meaning, isCorrect: true };
-    const options = this.shuffle([
+    const correct: GrammarQuizOption = { id: `${pattern.id}-correct`, text: meaningText, isCorrect: true };
+    const options: GrammarQuizOption[] = this.shuffle([
       correct,
-      ...distractors.map((d, i) => ({ id: `${pattern.id}-wrong-${i}`, text: d.meaning, isCorrect: false })),
+      ...distractors.map((d, i) => ({
+        id: `${pattern.id}-wrong-${i}`,
+        text: this.getMeaningText(d),
+        isCorrect: false,
+      })),
     ]);
 
     const ex = pattern.examples[0];
@@ -75,19 +128,22 @@ export class GrammarQuizService {
       level: pattern.level,
       mode: 'meaning-choice',
       prompt: pattern.pattern,
-      structure: pattern.structure,
-      hint: pattern.notes ?? '',
+      structure: structureText,
+      hint: hintText,
       options,
       correctAnswer: correct.id,
       explanation: ex
-        ? `【${pattern.pattern}】${pattern.meaning}\n結構：${pattern.structure}\n例句：${ex.jp} → ${ex.zh}`
-        : `【${pattern.pattern}】${pattern.meaning}\n結構：${pattern.structure}`,
+        ? `【${pattern.pattern}】${meaningText}\n結構：${structureText}\n例句：${ex.jp} → ${ex.zh}`
+        : `【${pattern.pattern}】${meaningText}\n結構：${structureText}`,
       examples: pattern.examples,
       sourcePatternId: pattern.id,
     };
   }
 
   private buildFillQuestion(pattern: GrammarPattern, fillablePatterns: GrammarPattern[]): GrammarQuizQuestion {
+    const meaningText = this.getMeaningText(pattern);
+    const structureText = this.getStructureText(pattern);
+    const hintText = this.getHintText(pattern);
     const blank = this.findBlank(pattern)!;
     const ex = pattern.examples.find(e => {
       const b = e.highlight ?? this.autoDetectBlank(pattern);
@@ -107,7 +163,7 @@ export class GrammarQuizService {
     ).slice(0, 3);
 
     const correct: GrammarQuizOption = { id: `${pattern.id}-correct`, text: blank, isCorrect: true };
-    const options = this.shuffle([
+    const options: GrammarQuizOption[] = this.shuffle([
       correct,
       ...distractors.map((d, i) => ({
         id: `${pattern.id}-wrong-${i}`,
@@ -121,11 +177,11 @@ export class GrammarQuizService {
       level: pattern.level,
       mode: 'sentence-fill',
       prompt: pattern.pattern,
-      structure: pattern.structure,
-      hint: pattern.notes ?? '',
+      structure: structureText,
+      hint: hintText,
       options,
       correctAnswer: correct.id,
-      explanation: `【${pattern.pattern}】${pattern.meaning}\n結構：${pattern.structure}\n正確填入：${blank}`,
+      explanation: `【${pattern.pattern}】${meaningText}\n結構：${structureText}\n正確填入：${blank}`,
       examples: pattern.examples,
       sourcePatternId: pattern.id,
       sentenceWithBlank,

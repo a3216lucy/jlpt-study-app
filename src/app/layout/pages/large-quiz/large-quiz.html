@@ -27,18 +27,18 @@
           <h2 class="text-xl font-extrabold text-slate-900">選擇句型題組</h2>
 
           <div class="mt-4 grid gap-3">
-            @for (examType of examTypes; track examType.type) {
+            @for (examGroup of examGroups; track examGroup.id) {
               <button
-                (click)="selectedExamType.set(examType.type)"
+                (click)="selectExamGroup(examGroup.id)"
                 [class]="
                   'w-full rounded-3xl border px-5 py-5 text-left transition-all duration-150 ' +
-                  (selectedExamType() === examType.type
+                  (selectedExamGroup() === examGroup.id
                     ? 'border-amber-500 bg-[linear-gradient(135deg,#fff7ed_0%,#ffffff_100%)] shadow-[0_12px_24px_rgba(245,158,11,0.16)]'
                     : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-amber-300 hover:bg-amber-50/50')
                 "
               >
-                <p class="text-base font-extrabold text-slate-900">{{ examType.label }}</p>
-                <p class="mt-1 text-sm leading-6 text-slate-500">{{ examType.description }}</p>
+                <p class="text-base font-extrabold text-slate-900">{{ examGroup.label }}</p>
+                <p class="mt-1 text-sm leading-6 text-slate-500">{{ examGroup.description }}</p>
               </button>
             }
           </div>
@@ -49,12 +49,12 @@
             Step 2
           </p>
           <h2 class="text-xl font-extrabold text-slate-900">選擇 JLPT 級別</h2>
-          <p class="mt-1 text-sm leading-6 text-slate-500">不同級別可對應不同的題組 JSON。</p>
+          <p class="mt-1 text-sm leading-6 text-slate-500">先選題組，再挑對應可用的級別。</p>
 
           <div class="mt-4 grid grid-cols-2 gap-3">
             @for (level of levels; track level) {
               <button
-                (click)="isLevelAvailable(level) && selectedLevel.set(level)"
+                (click)="isLevelAvailable(level) && selectLevel(level)"
                 [disabled]="!isLevelAvailable(level)"
                 [class]="
                   'flex w-full flex-col items-start gap-1 rounded-2xl border px-4 py-4 text-left transition-all duration-150 ' +
@@ -117,9 +117,6 @@
     <div
       class="w-full max-w-2xl rounded-[1.8rem] border border-slate-200/70 bg-white p-6 text-center shadow-[0_24px_60px_rgba(15,23,42,0.08),0_8px_20px_rgba(15,23,42,0.05)] sm:p-10"
     >
-      <div class="text-6xl">
-        {{ score() === questions().length ? '🏆' : score() >= 7 ? '🔥' : '📝' }}
-      </div>
       <h2 class="mt-4 text-2xl font-bold text-slate-900">句型測驗完成</h2>
       <p class="mt-2 text-slate-500">{{ examTitle() }} / {{ selectedLevel() }}</p>
 
@@ -152,6 +149,7 @@
       @if (score() < questions().length) {
         <div class="mt-6">
           <p-button
+            severity="warn"
             label="用錯題再練一次"
             icon="pi pi-history"
             (onClick)="retryWrongQuestions()"
@@ -270,7 +268,11 @@
           "
         >
           <p class="mb-2 font-semibold">
-            {{ results()[results().length - 1]?.isCorrect ? '✅ 答對了！' : '❌ 答錯了' }}
+            @if (results()[results().length - 1]?.isCorrect) {
+              <i class="fa-solid fa-circle-check text-green-600"></i> 答對了！
+            } @else {
+              <i class="fa-solid fa-circle-xmark text-red-500"></i> 答錯了
+            }
           </p>
           <p class="leading-7 text-slate-600">{{ currentQuestion().explanation }}</p>
         </section>

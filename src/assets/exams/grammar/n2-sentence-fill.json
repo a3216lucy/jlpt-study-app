@@ -1,0 +1,730 @@
+{
+  "id": "grammar-n2-sentence-fill",
+  "title": "N2 句型填空",
+  "description": "以 N2 常見句型為主的句子填空四選一題組。",
+  "level": "N2",
+  "category": "grammar",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n2-fill-001",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼女の話を聞いて、笑わ＿＿＿なかった。",
+      "questionTranslation": "聽了她說的話，忍不住笑了出來。",
+      "options": [
+        { "id": "n2-fill-001-correct", "text": "ずにはいられ", "isCorrect": true },
+        { "id": "n2-fill-001-wrong-1", "text": "ないではすまされ", "isCorrect": false },
+        { "id": "n2-fill-001-wrong-2", "text": "ざるをえ", "isCorrect": false },
+        { "id": "n2-fill-001-wrong-3", "text": "ないわけにはいか", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-001-correct",
+      "explanation": "「〜ずにはいられない」表示情不自禁、控制不住。動詞否定語幹+ずにはいられない。笑わずにはいられなかった＝忍不住笑出來。",
+      "tags": ["uncontrollable-emotion", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-002",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "このプロジェクトに参加した＿＿＿、最後まで責任を持つべきだ。",
+      "questionTranslation": "既然參加了這個專案，就應該負責到最後。",
+      "options": [
+        { "id": "n2-fill-002-correct", "text": "からには", "isCorrect": true },
+        { "id": "n2-fill-002-wrong-1", "text": "からこそ", "isCorrect": false },
+        { "id": "n2-fill-002-wrong-2", "text": "ものの", "isCorrect": false },
+        { "id": "n2-fill-002-wrong-3", "text": "にもかかわらず", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-002-correct",
+      "explanation": "「〜からには」表示「既然〜，就理所當然…」，強調義務或決心。前接普通形。以上は是近義書面語。",
+      "tags": ["obligation-resolution", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-003",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "あの映画は一度見る＿＿＿価値がある。",
+      "questionTranslation": "那部電影值得一看。",
+      "options": [
+        { "id": "n2-fill-003-correct", "text": "に値する", "isCorrect": true },
+        { "id": "n2-fill-003-wrong-1", "text": "べき", "isCorrect": false },
+        { "id": "n2-fill-003-wrong-2", "text": "ほどの", "isCorrect": false },
+        { "id": "n2-fill-003-wrong-3", "text": "ような", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-003-correct",
+      "explanation": "「〜に値する」表示「值得〜」，辞書形+に値する。べきは義務非評價，ほどの是程度比較，均不表示「值得」。",
+      "tags": ["worth", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-004",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "困っている人を見たら、助けない＿＿＿。",
+      "questionTranslation": "看到有困難的人，就不能不幫助他。",
+      "options": [
+        { "id": "n2-fill-004-correct", "text": "わけにはいかない", "isCorrect": true },
+        { "id": "n2-fill-004-wrong-1", "text": "はずがない", "isCorrect": false },
+        { "id": "n2-fill-004-wrong-2", "text": "ずにはいられない", "isCorrect": false },
+        { "id": "n2-fill-004-wrong-3", "text": "ことはない", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-004-correct",
+      "explanation": "「〜ないわけにはいかない」表示因社會道義或規範而不得不做某事。助けないわけにはいかない＝不能不幫。",
+      "tags": ["social-obligation", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-005",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼は医者である＿＿＿、患者に嘘をついた。",
+      "questionTranslation": "他身為醫生，卻對病人說謊。",
+      "options": [
+        { "id": "n2-fill-005-correct", "text": "にもかかわらず", "isCorrect": true },
+        { "id": "n2-fill-005-wrong-1", "text": "くせに", "isCorrect": false },
+        { "id": "n2-fill-005-wrong-2", "text": "ながら", "isCorrect": false },
+        { "id": "n2-fill-005-wrong-3", "text": "のに", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-005-correct",
+      "explanation": "「〜にもかかわらず」表示「儘管〜，卻…」，書面語逆接。くせに帶批評口吻，のに帶抱怨口吻，此處需中性書面表達。",
+      "tags": ["concession", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-006",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "試験に合格した＿＿＿、もっと勉強すればよかったと思う。",
+      "questionTranslation": "雖然通過了考試，但還是覺得應該多唸一點。",
+      "options": [
+        { "id": "n2-fill-006-correct", "text": "ものの", "isCorrect": true },
+        { "id": "n2-fill-006-wrong-1", "text": "にもかかわらず", "isCorrect": false },
+        { "id": "n2-fill-006-wrong-2", "text": "からこそ", "isCorrect": false },
+        { "id": "n2-fill-006-wrong-3", "text": "ために", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-006-correct",
+      "explanation": "「〜ものの」表示「雖然〜，但…」，承認前項事實，後項卻不如預期或有遺憾。書面語逆接。",
+      "tags": ["concession", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-007",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "あなた＿＿＿この仕事を任せられる人はいない。",
+      "questionTranslation": "除了你，沒有能被委託這份工作的人。",
+      "options": [
+        { "id": "n2-fill-007-correct", "text": "をおいて", "isCorrect": true },
+        { "id": "n2-fill-007-wrong-1", "text": "以外は", "isCorrect": false },
+        { "id": "n2-fill-007-wrong-2", "text": "を除いては", "isCorrect": false },
+        { "id": "n2-fill-007-wrong-3", "text": "のほかには", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-007-correct",
+      "explanation": "「〜をおいて（他に）…ない」表示「除了〜之外，沒有更好的…」，強調唯一性，後接否定形。以外/除いて雖也排除，但沒有這種唯一性強調。",
+      "tags": ["uniqueness", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-008",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼女の歌声は、一度聴いたら忘れ＿＿＿。",
+      "questionTranslation": "她的歌聲一旦聽過就難以忘懷。",
+      "options": [
+        { "id": "n2-fill-008-correct", "text": "がたい", "isCorrect": true },
+        { "id": "n2-fill-008-wrong-1", "text": "にくい", "isCorrect": false },
+        { "id": "n2-fill-008-wrong-2", "text": "づらい", "isCorrect": false },
+        { "id": "n2-fill-008-wrong-3", "text": "かねる", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-008-correct",
+      "explanation": "「〜がたい」表示在感情或心理上難以做某事，書面語。にくい是物理或技術上困難，づらい是個人感受上不舒服，含義不同。",
+      "tags": ["difficulty", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-009",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "今年こそ資格試験に合格する＿＿＿、毎日勉強している。",
+      "questionTranslation": "為了今年一定要通過資格考試，每天都在念書。",
+      "options": [
+        { "id": "n2-fill-009-correct", "text": "べく", "isCorrect": true },
+        { "id": "n2-fill-009-wrong-1", "text": "ために", "isCorrect": false },
+        { "id": "n2-fill-009-wrong-2", "text": "ように", "isCorrect": false },
+        { "id": "n2-fill-009-wrong-3", "text": "ことを目指して", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-009-correct",
+      "explanation": "「〜べく」是「〜するために」的書面語，表示目的，接動詞辞書形（するべく→すべく）。比ために更正式，常見於書面。",
+      "tags": ["purpose-formal", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-010",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼は優秀な学生である＿＿＿、スポーツも得意だ。",
+      "questionTranslation": "他不僅是優秀的學生，運動也很擅長。",
+      "options": [
+        { "id": "n2-fill-010-correct", "text": "うえに", "isCorrect": true },
+        { "id": "n2-fill-010-wrong-1", "text": "ばかりか", "isCorrect": false },
+        { "id": "n2-fill-010-wrong-2", "text": "のみならず", "isCorrect": false },
+        { "id": "n2-fill-010-wrong-3", "text": "だけでなく", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-010-correct",
+      "explanation": "「〜うえに」表示「不但〜，而且…」，追加同方向評價，常用於正面或負面皆同向並列。ばかりか/のみならず也對但更強調驚訝，うえに最自然。",
+      "tags": ["addition", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-011",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この機械は一度壊れた＿＿＿、修理するのが非常に難しい。",
+      "questionTranslation": "這台機器一旦壞掉，就非常難修理。",
+      "options": [
+        { "id": "n2-fill-011-correct", "text": "が最後", "isCorrect": true },
+        { "id": "n2-fill-011-wrong-1", "text": "きり", "isCorrect": false },
+        { "id": "n2-fill-011-wrong-2", "text": "とたんに", "isCorrect": false },
+        { "id": "n2-fill-011-wrong-3", "text": "てしまうと", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-011-correct",
+      "explanation": "「〜が最後」（たが最後）表示「一旦〜，就（難以挽回）…」，強調不可逆後果。きり只是「只有/就此」，とたんに是瞬間轉換，語意不同。",
+      "tags": ["irreversible", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-012",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "新しい法律の施行に＿＿＿、社内規定を改定しました。",
+      "questionTranslation": "伴隨新法律的實施，修訂了公司內部規定。",
+      "options": [
+        { "id": "n2-fill-012-correct", "text": "伴い", "isCorrect": true },
+        { "id": "n2-fill-012-wrong-1", "text": "従い", "isCorrect": false },
+        { "id": "n2-fill-012-wrong-2", "text": "つれて", "isCorrect": false },
+        { "id": "n2-fill-012-wrong-3", "text": "応じて", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-012-correct",
+      "explanation": "「〜に伴い／に伴って」表示兩事同時發生或相互伴隨，書面語。に従い是「遵照/隨著」，に応じて是「對應/根據」，含義均不同。",
+      "tags": ["simultaneous-change", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-013",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "練習すれば＿＿＿、上手になりますよ。",
+      "questionTranslation": "越練習就會越進步喔。",
+      "options": [
+        { "id": "n2-fill-013-correct", "text": "するほど", "isCorrect": true },
+        { "id": "n2-fill-013-wrong-1", "text": "するにつれて", "isCorrect": false },
+        { "id": "n2-fill-013-wrong-2", "text": "するたびに", "isCorrect": false },
+        { "id": "n2-fill-013-wrong-3", "text": "すれば", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-013-correct",
+      "explanation": "「〜ば〜ほど」表示「越〜越…」的比例關係。前面已有「練習すれば」，後面接「するほど」構成完整的ばほど句型。",
+      "tags": ["proportional", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-014",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "失敗を恐れる＿＿＿、何も挑戦できなくなる。",
+      "questionTranslation": "若因過於害怕失敗，就什麼都無法挑戰。",
+      "options": [
+        { "id": "n2-fill-014-correct", "text": "あまり", "isCorrect": true },
+        { "id": "n2-fill-014-wrong-1", "text": "ために", "isCorrect": false },
+        { "id": "n2-fill-014-wrong-2", "text": "ばかりに", "isCorrect": false },
+        { "id": "n2-fill-014-wrong-3", "text": "せいで", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-014-correct",
+      "explanation": "「〜あまり（に）」表示「因為過於〜，導致…」，強調程度過度所造成的結果。辞書形/名詞の+あまり。",
+      "tags": ["excessive-cause", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-015",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "会議の結果＿＿＿、計画を変更することになりました。",
+      "questionTranslation": "依據會議結果，決定變更計畫。",
+      "options": [
+        { "id": "n2-fill-015-correct", "text": "を受けて", "isCorrect": true },
+        { "id": "n2-fill-015-wrong-1", "text": "に基づいて", "isCorrect": false },
+        { "id": "n2-fill-015-wrong-2", "text": "によって", "isCorrect": false },
+        { "id": "n2-fill-015-wrong-3", "text": "に沿って", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-015-correct",
+      "explanation": "「〜を受けて」表示「基於〜的結果/影響，採取後續行動」，強調承接某事件的回應。に基づくは「以〜為依據」，略有不同。",
+      "tags": ["response-action", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-016",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "先生の指導の＿＿＿、この論文を完成させました。",
+      "questionTranslation": "在老師的指導下，完成了這篇論文。",
+      "options": [
+        { "id": "n2-fill-016-correct", "text": "もとで", "isCorrect": true },
+        { "id": "n2-fill-016-wrong-1", "text": "うえで", "isCorrect": false },
+        { "id": "n2-fill-016-wrong-2", "text": "おかげで", "isCorrect": false },
+        { "id": "n2-fill-016-wrong-3", "text": "によって", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-016-correct",
+      "explanation": "「〜のもとで／のもとに」表示「在〜的影響/指導/條件之下」，強調環境或支持者。おかげでは口語感謝，均不如もとで精準。",
+      "tags": ["under-condition", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-017",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この計画は、関係者全員の同意を得た＿＿＿で進めます。",
+      "questionTranslation": "本計畫在獲得所有相關人員同意後再推進。",
+      "options": [
+        { "id": "n2-fill-017-correct", "text": "うえ", "isCorrect": true },
+        { "id": "n2-fill-017-wrong-1", "text": "もとで", "isCorrect": false },
+        { "id": "n2-fill-017-wrong-2", "text": "ために", "isCorrect": false },
+        { "id": "n2-fill-017-wrong-3", "text": "以上", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-017-correct",
+      "explanation": "「〜た上で」表示「在做完〜之後，再…」，強調先完成前項再進行後項的順序。此為「得たうえで」＝得到同意之後再進行。",
+      "tags": ["precondition-sequence", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-018",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼の発言は事実に＿＿＿ものではない。",
+      "questionTranslation": "他的發言並非以事實為根據。",
+      "options": [
+        { "id": "n2-fill-018-correct", "text": "基づいた", "isCorrect": true },
+        { "id": "n2-fill-018-wrong-1", "text": "関した", "isCorrect": false },
+        { "id": "n2-fill-018-wrong-2", "text": "沿った", "isCorrect": false },
+        { "id": "n2-fill-018-wrong-3", "text": "対した", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-018-correct",
+      "explanation": "「〜に基づく／に基づいた」表示「以〜為根據、基礎」，後修飾名詞時用た形+名詞。に関した是「關於」，に沿った是「沿著/依循」。",
+      "tags": ["basis", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-019",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "予算が限られている＿＿＿、できる限りのことをしたい。",
+      "questionTranslation": "儘管預算有限，還是想盡力而為。",
+      "options": [
+        { "id": "n2-fill-019-correct", "text": "ながらも", "isCorrect": true },
+        { "id": "n2-fill-019-wrong-1", "text": "だけあって", "isCorrect": false },
+        { "id": "n2-fill-019-wrong-2", "text": "ものの", "isCorrect": false },
+        { "id": "n2-fill-019-wrong-3", "text": "から", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-019-correct",
+      "explanation": "「〜ながらも」表示「雖然〜，但仍…」，承認矛盾兩面，比ものの更口語。だけあっては「不愧是〜」，語意相反。",
+      "tags": ["concession", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-020",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "就職活動の結果、第一志望の会社に入る＿＿＿。",
+      "questionTranslation": "求職活動的結果，最終得以進入第一志願的公司。",
+      "options": [
+        { "id": "n2-fill-020-correct", "text": "に至った", "isCorrect": true },
+        { "id": "n2-fill-020-wrong-1", "text": "ことができた", "isCorrect": false },
+        { "id": "n2-fill-020-wrong-2", "text": "ようになった", "isCorrect": false },
+        { "id": "n2-fill-020-wrong-3", "text": "こととなった", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-020-correct",
+      "explanation": "「〜に至った」表示「最終達到了〜的結果」，強調一連串過程的終點，書面正式語。ことができた雖也對但缺乏過程感。",
+      "tags": ["result-process", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-021",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼女はピアノ＿＿＿、バイオリンも弾ける。",
+      "questionTranslation": "她不僅會彈鋼琴，也會拉小提琴。",
+      "options": [
+        { "id": "n2-fill-021-correct", "text": "のみならず", "isCorrect": true },
+        { "id": "n2-fill-021-wrong-1", "text": "だけでなく", "isCorrect": false },
+        { "id": "n2-fill-021-wrong-2", "text": "ばかりか", "isCorrect": false },
+        { "id": "n2-fill-021-wrong-3", "text": "どころか", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-021-correct",
+      "explanation": "「〜のみならず」是「〜だけでなく」的書面語，表示「不僅〜，連…也」。ばかりか帶驚訝語氣，どころか強調遠超預期，このみならず最書面正式。",
+      "tags": ["addition", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-022",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "子どもの頃は毎日ここで遊んだ＿＿＿だ。",
+      "questionTranslation": "小時候每天都在這裡玩，好懷念啊。",
+      "options": [
+        { "id": "n2-fill-022-correct", "text": "もの", "isCorrect": true },
+        { "id": "n2-fill-022-wrong-1", "text": "こと", "isCorrect": false },
+        { "id": "n2-fill-022-wrong-2", "text": "はず", "isCorrect": false },
+        { "id": "n2-fill-022-wrong-3", "text": "わけ", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-022-correct",
+      "explanation": "「〜たものだ」表示「以前曾經常〜」，帶有懷念或感嘆的語氣，用於回憶過去習慣性動作。",
+      "tags": ["nostalgic-habit", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-023",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この問題は一筋縄では解決できない＿＿＿だ。",
+      "questionTranslation": "這個問題本來就不是輕易能解決的。",
+      "options": [
+        { "id": "n2-fill-023-correct", "text": "もの", "isCorrect": true },
+        { "id": "n2-fill-023-wrong-1", "text": "はず", "isCorrect": false },
+        { "id": "n2-fill-023-wrong-2", "text": "こと", "isCorrect": false },
+        { "id": "n2-fill-023-wrong-3", "text": "わけ", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-023-correct",
+      "explanation": "「〜ものだ」表示「（事物的本質上）本來就是…」，表達說話人的感嘆或常識判斷。はずだ是推測/應當，わけだ是理由說明。",
+      "tags": ["general-truth", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-024",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "政府の発表＿＿＿、この政策は来年から実施されるという。",
+      "questionTranslation": "根據政府的發表，這項政策據說將從明年開始實施。",
+      "options": [
+        { "id": "n2-fill-024-correct", "text": "によると", "isCorrect": true },
+        { "id": "n2-fill-024-wrong-1", "text": "によれば", "isCorrect": false },
+        { "id": "n2-fill-024-wrong-2", "text": "に基づくと", "isCorrect": false },
+        { "id": "n2-fill-024-wrong-3", "text": "を受けて", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-024-correct",
+      "explanation": "「〜によると」表示「根據〜的消息/說法」，引述資訊來源，常與というが搭配。によればも近義，此處兩者均可，但によるとは更常見。",
+      "tags": ["information-source", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-025",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この薬は副作用が少ない＿＿＿、効果も高い。",
+      "questionTranslation": "這種藥副作用少，且效果也高。",
+      "options": [
+        { "id": "n2-fill-025-correct", "text": "うえに", "isCorrect": true },
+        { "id": "n2-fill-025-wrong-1", "text": "一方で", "isCorrect": false },
+        { "id": "n2-fill-025-wrong-2", "text": "ところが", "isCorrect": false },
+        { "id": "n2-fill-025-wrong-3", "text": "ものの", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-025-correct",
+      "explanation": "「〜うえに」追加同方向的評價（前後皆正面或皆負面）。一方では對比，ところが/ものの是逆接，均不合此語境。",
+      "tags": ["addition", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-026",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この地域は過去に何度も洪水に見舞われて＿＿＿。",
+      "questionTranslation": "這個地區過去曾多次遭受洪水侵襲。",
+      "options": [
+        { "id": "n2-fill-026-correct", "text": "きた", "isCorrect": true },
+        { "id": "n2-fill-026-wrong-1", "text": "いた", "isCorrect": false },
+        { "id": "n2-fill-026-wrong-2", "text": "いく", "isCorrect": false },
+        { "id": "n2-fill-026-wrong-3", "text": "しまった", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-026-correct",
+      "explanation": "「〜てきた」表示從過去到現在持續或累積的狀態/行為。てきた強調一直延續到說話時點，ていた強調過去某時持續，語意不同。",
+      "tags": ["continuation-from-past", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-027",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "プロジェクトの成功は、チーム全員の努力の＿＿＿だ。",
+      "questionTranslation": "專案的成功是全體成員努力的結晶。",
+      "options": [
+        { "id": "n2-fill-027-correct", "text": "たまもの", "isCorrect": true },
+        { "id": "n2-fill-027-wrong-1", "text": "おかげ", "isCorrect": false },
+        { "id": "n2-fill-027-wrong-2", "text": "結果", "isCorrect": false },
+        { "id": "n2-fill-027-wrong-3", "text": "せい", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-027-correct",
+      "explanation": "「〜の賜物（たまもの）」表示「某成果是〜的結晶/恩賜」，書面正式語，用於稱讚或感謝。せいは負面原因，不適用。",
+      "tags": ["result-gratitude", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-028",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "部長は怒って、机を叩いて＿＿＿立って行った。",
+      "questionTranslation": "部長生氣地拍了桌子就這樣站起來走了。",
+      "options": [
+        { "id": "n2-fill-028-correct", "text": "ばかりか", "isCorrect": false },
+        { "id": "n2-fill-028-wrong-1", "text": "ばかりに", "isCorrect": false },
+        { "id": "n2-fill-028-wrong-2", "text": "そのまま", "isCorrect": true },
+        { "id": "n2-fill-028-wrong-3", "text": "あまりに", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-028-wrong-2",
+      "explanation": "「そのまま」表示「就那樣、保持原狀」，描述不改變狀態地進行下一動作。叩いてそのまま立って行った＝拍完桌就那樣離席。",
+      "tags": ["unchanged-state", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-029",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この仕事は簡単そうに見える＿＿＿、実はとても難しい。",
+      "questionTranslation": "這份工作看起來容易，實際上卻非常難。",
+      "options": [
+        { "id": "n2-fill-029-correct", "text": "ものの", "isCorrect": true },
+        { "id": "n2-fill-029-wrong-1", "text": "から", "isCorrect": false },
+        { "id": "n2-fill-029-wrong-2", "text": "ので", "isCorrect": false },
+        { "id": "n2-fill-029-wrong-3", "text": "ために", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-029-correct",
+      "explanation": "「〜ものの」表示「雖然〜但…」，承認前項事實，後項出乎意料，書面語色彩。から/ので/ために均是順接原因，不適合逆接語境。",
+      "tags": ["concession", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-030",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "料理が下手な＿＿＿、毎日自炊している。",
+      "questionTranslation": "儘管不擅長做菜，每天還是自己煮。",
+      "options": [
+        { "id": "n2-fill-030-correct", "text": "ながらも", "isCorrect": true },
+        { "id": "n2-fill-030-wrong-1", "text": "くせに", "isCorrect": false },
+        { "id": "n2-fill-030-wrong-2", "text": "のに", "isCorrect": false },
+        { "id": "n2-fill-030-wrong-3", "text": "にもかかわらず", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-030-correct",
+      "explanation": "「〜ながらも」接形容詞語幹+ながらも，表示「雖然〜，但…」。くせに帶批評語氣，のに帶抱怨，此處自述用ながらも最中性自然。",
+      "tags": ["concession", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-031",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼は仕事が忙しいのを＿＿＿にして、家族との時間を大切にしない。",
+      "questionTranslation": "他以工作忙碌為藉口，不重視與家人相處的時間。",
+      "options": [
+        { "id": "n2-fill-031-correct", "text": "口実", "isCorrect": true },
+        { "id": "n2-fill-031-wrong-1", "text": "理由", "isCorrect": false },
+        { "id": "n2-fill-031-wrong-2", "text": "言い訳", "isCorrect": false },
+        { "id": "n2-fill-031-wrong-3", "text": "きっかけ", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-031-correct",
+      "explanation": "「〜を口実にして」表示「以〜為藉口（其實是不情願或逃避）」，帶有批評意味。理由是中性說明，言い訳是辯解，きっかけは契機，均語意不同。",
+      "tags": ["pretext", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-032",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼女は親切な人で、困っている人を見ると放っておけない＿＿＿だ。",
+      "questionTranslation": "她是個親切的人，看到有人有困難就天生放不下不管。",
+      "options": [
+        { "id": "n2-fill-032-correct", "text": "性分", "isCorrect": true },
+        { "id": "n2-fill-032-wrong-1", "text": "はず", "isCorrect": false },
+        { "id": "n2-fill-032-wrong-2", "text": "べき", "isCorrect": false },
+        { "id": "n2-fill-032-wrong-3", "text": "もの", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-032-correct",
+      "explanation": "「〜性分（しょうぶん）だ」表示某人天生的性格或習慣。放っておけない性分だ＝天生就是放不下不管的個性。",
+      "tags": ["disposition", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-033",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "いくら謝っても、彼女の怒りは収まる＿＿＿、むしろひどくなった。",
+      "questionTranslation": "無論怎麼道歉，她的怒氣不但沒有消退，反而更嚴重了。",
+      "options": [
+        { "id": "n2-fill-033-correct", "text": "どころか", "isCorrect": true },
+        { "id": "n2-fill-033-wrong-1", "text": "ものの", "isCorrect": false },
+        { "id": "n2-fill-033-wrong-2", "text": "にもかかわらず", "isCorrect": false },
+        { "id": "n2-fill-033-wrong-3", "text": "けれども", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-033-correct",
+      "explanation": "「〜どころか」表示「不但沒有〜，反而…」，強烈逆接並帶有超乎預期的意味。ものの/にもかかわらずは單純逆接，語氣不如どころか強烈。",
+      "tags": ["escalation", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-034",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "社長に直接報告するのは気が＿＿＿が、それしか方法がない。",
+      "questionTranslation": "雖然直接向社長報告讓人不太自在，但也沒有其他辦法了。",
+      "options": [
+        { "id": "n2-fill-034-correct", "text": "引ける", "isCorrect": true },
+        { "id": "n2-fill-034-wrong-1", "text": "重い", "isCorrect": false },
+        { "id": "n2-fill-034-wrong-2", "text": "乗らない", "isCorrect": false },
+        { "id": "n2-fill-034-wrong-3", "text": "遠い", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-034-correct",
+      "explanation": "「気が引ける」是慣用語，表示「感到不自在/有點難為情」。気が重いは「心情沉重」，気が乗らないは「提不起勁」，均語感不同。",
+      "tags": ["idiom", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-035",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "その映画を観て、若い頃の自分を思い出さ＿＿＿なかった。",
+      "questionTranslation": "看了那部電影，忍不住想起了年輕時的自己。",
+      "options": [
+        { "id": "n2-fill-035-correct", "text": "ずにはいられ", "isCorrect": true },
+        { "id": "n2-fill-035-wrong-1", "text": "ないではいられ", "isCorrect": false },
+        { "id": "n2-fill-035-wrong-2", "text": "ざるをえ", "isCorrect": false },
+        { "id": "n2-fill-035-wrong-3", "text": "ないわけにはいか", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-035-correct",
+      "explanation": "「〜ずにはいられない」表示情不自禁。思い出さずにはいられなかった＝忍不住想起。ざるをえないは外部強制，語意不同。",
+      "tags": ["uncontrollable-emotion", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-036",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この工事は来月＿＿＿完成する予定です。",
+      "questionTranslation": "這項工程預定在下個月內完成。",
+      "options": [
+        { "id": "n2-fill-036-correct", "text": "中に", "isCorrect": true },
+        { "id": "n2-fill-036-wrong-1", "text": "までに", "isCorrect": false },
+        { "id": "n2-fill-036-wrong-2", "text": "まで", "isCorrect": false },
+        { "id": "n2-fill-036-wrong-3", "text": "のうちに", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-036-correct",
+      "explanation": "「〜中（じゅう/ちゅう）に」表示「在〜之內（某時間段內）」。来月中に＝在整個下個月的某個時間點。までには「在〜之前」截止點，語意不同。",
+      "tags": ["time-within", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-037",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "料理が得意ではないが、簡単なものなら作れ＿＿＿。",
+      "questionTranslation": "雖然不擅長做菜，簡單的東西也不是不能做。",
+      "options": [
+        { "id": "n2-fill-037-correct", "text": "ないこともない", "isCorrect": true },
+        { "id": "n2-fill-037-wrong-1", "text": "ないはずだ", "isCorrect": false },
+        { "id": "n2-fill-037-wrong-2", "text": "ないわけがない", "isCorrect": false },
+        { "id": "n2-fill-037-wrong-3", "text": "ないものだ", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-037-correct",
+      "explanation": "「〜ないこともない」是雙重否定，委婉表示「也不是不能〜、還是可以〜的」。比直接說「できる」更婉轉謙遜。",
+      "tags": ["double-negative", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-038",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "この仕事は彼にしか＿＿＿。",
+      "questionTranslation": "這份工作只有他能做。",
+      "options": [
+        { "id": "n2-fill-038-correct", "text": "できない", "isCorrect": true },
+        { "id": "n2-fill-038-wrong-1", "text": "できる", "isCorrect": false },
+        { "id": "n2-fill-038-wrong-2", "text": "できるわけだ", "isCorrect": false },
+        { "id": "n2-fill-038-wrong-3", "text": "できないはずだ", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-038-correct",
+      "explanation": "「〜しか〜ない」表示「只有〜」，是強調唯一性的限定表達。彼にしかできない＝只有他才做得到。",
+      "tags": ["limitation", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-039",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼は何事もなかった＿＿＿に振る舞った。",
+      "questionTranslation": "他裝作什麼事都沒發生一樣。",
+      "options": [
+        { "id": "n2-fill-039-correct", "text": "かのよう", "isCorrect": true },
+        { "id": "n2-fill-039-wrong-1", "text": "ような", "isCorrect": false },
+        { "id": "n2-fill-039-wrong-2", "text": "らしく", "isCorrect": false },
+        { "id": "n2-fill-039-wrong-3", "text": "そうに", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-039-correct",
+      "explanation": "「〜かのように」表示「就像〜似的（實際上不是）」，強調虛假的樣子。ような只是比喻，らしい是推測，そうに是外觀感受，均不強調假裝。",
+      "tags": ["pretense", "grammar-n2"]
+    },
+    {
+      "id": "n2-fill-040",
+      "level": "N2",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼の失敗は経験不足に＿＿＿。",
+      "questionTranslation": "他的失敗不過是因為經驗不足。",
+      "options": [
+        { "id": "n2-fill-040-correct", "text": "すぎない", "isCorrect": true },
+        { "id": "n2-fill-040-wrong-1", "text": "よる", "isCorrect": false },
+        { "id": "n2-fill-040-wrong-2", "text": "かかわる", "isCorrect": false },
+        { "id": "n2-fill-040-wrong-3", "text": "おける", "isCorrect": false }
+      ],
+      "correctAnswer": "n2-fill-040-correct",
+      "explanation": "「〜にすぎない」表示「不過是〜、只不過是〜」，降低重要性或程度。経験不足にすぎない＝不過是經驗不足而已。",
+      "tags": ["minimization", "grammar-n2"]
+    }
+  ]
+}

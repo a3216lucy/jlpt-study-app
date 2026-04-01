@@ -1,0 +1,375 @@
+[
+  {
+    "id": "n3-zo",
+    "level": "N3",
+    "pattern": "〜ぞ",
+    "headword": "ぞ",
+    "meanings": [
+      { "id": "warning", "label": "叮囑、警告" },
+      { "id": "self-talk", "label": "自言自語的判斷" }
+    ],
+    "category": ["particle", "ending"],
+    "register": "spoken",
+    "formation": [
+      {
+        "left": "小句簡體形",
+        "right": "ぞ",
+        "constraint": "多見於男性口語"
+      }
+    ],
+    "usages": [
+      {
+        "id": "n3-zo-usage-warning",
+        "meaningId": "warning",
+        "notes": ["主要用於上級對下級，或長輩對晚輩。"]
+      },
+      {
+        "id": "n3-zo-usage-self-talk",
+        "meaningId": "self-talk",
+        "notes": ["用於自言自語時，是將決定或判斷的事情說給自己聽。"]
+      }
+    ],
+    "notes": [
+      "男性用語，主要用於上級對下級，或長輩對晚輩。",
+      "用於自言自語時，是將決定或判斷的事情說給自己聽。"
+    ],
+    "examples": [
+      {
+        "id": "ex-zo-001",
+        "usageId": "n3-zo-usage-warning",
+        "jp": "危ないぞ。足元に注意しろ。",
+        "zh": "危險！注意腳下！",
+        "blank": "危ない＿＿。足元に注意しろ。",
+        "answer": "ぞ",
+        "explanation": "此處用於警告對方注意安全。"
+      }
+    ],
+    "source": [{ "title": "Day25 助詞", "page": 1 }],
+    "tags": ["warning", "male-speech", "self-talk"]
+  },
+  {
+    "id": "n3-datte",
+    "level": "N3",
+    "pattern": "〜だって",
+    "headword": "だって",
+    "meanings": [
+      { "id": "universal", "label": "無論...都" },
+      { "id": "even", "label": "連...也／就算...也" }
+    ],
+    "category": ["particle"],
+    "register": "spoken",
+    "formation": [
+      { "left": "疑問詞(+助詞)", "right": "だって" },
+      { "left": "名詞(+助詞)", "right": "だって" }
+    ],
+    "usages": [
+      {
+        "id": "n3-datte-usage-spoken-demo",
+        "meaningId": "even",
+        "notes": [
+          "是「〜でも」的口語形式。",
+          "表示全面肯定，或舉出極端事例暗示其他就更不用說了。"
+        ]
+      }
+    ],
+    "notes": [
+      "是「〜でも」的口語形式。",
+      "表示全面肯定，或舉出極端事例暗示其他就更不用說了。"
+    ],
+    "examples": [
+      {
+        "id": "ex-datte-001",
+        "usageId": "n3-datte-usage-spoken-demo",
+        "jp": "この問題は難しくて、先生だって分かりません。",
+        "zh": "這個問題很難，就連老師也不會。",
+        "blank": "この問題は難しくて、先生＿＿分かりません。",
+        "answer": "だって",
+        "explanation": "舉出老師這個極端事例來表示困難程度。"
+      }
+    ],
+    "source": [{ "title": "Day25 助詞", "page": 1 }],
+    "tags": ["emphasis", "spoken", "even"]
+  },
+  {
+    "id": "n3-de",
+    "level": "N3",
+    "pattern": "〜で",
+    "headword": "で",
+    "meanings": [
+      { "id": "reason", "label": "依據或理由" },
+      { "id": "trigger", "label": "通過／以...為契機" }
+    ],
+    "category": ["particle"],
+    "register": "neutral",
+    "formation": [
+      { "left": "名詞", "right": "で" },
+      { "left": "動詞簡體形 + こと", "right": "で" }
+    ],
+    "usages": [
+      {
+        "id": "n3-de-usage-reason-trigger",
+        "meaningId": "trigger",
+        "notes": ["表示產生某種結果的依據、理由或途徑。"]
+      }
+    ],
+    "notes": ["表示產生某種結果的依據、理由或途徑。"],
+    "examples": [
+      {
+        "id": "ex-de-001",
+        "usageId": "n3-de-usage-reason-trigger",
+        "jp": "中山さんは作文コンテストで受賞したことで、作家を目指して頑張っていくと言った。",
+        "zh": "中山說，以作文比賽獲獎為契機，自己將來要以作家為目標而努力。",
+        "blank": "作文コンテストで受賞したこと＿＿、作家を目指す。",
+        "answer": "で",
+        "explanation": "「こと＋で」表示獲獎這個理由或契機。"
+      }
+    ],
+    "source": [{ "title": "Day25 助詞", "page": 2 }],
+    "tags": ["reason", "method"]
+  },
+  {
+    "id": "n3-nante-nanka",
+    "level": "N3",
+    "pattern": "〜など/なんか/なんて",
+    "headword": "なんて",
+    "meanings": [
+      { "id": "listing", "label": "...之類的" },
+      { "id": "surprise", "label": "竟然" },
+      { "id": "dismissive", "label": "像...這種（輕視）" }
+    ],
+    "category": ["particle"],
+    "register": "spoken",
+    "formation": [
+      { "left": "名詞/形容詞/動詞簡體", "right": "など/なんか/なんて" }
+    ],
+    "usages": [
+      {
+        "id": "n3-nante-usage-colloquial",
+        "meaningId": "listing",
+        "notes": ["「など」的口語形式是「なんか／なんて」。"]
+      },
+      {
+        "id": "n3-nante-usage-surprise",
+        "meaningId": "surprise",
+        "notes": ["「なんて」可額外表示驚訝或出乎意料。"]
+      },
+      {
+        "id": "n3-nante-usage-attitude",
+        "meaningId": "dismissive",
+        "notes": ["用於自己時含謙遜口吻，用於他人則帶有輕蔑感。"]
+      }
+    ],
+    "notes": [
+      "「など」的口語形式是「なんか／なんて」。",
+      "「なんて」可額外表示驚訝或出乎意料。",
+      "用於自己時含謙遜口吻，用於他人則帶有輕蔑感。"
+    ],
+    "examples": [
+      {
+        "id": "ex-nante-001",
+        "usageId": "n3-nante-usage-surprise",
+        "jp": "あの俳優は元首相の息子さんなんて、驚いてしまった。",
+        "zh": "那個演員竟然是前首相的兒子，真讓人吃驚。",
+        "blank": "あの俳優は元首相の息子さん＿＿、驚いてしまった。",
+        "answer": "なんて",
+        "explanation": "此處「なんて」表示對意外事實的驚訝。"
+      }
+    ],
+    "source": [
+      { "title": "Day25 助詞", "page": 2 },
+      { "title": "Day25 助詞", "page": 3 }
+    ],
+    "tags": ["surprise", "listing", "humble", "scorn"]
+  },
+  {
+    "id": "n3-ni",
+    "level": "N3",
+    "pattern": "〜に",
+    "headword": "に",
+    "meanings": [
+      { "id": "as", "label": "作為" },
+      { "id": "psychological-cause", "label": "由於...而（心理原因）" },
+      { "id": "addition", "label": "累加" }
+    ],
+    "category": ["particle"],
+    "register": "neutral",
+    "formation": [{ "left": "名詞", "right": "に" }],
+    "usages": [
+      {
+        "id": "n3-ni-usage-as",
+        "meaningId": "as",
+        "notes": ["第一種用法相當於「〜として」。"]
+      },
+      {
+        "id": "n3-ni-usage-psychological-cause",
+        "meaningId": "psychological-cause",
+        "notes": ["表示心理活動的原因，句末常伴隨心理動詞如「驚く」。"]
+      },
+      {
+        "id": "n3-ni-usage-addition",
+        "meaningId": "addition",
+        "notes": ["表示同類事物的累加。"]
+      }
+    ],
+    "notes": [
+      "第一種用法相當於「〜として」。",
+      "第二種表示心理活動的原因，句末常伴隨心理動詞如「驚く」。",
+      "第三種表示同類事物的累加。"
+    ],
+    "examples": [
+      {
+        "id": "ex-ni-001",
+        "usageId": "n3-ni-usage-as",
+        "jp": "父の誕生日祝いにネクタイをあげた。",
+        "zh": "作為父親的生日禮物，我送了領帶給他。",
+        "blank": "父の誕生日祝い＿＿ネクタイをあげた。",
+        "answer": "に",
+        "explanation": "此處「に」表示「作為...」的意思。"
+      }
+    ],
+    "source": [{ "title": "Day25 助詞", "page": 4 }],
+    "tags": ["purpose", "reason", "listing"]
+  },
+  {
+    "id": "n3-nite",
+    "level": "N3",
+    "pattern": "〜にて",
+    "headword": "にて",
+    "meanings": [
+      { "id": "location", "label": "在（場所）" },
+      { "id": "method", "label": "用／以（手段）" },
+      { "id": "time-limit", "label": "於（結束時間）" }
+    ],
+    "category": ["particle"],
+    "register": "formal",
+    "formation": [{ "left": "名詞", "right": "にて" }],
+    "usages": [
+      {
+        "id": "n3-nite-usage-formal",
+        "meaningId": "method",
+        "notes": [
+          "主要用於鄭重的書信或正式場合，是「で」的書面語。",
+          "可用於表示事情發生的場所、工具、手段或截止日期。"
+        ]
+      }
+    ],
+    "notes": [
+      "主要用於鄭重的書信或正式場合，是「で」的書面語。",
+      "可用於表示事情發生的場所、工具、手段或截止日期。"
+    ],
+    "examples": [
+      {
+        "id": "ex-nite-001",
+        "usageId": "n3-nite-usage-formal",
+        "jp": "審査の結果は書面にてお知らせ申し上げます。",
+        "zh": "用書面形式通知審查結果。",
+        "blank": "審査の結果は書面＿＿お知らせ申し上げます。",
+        "answer": "にて",
+        "explanation": "此處表示通過某種手段，屬於正式書面語。"
+      }
+    ],
+    "source": [{ "title": "Day25 助詞", "page": 4 }],
+    "tags": ["formal", "location", "method"]
+  },
+  {
+    "id": "n3-no",
+    "level": "N3",
+    "pattern": "〜の",
+    "headword": "の",
+    "meanings": [
+      { "id": "question", "label": "表示疑問" },
+      { "id": "assertion", "label": "輕微斷定" },
+      { "id": "command", "label": "輕微命令" }
+    ],
+    "category": ["particle", "ending"],
+    "register": "spoken",
+    "formation": [
+      { "left": "名詞/ナ形 + な", "right": "の" },
+      { "left": "イ形/動詞簡體形", "right": "の" }
+    ],
+    "usages": [
+      {
+        "id": "n3-no-usage-question",
+        "meaningId": "question",
+        "notes": ["表示疑問時讀升調，語氣比「か」柔和，多為女性和兒童使用。"]
+      },
+      {
+        "id": "n3-no-usage-assertion",
+        "meaningId": "assertion",
+        "notes": ["表示輕微斷定時讀降調，常以「のよ／のね」形式出現。"]
+      },
+      {
+        "id": "n3-no-usage-command",
+        "meaningId": "command",
+        "notes": ["也可用於表示你得／你要...的命令口吻。"]
+      }
+    ],
+    "notes": [
+      "表示疑問時讀升調，語氣比「か」柔和，多為女性和兒童使用。",
+      "表示輕微斷定時讀降調，常以「のよ／のね」形式出現。",
+      "也可用於表示你得／你要...的命令口吻。"
+    ],
+    "examples": [
+      {
+        "id": "ex-no-001",
+        "usageId": "n3-no-usage-command",
+        "jp": "さっさと起きるの。",
+        "zh": "快點起床。",
+        "blank": "さっさと起きる＿＿。",
+        "answer": "の",
+        "explanation": "此處「の」用於口語中的輕微命令。"
+      }
+    ],
+    "source": [{ "title": "Day25 助詞", "page": 5 }],
+    "tags": ["question", "assertion", "command", "female-speech"]
+  },
+  {
+    "id": "n3-yori",
+    "level": "N3",
+    "pattern": "〜より",
+    "headword": "より",
+    "meanings": [
+      { "id": "starting-point", "label": "起點（人／時／空）" },
+      { "id": "comparison", "label": "比較（與其...還是）" }
+    ],
+    "category": ["particle"],
+    "register": "neutral",
+    "formation": [
+      { "left": "名詞", "right": "より" },
+      { "left": "動詞基本形", "right": "より" }
+    ],
+    "usages": [
+      {
+        "id": "n3-yori-usage-starting-point",
+        "meaningId": "starting-point",
+        "notes": ["可用於表示人物、時間或場所的起點。"]
+      },
+      {
+        "id": "n3-yori-usage-comparison",
+        "meaningId": "comparison",
+        "notes": [
+          "在比較句中，常與副詞「むしろ」搭配使用。",
+          "N3 階段新增了接續動詞簡體形的比較用法。"
+        ]
+      }
+    ],
+    "notes": [
+      "可用於表示人物、時間或場所的起點。",
+      "在比較句中，常與副詞「むしろ」搭配使用。",
+      "N3 階段新增了接續動詞簡體形的比較用法。"
+    ],
+    "examples": [
+      {
+        "id": "ex-yori-001",
+        "usageId": "n3-yori-usage-comparison",
+        "jp": "外出するより、むしろ家でゆっくり休みたいです。",
+        "zh": "與其外出，我還是更想待在家裡。",
+        "blank": "外出する＿＿、むしろ家で休みたい。",
+        "answer": "より",
+        "explanation": "此處表示與其...相比，帶有選擇取捨的語氣。"
+      }
+    ],
+    "source": [{ "title": "Day25 助詞", "page": 5 }],
+    "tags": ["comparison", "starting-point"]
+  }
+]
