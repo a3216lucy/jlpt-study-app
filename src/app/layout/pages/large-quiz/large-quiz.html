@@ -1,4 +1,4 @@
-@if (!started()) {
+@if (!store.started()) {
   <div
     class="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(245,158,11,0.18),transparent_32%),linear-gradient(180deg,#fffaf2_0%,#f8fafc_100%)] p-6"
   >
@@ -27,12 +27,12 @@
           <h2 class="text-xl font-extrabold text-slate-900">選擇句型題組</h2>
 
           <div class="mt-4 grid gap-3">
-            @for (examGroup of examGroups; track examGroup.id) {
+            @for (examGroup of store.examGroups; track examGroup.id) {
               <button
-                (click)="selectExamGroup(examGroup.id)"
+                (click)="store.selectExamGroup(examGroup.id)"
                 [class]="
                   'w-full rounded-3xl border px-5 py-5 text-left transition-all duration-150 ' +
-                  (selectedExamGroup() === examGroup.id
+                  (store.selectedExamGroup() === examGroup.id
                     ? 'border-amber-500 bg-[linear-gradient(135deg,#fff7ed_0%,#ffffff_100%)] shadow-[0_12px_24px_rgba(245,158,11,0.16)]'
                     : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-amber-300 hover:bg-amber-50/50')
                 "
@@ -54,13 +54,13 @@
           <div class="mt-4 grid grid-cols-2 gap-3">
             @for (level of levels; track level) {
               <button
-                (click)="isLevelAvailable(level) && selectLevel(level)"
-                [disabled]="!isLevelAvailable(level)"
+                (click)="store.isLevelAvailable(level) && store.selectLevel(level)"
+                [disabled]="!store.isLevelAvailable(level)"
                 [class]="
                   'flex w-full flex-col items-start gap-1 rounded-2xl border px-4 py-4 text-left transition-all duration-150 ' +
-                  (!isLevelAvailable(level)
+                  (!store.isLevelAvailable(level)
                     ? 'cursor-not-allowed border-slate-200 bg-slate-50 text-slate-400 opacity-70'
-                    : selectedLevel() === level
+                    : store.selectedLevel() === level
                       ? 'border-amber-500 bg-[linear-gradient(135deg,#fff7ed_0%,#ffffff_100%)] shadow-[0_12px_24px_rgba(245,158,11,0.16)]'
                       : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-amber-300 hover:bg-amber-50/60 hover:shadow-[0_10px_20px_rgba(245,158,11,0.10)]')
                 "
@@ -68,10 +68,10 @@
                 <span class="text-base font-extrabold text-slate-800">{{ level }}</span>
                 <span
                   [class]="
-                    'text-sm ' + (isLevelAvailable(level) ? 'text-slate-500' : 'text-slate-400')
+                    'text-sm ' + (store.isLevelAvailable(level) ? 'text-slate-500' : 'text-slate-400')
                   "
                 >
-                  {{ isLevelAvailable(level) ? levelDescription(level) : '題組準備中' }}
+                  {{ store.isLevelAvailable(level) ? levelDescription(level) : '題組準備中' }}
                 </span>
               </button>
             }
@@ -80,20 +80,20 @@
           <div
             class="mt-5 rounded-3xl border border-dashed border-amber-200 bg-amber-50/60 p-4 text-sm text-slate-700"
           >
-            <p class="font-semibold text-slate-900">{{ examTitle() }}</p>
-            <p class="mt-1 leading-6 text-slate-600">{{ examDescription() }}</p>
+            <p class="font-semibold text-slate-900">{{ store.examTitle() }}</p>
+            <p class="mt-1 leading-6 text-slate-600">{{ store.examDescription() }}</p>
             <p class="mt-3 text-xs font-medium uppercase tracking-[0.08em] text-amber-700">
-              目前級別 {{ selectedLevel() }}
+              目前級別 {{ store.selectedLevel() }}
             </p>
           </div>
         </section>
       </div>
 
-      @if (loadError()) {
+      @if (store.loadError()) {
         <div
           class="relative z-10 mt-6 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700"
         >
-          {{ loadError() }}
+          {{ store.loadError() }}
         </div>
       }
 
@@ -101,8 +101,8 @@
         <p-button
           label="開始句型測驗"
           icon="pi pi-play"
-          [loading]="loading()"
-          (onClick)="startQuiz()"
+          [loading]="store.loading()"
+          (onClick)="store.startQuiz()"
           styleClass="w-full justify-center text-lg py-3"
         />
       </div>
@@ -110,7 +110,7 @@
   </div>
 }
 
-@if (showResult()) {
+@if (store.showResult()) {
   <div
     class="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(245,158,11,0.18),transparent_32%),linear-gradient(180deg,#fffaf2_0%,#f8fafc_100%)] p-6"
   >
@@ -118,21 +118,21 @@
       class="w-full max-w-2xl rounded-[1.8rem] border border-slate-200/70 bg-white p-6 text-center shadow-[0_24px_60px_rgba(15,23,42,0.08),0_8px_20px_rgba(15,23,42,0.05)] sm:p-10"
     >
       <h2 class="mt-4 text-2xl font-bold text-slate-900">句型測驗完成</h2>
-      <p class="mt-2 text-slate-500">{{ examTitle() }} / {{ selectedLevel() }}</p>
+      <p class="mt-2 text-slate-500">{{ store.examTitle() }} / {{ store.selectedLevel() }}</p>
 
       <div class="mt-6 text-5xl font-black text-amber-600">
-        {{ score() }}
-        <span class="text-2xl font-semibold text-slate-300">/ {{ questions().length }}</span>
+        {{ store.score() }}
+        <span class="text-2xl font-semibold text-slate-300">/ {{ store.questions().length }}</span>
       </div>
       <p class="mt-2 text-slate-500">
-        正確率 {{ Math.round((score() / questions().length) * 100) }}%
+        正確率 {{ Math.round((store.score() / store.questions().length) * 100) }}%
       </p>
 
       <div class="mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-5 text-left">
         <h3 class="text-base font-bold text-slate-900">錯題回顧</h3>
-        @for (result of results(); track result.questionId) {
+        @for (result of store.results(); track result.questionId) {
           @if (!result.isCorrect) {
-            @let question = questions()[results().indexOf(result)];
+            @let question = store.questions()[store.results().indexOf(result)];
             <div class="mt-3 rounded-2xl border border-red-200 bg-red-50 p-4">
               <p class="text-sm font-semibold text-slate-900">
                 {{ question.questionText || question.prompt }}
@@ -146,20 +146,20 @@
         }
       </div>
 
-      @if (score() < questions().length) {
+      @if (store.score() < store.questions().length) {
         <div class="mt-6">
           <p-button
             severity="warn"
             label="用錯題再練一次"
             icon="pi pi-history"
-            (onClick)="retryWrongQuestions()"
+            (onClick)="store.retryWrongQuestions()"
             styleClass="mb-3 w-full justify-center"
           />
           <p-button
             label="下載錯題 JSON"
             icon="pi pi-download"
             severity="secondary"
-            (onClick)="exportWrongQuestions()"
+            (onClick)="store.exportWrongQuestions()"
             styleClass="w-full justify-center"
           />
         </div>
@@ -169,7 +169,7 @@
         <p-button
           label="再來一次"
           icon="pi pi-refresh"
-          (onClick)="restart()"
+          (onClick)="store.restart()"
           styleClass="w-full justify-center"
         />
       </div>
@@ -177,7 +177,7 @@
   </div>
 }
 
-@if (started() && !showResult()) {
+@if (store.started() && !store.showResult()) {
   <div
     class="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(245,158,11,0.18),transparent_32%),linear-gradient(180deg,#fffaf2_0%,#f8fafc_100%)] p-4 sm:p-6"
   >
@@ -188,23 +188,23 @@
         <div class="mb-3 flex items-center justify-between gap-3">
           <div class="flex items-center gap-3">
             <span class="text-sm text-slate-500"
-              >第 {{ currentIndex() + 1 }} 題 / 共 {{ questions().length }} 題</span
+              >第 {{ store.currentIndex() + 1 }} 題 / 共 {{ store.questions().length }} 題</span
             >
             <span
               class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-sm font-semibold text-amber-700"
             >
-              {{ selectedLevel() }} 句型測驗
+              {{ store.selectedLevel() }} 句型測驗
             </span>
           </div>
           <button
             type="button"
-            (click)="quitQuiz()"
+            (click)="store.restart()"
             class="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900"
           >
             返回選單
           </button>
         </div>
-        <p-progressbar [value]="progress()" [showValue]="false" />
+        <p-progressbar [value]="store.progress()" [showValue]="false" />
       </div>
 
       <section
@@ -216,14 +216,14 @@
           題目
         </div>
         <p class="text-sm font-semibold uppercase tracking-[0.08em] text-slate-400">
-          {{ currentQuestion().prompt }}
+          {{ store.currentQuestion().prompt }}
         </p>
         <h2 class="mt-4 text-3xl font-black leading-relaxed text-slate-900 sm:text-4xl">
-          {{ currentQuestion().questionText || currentQuestion().prompt }}
+          {{ store.currentQuestion().questionText || store.currentQuestion().prompt }}
         </h2>
-        @if (currentQuestion().questionTranslation) {
+        @if (store.currentQuestion().questionTranslation) {
           <p class="mt-4 text-base leading-7 text-slate-500">
-            {{ currentQuestion().questionTranslation }}
+            {{ store.currentQuestion().questionTranslation }}
           </p>
         }
       </section>
@@ -235,10 +235,10 @@
           四選一
         </div>
         <div class="grid grid-cols-1 gap-3">
-          @for (option of currentQuestion().options; track option.id) {
+          @for (option of store.currentQuestion().options; track option.id) {
             <button
-              (click)="selectOption(option)"
-              [disabled]="answered()"
+              (click)="store.selectOption(option)"
+              [disabled]="store.answered()"
               [class]="
                 'flex w-full items-center gap-4 rounded-2xl border-2 px-4 py-4 text-left text-base font-semibold transition-all duration-150 ' +
                 optionCardClass(option)
@@ -258,30 +258,30 @@
         </div>
       </section>
 
-      @if (answered()) {
+      @if (store.answered()) {
         <section
           [class]="
             'mb-5 rounded-2xl border p-4 text-sm ' +
-            (results()[results().length - 1]?.isCorrect
+            (store.results()[store.results().length - 1]?.isCorrect
               ? 'border-green-200 bg-green-50'
               : 'border-red-200 bg-red-50')
           "
         >
           <p class="mb-2 font-semibold">
-            @if (results()[results().length - 1]?.isCorrect) {
+            @if (store.results()[store.results().length - 1]?.isCorrect) {
               <i class="fa-solid fa-circle-check text-green-600"></i> 答對了！
             } @else {
               <i class="fa-solid fa-circle-xmark text-red-500"></i> 答錯了
             }
           </p>
-          <p class="leading-7 text-slate-600">{{ currentQuestion().explanation }}</p>
+          <p class="leading-7 text-slate-600">{{ store.currentQuestion().explanation }}</p>
         </section>
 
         <p-button
-          [label]="isLast() ? '查看結果' : '下一題'"
-          [icon]="isLast() ? 'pi pi-check' : 'pi pi-arrow-right'"
+          [label]="store.isLast() ? '查看結果' : '下一題'"
+          [icon]="store.isLast() ? 'pi pi-check' : 'pi pi-arrow-right'"
           iconPos="right"
-          (onClick)="next()"
+          (onClick)="store.next()"
           styleClass="w-full justify-center"
         />
       }

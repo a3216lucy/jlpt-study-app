@@ -39,6 +39,19 @@
           >
             句型測驗
           </a>
+          <a
+            #grammarReviewLink="routerLinkActive"
+            routerLink="/grammar-review"
+            routerLinkActive="active"
+            [class]="
+              'rounded-full border px-4 py-2 text-sm font-medium transition ' +
+              (grammarReviewLink.isActive
+                ? 'border-emerald-500 bg-emerald-500 text-white shadow-[0_10px_20px_rgba(16,185,129,0.18)]'
+                : 'border-slate-200 bg-white text-slate-700 hover:border-emerald-300 hover:text-emerald-700')
+            "
+          >
+            文法複習
+          </a>
         </nav>
       </div>
     </header>

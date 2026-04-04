@@ -2077,6 +2077,366 @@
       "correctAnswer": "n3-fill-421-correct",
       "explanation": "「お/ご〜する」是對他人表示敬意的謙讓語。",
       "tags": ["honorifics", "humble", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-501",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "来年、海外留学に行く＿＿＿です。",
+      "questionTranslation": "我打算明年去海外留學。",
+      "options": [
+        { "id": "n3-fill-501-correct", "text": "つもり", "isCorrect": true },
+        { "id": "n3-fill-501-wrong-1", "text": "はず", "isCorrect": false },
+        { "id": "n3-fill-501-wrong-2", "text": "よう", "isCorrect": false },
+        { "id": "n3-fill-501-wrong-3", "text": "ため", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-501-correct",
+      "explanation": "「〜つもりだ」（辞書形）表示說話者主觀的打算或意圖。「はずだ」表示有根據的推測，非意圖。",
+      "tags": ["intention", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-502",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "ちゃんと説明した＿＿＿なのに、全然伝わらなかった。",
+      "questionTranslation": "我自認為說明得很清楚，結果完全沒傳達到。",
+      "options": [
+        { "id": "n3-fill-502-correct", "text": "つもり", "isCorrect": true },
+        { "id": "n3-fill-502-wrong-1", "text": "はず", "isCorrect": false },
+        { "id": "n3-fill-502-wrong-2", "text": "こと", "isCorrect": false },
+        { "id": "n3-fill-502-wrong-3", "text": "わけ", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-502-correct",
+      "explanation": "「た形＋つもりだ」表示自認為如何，實際情況可能不同。「はずだ」強調有根據的推測，不帶「我以為自己做到了」的語感。",
+      "tags": ["self-recognition", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-503",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "先生に＿＿＿＿＿、生徒に授業をしてみた。",
+      "questionTranslation": "就當自己是老師，試著給學生上課了。",
+      "options": [
+        { "id": "n3-fill-503-correct", "text": "なったつもりで", "isCorrect": true },
+        { "id": "n3-fill-503-wrong-1", "text": "なるつもりで", "isCorrect": false },
+        { "id": "n3-fill-503-wrong-2", "text": "なるように", "isCorrect": false },
+        { "id": "n3-fill-503-wrong-3", "text": "なったために", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-503-correct",
+      "explanation": "「た形＋つもりで」表示雖然事實並非如此，但就當作那樣來進行後項動作。須接た形。",
+      "tags": ["supposition", "self-recognition", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-504",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "このアプリは高齢者＿＿＿に設計されている。",
+      "questionTranslation": "這個 App 是針對高齡者設計的。",
+      "options": [
+        { "id": "n3-fill-504-correct", "text": "向け", "isCorrect": true },
+        { "id": "n3-fill-504-wrong-1", "text": "向き", "isCorrect": false },
+        { "id": "n3-fill-504-wrong-2", "text": "対象", "isCorrect": false },
+        { "id": "n3-fill-504-wrong-3", "text": "用", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-504-correct",
+      "explanation": "「〜向け」表示以特定對象為目標而刻意製作，強調設計意圖。「〜向き」表示性質上適合某類人，非刻意針對。",
+      "tags": ["target-audience", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-505",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼女は細かい作業が得意で、この仕事は彼女＿＿＿だと思う。",
+      "questionTranslation": "她擅長細膩的工作，我覺得這份工作很適合她。",
+      "options": [
+        { "id": "n3-fill-505-correct", "text": "向き", "isCorrect": true },
+        { "id": "n3-fill-505-wrong-1", "text": "向け", "isCorrect": false },
+        { "id": "n3-fill-505-wrong-2", "text": "用", "isCorrect": false },
+        { "id": "n3-fill-505-wrong-3", "text": "らしい", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-505-correct",
+      "explanation": "「〜向き」表示性質上本來就適合，非刻意針對設計。「〜向け」則是刻意以某對象為目標製作。",
+      "tags": ["target-audience", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-506",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "感謝の気持ちを＿＿＿、手作りのカードを贈った。",
+      "questionTranslation": "帶著感謝的心意，送出了親手製作的卡片。",
+      "options": [
+        { "id": "n3-fill-506-correct", "text": "込めて", "isCorrect": true },
+        { "id": "n3-fill-506-wrong-1", "text": "持って", "isCorrect": false },
+        { "id": "n3-fill-506-wrong-2", "text": "込んで", "isCorrect": false },
+        { "id": "n3-fill-506-wrong-3", "text": "かけて", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-506-correct",
+      "explanation": "「〜を込めて」表示將某種心情或情感注入其中。固定搭配「気持ちを込めて」「愛情を込めて」等。",
+      "tags": ["emotion", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-507",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "現代の日本社会＿＿＿、少子化が深刻な問題となっている。",
+      "questionTranslation": "在現代日本社會，少子化已成為嚴重的問題。",
+      "options": [
+        { "id": "n3-fill-507-correct", "text": "において", "isCorrect": true },
+        { "id": "n3-fill-507-wrong-1", "text": "にとって", "isCorrect": false },
+        { "id": "n3-fill-507-wrong-2", "text": "に対して", "isCorrect": false },
+        { "id": "n3-fill-507-wrong-3", "text": "について", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-507-correct",
+      "explanation": "「〜において」表示動作或狀態發生的場所、時間、場合，為書面用語。「にとって」表示從某立場看，「について」表示話題對象。",
+      "tags": ["location", "formal", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-508",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "練習すれ＿＿＿＿するほど、上手になる。",
+      "questionTranslation": "越練習就越進步。",
+      "options": [
+        { "id": "n3-fill-508-correct", "text": "ば", "isCorrect": true },
+        { "id": "n3-fill-508-wrong-1", "text": "て", "isCorrect": false },
+        { "id": "n3-fill-508-wrong-2", "text": "ても", "isCorrect": false },
+        { "id": "n3-fill-508-wrong-3", "text": "たら", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-508-correct",
+      "explanation": "「〜ば〜ほど」表示程度正比遞進，越…越…。固定句型：動詞ば形＋同動詞辞書形＋ほど。",
+      "tags": ["condition", "degree", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-509",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "体が健康で＿＿＿＿、何でも挑戦できる。",
+      "questionTranslation": "只要身體健康，什麼都可以挑戰。",
+      "options": [
+        { "id": "n3-fill-509-correct", "text": "さえあれば", "isCorrect": true },
+        { "id": "n3-fill-509-wrong-1", "text": "さえあっても", "isCorrect": false },
+        { "id": "n3-fill-509-wrong-2", "text": "だけあれば", "isCorrect": false },
+        { "id": "n3-fill-509-wrong-3", "text": "こそあれば", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-509-correct",
+      "explanation": "「〜さえ〜ば」表示「只要滿足這個條件，後項就能成立」。強調唯一條件。",
+      "tags": ["only-if", "condition", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-510",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "わざわざ謝りに行く＿＿＿＿。メールで十分だよ。",
+      "questionTranslation": "不必特意去道歉。用電子郵件就夠了。",
+      "options": [
+        { "id": "n3-fill-510-correct", "text": "ことはない", "isCorrect": true },
+        { "id": "n3-fill-510-wrong-1", "text": "わけにはいかない", "isCorrect": false },
+        { "id": "n3-fill-510-wrong-2", "text": "べきではない", "isCorrect": false },
+        { "id": "n3-fill-510-wrong-3", "text": "必要はない", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-510-correct",
+      "explanation": "「〜ことはない」表示沒有必要做某事，語氣上含有「不用那樣做」的建議。常與「わざわざ」搭配。",
+      "tags": ["necessity", "advice", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-511",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "あぶなく事故に巻き込まれ＿＿＿＿。",
+      "questionTranslation": "差點就被捲入事故中了。",
+      "options": [
+        { "id": "n3-fill-511-correct", "text": "そうになった", "isCorrect": true },
+        { "id": "n3-fill-511-wrong-1", "text": "てしまった", "isCorrect": false },
+        { "id": "n3-fill-511-wrong-2", "text": "かけた", "isCorrect": false },
+        { "id": "n3-fill-511-wrong-3", "text": "ばかりだった", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-511-correct",
+      "explanation": "「危うく/あぶなく〜そうになった」表示差點發生不好的事，但最終避免了。強調回避的如來。",
+      "tags": ["near-miss", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-512",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "こんな高い値段で＿＿＿＿＿＿買えない。",
+      "questionTranslation": "以這種高價格根本買不起。",
+      "options": [
+        { "id": "n3-fill-512-correct", "text": "ては", "isCorrect": true },
+        { "id": "n3-fill-512-wrong-1", "text": "ても", "isCorrect": false },
+        { "id": "n3-fill-512-wrong-2", "text": "でも", "isCorrect": false },
+        { "id": "n3-fill-512-wrong-3", "text": "なら", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-512-correct",
+      "explanation": "「〜ては〜ない」表示若有前項條件，後項（否定）就會成立。口語說「〜ちゃ」。後項必須是否定或消極含義的表達。",
+      "tags": ["condition", "negative-result", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-513",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "プロとして引き受けた＿＿＿＿、絶対に成功させる。",
+      "questionTranslation": "既然以專業身分接受了，就一定要成功。",
+      "options": [
+        { "id": "n3-fill-513-correct", "text": "からには", "isCorrect": true },
+        { "id": "n3-fill-513-wrong-1", "text": "からこそ", "isCorrect": false },
+        { "id": "n3-fill-513-wrong-2", "text": "ために", "isCorrect": false },
+        { "id": "n3-fill-513-wrong-3", "text": "ので", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-513-correct",
+      "explanation": "「〜からには/以上（は）」表示既然已決定或既成事實，說話者就有義務或決心去做後項。後項常出現意志、義務、建議等表達。",
+      "tags": ["obligation", "condition", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-514",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "緊急の用件＿＿＿＿、普通はこんな夜中に電話しない。",
+      "questionTranslation": "要不是緊急事情，通常不會在深夜打電話。",
+      "options": [
+        { "id": "n3-fill-514-correct", "text": "なら別だが", "isCorrect": true },
+        { "id": "n3-fill-514-wrong-1", "text": "であっても", "isCorrect": false },
+        { "id": "n3-fill-514-wrong-2", "text": "でなければ", "isCorrect": false },
+        { "id": "n3-fill-514-wrong-3", "text": "だとしても", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-514-correct",
+      "explanation": "「〜なら別だ/なら話は別だ」表示「如果是那種例外情況就另當別論」，暗示一般情況下不成立。",
+      "tags": ["exception", "condition", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-515",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "来月から電車の運賃が値上がりする＿＿＿＿＿＿＿。",
+      "questionTranslation": "聽說下個月起電車票價要調漲了。",
+      "options": [
+        { "id": "n3-fill-515-correct", "text": "ということだ", "isCorrect": true },
+        { "id": "n3-fill-515-wrong-1", "text": "らしい", "isCorrect": false },
+        { "id": "n3-fill-515-wrong-2", "text": "そうだ", "isCorrect": false },
+        { "id": "n3-fill-515-wrong-3", "text": "ようだ", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-515-correct",
+      "explanation": "「〜ということだ」（傳聞）表示聽說某件事，帶有「從某個消息來源得知」的語感，比「そうだ」正式。「ようだ」是根據觀察推測，非傳聞。",
+      "tags": ["rumor", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-516",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼女が来ないということは、会議は延期＿＿＿＿＿＿＿＿。",
+      "questionTranslation": "她沒來，也就是說會議延期了。",
+      "options": [
+        { "id": "n3-fill-516-correct", "text": "ということだ", "isCorrect": true },
+        { "id": "n3-fill-516-wrong-1", "text": "ということか", "isCorrect": false },
+        { "id": "n3-fill-516-wrong-2", "text": "らしい", "isCorrect": false },
+        { "id": "n3-fill-516-wrong-3", "text": "はずだ", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-516-correct",
+      "explanation": "「〜ということだ」（結論）以前項為根據，歸納出後項結論，帶有「也就是說、這意味著」的語感。",
+      "tags": ["conclusion", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-517",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "田中さんは来月転勤になる＿＿＿＿聞いたよ。",
+      "questionTranslation": "我聽說田中先生下個月要調職了。",
+      "options": [
+        { "id": "n3-fill-517-correct", "text": "とか", "isCorrect": true },
+        { "id": "n3-fill-517-wrong-1", "text": "そうと", "isCorrect": false },
+        { "id": "n3-fill-517-wrong-2", "text": "らしいと", "isCorrect": false },
+        { "id": "n3-fill-517-wrong-3", "text": "ということで", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-517-correct",
+      "explanation": "「〜とか」傳聞語氣比「そうだ・ということだ」更不確定，含有「好像是這樣、不太確定」的語感，或是說話者有意避免明確表達。",
+      "tags": ["rumor", "uncertain", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-518",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "子どもの成長というのは、本当に早い＿＿＿＿。",
+      "questionTranslation": "孩子的成長真是飛快啊。",
+      "options": [
+        { "id": "n3-fill-518-correct", "text": "ものだ", "isCorrect": true },
+        { "id": "n3-fill-518-wrong-1", "text": "はずだ", "isCorrect": false },
+        { "id": "n3-fill-518-wrong-2", "text": "わけだ", "isCorrect": false },
+        { "id": "n3-fill-518-wrong-3", "text": "ことだ", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-518-correct",
+      "explanation": "「い形容詞＋ものだ」表示對事物產生感嘆，帶有感慨之情。「はずだ」為有根據的推測，「わけだ」為合乎邏輯的結論。",
+      "tags": ["emotion", "general-truth", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-519",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "今年中になんとか資格を取り＿＿＿＿＿＿＿＿。",
+      "questionTranslation": "今年內無論如何都想取得資格。",
+      "options": [
+        { "id": "n3-fill-519-correct", "text": "たいものだ", "isCorrect": true },
+        { "id": "n3-fill-519-wrong-1", "text": "たいはずだ", "isCorrect": false },
+        { "id": "n3-fill-519-wrong-2", "text": "たいわけだ", "isCorrect": false },
+        { "id": "n3-fill-519-wrong-3", "text": "たいことだ", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-519-correct",
+      "explanation": "「なんとか〜たいものだ」表示對幾乎難以實現的事抱有強烈的期望或渴望，語氣帶有深深的嚮往。",
+      "tags": ["desire", "emotion", "grammar-n3"]
+    },
+    {
+      "id": "n3-fill-520",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "彼は成績が優秀な＿＿＿＿、スポーツも万能だ。",
+      "questionTranslation": "他不僅成績優秀，運動也樣樣精通。",
+      "options": [
+        { "id": "n3-fill-520-correct", "text": "上に", "isCorrect": true },
+        { "id": "n3-fill-520-wrong-1", "text": "一方で", "isCorrect": false },
+        { "id": "n3-fill-520-wrong-2", "text": "ばかりか", "isCorrect": false },
+        { "id": "n3-fill-520-wrong-3", "text": "くせに", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-fill-520-correct",
+      "explanation": "「〜上に」表示在已有的正面（或負面）事項之上，再加上同類事項，「不僅…而且…」。「一方で」為對比，「くせに」帶批評語氣。",
+      "tags": ["addition", "grammar-n3"]
     }
   ]
 }
