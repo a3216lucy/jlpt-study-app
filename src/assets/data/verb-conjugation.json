@@ -1,0 +1,222 @@
+{
+  "masuForm": {
+    "title": "ます形",
+    "subtitle": "禮貌形（敬體）的類別判別",
+    "rows": [
+      { "group": "I",    "color": "blue",    "rule": "い段 ＋ ます",  "examples": ["会います", "書きます", "飲みます", "待ちます"] },
+      { "group": "II",   "color": "emerald", "rule": "え段 ＋ ます",  "examples": ["食べます", "見えます", "教えます"] },
+      { "group": "II例外", "color": "emerald", "isException": true,
+        "exceptions": ["起（お）きます", "見（み）ます", "借（か）ります", "浴（あ）びます", "着（き）ます", "居（い）ます", "降（お）ります", "出来（でき）ます", "足（た）ります", "落（お）ちます"]
+      },
+      { "group": "III",  "color": "violet",  "isIII": true,
+        "items": ["します", "来（き）ます", "動作性名詞（外來語・雙漢字）＋します"]
+      }
+    ]
+  },
+  "jishoForm": {
+    "title": "辞書形",
+    "subtitle": "原形（字典形）的類別判別",
+    "rows": [
+      { "group": "I",    "color": "blue",    "rule": "う段 結尾（非る）", "examples": ["会う", "書く", "飲む", "待つ"] },
+      { "group": "II",   "color": "emerald", "rule": "い段／え段 ＋ る",  "examples": ["食べる", "見える", "教える"] },
+      { "group": "II例外", "color": "emerald", "isException": true,
+        "exceptions": ["起（お）きる", "見（み）る", "居（い）る", "降（お）りる", "借（か）りる", "浴（あ）びる", "着（き）る", "出来（でき）る", "足（た）りる", "落（お）ちる"]
+      },
+      { "group": "III",  "color": "violet",  "isIII": true,
+        "items": ["する", "来（く）る", "動作性名詞（外來語・雙漢字）＋する"]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "id": "masu-jisho",
+      "label": "ます→辞書",
+      "title": "ます形 → 辞書形",
+      "rows": [
+        { "group": "I",   "color": "blue",    "rule": "い段 ＋ ます → う段", "examples": ["行きます→行く", "買います→買う", "書きます→書く"] },
+        { "group": "II",  "color": "emerald", "rule": "ます → る",           "examples": ["食べます→食べる", "見ます→見る"] },
+        { "group": "III", "color": "violet",  "rule": "します → する\n来（き）ます → 来（く）る", "examples": [] }
+      ]
+    },
+    {
+      "id": "masu-te",
+      "label": "ます→て",
+      "title": "ます形 → て形",
+      "rows": [
+        { "group": "I", "color": "blue",
+          "subRows": [
+            { "type": "促音便", "typeColor": "orange", "rule": "い・ち・り → って", "examples": ["会います→会って", "待ちます→待って", "帰ります→帰って"] },
+            { "type": "い音便", "typeColor": "amber",  "rule": "き → いて\nぎ → いで",   "examples": ["書きます→書いて", "急ぎます→急いで"] },
+            { "type": "撥音便", "typeColor": "cyan",   "rule": "に・び・み → んで",    "examples": ["読みます→読んで", "呼びます→呼んで"] },
+            { "type": "無音便", "typeColor": "slate",  "rule": "し → して",             "examples": ["貸します→貸して"] },
+            { "type": "★特殊", "typeColor": "rose",   "rule": "",                      "examples": ["行きます → 行って"] }
+          ]
+        },
+        { "group": "II",  "color": "emerald", "rule": "ます → て",                             "examples": ["食べます→食べて", "見ます→見て"] },
+        { "group": "III", "color": "violet",  "rule": "します → して\n来（き）ます → 来（き）て", "examples": [] }
+      ]
+    },
+    {
+      "id": "jisho-te",
+      "label": "辞書→て",
+      "title": "辞書形 → て形",
+      "rows": [
+        { "group": "I", "color": "blue",
+          "subRows": [
+            { "type": "促音便", "typeColor": "orange", "rule": "う・つ・る → って", "examples": ["買う→買って", "待つ→待って", "作る→作って"] },
+            { "type": "い音便", "typeColor": "amber",  "rule": "く → いて\nぐ → いで",   "examples": ["書く→書いて", "泳ぐ→泳いで"] },
+            { "type": "撥音便", "typeColor": "cyan",   "rule": "ぬ・ぶ・む → んで",    "examples": ["読む→読んで", "死ぬ→死んで", "呼ぶ→呼んで"] },
+            { "type": "無音便", "typeColor": "slate",  "rule": "す → して",             "examples": ["貸す→貸して"] },
+            { "type": "★特殊", "typeColor": "rose",   "rule": "",                      "examples": ["行く → 行って"] }
+          ]
+        },
+        { "group": "II",  "color": "emerald", "rule": "る → て",                              "examples": ["食べる→食べて", "見る→見て"] },
+        { "group": "III", "color": "violet",  "rule": "する → して\n来（く）る → 来（き）て", "examples": [] }
+      ]
+    },
+    {
+      "id": "nai",
+      "label": "ない形",
+      "title": "辞書形 → ない形",
+      "rows": [
+        { "group": "I",   "color": "blue",    "rule": "う段 → あ段 ＋ ない\n★ う → わ ＋ ない\n★ ある → ない（非あない）", "examples": ["行く→行かない", "書く→書かない", "買う→買わない", "ある→ない"] },
+        { "group": "II",  "color": "emerald", "rule": "る → ない",                                                              "examples": ["食べる→食べない", "見る→見ない"] },
+        { "group": "III", "color": "violet",  "rule": "する → しない\n来（く）る → 来（こ）ない",                               "examples": [] }
+      ]
+    },
+    {
+      "id": "kanou",
+      "label": "可能形",
+      "title": "辞書形 → 可能形",
+      "rows": [
+        { "group": "I",   "color": "blue",    "rule": "う段 → え段 ＋ る",                          "examples": ["行く→行ける", "書く→書ける", "飲む→飲める", "買う→買える"] },
+        { "group": "II",  "color": "emerald", "rule": "る → られる",                                "examples": ["食べる→食べられる", "見る→見られる"] },
+        { "group": "III", "color": "violet",  "rule": "する → できる\n来（く）る → 来（こ）られる", "examples": [] }
+      ]
+    },
+    {
+      "id": "ikou",
+      "label": "意向形",
+      "title": "辞書形 → 意向形",
+      "rows": [
+        { "group": "I",   "color": "blue",    "rule": "う段 → お段 ＋ う",                          "examples": ["行く→行こう", "書く→書こう", "飲む→飲もう", "買う→買おう"] },
+        { "group": "II",  "color": "emerald", "rule": "る → よう",                                  "examples": ["食べる→食べよう", "見る→見よう"] },
+        { "group": "III", "color": "violet",  "rule": "する → しよう\n来（く）る → 来（こ）よう",   "examples": [] }
+      ]
+    },
+    {
+      "id": "shieki",
+      "label": "使役形",
+      "title": "辞書形 → 使役形",
+      "rows": [
+        { "group": "I",   "color": "blue",    "rule": "う段 → あ段 ＋ せる\n★ う → わ ＋ せる",       "examples": ["書く→書かせる", "飲む→飲ませる", "買う→買わせる"] },
+        { "group": "II",  "color": "emerald", "rule": "る → させる",                                  "examples": ["食べる→食べさせる", "見る→見させる"] },
+        { "group": "III", "color": "violet",  "rule": "する → させる\n来（く）る → 来（こ）させる",   "examples": [] }
+      ]
+    },
+    {
+      "id": "ukemi",
+      "label": "受身形",
+      "title": "辞書形 → 受身形",
+      "rows": [
+        { "group": "I",   "color": "blue",    "rule": "う段 → あ段 ＋ れる\n★ う → わ ＋ れる",       "examples": ["書く→書かれる", "飲む→飲まれる", "買う→買われる"] },
+        { "group": "II",  "color": "emerald", "rule": "る → られる",                                  "examples": ["食べる→食べられる", "見る→見られる"] },
+        { "group": "III", "color": "violet",  "rule": "する → される\n来（く）る → 来（こ）られる",   "examples": [] }
+      ]
+    },
+    {
+      "id": "shiekiUkemi",
+      "label": "使役受身",
+      "title": "辞書形 → 使役受身形",
+      "rows": [
+        { "group": "I",   "color": "blue",    "rule": "う段 → あ段＋される（口語縮短）\nまたは あ段＋せられる（書面完整）\n★ う → わ ＋ される", "examples": ["書く→書かされる", "買う→買わされる"] },
+        { "group": "II",  "color": "emerald", "rule": "る → させられる",                                                                             "examples": ["食べる→食べさせられる"] },
+        { "group": "III", "color": "violet",  "rule": "する → させられる\n来（く）る → 来（こ）させられる",                                           "examples": [] }
+      ]
+    },
+    {
+      "id": "meirei",
+      "label": "命令形",
+      "title": "辞書形 → 命令形",
+      "rows": [
+        { "group": "I",   "color": "blue",    "rule": "う段 → え段",                                   "examples": ["書く→書け", "飲む→飲め", "買う→買え", "話す→話せ", "待つ→待て"] },
+        { "group": "II",  "color": "emerald", "rule": "る → ろ（口語）\nる → よ（書面）",               "examples": ["食べる→食べろ / 食べよ", "見る→見ろ / 見よ"] },
+        { "group": "III", "color": "violet",  "rule": "する → しろ / せよ\n来（く）る → 来（こ）い",   "examples": [] }
+      ]
+    },
+    {
+      "id": "kinshi",
+      "label": "禁止形",
+      "title": "禁止形（全類別通用）",
+      "rows": [
+        { "group": "全類別", "color": "rose", "rule": "辞書形 ＋ な", "examples": ["行く→行くな", "食べる→食べるな", "する→するな", "来る→来るな"] }
+      ]
+    }
+  ],
+  "politeVsPlain": {
+    "sections": [
+      {
+        "name": "動詞",
+        "color": "blue",
+        "rows": [
+          { "tense": "現在・未來（肯定）",  "polite": "〜ます",           "plain": "辞書形" },
+          { "tense": "現在・未來（否定）",  "polite": "〜ません",         "plain": "ない形",    "note": "★ありません → ない" },
+          { "tense": "過去（肯定）",        "polite": "〜ました",         "plain": "た形" },
+          { "tense": "過去（否定）",        "polite": "〜ませんでした",   "plain": "なかった",   "note": "★ありませんでした → なかった" },
+          { "tense": "進行中（肯定）",      "polite": "〜ています",       "plain": "〜ている" },
+          { "tense": "進行中（否定）",      "polite": "〜ていません",     "plain": "〜ていない" },
+          { "tense": "過去進行（肯定）",    "polite": "〜ていました",     "plain": "〜ていた" },
+          { "tense": "過去進行（否定）",    "polite": "〜ていませんでした", "plain": "〜ていなかった" }
+        ]
+      },
+      {
+        "name": "い形容詞",
+        "color": "amber",
+        "rows": [
+          { "tense": "現在・未來（肯定）", "polite": "〜いです",       "plain": "〜い" },
+          { "tense": "現在・未來（否定）", "polite": "〜くないです",   "plain": "〜くない" },
+          { "tense": "過去（肯定）",       "polite": "〜かったです",   "plain": "〜かった" },
+          { "tense": "過去（否定）",       "polite": "〜くなかったです", "plain": "〜くなかった" }
+        ]
+      },
+      {
+        "name": "な形容詞・名詞",
+        "color": "emerald",
+        "rows": [
+          { "tense": "現在・未來（肯定）", "polite": "〜です",               "plain": "〜だ" },
+          { "tense": "現在・未來（否定）", "polite": "〜ではありません",     "plain": "〜じゃない" },
+          { "tense": "過去（肯定）",       "polite": "〜でした",             "plain": "〜だった" },
+          { "tense": "過去（否定）",       "polite": "〜ではありませんでした", "plain": "〜じゃなかった" }
+        ]
+      }
+    ]
+  },
+  "sonkeigo": [
+    { "plain": "行く",              "sonkei": ["いらっしゃる", "おいでになる"],                                           "kenjou": ["参（まい）る", "伺（うかが）う", "上（あ）がる"] },
+    { "plain": "来る",              "sonkei": ["いらっしゃる", "おいでになる", "見（み）える", "お見（み）えになる", "お越（こ）しになる"], "kenjou": ["参（まい）る", "伺（うかが）う"] },
+    { "plain": "いる",              "sonkei": ["いらっしゃる", "おいでになる"],                                           "kenjou": ["おる"] },
+    { "plain": "する",              "sonkei": ["なさる"],                                                                  "kenjou": ["いたす"] },
+    { "plain": "ている",            "sonkei": ["ていらっしゃる", "ておいでになる"],                                        "kenjou": ["ておる"] },
+    { "plain": "食（た）べる",      "sonkei": ["召（め）し上（あ）がる", "召（め）す", "上（あ）がる"],                   "kenjou": ["いただく", "頂戴（ちょうだい）する"] },
+    { "plain": "飲（の）む",        "sonkei": ["召（め）し上（あ）がる", "召（め）す", "上（あ）がる"],                   "kenjou": ["いただく", "頂戴（ちょうだい）する"] },
+    { "plain": "もらう",            "sonkei": ["召（め）し上（あ）がる"],                                                  "kenjou": ["いただく", "頂戴（ちょうだい）する"] },
+    { "plain": "着（き）る",        "sonkei": ["召（め）す"],                                                              "kenjou": null },
+    { "plain": "くれる",            "sonkei": ["くださる"],                                                                "kenjou": null },
+    { "plain": "言（い）う",        "sonkei": ["おっしゃる"],                                                              "kenjou": ["申（もう）す", "申（もう）し上（あ）げる"] },
+    { "plain": "知（し）っている",  "sonkei": ["ご存知（ぞんじ）だ"],                                                      "kenjou": ["存（ぞん）じておる", "存（ぞん）じ上（あ）げておる"] },
+    { "plain": "知（し）らない",    "sonkei": ["ご存知（ぞんじ）（で）ない"],                                              "kenjou": ["存（ぞん）じない"] },
+    { "plain": "知（し）る・思（おも）う", "sonkei": null,                                                                "kenjou": ["存（ぞん）ずる", "存（ぞん）じる"] },
+    { "plain": "会（あ）う",        "sonkei": null,                                                                        "kenjou": ["お目（め）にかかる"] },
+    { "plain": "見（み）せる",      "sonkei": null,                                                                        "kenjou": ["お目（め）にかける"] },
+    { "plain": "見（み）る",        "sonkei": ["ご覧（らん）になる"],                                                      "kenjou": ["拝見（はいけん）する"] },
+    { "plain": "読（よ）む",        "sonkei": ["ご覧（らん）になる"],                                                      "kenjou": ["拝読（はいどく）する"] },
+    { "plain": "寝（ね）る",        "sonkei": ["お休（やす）みになる"],                                                    "kenjou": null },
+    { "plain": "死（し）ぬ",        "sonkei": ["お亡（な）くなりになる"],                                                  "kenjou": null },
+    { "plain": "借（か）りる",      "sonkei": null,                                                                        "kenjou": ["拝借（はいしゃく）する"] },
+    { "plain": "聞（き）く・問（と）う・尋（たず）ねる", "sonkei": null,                                                  "kenjou": ["伺（うかが）う", "承（うけたまわ）る"] },
+    { "plain": "訪問（ほうもん）する・訪（たず）ねる",   "sonkei": null,                                                  "kenjou": ["伺（うかが）う", "お邪魔（じゃま）する"] },
+    { "plain": "受（う）ける・聞（き）く",               "sonkei": null,                                                  "kenjou": ["承（うけたまわ）る"] },
+    { "plain": "分（わ）かる",      "sonkei": null,                                                                        "kenjou": ["承知（しょうち）する", "畏（かしこ）まる"] },
+    { "plain": "あげる",            "sonkei": null,                                                                        "kenjou": ["差（さ）し上（あ）げる"] }
+  ]
+}

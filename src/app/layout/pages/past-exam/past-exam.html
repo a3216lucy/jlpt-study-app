@@ -1,0 +1,303 @@
+<!-- ① 選題入口 -->
+@if (!store.started()) {
+  <div
+    class="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.15),transparent_32%),linear-gradient(180deg,#faf8ff_0%,#f8fafc_100%)] p-6"
+  >
+    <div
+      class="relative w-full max-w-4xl overflow-hidden rounded-[1.9rem] border border-slate-200/70 bg-white p-6 shadow-[0_24px_60px_rgba(15,23,42,0.08),0_8px_20px_rgba(15,23,42,0.05)] sm:p-10"
+    >
+      <div class="pointer-events-none absolute -right-14 -top-14 h-44 w-44 rounded-full bg-violet-100/80"></div>
+      <div class="pointer-events-none absolute -bottom-16 -left-10 h-40 w-40 rounded-full bg-purple-100/70"></div>
+
+      <div class="relative z-10 mb-8">
+        <p class="text-sm font-bold uppercase tracking-[0.14em] text-violet-600">Past Exam</p>
+        <h1 class="mt-2 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">考古題練習</h1>
+        <p class="mt-2 text-slate-500">按年份選擇真實考題，進行模擬練習。</p>
+      </div>
+
+      <div class="relative z-10 grid gap-5 lg:grid-cols-[1fr_1fr]">
+        <!-- Step 1：選考試 -->
+        <section class="rounded-[1.6rem] border border-slate-200 bg-slate-50/60 p-5">
+          <p class="mb-1 text-[0.78rem] font-bold uppercase tracking-[0.08em] text-violet-600">Step 1</p>
+          <h2 class="mb-4 text-xl font-extrabold text-slate-900">選擇考試年份</h2>
+
+          <div class="grid gap-3">
+            @for (exam of store.catalog; track trackByExam($index, exam)) {
+              <button
+                (click)="store.selectExam(exam)"
+                [class]="
+                  'w-full rounded-2xl border px-5 py-4 text-left transition-all duration-150 ' +
+                  (store.selectedExam()?.id === exam.id
+                    ? 'border-violet-500 bg-white shadow-[0_8px_20px_rgba(139,92,246,0.14)]'
+                    : 'border-slate-200 bg-white hover:border-violet-300 hover:bg-violet-50/50')
+                "
+              >
+                <div class="flex items-center justify-between">
+                  <p class="text-base font-extrabold text-slate-900">{{ exam.examLabel }}</p>
+                  <span class="rounded-full bg-violet-100 px-2 py-0.5 text-xs font-bold text-violet-700">
+                    {{ exam.level }}
+                  </span>
+                </div>
+                <p class="mt-1 text-sm text-slate-500">{{ exam.sections.length }} 個科目</p>
+              </button>
+            }
+          </div>
+        </section>
+
+        <!-- Step 2：選科目 -->
+        <section class="rounded-[1.6rem] border border-slate-200 bg-slate-50/60 p-5">
+          <p class="mb-1 text-[0.78rem] font-bold uppercase tracking-[0.08em] text-violet-600">Step 2</p>
+          <h2 class="mb-4 text-xl font-extrabold text-slate-900">選擇科目</h2>
+
+          @if (store.selectedExam()) {
+            <div class="grid gap-3">
+              @for (section of store.selectedExam()!.sections; track trackBySection($index, section)) {
+                <button
+                  (click)="store.selectSection(section)"
+                  [class]="
+                    'w-full rounded-2xl border px-5 py-4 text-left transition-all duration-150 ' +
+                    (store.selectedSection()?.id === section.id
+                      ? 'border-violet-500 bg-white shadow-[0_8px_20px_rgba(139,92,246,0.14)]'
+                      : 'border-slate-200 bg-white hover:border-violet-300 hover:bg-violet-50/50')
+                  "
+                >
+                  <div class="flex items-center gap-3">
+                    <span [class]="'rounded-full px-2.5 py-0.5 text-xs font-bold ' + categoryColor(section)">
+                      {{ categoryLabel(section) }}
+                    </span>
+                    <p class="text-base font-bold text-slate-900">{{ section.sectionLabel }}</p>
+                  </div>
+                  <p class="mt-1 text-sm text-slate-500">共 {{ section.questionCount }} 題</p>
+                </button>
+              }
+            </div>
+          } @else {
+            <p class="text-sm text-slate-400">請先選擇考試年份</p>
+          }
+        </section>
+      </div>
+
+      @if (store.loadError()) {
+        <div class="relative z-10 mt-6 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          {{ store.loadError() }}
+        </div>
+      }
+
+      <div class="relative z-10 mt-6">
+        <p-button
+          label="開始考古題練習"
+          icon="pi pi-play"
+          [loading]="store.loading()"
+          [disabled]="!store.selectedSection()"
+          (onClick)="store.startExam()"
+          styleClass="w-full justify-center text-lg py-3"
+        />
+      </div>
+    </div>
+  </div>
+}
+
+<!-- ② 作答中 -->
+@if (store.started() && !store.showResult()) {
+  <div
+    class="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.15),transparent_32%),linear-gradient(180deg,#faf8ff_0%,#f8fafc_100%)] p-4 sm:p-6"
+  >
+    <div
+      class="w-full max-w-4xl rounded-[1.8rem] border border-slate-200/70 bg-white p-5 shadow-[0_24px_60px_rgba(15,23,42,0.08)] sm:p-8"
+    >
+      <!-- 進度列 -->
+      <div class="mb-6 border-b border-slate-200 pb-5">
+        <div class="mb-3 flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <span class="text-sm text-slate-500">
+              第 {{ store.currentIndex() + 1 }} 題 / 共 {{ store.questions().length }} 題
+            </span>
+            <span class="inline-flex rounded-full bg-violet-100 px-3 py-1 text-sm font-semibold text-violet-700">
+              {{ store.selectedExam()?.examLabel }} · {{ store.selectedSection()?.sectionLabel }}
+            </span>
+          </div>
+          <button
+            type="button"
+            (click)="store.restart()"
+            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:border-slate-300 hover:bg-slate-50"
+          >
+            返回選單
+          </button>
+        </div>
+        <p-progressbar [value]="store.progress()" [showValue]="false" />
+      </div>
+
+      <!-- 題目 -->
+      <section
+        class="mb-6 rounded-[1.7rem] border border-slate-200 bg-[linear-gradient(135deg,rgba(245,243,255,0.92),rgba(255,255,255,0.98))] p-6"
+      >
+        <div class="mb-4 inline-flex items-center rounded-full bg-violet-100 px-3 py-1 text-xs font-bold tracking-[0.04em] text-violet-700">
+          題目
+        </div>
+        <p class="text-sm font-semibold uppercase tracking-[0.08em] text-slate-400">
+          {{ store.currentQuestion().prompt }}
+        </p>
+        <h2 class="mt-4 text-2xl font-black leading-relaxed text-slate-900 sm:text-3xl">
+          {{ store.currentQuestion().questionText || store.currentQuestion().prompt }}
+        </h2>
+        @if (store.currentQuestion().questionTranslation) {
+          <p class="mt-3 text-base leading-7 text-slate-500">
+            {{ store.currentQuestion().questionTranslation }}
+          </p>
+        }
+      </section>
+
+      <!-- 選項 -->
+      <section class="mb-5 rounded-[1.7rem] border border-slate-200 bg-white p-5 sm:p-6">
+        <div class="mb-4 inline-flex items-center rounded-full bg-violet-100 px-3 py-1 text-xs font-bold tracking-[0.04em] text-violet-700">
+          四選一
+        </div>
+        <div class="grid grid-cols-1 gap-3">
+          @for (option of store.currentQuestion().options; track option.id) {
+            <button
+              (click)="store.selectOption(option)"
+              [disabled]="store.answered()"
+              [class]="
+                'flex w-full items-center gap-4 rounded-2xl border-2 px-4 py-4 text-left text-base font-semibold transition-all duration-150 ' +
+                optionCardClass(option)
+              "
+            >
+              <span
+                [class]="
+                  'inline-flex h-8 w-8 flex-none items-center justify-center rounded-full text-sm font-bold ' +
+                  optionPrefixClass(option)
+                "
+              >
+                {{ $index + 1 }}
+              </span>
+              <span class="leading-7">{{ option.text }}</span>
+            </button>
+          }
+        </div>
+      </section>
+
+      <!-- 解說 -->
+      @if (store.answered()) {
+        <section
+          [class]="
+            'mb-5 rounded-2xl border p-4 text-sm ' +
+            (store.results()[store.results().length - 1]?.isCorrect
+              ? 'border-green-200 bg-green-50'
+              : 'border-red-200 bg-red-50')
+          "
+        >
+          <p class="mb-2 font-semibold">
+            @if (store.results()[store.results().length - 1]?.isCorrect) {
+              <i class="fa-solid fa-circle-check text-green-600"></i> 答對了！
+            } @else {
+              <i class="fa-solid fa-circle-xmark text-red-500"></i> 答錯了
+            }
+          </p>
+          <p class="leading-7 text-slate-600">{{ store.currentQuestion().explanation }}</p>
+        </section>
+
+        <p-button
+          [label]="store.isLast() ? '查看結果' : '下一題'"
+          [icon]="store.isLast() ? 'pi pi-check' : 'pi pi-arrow-right'"
+          iconPos="right"
+          (onClick)="store.next()"
+          styleClass="w-full justify-center"
+        />
+      }
+    </div>
+  </div>
+}
+
+<!-- ③ 結算頁 -->
+@if (store.showResult()) {
+  <div
+    class="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.15),transparent_32%),linear-gradient(180deg,#faf8ff_0%,#f8fafc_100%)] p-6"
+  >
+    <div
+      class="w-full max-w-2xl rounded-[1.8rem] border border-slate-200/70 bg-white p-6 shadow-[0_24px_60px_rgba(15,23,42,0.08)] sm:p-10"
+    >
+      <div class="text-center">
+        <p class="text-sm font-bold uppercase tracking-[0.14em] text-violet-600">Result</p>
+        <h2 class="mt-2 text-2xl font-bold text-slate-900">考古題練習完成</h2>
+        <p class="mt-1 text-slate-500">
+          {{ store.selectedExam()?.examLabel }} · {{ store.selectedSection()?.sectionLabel }}
+        </p>
+
+        <div class="mt-6 text-6xl font-black text-violet-600">
+          {{ store.score() }}
+          <span class="text-2xl font-semibold text-slate-300">/ {{ store.questions().length }}</span>
+        </div>
+        <p class="mt-2 text-slate-500">
+          正確率 {{ Math.round((store.score() / store.questions().length) * 100) }}%
+        </p>
+      </div>
+
+      <!-- 全題對照 -->
+      <div class="mt-8 space-y-3">
+        <h3 class="text-base font-bold text-slate-900">全題對照</h3>
+        @for (result of store.results(); track result.questionId) {
+          @let question = store.questions()[$index];
+          <div
+            [class]="
+              'rounded-2xl border p-4 ' +
+              (result.isCorrect
+                ? 'border-green-200 bg-green-50'
+                : 'border-red-200 bg-red-50')
+            "
+          >
+            <div class="flex items-start gap-3">
+              <span
+                [class]="
+                  'mt-0.5 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full text-xs font-bold ' +
+                  (result.isCorrect ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800')
+                "
+              >
+                {{ $index + 1 }}
+              </span>
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-semibold text-slate-800 leading-6">
+                  {{ question.questionText || question.prompt }}
+                </p>
+                @if (!result.isCorrect) {
+                  <div class="mt-2 text-xs space-y-1">
+                    <p class="text-red-700">
+                      <span class="font-bold">你的答案：</span>
+                      {{ selectedOptionForResult(question, result.selectedOptionId)?.text }}
+                    </p>
+                    <p class="text-green-700">
+                      <span class="font-bold">正確答案：</span>
+                      {{ correctOption(question)?.text }}
+                    </p>
+                  </div>
+                  <p class="mt-2 text-xs leading-5 text-slate-600">{{ question.explanation }}</p>
+                } @else {
+                  <p class="mt-1 text-xs text-green-700 font-medium">✓ {{ correctOption(question)?.text }}</p>
+                }
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- 操作按鈕 -->
+      <div class="mt-6 space-y-3">
+        @if (store.score() < store.questions().length) {
+          <p-button
+            severity="warn"
+            label="用錯題再練一次"
+            icon="pi pi-history"
+            (onClick)="store.retryWrong()"
+            styleClass="w-full justify-center"
+          />
+        }
+        <p-button
+          label="重新選題"
+          icon="pi pi-refresh"
+          severity="secondary"
+          (onClick)="store.restart()"
+          styleClass="w-full justify-center"
+        />
+      </div>
+    </div>
+  </div>
+}

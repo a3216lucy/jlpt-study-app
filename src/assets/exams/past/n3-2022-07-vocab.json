@@ -1,0 +1,622 @@
+{
+  "id": "n3-2022-07-vocab",
+  "title": "2022年7月 N3 語彙",
+  "description": "2022年7月 N3 真題：言語知識（文字・語彙）問題1〜5（共34題）",
+  "level": "N3",
+  "category": "vocabulary",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n3-2022-07-v-01",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 読み方】下線部の言葉の読み方として最もよいものを選びなさい。",
+      "questionText": "その会社の情報は、インターネットで見ました。",
+      "questionTranslation": "那家公司的（　　）是在網路上看到的。",
+      "options": [
+        { "id": "n3-2022-07-v-01-a", "text": "じょうほう", "isCorrect": true },
+        { "id": "n3-2022-07-v-01-b", "text": "ちょうほう", "isCorrect": false },
+        { "id": "n3-2022-07-v-01-c", "text": "じょうぼう", "isCorrect": false },
+        { "id": "n3-2022-07-v-01-d", "text": "ちょうぼう", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-01-a",
+      "explanation": "情報（じょうほう）＝資訊。ちょうほう＝諜報；じょうぼう・ちょうぼう不存在。「情」讀じょう（濁音），「報」讀ほう（清音）。",
+      "tags": ["reading", "kanji", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-02",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 読み方】下線部の言葉の読み方として最もよいものを選びなさい。",
+      "questionText": "兄は、現在は海外で働いています。",
+      "questionTranslation": "哥哥（　　）在海外工作。",
+      "options": [
+        { "id": "n3-2022-07-v-02-a", "text": "けんさい", "isCorrect": false },
+        { "id": "n3-2022-07-v-02-b", "text": "げんさい", "isCorrect": false },
+        { "id": "n3-2022-07-v-02-c", "text": "けんざい", "isCorrect": false },
+        { "id": "n3-2022-07-v-02-d", "text": "げんざい", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2022-07-v-02-d",
+      "explanation": "現在（げんざい）＝現在、目前。注意「現」讀げん（濁音）、「在」讀ざい（濁音），兩字皆為濁音。",
+      "tags": ["reading", "kanji", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-03",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 読み方】下線部の言葉の読み方として最もよいものを選びなさい。",
+      "questionText": "小さくて丸いいすがほしい。",
+      "questionTranslation": "我想要小而（　　）的椅子。",
+      "options": [
+        { "id": "n3-2022-07-v-03-a", "text": "くろい", "isCorrect": false },
+        { "id": "n3-2022-07-v-03-b", "text": "まるい", "isCorrect": true },
+        { "id": "n3-2022-07-v-03-c", "text": "あおい", "isCorrect": false },
+        { "id": "n3-2022-07-v-03-d", "text": "かるい", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-03-b",
+      "explanation": "丸い（まるい）＝圓的。くろい＝黑的（黒い）；あおい＝藍的（青い）；かるい＝輕的（軽い）。「丸」讀まる，不要混淆。",
+      "tags": ["reading", "kanji", "adjective", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-04",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 読み方】下線部の言葉の読み方として最もよいものを選びなさい。",
+      "questionText": "その歌は日本でも有名です。",
+      "questionTranslation": "那首歌在日本也（　　）。",
+      "options": [
+        { "id": "n3-2022-07-v-04-a", "text": "ゆめ", "isCorrect": false },
+        { "id": "n3-2022-07-v-04-b", "text": "ゆめい", "isCorrect": false },
+        { "id": "n3-2022-07-v-04-c", "text": "ゆうめ", "isCorrect": false },
+        { "id": "n3-2022-07-v-04-d", "text": "ゆうめい", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2022-07-v-04-d",
+      "explanation": "有名（ゆうめい）＝有名的。注意「有」讀ゆう（長音），不能省略長音寫成ゆめい。夢（ゆめ）是完全不同的字。",
+      "tags": ["reading", "kanji", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-05",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 読み方】下線部の言葉の読み方として最もよいものを選びなさい。",
+      "questionText": "そこの通りの角に、コンビニができるそうです。",
+      "questionTranslation": "聽說那條街的（　　）要開一家便利商店。",
+      "options": [
+        { "id": "n3-2022-07-v-05-a", "text": "かど", "isCorrect": true },
+        { "id": "n3-2022-07-v-05-b", "text": "そば", "isCorrect": false },
+        { "id": "n3-2022-07-v-05-c", "text": "はし", "isCorrect": false },
+        { "id": "n3-2022-07-v-05-d", "text": "よこ", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-05-a",
+      "explanation": "角（かど）＝轉角。そば＝旁邊（傍）；はし＝邊端（端）；よこ＝橫・側面（横）。「通りの角」＝街角，是常見說法。",
+      "tags": ["reading", "kanji", "location", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-06",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 読み方】下線部の言葉の読み方として最もよいものを選びなさい。",
+      "questionText": "大切な物なので、丁寧に包んでください。",
+      "questionTranslation": "因為是重要的東西，請仔細（　　）。",
+      "options": [
+        { "id": "n3-2022-07-v-06-a", "text": "たたんで", "isCorrect": false },
+        { "id": "n3-2022-07-v-06-b", "text": "はこんで", "isCorrect": false },
+        { "id": "n3-2022-07-v-06-c", "text": "すすんで", "isCorrect": false },
+        { "id": "n3-2022-07-v-06-d", "text": "つつんで", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2022-07-v-06-d",
+      "explanation": "包む（つつむ）→包んで＝包裝。たたむ→たたんで＝折疊；はこぶ→はこんで＝搬運；すすむ→すすんで＝前進・積極主動。「包む」的讀法つつむ要注意。",
+      "tags": ["reading", "kanji", "verb", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-07",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 読み方】下線部の言葉の読み方として最もよいものを選びなさい。",
+      "questionText": "それは、もう計算しました。",
+      "questionTranslation": "那個已經（　　）好了。",
+      "options": [
+        { "id": "n3-2022-07-v-07-a", "text": "けいけん", "isCorrect": false },
+        { "id": "n3-2022-07-v-07-b", "text": "けけん", "isCorrect": false },
+        { "id": "n3-2022-07-v-07-c", "text": "けいさん", "isCorrect": true },
+        { "id": "n3-2022-07-v-07-d", "text": "けさん", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-07-c",
+      "explanation": "計算（けいさん）＝計算。けいけん＝経験（經驗）；けさん不存在。注意「計」讀けい（長音）。",
+      "tags": ["reading", "kanji", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-08",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 漢字】下線部の言葉を漢字で書くとき、最もよいものを選びなさい。",
+      "questionText": "私は毎日、どのくらい歩いたかきろくしている。",
+      "questionTranslation": "我每天都（　　）走了多少路。",
+      "options": [
+        { "id": "n3-2022-07-v-08-a", "text": "基緑", "isCorrect": false },
+        { "id": "n3-2022-07-v-08-b", "text": "記緑", "isCorrect": false },
+        { "id": "n3-2022-07-v-08-c", "text": "基録", "isCorrect": false },
+        { "id": "n3-2022-07-v-08-d", "text": "記録", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2022-07-v-08-d",
+      "explanation": "記録（きろく）＝記錄。左邊是「記（き）」不是「基」；右邊是「録（ろく）」不是「緑」。記録する＝記錄（動作）。",
+      "tags": ["writing", "kanji", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-09",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 漢字】下線部の言葉を漢字で書くとき、最もよいものを選びなさい。",
+      "questionText": "駅で新しいこうこくを見ました。",
+      "questionTranslation": "在車站看到了新的（　　）。",
+      "options": [
+        { "id": "n3-2022-07-v-09-a", "text": "校管", "isCorrect": false },
+        { "id": "n3-2022-07-v-09-b", "text": "校告", "isCorrect": false },
+        { "id": "n3-2022-07-v-09-c", "text": "広営", "isCorrect": false },
+        { "id": "n3-2022-07-v-09-d", "text": "広告", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2022-07-v-09-d",
+      "explanation": "広告（こうこく）＝廣告。左邊是「広（こう）」廣，右邊是「告（こく）」告知。駅でよく見るポスターや看板が「広告」。",
+      "tags": ["writing", "kanji", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-10",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 漢字】下線部の言葉を漢字で書くとき、最もよいものを選びなさい。",
+      "questionText": "体がすっかりひえてしまいました。",
+      "questionTranslation": "身體完全（　　）了。",
+      "options": [
+        { "id": "n3-2022-07-v-10-a", "text": "冷えて", "isCorrect": true },
+        { "id": "n3-2022-07-v-10-b", "text": "寒えて", "isCorrect": false },
+        { "id": "n3-2022-07-v-10-c", "text": "氷えて", "isCorrect": false },
+        { "id": "n3-2022-07-v-10-d", "text": "低えて", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-10-a",
+      "explanation": "冷える（ひえる）＝變冷（物體/身體降溫）。寒い是形容詞無動詞「寒える」；氷（こおり）是名詞；低い是形容詞。冷える是自動詞，描述溫度下降的變化。",
+      "tags": ["writing", "kanji", "verb", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-11",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 漢字】下線部の言葉を漢字で書くとき、最もよいものを選びなさい。",
+      "questionText": "けんさはしたが何も問題はなかった。",
+      "questionTranslation": "做了（　　），但沒有任何問題。",
+      "options": [
+        { "id": "n3-2022-07-v-11-a", "text": "健査", "isCorrect": false },
+        { "id": "n3-2022-07-v-11-b", "text": "検査", "isCorrect": true },
+        { "id": "n3-2022-07-v-11-c", "text": "検察", "isCorrect": false },
+        { "id": "n3-2022-07-v-11-d", "text": "健察", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-11-b",
+      "explanation": "検査（けんさ）＝檢查・檢驗。左邊是「検（けん）」檢，右邊是「査（さ）」查。検察（けんさつ）讀音不同，是「檢察」（法律用語）。健（けん）是「健康」的健。",
+      "tags": ["writing", "kanji", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-12",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 漢字】下線部の言葉を漢字で書くとき、最もよいものを選びなさい。",
+      "questionText": "その話はたしかですか。",
+      "questionTranslation": "那件事（　　）嗎？",
+      "options": [
+        { "id": "n3-2022-07-v-12-a", "text": "定か", "isCorrect": false },
+        { "id": "n3-2022-07-v-12-b", "text": "確か", "isCorrect": true },
+        { "id": "n3-2022-07-v-12-c", "text": "必か", "isCorrect": false },
+        { "id": "n3-2022-07-v-12-d", "text": "常か", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-12-b",
+      "explanation": "確か（たしか）＝確定・確實。定か（さだか）讀音不同；必（かなら）・常（つね）都讀音不同。「確かです」＝確認、確定。",
+      "tags": ["writing", "kanji", "adjective", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-13",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 漢字】下線部の言葉を漢字で書くとき、最もよいものを選びなさい。",
+      "questionText": "私の祖父は、日本のかいがをたくさん持っている。",
+      "questionTranslation": "我祖父收藏了很多日本（　　）。",
+      "options": [
+        { "id": "n3-2022-07-v-13-a", "text": "絵面", "isCorrect": false },
+        { "id": "n3-2022-07-v-13-b", "text": "図面", "isCorrect": false },
+        { "id": "n3-2022-07-v-13-c", "text": "絵画", "isCorrect": true },
+        { "id": "n3-2022-07-v-13-d", "text": "図画", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-13-c",
+      "explanation": "絵画（かいが）＝繪畫・美術作品。注意「絵」在此讀「かい」（音讀），「画」讀「が」。図面（ずめん）・図画（ずが）讀音不同。絵画は美術館にあるような芸術作品。",
+      "tags": ["writing", "kanji", "art", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-14",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文脈規定】（　）に入れるのに最もよいものを選びなさい。",
+      "questionText": "たまねぎとにんじんは皮を（　）から料理に使ってください。",
+      "questionTranslation": "洋蔥和紅蘿蔔請（　　）皮之後再用來料理。",
+      "options": [
+        { "id": "n3-2022-07-v-14-a", "text": "むいて", "isCorrect": true },
+        { "id": "n3-2022-07-v-14-b", "text": "ほって", "isCorrect": false },
+        { "id": "n3-2022-07-v-14-c", "text": "やぶって", "isCorrect": false },
+        { "id": "n3-2022-07-v-14-d", "text": "はなして", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-14-a",
+      "explanation": "皮をむく（むいて）＝削皮・剝皮，蔬菜水果去皮的固定說法。ほる＝挖；やぶる＝撕破；はなす＝分開。「皮をむく」是料理常用詞組。",
+      "tags": ["context", "verb", "cooking", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-15",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文脈規定】（　）に入れるのに最もよいものを選びなさい。",
+      "questionText": "この国には石油やガスなどの（　）があまりありません。",
+      "questionTranslation": "這個國家石油和天然氣等（　　）不多。",
+      "options": [
+        { "id": "n3-2022-07-v-15-a", "text": "栄養", "isCorrect": false },
+        { "id": "n3-2022-07-v-15-b", "text": "資源", "isCorrect": true },
+        { "id": "n3-2022-07-v-15-c", "text": "内容", "isCorrect": false },
+        { "id": "n3-2022-07-v-15-d", "text": "部品", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-15-b",
+      "explanation": "資源（しげん）＝資源。石油・ガスは「天然資源」。栄養（えいよう）＝營養；内容（ないよう）＝內容；部品（ぶひん）＝零件。「天然資源」是固定搭配。",
+      "tags": ["context", "noun", "environment", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-16",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文脈規定】（　）に入れるのに最もよいものを選びなさい。",
+      "questionText": "一生懸命頑張ったのに、試合に負けてしまって、とても（　）です。",
+      "questionTranslation": "明明拼命努力了，比賽卻還是輸了，真的很（　　）。",
+      "options": [
+        { "id": "n3-2022-07-v-16-a", "text": "まずしかった", "isCorrect": false },
+        { "id": "n3-2022-07-v-16-b", "text": "あやしかった", "isCorrect": false },
+        { "id": "n3-2022-07-v-16-c", "text": "くやしかった", "isCorrect": true },
+        { "id": "n3-2022-07-v-16-d", "text": "ずるかった", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-16-c",
+      "explanation": "悔しい（くやしい）＝懊悔・不甘心。拼命努力卻輸了→悔しい。まずしい＝貧窮；あやしい＝可疑；ずるい＝狡猾。努力後失敗時用「悔しい」，是重要的情感詞彙。",
+      "tags": ["context", "adjective", "emotion", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-17",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文脈規定】（　）に入れるのに最もよいものを選びなさい。",
+      "questionText": "旅行に行けなくなったので、ホテルの予約を（　）した。",
+      "questionTranslation": "因為無法去旅行了，所以把飯店預約（　　）了。",
+      "options": [
+        { "id": "n3-2022-07-v-17-a", "text": "ピックアップ", "isCorrect": false },
+        { "id": "n3-2022-07-v-17-b", "text": "キャンセル", "isCorrect": true },
+        { "id": "n3-2022-07-v-17-c", "text": "ディスカウント", "isCorrect": false },
+        { "id": "n3-2022-07-v-17-d", "text": "チェックアウト", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-17-b",
+      "explanation": "キャンセル（cancel）＝取消。予約をキャンセルする是固定搭配。ピックアップ＝挑選・接送；ディスカウント＝折扣；チェックアウト＝退房（到達飯店後才能退房）。",
+      "tags": ["context", "katakana", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-18",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文脈規定】（　）に入れるのに最もよいものを選びなさい。",
+      "questionText": "コーヒーをこぼして、白いズボンに（　）ができてしまった。",
+      "questionTranslation": "咖啡灑出來，白色褲子上出現了（　　）。",
+      "options": [
+        { "id": "n3-2022-07-v-18-a", "text": "穴", "isCorrect": false },
+        { "id": "n3-2022-07-v-18-b", "text": "影", "isCorrect": false },
+        { "id": "n3-2022-07-v-18-c", "text": "こぶ", "isCorrect": false },
+        { "id": "n3-2022-07-v-18-d", "text": "しみ", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2022-07-v-18-d",
+      "explanation": "しみ（染み）＝污漬・斑點。コーヒーをこぼす→しみができる是自然的因果關係。穴（あな）＝洞；影（かげ）＝影子；こぶ＝腫塊。「しみ」是衣服上液體留下的痕跡。",
+      "tags": ["context", "noun", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-19",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文脈規定】（　）に入れるのに最もよいものを選びなさい。",
+      "questionText": "兄を起こすために、部屋の外からドアを強く（　）。",
+      "questionTranslation": "為了叫醒哥哥，從房間外面用力（　　）了門。",
+      "options": [
+        { "id": "n3-2022-07-v-19-a", "text": "たたいた", "isCorrect": true },
+        { "id": "n3-2022-07-v-19-b", "text": "さわった", "isCorrect": false },
+        { "id": "n3-2022-07-v-19-c", "text": "つかまえた", "isCorrect": false },
+        { "id": "n3-2022-07-v-19-d", "text": "なでた", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-19-a",
+      "explanation": "ドアをたたく（叩く）＝敲門，是固定說法。「強く」配合「たたく」最自然。さわる＝輕觸；つかまえる＝抓住；なでる＝撫摸。敲門喚醒人用「ドアをたたく」。",
+      "tags": ["context", "verb", "action", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-20",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文脈規定】（　）に入れるのに最もよいものを選びなさい。",
+      "questionText": "交通事故を（　）ために、ここに横断歩道を作るそうです。",
+      "questionTranslation": "聽說為了（　　）交通事故，要在這裡設置行人穿越道。",
+      "options": [
+        { "id": "n3-2022-07-v-20-a", "text": "直す", "isCorrect": false },
+        { "id": "n3-2022-07-v-20-b", "text": "逃す", "isCorrect": false },
+        { "id": "n3-2022-07-v-20-c", "text": "防ぐ", "isCorrect": true },
+        { "id": "n3-2022-07-v-20-d", "text": "守る", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-20-c",
+      "explanation": "防ぐ（ふせぐ）＝防止・預防。交通事故を防ぐ＝防止交通事故。直す＝修正；逃す＝放走・錯過；守る＝保護（事故を守るは不自然）。「事故を防ぐ」是固定搭配。",
+      "tags": ["context", "verb", "safety", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-21",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文脈規定】（　）に入れるのに最もよいものを選びなさい。",
+      "questionText": "のどが（　）ので、何か飲みたいです。",
+      "questionTranslation": "因為（　　），想喝點什麼。",
+      "options": [
+        { "id": "n3-2022-07-v-21-a", "text": "へった", "isCorrect": false },
+        { "id": "n3-2022-07-v-21-b", "text": "すいた", "isCorrect": false },
+        { "id": "n3-2022-07-v-21-c", "text": "かわいた", "isCorrect": true },
+        { "id": "n3-2022-07-v-21-d", "text": "やせた", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-21-c",
+      "explanation": "のどが渇く（かわく）＝口渴，固定說法。お腹がへる＝肚子餓（減少）；お腹がすく＝肚子餓；やせる＝變瘦。「のどが渇いた→飲みたい」是自然的因果關係。注意：口渴是のど，肚餓是お腹。",
+      "tags": ["context", "verb", "body", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-22",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文脈規定】（　）に入れるのに最もよいものを選びなさい。",
+      "questionText": "行きは佐藤さんと2人で来たが、帰りは（　）だった。",
+      "questionTranslation": "去的時候和佐藤先生一起兩人來，但回程是（　　）的。",
+      "options": [
+        { "id": "n3-2022-07-v-22-a", "text": "様々", "isCorrect": false },
+        { "id": "n3-2022-07-v-22-b", "text": "半々", "isCorrect": false },
+        { "id": "n3-2022-07-v-22-c", "text": "別々", "isCorrect": true },
+        { "id": "n3-2022-07-v-22-d", "text": "色々", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-22-c",
+      "explanation": "別々（べつべつ）＝各自・分開，一起去但分開回來。様々（さまざま）＝各式各樣；半々（はんはん）＝各半；色々（いろいろ）＝各種各樣。「帰りは別々だった」＝回程各走各的。",
+      "tags": ["context", "adverb", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-23",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文脈規定】（　）に入れるのに最もよいものを選びなさい。",
+      "questionText": "留学については、両親とよく（　）、決めるつもりだ。",
+      "questionTranslation": "關於留學的事，打算和父母好好（　　）後再決定。",
+      "options": [
+        { "id": "n3-2022-07-v-23-a", "text": "取り込んで", "isCorrect": false },
+        { "id": "n3-2022-07-v-23-b", "text": "言い返して", "isCorrect": false },
+        { "id": "n3-2022-07-v-23-c", "text": "受け取って", "isCorrect": false },
+        { "id": "n3-2022-07-v-23-d", "text": "話し合って", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2022-07-v-23-d",
+      "explanation": "話し合う（はなしあう）＝商量・討論（互相說）。両親と話し合う＝和父母商量。取り込む＝拿進去・忙碌；言い返す＝頂嘴；受け取る＝接收。「よく話し合って決める」是重要的複合動詞。",
+      "tags": ["context", "compound-verb", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-24",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文脈規定】（　）に入れるのに最もよいものを選びなさい。",
+      "questionText": "昨日の夜から歯が痛くて、（　）します。",
+      "questionTranslation": "從昨晚開始牙齒就（　　）地痛。",
+      "options": [
+        { "id": "n3-2022-07-v-24-a", "text": "とんとん", "isCorrect": false },
+        { "id": "n3-2022-07-v-24-b", "text": "ざあざあ", "isCorrect": false },
+        { "id": "n3-2022-07-v-24-c", "text": "ずきずき", "isCorrect": true },
+        { "id": "n3-2022-07-v-24-d", "text": "からから", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-24-c",
+      "explanation": "ずきずき＝（疼痛）一陣一陣地抽痛。歯がずきずきする＝牙齒抽痛。とんとん＝輕敲聲；ざあざあ＝大雨聲；からから＝乾燥・空洞聲。痛みの擬音：ずきずき（抽痛）・ちくちく（刺痛）・じんじん（麻痛）。",
+      "tags": ["context", "onomatopoeia", "pain", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-25",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 類義語】＿＿に意味が最も近いものを選びなさい。",
+      "questionText": "ふだんと同じようにやってください。",
+      "questionTranslation": "請和（平常）一樣做。",
+      "options": [
+        { "id": "n3-2022-07-v-25-a", "text": "みんな", "isCorrect": false },
+        { "id": "n3-2022-07-v-25-b", "text": "昔", "isCorrect": false },
+        { "id": "n3-2022-07-v-25-c", "text": "いつも", "isCorrect": true },
+        { "id": "n3-2022-07-v-25-d", "text": "例", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-25-c",
+      "explanation": "ふだん（普段）＝平常・平時≒いつも（一直・總是）。みんな＝大家；昔＝以前；例＝例子。「ふだんどおり」＝「いつもどおり」，表示按照日常習慣。",
+      "tags": ["synonym", "adverb", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-26",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 類義語】＿＿に意味が最も近いものを選びなさい。",
+      "questionText": "あの人は短気だ。",
+      "questionTranslation": "那個人（性急）。",
+      "options": [
+        { "id": "n3-2022-07-v-26-a", "text": "すぐ怒る", "isCorrect": true },
+        { "id": "n3-2022-07-v-26-b", "text": "すぐ謝る", "isCorrect": false },
+        { "id": "n3-2022-07-v-26-c", "text": "すぐ驚く", "isCorrect": false },
+        { "id": "n3-2022-07-v-26-d", "text": "すぐ喜ぶ", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-26-a",
+      "explanation": "短気（たんき）＝性急・容易生氣≒すぐ怒る（馬上就生氣）。謝る＝道歉；驚く＝驚訝；喜ぶ＝高興。「短気を起こす」＝發脾氣，是重要的N3詞彙。",
+      "tags": ["synonym", "personality", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-27",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 類義語】＿＿に意味が最も近いものを選びなさい。",
+      "questionText": "12時にグラウンドに来てください。",
+      "questionTranslation": "請12點到（操場）來。",
+      "options": [
+        { "id": "n3-2022-07-v-27-a", "text": "屋上", "isCorrect": false },
+        { "id": "n3-2022-07-v-27-b", "text": "体育館", "isCorrect": false },
+        { "id": "n3-2022-07-v-27-c", "text": "公園", "isCorrect": false },
+        { "id": "n3-2022-07-v-27-d", "text": "運動場", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2022-07-v-27-d",
+      "explanation": "グラウンド（ground）＝運動場・操場。屋上（おくじょう）＝屋頂；体育館（たいいくかん）＝體育館（室內）；公園（こうえん）＝公園（公共場所，非專指運動）。",
+      "tags": ["synonym", "katakana", "place", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-28",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 類義語】＿＿に意味が最も近いものを選びなさい。",
+      "questionText": "私のおいは東京に住んでいます。",
+      "questionTranslation": "我的（姪子）住在東京。",
+      "options": [
+        { "id": "n3-2022-07-v-28-a", "text": "姉の息子", "isCorrect": true },
+        { "id": "n3-2022-07-v-28-b", "text": "姉の娘", "isCorrect": false },
+        { "id": "n3-2022-07-v-28-c", "text": "父の弟", "isCorrect": false },
+        { "id": "n3-2022-07-v-28-d", "text": "父の妹", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-28-a",
+      "explanation": "甥（おい）＝兄弟姊妹的兒子（男姪/外甥）。姉の息子（姐姐的兒子）＝甥✓。姉の娘＝姪（めい）；父の弟＝叔父（おじ）；父の妹＝叔母（おば）。親族名稱是重要考點。",
+      "tags": ["synonym", "family", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-29",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 類義語】＿＿に意味が最も近いものを選びなさい。",
+      "questionText": "もっとくわしく説明してください。",
+      "questionTranslation": "請說明得更（詳細）。",
+      "options": [
+        { "id": "n3-2022-07-v-29-a", "text": "早く", "isCorrect": false },
+        { "id": "n3-2022-07-v-29-b", "text": "細かく", "isCorrect": true },
+        { "id": "n3-2022-07-v-29-c", "text": "簡単に", "isCorrect": false },
+        { "id": "n3-2022-07-v-29-d", "text": "熱心に", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-29-b",
+      "explanation": "くわしく（詳しく）＝詳細地≒細かく（仔細地・詳細地）。早く＝快速地；簡単に＝簡單地（反向）；熱心に＝熱情地。「細かく説明する」與「詳しく説明する」語感相近。",
+      "tags": ["synonym", "adverb", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-30",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 使い方】つぎの言葉の使い方として最もよいものを選びなさい。「諦める」",
+      "questionText": "「諦める（あきらめる）」の使い方として正しい文はどれですか。",
+      "questionTranslation": "下列哪個句子中「諦める」的用法正確？",
+      "options": [
+        { "id": "n3-2022-07-v-30-a", "text": "今日は天気がいいから、傘を諦めてよさそうだ。", "isCorrect": false },
+        { "id": "n3-2022-07-v-30-b", "text": "台風が来そうなので、あしたの登山を諦めることにした。", "isCorrect": true },
+        { "id": "n3-2022-07-v-30-c", "text": "家を出てすぐに、鍵をかけるのを諦めたことに気づいた。", "isCorrect": false },
+        { "id": "n3-2022-07-v-30-d", "text": "悲しい小説だったので、泣くのを諦められなかった。", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-30-b",
+      "explanation": "諦める（あきらめる）＝放棄・死心。2因颱風放棄登山計畫→正確✓。1「傘を諦める」不自然，應說「傘はいらなそうだ」；3「忘れた」才對；4「止められなかった」才對。「〜をあきらめる」＝放棄〜（目標・計畫）。",
+      "tags": ["usage", "verb", "decision", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-31",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 使い方】つぎの言葉の使い方として最もよいものを選びなさい。「参加」",
+      "questionText": "「参加（さんか）」の使い方として正しい文はどれですか。",
+      "questionTranslation": "下列哪個句子中「参加」的用法正確？",
+      "options": [
+        { "id": "n3-2022-07-v-31-a", "text": "赤ちゃんが家族に参加したので、生活が変わった。", "isCorrect": false },
+        { "id": "n3-2022-07-v-31-b", "text": "山川さんが事故に参加して、足をけがしたそうだ。", "isCorrect": false },
+        { "id": "n3-2022-07-v-31-c", "text": "あしたは息子と一緒にパーティーに参加するつもりだ。", "isCorrect": true },
+        { "id": "n3-2022-07-v-31-d", "text": "父は貿易会社に参加しているので、出張は海外が多い。", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-31-c",
+      "explanation": "参加する（さんかする）＝參加（活動・會議）。3パーティーに参加する→正確✓。1赤ちゃんが加わった＝「加わった」；2事故に「巻き込まれた」；4会社に「勤めている」。「〜に参加する」接活動類名詞。",
+      "tags": ["usage", "verb", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-32",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 使い方】つぎの言葉の使い方として最もよいものを選びなさい。「盛ん」",
+      "questionText": "「盛ん（さかん）」の使い方として正しい文はどれですか。",
+      "questionTranslation": "下列哪個句子中「盛ん」的用法正確？",
+      "options": [
+        { "id": "n3-2022-07-v-32-a", "text": "あしたは試合なので、今日は練習時間が盛んだった。", "isCorrect": false },
+        { "id": "n3-2022-07-v-32-b", "text": "今日は荷物が盛んなので、大きなかばんが必要だ。", "isCorrect": false },
+        { "id": "n3-2022-07-v-32-c", "text": "このレストランは、魚も野菜も盛んでおいしい。", "isCorrect": false },
+        { "id": "n3-2022-07-v-32-d", "text": "この町は以前から外国人との交流が盛んだ。", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2022-07-v-32-d",
+      "explanation": "盛ん（さかん）＝（活動・文化・産業等）盛行・活躍。4外国人との交流が盛ん→正確✓。1「練習時間が盛ん」不自然；2荷物の量は「多い」；3食材豊富は「豊富で/揃っていて」。盛んは活動的繁盛，不描述數量。",
+      "tags": ["usage", "adjective", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-33",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 使い方】つぎの言葉の使い方として最もよいものを選びなさい。「整理」",
+      "questionText": "「整理（せいり）」の使い方として正しい文はどれですか。",
+      "questionTranslation": "下列哪個句子中「整理」的用法正確？",
+      "options": [
+        { "id": "n3-2022-07-v-33-a", "text": "机の引き出しを整理して、いらない物を捨てました。", "isCorrect": true },
+        { "id": "n3-2022-07-v-33-b", "text": "家の廊下が汚れていたので、ぞうきんで整理しました。", "isCorrect": false },
+        { "id": "n3-2022-07-v-33-c", "text": "長い間使っていない部屋の窓を開けて、空気を整理した。", "isCorrect": false },
+        { "id": "n3-2022-07-v-33-d", "text": "虫歯になると困るので、毎回、食事の後で歯を整理している。", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-33-a",
+      "explanation": "整理する（せいりする）＝整理・整頓（歸類・去除不要的物品）。1引き出しを整理する→正確✓。2廊下の掃除は「掃除した/拭いた」；3空気は「入れ替えた」；4歯は「磨いている」。整理する＝讓亂的東西變整齊。",
+      "tags": ["usage", "verb", "n3-vocab"]
+    },
+    {
+      "id": "n3-2022-07-v-34",
+      "level": "N3",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 使い方】つぎの言葉の使い方として最もよいものを選びなさい。「通り過ぎる」",
+      "questionText": "「通り過ぎる（とおりすぎる）」の使い方として正しい文はどれですか。",
+      "questionTranslation": "下列哪個句子中「通り過ぎる」的用法正確？",
+      "options": [
+        { "id": "n3-2022-07-v-34-a", "text": "さっき店の前を自転車で通り過ぎたのは、木村さんだと思う。", "isCorrect": true },
+        { "id": "n3-2022-07-v-34-b", "text": "バスが遅れて、待ち合わせの時間を通り過ぎてしまった。", "isCorrect": false },
+        { "id": "n3-2022-07-v-34-c", "text": "今日はご飯の量を通り過ぎて、おなかがいっぱいだ。", "isCorrect": false },
+        { "id": "n3-2022-07-v-34-d", "text": "締め切りを通り過ぎないように、書類は早めに出したほうがいい。", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2022-07-v-34-a",
+      "explanation": "通り過ぎる（とおりすぎる）＝路過・經過（通過某地點而沒有停下）。1店の前を自転車で通り過ぎる→正確✓。2時間は「過ぎてしまった」；3食べ量は「食べ過ぎて」；4締め切りは「過ぎないように」。通り過ぎる描述人/物通過某個地點。",
+      "tags": ["usage", "compound-verb", "movement", "n3-vocab"]
+    }
+  ]
+}

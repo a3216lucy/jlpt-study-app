@@ -1,0 +1,334 @@
+{
+  "id": "n3-2021-12-grammar",
+  "title": "2021年12月 N3 文法",
+  "description": "2021年12月 N3 真題：言語知識（文法）問題1〜2（共18題）",
+  "level": "N3",
+  "category": "grammar",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n3-2021-12-g-01",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n母は、留学している兄と久しぶりに電話で話して、とてもうれしそうな顔（　）していた。",
+      "questionText": "とてもうれしそうな顔（　）していた。",
+      "questionTranslation": "媽媽和正在留學的哥哥久違地通了電話，一臉看起來很開心的（　　）。",
+      "options": [
+        { "id": "n3-2021-12-g-01-a", "text": "へ", "isCorrect": false },
+        { "id": "n3-2021-12-g-01-b", "text": "が", "isCorrect": false },
+        { "id": "n3-2021-12-g-01-c", "text": "を", "isCorrect": true },
+        { "id": "n3-2021-12-g-01-d", "text": "の", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-01-c",
+      "explanation": "「〜な顔をしている」＝露出〜的表情，是固定說法。「うれしそうな顔をしていた」＝露出開心的樣子。へ＝方向；が＝主格；の＝所有格。「顔をする」是描述表情的固定搭配，也可用「笑顔をする」「変な顔をする」。",
+      "tags": ["particle", "fixed-expression", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-02",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n長い間建設中だったABCビルが、昨日（　）完成した。",
+      "questionText": "長い間建設中だったABCビルが、昨日（　）完成した。",
+      "questionTranslation": "長久以來一直在建設中的ABC大樓，昨天（　　）完工了。",
+      "options": [
+        { "id": "n3-2021-12-g-02-a", "text": "ずっと", "isCorrect": false },
+        { "id": "n3-2021-12-g-02-b", "text": "今にも", "isCorrect": false },
+        { "id": "n3-2021-12-g-02-c", "text": "次第に", "isCorrect": false },
+        { "id": "n3-2021-12-g-02-d", "text": "ついに", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2021-12-g-02-d",
+      "explanation": "ついに＝終於（期待或擔心已久的事終於發生）。「長い間建設中→ついに完成した」是典型的「終於」情境。ずっと＝一直（持續狀態）；今にも＝馬上就要（接近發生，用未然形）；次第に＝漸漸地（強調過程）。「ついに〜た」表示歷經長時間等待後的結果。",
+      "tags": ["adverb", "ついに", "finally", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-03",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n（電話で）店長「大下さん、急で申し訳ないんですけど、明日出勤することはできますか。」大下「午後（　）行けますが、それでも大丈夫ですか。」",
+      "questionText": "「午後（　）行けますが、それでも大丈夫ですか。」",
+      "questionTranslation": "「（　　）下午可以去，這樣可以嗎？」",
+      "options": [
+        { "id": "n3-2021-12-g-03-a", "text": "でなら", "isCorrect": false },
+        { "id": "n3-2021-12-g-03-b", "text": "からなら", "isCorrect": true },
+        { "id": "n3-2021-12-g-03-c", "text": "へでも", "isCorrect": false },
+        { "id": "n3-2021-12-g-03-d", "text": "までも", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-03-b",
+      "explanation": "「〜からなら」＝從〜開始的話。「午後から（從下午開始）なら（的話）行けます」＝從下午開始的話可以去。でなら・へでも不自然；までも＝「到下午為止」（方向相反）。「〜からなら」描述條件的起點。",
+      "tags": ["particle", "conditional", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-04",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n音楽会は、あすの11時からさくら広場（　）開かれます。",
+      "questionText": "音楽会は、あすの11時からさくら広場（　）開かれます。",
+      "questionTranslation": "音樂會明天11時起將（　　）櫻花廣場舉辦。",
+      "options": [
+        { "id": "n3-2021-12-g-04-a", "text": "に対して", "isCorrect": false },
+        { "id": "n3-2021-12-g-04-b", "text": "によって", "isCorrect": false },
+        { "id": "n3-2021-12-g-04-c", "text": "について", "isCorrect": false },
+        { "id": "n3-2021-12-g-04-d", "text": "において", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2021-12-g-04-d",
+      "explanation": "「〜において」＝在〜（地點・場合），是「で」的正式・書面語表達。「さくら広場において開かれます」＝在櫻花廣場舉辦。に対して＝對於（對象）；によって＝由…手段/被動原因；について＝關於。「において」常出現在公告・新聞・正式文書中。",
+      "tags": ["expression", "において", "formal-location", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-05",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n去年姉に子供が生まれた。2、3か月に1回ぐらい会っているが、会う（　）大きくなっていて、びっくりする。",
+      "questionText": "会う（　）大きくなっていて、びっくりする。",
+      "questionTranslation": "（　　）見面都長大了，令人驚訝。",
+      "options": [
+        { "id": "n3-2021-12-g-05-a", "text": "たびに", "isCorrect": true },
+        { "id": "n3-2021-12-g-05-b", "text": "うちに", "isCorrect": false },
+        { "id": "n3-2021-12-g-05-c", "text": "間に", "isCorrect": false },
+        { "id": "n3-2021-12-g-05-d", "text": "前に", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-05-a",
+      "explanation": "「〜たびに」＝每次〜的時候。「会うたびに大きくなっている」＝每次見面都在長大。うちに＝趁著…期間；間に＝在這期間；前に＝之前。「〜たびに」強調每次做某事都伴隨某個現象，是重要的N3語法。",
+      "tags": ["expression", "たびに", "repetition", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-06",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n私は10年前から同じかばんを（　）続けている。",
+      "questionText": "私は10年前から同じかばんを（　）続けている。",
+      "questionTranslation": "我從10年前開始一直（　　）同一個包包。",
+      "options": [
+        { "id": "n3-2021-12-g-06-a", "text": "使う", "isCorrect": false },
+        { "id": "n3-2021-12-g-06-b", "text": "使い", "isCorrect": true },
+        { "id": "n3-2021-12-g-06-c", "text": "使おう", "isCorrect": false },
+        { "id": "n3-2021-12-g-06-d", "text": "使った", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-06-b",
+      "explanation": "「〜続ける」前接動詞連用形（ます形語幹）。使う→使い（連用形）→使い続ける。辭書形「使う」・意志形「使おう」・過去形「使った」都不能接続ける。「〜し続ける」是持續動作的重要句型。",
+      "tags": ["conjugation", "続ける", "continuation", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-07",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n田中さんがわたしの方に（　）見えました。",
+      "questionText": "田中さんがわたしの方に（　）見えました。",
+      "questionTranslation": "我（　　）田中先生朝我這邊跑過來了。",
+      "options": [
+        { "id": "n3-2021-12-g-07-a", "text": "走っていくことが", "isCorrect": false },
+        { "id": "n3-2021-12-g-07-b", "text": "走ってくることが", "isCorrect": false },
+        { "id": "n3-2021-12-g-07-c", "text": "走っていくのが", "isCorrect": false },
+        { "id": "n3-2021-12-g-07-d", "text": "走ってくるのが", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2021-12-g-07-d",
+      "explanation": "感官動詞「見える・聞こえる」前接「〜のが」（不接「〜ことが」）。「わたしの方に走ってくる」＝朝我這邊跑過來（くる＝往說話者方向）。いく＝往遠離說話者的方向。「〜するのが見える」是感官動詞的標準接續形式。",
+      "tags": ["expression", "のが見える", "verb-direction", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-08",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n山田「ジョンくんは、毎日バスケットボールの練習をしているんですか。」ジョン「はい。早く試合に（　）なりたいんです。」",
+      "questionText": "「早く試合に（　）なりたいんです。」",
+      "questionTranslation": "「我想快點能夠（　　）上場比賽。」",
+      "options": [
+        { "id": "n3-2021-12-g-08-a", "text": "出られるように", "isCorrect": true },
+        { "id": "n3-2021-12-g-08-b", "text": "出られるために", "isCorrect": false },
+        { "id": "n3-2021-12-g-08-c", "text": "出させるように", "isCorrect": false },
+        { "id": "n3-2021-12-g-08-d", "text": "出させるために", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-08-a",
+      "explanation": "「〜ようになりたい」＝想要能夠〜（能力變化的希望）。「試合に出られるようになりたい」＝想要能夠出賽。出させる是使役形（讓別人出），主語錯誤；「〜ために」表目的，後不接「なりたい」。「〜ようになる」表示能力/習慣的改變是重要N3句型。",
+      "tags": ["expression", "ようになる", "ability-change", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-09",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n今朝はすごい雨だったが、今はもう（　）。",
+      "questionText": "今朝はすごい雨だったが、今はもう（　）。",
+      "questionTranslation": "今早下了大雨，但現在已經（　　）了。",
+      "options": [
+        { "id": "n3-2021-12-g-09-a", "text": "降っている", "isCorrect": false },
+        { "id": "n3-2021-12-g-09-b", "text": "降っていない", "isCorrect": true },
+        { "id": "n3-2021-12-g-09-c", "text": "降る", "isCorrect": false },
+        { "id": "n3-2021-12-g-09-d", "text": "降らない", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-09-b",
+      "explanation": "「もう〜ていない」＝已經不〜了（狀態已改變為否定）。「今はもう降っていない」＝現在已經不下了。もう+降っている＝矛盾（もう強調「已停止」，不能接進行形）；降る是現在/未來式；降らない是習慣性否定。「もう〜ていない」描述狀態從有到無的結果。",
+      "tags": ["expression", "もう〜ていない", "state-change", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-10",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n西川「あ、森さん、携帯電話がポケットから（　）よ。」森「本当だ。ありがとうございます。」",
+      "questionText": "「携帯電話がポケットから（　）よ。」",
+      "questionTranslation": "「手機快要（　　）口袋了哦。」",
+      "options": [
+        { "id": "n3-2021-12-g-10-a", "text": "落ちるそうです", "isCorrect": false },
+        { "id": "n3-2021-12-g-10-b", "text": "落ちそうです", "isCorrect": true },
+        { "id": "n3-2021-12-g-10-c", "text": "落とすそうです", "isCorrect": false },
+        { "id": "n3-2021-12-g-10-d", "text": "落としそうです", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-10-b",
+      "explanation": "「〜そうだ（様態）」＝看起來快要〜（根據視覺判斷）。「落ちそう」＝手機自己快要掉了（落ちる是自動詞）。落ちるそう＝傳聞（聽說）；落とすそう・落としそう用他動詞（人弄掉），但主語是手機，應用自動詞「落ちる」。「〜そうだ（様態）」描述即將發生的狀況。",
+      "tags": ["expression", "そうだ", "appearance", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-11",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\nA「今度駅前に新しいケーキ屋さんができる（　）ね。」B「本当ですか。楽しみですね。」",
+      "questionText": "「新しいケーキ屋さんができる（　）ね。」",
+      "questionTranslation": "「車站前（　　）要新開一家蛋糕店耶。」",
+      "options": [
+        { "id": "n3-2021-12-g-11-a", "text": "でしょう", "isCorrect": false },
+        { "id": "n3-2021-12-g-11-b", "text": "といい", "isCorrect": false },
+        { "id": "n3-2021-12-g-11-c", "text": "ほうがいい", "isCorrect": false },
+        { "id": "n3-2021-12-g-11-d", "text": "みたいだ", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2021-12-g-11-d",
+      "explanation": "「〜みたいだ/みたいですね」＝好像（聽說/看來），是口語傳聞或推測。「できるみたいだね」＝好像要開了（聽說的消息）。でしょう＝推測（較正式，強度較高）；といい＝但願…（希望）；ほうがいい＝建議（勸說）。「みたいだ」是N3常考的口語推測/傳聞表達。",
+      "tags": ["expression", "みたいだ", "hearsay-conjecture", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-12",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\nこの花は、土が乾いたら水をやる必要があるが、（　）。水が多いと根が腐ってしまう。",
+      "questionText": "土が乾いたら水をやる必要があるが、（　）。水が多いと根が腐ってしまう。",
+      "questionTranslation": "土壤乾了就需要澆水，但（　　）。水太多根部會腐爛。",
+      "options": [
+        { "id": "n3-2021-12-g-12-a", "text": "やりすぎるのもよくない", "isCorrect": true },
+        { "id": "n3-2021-12-g-12-b", "text": "やらなくていいのがいい", "isCorrect": false },
+        { "id": "n3-2021-12-g-12-c", "text": "やってやるのもよくない", "isCorrect": false },
+        { "id": "n3-2021-12-g-12-d", "text": "やらないでおくのがいい", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-12-a",
+      "explanation": "「〜すぎるのもよくない」＝〜太多也不好。後文「水が多いと根が腐る」正好對應「やりすぎる（澆太多）もよくない（也不好）」。Bは「不需要澆水才好」，Dは「乾脆不澆才好」→都與前句「必要がある」矛盾；Cは文法不自然。",
+      "tags": ["expression", "すぎる", "excess", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-13",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n（患者が病院に電話をする）受付「はい。山田病院でございます。」患者「すみません。10時に予約した田中と申しますが、11時に（　）。」",
+      "questionText": "「10時に予約した田中と申しますが、11時に（　）。」",
+      "questionTranslation": "「我是預約10點的田中，可以（　　）11點嗎？」",
+      "options": [
+        { "id": "n3-2021-12-g-13-a", "text": "変えましょうか", "isCorrect": false },
+        { "id": "n3-2021-12-g-13-b", "text": "変えたほうがいいですか", "isCorrect": false },
+        { "id": "n3-2021-12-g-13-c", "text": "変えていただきましょう", "isCorrect": false },
+        { "id": "n3-2021-12-g-13-d", "text": "変えていただけないでしょうか", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2021-12-g-13-d",
+      "explanation": "「〜ていただけないでしょうか」＝能否請您幫我〜？是最禮貌的請求形式。患者請求醫院幫改預約時間，用最高敬意請求最合適。変えましょうか＝我來改（說話者主動提議）；変えたほうがいいですか＝詢問建議；変えていただきましょう文法錯誤。「〜ていただけないでしょうか」是服務業/正式場合的重要句型。",
+      "tags": ["expression", "いただけないでしょうか", "polite-request", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-14",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\nこの小学生は＿＿ ★ ＿＿ ＿＿ 問題を簡単に解いてしまう。\n選択肢：1.大人　2.ような　3.でも　4.解けない",
+      "questionText": "この小学生は＿＿ ★ ＿＿ ＿＿ 問題を簡単に解いてしまう。\n正しい語順：[大人①] [★でも③] [解けない④] [ような②]",
+      "questionTranslation": "這個小學生，連大人都解不出來的題目，他輕鬆就解出來了。",
+      "options": [
+        { "id": "n3-2021-12-g-14-a", "text": "大人", "isCorrect": false },
+        { "id": "n3-2021-12-g-14-b", "text": "ような", "isCorrect": false },
+        { "id": "n3-2021-12-g-14-c", "text": "でも", "isCorrect": true },
+        { "id": "n3-2021-12-g-14-d", "text": "解けない", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-14-c",
+      "explanation": "完整句：この小学生は大人でも解けないような問題を簡単に解いてしまう。語序：大人①→でも③★→解けない④→ような②。「〜でも〜ない」＝即使是〜也無法〜（強調極端例子）。★位置是「でも」（選項3）。「大人でも解けないような問題」是修飾「問題」的整個定語節。",
+      "tags": ["sentence-arrangement", "でも", "extreme-example", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-15",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n去年、初めて一人で海外を旅行した。行く前は心配なこともあったが、＿＿ ＿＿ ★ ＿＿ だった。\n選択肢：1.楽しいこと　2.ばかり　3.旅行していた　4.２週間は",
+      "questionText": "＿＿ ＿＿ ★ ＿＿ だった。\n正しい語順：[旅行していた③] [２週間は④] [★楽しいこと①] [ばかり②]",
+      "questionTranslation": "去年第一次獨自出國旅行。出發前雖然有些擔心，但旅行的2週都是快樂的事而已。",
+      "options": [
+        { "id": "n3-2021-12-g-15-a", "text": "楽しいこと", "isCorrect": true },
+        { "id": "n3-2021-12-g-15-b", "text": "ばかり", "isCorrect": false },
+        { "id": "n3-2021-12-g-15-c", "text": "旅行していた", "isCorrect": false },
+        { "id": "n3-2021-12-g-15-d", "text": "２週間は", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-15-a",
+      "explanation": "完整句：旅行していた２週間は楽しいことばかりだった。語序：旅行していた③→２週間は④→楽しいこと①★→ばかり②。「〜ばかりだった」＝全都是〜。★位置是「楽しいこと」（選項1）。「〜ことばかり」是「名詞化した動詞/形容詞＋ばかり」的用法。",
+      "tags": ["sentence-arrangement", "ばかり", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-16",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\nA「昨日は日曜日だったから、遊園地は人が多かったでしょう？」B「いや、＿＿ ＿＿ ★ ＿＿ いませんでしたよ。」\n選択肢：1.いた　2.込んで　3.ほど　4.思って",
+      "questionText": "B「いや、＿＿ ＿＿ ★ ＿＿ いませんでしたよ。」\n正しい語順：[思って④] [いた①] [★ほど③] [込んで②]",
+      "questionTranslation": "B「不，沒有我以為的那麼擠哦。」",
+      "options": [
+        { "id": "n3-2021-12-g-16-a", "text": "いた", "isCorrect": false },
+        { "id": "n3-2021-12-g-16-b", "text": "込んで", "isCorrect": false },
+        { "id": "n3-2021-12-g-16-c", "text": "ほど", "isCorrect": true },
+        { "id": "n3-2021-12-g-16-d", "text": "思って", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-16-c",
+      "explanation": "完整句：思っていたほど込んでいませんでしたよ。語序：思って④→いた①→ほど③★→込んで②。「〜ほど（〜ない）」＝沒有想像中那樣〜（程度未達預期）。★位置是「ほど」（選項3）。「思っていたほど〜ない」是表達「沒有預期中那麼〜」的常用句型。",
+      "tags": ["sentence-arrangement", "ほど", "degree", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-17",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n一人暮らしを始めて、両親が毎日仕事を＿＿ ＿＿ ★ ＿＿ なことだったか、よくわかった。\n選択肢：1.どれだけ　2.しながら　3.食事の準備や洗濯を　4.してくれていたことが",
+      "questionText": "両親が毎日仕事を＿＿ ＿＿ ★ ＿＿ なことだったか、よくわかった。\n正しい語順：[しながら②] [食事の準備や洗濯を③] [★してくれていたことが④] [どれだけ①]",
+      "questionTranslation": "開始獨居後，才深刻了解父母每天一邊工作一邊幫我準備餐食和洗衣服是多麼不容易的事。",
+      "options": [
+        { "id": "n3-2021-12-g-17-a", "text": "どれだけ", "isCorrect": false },
+        { "id": "n3-2021-12-g-17-b", "text": "しながら", "isCorrect": false },
+        { "id": "n3-2021-12-g-17-c", "text": "食事の準備や洗濯を", "isCorrect": false },
+        { "id": "n3-2021-12-g-17-d", "text": "してくれていたことが", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2021-12-g-17-d",
+      "explanation": "完整句：両親が毎日仕事をしながら食事の準備や洗濯をしてくれていたことがどれだけなことだったか、よくわかった。語序：しながら②→食事の準備や洗濯を③→してくれていたことが④★→どれだけ①。★位置是「してくれていたことが」（選項4）。「〜てくれていた」是過去恩惠的感謝表達。",
+      "tags": ["sentence-arrangement", "てくれる", "gratitude", "n3-grammar"]
+    },
+    {
+      "id": "n3-2021-12-g-18",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n患者「先生、おふろには入ってもいいんでしょうか。」医者「＿＿ ＿＿ ★ ＿＿ いいですよ。」\n選択肢：1.なって　2.いたら　3.熱が下がって　4.あしたに",
+      "questionText": "医者「＿＿ ＿＿ ★ ＿＿ いいですよ。」\n正しい語順：[あしたに④] [なって①] [★熱が下がって③] [いたら②]",
+      "questionTranslation": "醫生：「等到明天，如果燒退了的話就可以哦。」",
+      "options": [
+        { "id": "n3-2021-12-g-18-a", "text": "なって", "isCorrect": false },
+        { "id": "n3-2021-12-g-18-b", "text": "いたら", "isCorrect": false },
+        { "id": "n3-2021-12-g-18-c", "text": "熱が下がって", "isCorrect": true },
+        { "id": "n3-2021-12-g-18-d", "text": "あしたに", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2021-12-g-18-c",
+      "explanation": "完整句：あしたになって熱が下がっていたらいいですよ。語序：あしたに④→なって①→熱が下がって③★→いたら②。「〜ていたら」是表示條件的「過去的条件形」（如果已經到了〜的狀態）。★位置是「熱が下がって」（選項3）。「〜たら〜いいですよ」是給許可的條件句型。",
+      "tags": ["sentence-arrangement", "たら", "condition", "n3-grammar"]
+    }
+  ]
+}

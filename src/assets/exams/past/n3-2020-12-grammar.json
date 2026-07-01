@@ -1,0 +1,244 @@
+{
+  "id": "n3-2020-12-grammar",
+  "title": "2020年12月 N3 文法問題1",
+  "description": "2020年12月 N3 真題：言語知識（文法）問題1 選填文法（共13題）",
+  "level": "N3",
+  "category": "grammar",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n3-2020-12-g-01",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "今年の夏は去年（＿＿）暑くない。",
+      "questionTranslation": "今年的夏天沒有去年那麼熱。",
+      "options": [
+        { "id": "n3-2020-12-g-01-a", "text": "から", "isCorrect": false },
+        { "id": "n3-2020-12-g-01-b", "text": "ほど", "isCorrect": true },
+        { "id": "n3-2020-12-g-01-c", "text": "まで", "isCorrect": false },
+        { "id": "n3-2020-12-g-01-d", "text": "しか", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2020-12-g-01-b",
+      "explanation": "〜ほど〜ない＝沒有〜那麼〜。用於比較程度，否定某事物達到某基準。から＝因為；まで＝到；しか〜ない＝只有。",
+      "tags": ["degree", "comparison", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-02",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的助詞組合。",
+      "questionText": "シャンプー（＿＿）何（＿＿）わからないが、とにかくいい香りがしてきた。",
+      "questionTranslation": "不知道是洗髮精還是什麼，總之飄來了很好聞的香味。",
+      "options": [
+        { "id": "n3-2020-12-g-02-a", "text": "か／か", "isCorrect": true },
+        { "id": "n3-2020-12-g-02-b", "text": "は／は", "isCorrect": false },
+        { "id": "n3-2020-12-g-02-c", "text": "が／が", "isCorrect": false },
+        { "id": "n3-2020-12-g-02-d", "text": "で／で", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2020-12-g-02-a",
+      "explanation": "〜か何か＝〜還是什麼（不確定）。格式為「名詞か何かわからない」，表示說話者不確定是什麼東西，但大致猜測是那一類。",
+      "tags": ["particle", "uncertainty", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-03",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "「会議の資料（＿＿）できると思いますが…。」",
+      "questionTranslation": "「如果只有會議資料的話，我想是做得到的……」",
+      "options": [
+        { "id": "n3-2020-12-g-03-a", "text": "とでも", "isCorrect": false },
+        { "id": "n3-2020-12-g-03-b", "text": "となら", "isCorrect": false },
+        { "id": "n3-2020-12-g-03-c", "text": "だけでも", "isCorrect": false },
+        { "id": "n3-2020-12-g-03-d", "text": "だけなら", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2020-12-g-03-d",
+      "explanation": "だけなら＝如果只有〜的話（設定條件）。此句意為「若只做資料這一件事，我認為可以辦到」，是限定條件的表達。⚠ 易混淆：だけでも＝至少也〜（強調努力，語氣主動），與此處的條件限定語氣不同。",
+      "tags": ["condition", "dake", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-04",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的副詞。",
+      "questionText": "このごろ、息子が（＿＿）私の言うことを聞かないので困っている。",
+      "questionTranslation": "最近兒子一點也不聽我說的話，真傷腦筋。",
+      "options": [
+        { "id": "n3-2020-12-g-04-a", "text": "やっと", "isCorrect": false },
+        { "id": "n3-2020-12-g-04-b", "text": "きっと", "isCorrect": false },
+        { "id": "n3-2020-12-g-04-c", "text": "ちっとも", "isCorrect": true },
+        { "id": "n3-2020-12-g-04-d", "text": "せっかく", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2020-12-g-04-c",
+      "explanation": "ちっとも〜ない＝一點也不〜（口語強調否定）。やっと＝好不容易終於；きっと＝一定；せっかく＝特地、難得。後方接否定形「聞かない」，符合ちっとも的用法。",
+      "tags": ["adverb", "negation", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-05",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "私たちの生活は、技術の進歩の（＿＿）とても便利になった。",
+      "questionTranslation": "我們的生活多虧技術進步變得非常方便。",
+      "options": [
+        { "id": "n3-2020-12-g-05-a", "text": "おかげで", "isCorrect": true },
+        { "id": "n3-2020-12-g-05-b", "text": "ようで", "isCorrect": false },
+        { "id": "n3-2020-12-g-05-c", "text": "ことで", "isCorrect": false },
+        { "id": "n3-2020-12-g-05-d", "text": "ほかで", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2020-12-g-05-a",
+      "explanation": "〜のおかげで＝多虧了〜（正面因果，帶感謝語氣）。結果是正面的「便利になった」，符合おかげで。⚠ 對比：せいで＝負面結果（責怪語氣）；ために＝中性因果（純描述事實）。",
+      "tags": ["cause", "okagede", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-06",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "夜遅く、駅に（＿＿）安心だ。",
+      "questionTranslation": "（飯店就在車站前，）即使深夜抵達車站也安心。",
+      "options": [
+        { "id": "n3-2020-12-g-06-a", "text": "着いたり", "isCorrect": false },
+        { "id": "n3-2020-12-g-06-b", "text": "着いたため", "isCorrect": false },
+        { "id": "n3-2020-12-g-06-c", "text": "着いたとしても", "isCorrect": true },
+        { "id": "n3-2020-12-g-06-d", "text": "着いたどうか", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2020-12-g-06-c",
+      "explanation": "〜としても＝即使〜也（假設讓步，結果不受影響）。「即使深夜到站，飯店在站前所以安心」—讓步後結果仍正面。着いたため＝因為抵達（原因，不對）；着いたどうか＝非文法格式。",
+      "tags": ["concession", "toshitemo", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-07",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "そのときに入った喫茶店がまだ（＿＿）驚いた。",
+      "questionTranslation": "驚訝地發現當時去過的那家咖啡廳還在營業。",
+      "options": [
+        { "id": "n3-2020-12-g-07-a", "text": "営業して", "isCorrect": false },
+        { "id": "n3-2020-12-g-07-b", "text": "営業しなくて", "isCorrect": false },
+        { "id": "n3-2020-12-g-07-c", "text": "営業していて", "isCorrect": true },
+        { "id": "n3-2020-12-g-07-d", "text": "営業していなくて", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2020-12-g-07-c",
+      "explanation": "営業していて＝正在營業（持續狀態）＋て接續表原因「因為還在營業所以驚訝」。まだ（還）呼應持続狀態，選営業している。して（動作）和していて（持続狀態）的區別：ている表示狀態持續。",
+      "tags": ["te-iru", "state", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-08",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的授受文型。",
+      "questionText": "子供のころ、いつも親に絵本を（＿＿）寝ていた。",
+      "questionTranslation": "小時候，總是讓父母讀繪本給我聽之後才睡覺。",
+      "options": [
+        { "id": "n3-2020-12-g-08-a", "text": "読んでくれてから", "isCorrect": false },
+        { "id": "n3-2020-12-g-08-b", "text": "読んでもらってから", "isCorrect": true },
+        { "id": "n3-2020-12-g-08-c", "text": "読んでくれるから", "isCorrect": false },
+        { "id": "n3-2020-12-g-08-d", "text": "読んでもらうから", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2020-12-g-08-b",
+      "explanation": "てもらってから＝請（對方）做了〜之後（受益者視角）。說話者（子供）是受益者，請父母讀繪本→てもらう。完成後才睡→てから。⚠ てくれてから＝對方主動為我做；此句有「親に（讓父母）」的請求暗示，用てもらう更精確。",
+      "tags": ["giving-receiving", "morau", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-09",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "「肉の色が（＿＿）野菜を入れてください。」",
+      "questionTranslation": "「肉色開始改變的話就放入蔬菜。」",
+      "options": [
+        { "id": "n3-2020-12-g-09-a", "text": "変わっていって", "isCorrect": false },
+        { "id": "n3-2020-12-g-09-b", "text": "変わってくるのに", "isCorrect": false },
+        { "id": "n3-2020-12-g-09-c", "text": "変わっていくと", "isCorrect": false },
+        { "id": "n3-2020-12-g-09-d", "text": "変わってきたら", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2020-12-g-09-d",
+      "explanation": "変わってきたら＝（顏色）開始改變了的話。てくる＝變化從某時間點開始逐漸發生（朝現在靠近）；たら＝以此為條件觸發下個動作。組合表示「當肉色開始出現變化時就〜」。",
+      "tags": ["change", "tekuru", "conditional", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-10",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的使役形。",
+      "questionText": "赤ちゃんにクラシック音楽を（＿＿）とよく眠ると聞いた。",
+      "questionTranslation": "聽說讓嬰兒聽古典音樂的話，睡得很好。",
+      "options": [
+        { "id": "n3-2020-12-g-10-a", "text": "聞かせる", "isCorrect": true },
+        { "id": "n3-2020-12-g-10-b", "text": "聞かれる", "isCorrect": false },
+        { "id": "n3-2020-12-g-10-c", "text": "聞かされる", "isCorrect": false },
+        { "id": "n3-2020-12-g-10-d", "text": "聞いている", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2020-12-g-10-a",
+      "explanation": "聞かせる＝讓〜聽（使役形）。「赤ちゃんに音楽を聞かせる」＝讓嬰兒聽音樂。聞かれる＝被聽（受動）；聞かされる＝被迫聽（被使役受動）；聞いている＝正在聽。",
+      "tags": ["causative", "shieki", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-11",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的敬語表達。",
+      "questionText": "「森先生は（＿＿）か。」",
+      "questionTranslation": "「森老師在嗎？」",
+      "options": [
+        { "id": "n3-2020-12-g-11-a", "text": "ございます", "isCorrect": false },
+        { "id": "n3-2020-12-g-11-b", "text": "いらっしゃいます", "isCorrect": true },
+        { "id": "n3-2020-12-g-11-c", "text": "拝見します", "isCorrect": false },
+        { "id": "n3-2020-12-g-11-d", "text": "お目にかかります", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2020-12-g-11-b",
+      "explanation": "いらっしゃいます＝いる的尊敬語，詢問對方「在嗎？」。ございます＝ある的謙遜語或鄭重語（不用於人的存在）；拝見します＝看（自謙）；お目にかかります＝見面（自謙，我去見對方）。",
+      "tags": ["keigo", "sonkeigo", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-12",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "「始める前から心配（＿＿）しかたないでしょう。」",
+      "questionTranslation": "「即使在開始之前一直擔心，也沒有辦法啊。」",
+      "options": [
+        { "id": "n3-2020-12-g-12-a", "text": "よりしていれば", "isCorrect": false },
+        { "id": "n3-2020-12-g-12-b", "text": "よりしていても", "isCorrect": false },
+        { "id": "n3-2020-12-g-12-c", "text": "ばかりしていれば", "isCorrect": false },
+        { "id": "n3-2020-12-g-12-d", "text": "ばかりしていても", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2020-12-g-12-d",
+      "explanation": "ばかりしていても＝即使只是一直〜也（讓步，光做某事無濟於事）。心配ばかりする＝只是一直擔心；ていても＝即使持續這樣做也。整體意思：「光擔心也沒有用」。いれば是「如果的話」，意思不符。",
+      "tags": ["bakari", "concession", "n3-grammar"]
+    },
+    {
+      "id": "n3-2020-12-g-13",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "請選出最適合填入空格的文型。",
+      "questionText": "「急に出動（＿＿）んだ。」",
+      "questionTranslation": "「突然變得不得不出勤了。」",
+      "options": [
+        { "id": "n3-2020-12-g-13-a", "text": "しなきゃならなくなった", "isCorrect": true },
+        { "id": "n3-2020-12-g-13-b", "text": "しちゃいけなくなった", "isCorrect": false },
+        { "id": "n3-2020-12-g-13-c", "text": "するつもりでいる", "isCorrect": false },
+        { "id": "n3-2020-12-g-13-d", "text": "しないようにしている", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2020-12-g-13-a",
+      "explanation": "しなきゃならなくなった＝變得不得不〜了（突發義務）。語構：なきゃ（＝なければ口語省略）＋ならない（不得不）＋なった（變成了）。表示原本不必但因突發狀況出現了必須做的義務。しちゃいけなくなった＝變得不能做了（禁止，語意相反）。",
+      "tags": ["obligation", "nakerebanaranai", "change", "n3-grammar"]
+    }
+  ]
+}

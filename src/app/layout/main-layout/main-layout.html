@@ -52,6 +52,32 @@
           >
             文法複習
           </a>
+          <a
+            #pastExamLink="routerLinkActive"
+            routerLink="/past-exam"
+            routerLinkActive="active"
+            [class]="
+              'rounded-full border px-4 py-2 text-sm font-medium transition ' +
+              (pastExamLink.isActive
+                ? 'border-violet-500 bg-violet-500 text-white shadow-[0_10px_20px_rgba(139,92,246,0.18)]'
+                : 'border-slate-200 bg-white text-slate-700 hover:border-violet-300 hover:text-violet-700')
+            "
+          >
+            考古題
+          </a>
+          <a
+            #vocabReviewLink="routerLinkActive"
+            routerLink="/vocab-review"
+            routerLinkActive="active"
+            [class]="
+              'rounded-full border px-4 py-2 text-sm font-medium transition ' +
+              (vocabReviewLink.isActive
+                ? 'border-teal-500 bg-teal-500 text-white shadow-[0_10px_20px_rgba(20,184,166,0.18)]'
+                : 'border-slate-200 bg-white text-slate-700 hover:border-teal-300 hover:text-teal-700')
+            "
+          >
+            常考單字
+          </a>
         </nav>
       </div>
     </header>

@@ -29,6 +29,67 @@ export interface ReviewData {
 }
 
 export type JlptLevel = 'N1' | 'N2' | 'N3' | 'N4' | 'N5';
+export type ReviewTab = 'general' | 'exam' | 'verb';
+
+// ── Verb conjugation types ──────────────────────────────────────────────────
+export interface VerbOnbinRow {
+  type: string;
+  typeColor: string;
+  rule: string;
+  examples: string[];
+}
+
+export interface VerbTableRow {
+  group: string;
+  color: string;
+  rule?: string;
+  examples?: string[];
+  isException?: boolean;
+  exceptions?: string[];
+  isIII?: boolean;
+  items?: string[];
+  subRows?: VerbOnbinRow[];
+}
+
+export interface VerbClassTable {
+  title: string;
+  subtitle: string;
+  rows: VerbTableRow[];
+}
+
+export interface VerbFormTable {
+  id: string;
+  label: string;
+  title: string;
+  rows: VerbTableRow[];
+}
+
+export interface VerbPoliteRow {
+  tense: string;
+  polite: string;
+  plain: string;
+  note?: string;
+}
+
+export interface VerbPoliteSection {
+  name: string;
+  color: string;
+  rows: VerbPoliteRow[];
+}
+
+export interface SonkeigoRow {
+  plain: string;
+  sonkei: string[] | null;
+  kenjou: string[] | null;
+}
+
+export interface VerbConjugationData {
+  masuForm: VerbClassTable;
+  jishoForm: VerbClassTable;
+  forms: VerbFormTable[];
+  politeVsPlain: { sections: VerbPoliteSection[] };
+  sonkeigo: SonkeigoRow[];
+}
 
 export const LEVEL_DATA_MAP: Partial<Record<JlptLevel, string>> = {
   N3: 'assets/data/grammar-n3-review.json',
@@ -39,20 +100,59 @@ export class GrammarReviewStore {
   private http = inject(HttpClient);
 
   readonly selectedLevel = signal<JlptLevel>('N3');
+  readonly activeTab = signal<ReviewTab>('general');
   readonly reviewData = signal<ReviewData | null>(null);
   readonly expandedGroups = signal<Set<string>>(new Set());
   readonly expandedPatterns = signal<Set<string>>(new Set());
   readonly loading = signal(false);
 
+  readonly verbData = signal<VerbConjugationData | null>(null);
+  readonly verbLoading = signal(false);
+  readonly selectedVerbFormId = signal<string>('masuForm');
+
   readonly hasData = computed(() => !!LEVEL_DATA_MAP[this.selectedLevel()]);
 
+  readonly generalGroups = computed(() =>
+    (this.reviewData()?.groups ?? []).filter((g) => !g.id.startsWith('exam-')),
+  );
+
+  readonly examGroups = computed(() =>
+    (this.reviewData()?.groups ?? []).filter((g) => g.id.startsWith('exam-')),
+  );
+
+  readonly displayGroups = computed(() =>
+    this.activeTab() === 'general' ? this.generalGroups() : this.examGroups(),
+  );
+
   readonly allGroupsExpanded = computed(() => {
-    const groups = this.reviewData()?.groups ?? [];
+    const groups = this.displayGroups();
     return groups.length > 0 && groups.every((g) => this.expandedGroups().has(g.id));
+  });
+
+  readonly selectedVerbClassTable = computed((): VerbClassTable | null => {
+    const data = this.verbData();
+    if (!data) return null;
+    const id = this.selectedVerbFormId();
+    if (id === 'masuForm') return data.masuForm;
+    if (id === 'jishoForm') return data.jishoForm;
+    return null;
+  });
+
+  readonly selectedVerbForm = computed((): VerbFormTable | null => {
+    const data = this.verbData();
+    if (!data) return null;
+    return data.forms.find((f) => f.id === this.selectedVerbFormId()) ?? null;
   });
 
   init() {
     this.loadLevel('N3');
+  }
+
+  switchTab(tab: ReviewTab) {
+    this.activeTab.set(tab);
+    if (tab === 'verb' && !this.verbData() && !this.verbLoading()) {
+      this.loadVerbData();
+    }
   }
 
   selectLevel(level: JlptLevel) {
@@ -79,10 +179,14 @@ export class GrammarReviewStore {
   }
 
   toggleAllGroups() {
-    const groups = this.reviewData()?.groups ?? [];
+    const groups = this.displayGroups();
     this.expandedGroups.set(
       this.allGroupsExpanded() ? new Set() : new Set(groups.map((g) => g.id)),
     );
+  }
+
+  selectVerbForm(id: string) {
+    this.selectedVerbFormId.set(id);
   }
 
   private loadLevel(level: JlptLevel) {
@@ -93,6 +197,14 @@ export class GrammarReviewStore {
     this.http.get<ReviewData>(path).subscribe((data) => {
       this.reviewData.set(data);
       this.loading.set(false);
+    });
+  }
+
+  private loadVerbData() {
+    this.verbLoading.set(true);
+    this.http.get<VerbConjugationData>('assets/data/verb-conjugation.json').subscribe((data) => {
+      this.verbData.set(data);
+      this.verbLoading.set(false);
     });
   }
 }
