@@ -1,0 +1,49 @@
+<div
+  class="relative flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-b from-sky-200 via-sky-100 to-white px-4"
+>
+  <!-- Card -->
+  <div
+    class="relative w-full max-w-sm rounded-3xl bg-white/85 px-8 py-10 shadow-2xl backdrop-blur-md ring-1 ring-white/60"
+  >
+    <!-- Icon -->
+    <img src="/images/login-1.svg" alt="Login illustration" class="mx-auto mb-6 w-25 h-25" />
+
+    <!-- Title -->
+    <h1 class="text-center text-2xl font-black text-slate-900">JLPT 備考練功房</h1>
+
+    <!-- Google button -->
+    <button
+      (click)="loginWithGoogle()"
+      [disabled]="loading()"
+      class="mt-8 flex w-full items-center justify-center gap-3 rounded-2xl bg-slate-800 px-4 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-slate-700 active:scale-[0.98] disabled:opacity-60"
+    >
+      @if (loading()) {
+        <svg class="h-4 w-4 animate-spin" fill="none" viewBox="0 0 24 24">
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          />
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+          />
+        </svg>
+        <span>登入中…</span>
+      } @else {
+        <img src="/images/google-icon.svg" alt="Google icon" class="h-5 w-5" />
+        <span>使用 Google 繼續</span>
+      }
+    </button>
+
+    @if (error()) {
+      <p class="mt-4 text-center text-xs text-rose-500">{{ error() }}</p>
+    }
+
+    <p class="mt-6 text-center text-xs text-slate-400">登入即代表您同意本站，僅作個人學習用途</p>
+  </div>
+</div>
