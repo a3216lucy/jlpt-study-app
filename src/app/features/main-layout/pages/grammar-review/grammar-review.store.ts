@@ -26,6 +26,7 @@ export class GrammarReviewStore {
   readonly expandedGroups = signal<Set<string>>(new Set());
   readonly expandedPatterns = signal<Set<string>>(new Set());
   readonly loading = signal(false);
+  readonly searchQuery = signal<string>('');
 
   readonly verbData = signal<VerbConjugationData | null>(null);
   readonly verbLoading = signal(false);
@@ -44,6 +45,26 @@ export class GrammarReviewStore {
   readonly displayGroups = computed(() =>
     this.activeTab() === 'general' ? this.generalGroups() : this.examGroups(),
   );
+
+  readonly isSearching = computed(() => this.searchQuery().trim().length > 0);
+
+  readonly filteredDisplayGroups = computed(() => {
+    const q = this.searchQuery().trim().toLowerCase();
+    const groups = this.displayGroups();
+    if (!q) return groups;
+    return groups
+      .map((g) => ({
+        ...g,
+        patterns: g.patterns.filter(
+          (p) =>
+            p.pattern.toLowerCase().includes(q) ||
+            p.meaning.toLowerCase().includes(q) ||
+            (p.notes ?? '').toLowerCase().includes(q) ||
+            p.formation.toLowerCase().includes(q),
+        ),
+      }))
+      .filter((g) => g.patterns.length > 0 || g.title.toLowerCase().includes(q));
+  });
 
   readonly allGroupsExpanded = computed(() => {
     const groups = this.displayGroups();
@@ -67,6 +88,10 @@ export class GrammarReviewStore {
 
   init() {
     this.loadLevel('N3');
+  }
+
+  setSearch(q: string) {
+    this.searchQuery.set(q);
   }
 
   switchTab(tab: ReviewTab) {

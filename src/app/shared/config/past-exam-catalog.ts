@@ -135,4 +135,29 @@ export const PAST_EXAM_CATALOG: readonly PastExamEntry[] = [
       },
     ],
   },
+  {
+    id: 'n3-2022-12',
+    year: 2022,
+    month: 12,
+    level: 'N3',
+    examLabel: '2022年12月 N3',
+    sections: [
+      {
+        id: 'n3-2022-12-vocab',
+        sectionLabel: '語彙（問題1〜5）',
+        category: 'vocabulary',
+        questionType: 'sentence-fill',
+        questionCount: 35,
+        path: 'assets/exams/past/n3-2022-12-vocab.json',
+      },
+      {
+        id: 'n3-2022-12-grammar',
+        sectionLabel: '文法（問題1〜3）',
+        category: 'grammar',
+        questionType: 'sentence-fill',
+        questionCount: 22,
+        path: 'assets/exams/past/n3-2022-12-grammar.json',
+      },
+    ],
+  },
 ];

@@ -141,6 +141,7 @@ export class GrammarReviewPage implements OnInit {
     { id: 'nai',           label: 'ない形' },
     { id: 'kanou',         label: '可能形' },
     { id: 'ikou',          label: '意向形' },
+    { id: 'katei',         label: '仮定形' },
     { id: 'shieki',        label: '使役形' },
     { id: 'ukemi',         label: '受身形' },
     { id: 'shiekiUkemi',   label: '使役受身' },
@@ -158,8 +159,8 @@ export class GrammarReviewPage implements OnInit {
 
   // Public Handlers
   // --------------------------------------------------------------------
-  isGroupExpanded(id: string): boolean { return this.store.expandedGroups().has(id); }
-  isPatternExpanded(id: string): boolean { return this.store.expandedPatterns().has(id); }
+  isGroupExpanded(id: string): boolean { return this.store.isSearching() || this.store.expandedGroups().has(id); }
+  isPatternExpanded(id: string): boolean { return this.store.isSearching() || this.store.expandedPatterns().has(id); }
   badgeClass(color: string): string { return BADGE_MAP[color] ?? BADGE_MAP['slate']; }
   patternCardClass(color: string): string { return PATTERN_CARD_MAP[color] ?? PATTERN_CARD_MAP['slate']; }
   exampleCardClass(color: string): string { return EXAMPLE_CARD_MAP[color] ?? EXAMPLE_CARD_MAP['slate']; }
@@ -174,7 +175,7 @@ export class GrammarReviewPage implements OnInit {
   hasSubRows(form: VerbFormTable): boolean { return form.rows.some(r => !!r.subRows); }
 
   splitNotes(notes: string): string[] {
-    return notes.split(/(?=[①②③④⑤⑥⑦⑧⑨])/).filter((s) => s.trim());
+    return notes.split(/\n|(?<=。)|(?=[①②③④⑤⑥⑦⑧⑨])/).filter((s) => s.trim());
   }
 
   parseFormation(formation: string): { forms: string[]; suffixes: string[] } | null {

@@ -18,7 +18,7 @@
           文法重點整理
         </h1>
       </div>
-      @if (store.reviewData() && store.activeTab() !== 'verb') {
+      @if (store.reviewData() && store.activeTab() !== 'verb' && !store.isSearching()) {
         <button
           (click)="store.toggleAllGroups()"
           class="shrink-0 rounded-full border border-slate-200 bg-white px-4 py-1.5 text-sm font-medium text-slate-600 transition hover:border-emerald-300 hover:text-emerald-600"
@@ -106,6 +106,34 @@
       </button>
     </div>
 
+    <!-- ── Search input ─────────────────────────────────────────────────── -->
+    @if (store.activeTab() !== 'verb') {
+      <div class="relative">
+        <svg class="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 0 5 11a6 6 0 0 0 12 0z" />
+        </svg>
+        <input
+          type="text"
+          [value]="store.searchQuery()"
+          (input)="store.setSearch($any($event.target).value)"
+          placeholder="搜尋文法點、說明…"
+          class="w-full rounded-xl border border-slate-200 bg-slate-50 py-2.5 pl-10 pr-10 text-sm text-slate-800 outline-none placeholder:text-slate-400 focus:border-emerald-400 focus:bg-white focus:ring-2 focus:ring-emerald-100 transition"
+        />
+        @if (store.isSearching()) {
+          <button
+            (click)="store.setSearch('')"
+            class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition"
+            aria-label="清除搜尋"
+          >
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        }
+      </div>
+    }
+
     <!-- ── Grammar loading ───────────────────────────────────────────────── -->
     @if (store.loading() && store.activeTab() !== 'verb') {
       <div class="flex items-center justify-center py-16 text-slate-400">
@@ -127,10 +155,18 @@
     <!-- ── General grammar tab ───────────────────────────────────────────── -->
     @if (!store.loading() && store.reviewData() && store.activeTab() === 'general') {
       <div class="space-y-2">
-        @for (group of store.generalGroups(); track group.id) {
+        @for (group of store.filteredDisplayGroups(); track group.id) {
           <ng-container
             *ngTemplateOutlet="accordionGroup; context: { group: group, isExam: false }"
           ></ng-container>
+        }
+        @if (store.isSearching() && store.filteredDisplayGroups().length === 0) {
+          <div class="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-12 text-center">
+            <svg class="h-8 w-8 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 0 5 11a6 6 0 0 0 12 0z" />
+            </svg>
+            <p class="mt-3 text-sm font-medium text-slate-500">沒有符合「{{ store.searchQuery() }}」的文法點</p>
+          </div>
         }
       </div>
     }
@@ -138,13 +174,23 @@
     <!-- ── Exam highlights tab ───────────────────────────────────────────── -->
     @if (!store.loading() && store.reviewData() && store.activeTab() === 'exam') {
       <div class="space-y-4">
-        <p class="text-sm text-slate-400">
-          各屆考試中出現的核心語法點，含易混淆比較說明。
-        </p>
-        @for (group of store.examGroups(); track group.id) {
+        @if (!store.isSearching()) {
+          <p class="text-sm text-slate-400">
+            各屆考試中出現的核心語法點，含易混淆比較說明。
+          </p>
+        }
+        @for (group of store.filteredDisplayGroups(); track group.id) {
           <ng-container
             *ngTemplateOutlet="accordionGroup; context: { group: group, isExam: true }"
           ></ng-container>
+        }
+        @if (store.isSearching() && store.filteredDisplayGroups().length === 0) {
+          <div class="flex flex-col items-center justify-center rounded-2xl border border-rose-100 bg-rose-50/30 py-12 text-center">
+            <svg class="h-8 w-8 text-rose-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 0 5 11a6 6 0 0 0 12 0z" />
+            </svg>
+            <p class="mt-3 text-sm font-medium text-slate-500">沒有符合「{{ store.searchQuery() }}」的語法點</p>
+          </div>
         }
       </div>
     }
