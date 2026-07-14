@@ -1,0 +1,203 @@
+<div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
+  <!-- Header: Greeting + Countdown -->
+  <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    <div class="flex flex-col gap-1 sm:gap-1.5">
+      <h1 class="font-heading text-xl font-bold text-ink sm:text-2xl lg:text-[26px]">
+        おかえり、{{ store.greetingName() }}さん 🌸
+      </h1>
+      <p class="text-sm text-text-secondary">
+        今天也一起加油吧！穩穩朝 {{ store.planLevel() }} 前進
+      </p>
+    </div>
+
+    <div
+      class="flex w-full items-center gap-2 rounded-full border border-border bg-surface px-4 py-2.5 sm:w-auto"
+    >
+      <i class="fa-solid fa-calendar-heart text-accent"></i>
+      <span class="text-sm font-bold text-ink">
+        距離 {{ store.examDateLabel() }} JLPT 考試還有 {{ store.daysUntilExam() }} 天
+      </span>
+    </div>
+  </div>
+
+  @if (store.loading()) {
+    <div class="flex items-center justify-center py-20 text-text-muted">
+      <i class="pi pi-spin pi-spinner mr-2"></i> 載入中...
+    </div>
+  } @else {
+    <!-- Row Main: Today Plan + Mastery -->
+    <div
+      class="flex flex-col gap-4 sm:gap-5 lg:grid lg:grid-cols-[1.9fr_1fr] lg:items-start lg:gap-6"
+    >
+      <!-- Today Plan Card -->
+      <div
+        class="flex flex-col gap-2.5 rounded-[var(--radius-lg)] border border-border bg-surface p-4 sm:gap-3 sm:p-5 lg:p-6"
+      >
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">今日學習計畫</h2>
+          <span class="rounded-full bg-matcha-soft px-2.5 py-1 text-[11px] font-bold text-matcha">
+            {{ store.completedTaskCount() }} / {{ store.todayTasks().length }} 完成
+          </span>
+        </div>
+
+        @for (task of store.todayTasks(); track task.id) {
+          <a
+            [routerLink]="task.routerLink"
+            class="flex items-center justify-between gap-2 rounded-[var(--radius-md)] bg-bg px-3 py-2.5 transition hover:brightness-97 sm:px-4 sm:py-3"
+          >
+            <span class="flex items-center gap-2">
+              <i class="fa-solid {{ task.icon }} {{ task.iconColor }} w-4 text-center text-sm"></i>
+              <span class="text-sm font-bold text-ink">{{ task.label }}</span>
+            </span>
+            <span
+              class="rounded-full px-2.5 py-0.5 text-[11px] font-bold"
+              [class]="chipBgClass(task.chipColor) + ' ' + chipTextClass(task.chipColor)"
+            >
+              {{ task.chipLabel }}
+            </span>
+          </a>
+        }
+
+        <div class="flex sm:justify-end">
+          <button
+            type="button"
+            (click)="startTodayStudy()"
+            class="flex w-full items-center justify-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white transition hover:brightness-105 active:scale-[0.98] sm:w-auto"
+          >
+            <i class="fa-solid fa-play text-xs"></i>
+            開始今日學習
+          </button>
+        </div>
+      </div>
+
+      <!-- Mastery Card -->
+      <div
+        class="flex flex-col gap-3 rounded-[var(--radius-lg)] border border-border bg-surface p-4 sm:p-5 lg:p-6"
+      >
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">單字掌握進度</h2>
+          <span
+            class="rounded-full border border-border bg-bg px-2.5 py-1 text-[11px] font-bold text-text-secondary"
+          >
+            {{ store.planLevel() }} 計畫
+          </span>
+        </div>
+
+        <div class="flex items-end gap-1.5">
+          <span class="font-heading text-3xl font-bold text-ink">{{
+            store.progressedCount()
+          }}</span>
+          <span class="pb-1 text-[13px] font-medium text-text-muted"
+            >/ {{ store.totalWords() }} 字</span
+          >
+        </div>
+
+        <div class="flex h-2.5 w-full overflow-hidden rounded-full bg-[#F1EAE0]">
+          <div class="bg-matcha" [style.flex]="store.learnedCount() || 0"></div>
+          <div class="bg-sun-yellow" [style.flex]="store.learningCount() || 0"></div>
+          <div class="flex-1"></div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 sm:gap-2.5">
+          <div class="flex flex-col gap-0.5 rounded-[var(--radius-md)] bg-bg px-3 py-2.5">
+            <span class="font-heading text-xl font-bold text-text-secondary">{{
+              store.newCount()
+            }}</span>
+            <span class="text-[11px] text-text-muted">未開始</span>
+          </div>
+          <div class="flex flex-col gap-0.5 rounded-[var(--radius-md)] bg-bg px-3 py-2.5">
+            <span class="font-heading text-xl font-bold text-[#B08514]">{{
+              store.learningCount()
+            }}</span>
+            <span class="text-[11px] text-text-muted">複習中</span>
+          </div>
+          <div class="flex flex-col gap-0.5 rounded-[var(--radius-md)] bg-bg px-3 py-2.5">
+            <span class="font-heading text-xl font-bold text-[#4E8A76]">{{
+              store.learnedCount()
+            }}</span>
+            <span class="text-[11px] text-text-muted">已掌握</span>
+          </div>
+          <div class="flex flex-col gap-0.5 rounded-[var(--radius-md)] bg-bg px-3 py-2.5">
+            <span class="font-heading text-xl font-bold text-accent">{{ store.dueToday() }}</span>
+            <span class="text-[11px] text-text-muted">今日待複習</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row Secondary: Scores + Quick -->
+    <div class="flex flex-col gap-4 sm:grid sm:grid-cols-2 sm:gap-5 lg:gap-6">
+      <!-- Scores Card -->
+      <div
+        class="flex flex-col gap-2.5 rounded-[var(--radius-lg)] border border-border bg-surface p-4 sm:gap-3 sm:p-5 lg:p-6"
+      >
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">最近考古題成績</h2>
+
+        @if (store.recentScores().length === 0) {
+          <p class="py-6 text-center text-sm text-text-muted">尚無考古題作答紀錄</p>
+        } @else {
+          @for (entry of store.recentScores(); track entry.id) {
+            <div
+              class="flex items-center justify-between rounded-[var(--radius-md)] bg-bg px-3.5 py-2.5 sm:px-4"
+            >
+              <div class="flex flex-col gap-0.5">
+                <span class="text-sm font-bold text-ink"
+                  >{{ entry.examLabel }} {{ entry.sectionLabel }}</span
+                >
+                <span class="text-[11px] text-text-muted"
+                  >{{ entry.score }}/{{ entry.total }} 題正確</span
+                >
+              </div>
+              <span
+                class="font-heading text-lg font-bold"
+                [class]="scoreColorClass(scorePercent(entry.score, entry.total))"
+              >
+                {{ scorePercent(entry.score, entry.total) }}%
+              </span>
+            </div>
+          }
+        }
+      </div>
+
+      <!-- Quick Card -->
+      <div
+        class="flex flex-col gap-2.5 rounded-[var(--radius-lg)] border border-border bg-surface p-4 sm:gap-3 sm:p-5 lg:p-6"
+      >
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">快速入口</h2>
+
+        @for (entry of store.quickEntries; track entry.id) {
+          @if (entry.comingSoon) {
+            <div
+              class="flex items-center justify-between rounded-full bg-bg px-3.5 py-2.5 opacity-60 sm:px-4"
+            >
+              <span class="flex items-center gap-2.5">
+                <span
+                  class="flex h-7 w-7 items-center justify-center rounded-full {{ entry.iconBg }}"
+                >
+                  <i class="fa-solid {{ entry.icon }} {{ entry.iconColor }} text-xs"></i>
+                </span>
+                <span class="text-sm font-bold text-ink">{{ entry.label }}</span>
+              </span>
+              <span class="text-[11px] font-medium text-text-muted">敬請期待</span>
+            </div>
+          } @else {
+            <a
+              [routerLink]="entry.routerLink"
+              class="flex items-center justify-between rounded-full bg-bg px-3.5 py-2.5 transition hover:brightness-97 sm:px-4"
+            >
+              <span class="flex items-center gap-2.5">
+                <span
+                  class="flex h-7 w-7 items-center justify-center rounded-full {{ entry.iconBg }}"
+                >
+                  <i class="fa-solid {{ entry.icon }} {{ entry.iconColor }} text-xs"></i>
+                </span>
+                <span class="text-sm font-bold text-ink">{{ entry.label }}</span>
+              </span>
+              <i class="fa-solid fa-chevron-right text-xs text-text-muted"></i>
+            </a>
+          }
+        }
+      </div>
+    </div>
+  }
+</div>

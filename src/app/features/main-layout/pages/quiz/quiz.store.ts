@@ -8,10 +8,10 @@ import { StudyPlanService } from '@shared/services/study-plan.service';
 import { VocabSrsService } from '@shared/services/vocab-srs.service';
 // Models
 import type { StudyPlan, VocabSRSRecord } from '@shared/models/study-plan.model';
+import { VOCAB_FILTER_CATEGORIES } from './quiz.model';
 import type {
   PageMode,
   VocabEntry,
-  VocabGroup,
   VocabQuizOption,
   VocabQuizQuestion,
   VocabQuizResult,
@@ -19,6 +19,7 @@ import type {
 } from './quiz.model';
 
 const WRONG_WORDS_KEY = 'jlpt-app:wrong-words';
+const MARKED_WORDS_KEY = 'jlpt-app:marked-words';
 
 function todayStr(): string {
   return new Date().toISOString().slice(0, 10);
@@ -50,7 +51,7 @@ export class QuizStore {
 
   // List filters
   // --------------------------------------------------------------------
-  readonly selectedGroupId = signal<string | null>(null);
+  readonly selectedCategoryId = signal<string | null>(null);
   readonly expandedIds = signal<Set<string>>(new Set());
 
   // Flashcard
@@ -68,6 +69,11 @@ export class QuizStore {
   readonly quizSelectedId = signal<string | null>(null);
   readonly quizAnswered = signal(false);
   readonly quizResults = signal<VocabQuizResult[]>([]);
+  readonly quizStartedAt = signal<number | null>(null);
+  readonly quizFinishedAt = signal<number | null>(null);
+  readonly quizNewlyMasteredCount = signal(0);
+  private _quizPool: VocabEntry[] = [];
+  private _quizCount = 10;
 
   // Plan creation form
   // --------------------------------------------------------------------
@@ -81,18 +87,33 @@ export class QuizStore {
   // --------------------------------------------------------------------
   readonly wrongWordIds = signal<Set<string>>(new Set());
 
+  // Marked words (localStorage，跨 session 保留)
+  // --------------------------------------------------------------------
+  readonly markedWordIds = signal<Set<string>>(new Set());
+
   // Computed — base data
   // --------------------------------------------------------------------
   readonly groups = computed(() => this.data()?.groups ?? []);
   readonly allEntries = computed(() => this.groups().flatMap((g) => g.entries));
 
-  readonly filteredGroups = computed<VocabGroup[]>(() => {
-    const groupId = this.selectedGroupId();
-    return this.groups().filter((g) => !groupId || g.id === groupId);
+  readonly filteredEntries = computed<VocabEntry[]>(() => {
+    const categoryId = this.selectedCategoryId();
+    if (!categoryId) return this.allEntries();
+    const category = VOCAB_FILTER_CATEGORIES.find((c) => c.id === categoryId);
+    if (!category) return this.allEntries();
+    return this.allEntries().filter((e) => category.pos.includes(e.pos));
   });
 
-  readonly filteredEntries = computed(() => this.filteredGroups().flatMap((g) => g.entries));
   readonly totalVisible = computed(() => this.filteredEntries().length);
+
+  // Computed — SRS stage counts (for plan card progress bar)
+  // --------------------------------------------------------------------
+  readonly learnedRecordsCount = computed(
+    () => [...this.srsRecords().values()].filter((r) => r.stage === 'learned').length,
+  );
+  readonly learningRecordsCount = computed(
+    () => [...this.srsRecords().values()].filter((r) => r.stage !== 'learned').length,
+  );
 
   // Computed — active plan
   // --------------------------------------------------------------------
@@ -152,6 +173,13 @@ export class QuizStore {
     return this.allEntries().filter((e) => ids.has(e.id));
   });
 
+  // Computed — marked words
+  // --------------------------------------------------------------------
+  readonly markedWords = computed(() => {
+    const ids = this.markedWordIds();
+    return this.allEntries().filter((e) => ids.has(e.id));
+  });
+
   // Computed — flashcard
   // --------------------------------------------------------------------
   readonly flashcardQueue = this._flashcardQueue.asReadonly();
@@ -159,11 +187,17 @@ export class QuizStore {
   readonly flashcardIsLast = computed(
     () => this.flashcardIndex() >= this._flashcardQueue().length - 1,
   );
-  readonly flashcardProgress = computed(() => ({
-    index: this.flashcardIndex() + 1,
-    total: this._flashcardQueue().length,
-    known: this.knownIds().size,
-  }));
+  readonly flashcardProgress = computed(() => {
+    const total = this._flashcardQueue().length;
+    const index = this.flashcardIndex() + 1;
+    return {
+      index,
+      total,
+      known: this.knownIds().size,
+      unknown: this.unknownIds().size,
+      remaining: Math.max(total - index, 0),
+    };
+  });
 
   // Computed — quiz
   // --------------------------------------------------------------------
@@ -177,10 +211,28 @@ export class QuizStore {
     () => this.quizIndex() >= this.quizQuestions().length && this.quizQuestions().length > 0,
   );
 
+  readonly quizElapsedLabel = computed(() => {
+    const start = this.quizStartedAt();
+    const end = this.quizFinishedAt();
+    if (!start || !end) return '00:00';
+    const totalSeconds = Math.max(0, Math.round((end - start) / 1000));
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  });
+
+  readonly quizFinishedDateLabel = computed(() => {
+    const end = this.quizFinishedAt();
+    if (!end) return '';
+    const d = new Date(end);
+    return `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`;
+  });
+
   // Lifecycle
   // --------------------------------------------------------------------
   async init() {
     this._loadWrongWords();
+    this._loadMarkedWords();
     this.loading.set(true);
     try {
       await this._loadVocabData();
@@ -192,8 +244,8 @@ export class QuizStore {
 
   // List mode
   // --------------------------------------------------------------------
-  selectGroup(id: string | null) {
-    this.selectedGroupId.set(id);
+  selectCategory(id: string | null) {
+    this.selectedCategoryId.set(id);
   }
 
   toggleExpand(id: string) {
@@ -204,6 +256,24 @@ export class QuizStore {
 
   isExpanded(id: string): boolean {
     return this.expandedIds().has(id);
+  }
+
+  toggleMarkedWord(wordId: string) {
+    const s = new Set(this.markedWordIds());
+    s.has(wordId) ? s.delete(wordId) : s.add(wordId);
+    this.markedWordIds.set(s);
+    this._saveMarkedWords(s);
+  }
+
+  isWordMarked(wordId: string): boolean {
+    return this.markedWordIds().has(wordId);
+  }
+
+  clearMarkedWords() {
+    this.markedWordIds.set(new Set());
+    if (typeof localStorage !== 'undefined') {
+      localStorage.removeItem(MARKED_WORDS_KEY);
+    }
   }
 
   // Plan management
@@ -255,11 +325,13 @@ export class QuizStore {
 
   // Flashcard
   // --------------------------------------------------------------------
-  startFlashcard(opts: { wrongOnly?: boolean; todayOnly?: boolean; all?: boolean } = {}) {
+  startFlashcard(opts: { wrongOnly?: boolean; markedOnly?: boolean; todayOnly?: boolean; all?: boolean } = {}) {
     let pool: VocabEntry[];
 
     if (opts.wrongOnly) {
       pool = this.wrongWords();
+    } else if (opts.markedOnly) {
+      pool = this.markedWords();
     } else if (opts.todayOnly) {
       pool = this.todayQueue();
     } else {
@@ -320,24 +392,45 @@ export class QuizStore {
 
   // Quiz (4-choice)
   // --------------------------------------------------------------------
-  startQuiz(opts: { wrongOnly?: boolean; todayOnly?: boolean; count?: number } = {}) {
+  startQuiz(opts: { wrongOnly?: boolean; markedOnly?: boolean; todayOnly?: boolean; count?: number } = {}) {
     const count = opts.count ?? 10;
     let pool: VocabEntry[];
 
     if (opts.wrongOnly) {
       pool = this.wrongWords();
+    } else if (opts.markedOnly) {
+      pool = this.markedWords();
     } else if (opts.todayOnly) {
       pool = this.todayQueue();
     } else {
       pool = this.filteredEntries();
     }
 
+    this._quizPool = pool;
+    this._quizCount = count;
     const qs = this._generateQuestions(pool, count);
     this.quizQuestions.set(qs);
     this.quizIndex.set(0);
     this.quizSelectedId.set(null);
     this.quizAnswered.set(false);
     this.quizResults.set([]);
+    this.quizNewlyMasteredCount.set(0);
+    this.quizStartedAt.set(Date.now());
+    this.quizFinishedAt.set(null);
+    this.pageMode.set('quiz');
+  }
+
+  /** 用同一批詞庫重新出一輪新題目 */
+  restartQuiz() {
+    const qs = this._generateQuestions(this._quizPool, this._quizCount);
+    this.quizQuestions.set(qs);
+    this.quizIndex.set(0);
+    this.quizSelectedId.set(null);
+    this.quizAnswered.set(false);
+    this.quizResults.set([]);
+    this.quizNewlyMasteredCount.set(0);
+    this.quizStartedAt.set(Date.now());
+    this.quizFinishedAt.set(null);
     this.pageMode.set('quiz');
   }
 
@@ -368,13 +461,20 @@ export class QuizStore {
   }
 
   nextQuestion() {
-    if (!this.quizIsLast()) {
-      this.quizIndex.update((i) => i + 1);
-      this.quizSelectedId.set(null);
-      this.quizAnswered.set(false);
-    } else {
-      this.quizIndex.update((i) => i + 1);
+    const newIndex = this.quizIndex() + 1;
+    this.quizIndex.set(newIndex);
+    if (newIndex < this.quizQuestions().length) {
+      this._syncQuizAnsweredState(newIndex);
+    } else if (!this.quizFinishedAt()) {
+      this.quizFinishedAt.set(Date.now());
     }
+  }
+
+  prevQuizQuestion() {
+    if (this.quizIndex() === 0) return;
+    const newIndex = this.quizIndex() - 1;
+    this.quizIndex.set(newIndex);
+    this._syncQuizAnsweredState(newIndex);
   }
 
   retryWrongFromQuiz() {
@@ -382,12 +482,17 @@ export class QuizStore {
       .filter((r) => !r.isCorrect)
       .map((r) => r.entry);
     if (wrongEntries.length === 0) return;
+    this._quizPool = wrongEntries;
+    this._quizCount = wrongEntries.length;
     const qs = this._generateQuestions(wrongEntries, wrongEntries.length);
     this.quizQuestions.set(qs);
     this.quizIndex.set(0);
     this.quizSelectedId.set(null);
     this.quizAnswered.set(false);
     this.quizResults.set([]);
+    this.quizNewlyMasteredCount.set(0);
+    this.quizStartedAt.set(Date.now());
+    this.quizFinishedAt.set(null);
     this.pageMode.set('quiz');
   }
 
@@ -447,8 +552,24 @@ export class QuizStore {
       .updateRecord(uid, wordId, plan.id, plan.level, known, existing)
       .then((updated) => {
         this.srsRecords.update((m) => new Map(m).set(wordId, updated));
+        if (updated.stage === 'learned' && existing?.stage !== 'learned') {
+          this.quizNewlyMasteredCount.update((n) => n + 1);
+        }
       })
       .catch(console.error);
+  }
+
+  private _syncQuizAnsweredState(index: number) {
+    const question = this.quizQuestions()[index];
+    if (!question) return;
+    const result = this.quizResults().find((r) => r.questionId === question.id);
+    if (result) {
+      this.quizAnswered.set(true);
+      this.quizSelectedId.set(result.selectedOptionId);
+    } else {
+      this.quizAnswered.set(false);
+      this.quizSelectedId.set(null);
+    }
   }
 
   private _generateQuestions(pool: VocabEntry[], count: number): VocabQuizQuestion[] {
@@ -488,5 +609,20 @@ export class QuizStore {
   private _saveWrongWords(ids: Set<string>) {
     if (typeof localStorage === 'undefined') return;
     localStorage.setItem(WRONG_WORDS_KEY, JSON.stringify([...ids]));
+  }
+
+  private _loadMarkedWords() {
+    if (typeof localStorage === 'undefined') return;
+    const raw = localStorage.getItem(MARKED_WORDS_KEY);
+    if (raw) {
+      try {
+        this.markedWordIds.set(new Set(JSON.parse(raw) as string[]));
+      } catch {}
+    }
+  }
+
+  private _saveMarkedWords(ids: Set<string>) {
+    if (typeof localStorage === 'undefined') return;
+    localStorage.setItem(MARKED_WORDS_KEY, JSON.stringify([...ids]));
   }
 }

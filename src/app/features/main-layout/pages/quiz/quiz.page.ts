@@ -9,24 +9,11 @@ import {
 } from '@angular/core';
 // Angular
 import { CommonModule } from '@angular/common';
-// PrimeNG
-import { ButtonModule } from 'primeng/button';
-import { ProgressBarModule } from 'primeng/progressbar';
-// Shared
-import { StudyPlanService } from '@shared/services/study-plan.service';
-import { VocabSrsService } from '@shared/services/vocab-srs.service';
+import { ActivatedRoute } from '@angular/router';
 // Store + Model
 import { QuizStore } from './quiz.store';
-import type { VocabEntry, VocabGroup, VocabQuizOption } from './quiz.model';
-
-const COLOR_MAP: Record<string, { badge: string; card: string }> = {
-  teal:   { badge: 'bg-teal-100 text-teal-700',    card: 'border-teal-200 bg-teal-50/50' },
-  violet: { badge: 'bg-violet-100 text-violet-700', card: 'border-violet-200 bg-violet-50/50' },
-  amber:  { badge: 'bg-amber-100 text-amber-700',   card: 'border-amber-200 bg-amber-50/50' },
-  rose:   { badge: 'bg-rose-100 text-rose-700',     card: 'border-rose-200 bg-rose-50/50' },
-  sky:    { badge: 'bg-sky-100 text-sky-700',       card: 'border-sky-200 bg-sky-50/50' },
-  indigo: { badge: 'bg-indigo-100 text-indigo-700', card: 'border-indigo-200 bg-indigo-50/50' },
-};
+import { POS_DISPLAY_LABEL, VOCAB_FILTER_CATEGORIES } from './quiz.model';
+import type { VocabEntry, VocabQuizOption, VocabQuizResult } from './quiz.model';
 
 const JA_VOICE_PRIORITY = [
   'O-Ren', 'Kyoko', 'Otoya',
@@ -34,12 +21,18 @@ const JA_VOICE_PRIORITY = [
   'Microsoft Haruka', 'Microsoft Ayumi',
 ];
 
+const STAGE_STYLE = {
+  new: { label: '未開始', bg: 'bg-[#F1EAE0]', text: 'text-text-secondary' },
+  learning: { label: '複習中', bg: 'bg-[#FFF3D6]', text: 'text-[#B08514]' },
+  learned: { label: '已掌握', bg: 'bg-matcha-soft', text: 'text-matcha' },
+} as const;
+
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.page.html',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CommonModule, ButtonModule, ProgressBarModule],
+  imports: [CommonModule],
   providers: [QuizStore],
 })
 export class QuizPage implements OnInit {
@@ -49,6 +42,7 @@ export class QuizPage implements OnInit {
   readonly Math = Math;
 
   private readonly destroyRef = inject(DestroyRef);
+  private readonly route = inject(ActivatedRoute);
   private _jaVoice: SpeechSynthesisVoice | null = null;
   private _voicesChangedHandler = () => this._pickVoice();
   private _currentAudio: HTMLAudioElement | null = null;
@@ -57,11 +51,16 @@ export class QuizPage implements OnInit {
   // --------------------------------------------------------------------
   readonly goalOptions = [5, 10, 15, 20];
   readonly levelOptions = ['N3'];  // 擴充時在此加入
+  readonly filterCategories = VOCAB_FILTER_CATEGORIES;
 
   // Lifecycle
   // --------------------------------------------------------------------
   ngOnInit() {
-    this.store.init();
+    this.store.init().then(() => {
+      if (this.route.snapshot.queryParamMap.get('start') === 'today' && this.store.hasActivePlan()) {
+        this.startFlashcard({ todayOnly: true });
+      }
+    });
 
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
       this._pickVoice();
@@ -79,8 +78,6 @@ export class QuizPage implements OnInit {
   @HostListener('window:keydown', ['$event'])
   onKey(e: KeyboardEvent) {
     if (this.store.pageMode() !== 'flashcard') return;
-    if (e.key === 'ArrowRight' || e.key === 'l') this.nextCard();
-    if (e.key === 'ArrowLeft'  || e.key === 'h') this.prevCard();
     if (e.key === ' ') { e.preventDefault(); this.flipCard(); }
     if (e.key === 'k' && this.store.flipped()) this.markKnown();
     if (e.key === 'x' && this.store.flipped()) this.store.markUnknown();
@@ -88,7 +85,7 @@ export class QuizPage implements OnInit {
 
   // Public Handlers — flashcard
   // --------------------------------------------------------------------
-  startFlashcard(opts: { wrongOnly?: boolean; todayOnly?: boolean } = {}) {
+  startFlashcard(opts: { wrongOnly?: boolean; markedOnly?: boolean; todayOnly?: boolean } = {}) {
     this.store.startFlashcard(opts);
     this._speakCurrentCard();
   }
@@ -98,45 +95,52 @@ export class QuizPage implements OnInit {
     if (this.store.flipped()) this._speakCurrentCard();
   }
 
-  nextCard() {
-    this.store.nextCard();
-    this._speakCurrentCard();
-  }
-
-  prevCard() {
-    this.store.prevCard();
-    this._speakCurrentCard();
-  }
-
   markKnown() {
     this.store.markKnown();
     this._speakCurrentCard();
+  }
+
+  // Public Handlers — display helpers
+  // --------------------------------------------------------------------
+  posLabel(pos: string): string {
+    return POS_DISPLAY_LABEL[pos] ?? pos;
+  }
+
+  stageInfo(entry: VocabEntry) {
+    const rec = this.store.srsRecords().get(entry.id);
+    if (!rec) return STAGE_STYLE.new;
+    return rec.stage === 'learned' ? STAGE_STYLE.learned : STAGE_STYLE.learning;
+  }
+
+  optionLetter(index: number): string {
+    return String.fromCharCode(65 + index);
+  }
+
+  selectedOptionText(result: VocabQuizResult): string {
+    const question = this.store.quizQuestions().find((q) => q.id === result.questionId);
+    return question?.options.find((o) => o.id === result.selectedOptionId)?.text ?? '—';
+  }
+
+  markedQuestionsInQuiz() {
+    return this.store.quizQuestions().filter((q) => this.store.isWordMarked(q.entry.id));
   }
 
   // Public Handlers — option styles
   // --------------------------------------------------------------------
   optionCardClass(option: VocabQuizOption): string {
     if (!this.store.quizAnswered()) {
-      return 'border-slate-200 bg-white text-slate-700 hover:-translate-y-0.5 hover:border-indigo-400 hover:bg-indigo-50 hover:shadow-[0_12px_24px_rgba(99,102,241,0.12)]';
+      return 'border-border bg-surface text-ink hover:-translate-y-0.5 hover:border-accent hover:bg-accent-soft/40';
     }
-    if (option.isCorrect) return 'border-green-500 bg-green-50 text-green-800';
-    if (option.id === this.store.quizSelectedId()) return 'border-red-400 bg-red-50 text-red-700';
-    return 'border-slate-200 bg-white text-slate-400';
+    if (option.isCorrect) return 'border-accent bg-accent-soft text-ink';
+    if (option.id === this.store.quizSelectedId()) {
+      return 'border-border bg-bg text-text-muted line-through opacity-70';
+    }
+    return 'border-border bg-surface text-text-muted opacity-60';
   }
 
-  optionPrefixClass(option: VocabQuizOption): string {
-    if (!this.store.quizAnswered()) return 'bg-slate-100 text-slate-600';
-    if (option.isCorrect) return 'bg-green-100 text-green-800';
-    if (option.id === this.store.quizSelectedId()) return 'bg-red-100 text-red-700';
-    return 'bg-slate-100 text-slate-400';
-  }
-
-  badgeClass(group: VocabGroup): string {
-    return (COLOR_MAP[group.color] ?? COLOR_MAP['sky']).badge;
-  }
-
-  cardClass(group: VocabGroup): string {
-    return (COLOR_MAP[group.color] ?? COLOR_MAP['sky']).card;
+  optionBadgeClass(option: VocabQuizOption): string {
+    if (this.store.quizAnswered() && option.isCorrect) return 'bg-accent text-white';
+    return 'bg-bg text-text-secondary';
   }
 
   // Public Handlers — audio

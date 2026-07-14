@@ -1,18 +1,10 @@
 // Cores
 import { EnvironmentInjector, Injectable, inject, runInInjectionContext } from '@angular/core';
 // Angular Fire
-import {
-  Firestore,
-  collection,
-  getDocs,
-  limit,
-  orderBy,
-  query,
-  where,
-} from '@angular/fire/firestore';
+import { Firestore, collection, getDocs } from '@angular/fire/firestore';
 // Shared
-import { PAST_EXAM_CATALOG } from '@shared/config/past-exam-catalog';
-import type { StudyPlan, VocabSRSRecord } from '@shared/models/study-plan.model';
+import { ExamHistoryService } from '@shared/services/exam-history.service';
+import { StudyPlanStatsService } from '@shared/services/study-plan-stats.service';
 // Models
 import type { ExamHistoryEntry, StudyPlanStats, VocabStats } from './profile.model';
 
@@ -22,31 +14,13 @@ export class ProfileService {
   // --------------------------------------------------------------------
   private firestore = inject(Firestore);
   private injector = inject(EnvironmentInjector);
+  private examHistoryService = inject(ExamHistoryService);
+  private studyPlanStatsService = inject(StudyPlanStatsService);
 
   // profilePage
   // --------------------------------------------------------------------
   async getExamHistory(uid: string): Promise<ExamHistoryEntry[]> {
-    const snap = await runInInjectionContext(this.injector, () =>
-      getDocs(
-        query(
-          collection(this.firestore, `users/${uid}/examHistory`),
-          orderBy('completedAt', 'desc'),
-          limit(20),
-        ),
-      ),
-    );
-
-    return snap.docs.map((d) => {
-      const data = d.data() as Omit<ExamHistoryEntry, 'id' | 'examLabel' | 'sectionLabel'>;
-      const catalogEntry = PAST_EXAM_CATALOG.find((e) => e.id === data.examId);
-      const section = catalogEntry?.sections.find((s) => s.id === data.sectionId);
-      return {
-        ...data,
-        id: d.id,
-        examLabel: catalogEntry?.examLabel ?? data.examId,
-        sectionLabel: section?.sectionLabel ?? data.sectionId,
-      };
-    });
+    return this.examHistoryService.getRecent(uid, 20);
   }
 
   async getVocabStats(uid: string): Promise<VocabStats> {
@@ -66,45 +40,6 @@ export class ProfileService {
   }
 
   async getStudyPlanStats(uid: string): Promise<StudyPlanStats[]> {
-    const plansSnap = await runInInjectionContext(this.injector, () =>
-      getDocs(
-        query(
-          collection(this.firestore, `users/${uid}/studyPlans`),
-          where('status', '!=', 'completed'),
-        ),
-      ),
-    );
-
-    const plans = plansSnap.docs.map((d) => ({ id: d.id, ...d.data() }) as StudyPlan);
-    const today = new Date().toISOString().slice(0, 10);
-
-    const statsPromises = plans.map(async (plan) => {
-      const recordsSnap = await runInInjectionContext(this.injector, () =>
-        getDocs(
-          query(
-            collection(this.firestore, `users/${uid}/vocabRecords`),
-            where('planId', '==', plan.id),
-          ),
-        ),
-      );
-
-      const records = recordsSnap.docs.map((d) => d.data() as VocabSRSRecord);
-      const learnedCount = records.filter((r) => r.stage === 'learned').length;
-      const learningCount = records.filter((r) => r.stage === 'learning').length;
-      const newCount = plan.totalWords - records.length;
-      const dueToday = records.filter((r) => r.dueDate <= today).length;
-      const newToday = Math.max(plan.dailyNewWords - records.filter((r) => r.lastReviewed === today && r.reps === 1).length, 0);
-
-      return {
-        plan,
-        newCount: Math.max(newCount, 0),
-        learningCount,
-        learnedCount,
-        dueToday,
-        newToday: Math.min(newToday, Math.max(newCount, 0)),
-      } satisfies StudyPlanStats;
-    });
-
-    return Promise.all(statsPromises);
+    return this.studyPlanStatsService.getStats(uid);
   }
 }

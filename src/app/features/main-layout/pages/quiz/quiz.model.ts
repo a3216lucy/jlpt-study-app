@@ -51,3 +51,32 @@ export interface VocabQuizResult {
   isCorrect: boolean;
   entry: VocabEntry;
 }
+
+// ── Filtering (詞性分類) ──────────────────────────────────────────────────────
+
+/** 單詞列表的詞性篩選分類 */
+export interface VocabFilterCategory {
+  id: string;
+  label: string;
+  /** 對應的原始 pos 值（VocabEntry.pos） */
+  pos: string[];
+}
+
+export const VOCAB_FILTER_CATEGORIES: VocabFilterCategory[] = [
+  { id: 'verb', label: '動詞', pos: ['verb'] },
+  { id: 'adjective', label: '形容詞', pos: ['adjective', 'noun-adj'] },
+  { id: 'adverb', label: '副詞・擬態語', pos: ['adverb', 'adverb-onomatopoeia'] },
+  { id: 'noun', label: '名詞', pos: ['noun', 'noun-katakana'] },
+];
+
+/** 原始 pos 值 → 顯示用中文標籤 */
+export const POS_DISPLAY_LABEL: Record<string, string> = {
+  verb: '動詞',
+  adjective: '形容詞',
+  'noun-adj': '形容詞',
+  adverb: '副詞',
+  'adverb-onomatopoeia': '擬態語',
+  noun: '名詞',
+  'noun-katakana': '名詞',
+  expression: '慣用語',
+};

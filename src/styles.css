@@ -4,3 +4,29 @@
 
 @source "./app/**/*.{html,ts}";
 @source "./index.html";
+
+@theme {
+  --font-heading: "Zen Maru Gothic", "Noto Sans TC", sans-serif;
+  --font-sans: "Noto Sans TC", "Zen Maru Gothic", sans-serif;
+
+  --color-bg: #fdf8f1;
+  --color-surface: #ffffff;
+  --color-border: #ede3d3;
+  --color-ink: #2d2a26;
+  --color-text-secondary: #6e675e;
+  --color-text-muted: #a39b8f;
+  --color-accent: #e8604c;
+  --color-accent-soft: #fdeae0;
+  --color-matcha: #7fb6a4;
+  --color-matcha-soft: #e4f0ea;
+  --color-sakura: #f6c6cf;
+  --color-sun-yellow: #ffd666;
+
+  --radius-lg: 20px;
+  --radius-md: 14px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+}

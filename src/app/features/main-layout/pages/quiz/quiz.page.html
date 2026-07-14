@@ -1,640 +1,840 @@
 <!-- ─────────────────────────────────────────────────────────────────────── -->
-<!-- LIST MODE                                                                -->
+<!-- LIST MODE (單詞總覽)                                                     -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 @if (store.pageMode() === 'list') {
-  <div class="space-y-5 pb-12">
+  <div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
 
-    <!-- Page Header -->
-    <div class="flex items-center justify-between">
-      <div>
-        <p class="text-xs font-bold uppercase tracking-[0.12em] text-indigo-600">Vocabulary</p>
-        <h1 class="mt-0.5 text-2xl font-black tracking-tight text-slate-900">單字測驗</h1>
+    <!-- Header -->
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div class="flex flex-col gap-1 sm:gap-1.5">
+        <h1 class="font-heading text-xl font-bold text-ink sm:text-2xl lg:text-[26px]">單詞</h1>
+        <p class="text-sm text-text-secondary">依照詞庫安排計畫，總覽、背誦、測驗一次到位</p>
       </div>
-      <div class="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white p-1 shadow-sm">
+      @if (!store.showCreatePlan()) {
         <button
-          class="flex items-center gap-1.5 rounded-xl bg-indigo-600 px-3 py-1.5 text-sm font-semibold text-white shadow-sm transition"
+          type="button"
+          (click)="store.showCreatePlan.set(true)"
+          class="flex w-full items-center justify-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white transition hover:brightness-105 active:scale-[0.98] sm:w-auto"
         >
-          <i class="pi pi-list text-xs"></i> 列表
+          <i class="fa-solid fa-plus text-xs"></i> 建立學習計畫
         </button>
-        <button
-          (click)="startFlashcard({ todayOnly: store.hasActivePlan() })"
-          class="flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-sm font-medium text-slate-600 transition hover:bg-slate-100"
-        >
-          <i class="pi pi-id-card text-xs"></i> 卡牌
-        </button>
-        <button
-          (click)="store.startQuiz({ todayOnly: store.hasActivePlan() })"
-          class="flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-sm font-medium text-slate-600 transition hover:bg-slate-100"
-        >
-          <i class="pi pi-check-square text-xs"></i> 測驗
-        </button>
-      </div>
+      }
     </div>
 
     @if (store.loading()) {
-      <div class="flex items-center justify-center py-20 text-slate-400">
-        <i class="pi pi-spin pi-spinner mr-2"></i> 載入中...
+      <div class="flex items-center justify-center py-20 text-text-muted">
+        <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
       </div>
     } @else {
 
       <!-- ── 學習計畫 ───────────────────────────────────────────── -->
-      @if (store.hasActivePlan()) {
+      @if (store.showCreatePlan()) {
+        <div class="flex flex-col gap-4 rounded-[var(--radius-lg)] border border-border bg-surface p-4 sm:p-5 lg:p-6">
+          <p class="font-heading text-base font-bold text-ink">建立學習計畫</p>
+
+          <div class="flex flex-col gap-2">
+            <p class="text-xs font-bold text-text-secondary">詞庫範圍</p>
+            <div class="flex flex-wrap gap-2">
+              @for (lv of levelOptions; track lv) {
+                <button
+                  type="button"
+                  (click)="store.createPlanLevel.set(lv)"
+                  [class]="
+                    'rounded-full px-4 py-1.5 text-sm font-bold transition ' +
+                    (store.createPlanLevel() === lv
+                      ? 'bg-accent text-white'
+                      : 'border border-border bg-bg text-text-secondary hover:border-accent/40')
+                  "
+                >{{ lv }}</button>
+              }
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <p class="text-xs font-bold text-text-secondary">每日新單字數</p>
+            <div class="flex flex-wrap gap-2">
+              @for (n of goalOptions; track n) {
+                <button
+                  type="button"
+                  (click)="store.createPlanDaily.set(n)"
+                  [class]="
+                    'rounded-full px-4 py-1.5 text-sm font-bold transition ' +
+                    (store.createPlanDaily() === n
+                      ? 'bg-accent text-white'
+                      : 'border border-border bg-bg text-text-secondary hover:border-accent/40')
+                  "
+                >{{ n }} 個</button>
+              }
+            </div>
+            <p class="text-xs text-text-muted">
+              預計 {{ Math.ceil(store.allEntries().length / store.createPlanDaily()) }} 天完成
+              （共 {{ store.allEntries().length }} 個單字）
+            </p>
+          </div>
+
+          @if (store.createPlanError()) {
+            <div class="rounded-[var(--radius-md)] border border-accent/30 bg-accent-soft px-4 py-2.5 text-xs text-accent">
+              {{ store.createPlanError() }}
+            </div>
+          }
+
+          <div class="flex gap-2">
+            <button
+              type="button"
+              (click)="store.showCreatePlan.set(false)"
+              [disabled]="store.createPlanLoading()"
+              class="flex-1 rounded-full border border-border bg-surface py-2.5 text-sm font-bold text-text-secondary transition hover:bg-bg disabled:opacity-50"
+            >取消</button>
+            <button
+              type="button"
+              (click)="store.createPlan()"
+              [disabled]="store.createPlanLoading()"
+              class="flex flex-1 items-center justify-center gap-2 rounded-full bg-accent py-2.5 text-sm font-bold text-white transition hover:brightness-105 disabled:opacity-60"
+            >
+              @if (store.createPlanLoading()) {
+                <i class="fa-solid fa-spinner fa-spin text-xs"></i> 建立中...
+              } @else {
+                <i class="fa-solid fa-check text-xs"></i> 建立
+              }
+            </button>
+          </div>
+        </div>
+
+      } @else if (store.hasActivePlan()) {
         @let plan = store.activePlan()!;
         @let stats = store.todayStats();
         @let records = store.srsRecords();
 
-        <div class="rounded-[1.4rem] border border-indigo-100 bg-[linear-gradient(135deg,#eef2ff,#f8faff)] p-5">
-          <div class="mb-4 flex items-start justify-between">
-            <div>
-              <p class="text-xs font-bold uppercase tracking-[0.08em] text-indigo-500">學習計畫</p>
-              <p class="mt-0.5 text-xl font-black text-slate-900">{{ plan.level }} 單字</p>
-              <p class="mt-0.5 text-xs text-slate-400">
-                預計完成：{{ plan.endDate }} ·
-                {{ records.size }} / {{ plan.totalWords }} 個已學習
-              </p>
-            </div>
-            <!-- 多計畫切換（未來擴充） -->
-            @if (store.plans().length > 1) {
-              <div class="flex gap-1">
-                @for (p of store.plans(); track p.id) {
-                  <button
-                    (click)="store.selectPlan(p.id)"
-                    [class]="
-                      'rounded-full border px-3 py-1 text-xs font-semibold transition ' +
-                      (p.id === plan.id
-                        ? 'border-indigo-600 bg-indigo-600 text-white'
-                        : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-300')
-                    "
-                  >{{ p.level }}</button>
-                }
+        <div class="flex flex-col gap-4 rounded-[var(--radius-lg)] border border-border bg-surface p-4 sm:gap-5 sm:p-5 lg:gap-6 lg:p-6">
+          <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-8">
+            <div class="flex flex-col gap-2.5">
+              <div class="flex items-center gap-2">
+                <span class="rounded-full bg-accent-soft px-3 py-1 text-sm font-bold text-accent">{{ plan.level }} 單字計畫</span>
+                <span class="rounded-full bg-matcha-soft px-3 py-1 text-xs font-bold text-matcha">進行中</span>
               </div>
-            }
-          </div>
+              <div class="flex flex-col gap-1">
+                <span class="flex items-center gap-1.5 text-[13px] text-text-secondary">
+                  <i class="fa-solid fa-calendar w-3.5 text-center text-text-muted"></i> {{ plan.startDate }} – {{ plan.endDate }}
+                </span>
+                <span class="flex items-center gap-1.5 text-[13px] text-text-secondary">
+                  <i class="fa-solid fa-book-open w-3.5 text-center text-text-muted"></i> 每日新單字 {{ plan.dailyNewWords }} 個
+                </span>
+              </div>
+            </div>
 
-          <!-- 掌握進度條 -->
-          <div class="mb-4">
-            <div class="mb-1.5 flex items-center justify-between text-xs">
-              <span class="text-slate-500">整體進度</span>
-              <span class="font-semibold text-indigo-600">
-                {{ Math.round((records.size / (plan.totalWords || 1)) * 100) }}%
-              </span>
-            </div>
-            <div class="h-2 overflow-hidden rounded-full bg-indigo-100">
-              <div
-                class="h-full rounded-full bg-indigo-500 transition-all duration-500"
-                [style.width.%]="Math.round((records.size / (plan.totalWords || 1)) * 100)"
-              ></div>
-            </div>
-          </div>
-
-          <!-- 今日任務 -->
-          <div class="mb-4 grid grid-cols-3 gap-2 text-center">
-            <div class="rounded-xl border border-rose-200 bg-white px-3 py-2.5">
-              <p class="text-xl font-black text-rose-600">{{ stats.due }}</p>
-              <p class="text-[10px] text-slate-500">待複習</p>
-            </div>
-            <div class="rounded-xl border border-emerald-200 bg-white px-3 py-2.5">
-              <p class="text-xl font-black text-emerald-600">{{ stats.newWords }}</p>
-              <p class="text-[10px] text-slate-500">今日新詞</p>
-            </div>
-            <div class="rounded-xl border border-indigo-200 bg-white px-3 py-2.5">
-              <p class="text-xl font-black text-indigo-600">{{ stats.total }}</p>
-              <p class="text-[10px] text-slate-500">今日合計</p>
+            <div class="flex flex-col gap-2 lg:w-[300px] lg:flex-none">
+              <div class="flex items-end justify-between">
+                <span class="flex items-end gap-1">
+                  <span class="font-heading text-2xl font-bold text-ink">{{ records.size }}</span>
+                  <span class="pb-0.5 text-[13px] text-text-muted">/ {{ plan.totalWords }} 字</span>
+                </span>
+                <span class="pb-0.5 text-xs text-text-muted">已掌握＋複習中</span>
+              </div>
+              <div class="flex h-2.5 w-full overflow-hidden rounded-full bg-[#F1EAE0]">
+                <div class="bg-matcha" [style.flex]="store.learnedRecordsCount() || 0"></div>
+                <div class="bg-sun-yellow" [style.flex]="store.learningRecordsCount() || 0"></div>
+                <div class="flex-1"></div>
+              </div>
             </div>
           </div>
 
-          @if (stats.total > 0) {
-            <div class="flex gap-2">
-              <button
-                (click)="startFlashcard({ todayOnly: true })"
-                class="flex flex-1 items-center justify-center gap-1.5 rounded-2xl border border-indigo-200 bg-white py-2.5 text-sm font-bold text-indigo-700 transition hover:bg-indigo-50"
-              >
-                <i class="pi pi-id-card text-xs"></i> 卡牌複習
-              </button>
-              <button
-                (click)="store.startQuiz({ todayOnly: true })"
-                class="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-indigo-600 py-2.5 text-sm font-bold text-white shadow-[0_8px_16px_rgba(79,70,229,0.2)] transition hover:bg-indigo-700"
-              >
-                <i class="pi pi-check-square text-xs"></i> 開始測驗
-              </button>
+          <div class="grid grid-cols-3 gap-2 sm:gap-2.5">
+            <div class="flex flex-col items-center gap-0.5 rounded-[var(--radius-md)] bg-matcha-soft px-2 py-2.5">
+              <span class="font-heading text-lg font-bold text-matcha">{{ stats.newWords }}</span>
+              <span class="text-[11px] text-text-secondary">今日新詞</span>
             </div>
-          } @else {
-            <div class="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-center text-sm font-semibold text-green-700">
-              <i class="pi pi-check-circle mr-1.5"></i> 今日任務完成！
+            <div class="flex flex-col items-center gap-0.5 rounded-[var(--radius-md)] bg-accent-soft px-2 py-2.5">
+              <span class="font-heading text-lg font-bold text-accent">{{ stats.due }}</span>
+              <span class="text-[11px] text-text-secondary">今日待複習</span>
             </div>
-          }
+            <div class="flex flex-col items-center gap-0.5 rounded-[var(--radius-md)] bg-[#FFF3D6] px-2 py-2.5">
+              <span class="font-heading text-lg font-bold text-[#B08514]">{{ store.learnedRecordsCount() }}</span>
+              <span class="text-[11px] text-text-secondary">已掌握</span>
+            </div>
+          </div>
         </div>
 
       } @else {
         <!-- 尚無計畫 -->
-        @if (!store.showCreatePlan()) {
-          <div class="rounded-[1.4rem] border border-dashed border-indigo-200 bg-indigo-50/60 p-6 text-center">
-            <p class="text-sm font-semibold text-slate-700">建立學習計畫</p>
-            <p class="mt-1 text-xs text-slate-500">設定每日目標，系統自動安排複習進度</p>
-            <button
-              (click)="store.showCreatePlan.set(true)"
-              class="mt-4 inline-flex items-center gap-2 rounded-2xl bg-indigo-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-indigo-700"
-            >
-              <i class="pi pi-plus text-xs"></i> 建立計畫
-            </button>
-          </div>
-
-        } @else {
-          <!-- 建立計畫表單 -->
-          <div class="rounded-[1.4rem] border border-indigo-200 bg-white p-5 shadow-sm">
-            <p class="mb-4 text-base font-bold text-slate-900">建立學習計畫</p>
-
-            <div class="mb-4">
-              <p class="mb-2 text-xs font-semibold text-slate-600">詞庫範圍</p>
-              <div class="flex gap-2">
-                @for (lv of levelOptions; track lv) {
-                  <button
-                    (click)="store.createPlanLevel.set(lv)"
-                    [class]="
-                      'rounded-full border px-4 py-1.5 text-sm font-semibold transition ' +
-                      (store.createPlanLevel() === lv
-                        ? 'border-indigo-600 bg-indigo-600 text-white'
-                        : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-300')
-                    "
-                  >{{ lv }}</button>
-                }
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <p class="mb-2 text-xs font-semibold text-slate-600">每日新單字數</p>
-              <div class="flex gap-2">
-                @for (n of goalOptions; track n) {
-                  <button
-                    (click)="store.createPlanDaily.set(n)"
-                    [class]="
-                      'rounded-full border px-4 py-1.5 text-sm font-semibold transition ' +
-                      (store.createPlanDaily() === n
-                        ? 'border-indigo-600 bg-indigo-600 text-white'
-                        : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-300')
-                    "
-                  >{{ n }} 個</button>
-                }
-              </div>
-              <p class="mt-2 text-xs text-slate-400">
-                預計 {{ Math.ceil(store.allEntries().length / store.createPlanDaily()) }} 天完成
-                （共 {{ store.allEntries().length }} 個單字）
-              </p>
-            </div>
-
-            @if (store.createPlanError()) {
-              <div class="mb-3 rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-xs text-red-700">
-                {{ store.createPlanError() }}
-              </div>
-            }
-
-            <div class="flex gap-2">
-              <button
-                (click)="store.showCreatePlan.set(false)"
-                [disabled]="store.createPlanLoading()"
-                class="flex-1 rounded-2xl border border-slate-200 bg-white py-2.5 text-sm font-medium text-slate-600 transition hover:bg-slate-50 disabled:opacity-50"
-              >取消</button>
-              <button
-                (click)="store.createPlan()"
-                [disabled]="store.createPlanLoading()"
-                class="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-2.5 text-sm font-bold text-white transition hover:bg-indigo-700 disabled:opacity-60"
-              >
-                @if (store.createPlanLoading()) {
-                  <i class="pi pi-spin pi-spinner text-xs"></i> 建立中...
-                } @else {
-                  <i class="pi pi-check text-xs"></i> 建立
-                }
-              </button>
-            </div>
-          </div>
-        }
+        <div class="flex flex-col items-center gap-2.5 rounded-[var(--radius-lg)] border border-dashed border-accent/40 bg-accent-soft/40 px-6 py-10 text-center">
+          <p class="font-heading text-base font-bold text-ink">尚未建立學習計畫</p>
+          <p class="text-sm text-text-secondary">設定每日目標，系統自動安排複習進度</p>
+          <button
+            type="button"
+            (click)="store.showCreatePlan.set(true)"
+            class="mt-2 inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white transition hover:brightness-105"
+          >
+            <i class="fa-solid fa-plus text-xs"></i> 建立計畫
+          </button>
+        </div>
       }
 
       <!-- ── 錯題複習 ──────────────────────────────────────────── -->
-      @if (store.wrongWords().length > 0) {
-        <div class="rounded-[1.4rem] border border-rose-200 bg-rose-50/60 p-4">
+      @if (store.wrongWords().length > 0 && !store.showCreatePlan()) {
+        <div class="flex flex-col gap-3 rounded-[var(--radius-lg)] border border-accent/30 bg-accent-soft/50 p-4">
           <div class="flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <span class="flex h-7 w-7 items-center justify-center rounded-full bg-rose-100 text-rose-600">
-                <i class="pi pi-exclamation-circle text-xs"></i>
+            <div class="flex items-center gap-2.5">
+              <span class="flex h-8 w-8 items-center justify-center rounded-full bg-white text-accent">
+                <i class="fa-solid fa-triangle-exclamation text-xs"></i>
               </span>
-              <div>
-                <p class="text-sm font-bold text-slate-900">錯題複習</p>
-                <p class="text-xs text-slate-500">{{ store.wrongWords().length }} 個單字</p>
+              <div class="flex flex-col">
+                <span class="text-sm font-bold text-ink">錯題複習</span>
+                <span class="text-xs text-text-secondary">{{ store.wrongWords().length }} 個單字</span>
               </div>
             </div>
-            <button (click)="store.clearWrongWords()" class="text-xs text-slate-400 hover:text-rose-500">清除</button>
+            <button type="button" (click)="store.clearWrongWords()" class="text-xs text-text-muted hover:text-accent">清除</button>
           </div>
-          <div class="mt-3 flex gap-2">
+          <div class="flex gap-2">
             <button
+              type="button"
               (click)="startFlashcard({ wrongOnly: true })"
-              class="flex-1 rounded-xl border border-rose-200 bg-white py-2 text-center text-xs font-semibold text-rose-700 transition hover:bg-rose-50"
+              class="flex-1 rounded-full border border-accent bg-white py-2 text-center text-xs font-bold text-accent transition hover:bg-accent-soft"
             >卡牌複習</button>
             <button
+              type="button"
               (click)="store.startQuiz({ wrongOnly: true })"
-              class="flex-1 rounded-xl bg-rose-600 py-2 text-center text-xs font-bold text-white transition hover:bg-rose-700"
+              class="flex-1 rounded-full bg-accent py-2 text-center text-xs font-bold text-white transition hover:brightness-105"
             >重新測驗</button>
           </div>
         </div>
       }
 
-      <!-- ── 分組篩選 ──────────────────────────────────────────── -->
-      <div class="flex flex-wrap items-center gap-2">
-        <button
-          (click)="store.selectGroup(null)"
-          [class]="
-            'rounded-full border px-4 py-1.5 text-sm font-semibold transition ' +
-            (!store.selectedGroupId()
-              ? 'border-slate-700 bg-slate-800 text-white'
-              : 'border-slate-200 bg-white text-slate-600 hover:border-slate-400')
-          "
-        >全部 ({{ store.totalVisible() }})</button>
-
-        @for (group of store.groups(); track group.id) {
-          <button
-            (click)="store.selectGroup(group.id)"
-            [class]="
-              'rounded-full border px-4 py-1.5 text-sm font-semibold transition ' +
-              (store.selectedGroupId() === group.id
-                ? 'border-slate-700 bg-slate-800 text-white'
-                : 'border-slate-200 bg-white text-slate-600 hover:border-slate-400')
-            "
-          >{{ group.label }}</button>
-        }
-      </div>
-
-      <!-- ── 單字列表 ──────────────────────────────────────────── -->
-      <div class="overflow-hidden rounded-[1.4rem] border border-slate-200 bg-white shadow-sm">
-        @for (group of store.filteredGroups(); track group.id) {
-          <div [class]="'border-l-4 ' + cardClass(group)">
-
-            <div class="flex items-center gap-2 border-b border-slate-100 px-5 py-3">
-              <span [class]="'rounded-full px-2.5 py-0.5 text-xs font-bold ' + badgeClass(group)">
-                {{ group.label }}
+      <!-- ── 標記複習 ──────────────────────────────────────────── -->
+      @if (store.markedWords().length > 0 && !store.showCreatePlan()) {
+        <div class="flex flex-col gap-3 rounded-[var(--radius-lg)] border border-sun-yellow/50 bg-[#FFF3D6]/50 p-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <span class="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#B08514]">
+                <i class="fa-solid fa-bookmark text-xs"></i>
               </span>
-              <span class="text-xs text-slate-400">{{ group.entries.length }} 個單字</span>
-            </div>
-
-            @for (entry of group.entries; track entry.id; let last = $last) {
-              <div [class]="!last ? 'border-b border-slate-100' : ''">
-                <button
-                  type="button"
-                  (click)="store.toggleExpand(entry.id)"
-                  class="flex w-full items-start gap-4 px-5 py-3.5 text-left transition hover:bg-slate-50"
-                >
-                  <div class="min-w-0 flex-1">
-                    <div class="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-                      <span class="text-lg font-bold text-slate-900">{{ entry.word }}</span>
-                      <span class="text-sm text-slate-400">{{ entry.reading }}</span>
-                      <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-500">
-                        {{ entry.pos }}
-                      </span>
-                      @let rec = store.srsRecords().get(entry.id);
-                      @if (rec) {
-                        <span [class]="
-                          'rounded px-1.5 py-0.5 text-[10px] font-bold ' +
-                          (rec.stage === 'learned'
-                            ? 'bg-green-100 text-green-700'
-                            : 'bg-amber-100 text-amber-700')
-                        ">{{ rec.stage === 'learned' ? '已掌握' : '複習中' }}</span>
-                      }
-                    </div>
-                    <p class="mt-0.5 text-sm text-slate-600">{{ entry.meaning }}</p>
-                  </div>
-                  <div class="flex items-center gap-2 pt-1">
-                    <button
-                      type="button"
-                      (click)="speakEntry(entry); $event.stopPropagation()"
-                      class="flex h-7 w-7 items-center justify-center rounded-full text-slate-400 transition hover:bg-indigo-100 hover:text-indigo-600"
-                    >
-                      <i class="pi pi-volume-up text-xs"></i>
-                    </button>
-                    <i [class]="'pi text-xs text-slate-400 ' + (store.isExpanded(entry.id) ? 'pi-chevron-up' : 'pi-chevron-down')"></i>
-                  </div>
-                </button>
-
-                @if (store.isExpanded(entry.id)) {
-                  <div class="border-t border-slate-100 bg-slate-50/70 px-5 py-4">
-                    @if (entry.examples.length > 0) {
-                      <div class="mb-3 space-y-2">
-                        @for (ex of entry.examples; track ex.jp) {
-                          <div class="rounded-xl border border-slate-200 bg-white px-4 py-2.5">
-                            <p class="text-sm font-medium text-slate-800">{{ ex.jp }}</p>
-                            <p class="mt-0.5 text-xs text-slate-500">{{ ex.zh }}</p>
-                          </div>
-                        }
-                      </div>
-                    }
-                    @if (entry.confusionNote) {
-                      <div class="flex items-start gap-2 rounded-xl border border-amber-200 bg-amber-50 px-4 py-2.5">
-                        <i class="pi pi-info-circle mt-0.5 text-xs text-amber-600"></i>
-                        <p class="text-xs leading-relaxed text-amber-800">{{ entry.confusionNote }}</p>
-                      </div>
-                    }
-                    @let rec = store.srsRecords().get(entry.id);
-                    @if (rec) {
-                      <p class="mt-2 text-[10px] text-slate-400">
-                        下次複習：{{ rec.dueDate }} · 間隔 {{ rec.interval }} 天 · 答對 {{ rec.knownCount }} / {{ rec.reps }} 次
-                      </p>
-                    }
-                  </div>
-                }
+              <div class="flex flex-col">
+                <span class="text-sm font-bold text-ink">標記複習</span>
+                <span class="text-xs text-text-secondary">{{ store.markedWords().length }} 個單字</span>
               </div>
-            }
+            </div>
+            <button type="button" (click)="store.clearMarkedWords()" class="text-xs text-text-muted hover:text-accent">清除</button>
           </div>
-        }
-
-        @if (store.filteredGroups().length === 0) {
-          <div class="px-5 py-12 text-center text-sm text-slate-400">
-            目前篩選條件下沒有單字
+          <div class="flex gap-2">
+            <button
+              type="button"
+              (click)="startFlashcard({ markedOnly: true })"
+              class="flex-1 rounded-full border border-[#B08514] bg-white py-2 text-center text-xs font-bold text-[#B08514] transition hover:bg-[#FFF3D6]"
+            >卡牌複習</button>
+            <button
+              type="button"
+              (click)="store.startQuiz({ markedOnly: true })"
+              class="flex-1 rounded-full bg-[#B08514] py-2 text-center text-xs font-bold text-white transition hover:brightness-105"
+            >重新測驗</button>
           </div>
-        }
-      </div>
-
-      <!-- 底部快捷按鈕（無計畫時） -->
-      @if (!store.hasActivePlan()) {
-        <div class="flex gap-3">
-          <button
-            (click)="startFlashcard()"
-            class="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-indigo-200 bg-white py-3.5 text-sm font-bold text-indigo-700 shadow-sm transition hover:bg-indigo-50"
-          >
-            <i class="pi pi-id-card"></i> 卡牌背誦
-          </button>
-          <button
-            (click)="store.startQuiz()"
-            class="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-[0_10px_20px_rgba(79,70,229,0.2)] transition hover:bg-indigo-700"
-          >
-            <i class="pi pi-check-square"></i> 開始測驗
-          </button>
         </div>
       }
+
+      <!-- ── 模式切換 ──────────────────────────────────────────── -->
+      <div class="flex flex-col gap-3 sm:flex-row sm:gap-4 lg:gap-[22px]">
+        <div class="flex flex-1 items-center gap-3.5 rounded-[var(--radius-lg)] border border-accent bg-accent-soft px-4 py-3.5 sm:px-5 sm:py-4">
+          <span class="flex h-9 w-9 flex-none items-center justify-center rounded-[var(--radius-md)] bg-white sm:h-10 sm:w-10">
+            <i class="fa-solid fa-list text-accent"></i>
+          </span>
+          <span class="flex flex-col gap-0.5">
+            <span class="font-heading text-[15px] font-bold text-accent sm:text-base">單詞總覽</span>
+            <span class="text-xs text-text-secondary">瀏覽全部單字與 SRS 狀態</span>
+          </span>
+        </div>
+        <button
+          type="button"
+          (click)="startFlashcard({ todayOnly: store.hasActivePlan() })"
+          class="flex flex-1 items-center gap-3.5 rounded-[var(--radius-lg)] border border-border bg-surface px-4 py-3.5 text-left transition hover:border-accent/40 hover:bg-accent-soft/20 sm:px-5 sm:py-4"
+        >
+          <span class="flex h-9 w-9 flex-none items-center justify-center rounded-[var(--radius-md)] bg-bg sm:h-10 sm:w-10">
+            <i class="fa-solid fa-layer-group text-text-secondary"></i>
+          </span>
+          <span class="flex flex-col gap-0.5">
+            <span class="font-heading text-[15px] font-bold text-ink sm:text-base">卡牌背誦</span>
+            <span class="text-xs text-text-secondary">發音・漢字・例句</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          (click)="store.startQuiz({ todayOnly: store.hasActivePlan() })"
+          class="flex flex-1 items-center gap-3.5 rounded-[var(--radius-lg)] border border-border bg-surface px-4 py-3.5 text-left transition hover:border-accent/40 hover:bg-accent-soft/20 sm:px-5 sm:py-4"
+        >
+          <span class="flex h-9 w-9 flex-none items-center justify-center rounded-[var(--radius-md)] bg-bg sm:h-10 sm:w-10">
+            <i class="fa-solid fa-circle-check text-text-secondary"></i>
+          </span>
+          <span class="flex flex-col gap-0.5">
+            <span class="font-heading text-[15px] font-bold text-ink sm:text-base">單字測驗</span>
+            <span class="text-xs text-text-secondary">四選一・錯題複習</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- ── 分類篩選 ──────────────────────────────────────────── -->
+      <div class="flex flex-wrap items-center gap-2">
+        <button
+          type="button"
+          (click)="store.selectCategory(null)"
+          [class]="
+            'rounded-full px-3.5 py-1.5 text-[13px] font-bold transition ' +
+            (!store.selectedCategoryId()
+              ? 'bg-ink text-white'
+              : 'border border-border bg-surface text-text-secondary hover:border-ink/30')
+          "
+        >全部</button>
+        @for (cat of filterCategories; track cat.id) {
+          <button
+            type="button"
+            (click)="store.selectCategory(cat.id)"
+            [class]="
+              'rounded-full px-3.5 py-1.5 text-[13px] font-medium transition ' +
+              (store.selectedCategoryId() === cat.id
+                ? 'bg-ink font-bold text-white'
+                : 'border border-border bg-surface text-text-secondary hover:border-ink/30')
+            "
+          >{{ cat.label }}</button>
+        }
+      </div>
+
+      <!-- ── 單字列表：手機／平板（卡片） ─────────────────────────── -->
+      <div class="flex flex-col gap-2.5 lg:hidden">
+        @for (entry of store.filteredEntries(); track entry.id) {
+          <div class="flex flex-col gap-2 rounded-[var(--radius-md)] border border-border bg-surface p-3.5">
+            <div class="flex items-start justify-between gap-2">
+              <div class="flex flex-col gap-0.5">
+                <span class="font-heading text-lg font-bold text-ink">{{ entry.word }}</span>
+                <span class="text-xs text-text-muted">{{ entry.reading }}</span>
+              </div>
+              <button
+                type="button"
+                (click)="speakEntry(entry)"
+                class="flex h-7 w-7 flex-none items-center justify-center rounded-full text-matcha transition hover:bg-matcha-soft"
+              >
+                <i class="fa-solid fa-volume-high text-sm"></i>
+              </button>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="flex-1 text-[13px] text-text-secondary">{{ entry.meaning }}</span>
+              <span class="rounded-full bg-[#E9E4F4] px-2.5 py-0.5 text-[11px] font-bold text-[#6B5CA8]">{{ posLabel(entry.pos) }}</span>
+              @let s = stageInfo(entry);
+              <span [class]="'rounded-full px-2.5 py-0.5 text-[11px] font-bold ' + s.bg + ' ' + s.text">{{ s.label }}</span>
+            </div>
+          </div>
+        }
+        @if (store.filteredEntries().length === 0) {
+          <p class="py-10 text-center text-sm text-text-muted">目前篩選條件下沒有單字</p>
+        }
+      </div>
+
+      <!-- ── 單字列表：桌面（表格） ─────────────────────────────── -->
+      <div class="hidden rounded-[var(--radius-lg)] border border-border bg-surface px-6 lg:block">
+        @for (entry of store.filteredEntries(); track entry.id; let last = $last) {
+          <div [class]="'flex items-center gap-4 py-3.5 ' + (last ? '' : 'border-b border-border')">
+            <div class="flex w-[240px] flex-none flex-col gap-0.5">
+              <span class="font-heading text-lg font-bold text-ink">{{ entry.word }}</span>
+              <span class="text-xs text-text-muted">{{ entry.reading }}</span>
+            </div>
+            <span class="flex-1 text-sm text-text-secondary">{{ entry.meaning }}</span>
+            <span class="w-[110px] flex-none rounded-full bg-[#E9E4F4] px-2.5 py-1 text-center text-xs font-bold text-[#6B5CA8]">
+              {{ posLabel(entry.pos) }}
+            </span>
+            @let s = stageInfo(entry);
+            <span [class]="'w-[110px] flex-none rounded-full px-2.5 py-1 text-center text-xs font-bold ' + s.bg + ' ' + s.text">
+              {{ s.label }}
+            </span>
+            <div class="flex flex-none items-center gap-3.5">
+              <button type="button" (click)="speakEntry(entry)" class="text-matcha transition hover:opacity-70">
+                <i class="fa-solid fa-volume-high text-sm"></i>
+              </button>
+              <i class="fa-solid fa-chevron-right text-xs text-text-muted"></i>
+            </div>
+          </div>
+        }
+        @if (store.filteredEntries().length === 0) {
+          <p class="py-10 text-center text-sm text-text-muted">目前篩選條件下沒有單字</p>
+        }
+      </div>
 
     } <!-- /end !loading -->
   </div>
 }
 
 <!-- ─────────────────────────────────────────────────────────────────────── -->
-<!-- FLASHCARD MODE                                                          -->
+<!-- FLASHCARD MODE (卡牌背誦)                                                -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 @if (store.pageMode() === 'flashcard') {
-  <div class="flex min-h-[80vh] flex-col">
+  <div class="-mx-4 -mt-4 flex flex-col sm:-mx-7 sm:-mt-5 lg:-mx-[120px] lg:-mt-7">
 
-    <div class="mb-6 flex items-center justify-between">
-      <button
-        (click)="store.exitFlashcard()"
-        class="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:border-slate-300 hover:bg-slate-50"
-      >
-        <i class="pi pi-arrow-left text-xs"></i> 返回
+    <!-- Focus Bar：手機 -->
+    <div class="sticky top-14 z-10 flex h-[52px] flex-none items-center justify-between border-b border-border bg-surface px-4 sm:hidden">
+      <button type="button" (click)="store.exitFlashcard()" class="flex items-center gap-1 text-[13px] font-semibold text-text-secondary">
+        <i class="fa-solid fa-chevron-left text-xs"></i> 離開
       </button>
-      <div class="text-center">
-        <p class="text-xs font-bold uppercase tracking-[0.08em] text-indigo-500">卡牌背誦</p>
-        <p class="mt-0.5 text-sm font-semibold text-slate-700">
-          {{ store.flashcardProgress().index }} / {{ store.flashcardProgress().total }}
-          <span class="ml-2 text-green-600">認識 {{ store.flashcardProgress().known }}</span>
-        </p>
-      </div>
-      <div class="w-28 text-right">
-        <p class="text-[10px] text-slate-400">Space 翻轉</p>
-        <p class="text-[10px] text-slate-400">K 認識　X 不熟</p>
-      </div>
+      <span class="font-heading text-base font-bold text-ink">卡牌背誦</span>
+      <span class="text-[13px] font-bold text-text-secondary">{{ store.flashcardProgress().index }} / {{ store.flashcardProgress().total }}</span>
     </div>
-
-    <div class="mb-6 h-1.5 overflow-hidden rounded-full bg-slate-200">
+    <div class="h-1 flex-none bg-[#F1EAE0] sm:hidden">
       <div
-        class="h-full rounded-full bg-indigo-500 transition-all duration-300"
+        class="h-full bg-accent transition-all duration-300"
         [style.width.%]="(store.flashcardProgress().index / (store.flashcardProgress().total || 1)) * 100"
       ></div>
     </div>
 
-    @if (store.currentCard(); as card) {
-      <div
-        class="relative mx-auto mb-6 w-full max-w-lg cursor-pointer select-none"
-        (click)="flipCard()"
-      >
-        @if (!store.flipped()) {
-          <div class="flex min-h-56 flex-col items-center justify-center rounded-[1.75rem] border border-slate-200 bg-[linear-gradient(135deg,#eef2ff_0%,#ffffff_100%)] px-8 py-10 text-center shadow-[0_20px_48px_rgba(99,102,241,0.12)]">
-            <p class="mb-2 text-sm text-slate-400">{{ card.reading }}</p>
-            <h2 class="text-5xl font-black tracking-tight text-slate-900">{{ card.word }}</h2>
-            <span class="mt-4 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-500">{{ card.pos }}</span>
-            <p class="mt-6 text-xs text-slate-400">點擊翻轉 / 按空白鍵</p>
-          </div>
-        } @else {
-          <div class="flex min-h-56 flex-col items-center justify-center rounded-[1.75rem] border border-indigo-200 bg-[linear-gradient(135deg,#e0e7ff_0%,#f8f9ff_100%)] px-8 py-10 text-center shadow-[0_20px_48px_rgba(99,102,241,0.16)]">
-            <p class="mb-1 text-base font-medium text-slate-500">{{ card.word }}（{{ card.reading }}）</p>
-            <h2 class="text-3xl font-black text-indigo-800">{{ card.meaning }}</h2>
-            @if (card.examples.length > 0) {
-              <div class="mt-5 w-full space-y-2 text-left">
-                @for (ex of card.examples.slice(0, 2); track ex.jp) {
-                  <div class="rounded-xl border border-indigo-100 bg-white/70 px-4 py-2.5">
-                    <p class="text-sm font-medium text-slate-700">{{ ex.jp }}</p>
-                    <p class="mt-0.5 text-xs text-slate-500">{{ ex.zh }}</p>
-                  </div>
-                }
-              </div>
-            }
-          </div>
-        }
-      </div>
-
-      <div class="mx-auto flex w-full max-w-lg items-center gap-2">
+    <!-- Exam Bar：平板／桌面 -->
+    <div class="sticky top-16 z-10 hidden h-16 flex-none items-center justify-between border-b border-border bg-surface px-6 sm:flex lg:top-[72px] lg:h-[72px] lg:px-12">
+      <div class="flex items-center gap-3 lg:gap-3.5">
         <button
-          (click)="prevCard()"
-          [disabled]="store.flashcardIndex() === 0"
-          class="flex h-11 w-11 flex-none items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 disabled:opacity-40"
+          type="button"
+          (click)="store.exitFlashcard()"
+          class="flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-[13px] font-semibold text-text-secondary transition hover:bg-bg"
         >
-          <i class="pi pi-chevron-left"></i>
+          <i class="fa-solid fa-chevron-left text-xs"></i> 離開背誦
         </button>
-
-        @if (store.flipped()) {
-          <button
-            (click)="store.markUnknown()"
-            class="flex flex-1 items-center justify-center gap-1.5 rounded-2xl border border-rose-300 bg-white py-3 text-sm font-bold text-rose-600 transition hover:bg-rose-50"
-          >
-            <i class="pi pi-times"></i> 不熟（X）
-          </button>
-          <button
-            (click)="markKnown()"
-            class="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-green-500 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-green-600"
-          >
-            <i class="pi pi-check"></i> 認識（K）
-          </button>
-        } @else {
-          <button
-            (click)="flipCard()"
-            class="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-indigo-200 bg-white py-3 text-sm font-bold text-indigo-700 shadow-sm transition hover:bg-indigo-50"
-          >
-            <i class="pi pi-refresh"></i> 翻轉
-          </button>
-        }
-
-        @if (!store.flashcardIsLast()) {
-          <button
-            (click)="nextCard()"
-            class="flex h-11 w-11 flex-none items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
-          >
-            <i class="pi pi-chevron-right"></i>
-          </button>
-        } @else {
-          <button
-            (click)="store.exitFlashcard()"
-            class="flex h-11 w-11 flex-none items-center justify-center rounded-full border border-green-300 bg-green-100 text-green-700 shadow-sm transition hover:bg-green-200"
-          >
-            <i class="pi pi-check"></i>
-          </button>
+        <span class="font-heading text-base font-bold text-ink lg:text-lg">卡牌背誦</span>
+        @if (store.activePlan(); as plan) {
+          <span class="rounded-full bg-matcha-soft px-2.5 py-1 text-xs font-bold text-[#4E8A76]">{{ plan.level }} 單字計畫</span>
         }
       </div>
-    }
-  </div>
-}
-
-<!-- ─────────────────────────────────────────────────────────────────────── -->
-<!-- QUIZ MODE                                                               -->
-<!-- ─────────────────────────────────────────────────────────────────────── -->
-@if (store.pageMode() === 'quiz' && !store.quizShowResult()) {
-  <div
-    class="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(99,102,241,0.18),transparent_32%),linear-gradient(180deg,#f8faff_0%,#f3f6fb_100%)] p-4 sm:p-6"
-  >
-    <div class="w-full max-w-3xl rounded-[1.75rem] border border-slate-200/70 bg-white p-5 shadow-[0_24px_60px_rgba(15,23,42,0.08)] sm:p-8">
-
-      <div class="mb-6 border-b border-slate-200 pb-5">
-        <div class="mb-3 flex items-center justify-between gap-3">
-          <span class="text-sm text-slate-500">
-            第 {{ store.quizIndex() + 1 }} 題 / 共 {{ store.quizQuestions().length }} 題
-          </span>
-          <button
-            type="button"
-            (click)="store.exitQuiz()"
-            class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50"
-          >
-            返回
-          </button>
+      <div class="flex items-center gap-3">
+        <span class="text-sm font-bold text-text-secondary">第 {{ store.flashcardProgress().index }} / {{ store.flashcardProgress().total }} 張</span>
+        <div class="h-2 w-[120px] overflow-hidden rounded-full bg-[#F1EAE0]">
+          <div
+            class="h-full bg-accent transition-all duration-300"
+            [style.width.%]="(store.flashcardProgress().index / (store.flashcardProgress().total || 1)) * 100"
+          ></div>
         </div>
-        <p-progressbar [value]="store.quizProgress()" styleClass="quiz-progress" [showValue]="false" />
       </div>
+    </div>
 
-      @if (store.currentQuestion(); as q) {
-        <section class="mb-6 rounded-3xl border border-slate-200 bg-[linear-gradient(135deg,rgba(238,242,255,0.9),rgba(255,255,255,0.96))] px-4 py-8 text-center sm:px-6">
-          <div class="mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-bold text-indigo-700">題目</div>
-          <p class="mb-3 text-sm text-slate-400">{{ q.entry.reading }}</p>
-          <h2 class="text-5xl font-bold leading-tight text-slate-800 sm:text-6xl">{{ q.entry.word }}</h2>
-          <div class="mt-4 flex items-center justify-center gap-2">
-            <span class="rounded-full bg-slate-100 px-3 py-0.5 text-xs font-medium text-slate-500">{{ q.entry.pos }}</span>
-            <button
-              (click)="speakEntry(q.entry)"
-              class="inline-flex items-center gap-1.5 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-1.5 text-xs font-medium text-indigo-700 transition hover:bg-indigo-100"
-            >
-              <i class="pi pi-volume-up text-xs"></i> 播放發音
-            </button>
-          </div>
-          <p class="mt-4 text-sm text-slate-400">請選出最符合這個單字的中文意思</p>
-        </section>
-
-        <section class="mb-5 rounded-3xl border border-slate-200 bg-white p-4 sm:p-6">
-          <div class="mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-bold text-indigo-700">四選一</div>
-          <div class="grid grid-cols-1 gap-3">
-            @for (option of q.options; track option.id) {
-              <button
-                (click)="store.selectQuizOption(option)"
-                [disabled]="store.quizAnswered()"
-                [class]="'flex w-full items-center gap-4 rounded-2xl border-2 px-4 py-4 text-left text-base font-semibold transition-all duration-150 ' + optionCardClass(option)"
-              >
-                <span [class]="'inline-flex h-8 w-8 flex-none items-center justify-center rounded-full text-sm font-bold ' + optionPrefixClass(option)">
-                  {{ $index + 1 }}
-                </span>
-                <span class="leading-6">{{ option.text }}</span>
-              </button>
-            }
-          </div>
-        </section>
-
-        @if (store.quizAnswered()) {
-          <section
-            [class]="
-              'mb-5 rounded-2xl border p-4 text-sm ' +
-              (store.quizResults()[store.quizResults().length - 1]?.isCorrect
-                ? 'border-green-200 bg-green-50'
-                : 'border-red-200 bg-red-50')
-            "
-          >
-            <p class="mb-2 font-semibold">
-              @if (store.quizResults()[store.quizResults().length - 1]?.isCorrect) {
-                <i class="fa-solid fa-circle-check text-green-600"></i> 答對了！
-              } @else {
-                <i class="fa-solid fa-circle-xmark text-red-500"></i> 答錯了
+    <!-- Body -->
+    <div class="flex flex-col items-center gap-5 px-4 py-6 sm:px-7 sm:py-8 lg:px-[120px] lg:py-9">
+      @if (store.currentCard(); as card) {
+        <div class="w-full max-w-[640px] cursor-pointer select-none" (click)="flipCard()">
+          @if (!store.flipped()) {
+            <div class="flex min-h-[300px] flex-col items-center justify-center gap-3.5 rounded-[var(--radius-lg)] border border-border bg-surface px-7 py-8 text-center sm:min-h-[340px] sm:gap-4 lg:min-h-[380px] lg:gap-[18px] lg:px-10">
+              <span class="rounded-full bg-accent-soft px-3 py-1 text-xs font-bold text-accent">{{ posLabel(card.pos) }}</span>
+              <h2 class="font-heading text-[40px] font-bold leading-tight text-ink sm:text-5xl lg:text-[64px]">{{ card.word }}</h2>
+              <div class="flex items-center gap-2.5">
+                <span class="font-heading text-base font-medium text-text-secondary sm:text-lg lg:text-xl">{{ card.reading }}</span>
+                <button
+                  type="button"
+                  (click)="speakEntry(card); $event.stopPropagation()"
+                  class="flex h-8 w-8 flex-none items-center justify-center rounded-full border border-border bg-bg text-accent sm:h-9 sm:w-9"
+                >
+                  <i class="fa-solid fa-volume-high text-sm"></i>
+                </button>
+              </div>
+              <p class="text-xs text-text-muted">點擊翻轉 / 按空白鍵查看解釋與例句</p>
+            </div>
+          } @else {
+            <div class="flex min-h-[300px] flex-col items-center justify-center gap-3 rounded-[var(--radius-lg)] border border-border bg-surface px-7 py-8 text-center sm:min-h-[340px] lg:min-h-[380px] lg:px-10">
+              <span class="rounded-full bg-accent-soft px-3 py-1 text-xs font-bold text-accent">{{ posLabel(card.pos) }}</span>
+              <p class="text-base font-medium text-text-secondary">{{ card.word }}（{{ card.reading }}）</p>
+              <h2 class="font-heading text-2xl font-bold text-ink sm:text-3xl">{{ card.meaning }}</h2>
+              @if (card.examples.length > 0) {
+                <div class="mt-2 flex w-full flex-col gap-2 text-left">
+                  @for (ex of card.examples.slice(0, 2); track ex.jp) {
+                    <div class="rounded-[var(--radius-md)] border border-border bg-bg px-4 py-2.5">
+                      <p class="text-sm font-medium text-ink">{{ ex.jp }}</p>
+                      <p class="mt-0.5 text-xs text-text-secondary">{{ ex.zh }}</p>
+                    </div>
+                  }
+                </div>
               }
-            </p>
-            <p class="text-slate-600">
-              <span class="font-bold text-slate-800">{{ q.entry.word }}</span>（{{ q.entry.reading }}）的意思是「{{ q.entry.meaning }}」
-            </p>
-          </section>
+            </div>
+          }
+        </div>
 
-          <p-button
-            [label]="store.quizIsLast() ? '查看結果' : '下一題'"
-            [icon]="store.quizIsLast() ? 'pi pi-check' : 'pi pi-arrow-right'"
-            iconPos="right"
-            (onClick)="store.nextQuestion()"
-            styleClass="w-full justify-center"
-          />
-        }
+        <div class="flex w-full max-w-[640px] items-center gap-3">
+          @if (store.flipped()) {
+            <button
+              type="button"
+              (click)="store.markUnknown()"
+              class="flex flex-1 items-center justify-center gap-2 rounded-full border border-accent bg-surface py-3.5 text-[15px] font-bold text-accent transition hover:bg-accent-soft sm:py-3"
+            >
+              <i class="fa-solid fa-xmark"></i> 不熟
+            </button>
+            <button
+              type="button"
+              (click)="markKnown()"
+              class="flex flex-1 items-center justify-center gap-2 rounded-full bg-matcha py-3.5 text-[15px] font-bold text-white transition hover:brightness-105 sm:py-3"
+            >
+              <i class="fa-solid fa-check"></i> 認識
+            </button>
+          } @else {
+            <button
+              type="button"
+              (click)="flipCard()"
+              class="flex flex-1 items-center justify-center gap-2 rounded-full border border-accent bg-surface py-3.5 text-[15px] font-bold text-accent transition hover:bg-accent-soft sm:py-3"
+            >
+              <i class="fa-solid fa-rotate"></i> 翻轉
+            </button>
+          }
+        </div>
+
+        <div class="flex items-center gap-3 sm:gap-6">
+          <span class="flex flex-col items-center gap-0.5 rounded-[var(--radius-md)] bg-matcha-soft px-4 py-2 sm:bg-transparent sm:px-0 sm:py-0">
+            <span class="font-heading text-[17px] font-bold text-[#4E8A76]">{{ store.flashcardProgress().known }}</span>
+            <span class="text-[11px] text-text-muted sm:text-[13px]">已認識</span>
+          </span>
+          <span class="flex flex-col items-center gap-0.5 rounded-[var(--radius-md)] bg-accent-soft px-4 py-2 sm:bg-transparent sm:px-0 sm:py-0">
+            <span class="font-heading text-[17px] font-bold text-accent">{{ store.flashcardProgress().unknown }}</span>
+            <span class="text-[11px] text-text-muted sm:text-[13px]">待加強</span>
+          </span>
+          <span class="flex flex-col items-center gap-0.5 rounded-[var(--radius-md)] bg-bg px-4 py-2 sm:bg-transparent sm:px-0 sm:py-0">
+            <span class="font-heading text-[17px] font-bold text-text-muted">{{ store.flashcardProgress().remaining }}</span>
+            <span class="text-[11px] text-text-muted sm:text-[13px]">剩餘</span>
+          </span>
+        </div>
       }
     </div>
   </div>
 }
 
 <!-- ─────────────────────────────────────────────────────────────────────── -->
-<!-- QUIZ RESULT                                                             -->
+<!-- QUIZ MODE (單字測驗)                                                     -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+@if (store.pageMode() === 'quiz' && !store.quizShowResult()) {
+  <div class="-mx-4 -mt-4 flex flex-col sm:-mx-7 sm:-mt-5 lg:-mx-[120px] lg:-mt-7">
+
+    <!-- Focus Bar：手機 -->
+    <div class="sticky top-14 z-10 flex h-[52px] flex-none items-center justify-between border-b border-border bg-surface px-4 sm:hidden">
+      <button type="button" (click)="store.exitQuiz()" class="flex items-center gap-1 text-[13px] font-semibold text-text-secondary">
+        <i class="fa-solid fa-chevron-left text-xs"></i> 離開
+      </button>
+      <span class="font-heading text-base font-bold text-ink">單字測驗</span>
+      <span class="flex items-center gap-1 rounded-full bg-matcha-soft px-2.5 py-1 text-xs font-bold text-[#4E8A76]">
+        <i class="fa-solid fa-circle-check text-[11px]"></i> {{ store.quizScore() }}
+      </span>
+    </div>
+    <div class="h-1 flex-none bg-[#F1EAE0] sm:hidden">
+      <div class="h-full bg-accent transition-all duration-300" [style.width.%]="store.quizProgress()"></div>
+    </div>
+
+    <!-- Exam Bar：平板／桌面 -->
+    <div class="sticky top-16 z-10 hidden h-16 flex-none items-center justify-between border-b border-border bg-surface px-6 sm:flex lg:top-[72px] lg:h-[72px] lg:px-12">
+      <div class="flex items-center gap-3 lg:gap-3.5">
+        <button
+          type="button"
+          (click)="store.exitQuiz()"
+          class="flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-[13px] font-semibold text-text-secondary transition hover:bg-bg"
+        >
+          <i class="fa-solid fa-chevron-left text-xs"></i> 離開測驗
+        </button>
+        <span class="font-heading text-base font-bold text-ink lg:text-lg">單字測驗</span>
+        @if (store.activePlan(); as plan) {
+          <span class="rounded-full bg-matcha-soft px-2.5 py-1 text-xs font-bold text-[#4E8A76]">{{ plan.level }} 單字計畫</span>
+        }
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="flex items-center gap-1.5 rounded-full bg-matcha-soft px-3.5 py-1.5 text-sm font-bold text-[#4E8A76]">
+          <i class="fa-solid fa-circle-check text-xs"></i> 答對 {{ store.quizScore() }}
+        </span>
+        <button
+          type="button"
+          (click)="store.exitQuiz()"
+          class="rounded-full bg-accent px-4 py-2 text-sm font-bold text-white transition hover:brightness-105"
+        >結束測驗</button>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="flex flex-col gap-3.5 px-4 py-4 sm:px-7 sm:py-6 lg:mx-auto lg:w-full lg:max-w-4xl lg:gap-4 lg:px-0 lg:py-8">
+      @if (store.currentQuestion(); as q) {
+        <div class="flex items-center justify-between sm:hidden">
+          <span class="text-[13px] font-bold text-text-secondary">第 {{ store.quizIndex() + 1 }} 題 / 共 {{ store.quizQuestions().length }} 題</span>
+        </div>
+        <div class="hidden flex-col gap-2 sm:flex">
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-bold text-ink">第 {{ store.quizIndex() + 1 }} 題 / 共 {{ store.quizQuestions().length }} 題</span>
+            <span class="text-[13px] text-text-muted">已作答 {{ store.quizResults().length }} 題</span>
+          </div>
+          <div class="h-2 overflow-hidden rounded-full bg-[#F1EAE0]">
+            <div class="h-full rounded-full bg-accent transition-all duration-300" [style.width.%]="store.quizProgress()"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2.5 rounded-[var(--radius-lg)] border border-border bg-surface p-5 sm:gap-3.5 sm:p-6 lg:p-7">
+          <div class="flex items-center justify-between sm:hidden">
+            <span class="rounded-full bg-accent-soft px-3 py-1 text-xs font-bold text-accent">四選一</span>
+          </div>
+          <div class="hidden items-center justify-between sm:flex">
+            <span class="rounded-full bg-accent-soft px-3 py-1 text-xs font-bold text-accent">四選一</span>
+            <span class="text-[13px] text-text-muted">請選出最符合這個單字的中文意思</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 py-1 sm:flex-row sm:justify-center sm:gap-3.5">
+            <h2 class="font-heading text-4xl font-bold text-ink sm:text-[44px] lg:text-5xl">{{ q.entry.word }}</h2>
+            <button
+              type="button"
+              (click)="speakEntry(q.entry)"
+              class="flex h-8 w-8 flex-none items-center justify-center rounded-full border border-border bg-bg text-accent sm:h-9 sm:w-9"
+            >
+              <i class="fa-solid fa-volume-high text-sm"></i>
+            </button>
+          </div>
+          <p class="text-center font-heading text-base font-medium text-text-secondary sm:text-lg">{{ q.entry.reading }}</p>
+          <p class="text-center text-xs text-text-muted sm:hidden">請選出最符合的中文意思</p>
+        </div>
+
+        <div class="flex flex-col gap-2.5 sm:gap-3">
+          @for (option of q.options; track option.id) {
+            <button
+              type="button"
+              (click)="store.selectQuizOption(option)"
+              [disabled]="store.quizAnswered()"
+              [class]="
+                'flex items-center gap-3.5 rounded-[var(--radius-md)] border-[1.5px] px-4 py-3.5 text-left transition sm:px-5 sm:py-4 ' +
+                optionCardClass(option)
+              "
+            >
+              <span [class]="'flex h-[30px] w-[30px] flex-none items-center justify-center rounded-full text-sm font-bold ' + optionBadgeClass(option)">
+                {{ optionLetter($index) }}
+              </span>
+              <span
+                class="text-base sm:text-[17px]"
+                [class.font-bold]="store.quizAnswered() && option.isCorrect"
+                [class.font-medium]="!(store.quizAnswered() && option.isCorrect)"
+              >{{ option.text }}</span>
+            </button>
+          }
+        </div>
+
+        <div class="flex items-center justify-between pt-1">
+          <button
+            type="button"
+            (click)="store.toggleMarkedWord(q.entry.id)"
+            [class]="
+              'flex items-center gap-1.5 text-[13px] font-semibold transition ' +
+              (store.isWordMarked(q.entry.id) ? 'text-accent' : 'text-text-muted hover:text-accent')
+            "
+          >
+            <i [class]="(store.isWordMarked(q.entry.id) ? 'fa-solid' : 'fa-regular') + ' fa-bookmark text-sm'"></i>
+            {{ store.isWordMarked(q.entry.id) ? '已標記' : '標記此題' }}
+          </button>
+          <div class="hidden items-center gap-2.5 sm:flex">
+            <button
+              type="button"
+              (click)="store.prevQuizQuestion()"
+              [disabled]="store.quizIndex() === 0"
+              class="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-text-secondary transition hover:bg-bg disabled:opacity-40"
+            >上一題</button>
+            <button
+              type="button"
+              (click)="store.nextQuestion()"
+              [disabled]="!store.quizAnswered()"
+              class="flex items-center gap-2 rounded-full bg-accent px-6 py-2.5 text-sm font-bold text-white transition hover:brightness-105 disabled:opacity-40"
+            >
+              {{ store.quizIsLast() ? '查看結果' : '下一題' }} <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2.5 sm:hidden">
+          <button
+            type="button"
+            (click)="store.prevQuizQuestion()"
+            [disabled]="store.quizIndex() === 0"
+            class="flex-1 rounded-full border border-border bg-surface py-3 text-center text-sm font-semibold text-text-secondary disabled:opacity-40"
+          >上一題</button>
+          <button
+            type="button"
+            (click)="store.nextQuestion()"
+            [disabled]="!store.quizAnswered()"
+            class="flex flex-1 items-center justify-center gap-2 rounded-full bg-accent py-3 text-center text-sm font-bold text-white disabled:opacity-40"
+          >
+            {{ store.quizIsLast() ? '查看結果' : '下一題' }} <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+      }
+    </div>
+  </div>
+}
+
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<!-- QUIZ RESULT (測驗結果)                                                   -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 @if (store.pageMode() === 'quiz' && store.quizShowResult()) {
-  <div
-    class="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,rgba(99,102,241,0.18),transparent_32%),linear-gradient(180deg,#f8faff_0%,#f3f6fb_100%)] p-6"
-  >
-    <div class="relative w-full max-w-2xl overflow-hidden rounded-[1.75rem] border border-slate-200/70 bg-white p-6 text-center shadow-[0_24px_60px_rgba(15,23,42,0.08)] sm:p-10">
-      <div class="pointer-events-none absolute -bottom-12 -right-12 h-36 w-36 rounded-full bg-indigo-100/70"></div>
-      <h2 class="relative z-10 mt-4 text-2xl font-bold text-slate-800">測驗完成！</h2>
+  <div class="-mx-4 -mt-4 flex flex-col sm:-mx-7 sm:-mt-5 lg:-mx-[120px] lg:-mt-7">
 
-      <div class="relative z-10 mb-2 mt-6 text-5xl font-bold text-indigo-600">
-        {{ store.quizScore() }}
-        <span class="text-2xl text-gray-400">/ {{ store.quizQuestions().length }}</span>
+    <!-- Header：手機 -->
+    <div class="sticky top-14 z-10 flex h-[52px] flex-none items-center justify-center border-b border-border bg-surface px-4 sm:hidden">
+      <button
+        type="button"
+        (click)="store.exitQuiz()"
+        class="absolute left-4 flex items-center gap-1 text-[13px] font-semibold text-text-secondary"
+      >
+        <i class="fa-solid fa-chevron-left text-xs"></i> 返回單詞
+      </button>
+      <span class="font-heading text-base font-bold text-ink">測驗結果</span>
+    </div>
+
+    <!-- Header：平板／桌面 -->
+    <div class="sticky top-16 z-10 hidden h-16 flex-none items-center justify-between border-b border-border bg-surface px-6 sm:flex lg:top-[72px] lg:h-[72px] lg:px-12">
+      <div class="flex items-center gap-3.5">
+        <button
+          type="button"
+          (click)="store.exitQuiz()"
+          class="flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-[13px] font-semibold text-text-secondary transition hover:bg-bg"
+        >
+          <i class="fa-solid fa-chevron-left text-xs"></i> 返回單詞
+        </button>
+        <span class="font-heading text-base font-bold text-ink lg:text-lg">單字測驗・測驗結果</span>
       </div>
-      <p class="relative z-10 mb-8 text-slate-500">
-        正確率 {{ Math.round((store.quizScore() / store.quizQuestions().length) * 100) }}%
-      </p>
+      <div class="flex items-center gap-2.5">
+        @if (store.quizScore() < store.quizQuestions().length) {
+          <button
+            type="button"
+            (click)="store.retryWrongFromQuiz()"
+            class="flex items-center gap-1.5 rounded-full border border-accent px-4 py-2 text-sm font-bold text-accent transition hover:bg-accent-soft"
+          >
+            <i class="fa-solid fa-rotate-left text-xs"></i> 錯題再測
+          </button>
+        }
+        <button
+          type="button"
+          (click)="store.restartQuiz()"
+          class="flex items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-bold text-white transition hover:brightness-105"
+        >
+          <i class="fa-solid fa-rotate text-xs"></i> 再測一輪
+        </button>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="flex flex-col gap-4 px-4 py-5 sm:gap-5 sm:px-7 sm:py-6 lg:px-[120px] lg:py-8">
+
+      <!-- 分數卡 -->
+      <div class="rounded-[var(--radius-lg)] border border-border bg-surface p-5 sm:p-6 lg:p-7">
+        <div class="flex flex-col items-center gap-4 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
+          <div class="flex flex-col gap-1 sm:gap-1.5">
+            <h2 class="font-heading text-2xl font-bold text-ink">測驗完成！</h2>
+            @if (store.activePlan(); as plan) {
+              <p class="hidden text-[13px] text-text-muted sm:block">
+                {{ plan.level }} 單字計畫・四選一 {{ store.quizQuestions().length }} 題・用時 {{ store.quizElapsedLabel() }}
+              </p>
+            }
+          </div>
+          <div class="flex flex-col items-center gap-4 sm:flex-row sm:gap-5">
+            <div class="flex items-end gap-1.5">
+              <span class="font-heading text-5xl font-bold text-accent">{{ store.quizScore() }}</span>
+              <span class="pb-1.5 text-lg font-semibold text-text-muted">/ {{ store.quizQuestions().length }} 題</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <div class="flex flex-col items-center gap-0.5 rounded-[var(--radius-md)] bg-matcha-soft px-4 py-2.5">
+                <span class="font-heading text-lg font-bold text-matcha">{{ Math.round((store.quizScore() / store.quizQuestions().length) * 100) }}%</span>
+                <span class="text-[11px] text-text-secondary">正確率</span>
+              </div>
+              <div class="flex flex-col items-center gap-0.5 rounded-[var(--radius-md)] bg-accent-soft px-4 py-2.5">
+                <span class="font-heading text-lg font-bold text-accent">{{ store.quizQuestions().length - store.quizScore() }}</span>
+                <span class="text-[11px] text-text-secondary">答錯</span>
+              </div>
+              <div class="flex flex-col items-center gap-0.5 rounded-[var(--radius-md)] bg-[#FFF3D6] px-4 py-2.5">
+                <span class="font-heading text-lg font-bold text-[#B08514]">+{{ store.quizNewlyMasteredCount() }}</span>
+                <span class="text-[11px] text-text-secondary">新掌握</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       @if (store.quizScore() < store.quizQuestions().length) {
-        <div class="relative z-10 mb-6 rounded-3xl border border-slate-200 bg-slate-50 p-5 text-left">
-          <h3 class="mb-3 font-semibold text-slate-700">錯誤回顧</h3>
+        <!-- 錯誤回顧 -->
+        <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+          <h3 class="font-heading text-lg font-bold text-ink">錯誤回顧</h3>
+          <p class="text-xs text-text-muted sm:text-[13px]">
+            {{ store.quizQuestions().length - store.quizScore() }} 個答錯的單字，已自動加入複習清單
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-3 lg:grid-cols-3 lg:gap-4">
           @for (result of store.quizResults(); track result.questionId) {
             @if (!result.isCorrect) {
-              <div class="mb-3 rounded-2xl border border-red-200 bg-red-50 p-4 text-sm last:mb-0">
-                <p class="text-xl font-bold text-slate-800">{{ result.entry.word }}</p>
-                <p class="text-sm text-slate-400">{{ result.entry.reading }}</p>
-                <p class="mt-1 text-slate-600">{{ result.entry.meaning }}</p>
+              <div class="flex flex-col gap-2.5 rounded-[var(--radius-lg)] border border-border bg-surface p-4">
+                <div class="flex items-start justify-between gap-2">
+                  <div class="flex flex-col gap-0.5">
+                    <span class="font-heading text-lg font-bold text-ink">{{ result.entry.word }}</span>
+                    <span class="text-xs text-text-muted">{{ result.entry.reading }}</span>
+                  </div>
+                  <button
+                    type="button"
+                    (click)="speakEntry(result.entry)"
+                    class="flex h-8 w-8 flex-none items-center justify-center rounded-full border border-border bg-bg text-matcha transition hover:opacity-70"
+                  >
+                    <i class="fa-solid fa-volume-high text-sm"></i>
+                  </button>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="flex items-center gap-1 rounded-full bg-accent-soft px-2.5 py-1 text-xs font-bold text-accent">
+                    <i class="fa-solid fa-xmark text-[10px]"></i> 你選：{{ selectedOptionText(result) }}
+                  </span>
+                  <span class="flex items-center gap-1 rounded-full bg-matcha-soft px-2.5 py-1 text-xs font-bold text-matcha">
+                    <i class="fa-solid fa-check text-[10px]"></i> 正解：{{ result.entry.meaning }}
+                  </span>
+                </div>
+                @if (result.entry.examples.length > 0) {
+                  <p class="text-[13px] leading-relaxed text-text-secondary">
+                    {{ result.entry.examples[0].jp }}<span class="text-text-muted">（{{ result.entry.examples[0].zh }}）</span>
+                  </p>
+                }
               </div>
             }
           }
         </div>
-
-        <div class="relative z-10 mb-4 flex gap-3">
-          <button
-            (click)="store.retryWrongFromQuiz()"
-            class="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-rose-300 bg-rose-50 py-3 text-sm font-bold text-rose-700 transition hover:bg-rose-100"
-          >
-            <i class="pi pi-history"></i> 只練錯題
-          </button>
-          <button
-            (click)="startFlashcard({ wrongOnly: true })"
-            class="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-indigo-200 bg-indigo-50 py-3 text-sm font-bold text-indigo-700 transition hover:bg-indigo-100"
-          >
-            <i class="pi pi-id-card"></i> 卡牌複習
-          </button>
-        </div>
       }
 
+      @let markedInThisQuiz = markedQuestionsInQuiz();
+      @if (markedInThisQuiz.length > 0) {
+        <!-- 標記回顧 -->
+        <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+          <h3 class="font-heading text-lg font-bold text-ink">標記回顧</h3>
+          <p class="text-xs text-text-muted sm:text-[13px]">
+            {{ markedInThisQuiz.length }} 個本次標記的單字，已加入標記複習清單
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-3 lg:grid-cols-3 lg:gap-4">
+          @for (q of markedInThisQuiz; track q.id) {
+            <div class="flex flex-col gap-2.5 rounded-[var(--radius-lg)] border border-sun-yellow/60 bg-[#FFF3D6]/40 p-4">
+              <div class="flex items-start justify-between gap-2">
+                <div class="flex flex-col gap-0.5">
+                  <span class="font-heading text-lg font-bold text-ink">{{ q.entry.word }}</span>
+                  <span class="text-xs text-text-muted">{{ q.entry.reading }}</span>
+                </div>
+                <button
+                  type="button"
+                  (click)="speakEntry(q.entry)"
+                  class="flex h-8 w-8 flex-none items-center justify-center rounded-full border border-border bg-bg text-matcha transition hover:opacity-70"
+                >
+                  <i class="fa-solid fa-volume-high text-sm"></i>
+                </button>
+              </div>
+              <p class="text-sm text-text-secondary">{{ q.entry.meaning }}</p>
+              @if (q.entry.examples.length > 0) {
+                <p class="text-[13px] leading-relaxed text-text-secondary">
+                  {{ q.entry.examples[0].jp }}<span class="text-text-muted">（{{ q.entry.examples[0].zh }}）</span>
+                </p>
+              }
+            </div>
+          }
+        </div>
+      }
+    </div>
+
+    <!-- 底部操作：手機 -->
+    <div class="flex items-center gap-3 px-4 pb-2 pt-1 sm:hidden">
+      @if (store.quizScore() < store.quizQuestions().length) {
+        <button
+          type="button"
+          (click)="store.retryWrongFromQuiz()"
+          class="flex flex-1 items-center justify-center gap-2 rounded-full border border-accent bg-surface py-3.5 text-[15px] font-bold text-accent transition hover:bg-accent-soft"
+        >
+          <i class="fa-solid fa-rotate-left text-xs"></i> 錯題再測
+        </button>
+      }
       <button
-        (click)="store.exitQuiz()"
-        class="relative z-10 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-[0_10px_20px_rgba(79,70,229,0.2)] transition hover:bg-indigo-700"
+        type="button"
+        (click)="store.restartQuiz()"
+        class="flex flex-1 items-center justify-center gap-2 rounded-full bg-accent py-3.5 text-[15px] font-bold text-white transition hover:brightness-105"
       >
-        <i class="pi pi-arrow-left"></i> 返回列表
+        <i class="fa-solid fa-rotate text-xs"></i> 再測一輪
       </button>
     </div>
   </div>

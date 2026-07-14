@@ -7,6 +7,11 @@ import { mainLayoutRoutes } from '@app/features/main-layout/main-layout.route';
 
 export const routes: Routes = [
   {
+    path: '__preview',
+    loadComponent: () => import('@app/features/main-layout/main-layout.container').then(m => m.MainLayoutContainer),
+    children: mainLayoutRoutes,
+  },
+  {
     path: 'login',
     loadComponent: () => import('@app/features/login/login.page').then(m => m.LoginPage),
     canActivate: [loginGuard],

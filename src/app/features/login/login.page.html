@@ -1,54 +1,186 @@
-<div
-  class="relative flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-b from-sky-200 via-sky-100 to-white px-4"
->
-  <!-- Card -->
+<div class="relative flex min-h-screen w-full overflow-hidden bg-bg lg:flex-row">
+  <!-- Desktop illustration panel (lg+) -->
   <div
-    class="relative w-full max-w-sm rounded-3xl bg-white/85 px-8 py-10 shadow-2xl backdrop-blur-md ring-1 ring-white/60"
+    class="relative hidden shrink-0 overflow-hidden bg-linear-to-b from-[#FDEFE3] to-[#F9DCE3] lg:block lg:w-[42%]"
   >
-    <!-- Icon -->
-    <img src="/images/login-1.svg" alt="Login illustration" class="mx-auto mb-6 w-25 h-25" />
+    <img
+      src="/images/login-hero.png"
+      alt="兩位學習者一起讀日文，互相加油打氣的插畫"
+      class="absolute inset-0 h-full w-full object-contain object-top py-15 px-10"
+    />
+    <div class="absolute inset-x-0 top-[20%] z-10 flex flex-col items-center gap-1.5 text-center">
+      <h2 class="font-heading text-2xl font-bold text-ink whitespace-nowrap">
+        日本語、一緒に頑張ろう！
+      </h2>
+      <p class="text-sm text-text-secondary whitespace-nowrap">和學習夥伴一起，把日文練成日常</p>
+    </div>
+  </div>
 
-    <!-- Title -->
-    <h1 class="text-center text-2xl font-black text-slate-900">JLPT 備考練功房</h1>
+  <!-- Main / form panel -->
+  <div class="relative flex flex-1 items-center justify-center overflow-hidden px-6 py-10 sm:px-10">
+    <!-- Decorative layer (mobile + tablet only) -->
+    <div class="pointer-events-none absolute inset-0 lg:hidden">
+      <span
+        class="absolute top-[8%] left-[10%] rotate-[-8deg] font-heading text-3xl font-bold text-accent select-none sm:text-4xl"
+        >あ</span
+      >
+      <span
+        class="absolute top-[17%] right-[9%] rotate-[10deg] font-heading text-2xl font-bold text-matcha select-none sm:text-3xl"
+        >ん</span
+      >
+      <span
+        class="absolute bottom-[9%] left-[13%] rotate-[6deg] font-heading text-2xl font-bold text-sun-yellow select-none sm:text-3xl"
+        >日</span
+      >
+      <span
+        class="absolute top-[6%] right-[22%] h-4 w-6 rotate-[-15deg] rounded-full bg-sakura"
+      ></span>
+      <span
+        class="absolute bottom-[8%] right-[10%] h-4 w-6 rotate-[15deg] rounded-full bg-sakura"
+      ></span>
+      <i class="fa-solid fa-spa absolute top-[38%] left-[8%] text-lg text-matcha sm:text-xl"></i>
+      <svg
+        class="absolute top-[13%] left-[20%] h-5 w-5 fill-accent sm:h-6 sm:w-6"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+        />
+      </svg>
+      <svg
+        class="absolute bottom-[15%] right-[20%] h-4 w-4 fill-sun-yellow sm:h-5 sm:w-5"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+        />
+      </svg>
+    </div>
 
-    <!-- Google button -->
-    <button
-      (click)="loginWithGoogle()"
-      [disabled]="loading()"
-      class="mt-8 flex w-full items-center justify-center gap-3 rounded-2xl bg-slate-800 px-4 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-slate-700 active:scale-[0.98] disabled:opacity-60"
-    >
-      @if (loading()) {
-        <svg class="h-4 w-4 animate-spin" fill="none" viewBox="0 0 24 24">
-          <circle
-            class="opacity-25"
-            cx="12"
-            cy="12"
-            r="10"
+    <div class="relative z-10 flex w-full max-w-sm flex-col items-center gap-7">
+      <!-- Illustration card (mobile + tablet only) -->
+      <div
+        class="flex h-44 w-44 items-center justify-center overflow-hidden rounded-[40px] bg-surface p-3 shadow-xl ring-1 ring-border sm:h-80 sm:w-80 sm:p-5 lg:hidden"
+      >
+        <img
+          src="/images/login-couple.png"
+          alt="兩位學習者一起讀日文的插畫"
+          class="h-full w-full object-contain"
+        />
+      </div>
+
+      <!-- Title block -->
+      <div class="flex flex-col items-center gap-1.5 text-center">
+        <h1 class="font-heading text-2xl font-bold text-ink sm:text-3xl">JLPT 備考練功房</h1>
+        <p class="font-heading text-sm font-semibold text-accent sm:text-base">
+          ようこそ！おかえりなさい 🌸︎
+        </p>
+        <p class="text-xs text-text-secondary sm:text-sm">每天一點點，穩定通過 JLPT N5-N1</p>
+      </div>
+
+      <!-- Level chips -->
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        @for (level of levels; track level.label) {
+          <span
+            class="rounded-[var(--radius-md)] px-3 py-1 text-xs font-bold"
+            [style.background]="level.bg"
+            [style.color]="level.text"
+            >{{ level.label }}</span
+          >
+        }
+      </div>
+
+      <!-- Login buttons -->
+      <div class="flex w-full flex-col gap-3.5 pt-1">
+        <button
+          type="button"
+          (click)="loginWithGoogle()"
+          [disabled]="loading()"
+          class="flex w-full items-center justify-center gap-3 rounded-[var(--radius-md)] bg-accent px-4 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:brightness-105 active:scale-[0.98] disabled:opacity-60"
+        >
+          @if (loading()) {
+            <svg class="h-4 w-4 animate-spin" fill="none" viewBox="0 0 24 24">
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              />
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+              />
+            </svg>
+            <span>登入中…</span>
+          } @else {
+            <svg
+              class="h-5 w-5 rounded-full bg-white p-0.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#4285F4"
+                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+              />
+              <path
+                fill="#34A853"
+                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+              />
+              <path
+                fill="#FBBC05"
+                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+              />
+              <path
+                fill="#EA4335"
+                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+              />
+            </svg>
+            <span>使用 Google 繼續</span>
+          }
+        </button>
+
+        <button
+          type="button"
+          (click)="loginWithApple()"
+          class="flex w-full items-center justify-center gap-3 rounded-[var(--radius-md)] bg-surface px-4 py-3.5 text-sm font-semibold text-ink ring-1 ring-border transition-all hover:bg-accent-soft/40 active:scale-[0.98]"
+        >
+          <svg
+            class="h-4.5 w-4.5"
+            viewBox="0 0 24 24"
+            fill="none"
             stroke="currentColor"
-            stroke-width="4"
-          />
-          <path
-            class="opacity-75"
-            fill="currentColor"
-            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-          />
-        </svg>
-        <span>登入中…</span>
-      } @else {
-        <svg class="h-5 w-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-          <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
-          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
-        </svg>
-        <span>使用 Google 繼續</span>
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M15.5 8.6c-1.2-1-2.6-1-3.5-.2-.9-.8-2.3-.8-3.5.2C6.8 10.1 6 12.3 6 14.2c0 3 2 6.3 4 6.3.9 0 1.3-.5 2-.5s1.1.5 2 .5c2 0 4-3.2 4-6.3 0-1.9-.8-4.1-2.5-5.6Z"
+            />
+            <path d="M12.3 7.9c0-1.2.8-2.3 2-2.6" />
+          </svg>
+          <span>使用 Apple 繼續</span>
+        </button>
+
+        <button
+          type="button"
+          (click)="loginWithLine()"
+          class="flex w-full items-center justify-center gap-3 rounded-[var(--radius-md)] bg-surface px-4 py-3.5 text-sm font-semibold text-ink ring-1 ring-border transition-all hover:bg-matcha-soft/40 active:scale-[0.98]"
+        >
+          <i class="fa-regular fa-comment text-lg text-matcha"></i>
+          <span>使用 LINE 繼續</span>
+        </button>
+      </div>
+
+      @if (error()) {
+        <p class="text-center text-xs text-accent">{{ error() }}</p>
       }
-    </button>
 
-    @if (error()) {
-      <p class="mt-4 text-center text-xs text-rose-500">{{ error() }}</p>
-    }
-
-    <p class="mt-6 text-center text-xs text-slate-400">登入即代表您同意本站，僅作個人學習用途</p>
+      <p class="max-w-[320px] text-center text-xs text-text-muted sm:max-w-none">
+        登入即代表您同意本站服務條款，僅作個人學習用途
+      </p>
+    </div>
   </div>
 </div>
