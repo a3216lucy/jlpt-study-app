@@ -3,154 +3,127 @@ import { Injectable, computed, inject, signal } from '@angular/core';
 // Angular
 import { HttpClient } from '@angular/common/http';
 // Models
-import {
-  LEVEL_DATA_MAP,
-  type GrammarGroup,
-  type JlptLevel,
-  type ReviewData,
-  type ReviewTab,
-  type VerbClassTable,
-  type VerbConjugationData,
-  type VerbFormTable,
+import type {
+  AllFormsCategory,
+  QuickReferenceRow,
+  ReviewTab,
+  SpecialVerbRow,
+  TransitivityData,
+  TransitivityPair,
+  VerbConjugationData,
 } from './grammar-review.model';
 
-export type { GrammarGroup, JlptLevel, ReviewTab, VerbFormTable };
+export type { ReviewTab };
 
 @Injectable()
 export class GrammarReviewStore {
+  // Dependencies
+  // --------------------------------------------------------------------
   private http = inject(HttpClient);
 
-  readonly selectedLevel = signal<JlptLevel>('N3');
-  readonly activeTab = signal<ReviewTab>('general');
-  readonly reviewData = signal<ReviewData | null>(null);
-  readonly expandedGroups = signal<Set<string>>(new Set());
-  readonly expandedPatterns = signal<Set<string>>(new Set());
-  readonly loading = signal(false);
-  readonly searchQuery = signal<string>('');
+  // Signals
+  // --------------------------------------------------------------------
+  readonly activeTab = signal<ReviewTab>('conjugation');
+  readonly searchQuery = signal('');
 
   readonly verbData = signal<VerbConjugationData | null>(null);
   readonly verbLoading = signal(false);
-  readonly selectedVerbFormId = signal<string>('masuForm');
 
-  readonly hasData = computed(() => !!LEVEL_DATA_MAP[this.selectedLevel()]);
+  readonly transitivityData = signal<TransitivityData | null>(null);
+  readonly transitivityLoading = signal(false);
 
-  readonly generalGroups = computed(() =>
-    (this.reviewData()?.groups ?? []).filter((g) => !g.id.startsWith('exam-')),
-  );
-
-  readonly examGroups = computed(() =>
-    (this.reviewData()?.groups ?? []).filter((g) => g.id.startsWith('exam-')),
-  );
-
-  readonly displayGroups = computed(() =>
-    this.activeTab() === 'general' ? this.generalGroups() : this.examGroups(),
-  );
-
+  // Computed
+  // --------------------------------------------------------------------
   readonly isSearching = computed(() => this.searchQuery().trim().length > 0);
 
-  readonly filteredDisplayGroups = computed(() => {
+  readonly filteredQuickReference = computed<QuickReferenceRow[]>(() => {
     const q = this.searchQuery().trim().toLowerCase();
-    const groups = this.displayGroups();
-    if (!q) return groups;
-    return groups
-      .map((g) => ({
-        ...g,
-        patterns: g.patterns.filter(
-          (p) =>
-            p.pattern.toLowerCase().includes(q) ||
-            p.meaning.toLowerCase().includes(q) ||
-            (p.notes ?? '').toLowerCase().includes(q) ||
-            p.formation.toLowerCase().includes(q),
+    const rows = this.verbData()?.quickReference ?? [];
+    if (!q) return rows;
+    return rows.filter(
+      (r) =>
+        r.formLabel.toLowerCase().includes(q) ||
+        r.groupI.includes(q) ||
+        r.groupII.includes(q) ||
+        r.groupIII.includes(q),
+    );
+  });
+
+  readonly filteredSpecialVerbTable = computed<SpecialVerbRow[]>(() => {
+    const q = this.searchQuery().trim().toLowerCase();
+    const rows = this.verbData()?.specialVerbTable ?? [];
+    if (!q) return rows;
+    return rows.filter(
+      (r) =>
+        r.plain.toLowerCase().includes(q) ||
+        r.meaning.includes(q) ||
+        r.sonkei.includes(q) ||
+        r.kenjou.includes(q),
+    );
+  });
+
+  readonly filteredTransitivityPairs = computed<TransitivityPair[]>(() => {
+    const q = this.searchQuery().trim().toLowerCase();
+    const rows = this.transitivityData()?.pairs ?? [];
+    if (!q) return rows;
+    return rows.filter(
+      (r) => r.jidoushi.toLowerCase().includes(q) || r.tadoushi.toLowerCase().includes(q) || r.meaning.includes(q),
+    );
+  });
+
+  readonly filteredAllForms = computed<AllFormsCategory[]>(() => {
+    const q = this.searchQuery().trim().toLowerCase();
+    const categories = this.verbData()?.allForms ?? [];
+    if (!q) return categories;
+    return categories
+      .map((c) => ({
+        ...c,
+        rows: c.rows.filter(
+          (r) =>
+            r.formLabel.includes(q) ||
+            r.groupI.toLowerCase().includes(q) ||
+            r.groupII.toLowerCase().includes(q) ||
+            r.groupIII.toLowerCase().includes(q),
         ),
       }))
-      .filter((g) => g.patterns.length > 0 || g.title.toLowerCase().includes(q));
+      .filter((c) => c.rows.length > 0);
   });
 
-  readonly allGroupsExpanded = computed(() => {
-    const groups = this.displayGroups();
-    return groups.length > 0 && groups.every((g) => this.expandedGroups().has(g.id));
-  });
-
-  readonly selectedVerbClassTable = computed((): VerbClassTable | null => {
-    const data = this.verbData();
-    if (!data) return null;
-    const id = this.selectedVerbFormId();
-    if (id === 'masuForm') return data.masuForm;
-    if (id === 'jishoForm') return data.jishoForm;
-    return null;
-  });
-
-  readonly selectedVerbForm = computed((): VerbFormTable | null => {
-    const data = this.verbData();
-    if (!data) return null;
-    return data.forms.find((f) => f.id === this.selectedVerbFormId()) ?? null;
-  });
-
-  init() {
-    this.loadLevel('N3');
+  // Lifecycle
+  // --------------------------------------------------------------------
+  init(): void {
+    this.loadVerbData();
   }
 
-  setSearch(q: string) {
+  // Public Handlers
+  // --------------------------------------------------------------------
+  switchTab(tab: ReviewTab): void {
+    this.activeTab.set(tab);
+    this.searchQuery.set('');
+    if (tab === 'transitivity' && !this.transitivityData() && !this.transitivityLoading()) {
+      this.loadTransitivityData();
+    }
+  }
+
+  setSearch(q: string): void {
     this.searchQuery.set(q);
   }
 
-  switchTab(tab: ReviewTab) {
-    this.activeTab.set(tab);
-    if (tab === 'verb' && !this.verbData() && !this.verbLoading()) {
-      this.loadVerbData();
-    }
-  }
-
-  selectLevel(level: JlptLevel) {
-    this.selectedLevel.set(level);
-    this.expandedGroups.set(new Set());
-    this.expandedPatterns.set(new Set());
-    if (LEVEL_DATA_MAP[level]) {
-      this.loadLevel(level);
-    } else {
-      this.reviewData.set(null);
-    }
-  }
-
-  toggleGroup(id: string) {
-    const current = new Set(this.expandedGroups());
-    current.has(id) ? current.delete(id) : current.add(id);
-    this.expandedGroups.set(current);
-  }
-
-  togglePattern(id: string) {
-    const current = new Set(this.expandedPatterns());
-    current.has(id) ? current.delete(id) : current.add(id);
-    this.expandedPatterns.set(current);
-  }
-
-  toggleAllGroups() {
-    const groups = this.displayGroups();
-    this.expandedGroups.set(
-      this.allGroupsExpanded() ? new Set() : new Set(groups.map((g) => g.id)),
-    );
-  }
-
-  selectVerbForm(id: string) {
-    this.selectedVerbFormId.set(id);
-  }
-
-  private loadLevel(level: JlptLevel) {
-    const path = LEVEL_DATA_MAP[level];
-    if (!path) return;
-    this.loading.set(true);
-    this.reviewData.set(null);
-    this.http.get<ReviewData>(path).subscribe((data) => {
-      this.reviewData.set(data);
-      this.loading.set(false);
-    });
-  }
-
-  private loadVerbData() {
+  // Private
+  // --------------------------------------------------------------------
+  private loadVerbData(): void {
     this.verbLoading.set(true);
     this.http.get<VerbConjugationData>('assets/data/verb-conjugation.json').subscribe((data) => {
       this.verbData.set(data);
       this.verbLoading.set(false);
+    });
+  }
+
+  private loadTransitivityData(): void {
+    this.transitivityLoading.set(true);
+    this.http.get<TransitivityData>('assets/data/verb-transitivity.json').subscribe((data) => {
+      this.transitivityData.set(data);
+      this.transitivityLoading.set(false);
     });
   }
 }

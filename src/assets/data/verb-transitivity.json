@@ -1,0 +1,57 @@
+{
+  "definitionCards": [
+    {
+      "label": "自動詞",
+      "description": "主語自己發生變化，用「～が」，不需動作者",
+      "example": "ドアが開く。（門開了）"
+    },
+    {
+      "label": "他動詞",
+      "description": "有人對對象做動作，用「～を」",
+      "example": "私がドアを開ける。（我把門打開）"
+    }
+  ],
+  "pairs": [
+    { "jidoushi": "開く（あく）", "tadoushi": "開ける（あける）", "meaning": "開", "rule": "～く⇔～ける" },
+    { "jidoushi": "閉まる（しまる）", "tadoushi": "閉める（しめる）", "meaning": "關", "rule": "～まる⇔～める" },
+    { "jidoushi": "始まる（はじまる）", "tadoushi": "始める（はじめる）", "meaning": "開始", "rule": "～まる⇔～める" },
+    { "jidoushi": "集まる（あつまる）", "tadoushi": "集める（あつめる）", "meaning": "聚集", "rule": "～まる⇔～める" },
+    { "jidoushi": "決まる（きまる）", "tadoushi": "決める（きめる）", "meaning": "決定", "rule": "～まる⇔～める" },
+    { "jidoushi": "変わる（かわる）", "tadoushi": "変える（かえる）", "meaning": "改變", "rule": "～わる⇔～える" },
+    { "jidoushi": "上がる（あがる）", "tadoushi": "上げる（あげる）", "meaning": "上升／舉起", "rule": "～がる⇔～げる" },
+    { "jidoushi": "入る（はいる）", "tadoushi": "入れる（いれる）", "meaning": "進入／放入", "rule": "～る⇔～れる" },
+    { "jidoushi": "出る（でる）", "tadoushi": "出す（だす）", "meaning": "出去／拿出", "rule": "～る⇔～す" },
+    { "jidoushi": "付く（つく）", "tadoushi": "付ける（つける）", "meaning": "附著／裝上", "rule": "～く⇔～ける" }
+  ],
+  "suffixCards": [
+    {
+      "pattern": "～す",
+      "jidoushiTag": null,
+      "tadoushiTag": "他動詞",
+      "description": "語尾為す，幾乎都是他動詞",
+      "example": "出す・落とす・回す・返す"
+    },
+    {
+      "pattern": "～まる／～める",
+      "jidoushiTag": "自まる",
+      "tadoushiTag": "他める",
+      "description": "aる自動、eる他動的成對",
+      "example": "集まる/集める・決まる/決める"
+    },
+    {
+      "pattern": "～がる／～げる",
+      "jidoushiTag": "自がる",
+      "tadoushiTag": "他げる",
+      "description": "同様aる自、eる他",
+      "example": "上がる/上げる・下がる/下げる"
+    },
+    {
+      "pattern": "～く／～ける",
+      "jidoushiTag": "自く",
+      "tadoushiTag": "他ける",
+      "description": "常見自他配對",
+      "example": "開く/開ける・付く/付ける"
+    }
+  ],
+  "tip": "小訣竅：多數「～aる」為自動詞，「～eる」為他動詞；成對記憶比單背更快。"
+}

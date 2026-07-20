@@ -7,11 +7,16 @@ import { ExamService, ExamSetGroupItem } from '@shared/services/exam.service';
 // Models
 import type { ExamResult, ExamGroupChoice } from './large-quiz.model';
 
+export type AnswerStatus = 'answered' | 'current' | 'unanswered';
+
 @Injectable()
 export class LargeQuizStore {
-  private readonly wrongQuestionStorageKey = 'jlpt-app:sentence-wrong-questions';
+  // Dependencies
+  // --------------------------------------------------------------------
   private examService = inject(ExamService);
 
+  // Signals
+  // --------------------------------------------------------------------
   readonly examGroups: readonly ExamGroupChoice[] = this.examService
     .listExamGroups('grammar', 'sentence-fill')
     .map((item) => this.toExamGroupChoice(item));
@@ -22,20 +27,22 @@ export class LargeQuizStore {
   readonly examDescription = signal('以句子填空四選一為主的句型測驗題組。');
   readonly questions = signal<ExamQuestion[]>([]);
   readonly currentIndex = signal(0);
-  readonly results = signal<ExamResult[]>([]);
+  readonly results = signal<(ExamResult | undefined)[]>([]);
   readonly selectedOptionId = signal<string | null>(null);
-  readonly answered = signal(false);
   readonly loading = signal(false);
   readonly started = signal(false);
+  readonly showResult = signal(false);
   readonly loadError = signal<string | null>(null);
 
+  // Computed
+  // --------------------------------------------------------------------
   readonly currentQuestion = computed(() => this.questions()[this.currentIndex()]);
   readonly progress = computed(() =>
-    Math.round((this.currentIndex() / (this.questions().length || 1)) * 100),
+    this.questions().length > 0 ? Math.round(((this.currentIndex() + 1) / this.questions().length) * 100) : 0,
   );
   readonly isLast = computed(() => this.currentIndex() === this.questions().length - 1);
-  readonly score = computed(() => this.results().filter((r) => r.isCorrect).length);
-  readonly showResult = computed(() => this.started() && this.currentIndex() >= this.questions().length);
+  readonly answeredCount = computed(() => this.results().filter(Boolean).length);
+  readonly score = computed(() => this.results().filter((r) => r?.isCorrect).length);
 
   private startTime = 0;
 
@@ -43,6 +50,8 @@ export class LargeQuizStore {
     this.syncSelectionPreview();
   }
 
+  // Public Handlers — setup
+  // --------------------------------------------------------------------
   isLevelAvailable(level: JlptLevel): boolean {
     return this.examService.hasExamSetForGroup(this.selectedExamGroup(), level);
   }
@@ -80,9 +89,9 @@ export class LargeQuizStore {
         this.currentIndex.set(0);
         this.results.set([]);
         this.selectedOptionId.set(null);
-        this.answered.set(false);
         this.loading.set(false);
         this.started.set(true);
+        this.showResult.set(false);
         this.startTime = Date.now();
       },
       error: () => {
@@ -92,40 +101,56 @@ export class LargeQuizStore {
     });
   }
 
+  // Public Handlers — 作答中
+  // --------------------------------------------------------------------
   selectOption(option: ExamOption) {
-    if (this.answered()) return;
     this.selectedOptionId.set(option.id);
-    this.answered.set(true);
-    this.results.update((results) => [
-      ...results,
-      {
-        questionId: this.currentQuestion().id,
-        selectedOptionId: option.id,
-        isCorrect: option.isCorrect,
-        timeSpentMs: Date.now() - this.startTime,
-      },
-    ]);
-    this.persistWrongQuestions();
   }
 
   next() {
-    if (!this.isLast()) {
+    this.commitCurrentAnswer();
+    if (this.currentIndex() < this.questions().length - 1) {
       this.currentIndex.update((i) => i + 1);
-      this.selectedOptionId.set(null);
-      this.answered.set(false);
-      this.startTime = Date.now();
-      return;
+      this.selectedOptionId.set(this.results()[this.currentIndex()]?.selectedOptionId ?? null);
+    } else {
+      this.showResult.set(true);
     }
-    this.currentIndex.update((i) => i + 1);
   }
 
+  prev() {
+    this.commitCurrentAnswer();
+    if (this.currentIndex() > 0) {
+      this.currentIndex.update((i) => i - 1);
+      this.selectedOptionId.set(this.results()[this.currentIndex()]?.selectedOptionId ?? null);
+    }
+  }
+
+  goTo(index: number) {
+    if (index < 0 || index >= this.questions().length) return;
+    this.commitCurrentAnswer();
+    this.currentIndex.set(index);
+    this.selectedOptionId.set(this.results()[index]?.selectedOptionId ?? null);
+  }
+
+  submitNow() {
+    this.commitCurrentAnswer();
+    this.showResult.set(true);
+  }
+
+  answerStatus(index: number): AnswerStatus {
+    if (index === this.currentIndex() && !this.showResult()) return 'current';
+    return this.results()[index] ? 'answered' : 'unanswered';
+  }
+
+  // Public Handlers — 結果頁
+  // --------------------------------------------------------------------
   restart() {
     this.started.set(false);
+    this.showResult.set(false);
     this.questions.set([]);
     this.results.set([]);
     this.currentIndex.set(0);
     this.selectedOptionId.set(null);
-    this.answered.set(false);
     this.loadError.set(null);
   }
 
@@ -136,61 +161,39 @@ export class LargeQuizStore {
     this.currentIndex.set(0);
     this.results.set([]);
     this.selectedOptionId.set(null);
-    this.answered.set(false);
     this.started.set(true);
+    this.showResult.set(false);
     this.loadError.set(null);
     this.startTime = Date.now();
   }
 
-  exportWrongQuestions() {
-    const payload = this.buildWrongQuestionExportPayload();
-    if (payload.length === 0) return;
-    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `wrong-questions-sentence-${this.selectedLevel().toLowerCase()}-${this.selectedExamGroup()}.json`;
-    link.click();
-    URL.revokeObjectURL(url);
+  // Private
+  // --------------------------------------------------------------------
+  private commitCurrentAnswer(): void {
+    const question = this.currentQuestion();
+    const optionId = this.selectedOptionId();
+    if (!question || !optionId) return;
+    const option = question.options.find((o) => o.id === optionId);
+    if (!option) return;
+
+    const idx = this.currentIndex();
+    this.results.update((arr) => {
+      const next = [...arr];
+      next[idx] = {
+        questionId: question.id,
+        selectedOptionId: option.id,
+        isCorrect: option.isCorrect,
+        timeSpentMs: Date.now() - this.startTime,
+      };
+      return next;
+    });
   }
 
   private wrongQuestions(): ExamQuestion[] {
     return this.results()
       .map((result, index) => ({ result, question: this.questions()[index] }))
-      .filter(({ result }) => !result.isCorrect)
+      .filter((x): x is { result: ExamResult; question: ExamQuestion } => !!x.result && !x.result.isCorrect)
       .map(({ question }) => question);
-  }
-
-  private buildWrongQuestionExportPayload() {
-    return this.results()
-      .map((result, index) => ({ result, question: this.questions()[index] }))
-      .filter(({ result }) => !result.isCorrect)
-      .map(({ result, question }) => ({
-        questionId: question.id,
-        level: question.level,
-        category: question.category,
-        type: question.type,
-        prompt: question.prompt,
-        questionText: question.questionText ?? null,
-        questionTranslation: question.questionTranslation ?? null,
-        explanation: question.explanation,
-        selectedOption: question.options.find((o) => o.id === result.selectedOptionId)?.text ?? null,
-        correctOption: question.options.find((o) => o.isCorrect)?.text ?? null,
-        tags: question.tags ?? [],
-      }));
-  }
-
-  private persistWrongQuestions() {
-    if (typeof localStorage === 'undefined') return;
-    localStorage.setItem(
-      this.wrongQuestionStorageKey,
-      JSON.stringify({
-        level: this.selectedLevel(),
-        type: this.selectedExamGroup(),
-        items: this.buildWrongQuestionExportPayload(),
-        updatedAt: new Date().toISOString(),
-      }),
-    );
   }
 
   private currentExamGroup(): ExamGroupChoice {

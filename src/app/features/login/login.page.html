@@ -25,18 +25,16 @@
         >あ</span
       >
       <span
-        class="absolute top-[17%] right-[9%] rotate-[10deg] font-heading text-2xl font-bold text-matcha select-none sm:text-3xl"
+        class="absolute top-[17%] right-[9%] rotate-10 font-heading text-2xl font-bold text-matcha select-none sm:text-3xl"
         >ん</span
       >
       <span
-        class="absolute bottom-[9%] left-[13%] rotate-[6deg] font-heading text-2xl font-bold text-sun-yellow select-none sm:text-3xl"
+        class="absolute bottom-[9%] left-[13%] rotate-6 font-heading text-2xl font-bold text-sun-yellow select-none sm:text-3xl"
         >日</span
       >
+      <span class="absolute top-[6%] right-[22%] h-4 w-6 rotate-15 rounded-full bg-sakura"></span>
       <span
-        class="absolute top-[6%] right-[22%] h-4 w-6 rotate-[-15deg] rounded-full bg-sakura"
-      ></span>
-      <span
-        class="absolute bottom-[8%] right-[10%] h-4 w-6 rotate-[15deg] rounded-full bg-sakura"
+        class="absolute bottom-[8%] right-[10%] h-4 w-6 rotate-15 rounded-full bg-sakura"
       ></span>
       <i class="fa-solid fa-spa absolute top-[38%] left-[8%] text-lg text-matcha sm:text-xl"></i>
       <svg
@@ -82,7 +80,7 @@
       <div class="flex flex-wrap items-center justify-center gap-2">
         @for (level of levels; track level.label) {
           <span
-            class="rounded-[var(--radius-md)] px-3 py-1 text-xs font-bold"
+            class="rounded-md px-3 py-1 text-xs font-bold"
             [style.background]="level.bg"
             [style.color]="level.text"
             >{{ level.label }}</span
@@ -96,7 +94,7 @@
           type="button"
           (click)="loginWithGoogle()"
           [disabled]="loading()"
-          class="flex w-full items-center justify-center gap-3 rounded-[var(--radius-md)] bg-accent px-4 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:brightness-105 active:scale-[0.98] disabled:opacity-60"
+          class="flex w-full items-center justify-center gap-3 rounded-md bg-accent px-4 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:brightness-105 active:scale-[0.98] disabled:opacity-60"
         >
           @if (loading()) {
             <svg class="h-4 w-4 animate-spin" fill="none" viewBox="0 0 24 24">
@@ -145,7 +143,7 @@
         <button
           type="button"
           (click)="loginWithApple()"
-          class="flex w-full items-center justify-center gap-3 rounded-[var(--radius-md)] bg-surface px-4 py-3.5 text-sm font-semibold text-ink ring-1 ring-border transition-all hover:bg-accent-soft/40 active:scale-[0.98]"
+          class="flex w-full items-center justify-center gap-3 rounded-md bg-surface px-4 py-3.5 text-sm font-semibold text-ink ring-1 ring-border transition-all hover:bg-accent-soft/40 active:scale-[0.98]"
         >
           <svg
             class="h-4.5 w-4.5"
@@ -167,7 +165,7 @@
         <button
           type="button"
           (click)="loginWithLine()"
-          class="flex w-full items-center justify-center gap-3 rounded-[var(--radius-md)] bg-surface px-4 py-3.5 text-sm font-semibold text-ink ring-1 ring-border transition-all hover:bg-matcha-soft/40 active:scale-[0.98]"
+          class="flex w-full items-center justify-center gap-3 rounded-md bg-surface px-4 py-3.5 text-sm font-semibold text-ink ring-1 ring-border transition-all hover:bg-matcha-soft/40 active:scale-[0.98]"
         >
           <i class="fa-regular fa-comment text-lg text-matcha"></i>
           <span>使用 LINE 繼續</span>

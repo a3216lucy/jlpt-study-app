@@ -16,6 +16,8 @@ export interface VocabEntry {
   examSource?: string;
   examples: VocabExample[];
   confusionNote?: string;
+  /** 常考標記：出自實際考古題整理的單字為 true；之後新增的一般 N3 範圍單字可不填 */
+  frequentlyTested?: boolean;
 }
 
 export interface VocabGroup {
@@ -68,6 +70,9 @@ export const VOCAB_FILTER_CATEGORIES: VocabFilterCategory[] = [
   { id: 'adverb', label: '副詞・擬態語', pos: ['adverb', 'adverb-onomatopoeia'] },
   { id: 'noun', label: '名詞', pos: ['noun', 'noun-katakana'] },
 ];
+
+/** 單詞列表的常考標記篩選：全部 or 只看常考 */
+export type VocabTagFilter = 'all' | 'frequent';
 
 /** 原始 pos 值 → 顯示用中文標籤 */
 export const POS_DISPLAY_LABEL: Record<string, string> = {

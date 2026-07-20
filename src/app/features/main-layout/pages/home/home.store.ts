@@ -6,9 +6,11 @@ import { Auth } from '@angular/fire/auth';
 import { AuthService } from '@core/services/auth.service';
 import { ExamHistoryService } from '@shared/services/exam-history.service';
 import { StudyPlanStatsService } from '@shared/services/study-plan-stats.service';
-import { daysUntilNextExam, NEXT_JLPT_EXAM_DATE } from '@shared/config/jlpt-schedule';
+import { UserSettingsService } from '@shared/services/user-settings.service';
+import { DEFAULT_TARGET_LEVEL, daysUntil, NEXT_JLPT_EXAM_DATE } from '@shared/config/jlpt-schedule';
 import type { StudyPlanStats } from '@shared/models/study-plan.model';
 import type { ExamHistoryEntry } from '@shared/models/exam-history.model';
+import type { UserSettings } from '@shared/models/user-settings.model';
 // Models
 import type { QuickEntry, TodayTask } from './home.model';
 
@@ -20,6 +22,7 @@ export class HomeStore {
   private readonly authService = inject(AuthService);
   private readonly examHistoryService = inject(ExamHistoryService);
   private readonly studyPlanStatsService = inject(StudyPlanStatsService);
+  private readonly userSettingsService = inject(UserSettingsService);
 
   // Signals
   // --------------------------------------------------------------------
@@ -27,15 +30,18 @@ export class HomeStore {
   readonly currentUser = this.authService.currentUser;
   readonly allStats = signal<StudyPlanStats[]>([]);
   readonly recentScores = signal<ExamHistoryEntry[]>([]);
+  readonly userSettings = signal<UserSettings | null>(null);
 
   // Computed — greeting / countdown
   // --------------------------------------------------------------------
   readonly greetingName = computed(() => this.currentUser()?.displayName?.split(' ')[0] ?? '同學');
+  readonly targetLevel = computed(() => this.userSettings()?.targetLevel ?? DEFAULT_TARGET_LEVEL);
+  readonly examDate = computed(() => this.userSettings()?.examDate ?? NEXT_JLPT_EXAM_DATE);
   readonly examDateLabel = computed(() => {
-    const [, month, day] = NEXT_JLPT_EXAM_DATE.split('-');
+    const [, month, day] = this.examDate().split('-');
     return `${Number(month)}/${Number(day)}`;
   });
-  readonly daysUntilExam = computed(() => daysUntilNextExam());
+  readonly daysUntilExam = computed(() => daysUntil(this.examDate()));
 
   // Computed — active plan stats
   // --------------------------------------------------------------------
@@ -134,12 +140,14 @@ export class HomeStore {
 
     this.loading.set(true);
     try {
-      const [stats, scores] = await Promise.all([
+      const [stats, scores, settings] = await Promise.all([
         this.studyPlanStatsService.getStats(uid),
         this.examHistoryService.getRecent(uid, 3),
+        this.userSettingsService.get(uid),
       ]);
       this.allStats.set(stats);
       this.recentScores.set(scores);
+      this.userSettings.set(settings);
     } catch (e) {
       console.error('home load failed', e);
     } finally {

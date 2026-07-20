@@ -16,6 +16,7 @@ import type {
   VocabQuizQuestion,
   VocabQuizResult,
   VocabReviewData,
+  VocabTagFilter,
 } from './quiz.model';
 
 const WRONG_WORDS_KEY = 'jlpt-app:wrong-words';
@@ -52,6 +53,7 @@ export class QuizStore {
   // List filters
   // --------------------------------------------------------------------
   readonly selectedCategoryId = signal<string | null>(null);
+  readonly tagFilter = signal<VocabTagFilter>('all');
   readonly expandedIds = signal<Set<string>>(new Set());
 
   // Flashcard
@@ -98,13 +100,21 @@ export class QuizStore {
 
   readonly filteredEntries = computed<VocabEntry[]>(() => {
     const categoryId = this.selectedCategoryId();
-    if (!categoryId) return this.allEntries();
-    const category = VOCAB_FILTER_CATEGORIES.find((c) => c.id === categoryId);
-    if (!category) return this.allEntries();
-    return this.allEntries().filter((e) => category.pos.includes(e.pos));
+    const category = categoryId ? VOCAB_FILTER_CATEGORIES.find((c) => c.id === categoryId) : null;
+    const onlyFrequent = this.tagFilter() === 'frequent';
+
+    return this.allEntries().filter((e) => {
+      if (category && !category.pos.includes(e.pos)) return false;
+      if (onlyFrequent && !e.frequentlyTested) return false;
+      return true;
+    });
   });
 
   readonly totalVisible = computed(() => this.filteredEntries().length);
+
+  readonly frequentlyTestedCount = computed(
+    () => this.allEntries().filter((e) => e.frequentlyTested).length,
+  );
 
   // Computed — SRS stage counts (for plan card progress bar)
   // --------------------------------------------------------------------
@@ -246,6 +256,10 @@ export class QuizStore {
   // --------------------------------------------------------------------
   selectCategory(id: string | null) {
     this.selectedCategoryId.set(id);
+  }
+
+  selectTagFilter(filter: VocabTagFilter) {
+    this.tagFilter.set(filter);
   }
 
   toggleExpand(id: string) {

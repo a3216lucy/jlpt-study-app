@@ -15,14 +15,36 @@
       "questionText": "【19】に入るのは何か。",
       "questionTranslation": "上週終於去成了。【19】的是冰淇淋公司的工廠。",
       "options": [
-        { "id": "n3-2022-07-r-19-a", "text": "見学する", "isCorrect": false },
-        { "id": "n3-2022-07-r-19-b", "text": "見学した", "isCorrect": true },
-        { "id": "n3-2022-07-r-19-c", "text": "見学している", "isCorrect": false },
-        { "id": "n3-2022-07-r-19-d", "text": "見学してある", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-19-a",
+          "text": "見学する",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-19-b",
+          "text": "見学した",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-19-c",
+          "text": "見学している",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-19-d",
+          "text": "見学してある",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-19-b",
       "explanation": "前文は「先月ついに行くことができました」という過去の文。19の後に「のはアイスクリームの会社の工場です」と続くので、「見学した（過去）のは」が正解。現在形「見学する」・進行形「見学している」・てある形は時制不一致。",
-      "tags": ["text-grammar", "tense", "n3-reading"]
+      "tags": [
+        "text-grammar",
+        "tense",
+        "n3-reading"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     },
     {
       "id": "n3-2022-07-r-20",
@@ -33,14 +55,36 @@
       "questionText": "【20】に入るのは何か。",
       "questionTranslation": "工廠參觀真的很開心。【20】，卻不知道為什麼讓人免費參觀。",
       "options": [
-        { "id": "n3-2022-07-r-20-a", "text": "でも", "isCorrect": true },
-        { "id": "n3-2022-07-r-20-b", "text": "また", "isCorrect": false },
-        { "id": "n3-2022-07-r-20-c", "text": "すると", "isCorrect": false },
-        { "id": "n3-2022-07-r-20-d", "text": "たとえば", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-20-a",
+          "text": "でも",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-20-b",
+          "text": "また",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-20-c",
+          "text": "すると",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-20-d",
+          "text": "たとえば",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-20-a",
       "explanation": "前：「楽しかった（正面）」→後：「理由がわからなかった（別の視点）」という逆接の流れ。でも（但是・然而）が正解。また＝還有（累加）；すると＝於是（結果）；たとえば＝例如。逆接の接続詞「でも」がつなぎ言葉として適切。",
-      "tags": ["text-grammar", "conjunction", "n3-reading"]
+      "tags": [
+        "text-grammar",
+        "conjunction",
+        "n3-reading"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     },
     {
       "id": "n3-2022-07-r-21",
@@ -51,14 +95,36 @@
       "questionText": "【21】に入るのは何か。",
       "questionTranslation": "大部分做了工廠參觀的人，都喜歡上了在【21】製造的商品，對公司的印象也變好了。",
       "options": [
-        { "id": "n3-2022-07-r-21-a", "text": "これ", "isCorrect": false },
-        { "id": "n3-2022-07-r-21-b", "text": "それ", "isCorrect": false },
-        { "id": "n3-2022-07-r-21-c", "text": "ここ", "isCorrect": false },
-        { "id": "n3-2022-07-r-21-d", "text": "そこ", "isCorrect": true }
+        {
+          "id": "n3-2022-07-r-21-a",
+          "text": "これ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-21-b",
+          "text": "それ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-21-c",
+          "text": "ここ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-21-d",
+          "text": "そこ",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2022-07-r-21-d",
       "explanation": "「そこ」は前文で言及された場所（工場）を指す指示詞。「工場見学をした人が、そこ（＝その工場）で作られている商品を好きになる」の流れ。これ・それは事物を指す；ここは話し手の現在位置を指す；そこは前文で述べた場所や聴者の近くの場所を指す。",
-      "tags": ["text-grammar", "demonstrative", "n3-reading"]
+      "tags": [
+        "text-grammar",
+        "demonstrative",
+        "n3-reading"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     },
     {
       "id": "n3-2022-07-r-22",
@@ -69,14 +135,36 @@
       "questionText": "【22】に入るのは何か。",
       "questionTranslation": "趁在日本的時間，打算去各種工廠參觀【22】。",
       "options": [
-        { "id": "n3-2022-07-r-22-a", "text": "行ってみてほしいです", "isCorrect": false },
-        { "id": "n3-2022-07-r-22-b", "text": "行ってみたがっています", "isCorrect": false },
-        { "id": "n3-2022-07-r-22-c", "text": "行ってみるつもりです", "isCorrect": true },
-        { "id": "n3-2022-07-r-22-d", "text": "行ってみるといいです", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-22-a",
+          "text": "行ってみてほしいです",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-22-b",
+          "text": "行ってみたがっています",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-22-c",
+          "text": "行ってみるつもりです",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-22-d",
+          "text": "行ってみるといいです",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-22-c",
       "explanation": "作者は自分の今後の計画（日本にいる間にいろいろな工場に行きたい）を述べている。「〜つもりです」＝打算做〜（自分の意志・計画）が正解。〜てほしい＝希望別人做；〜たがっている＝（他人が）想要；〜といいです＝做〜的話會更好（建議他人）。",
-      "tags": ["text-grammar", "intention", "n3-reading"]
+      "tags": [
+        "text-grammar",
+        "intention",
+        "n3-reading"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     },
     {
       "id": "n3-2022-07-r-23",
@@ -87,14 +175,36 @@
       "questionText": "「私」はどうして目標の500字を覚えることができたと考えているか。",
       "questionTranslation": "「我」認為為什麼能夠達成記住500個漢字的目標？",
       "options": [
-        { "id": "n3-2022-07-r-23-a", "text": "「私」にとって簡単な目標だったから。", "isCorrect": false },
-        { "id": "n3-2022-07-r-23-b", "text": "クラス全員で話し合って、同じ目標に決めたから。", "isCorrect": false },
-        { "id": "n3-2022-07-r-23-c", "text": "簡単にあきらめないようにしようと、心の中で決めていたから。", "isCorrect": false },
-        { "id": "n3-2022-07-r-23-d", "text": "決めた目標が、自分にもほかの人にも見えるようにしてあったから。", "isCorrect": true }
+        {
+          "id": "n3-2022-07-r-23-a",
+          "text": "「私」にとって簡単な目標だったから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-23-b",
+          "text": "クラス全員で話し合って、同じ目標に決めたから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-23-c",
+          "text": "簡単にあきらめないようにしようと、心の中で決めていたから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-23-d",
+          "text": "決めた目標が、自分にもほかの人にも見えるようにしてあったから。",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2022-07-r-23-d",
       "explanation": "原文：「教室に入ると、自分で書いた目標が目に入るし、クラスのみんなも知っているから、簡単にはやめられない」→自分も見えて、みんなも知っているから諦められなかった。最終行「心の中で決めるだけではなく、紙に書いて教室にはったのがよかった」が根拠。選項Cは「心の中で決めていた」だけなので×（文中はそれだけでは不十分と述べている）。",
-      "tags": ["short-reading", "main-idea", "n3-reading"]
+      "tags": [
+        "short-reading",
+        "main-idea",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短文）"
     },
     {
       "id": "n3-2022-07-r-24",
@@ -105,14 +215,36 @@
       "questionText": "旅行会社がこのメールで最も言いたいことは何か。",
       "questionTranslation": "旅行社在這封郵件中最想說的是什麼？",
       "options": [
-        { "id": "n3-2022-07-r-24-a", "text": "旅行の予約内容を確認したら、連絡してください。", "isCorrect": false },
-        { "id": "n3-2022-07-r-24-b", "text": "旅行代金を出発日の1週間前までに振り込んでください。", "isCorrect": true },
-        { "id": "n3-2022-07-r-24-c", "text": "旅行のキャンセル料を1週間以内に支払ってください。", "isCorrect": false },
-        { "id": "n3-2022-07-r-24-d", "text": "旅行について何かわからないことがあれば質問をしてください。", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-24-a",
+          "text": "旅行の予約内容を確認したら、連絡してください。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-24-b",
+          "text": "旅行代金を出発日の1週間前までに振り込んでください。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-24-c",
+          "text": "旅行のキャンセル料を1週間以内に支払ってください。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-24-d",
+          "text": "旅行について何かわからないことがあれば質問をしてください。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-24-b",
       "explanation": "メールの主な要求は「ご出発日の1週間前までに旅行代金をお振り込みください」という支払い依頼。Aは「確認後に連絡」という指示はない；Cはキャンセル料ではなく旅行代金の支払いが主旨；Dはメール内容に含まれていない。",
-      "tags": ["short-reading", "notice", "n3-reading"]
+      "tags": [
+        "short-reading",
+        "notice",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短文）"
     },
     {
       "id": "n3-2022-07-r-25",
@@ -123,14 +255,36 @@
       "questionText": "「意外なサービス」とあるが、一人暮らしのお年寄りとその家族に対するどのようなサービスか。",
       "questionTranslation": "文中提到「意外的服務」，這是對獨居老人及其家人提供的什麼服務？",
       "options": [
-        { "id": "n3-2022-07-r-25-a", "text": "家族の指定した時間に、お年寄りに荷物を配達する。", "isCorrect": false },
-        { "id": "n3-2022-07-r-25-b", "text": "お年寄りを訪問し、その様子を家族にEメールで連絡する。", "isCorrect": true },
-        { "id": "n3-2022-07-r-25-c", "text": "家族からのEメールを郵便局員が受け取り、印刷してお年寄りに渡す。", "isCorrect": false },
-        { "id": "n3-2022-07-r-25-d", "text": "ふだんなかなか会えない家族のところに、お年寄りを連れて行く。", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-25-a",
+          "text": "家族の指定した時間に、お年寄りに荷物を配達する。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-25-b",
+          "text": "お年寄りを訪問し、その様子を家族にEメールで連絡する。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-25-c",
+          "text": "家族からのEメールを郵便局員が受け取り、印刷してお年寄りに渡す。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-25-d",
+          "text": "ふだんなかなか会えない家族のところに、お年寄りを連れて行く。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-25-b",
       "explanation": "原文：「郵便局員がお年寄りの家を訪問する。そして、そのときのお年寄りの様子をEメールで家族に教えてくれる」→訪問してEメール通知。A・C・Dはいずれも原文に記載なし。",
-      "tags": ["short-reading", "detail", "n3-reading"]
+      "tags": [
+        "short-reading",
+        "detail",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短文）"
     },
     {
       "id": "n3-2022-07-r-26",
@@ -141,14 +295,37 @@
       "questionText": "ナムさんがこのメモで頼まれていることは何か。",
       "questionTranslation": "ナム先生在這張備忘錄中被拜託做什麼？",
       "options": [
-        { "id": "n3-2022-07-r-26-a", "text": "資料を60部準備することと、教室が変わったことを全員にメールで知らせること。", "isCorrect": false },
-        { "id": "n3-2022-07-r-26-b", "text": "準備する資料を20部増やすことと、304のドアにはる紙を作っておくこと。", "isCorrect": true },
-        { "id": "n3-2022-07-r-26-c", "text": "教室の予約を304から201に変えることと、304のドアに紙をはること。", "isCorrect": false },
-        { "id": "n3-2022-07-r-26-d", "text": "教室が変わったことを全員にメールで知らせることと、304のドアにはる紙を作っておくこと。", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-26-a",
+          "text": "資料を60部準備することと、教室が変わったことを全員にメールで知らせること。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-26-b",
+          "text": "準備する資料を20部増やすことと、304のドアにはる紙を作っておくこと。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-26-c",
+          "text": "教室の予約を304から201に変えることと、304のドアに紙をはること。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-26-d",
+          "text": "教室が変わったことを全員にメールで知らせることと、304のドアにはる紙を作っておくこと。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-26-b",
       "explanation": "ナムさんへの依頼は①「資料をあと20部お願いします」②「304のドアに紙を作っておいてください」の2つ。資料は60部ではなく「あと20部」増やすこと。教室変更はすでにメモの書き手がした。全員へのメール通知も書き手がする。Dはメール対応も含まれているが、それは書き手が行う。",
-      "tags": ["short-reading", "memo", "instruction", "n3-reading"]
+      "tags": [
+        "short-reading",
+        "memo",
+        "instruction",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短文）"
     },
     {
       "id": "n3-2022-07-r-27",
@@ -159,14 +336,36 @@
       "questionText": "①この水筒とあるが、どのような水筒か。",
       "questionTranslation": "文中提到「①這個水壺」，是什麼樣的水壺？",
       "options": [
-        { "id": "n3-2022-07-r-27-a", "text": "飲み物の温度が変わりにくい、直接口をつけて飲む水筒。", "isCorrect": true },
-        { "id": "n3-2022-07-r-27-b", "text": "飲み物の温度が変わりにくい、コップが付いている水筒。", "isCorrect": false },
-        { "id": "n3-2022-07-r-27-c", "text": "熱い飲み物を冷ましやすい、直接口をつけて飲む水筒。", "isCorrect": false },
-        { "id": "n3-2022-07-r-27-d", "text": "熱い飲み物を冷ましやすい、コップが付いている水筒。", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-27-a",
+          "text": "飲み物の温度が変わりにくい、直接口をつけて飲む水筒。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-27-b",
+          "text": "飲み物の温度が変わりにくい、コップが付いている水筒。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-27-c",
+          "text": "熱い飲み物を冷ましやすい、直接口をつけて飲む水筒。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-27-d",
+          "text": "熱い飲み物を冷ましやすい、コップが付いている水筒。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-27-a",
       "explanation": "原文：「コップが付いていない、直接口をつけて飲む水筒で、飲み物の温度が長時間変わらない物」→①コップなし②直接口をつけて飲む③温度が変わらない。Bはコップ付き（誤）；C・Dは「冷ましやすい」という記述なし。正解はA。",
-      "tags": ["medium-reading", "detail", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "detail",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2022-07-r-28",
@@ -177,14 +376,36 @@
       "questionText": "②困ったこととあるが、どのようなことか。",
       "questionTranslation": "文中提到「②令人困擾的事」，是什麼樣的事？",
       "options": [
-        { "id": "n3-2022-07-r-28-a", "text": "熱い飲み物を外で飲む機会が少なくなったこと。", "isCorrect": false },
-        { "id": "n3-2022-07-r-28-b", "text": "熱い飲み物を入れたら、水筒が壊れてしまったこと。", "isCorrect": false },
-        { "id": "n3-2022-07-r-28-c", "text": "熱い飲み物が水筒から直接飲めなかったこと。", "isCorrect": true },
-        { "id": "n3-2022-07-r-28-d", "text": "熱い飲み物がすぐに冷めてしまったこと。", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-28-a",
+          "text": "熱い飲み物を外で飲む機会が少なくなったこと。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-28-b",
+          "text": "熱い飲み物を入れたら、水筒が壊れてしまったこと。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-28-c",
+          "text": "熱い飲み物が水筒から直接飲めなかったこと。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-28-d",
+          "text": "熱い飲み物がすぐに冷めてしまったこと。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-28-c",
       "explanation": "原文：「冬になって熱い飲み物を入れたら、困ったことが起きた。熱すぎて、直接は飲めなかったのだ」→熱すぎて直接飲めないのが「困ったこと」。A・B・Dはいずれも原文に記載なし。",
-      "tags": ["medium-reading", "detail", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "detail",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2022-07-r-29",
@@ -195,14 +416,36 @@
       "questionText": "③最初に考えていたよりはお金がかかってしまったとあるが、それはなぜか。",
       "questionTranslation": "文中提到「③比原本預期花了更多錢」，為什麼？",
       "options": [
-        { "id": "n3-2022-07-r-29-a", "text": "ペットボトルを買うことが増えたから。", "isCorrect": false },
-        { "id": "n3-2022-07-r-29-b", "text": "とても高い水筒を買うことになったから。", "isCorrect": false },
-        { "id": "n3-2022-07-r-29-c", "text": "水筒とは別にコップも買うことになったから。", "isCorrect": false },
-        { "id": "n3-2022-07-r-29-d", "text": "水筒を2本も買うことになったから。", "isCorrect": true }
+        {
+          "id": "n3-2022-07-r-29-a",
+          "text": "ペットボトルを買うことが増えたから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-29-b",
+          "text": "とても高い水筒を買うことになったから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-29-c",
+          "text": "水筒とは別にコップも買うことになったから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-29-d",
+          "text": "水筒を2本も買うことになったから。",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2022-07-r-29-d",
       "explanation": "最初は「1本あれば十分」と思っていたが、結果的にコップなし水筒＋コップ付き水筒の2本を購入した。Aは逆（ペットボトルを買わなくなった）；Bは「それほど高くはなかった」とある；Cは別にコップを買ったのではなく「コップ付き水筒」を買った。",
-      "tags": ["medium-reading", "reason", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "reason",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2022-07-r-30",
@@ -213,14 +456,36 @@
       "questionText": "①この問題とあるが、何か。",
       "questionTranslation": "文中提到「①這個問題」，指的是什麼？",
       "options": [
-        { "id": "n3-2022-07-r-30-a", "text": "日本にカラスが多すぎること。", "isCorrect": false },
-        { "id": "n3-2022-07-r-30-b", "text": "日本にカラスを嫌がる人が多いこと。", "isCorrect": false },
-        { "id": "n3-2022-07-r-30-c", "text": "カラスが人に向かって飛んできたり、食べ物を取ったりして、危険で困ること。", "isCorrect": false },
-        { "id": "n3-2022-07-r-30-d", "text": "「私」の町の公園に、カラスが夕方たくさん集まってきて、うるさくて怖いこと。", "isCorrect": true }
+        {
+          "id": "n3-2022-07-r-30-a",
+          "text": "日本にカラスが多すぎること。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-30-b",
+          "text": "日本にカラスを嫌がる人が多いこと。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-30-c",
+          "text": "カラスが人に向かって飛んできたり、食べ物を取ったりして、危険で困ること。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-30-d",
+          "text": "「私」の町の公園に、カラスが夕方たくさん集まってきて、うるさくて怖いこと。",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2022-07-r-30-d",
       "explanation": "「この問題」は直前の内容を指す。「私の町では…たくさんのカラスが公園の木に集まってきます。声がうるさいし、数が非常に多いので怖さを感じることもあります。それで町の人たちはとても困っています」→Dが直接対応する。A・Bは一般的な説明；Cは一般的なカラスの特性。",
-      "tags": ["medium-reading", "demonstrative-reference", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "demonstrative-reference",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2022-07-r-31",
@@ -231,14 +496,36 @@
       "questionText": "どのような②実験か。",
       "questionTranslation": "②是什麼樣的實驗？",
       "options": [
-        { "id": "n3-2022-07-r-31-a", "text": "カラスを「集まっても問題のない場所」でよく眠らせて、静かにさせる実験。", "isCorrect": false },
-        { "id": "n3-2022-07-r-31-b", "text": "カラスが「いてほしくない場所」にいても、鳴き声は周りに聞こえないようにする実験。", "isCorrect": false },
-        { "id": "n3-2022-07-r-31-c", "text": "カラスの苦手な食べ物を利用して、「いてほしくない場所」に来ないようにする実験。", "isCorrect": false },
-        { "id": "n3-2022-07-r-31-d", "text": "カラスの鳴き方の違いを利用して、「集まっても問題のない場所」に行かせる実験。", "isCorrect": true }
+        {
+          "id": "n3-2022-07-r-31-a",
+          "text": "カラスを「集まっても問題のない場所」でよく眠らせて、静かにさせる実験。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-31-b",
+          "text": "カラスが「いてほしくない場所」にいても、鳴き声は周りに聞こえないようにする実験。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-31-c",
+          "text": "カラスの苦手な食べ物を利用して、「いてほしくない場所」に来ないようにする実験。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-31-d",
+          "text": "カラスの鳴き方の違いを利用して、「集まっても問題のない場所」に行かせる実験。",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2022-07-r-31-d",
       "explanation": "原文：「安全な状態にいるときと危険を感じたときのカラスの鳴き方の違いを利用して、『いてほしくない場所』から『集まっても問題のない場所』にカラスを移動させることができた」→Dが直接対応。A（眠らせる）・B（鳴き声を消す）・C（苦手な食べ物）はすべて原文に記載なし。",
-      "tags": ["medium-reading", "experiment", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "experiment",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2022-07-r-32",
@@ -249,14 +536,36 @@
       "questionText": "「私」の町のカラスの問題について、「私」はどう考えているか。",
       "questionTranslation": "關於「我」的城市烏鴉問題，「我」是怎麼想的？",
       "options": [
-        { "id": "n3-2022-07-r-32-a", "text": "「私」の町で成功した方法を、これからも続けていきたい。", "isCorrect": false },
-        { "id": "n3-2022-07-r-32-b", "text": "「私」の町でも、別の町で成功した方法を使って解決してほしい。", "isCorrect": false },
-        { "id": "n3-2022-07-r-32-c", "text": "別の町で成功した方法とは違う、「私」の町に合った新しい方法が必要だ。", "isCorrect": true },
-        { "id": "n3-2022-07-r-32-d", "text": "別の町で成功した方法は「私」の町では使えないから、解決はあきらめよう。", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-32-a",
+          "text": "「私」の町で成功した方法を、これからも続けていきたい。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-32-b",
+          "text": "「私」の町でも、別の町で成功した方法を使って解決してほしい。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-32-c",
+          "text": "別の町で成功した方法とは違う、「私」の町に合った新しい方法が必要だ。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-32-d",
+          "text": "別の町で成功した方法は「私」の町では使えないから、解決はあきらめよう。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-32-c",
       "explanation": "原文：「同じ方法は使えそうにありません。私の町に合った解決方法が見つかればいいと思います」→別の方法が必要で、でも諦めてはいない。Aは私の町でまだ成功していない；Bは「同じ方法は使えそうにない」と否定；Dは諦めておらず「見つかればいい」と述べている。",
-      "tags": ["medium-reading", "author-opinion", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "author-opinion",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2022-07-r-33",
@@ -267,14 +576,36 @@
       "questionText": "①「あきらめ始めていた」とあるが、何をあきらめ始めていたのか。",
       "questionTranslation": "文中提到①「開始放棄了」，是放棄了什麼？",
       "options": [
-        { "id": "n3-2022-07-r-33-a", "text": "両親に毎年違うプレゼントを送ること。", "isCorrect": true },
-        { "id": "n3-2022-07-r-33-b", "text": "両親にいつも同じプレゼントを送ること。", "isCorrect": false },
-        { "id": "n3-2022-07-r-33-c", "text": "両親に結婚記念日までにプレゼントを送ること。", "isCorrect": false },
-        { "id": "n3-2022-07-r-33-d", "text": "両親に欲しいものを決めてもらうこと。", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-33-a",
+          "text": "両親に毎年違うプレゼントを送ること。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-33-b",
+          "text": "両親にいつも同じプレゼントを送ること。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-33-c",
+          "text": "両親に結婚記念日までにプレゼントを送ること。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-33-d",
+          "text": "両親に欲しいものを決めてもらうこと。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-33-a",
       "explanation": "「もう20年以上続けているので、だんだんアイディアがなくなってきた。今年は、前にあげたことがあるものでもしかたないと、あきらめ始めていた」→毎年違うプレゼントを送ることを諦めかけていた。B・C・Dは原文に根拠なし。",
-      "tags": ["long-reading", "reference", "n3-reading"]
+      "tags": [
+        "long-reading",
+        "reference",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長文）"
     },
     {
       "id": "n3-2022-07-r-34",
@@ -285,14 +616,36 @@
       "questionText": "「私」が②説明の紙を読んで知ったことは、どんなことか。",
       "questionTranslation": "「我」讀了②說明書之後知道了什麼事？",
       "options": [
-        { "id": "n3-2022-07-r-34-a", "text": "ろうそくの火が、不規則なゆれ方をすること。", "isCorrect": false },
-        { "id": "n3-2022-07-r-34-b", "text": "ろうそくの火が、人の気持ちを落ち着かせること。", "isCorrect": false },
-        { "id": "n3-2022-07-r-34-c", "text": "ろうそくの火が、嫌なにおいを消すこと。", "isCorrect": false },
-        { "id": "n3-2022-07-r-34-d", "text": "ろうそくの火が、料理をおいしく見せること。", "isCorrect": true }
+        {
+          "id": "n3-2022-07-r-34-a",
+          "text": "ろうそくの火が、不規則なゆれ方をすること。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-34-b",
+          "text": "ろうそくの火が、人の気持ちを落ち着かせること。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-34-c",
+          "text": "ろうそくの火が、嫌なにおいを消すこと。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-34-d",
+          "text": "ろうそくの火が、料理をおいしく見せること。",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2022-07-r-34-d",
       "explanation": "「料理をおいしく見せる効果があることは初めて知った」→説明紙を読んで新しく知ったのはこれ。A（不規則なゆれ）とB（気持ちが落ちついた）は自分で火をつけて体験したこと；C（におい消し）は「知っていた」（読む前から）と明記。",
-      "tags": ["long-reading", "detail", "n3-reading"]
+      "tags": [
+        "long-reading",
+        "detail",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長文）"
     },
     {
       "id": "n3-2022-07-r-35",
@@ -303,14 +656,36 @@
       "questionText": "③ろうそくはやっぱりやめたほうがいいと思ったとあるが、なぜか。",
       "questionTranslation": "文中提到「③果然覺得蠟燭還是不要比較好」，為什麼？",
       "options": [
-        { "id": "n3-2022-07-r-35-a", "text": "前に両親にろうそくをあげたことを思い出したから。", "isCorrect": false },
-        { "id": "n3-2022-07-r-35-b", "text": "結婚記念日にろうそくをあげるのは変だと思ったから。", "isCorrect": false },
-        { "id": "n3-2022-07-r-35-c", "text": "ろうそくの火は危険かもしれないと心配になったから。", "isCorrect": true },
-        { "id": "n3-2022-07-r-35-d", "text": "ろうそくよりもっと新しいプレゼントをあげた方が喜ばれると思ったから。", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-35-a",
+          "text": "前に両親にろうそくをあげたことを思い出したから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-35-b",
+          "text": "結婚記念日にろうそくをあげるのは変だと思ったから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-35-c",
+          "text": "ろうそくの火は危険かもしれないと心配になったから。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-35-d",
+          "text": "ろうそくよりもっと新しいプレゼントをあげた方が喜ばれると思ったから。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-35-c",
       "explanation": "「食事のあとで消し忘れることもあるかもしれない。それに、両親の家では猫を飼っているので、何が起こるかわからない」→消し忘れ・猫による安全問題を心配した。A「あげたことがない」と書かれている；B・Dは原文に根拠なし。",
-      "tags": ["long-reading", "reason", "n3-reading"]
+      "tags": [
+        "long-reading",
+        "reason",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長文）"
     },
     {
       "id": "n3-2022-07-r-36",
@@ -321,14 +696,36 @@
       "questionText": "両親へのプレゼントについて、「私」は今、どのように考えているか。",
       "questionTranslation": "關於送給父母的禮物，「我」現在是怎麼想的？",
       "options": [
-        { "id": "n3-2022-07-r-36-a", "text": "友達にもらったろうそくがよかったから、同じろうそくが売られているか調べよう。", "isCorrect": false },
-        { "id": "n3-2022-07-r-36-b", "text": "安全に使える「電気のろうそく」を見つけたから、さっそく両親に送ろう。", "isCorrect": false },
-        { "id": "n3-2022-07-r-36-c", "text": "「電気ろうそく」にしようと思うが、もう少し調べてからどれにするか決めよう。", "isCorrect": true },
-        { "id": "n3-2022-07-r-36-d", "text": "「電気ろうそく」をあげるのはやめて、ろうそくについてもう一度調べてみよう。", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-36-a",
+          "text": "友達にもらったろうそくがよかったから、同じろうそくが売られているか調べよう。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-36-b",
+          "text": "安全に使える「電気のろうそく」を見つけたから、さっそく両親に送ろう。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-36-c",
+          "text": "「電気ろうそく」にしようと思うが、もう少し調べてからどれにするか決めよう。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-36-d",
+          "text": "「電気ろうそく」をあげるのはやめて、ろうそくについてもう一度調べてみよう。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-36-c",
       "explanation": "「このタイプには、ほかにも種類があるようなので、もう少し調べてみようと思う」→電気のろうそく方向で決めているが、まだどれにするかは決めていない。B「さっそく送ろう」ではまだ調べる必要がある；D電気ろうそくをやめるとは書いていない。",
-      "tags": ["long-reading", "author-opinion", "n3-reading"]
+      "tags": [
+        "long-reading",
+        "author-opinion",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長文）"
     },
     {
       "id": "n3-2022-07-r-37",
@@ -339,14 +736,36 @@
       "questionText": "大学生のトムさんは、月3回グループレッスンを受けたいと思っています。仕事をしているので、平日は18時以降しかレッスンを受けられません。トムさんは毎月いくら払いますか。",
       "questionTranslation": "大學生Tom同學想要每月上3次團體課。因為有工作，平日只能在18點以後上課。Tom同學每月要付多少錢？",
       "options": [
-        { "id": "n3-2022-07-r-37-a", "text": "8,000円から1,000円引いたものを払う。", "isCorrect": true },
-        { "id": "n3-2022-07-r-37-b", "text": "8,000円から2,000円引いたものを払う。", "isCorrect": false },
-        { "id": "n3-2022-07-r-37-c", "text": "8,000円から3,000円引いたものを払う。", "isCorrect": false },
-        { "id": "n3-2022-07-r-37-d", "text": "8,000円をそのまま払う。", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-37-a",
+          "text": "8,000円から1,000円引いたものを払う。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-37-b",
+          "text": "8,000円から2,000円引いたものを払う。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-37-c",
+          "text": "8,000円から3,000円引いたものを払う。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-37-d",
+          "text": "8,000円をそのまま払う。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-37-a",
       "explanation": "月3回グループ＝8,000円。平日昼間割引は「17時までに終了」が条件だが、18時以降しか受けられないので対象外。学生割引（大学生）は1,000円引き→8,000円−1,000円＝7,000円。「2つの割引は同時使用不可」のルールも確認済み。",
-      "tags": ["information-retrieval", "calculation", "n3-reading"]
+      "tags": [
+        "information-retrieval",
+        "calculation",
+        "n3-reading"
+      ],
+      "problemNumber": 7,
+      "problemLabel": "情報検索"
     },
     {
       "id": "n3-2022-07-r-38",
@@ -357,14 +776,36 @@
       "questionText": "特別割引レッスンを申し込んだ人が、当日必ず持っていかなければならないものは何か。",
       "questionTranslation": "預約了特別折扣課程的人，當天一定要帶什麼去？",
       "options": [
-        { "id": "n3-2022-07-r-38-a", "text": "自分のギターとレッスン料金。", "isCorrect": false },
-        { "id": "n3-2022-07-r-38-b", "text": "特別割引レッスンの料金。", "isCorrect": true },
-        { "id": "n3-2022-07-r-38-c", "text": "自分のギターと学生証。", "isCorrect": false },
-        { "id": "n3-2022-07-r-38-d", "text": "申し込みをしたことを証明するもの。", "isCorrect": false }
+        {
+          "id": "n3-2022-07-r-38-a",
+          "text": "自分のギターとレッスン料金。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-38-b",
+          "text": "特別割引レッスンの料金。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-07-r-38-c",
+          "text": "自分のギターと学生証。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-07-r-38-d",
+          "text": "申し込みをしたことを証明するもの。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-07-r-38-b",
       "explanation": "「当日支払い」と明記されているので、レッスン料金（1,000円）は必須。ギターは「持ってこられない方には無料でお貸しします」→任意。学生証・申し込み証明の記載はなし。「当日はレッスン料金をお持ちください」という文が根拠。",
-      "tags": ["information-retrieval", "schedule", "n3-reading"]
+      "tags": [
+        "information-retrieval",
+        "schedule",
+        "n3-reading"
+      ],
+      "problemNumber": 7,
+      "problemLabel": "情報検索"
     }
   ]
 }

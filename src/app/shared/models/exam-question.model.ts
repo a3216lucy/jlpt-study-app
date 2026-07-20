@@ -21,6 +21,10 @@ export interface ExamQuestion {
   correctAnswer: string;
   explanation: string;
   tags?: string[];
+  /** 科目下的子分類題號，如語彙問題1〜5、文法問題1〜3（見 tools/tag-exam-subtypes.mjs） */
+  problemNumber?: number;
+  /** 子分類顯示名稱，如「漢字読み」「文法形式」「読解（短文）」 */
+  problemLabel?: string;
 }
 
 export interface ExamSet {

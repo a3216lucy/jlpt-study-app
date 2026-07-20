@@ -15,14 +15,37 @@
       "questionText": "【19】に入る最もよいものはどれか。",
       "questionTranslation": "「在旅行時，我一直（　　）只在當地才有的店吃飯。」",
       "options": [
-        { "id": "n3-2021-07-r-19-a", "text": "するだろうと思いました", "isCorrect": false },
-        { "id": "n3-2021-07-r-19-b", "text": "させるだろうと思いました", "isCorrect": false },
-        { "id": "n3-2021-07-r-19-c", "text": "するようにしていました", "isCorrect": true },
-        { "id": "n3-2021-07-r-19-d", "text": "させるようにしていました", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-19-a",
+          "text": "するだろうと思いました",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-19-b",
+          "text": "させるだろうと思いました",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-19-c",
+          "text": "するようにしていました",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-19-d",
+          "text": "させるようにしていました",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-19-c",
       "explanation": "〜するようにしていた＝養成習慣去做〜（刻意維持的習慣）。文章說「所以旅行時一直習慣只在當地才有的店吃飯」，表達持續的習慣行為，用「するようにしていました」。使役形（させる）語意不符。",
-      "tags": ["passage-fill", "habit", "youni-suru", "n3-grammar"]
+      "tags": [
+        "passage-fill",
+        "habit",
+        "youni-suru",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     },
     {
       "id": "n3-2021-07-r-20",
@@ -33,14 +56,36 @@
       "questionText": "【20】に入る最もよいものはどれか。",
       "questionTranslation": "「去沒去過的店很開心。（　　），繼續旅行就會途中感到疲倦。」",
       "options": [
-        { "id": "n3-2021-07-r-20-a", "text": "ただ", "isCorrect": true },
-        { "id": "n3-2021-07-r-20-b", "text": "そのうえ", "isCorrect": false },
-        { "id": "n3-2021-07-r-20-c", "text": "つまり", "isCorrect": false },
-        { "id": "n3-2021-07-r-20-d", "text": "やはり", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-20-a",
+          "text": "ただ",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-20-b",
+          "text": "そのうえ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-20-c",
+          "text": "つまり",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-20-d",
+          "text": "やはり",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-20-a",
       "explanation": "ただ＝但是、只是（表輕微逆轉）。前：去沒去過的店很開心；後：但繼續旅行會疲倦。轉折關係用「ただ」。そのうえ＝而且（遞進，語意相反）；つまり＝也就是說（總結）；やはり＝果然（確認）。",
-      "tags": ["passage-fill", "conjunction", "n3-grammar"]
+      "tags": [
+        "passage-fill",
+        "conjunction",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     },
     {
       "id": "n3-2021-07-r-21",
@@ -51,14 +96,36 @@
       "questionText": "【21】に入る最もよいものはどれか。",
       "questionTranslation": "「菜單和點餐方式（　　）。所以疲倦時我開始選擇熟悉的連鎖店。」",
       "options": [
-        { "id": "n3-2021-07-r-21-a", "text": "わかってほしいのです", "isCorrect": false },
-        { "id": "n3-2021-07-r-21-b", "text": "わかっているからです", "isCorrect": true },
-        { "id": "n3-2021-07-r-21-c", "text": "わかりそうにありません", "isCorrect": false },
-        { "id": "n3-2021-07-r-21-d", "text": "分からなければなりません", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-21-a",
+          "text": "わかってほしいのです",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-21-b",
+          "text": "わかっているからです",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-21-c",
+          "text": "わかりそうにありません",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-21-d",
+          "text": "分からなければなりません",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-21-b",
       "explanation": "わかっているからです＝因為（菜單和點餐方式）已經知道了。文章邏輯：熟悉的連鎖店「菜單和點餐方式都知道」→所以疲倦時不費心思。接下來作者就選擇熟悉餐廳，前因是「わかっているから」。",
-      "tags": ["passage-fill", "reason", "n3-grammar"]
+      "tags": [
+        "passage-fill",
+        "reason",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     },
     {
       "id": "n3-2021-07-r-22",
@@ -69,14 +136,36 @@
       "questionText": "【22】に入る最もよいものはどれか。",
       "questionTranslation": "「就算是（　　），也找到了自己之前不知道的好地方。」",
       "options": [
-        { "id": "n3-2021-07-r-22-a", "text": "店", "isCorrect": false },
-        { "id": "n3-2021-07-r-22-b", "text": "この店", "isCorrect": false },
-        { "id": "n3-2021-07-r-22-c", "text": "ある店", "isCorrect": false },
-        { "id": "n3-2021-07-r-22-d", "text": "そういう店", "isCorrect": true }
+        {
+          "id": "n3-2021-07-r-22-a",
+          "text": "店",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-22-b",
+          "text": "この店",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-22-c",
+          "text": "ある店",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-22-d",
+          "text": "そういう店",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-r-22-d",
       "explanation": "そういう店＝「這樣的店」，指代前文說的「到處都有的連鎖店」。「そういう」有回指功能，代替前文提過的概念。単純な「店」太模糊；「この店」指特定一家；「ある店」是某家店（不明確）。",
-      "tags": ["passage-fill", "reference", "n3-grammar"]
+      "tags": [
+        "passage-fill",
+        "reference",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     },
     {
       "id": "n3-2021-07-r-23",
@@ -87,14 +176,36 @@
       "questionText": "このメモを読んで、たかしさんがしなければならないことは何か。",
       "questionTranslation": "讀了這張便條後，小孝必須做的事是什麼？",
       "options": [
-        { "id": "n3-2021-07-r-23-a", "text": "おじいちゃんの所へ行く", "isCorrect": false },
-        { "id": "n3-2021-07-r-23-b", "text": "昨日のカレーの残りを温めて食べる", "isCorrect": false },
-        { "id": "n3-2021-07-r-23-c", "text": "洗濯物を取り込む", "isCorrect": true },
-        { "id": "n3-2021-07-r-23-d", "text": "ケーキを買って帰る", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-23-a",
+          "text": "おじいちゃんの所へ行く",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-23-b",
+          "text": "昨日のカレーの残りを温めて食べる",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-23-c",
+          "text": "洗濯物を取り込む",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-23-d",
+          "text": "ケーキを買って帰る",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-23-c",
       "explanation": "「取り込んでおいてね」是明確的指示（必須做）。1去爺爺家是媽媽要做的；2「おなかがすいて待てなかったら」是條件式（如果肚子餓才吃）；3洗濯物は必ずしなければならない；4買蛋糕是媽媽回來要做的。",
-      "tags": ["short-reading", "instruction", "n3-reading"]
+      "tags": [
+        "short-reading",
+        "instruction",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短文）"
     },
     {
       "id": "n3-2021-07-r-24",
@@ -105,14 +216,36 @@
       "questionText": "このメールから、東京ホテルのサービスについてどんなことがわかるか。",
       "questionTranslation": "關於東京飯店的服務，從這封郵件可以了解到什麼？",
       "options": [
-        { "id": "n3-2021-07-r-24-a", "text": "インターネットで予約すると、1泊料金と朝食が10%割引になる場合がある", "isCorrect": false },
-        { "id": "n3-2021-07-r-24-b", "text": "インターネットで2月中に予約すると、朝食が10%割引になる場合がある", "isCorrect": false },
-        { "id": "n3-2021-07-r-24-c", "text": "インターネットで予約し、2月中に泊まると、1泊料金が10%割引され、朝食が無料になる場合がある", "isCorrect": true },
-        { "id": "n3-2021-07-r-24-d", "text": "インターネット、電話、ファックスどれで予約しても、2月中は朝食だけ無料になる場合がある", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-24-a",
+          "text": "インターネットで予約すると、1泊料金と朝食が10%割引になる場合がある",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-24-b",
+          "text": "インターネットで2月中に予約すると、朝食が10%割引になる場合がある",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-24-c",
+          "text": "インターネットで予約し、2月中に泊まると、1泊料金が10%割引され、朝食が無料になる場合がある",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-24-d",
+          "text": "インターネット、電話、ファックスどれで予約しても、2月中は朝食だけ無料になる場合がある",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-24-c",
       "explanation": "1朝食は無料（非10%割引）→✗；2朝食は10%割引ではなく無料→✗；3正確：ネット予約＋2月28日までに泊まる→1泊10%引＋朝食無料（但有一日10室限制，故「場合がある」）→✓；4電話・ファックスは対象外→✗。",
-      "tags": ["short-reading", "information", "n3-reading"]
+      "tags": [
+        "short-reading",
+        "information",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短文）"
     },
     {
       "id": "n3-2021-07-r-25",
@@ -123,14 +256,36 @@
       "questionText": "がっかりしてしまったのはなぜか。",
       "questionTranslation": "為什麼感到失望？",
       "options": [
-        { "id": "n3-2021-07-r-25-a", "text": "自分では歩くのが速くなったと思っていたが、実はそうではなかったから", "isCorrect": true },
-        { "id": "n3-2021-07-r-25-b", "text": "せっかく走って渡れるようになったのに、その必要がなくなったから", "isCorrect": false },
-        { "id": "n3-2021-07-r-25-c", "text": "自分は時間内に歩いて渡れるのに、歩行者用信号の青の時間が長くなったから", "isCorrect": false },
-        { "id": "n3-2021-07-r-25-d", "text": "警察が、歩行者用信号の青の時間を少ししか長くしてくれなかったから", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-25-a",
+          "text": "自分では歩くのが速くなったと思っていたが、実はそうではなかったから",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-25-b",
+          "text": "せっかく走って渡れるようになったのに、その必要がなくなったから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-25-c",
+          "text": "自分は時間内に歩いて渡れるのに、歩行者用信号の青の時間が長くなったから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-25-d",
+          "text": "警察が、歩行者用信号の青の時間を少ししか長くしてくれなかったから",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-25-a",
       "explanation": "本人以為是「自己走路變快了」所以能過馬路（喜んでいた），但實際上是警察把綠燈時間延長了。被誤解的好消息破滅→失望。2「走って渡れるようになった」不符；3/4不是文章的主要理由。",
-      "tags": ["short-reading", "reason", "n3-reading"]
+      "tags": [
+        "short-reading",
+        "reason",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短文）"
     },
     {
       "id": "n3-2021-07-r-26",
@@ -141,14 +296,36 @@
       "questionText": "朝の歯磨きについて、この文章からわかることは何か。",
       "questionTranslation": "關於早上刷牙，從這篇文章可以了解到什麼？",
       "options": [
-        { "id": "n3-2021-07-r-26-a", "text": "男性は「食前」に磨く人が「食後」に磨く人より多い", "isCorrect": false },
-        { "id": "n3-2021-07-r-26-b", "text": "女性は「食前と食後」に磨く人が「食前」に磨く人より多い", "isCorrect": true },
-        { "id": "n3-2021-07-r-26-c", "text": "性別に関係なく、「食前」に歯を磨いている人が60%以上いる", "isCorrect": false },
-        { "id": "n3-2021-07-r-26-d", "text": "年齢が高くなると、「食後」に磨く人より「食前」に磨く人が多くなる", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-26-a",
+          "text": "男性は「食前」に磨く人が「食後」に磨く人より多い",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-26-b",
+          "text": "女性は「食前と食後」に磨く人が「食前」に磨く人より多い",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-26-c",
+          "text": "性別に関係なく、「食前」に歯を磨いている人が60%以上いる",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-26-d",
+          "text": "年齢が高くなると、「食後」に磨く人より「食前」に磨く人が多くなる",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-26-b",
       "explanation": "女性の順位：1位「食後」72%、2位「食前と食後」、3位「食前」。所以「食前と食後」＞「食前」→選2正確。1男性は食後64%が最多、食前は2位→逆；3食前60%以上という記述はない；4食前が増えるが「食後より多くなる」とは書いていない。",
-      "tags": ["short-reading", "data", "n3-reading"]
+      "tags": [
+        "short-reading",
+        "data",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短文）"
     },
     {
       "id": "n3-2021-07-r-27",
@@ -159,14 +336,36 @@
       "questionText": "①店の思い出はそのまま子どものころの思い出と重なるとあるが、それはどんな思い出か。",
       "questionTranslation": "①「店的回憶直接和兒時的回憶重疊」，那是怎樣的回憶？",
       "options": [
-        { "id": "n3-2021-07-r-27-a", "text": "わたしが小学校に入学した時に、この花屋が開店したこと", "isCorrect": false },
-        { "id": "n3-2021-07-r-27-b", "text": "小学校を卒業する時に、先生といっしょにこの花屋で花を買ったこと", "isCorrect": false },
-        { "id": "n3-2021-07-r-27-c", "text": "特別なことがある時には、よくこの店で花を買っていたこと", "isCorrect": true },
-        { "id": "n3-2021-07-r-27-d", "text": "おじさんが大好きだったので、よくこの店で花を買っていたこと", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-27-a",
+          "text": "わたしが小学校に入学した時に、この花屋が開店したこと",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-27-b",
+          "text": "小学校を卒業する時に、先生といっしょにこの花屋で花を買ったこと",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-27-c",
+          "text": "特別なことがある時には、よくこの店で花を買っていたこと",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-27-d",
+          "text": "おじさんが大好きだったので、よくこの店で花を買っていたこと",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-27-c",
       "explanation": "文章寫「家族の誕生日や家にお客さんが来る時などには、母といっしょにこの店で花を買っていた」→特別場合時去買花。1開店是在入學前；2先生はいない、是母と；4おじさんが好きという記述はない。",
-      "tags": ["medium-reading", "comprehension", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "comprehension",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2021-07-r-28",
@@ -177,14 +376,36 @@
       "questionText": "②わたしたちはどきどきしながらとあるが、どうしてどきどきしたのか。",
       "questionTranslation": "②「我們心跳加速地」——為什麼心跳加速？",
       "options": [
-        { "id": "n3-2021-07-r-28-a", "text": "もうすぐ閉店する花屋のおじさんに、無理なお願いをするから", "isCorrect": false },
-        { "id": "n3-2021-07-r-28-b", "text": "いやそうな顔をしているおじさんに、無理なお願いをするから", "isCorrect": false },
-        { "id": "n3-2021-07-r-28-c", "text": "お店に花があまりないのに、おじさんに無理なお願いをするから", "isCorrect": false },
-        { "id": "n3-2021-07-r-28-d", "text": "お金が少ししかないのに、おじさんに無理なお願いをするから", "isCorrect": true }
+        {
+          "id": "n3-2021-07-r-28-a",
+          "text": "もうすぐ閉店する花屋のおじさんに、無理なお願いをするから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-28-b",
+          "text": "いやそうな顔をしているおじさんに、無理なお願いをするから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-28-c",
+          "text": "お店に花があまりないのに、おじさんに無理なお願いをするから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-28-d",
+          "text": "お金が少ししかないのに、おじさんに無理なお願いをするから",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-r-28-d",
       "explanation": "文章明確說「集まったお金は少しだった」→少許的錢卻要求大花束，這是「無理なお願い」→才會どきどきする。1閉店是現在的事，當時並非閉店；2「おじさんはいやな顔もしないで」→不是皺眉臉；3花的數量未提及。",
-      "tags": ["medium-reading", "reason", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "reason",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2021-07-r-29",
@@ -195,14 +416,36 @@
       "questionText": "この文章を書いた人が一番伝えたいことは何か。",
       "questionTranslation": "寫這篇文章的人最想表達的是什麼？",
       "options": [
-        { "id": "n3-2021-07-r-29-a", "text": "小学校時代にとてもお世話になった先生へのお礼の気持ち", "isCorrect": false },
-        { "id": "n3-2021-07-r-29-b", "text": "よい思い出を作ってくれた花屋のおじさんへの感謝の気持ち", "isCorrect": true },
-        { "id": "n3-2021-07-r-29-c", "text": "大好きだった花屋が閉店するので、さびしいという気持ち", "isCorrect": false },
-        { "id": "n3-2021-07-r-29-d", "text": "閉所の花屋が閉店したので、とても不便だという気持ち", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-29-a",
+          "text": "小学校時代にとてもお世話になった先生へのお礼の気持ち",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-29-b",
+          "text": "よい思い出を作ってくれた花屋のおじさんへの感謝の気持ち",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-29-c",
+          "text": "大好きだった花屋が閉店するので、さびしいという気持ち",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-29-d",
+          "text": "閉所の花屋が閉店したので、とても不便だという気持ち",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-29-b",
       "explanation": "文末「ありがとう、お疲れ様でした」と言いたい，核心訊息是對花店大叔30年來創造溫暖回憶的感謝。1先生是支線故事；3さびしい確實有提，但不是「最想傳達」的主旨；4不便とは書かれていない。",
-      "tags": ["medium-reading", "main-point", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "main-point",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2021-07-r-30",
@@ -213,14 +456,36 @@
       "questionText": "①面白いのはとあるが、筆者はどこにその原因があると考えているか。",
       "questionTranslation": "①「有趣的是」——作者認為原因在哪裡？",
       "options": [
-        { "id": "n3-2021-07-r-30-a", "text": "暑い夏に冷たいものを食べると、体が涼しく感じるから", "isCorrect": false },
-        { "id": "n3-2021-07-r-30-b", "text": "寒い冬に冷たいものを食べると、おいしく感じられるから", "isCorrect": false },
-        { "id": "n3-2021-07-r-30-c", "text": "季節に関係なく一年中アイスクリームが売られているから", "isCorrect": false },
-        { "id": "n3-2021-07-r-30-d", "text": "よく売れるアイスクリームの種類は季節によって違うから", "isCorrect": true }
+        {
+          "id": "n3-2021-07-r-30-a",
+          "text": "暑い夏に冷たいものを食べると、体が涼しく感じるから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-30-b",
+          "text": "寒い冬に冷たいものを食べると、おいしく感じられるから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-30-c",
+          "text": "季節に関係なく一年中アイスクリームが売られているから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-30-d",
+          "text": "よく売れるアイスクリームの種類は季節によって違うから",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-r-30-d",
       "explanation": "「面白いのは」の直後に「夏と冬ではよく売れるアイスの種類が違うこと」と書いてある。①「面白いのは」の内容が直接そこにある。1/2は文章の一部だが「面白い」の原因ではない；3は逆（一年中売れるのは普通のこと）。",
-      "tags": ["medium-reading", "reason", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "reason",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2021-07-r-31",
@@ -231,14 +496,36 @@
       "questionText": "②氷はとても大事なものでしたとあるが、それはどうしてか。",
       "questionTranslation": "②「冰是非常珍貴的東西」——為什麼？",
       "options": [
-        { "id": "n3-2021-07-r-31-a", "text": "冬に特別な部屋で管理し、とけないように運ぶのも大変だったから", "isCorrect": true },
-        { "id": "n3-2021-07-r-31-b", "text": "冬に作った氷は特別な味がするし、時間が経つととけなくなってしまうから", "isCorrect": false },
-        { "id": "n3-2021-07-r-31-c", "text": "作った氷はとてもめずらしかったし、暑さですぐとけてしまうものだったから", "isCorrect": false },
-        { "id": "n3-2021-07-r-31-d", "text": "夏の氷はめずらしかったし、町で運ぶ途中でとけて小さくなってしまうから", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-31-a",
+          "text": "冬に特別な部屋で管理し、とけないように運ぶのも大変だったから",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-31-b",
+          "text": "冬に作った氷は特別な味がするし、時間が経つととけなくなってしまうから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-31-c",
+          "text": "作った氷はとてもめずらしかったし、暑さですぐとけてしまうものだったから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-31-d",
+          "text": "夏の氷はめずらしかったし、町で運ぶ途中でとけて小さくなってしまうから",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-31-a",
       "explanation": "原文：冬に氷室で保存→夏に遠い町まで運ぶ→途中で少しずつとけて小さくなる→だから大事。1は正確地反映了這個苦費功夫保存和運送的過程。2「とけなくなる」是反義；3「めずらしかった」の記述はない；4同様。",
-      "tags": ["medium-reading", "reason", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "reason",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2021-07-r-32",
@@ -249,14 +536,36 @@
       "questionText": "③夏の氷は特別なごちそうだったのでしょうとあるが、ここで言いたいことはどのようなことか。",
       "questionTranslation": "③「夏天的冰應該是特別的佳餚」——這裡想表達什麼？",
       "options": [
-        { "id": "n3-2021-07-r-32-a", "text": "氷は昔は冬の食べ物だったので、夏に食べることはとてもめずらしいことだった", "isCorrect": false },
-        { "id": "n3-2021-07-r-32-b", "text": "まだアイスクリームを買うことは難しかったので、みんな氷でがまんしていた", "isCorrect": false },
-        { "id": "n3-2021-07-r-32-c", "text": "暑い夏に氷を食べて涼しさを感じることは、日常的にできることではなかった", "isCorrect": true },
-        { "id": "n3-2021-07-r-32-d", "text": "涼しくなるように氷を食べることは、そのころ人々がよくやっていたことだった", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-32-a",
+          "text": "氷は昔は冬の食べ物だったので、夏に食べることはとてもめずらしいことだった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-32-b",
+          "text": "まだアイスクリームを買うことは難しかったので、みんな氷でがまんしていた",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-32-c",
+          "text": "暑い夏に氷を食べて涼しさを感じることは、日常的にできることではなかった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-32-d",
+          "text": "涼しくなるように氷を食べることは、そのころ人々がよくやっていたことだった",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-32-c",
       "explanation": "「特別なごちそう」＝日常にはない贅沢品。氷室で苦労して保存・運搬してきた貴重な氷を夏に食べられるのは特別なこと→日常的にできない体験。1「冬の食べ物」という記述はない；2アイスクリームの時代より前；4「よくやっていた」は逆の意味。",
-      "tags": ["medium-reading", "inference", "n3-reading"]
+      "tags": [
+        "medium-reading",
+        "inference",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中文）"
     },
     {
       "id": "n3-2021-07-r-33",
@@ -267,14 +576,36 @@
       "questionText": "①印象的なテレビのコマーシャル（CM）とあるが、どのような点が印象的だったのか。",
       "questionTranslation": "①「令人印象深刻的電視廣告」——哪個地方令人印象深刻？",
       "options": [
-        { "id": "n3-2021-07-r-33-a", "text": "洗濯洗剤のCMに女性が登場している点", "isCorrect": false },
-        { "id": "n3-2021-07-r-33-b", "text": "洗濯洗剤なのに、いい香りがいっている点", "isCorrect": false },
-        { "id": "n3-2021-07-r-33-c", "text": "洗濯洗剤が汚れをよく落とすことを強く言っている点", "isCorrect": false },
-        { "id": "n3-2021-07-r-33-d", "text": "洗濯洗剤なのに、汚れを落とすことについて全く言っていない点", "isCorrect": true }
+        {
+          "id": "n3-2021-07-r-33-a",
+          "text": "洗濯洗剤のCMに女性が登場している点",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-33-b",
+          "text": "洗濯洗剤なのに、いい香りがいっている点",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-33-c",
+          "text": "洗濯洗剤が汚れをよく落とすことを強く言っている点",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-33-d",
+          "text": "洗濯洗剤なのに、汚れを落とすことについて全く言っていない点",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-r-33-d",
       "explanation": "「汚れをよく落とすことは全く言っていなかった」這個矛盾點令人印象深刻。洗衣精廣告卻完全不提洗淨力，這是反常的。1女性登場は普通；2香りがいいとCMで言うのは普通；3逆（全く言っていない）。",
-      "tags": ["long-reading", "detail", "n3-reading"]
+      "tags": [
+        "long-reading",
+        "detail",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長文）"
     },
     {
       "id": "n3-2021-07-r-34",
@@ -285,14 +616,36 @@
       "questionText": "洗濯洗剤「X」を作った会社が伝えたかった「X」の特長は何か。",
       "questionTranslation": "製作洗衣精「X」的公司想傳達的「X」的特點是什麼？",
       "options": [
-        { "id": "n3-2021-07-r-34-a", "text": "シーツを洗うための洗濯洗剤であること", "isCorrect": false },
-        { "id": "n3-2021-07-r-34-b", "text": "洗濯洗剤「A」より値段がとても安いこと", "isCorrect": false },
-        { "id": "n3-2021-07-r-34-c", "text": "どんな洗濯洗剤よりも汚れをよく落とすこと", "isCorrect": false },
-        { "id": "n3-2021-07-r-34-d", "text": "香りを楽しめる洗濯洗剤であること", "isCorrect": true }
+        {
+          "id": "n3-2021-07-r-34-a",
+          "text": "シーツを洗うための洗濯洗剤であること",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-34-b",
+          "text": "洗濯洗剤「A」より値段がとても安いこと",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-34-c",
+          "text": "どんな洗濯洗剤よりも汚れをよく落とすこと",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-34-d",
+          "text": "香りを楽しめる洗濯洗剤であること",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-r-34-d",
       "explanation": "「香りも楽しめるのが特長」と明記されている。1シーツ専用ではない；2「値段はあまり変らない」→安くはない；3「汚れを落とすだけでなく、香りも」→汚れを最もよく落とすわけではない。",
-      "tags": ["long-reading", "detail", "n3-reading"]
+      "tags": [
+        "long-reading",
+        "detail",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長文）"
     },
     {
       "id": "n3-2021-07-r-35",
@@ -303,14 +656,36 @@
       "questionText": "洗濯洗剤「X」は、どのように売れたか。",
       "questionTranslation": "洗衣精「X」的銷售情況如何？",
       "options": [
-        { "id": "n3-2021-07-r-35-a", "text": "初めはあまり売れなかったが、よく売れるようになった", "isCorrect": true },
-        { "id": "n3-2021-07-r-35-b", "text": "初めはよく売れたが、あまり売れなくなった", "isCorrect": false },
-        { "id": "n3-2021-07-r-35-c", "text": "初めからずっとよく売れていた", "isCorrect": false },
-        { "id": "n3-2021-07-r-35-d", "text": "初めからずっとあまり売れなかった", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-35-a",
+          "text": "初めはあまり売れなかったが、よく売れるようになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-35-b",
+          "text": "初めはよく売れたが、あまり売れなくなった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-35-c",
+          "text": "初めからずっとよく売れていた",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-35-d",
+          "text": "初めからずっとあまり売れなかった",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-35-a",
       "explanation": "文章結構：最初「期待していたようには売れなかった」→CMを変えた→「よく売れるようになった」。明確的先差後好的銷售曲線。其他選項均與文章描述不符。",
-      "tags": ["long-reading", "sequence", "n3-reading"]
+      "tags": [
+        "long-reading",
+        "sequence",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長文）"
     },
     {
       "id": "n3-2021-07-r-36",
@@ -321,14 +696,36 @@
       "questionText": "②私が見たCMについて、「私」は今、どのようなことを考えているか。",
       "questionTranslation": "關於②「我看過的廣告」，「我」現在有什麼想法？",
       "options": [
-        { "id": "n3-2021-07-r-36-a", "text": "「私」には意味がわからなかったし、多くの消費者にも宣伝効果がなかった", "isCorrect": false },
-        { "id": "n3-2021-07-r-36-b", "text": "「私」は変なCMだと思っていたが、多くの消費者には宣伝効果があったのだ", "isCorrect": true },
-        { "id": "n3-2021-07-r-36-c", "text": "「私」は効果的なCMだと思っていたし、多くの消費者にも宣伝効果があった", "isCorrect": false },
-        { "id": "n3-2021-07-r-36-d", "text": "「私」には印象的だったが、多くの消費者には宣伝効果がなかった", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-36-a",
+          "text": "「私」には意味がわからなかったし、多くの消費者にも宣伝効果がなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-36-b",
+          "text": "「私」は変なCMだと思っていたが、多くの消費者には宣伝効果があったのだ",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-36-c",
+          "text": "「私」は効果的なCMだと思っていたし、多くの消費者にも宣伝効果があった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-36-d",
+          "text": "「私」には印象的だったが、多くの消費者には宣伝効果がなかった",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-36-b",
       "explanation": "「私がちょっと変だと感じた」（私の最初の評価）→「実は十分に宣伝効果があった」（現在の認識）。「私」は最初は変なCMと思っていたが、後から効果があったとわかった。1後半が誤り（効果はあった）；3前半が誤り（最初は変と思った）；4後半が誤り。",
-      "tags": ["long-reading", "author-view", "n3-reading"]
+      "tags": [
+        "long-reading",
+        "author-view",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長文）"
     },
     {
       "id": "n3-2021-07-r-37",
@@ -339,14 +736,36 @@
       "questionText": "太郎君は山中市に住む17歳の高校生で、さくらまつりの協力者になりたい。土曜日はいつも朝から夕方までクラブ活動がある。太郎君が応募できるのはどれか。",
       "questionTranslation": "太郎是住在山中市的17歲高中生，想成為協力者。星期六從早到傍晚都有社團活動。太郎可以報名哪個班次？",
       "options": [
-        { "id": "n3-2021-07-r-37-a", "text": "①と②", "isCorrect": false },
-        { "id": "n3-2021-07-r-37-b", "text": "②と③", "isCorrect": false },
-        { "id": "n3-2021-07-r-37-c", "text": "④と⑤", "isCorrect": true },
-        { "id": "n3-2021-07-r-37-d", "text": "⑤と⑥", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-37-a",
+          "text": "①と②",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-37-b",
+          "text": "②と③",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-37-c",
+          "text": "④と⑤",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-37-d",
+          "text": "⑤と⑥",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-37-c",
       "explanation": "條件分析：太郎17歲→③⑥（20歲以上）不可；土曜日クラブ活動→①②③（4/4土曜）不可；住山中市で16歳以上→資格OK；2回参加可能→④⑤どちらも参加可能。結論：④と⑤のみ可能。",
-      "tags": ["info-retrieval", "elimination", "n3-reading"]
+      "tags": [
+        "info-retrieval",
+        "elimination",
+        "n3-reading"
+      ],
+      "problemNumber": 7,
+      "problemLabel": "情報検索"
     },
     {
       "id": "n3-2021-07-r-38",
@@ -357,14 +776,36 @@
       "questionText": "さくらまつりの協力者になるためには、どうすればよいか。",
       "questionTranslation": "要成為さくらまつり的協力者，應該怎麼做？",
       "options": [
-        { "id": "n3-2021-07-r-38-a", "text": "3月27日までになるべく早く市役所に郵便かファックスで申し込む", "isCorrect": true },
-        { "id": "n3-2021-07-r-38-b", "text": "3月27日までの平日の午前9時から午後5時の間に電話で申し込む", "isCorrect": false },
-        { "id": "n3-2021-07-r-38-c", "text": "できるだけ早く山中市役所の市民課広田さんにEメールで申し込む", "isCorrect": false },
-        { "id": "n3-2021-07-r-38-d", "text": "市役所ホームページの応募用紙を使ってインターネットで申し込む", "isCorrect": false }
+        {
+          "id": "n3-2021-07-r-38-a",
+          "text": "3月27日までになるべく早く市役所に郵便かファックスで申し込む",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-r-38-b",
+          "text": "3月27日までの平日の午前9時から午後5時の間に電話で申し込む",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-38-c",
+          "text": "できるだけ早く山中市役所の市民課広田さんにEメールで申し込む",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-r-38-d",
+          "text": "市役所ホームページの応募用紙を使ってインターネットで申し込む",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-r-38-a",
       "explanation": "1正確：締切は3月27日、先着順なので早いほど有利、方法はファックスまたは郵送→✓。2電話は申し込み方法に記載なし（問い合わせのみ）；3Eメールも問い合わせ先であり申し込み方法ではない；4HPから用紙はダウンロードできるが、ネット申込みは記載なし。",
-      "tags": ["info-retrieval", "procedure", "n3-reading"]
+      "tags": [
+        "info-retrieval",
+        "procedure",
+        "n3-reading"
+      ],
+      "problemNumber": 7,
+      "problemLabel": "情報検索"
     }
   ]
 }

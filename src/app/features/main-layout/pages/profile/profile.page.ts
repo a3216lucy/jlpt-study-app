@@ -1,5 +1,5 @@
 // Cores
-import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, inject, signal } from '@angular/core';
 // Angular
 import { Router } from '@angular/router';
 // Angular Fire
@@ -7,6 +7,8 @@ import type { Timestamp } from '@angular/fire/firestore';
 // Store
 import { ProfileStore } from './profile.store';
 import { ProfileService } from './profile.service';
+
+type ThirdPartyProvider = 'LINE' | 'Apple';
 
 @Component({
   selector: 'app-profile',
@@ -21,6 +23,14 @@ export class ProfilePage implements OnInit {
   readonly store = inject(ProfileStore);
   private router = inject(Router);
 
+  // Constants
+  // --------------------------------------------------------------------
+  readonly levelOptions = ['N1', 'N2', 'N3', 'N4', 'N5'];
+
+  // Signals
+  // --------------------------------------------------------------------
+  readonly bindMessage = signal('');
+
   // Lifecycle
   // --------------------------------------------------------------------
   ngOnInit() {
@@ -34,18 +44,29 @@ export class ProfilePage implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  bindComingSoon(provider: ThirdPartyProvider) {
+    this.bindMessage.set(`${provider} 綁定即將推出，敬請期待`);
+  }
+
+  onExamDateChange(event: Event) {
+    const value = (event.target as HTMLInputElement).value;
+    if (value) this.store.draftExamDate.set(value);
+  }
+
   formatDate(ts: Timestamp | null | undefined): string {
     if (!ts) return '—';
     return ts.toDate().toLocaleDateString('zh-TW', { year: 'numeric', month: '2-digit', day: '2-digit' });
+  }
+
+  formatDateStr(dateStr: string): string {
+    return dateStr.replaceAll('-', '/');
   }
 
   scorePercent(score: number, total: number): number {
     return total > 0 ? Math.round((score / total) * 100) : 0;
   }
 
-  scoreColor(percent: number): string {
-    if (percent >= 80) return 'text-emerald-600';
-    if (percent >= 60) return 'text-amber-600';
-    return 'text-rose-600';
+  scoreColorClass(percent: number): string {
+    return percent >= 80 ? 'text-matcha' : 'text-accent';
   }
 }

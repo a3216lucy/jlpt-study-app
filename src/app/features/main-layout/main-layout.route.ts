@@ -15,6 +15,10 @@ export const mainLayoutRoutes: Routes = [
     loadComponent: () => import('./pages/large-quiz/large-quiz.page').then(m => m.LargeQuizPage),
   },
   {
+    path: 'sentence-patterns',
+    loadComponent: () => import('./pages/sentence-review/sentence-review.page').then(m => m.SentenceReviewPage),
+  },
+  {
     path: 'grammar-review',
     loadComponent: () => import('./pages/grammar-review/grammar-review.page').then(m => m.GrammarReviewPage),
   },

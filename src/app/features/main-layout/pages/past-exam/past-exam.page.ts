@@ -1,87 +1,93 @@
 // Cores
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-// Angular
-import { CommonModule } from '@angular/common';
-// PrimeNG
-import { ButtonModule } from 'primeng/button';
-import { ProgressBarModule } from 'primeng/progressbar';
+import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
 // Shared
 import type { ExamOption } from '@shared/models/exam-question.model';
 import type { PastExamEntry, PastExamSection } from '@shared/config/past-exam-catalog';
-import { LearningRecordService } from '@shared/services/learning-record.service';
+import type { JlptLevel } from '@shared/models/vocab.model';
 // Store
 import { PastExamStore } from './past-exam.store';
+
+const CATEGORY_LABEL: Record<string, string> = {
+  grammar: '文法',
+  vocabulary: '語彙',
+  reading: '読解',
+};
+
+const CATEGORY_ICON: Record<string, string> = {
+  grammar: 'fa-pen',
+  vocabulary: 'fa-book',
+  reading: 'fa-file-lines',
+};
+
+const PASSAGE_DIVIDER = '─────';
 
 @Component({
   selector: 'app-past-exam',
   templateUrl: './past-exam.page.html',
   standalone: true,
-  imports: [CommonModule, ButtonModule, ProgressBarModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [PastExamStore, LearningRecordService],
+  providers: [PastExamStore],
 })
-export class PastExamPage {
+export class PastExamPage implements OnInit {
   // Dependencies
   // --------------------------------------------------------------------
   readonly store = inject(PastExamStore);
-  readonly Math = Math;
+
+  // Constants
+  // --------------------------------------------------------------------
+  readonly levels: JlptLevel[] = ['N1', 'N2', 'N3', 'N4', 'N5'];
+
+  // Lifecycle
+  // --------------------------------------------------------------------
+  ngOnInit() {
+    this.store.init();
+  }
 
   // Public Handlers
   // --------------------------------------------------------------------
-  formatMonth(month: number): string {
-    return `${month}月`;
-  }
-
   categoryLabel(section: PastExamSection): string {
-    const map: Record<string, string> = {
-      grammar: '文法',
-      vocabulary: '語彙',
-      reading: '読解',
-    };
-    return map[section.category] ?? section.category;
+    return CATEGORY_LABEL[section.category] ?? section.category;
   }
 
-  categoryColor(section: PastExamSection): string {
-    const map: Record<string, string> = {
-      grammar: 'bg-violet-100 text-violet-700',
-      vocabulary: 'bg-teal-100 text-teal-700',
-      reading: 'bg-sky-100 text-sky-700',
+  categoryIcon(section: PastExamSection): string {
+    return CATEGORY_ICON[section.category] ?? 'fa-file';
+  }
+
+  examTotalQuestions(exam: PastExamEntry): number {
+    return exam.sections.reduce((sum, s) => sum + s.questionCount, 0);
+  }
+
+  /** 読解題目的 prompt 內嵌了「本文」，用 ───── 分隔線切開；沒有分隔線就回傳 null（不顯示本文面板） */
+  splitPassage(prompt: string): { intro: string; passage: string } | null {
+    const idx = prompt.indexOf(PASSAGE_DIVIDER);
+    if (idx === -1) return null;
+    return {
+      intro: prompt.slice(0, idx).trim(),
+      passage: prompt.slice(idx + PASSAGE_DIVIDER.length).trim(),
     };
-    return map[section.category] ?? 'bg-slate-100 text-slate-700';
   }
 
   optionCardClass(option: ExamOption): string {
-    if (!this.store.answered()) {
-      return 'border-slate-200 bg-white text-slate-700 hover:-translate-y-0.5 hover:border-violet-400 hover:bg-violet-50 hover:shadow-[0_12px_24px_rgba(139,92,246,0.12)]';
-    }
-    if (option.isCorrect) return 'border-green-500 bg-green-50 text-green-800';
-    if (option.id === this.store.selectedOptionId()) return 'border-red-400 bg-red-50 text-red-700';
-    return 'border-slate-200 bg-white text-slate-400';
+    return this.store.selectedOptionId() === option.id
+      ? 'border-accent bg-accent-soft text-ink'
+      : 'border-border bg-surface text-ink hover:border-accent/40 hover:bg-accent-soft/30';
   }
 
   optionPrefixClass(option: ExamOption): string {
-    if (!this.store.answered()) return 'bg-slate-100 text-slate-600';
-    if (option.isCorrect) return 'bg-green-100 text-green-800';
-    if (option.id === this.store.selectedOptionId()) return 'bg-red-100 text-red-700';
-    return 'bg-slate-100 text-slate-400';
+    return this.store.selectedOptionId() === option.id
+      ? 'bg-accent text-white'
+      : 'bg-bg text-text-secondary';
   }
 
-  trackByExam(_: number, exam: PastExamEntry) {
-    return exam.id;
+  scorePercent(score: number, total: number): number {
+    return total > 0 ? Math.round((score / total) * 100) : 0;
   }
 
-  trackBySection(_: number, section: PastExamSection) {
-    return section.id;
+  scoreColorClass(percent: number): string {
+    return percent >= 80 ? 'text-matcha' : percent >= 60 ? 'text-[#B08514]' : 'text-accent';
   }
 
-  correctOption(question: ReturnType<typeof this.store.questions>[number]): ExamOption | undefined {
-    return question.options.find((o) => o.isCorrect);
-  }
-
-  selectedOptionForResult(
-    question: ReturnType<typeof this.store.questions>[number],
-    selectedId: string,
-  ): ExamOption | undefined {
-    return question.options.find((o) => o.id === selectedId);
+  scoreBarClass(percent: number): string {
+    return percent >= 80 ? 'bg-matcha' : percent >= 60 ? 'bg-sun-yellow' : 'bg-accent';
   }
 }

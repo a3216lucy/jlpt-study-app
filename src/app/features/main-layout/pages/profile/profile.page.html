@@ -1,177 +1,353 @@
-<div class="space-y-6">
+<div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
+  <!-- Header -->
+  <div class="flex flex-col gap-1 sm:gap-1.5">
+    <h1 class="font-heading text-xl font-bold text-ink sm:text-2xl lg:text-[26px]">個人中心</h1>
+    <p class="text-sm text-text-secondary">帳號資訊、第三方綁定與你的學習紀錄</p>
+  </div>
+
   @if (store.loading()) {
-    <div class="flex items-center justify-center py-20 text-slate-400">
-      <svg class="h-5 w-5 animate-spin mr-2" fill="none" viewBox="0 0 24 24">
-        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
-        <path
-          class="opacity-75"
-          fill="currentColor"
-          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-        />
-      </svg>
-      <span class="text-sm">載入中…</span>
+    <div class="flex items-center justify-center py-20 text-text-muted">
+      <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
     </div>
   } @else {
-    <!-- ── 帳號資訊 ───────────────────────────────────── -->
-    <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
-      <div class="bg-slate-800 px-5 py-4">
-        <p class="text-sm font-bold text-white">帳號資訊</p>
-      </div>
-      <div class="flex items-center justify-between px-5 py-4">
-        <div class="flex items-center gap-3">
-          @if (store.currentUser()?.photoURL) {
-            <img
-              [src]="store.currentUser()!.photoURL!"
-              alt="avatar"
-              class="h-12 w-12 rounded-full ring-2 ring-slate-200"
-            />
+    <div class="flex flex-col gap-4 sm:gap-5 lg:grid lg:grid-cols-[380px_1fr] lg:items-start lg:gap-6">
+      <!-- ══════════════ 左欄 ══════════════ -->
+      <div class="flex flex-col gap-4 sm:gap-5 lg:gap-6">
+        <!-- ── 帳號資訊 ─────────────────────────────────── -->
+        <div class="flex items-center justify-between gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
+          <div class="flex items-center gap-3">
+            @if (store.currentUser()?.photoURL) {
+              <img
+                [src]="store.currentUser()!.photoURL!"
+                alt="avatar"
+                class="h-12 w-12 rounded-full ring-1 ring-border"
+              />
+            } @else {
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-full bg-sakura font-heading text-lg font-bold text-white"
+              >
+                {{ store.currentUser()?.displayName?.[0] ?? '?' }}
+              </div>
+            }
+            <div class="flex flex-col">
+              <p class="font-heading text-base font-bold text-ink">
+                {{ store.currentUser()?.displayName ?? '使用者' }}
+              </p>
+              <p class="text-xs text-text-secondary">{{ store.currentUser()?.email }}</p>
+            </div>
+          </div>
+          <button
+            type="button"
+            (click)="logout()"
+            class="flex shrink-0 items-center gap-1.5 rounded-full border border-border bg-surface px-4 py-2 text-sm font-bold text-text-secondary transition hover:border-accent/40 hover:text-accent"
+          >
+            <i class="fa-solid fa-arrow-right-from-bracket text-xs"></i> 登出
+          </button>
+        </div>
+
+        <!-- ── 應試目標 ─────────────────────────────────── -->
+        <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
+          <div class="flex items-center justify-between">
+            <p class="font-heading text-base font-bold text-ink sm:text-[17px]">應試目標</p>
+            @if (!store.editingGoal()) {
+              <button
+                type="button"
+                (click)="store.startEditGoal()"
+                class="flex items-center gap-1 text-xs font-bold text-accent"
+              >
+                <i class="fa-solid fa-pen text-[10px]"></i> 編輯
+              </button>
+            }
+          </div>
+
+          @if (!store.editingGoal()) {
+            <div class="flex flex-wrap items-center gap-2">
+              @for (lv of levelOptions; track lv) {
+                <span
+                  [class]="
+                    'rounded-full px-4 py-1.5 text-sm font-bold ' +
+                    (lv === store.targetLevel()
+                      ? 'bg-accent text-white'
+                      : 'border border-border bg-bg text-text-secondary')
+                  "
+                >
+                  {{ lv }}
+                </span>
+              }
+            </div>
+
+            <div class="flex items-center justify-between gap-2 rounded-md bg-bg px-3.5 py-2.5">
+              <span class="flex items-center gap-1.5 text-[13px] font-bold text-ink">
+                <i class="fa-regular fa-calendar text-text-muted"></i>
+                考試日期 {{ formatDateStr(store.examDate()) }}
+              </span>
+              <span class="text-[13px] font-bold text-accent">
+                倒數 {{ store.daysUntilGoalExam() }} 天
+              </span>
+            </div>
+
+            <p class="text-xs text-text-muted">首頁倒數與考古題預設級別會依此目標顯示</p>
           } @else {
-            <div
-              class="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-100 text-indigo-700 font-bold text-lg"
-            >
-              {{ store.currentUser()?.displayName?.[0] ?? '?' }}
+            <div class="flex flex-wrap items-center gap-2">
+              @for (lv of levelOptions; track lv) {
+                <button
+                  type="button"
+                  (click)="store.draftLevel.set(lv)"
+                  [class]="
+                    'rounded-full px-4 py-1.5 text-sm font-bold transition ' +
+                    (lv === store.draftLevel()
+                      ? 'bg-accent text-white'
+                      : 'border border-border bg-bg text-text-secondary hover:border-accent/40')
+                  "
+                >
+                  {{ lv }}
+                </button>
+              }
+            </div>
+
+            <input
+              type="date"
+              [value]="store.draftExamDate()"
+              (change)="onExamDateChange($event)"
+              class="rounded-md border border-border bg-bg px-3.5 py-2.5 text-sm text-ink"
+            />
+
+            <div class="flex gap-2">
+              <button
+                type="button"
+                (click)="store.cancelEditGoal()"
+                [disabled]="store.savingGoal()"
+                class="flex-1 rounded-full border border-border bg-surface py-2.5 text-sm font-bold text-text-secondary transition hover:bg-bg disabled:opacity-50"
+              >
+                取消
+              </button>
+              <button
+                type="button"
+                (click)="store.saveGoal()"
+                [disabled]="store.savingGoal()"
+                class="flex flex-1 items-center justify-center gap-2 rounded-full bg-accent py-2.5 text-sm font-bold text-white transition hover:brightness-105 disabled:opacity-60"
+              >
+                @if (store.savingGoal()) {
+                  <i class="fa-solid fa-spinner fa-spin text-xs"></i> 儲存中...
+                } @else {
+                  <i class="fa-solid fa-check text-xs"></i> 儲存
+                }
+              </button>
             </div>
           }
-          <div>
-            <p class="font-semibold text-slate-800">
-              {{ store.currentUser()?.displayName ?? '使用者' }}
-            </p>
-            <p class="text-xs text-slate-400">{{ store.currentUser()?.email }}</p>
-          </div>
         </div>
-        <button
-          (click)="logout()"
-          class="rounded-xl border border-slate-200 px-4 py-2 text-sm font-medium text-slate-600 transition hover:border-rose-300 hover:text-rose-600"
-        >
-          登出
-        </button>
-      </div>
-    </div>
 
-    <!-- ── 學習計畫進度 ───────────────────────────────── -->
-    @if (store.studyPlanStats().length > 0) {
-      <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
-        <div class="bg-indigo-600 px-5 py-4">
-          <p class="text-sm font-bold text-white">學習計畫進度</p>
-        </div>
-        @for (item of store.studyPlanStats(); track item.plan.id) {
-          <div class="border-b border-slate-100 px-5 py-5 last:border-b-0">
-            <div class="mb-3 flex items-start justify-between">
-              <div>
-                <p class="font-bold text-slate-800">{{ item.plan.level }} 單字計畫</p>
-                <p class="mt-0.5 text-xs text-slate-400">
-                  開始：{{ item.plan.startDate }} · 預計完成：{{ item.plan.endDate }}
-                </p>
-              </div>
+        <!-- ── 綁定的登入方式 ───────────────────────────── -->
+        <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
+          <p class="font-heading text-base font-bold text-ink sm:text-[17px]">綁定的登入方式</p>
+
+          <div class="flex items-center justify-between gap-2 rounded-md bg-bg px-3.5 py-2.5">
+            <span class="flex items-center gap-2.5">
               <span
-                [class]="
-                  'rounded-full px-2.5 py-0.5 text-xs font-bold ' +
-                  (item.plan.status === 'active'
-                    ? 'bg-green-100 text-green-700'
-                    : 'bg-slate-100 text-slate-500')
-                "
-                >{{ item.plan.status === 'active' ? '進行中' : '已暫停' }}</span
+                class="flex h-8 w-8 items-center justify-center rounded-full bg-surface ring-1 ring-border"
               >
+                <svg class="h-4 w-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#4285F4"
+                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                  />
+                  <path
+                    fill="#34A853"
+                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                  />
+                  <path
+                    fill="#FBBC05"
+                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                  />
+                  <path
+                    fill="#EA4335"
+                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                  />
+                </svg>
+              </span>
+              <span class="flex flex-col">
+                <span class="text-sm font-bold text-ink">Google</span>
+                <span class="text-xs text-text-muted">{{ store.currentUser()?.email }}</span>
+              </span>
+            </span>
+            <span class="rounded-full bg-matcha-soft px-2.5 py-1 text-[11px] font-bold text-matcha">
+              已綁定
+            </span>
+          </div>
+
+          <div class="flex items-center justify-between gap-2 rounded-md bg-bg px-3.5 py-2.5">
+            <span class="flex items-center gap-2.5">
+              <span
+                class="flex h-8 w-8 items-center justify-center rounded-full bg-surface ring-1 ring-border"
+              >
+                <i class="fa-regular fa-comment text-sm text-matcha"></i>
+              </span>
+              <span class="flex flex-col">
+                <span class="text-sm font-bold text-ink">LINE</span>
+                <span class="text-xs text-text-muted">尚未綁定</span>
+              </span>
+            </span>
+            <button
+              type="button"
+              (click)="bindComingSoon('LINE')"
+              class="rounded-full border border-border bg-surface px-3.5 py-1.5 text-xs font-bold text-text-secondary transition hover:border-accent/40 hover:text-accent"
+            >
+              綁定
+            </button>
+          </div>
+
+          <div class="flex items-center justify-between gap-2 rounded-md bg-bg px-3.5 py-2.5">
+            <span class="flex items-center gap-2.5">
+              <span
+                class="flex h-8 w-8 items-center justify-center rounded-full bg-surface ring-1 ring-border"
+              >
+                <i class="fa-brands fa-apple text-sm text-ink"></i>
+              </span>
+              <span class="flex flex-col">
+                <span class="text-sm font-bold text-ink">Apple</span>
+                <span class="text-xs text-text-muted">尚未綁定</span>
+              </span>
+            </span>
+            <button
+              type="button"
+              (click)="bindComingSoon('Apple')"
+              class="rounded-full border border-border bg-surface px-3.5 py-1.5 text-xs font-bold text-text-secondary transition hover:border-accent/40 hover:text-accent"
+            >
+              綁定
+            </button>
+          </div>
+
+          @if (bindMessage()) {
+            <p class="text-xs text-accent">{{ bindMessage() }}</p>
+          }
+
+          <p class="text-xs text-text-muted">綁定多個帳號後，任一方式皆可登入並同步學習進度</p>
+        </div>
+      </div>
+
+      <!-- ══════════════ 右欄 ══════════════ -->
+      <div class="flex flex-col gap-4 sm:gap-5 lg:gap-6">
+        <!-- ── 單字計畫 ─────────────────────────────────── -->
+        @for (item of store.studyPlanStats(); track item.plan.id) {
+          <div class="flex flex-col gap-4 rounded-lg border border-border bg-surface p-4 sm:p-5 lg:p-6">
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+              <div class="flex items-center gap-2">
+                <span class="rounded-full bg-accent-soft px-3 py-1 text-sm font-bold text-accent">
+                  {{ item.plan.level }} 單字計畫
+                </span>
+                <span
+                  [class]="
+                    'rounded-full px-3 py-1 text-xs font-bold ' +
+                    (item.plan.status === 'active'
+                      ? 'bg-matcha-soft text-matcha'
+                      : 'bg-bg text-text-secondary')
+                  "
+                >
+                  {{ item.plan.status === 'active' ? '進行中' : '已暫停' }}
+                </span>
+              </div>
+              <span class="text-xs text-text-muted">
+                開始 {{ item.plan.startDate }}・預計完成 {{ item.plan.endDate }}・每日新單字
+                {{ item.plan.dailyNewWords }}
+              </span>
             </div>
 
-            <!-- 進度條 -->
-            <div class="mb-3">
-              <div class="mb-1 flex justify-between text-xs text-slate-500">
+            <div class="flex flex-col gap-1.5">
+              <div class="flex items-center justify-between text-xs text-text-secondary">
                 <span>整體掌握</span>
-                <span class="font-semibold text-indigo-600">
+                <span class="font-heading font-bold text-ink">
                   {{ item.learnedCount + item.learningCount }} / {{ item.plan.totalWords }}
                 </span>
               </div>
-              <div class="h-2 overflow-hidden rounded-full bg-slate-100">
-                <div class="flex h-full rounded-full overflow-hidden">
-                  <div
-                    class="h-full bg-green-500 transition-all"
-                    [style.width.%]="(item.learnedCount / item.plan.totalWords) * 100"
-                  ></div>
-                  <div
-                    class="h-full bg-amber-400 transition-all"
-                    [style.width.%]="(item.learningCount / item.plan.totalWords) * 100"
-                  ></div>
-                </div>
+              <div class="flex h-2.5 w-full overflow-hidden rounded-full bg-[#F1EAE0]">
+                <div class="bg-matcha" [style.flex]="item.learnedCount || 0"></div>
+                <div class="bg-sun-yellow" [style.flex]="item.learningCount || 0"></div>
+                <div class="flex-1"></div>
               </div>
             </div>
 
-            <!-- 四格統計 -->
-            <div class="grid grid-cols-4 gap-2 text-center">
-              <div class="rounded-xl bg-slate-50 px-2 py-2">
-                <p class="text-lg font-black text-slate-500">{{ item.newCount }}</p>
-                <p class="text-[10px] text-slate-400">未開始</p>
+            <div class="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-2.5">
+              <div class="flex flex-col items-center gap-0.5 rounded-md bg-bg px-2 py-2.5 text-center">
+                <span class="font-heading text-lg font-bold text-text-secondary">{{ item.newCount }}</span>
+                <span class="text-[11px] text-text-muted">未開始</span>
               </div>
-              <div class="rounded-xl bg-amber-50 px-2 py-2">
-                <p class="text-lg font-black text-amber-600">{{ item.learningCount }}</p>
-                <p class="text-[10px] text-slate-400">複習中</p>
+              <div class="flex flex-col items-center gap-0.5 rounded-md bg-[#FFF3D6] px-2 py-2.5 text-center">
+                <span class="font-heading text-lg font-bold text-[#B08514]">{{ item.learningCount }}</span>
+                <span class="text-[11px] text-text-muted">複習中</span>
               </div>
-              <div class="rounded-xl bg-green-50 px-2 py-2">
-                <p class="text-lg font-black text-green-600">{{ item.learnedCount }}</p>
-                <p class="text-[10px] text-slate-400">已掌握</p>
+              <div class="flex flex-col items-center gap-0.5 rounded-md bg-matcha-soft px-2 py-2.5 text-center">
+                <span class="font-heading text-lg font-bold text-matcha">{{ item.learnedCount }}</span>
+                <span class="text-[11px] text-text-muted">已掌握</span>
               </div>
-              <div class="rounded-xl bg-rose-50 px-2 py-2">
-                <p class="text-lg font-black text-rose-600">{{ item.dueToday }}</p>
-                <p class="text-[10px] text-slate-400">今日待複習</p>
+              <div class="flex flex-col items-center gap-0.5 rounded-md bg-accent-soft px-2 py-2.5 text-center">
+                <span class="font-heading text-lg font-bold text-accent">{{ item.dueToday }}</span>
+                <span class="text-[11px] text-text-muted">今日待複習</span>
               </div>
             </div>
           </div>
+        } @empty {
+          <div
+            class="flex flex-col items-center gap-2 rounded-lg border border-dashed border-accent/40 bg-accent-soft/40 px-6 py-8 text-center"
+          >
+            <p class="text-sm font-bold text-ink">尚未建立單字學習計畫</p>
+            <p class="text-xs text-text-secondary">到「單詞」頁面建立計畫，這裡就會顯示學習進度</p>
+          </div>
         }
-      </div>
-    }
 
-    <!-- ── 單字學習統計 ────────────────────────────────── -->
-    <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
-      <div class="bg-teal-600 px-5 py-4">
-        <p class="text-sm font-bold text-white">單字學習統計</p>
-      </div>
-      <div class="grid grid-cols-2 divide-x divide-slate-100 px-0 py-0">
-        <div class="px-5 py-5 text-center">
-          <p class="text-3xl font-black text-teal-600">{{ store.vocabStats().knownWords }}</p>
-          <p class="mt-1 text-xs text-slate-400">認識的單字數</p>
+        <!-- ── 單字學習統計 ─────────────────────────────── -->
+        <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
+          <p class="font-heading text-base font-bold text-ink sm:text-[17px]">單字學習統計</p>
+          <div class="grid grid-cols-2 gap-2.5">
+            <div class="flex flex-col items-center gap-1 rounded-md bg-bg px-3 py-4 text-center">
+              <span class="font-heading text-2xl font-bold text-matcha">
+                {{ store.vocabStats().knownWords }}
+              </span>
+              <span class="text-xs text-text-muted">認識的單字數</span>
+            </div>
+            <div class="flex flex-col items-center gap-1 rounded-md bg-bg px-3 py-4 text-center">
+              <span class="font-heading text-2xl font-bold text-matcha">
+                {{ store.vocabStats().totalSessions }}
+              </span>
+              <span class="text-xs text-text-muted">練習次數</span>
+            </div>
+          </div>
         </div>
-        <div class="px-5 py-5 text-center">
-          <p class="text-3xl font-black text-teal-600">{{ store.vocabStats().totalSessions }}</p>
-          <p class="mt-1 text-xs text-slate-400">練習次數</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- ── 考古題歷史 ──────────────────────────────────── -->
-    <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
-      <div class="bg-violet-600 px-5 py-4">
-        <p class="text-sm font-bold text-white">考古題紀錄</p>
-      </div>
+        <!-- ── 測驗紀錄 ─────────────────────────────────── -->
+        <div class="flex flex-col gap-1 rounded-lg border border-border bg-surface p-4 sm:p-5">
+          <p class="font-heading text-base font-bold text-ink sm:text-[17px]">測驗紀錄</p>
 
-      @if (store.examHistory().length === 0) {
-        <div class="px-5 py-10 text-center text-sm text-slate-400">
-          尚無考古題記錄，快去挑戰看看！
-        </div>
-      } @else {
-        <div class="divide-y divide-slate-100">
-          @for (entry of store.examHistory(); track entry.id) {
-            <div class="flex items-center justify-between px-5 py-3.5">
-              <div>
-                <p class="text-sm font-semibold text-slate-700">{{ entry.examLabel }}</p>
-                <p class="mt-0.5 text-xs text-slate-400">
-                  {{ entry.sectionLabel }} · {{ formatDate(entry.completedAt) }}
-                </p>
-              </div>
-              <div class="text-right">
-                <p
-                  [class]="
-                    'text-lg font-black ' + scoreColor(scorePercent(entry.score, entry.total))
-                  "
-                >
-                  {{ entry.score
-                  }}<span class="text-sm font-normal text-slate-400">/{{ entry.total }}</span>
-                </p>
-                <p class="text-xs text-slate-400">{{ scorePercent(entry.score, entry.total) }}%</p>
-              </div>
+          @if (store.examHistory().length === 0) {
+            <p class="py-6 text-center text-sm text-text-muted">尚無測驗紀錄，快去挑戰看看！</p>
+          } @else {
+            <div class="flex flex-col divide-y divide-border">
+              @for (entry of store.examHistory(); track entry.id) {
+                <div class="flex items-center justify-between gap-2 py-3">
+                  <div class="flex flex-col gap-0.5">
+                    <span class="text-sm font-bold text-ink">{{ entry.examLabel }}</span>
+                    <span class="text-xs text-text-muted">
+                      {{ entry.sectionLabel }}・{{ formatDate(entry.completedAt) }}
+                    </span>
+                  </div>
+                  <div class="flex flex-col items-end gap-0.5">
+                    <span
+                      [class]="
+                        'font-heading text-base font-bold ' +
+                        scoreColorClass(scorePercent(entry.score, entry.total))
+                      "
+                    >
+                      {{ entry.score }}<span class="text-xs font-normal text-text-muted">/{{ entry.total }}</span>
+                    </span>
+                    <span class="text-xs text-text-muted">
+                      {{ scorePercent(entry.score, entry.total) }}%
+                    </span>
+                  </div>
+                </div>
+              }
             </div>
           }
         </div>
-      }
+      </div>
     </div>
   }
 </div>

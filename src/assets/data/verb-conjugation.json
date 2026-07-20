@@ -902,5 +902,76 @@
         "差（さ）し上（あ）げる"
       ]
     }
+  ],
+  "specialVerbTable": [
+    { "plain": "する", "sonkei": "なさる", "kenjou": "いたす", "meaning": "做" },
+    { "plain": "行く・来る", "sonkei": "いらっしゃる", "kenjou": "参る", "meaning": "去・來" },
+    { "plain": "いる", "sonkei": "いらっしゃる", "kenjou": "おる", "meaning": "在" },
+    { "plain": "食べる・飲む", "sonkei": "召し上がる", "kenjou": "いただく", "meaning": "吃・喝" },
+    { "plain": "言う", "sonkei": "おっしゃる", "kenjou": "申す／申し上げる", "meaning": "說" },
+    { "plain": "見る", "sonkei": "ご覧になる", "kenjou": "拝見する", "meaning": "看" },
+    { "plain": "知る", "sonkei": "ご存じだ", "kenjou": "存じる／存じ上げる", "meaning": "知道" },
+    { "plain": "会う", "sonkei": "お会いになる", "kenjou": "お目にかかる", "meaning": "見面" }
+  ],
+  "quickReference": [
+    { "formLabel": "ます形", "groupI": "書きます", "groupII": "食べます", "groupIII": "します" },
+    { "formLabel": "て形", "groupI": "書いて", "groupII": "食べて", "groupIII": "して" },
+    { "formLabel": "た形", "groupI": "書いた", "groupII": "食べた", "groupIII": "した" },
+    { "formLabel": "ない形", "groupI": "書かない", "groupII": "食べない", "groupIII": "しない" },
+    { "formLabel": "可能形", "groupI": "書ける", "groupII": "食べられる", "groupIII": "できる" },
+    { "formLabel": "受身形", "groupI": "書かれる", "groupII": "食べられる", "groupIII": "される" },
+    { "formLabel": "使役形", "groupI": "書かせる", "groupII": "食べさせる", "groupIII": "させる" },
+    { "formLabel": "意向形", "groupI": "書こう", "groupII": "食べよう", "groupIII": "しよう" },
+    { "formLabel": "条件形", "groupI": "書けば", "groupII": "食べれば", "groupIII": "すれば" },
+    { "formLabel": "命令形", "groupI": "書け", "groupII": "食べろ", "groupIII": "しろ" }
+  ],
+  "allForms": [
+    {
+      "category": "基本・丁寧",
+      "rows": [
+        { "formLabel": "辞書形", "groupI": "基本形\n書く", "groupII": "基本形\n食べる", "groupIII": "基本形\nする・来る", "exception": "—" },
+        { "formLabel": "ます形", "groupI": "i段＋ます\n書きます", "groupII": "る→ます\n食べます", "groupIII": "特殊\nします・来ます", "exception": "ラ行特殊：いらっしゃる→いらっしゃいます（り→い）" }
+      ]
+    },
+    {
+      "category": "て・た系",
+      "rows": [
+        { "formLabel": "て形", "groupI": "音便※\n書いて", "groupII": "る→て\n食べて", "groupIII": "特殊\nして・来て", "exception": "行く→行って（×行いて）／問う→問うて" },
+        { "formLabel": "た形", "groupI": "音便※\n書いた", "groupII": "る→た\n食べた", "groupIII": "特殊\nした・来た", "exception": "行く→行った（×行いた）" },
+        { "formLabel": "たら形", "groupI": "た形＋ら\n書いたら", "groupII": "た形＋ら\n食べたら", "groupIII": "た形＋ら\nしたら・来たら", "exception": "行く→行ったら" }
+      ]
+    },
+    {
+      "category": "否定系",
+      "rows": [
+        { "formLabel": "ない形", "groupI": "a段＋ない\n書かない", "groupII": "る→ない\n食べない", "groupIII": "特殊\nしない・来ない", "exception": "ある→ない（×あらない）" },
+        { "formLabel": "ず形", "groupI": "a段＋ず\n書かず", "groupII": "る→ず\n食べず", "groupIII": "★特殊\nせず・来ず", "exception": "する→せず（×しず）" }
+      ]
+    },
+    {
+      "category": "可能・受身・使役",
+      "rows": [
+        { "formLabel": "可能形", "groupI": "e段＋る\n書ける", "groupII": "る→られる\n食べられる", "groupIII": "特殊\nできる・来られる", "exception": "—" },
+        { "formLabel": "受身形", "groupI": "a段＋れる\n書かれる", "groupII": "る→られる\n食べられる", "groupIII": "特殊\nされる・来られる", "exception": "—" },
+        { "formLabel": "使役形", "groupI": "a段＋せる\n書かせる", "groupII": "る→させる\n食べさせる", "groupIII": "特殊\nさせる・来させる", "exception": "—" },
+        { "formLabel": "使役受身", "groupI": "a段＋せられる\n書かせられる", "groupII": "る→させられる\n食べさせられる", "groupIII": "特殊\nさせられる・来させられる", "exception": "口語：書かせられる→書かされる" }
+      ]
+    },
+    {
+      "category": "意志・命令・条件",
+      "rows": [
+        { "formLabel": "意向形", "groupI": "o段＋う\n書こう", "groupII": "る→よう\n食べよう", "groupIII": "特殊\nしよう・来よう", "exception": "—" },
+        { "formLabel": "命令形", "groupI": "e段\n書け", "groupII": "る→ろ／よ\n食べろ", "groupIII": "特殊\nしろ・来い", "exception": "くれる→くれ（×くれろ）／来る→来い" },
+        { "formLabel": "禁止形", "groupI": "辞書形＋な\n書くな", "groupII": "辞書形＋な\n食べるな", "groupIII": "辞書形＋な\nするな・来るな", "exception": "—" },
+        { "formLabel": "条件形ば", "groupI": "e段＋ば\n書けば", "groupII": "る→れば\n食べれば", "groupIII": "特殊\nすれば・来れば", "exception": "—" }
+      ]
+    }
+  ],
+  "onbinTable": [
+    { "ending": "く", "onbinType": "い音便", "change": "く→いて", "example": "書く→書いて" },
+    { "ending": "ぐ", "onbinType": "い音便", "change": "ぐ→いで", "example": "泳ぐ→泳いで" },
+    { "ending": "う・つ・る", "onbinType": "促音便", "change": "→って", "example": "買う→買って・待つ→待って" },
+    { "ending": "ぬ・ぶ・む", "onbinType": "撥音便", "change": "→んで", "example": "飲む→飲んで・遊ぶ→遊んで" },
+    { "ending": "す", "onbinType": "（無音便）", "change": "す→して", "example": "話す→話して" }
   ]
 }

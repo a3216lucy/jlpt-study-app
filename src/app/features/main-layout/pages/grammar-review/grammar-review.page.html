@@ -1,646 +1,394 @@
-<div
-  class="relative overflow-hidden rounded-[1.9rem] border border-slate-200/70 bg-white p-6 shadow-[0_24px_60px_rgba(15,23,42,0.08),0_8px_20px_rgba(15,23,42,0.05)] sm:p-10"
->
-  <!-- Decorative circles -->
-  <div
-    class="pointer-events-none absolute -right-14 -top-14 h-44 w-44 rounded-full bg-emerald-100/80"
-  ></div>
-  <div
-    class="pointer-events-none absolute -bottom-16 -left-10 h-40 w-40 rounded-full bg-teal-100/70"
-  ></div>
-
-  <div class="relative z-10 space-y-6">
-    <!-- Page header -->
-    <div class="flex items-start justify-between gap-4">
-      <div>
-        <p class="text-sm font-bold uppercase tracking-[0.14em] text-emerald-600">Grammar Review</p>
-        <h1 class="mt-2 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
-          文法重點整理
-        </h1>
+<div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
+  <!-- Header -->
+  <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+    <div class="flex flex-col gap-1 sm:gap-1.5">
+      <div class="flex items-center gap-2">
+        <h1 class="font-heading text-xl font-bold text-ink sm:text-2xl lg:text-[26px]">文法</h1>
+        <span class="rounded-full bg-matcha-soft px-2.5 py-1 text-xs font-bold text-matcha">全級別通用</span>
       </div>
-      @if (store.reviewData() && store.activeTab() !== 'verb' && !store.isSearching()) {
-        <button
-          (click)="store.toggleAllGroups()"
-          class="shrink-0 rounded-full border border-slate-200 bg-white px-4 py-1.5 text-sm font-medium text-slate-600 transition hover:border-emerald-300 hover:text-emerald-600"
-        >
-          {{ store.allGroupsExpanded() ? '全部收合' : '全部展開' }}
-        </button>
+      @switch (store.activeTab()) {
+        @case ('conjugation') {
+          <p class="text-sm text-text-secondary">動詞活用、敬語與文法規則速查，全級別通用，不分 N1–N5</p>
+        }
+        @case ('keigo') {
+          <p class="text-sm text-text-secondary">尊敬語・謙讓語・丁寧語的分類、作法與特殊動詞速查</p>
+        }
+        @case ('transitivity') {
+          <p class="text-sm text-text-secondary">自動詞（～が）與他動詞（～を）的成對整理與變化規律</p>
+        }
+        @case ('rules') {
+          <p class="text-sm text-text-secondary">音便、活用形變化的規則說明，理解「為什麼這樣變」</p>
+        }
       }
     </div>
 
-    <!-- Level selector (hidden on verb tab) -->
-    @if (store.activeTab() !== 'verb') {
-      <div class="flex gap-2">
-        @for (level of levels; track level) {
-          <button
-            (click)="store.selectLevel(level)"
-            [class]="
-              'rounded-full border px-4 py-1.5 text-sm font-semibold transition ' +
-              (store.selectedLevel() === level
-                ? 'border-emerald-600 bg-emerald-600 text-white shadow-[0_8px_16px_rgba(5,150,105,0.25)]'
-                : 'border-slate-200 bg-white text-slate-500 hover:border-emerald-300 hover:text-emerald-600')
-            "
-          >
-            {{ level }}
-          </button>
-        }
-      </div>
-    }
-
-    <!-- ── Tab switcher (always visible) ────────────────────────────────── -->
-    <div class="flex gap-1 overflow-x-auto rounded-2xl border border-slate-200 bg-slate-100/70 p-1">
-      <button
-        (click)="store.switchTab('general')"
-        [class]="
-          'flex flex-1 min-w-max items-center justify-center gap-1.5 rounded-xl px-3 py-2.5 text-sm font-semibold transition-all ' +
-          (store.activeTab() === 'general'
-            ? 'bg-white text-emerald-700 shadow-sm'
-            : 'text-slate-500 hover:text-slate-700')
-        "
-      >
-        <svg class="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-        </svg>
-        文法重點
-        @if (store.generalGroups().length) {
-          <span class="rounded-full bg-emerald-100 px-1.5 py-0.5 text-xs font-bold text-emerald-700">
-            {{ store.generalGroups().length }}
-          </span>
-        }
-      </button>
-
-      <button
-        (click)="store.switchTab('exam')"
-        [class]="
-          'flex flex-1 min-w-max items-center justify-center gap-1.5 rounded-xl px-3 py-2.5 text-sm font-semibold transition-all ' +
-          (store.activeTab() === 'exam'
-            ? 'bg-white text-rose-700 shadow-sm'
-            : 'text-slate-500 hover:text-slate-700')
-        "
-      >
-        <svg class="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-        考古題重點
-        @if (store.examGroups().length) {
-          <span class="rounded-full bg-rose-100 px-1.5 py-0.5 text-xs font-bold text-rose-700">
-            {{ store.examGroups().length }}
-          </span>
-        }
-      </button>
-      <button
-        (click)="store.switchTab('verb')"
-        [class]="
-          'flex flex-1 min-w-max items-center justify-center gap-1.5 rounded-xl px-3 py-2.5 text-sm font-semibold transition-all ' +
-          (store.activeTab() === 'verb'
-            ? 'bg-white text-orange-700 shadow-sm'
-            : 'text-slate-500 hover:text-slate-700')
-        "
-      >
-        <svg class="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-        </svg>
-        動詞変化
-      </button>
+    <div class="relative w-full sm:w-72">
+      <i class="fa-solid fa-magnifying-glass pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-xs text-text-muted"></i>
+      <input
+        type="text"
+        [value]="store.searchQuery()"
+        (input)="store.setSearch($any($event.target).value)"
+        [placeholder]="searchPlaceholder()"
+        class="w-full rounded-full border border-border bg-surface py-2.5 pl-9 pr-4 text-sm text-ink outline-none placeholder:text-text-muted focus:border-accent/40"
+      />
     </div>
-
-    <!-- ── Search input ─────────────────────────────────────────────────── -->
-    @if (store.activeTab() !== 'verb') {
-      <div class="relative">
-        <svg class="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
-          fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 0 5 11a6 6 0 0 0 12 0z" />
-        </svg>
-        <input
-          type="text"
-          [value]="store.searchQuery()"
-          (input)="store.setSearch($any($event.target).value)"
-          placeholder="搜尋文法點、說明…"
-          class="w-full rounded-xl border border-slate-200 bg-slate-50 py-2.5 pl-10 pr-10 text-sm text-slate-800 outline-none placeholder:text-slate-400 focus:border-emerald-400 focus:bg-white focus:ring-2 focus:ring-emerald-100 transition"
-        />
-        @if (store.isSearching()) {
-          <button
-            (click)="store.setSearch('')"
-            class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition"
-            aria-label="清除搜尋"
-          >
-            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        }
-      </div>
-    }
-
-    <!-- ── Grammar loading ───────────────────────────────────────────────── -->
-    @if (store.loading() && store.activeTab() !== 'verb') {
-      <div class="flex items-center justify-center py-16 text-slate-400">
-        <span class="text-sm">載入中…</span>
-      </div>
-    }
-
-    <!-- ── Coming soon ───────────────────────────────────────────────────── -->
-    @if (!store.loading() && !store.hasData() && store.activeTab() !== 'verb') {
-      <div
-        class="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-16 text-center"
-      >
-        <i class="fa-solid fa-hammer"></i>
-        <p class="mt-3 font-semibold text-slate-600">{{ store.selectedLevel() }} 文法整理準備中</p>
-        <p class="mt-1 text-sm text-slate-400">目前僅提供 N3，其他等級陸續新增</p>
-      </div>
-    }
-
-    <!-- ── General grammar tab ───────────────────────────────────────────── -->
-    @if (!store.loading() && store.reviewData() && store.activeTab() === 'general') {
-      <div class="space-y-2">
-        @for (group of store.filteredDisplayGroups(); track group.id) {
-          <ng-container
-            *ngTemplateOutlet="accordionGroup; context: { group: group, isExam: false }"
-          ></ng-container>
-        }
-        @if (store.isSearching() && store.filteredDisplayGroups().length === 0) {
-          <div class="flex flex-col items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 py-12 text-center">
-            <svg class="h-8 w-8 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 0 5 11a6 6 0 0 0 12 0z" />
-            </svg>
-            <p class="mt-3 text-sm font-medium text-slate-500">沒有符合「{{ store.searchQuery() }}」的文法點</p>
-          </div>
-        }
-      </div>
-    }
-
-    <!-- ── Exam highlights tab ───────────────────────────────────────────── -->
-    @if (!store.loading() && store.reviewData() && store.activeTab() === 'exam') {
-      <div class="space-y-4">
-        @if (!store.isSearching()) {
-          <p class="text-sm text-slate-400">
-            各屆考試中出現的核心語法點，含易混淆比較說明。
-          </p>
-        }
-        @for (group of store.filteredDisplayGroups(); track group.id) {
-          <ng-container
-            *ngTemplateOutlet="accordionGroup; context: { group: group, isExam: true }"
-          ></ng-container>
-        }
-        @if (store.isSearching() && store.filteredDisplayGroups().length === 0) {
-          <div class="flex flex-col items-center justify-center rounded-2xl border border-rose-100 bg-rose-50/30 py-12 text-center">
-            <svg class="h-8 w-8 text-rose-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 0 5 11a6 6 0 0 0 12 0z" />
-            </svg>
-            <p class="mt-3 text-sm font-medium text-slate-500">沒有符合「{{ store.searchQuery() }}」的語法點</p>
-          </div>
-        }
-      </div>
-    }
-
-
-    <!-- ── Verb conjugation tab ──────────────────────────────────────────── -->
-    @if (store.activeTab() === 'verb') {
-      <div class="space-y-4">
-        @if (store.verbLoading()) {
-          <div class="flex items-center justify-center py-16 text-slate-400">
-            <span class="text-sm">載入中…</span>
-          </div>
-        }
-
-        @if (!store.verbLoading() && store.verbData()) {
-          <!-- Form chip selector -->
-          <div class="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1">
-            @for (chip of verbFormChips; track chip.id) {
-              <button
-                (click)="store.selectVerbForm(chip.id)"
-                [class]="
-                  'shrink-0 rounded-full border px-3 py-1.5 text-sm font-semibold transition-all ' +
-                  (store.selectedVerbFormId() === chip.id
-                    ? 'border-orange-500 bg-orange-500 text-white shadow-[0_4px_12px_rgba(249,115,22,0.3)]'
-                    : 'border-slate-200 bg-white text-slate-500 hover:border-orange-300 hover:text-orange-600')
-                "
-              >{{ chip.label }}</button>
-            }
-          </div>
-
-          <!-- ── ます形 / 辞書形 分類表 ────────────────────────────────────── -->
-          @if (store.selectedVerbClassTable(); as tbl) {
-            <ng-container *ngTemplateOutlet="verbClassTable; context: { tbl: tbl }"></ng-container>
-          }
-
-          <!-- ── 変形表（ない形・て形…）─────────────────────────────────────── -->
-          @if (store.selectedVerbForm(); as form) {
-            <div class="overflow-hidden rounded-2xl border border-slate-200">
-              <div class="border-b border-slate-200 bg-slate-800 px-4 py-3">
-                <p class="text-sm font-bold text-white">{{ form.title }}</p>
-              </div>
-              @if (hasSubRows(form)) {
-                <!-- 4-column table for て形・た形 (with 音便 sub-rows) -->
-                <table class="w-full border-collapse text-sm">
-                  <thead>
-                    <tr class="bg-slate-100">
-                      <th class="border border-slate-200 px-3 py-2 text-left text-xs font-bold text-slate-500" colspan="2">類別</th>
-                      <th class="border border-slate-200 px-3 py-2 text-left text-xs font-bold text-slate-500">規則</th>
-                      <th class="border border-slate-200 px-3 py-2 text-left text-xs font-bold text-slate-500">例</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    @for (row of form.rows; track row.group) {
-                      @if (row.subRows) {
-                        <!-- I類: first sub-row carries the group cell with rowspan -->
-                        <tr [class]="verbRowBg(row.color)">
-                          <td [attr.rowspan]="row.subRows.length"
-                              [class]="'border border-slate-200 px-2 py-2 text-center text-xs font-bold whitespace-nowrap align-middle w-12 ' + verbGroupText(row.color)">
-                            I類
-                          </td>
-                          <td class="border border-slate-200 px-2 py-2">
-                            <span [class]="'rounded-full border px-2 py-0.5 text-xs font-bold whitespace-nowrap ' + onbinChipClass(row.subRows[0].typeColor)">
-                              {{ row.subRows[0].type }}
-                            </span>
-                          </td>
-                          <td class="border border-slate-200 px-3 py-2 text-xs whitespace-pre-line text-slate-700">{{ row.subRows[0].rule }}</td>
-                          <td class="border border-slate-200 px-3 py-2">
-                            <div class="flex flex-wrap gap-1">
-                              @for (ex of row.subRows[0].examples; track ex) {
-                                <span class="rounded bg-white/70 px-1.5 py-0.5 text-xs text-slate-600 ring-1 ring-slate-200">{{ ex }}</span>
-                              }
-                            </div>
-                          </td>
-                        </tr>
-                        <!-- remaining sub-rows (no group cell) -->
-                        @for (sub of row.subRows; track sub.type; let idx = $index) {
-                          @if (idx > 0) {
-                            <tr [class]="verbRowBg(row.color)">
-                              <td class="border border-slate-200 px-2 py-2">
-                                <span [class]="'rounded-full border px-2 py-0.5 text-xs font-bold whitespace-nowrap ' + onbinChipClass(sub.typeColor)">
-                                  {{ sub.type }}
-                                </span>
-                              </td>
-                              <td class="border border-slate-200 px-3 py-2 text-xs whitespace-pre-line text-slate-700">{{ sub.rule }}</td>
-                              <td class="border border-slate-200 px-3 py-2">
-                                <div class="flex flex-wrap gap-1">
-                                  @for (ex of sub.examples; track ex) {
-                                    <span class="rounded bg-white/70 px-1.5 py-0.5 text-xs text-slate-600 ring-1 ring-slate-200">{{ ex }}</span>
-                                  }
-                                </div>
-                              </td>
-                            </tr>
-                          }
-                        }
-                      } @else {
-                        <!-- II類 / III類: colspan=2 merges the two 類別 columns -->
-                        <tr [class]="verbRowBg(row.color)">
-                          <td colspan="2" [class]="'border border-slate-200 px-3 py-2 text-xs font-bold whitespace-nowrap ' + verbGroupText(row.color)">
-                            {{ verbGroupLabel(row.group) }}
-                          </td>
-                          <td class="border border-slate-200 px-3 py-2 text-xs whitespace-pre-line text-slate-700">{{ row.rule }}</td>
-                          <td class="border border-slate-200 px-3 py-2">
-                            <div class="flex flex-wrap gap-1">
-                              @for (ex of (row.examples ?? []); track ex) {
-                                <span [class]="'rounded px-1.5 py-0.5 text-xs ' + verbExampleChip(row.color)">{{ ex }}</span>
-                              }
-                            </div>
-                          </td>
-                        </tr>
-                      }
-                    }
-                  </tbody>
-                </table>
-              } @else {
-                <!-- 3-column table for simple forms -->
-                <table class="w-full border-collapse text-sm">
-                  <thead>
-                    <tr class="bg-slate-100">
-                      <th class="border border-slate-200 px-3 py-2 text-left text-xs font-bold text-slate-500">類別</th>
-                      <th class="border border-slate-200 px-3 py-2 text-left text-xs font-bold text-slate-500">規則</th>
-                      <th class="border border-slate-200 px-3 py-2 text-left text-xs font-bold text-slate-500">例</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    @for (row of form.rows; track row.group) {
-                      <tr [class]="verbRowBg(row.color)">
-                        <td [class]="'border border-slate-200 px-3 py-2 text-xs font-bold whitespace-nowrap w-12 ' + verbGroupText(row.color)">
-                          {{ verbGroupLabel(row.group) }}
-                        </td>
-                        <td class="border border-slate-200 px-3 py-2 text-xs whitespace-pre-line text-slate-700">{{ row.rule }}</td>
-                        <td class="border border-slate-200 px-3 py-2">
-                          <div class="flex flex-wrap gap-1">
-                            @for (ex of (row.examples ?? []); track ex) {
-                              <span [class]="'rounded px-1.5 py-0.5 text-xs ' + verbExampleChip(row.color)">{{ ex }}</span>
-                            }
-                          </div>
-                        </td>
-                      </tr>
-                    }
-                  </tbody>
-                </table>
-              }
-            </div>
-          }
-
-          <!-- ── 敬体↔常体 対照表 ─────────────────────────────────────────── -->
-          @if (store.selectedVerbFormId() === 'politeVsPlain') {
-            <div class="space-y-3">
-              @for (section of store.verbData()!.politeVsPlain.sections; track section.name) {
-                <div class="overflow-hidden rounded-2xl border border-slate-200">
-                  <div [class]="'px-4 py-2.5 text-sm font-bold ' + politeHeaderClass(section.color)">
-                    {{ section.name }}
-                  </div>
-                  <div class="divide-y divide-slate-100">
-                    @for (row of section.rows; track row.tense; let odd = $odd) {
-                      <div [class]="(odd ? politeRowOddClass(section.color) : 'bg-white') + ' px-3 py-2.5'">
-                        <p class="mb-1.5 text-xs text-slate-500">{{ row.tense }}</p>
-                        @if (row.note) {
-                          <p class="mb-1.5 text-xs font-semibold text-amber-600">{{ row.note }}</p>
-                        }
-                        <div class="flex items-center gap-2">
-                          <div class="flex-1 rounded-lg bg-white/80 px-3 py-1.5 text-center shadow-sm ring-1 ring-slate-200">
-                            <p class="text-xs text-slate-400">敬体</p>
-                            <p class="mt-0.5 text-sm font-bold text-slate-800">{{ row.polite }}</p>
-                          </div>
-                          <svg class="h-4 w-4 shrink-0 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                          </svg>
-                          <div class="flex-1 rounded-lg bg-white/80 px-3 py-1.5 text-center shadow-sm ring-1 ring-slate-200">
-                            <p class="text-xs text-slate-400">常体（普通形）</p>
-                            <p class="mt-0.5 text-sm font-bold text-slate-700">{{ row.plain }}</p>
-                          </div>
-                        </div>
-                      </div>
-                    }
-                  </div>
-                </div>
-              }
-            </div>
-          }
-
-          <!-- ── 尊敬語・謙譲語 対照表 ─────────────────────────────────────── -->
-          @if (store.selectedVerbFormId() === 'sonkeigo') {
-            <div class="overflow-hidden rounded-2xl border border-slate-200">
-              <div class="bg-slate-800 px-4 py-3">
-                <p class="text-sm font-bold text-white">尊敬語・謙譲語 対照表</p>
-                <p class="mt-0.5 text-xs text-slate-400">↑ 尊敬語：說對方的動作｜↓ 謙譲語：說自己的動作</p>
-              </div>
-              <!-- Column headers -->
-              <div class="grid grid-cols-[1fr_1fr_1fr] border-b border-slate-200 bg-slate-100 text-xs font-bold text-slate-500">
-                <div class="border-r border-slate-200 px-3 py-2">動詞</div>
-                <div class="border-r border-slate-200 px-3 py-2">↑ 尊敬語</div>
-                <div class="px-3 py-2">↓ 謙譲語</div>
-              </div>
-              @for (row of store.verbData()!.sonkeigo; track row.plain; let odd = $odd) {
-                <div [class]="(odd ? 'bg-slate-50/60' : 'bg-white') + ' grid grid-cols-[1fr_1fr_1fr] border-b border-slate-100 last:border-0'">
-                  <!-- 動詞 -->
-                  <div class="border-r border-slate-100 px-3 py-2.5">
-                    <p class="text-sm font-semibold text-slate-800">{{ row.plain }}</p>
-                  </div>
-                  <!-- 尊敬語 -->
-                  <div class="border-r border-slate-100 px-3 py-2.5">
-                    @if (row.sonkei) {
-                      <div class="flex flex-col gap-1">
-                        @for (s of row.sonkei; track s) {
-                          <span class="text-xs font-medium text-blue-700">{{ s }}</span>
-                        }
-                      </div>
-                    } @else {
-                      <span class="text-xs text-slate-300">✖</span>
-                    }
-                  </div>
-                  <!-- 謙譲語 -->
-                  <div class="px-3 py-2.5">
-                    @if (row.kenjou) {
-                      <div class="flex flex-col gap-1">
-                        @for (k of row.kenjou; track k) {
-                          <span class="text-xs font-medium text-violet-700">{{ k }}</span>
-                        }
-                      </div>
-                    } @else {
-                      <span class="text-xs text-slate-300">✖</span>
-                    }
-                  </div>
-                </div>
-              }
-            </div>
-          }
-        }
-      </div>
-    }
   </div>
-</div>
 
-<!-- ── Verb class table template (ます形 / 辞書形) ──────────────── -->
-<ng-template #verbClassTable let-tbl="tbl">
-  <div class="overflow-hidden rounded-2xl border border-slate-200">
-    <div class="border-b border-slate-200 bg-slate-800 px-4 py-3">
-      <p class="text-sm font-bold text-white">{{ tbl.title }}</p>
-      <p class="mt-0.5 text-xs text-slate-400">{{ tbl.subtitle }}</p>
-    </div>
-    <table class="w-full border-collapse text-sm">
-      <thead>
-        <tr class="bg-slate-100">
-          <th class="border border-slate-200 px-3 py-2 text-left text-xs font-bold text-slate-500">類別</th>
-          <th class="border border-slate-200 px-3 py-2 text-left text-xs font-bold text-slate-500">規則</th>
-          <th class="border border-slate-200 px-3 py-2 text-left text-xs font-bold text-slate-500">例</th>
-        </tr>
-      </thead>
-      <tbody>
-        @for (row of tbl.rows; track row.group) {
-          @if (row.isException) {
-            <tr [class]="verbRowBg(row.color)">
-              <td [class]="'border border-slate-200 px-3 py-2 text-xs font-bold whitespace-nowrap w-16 ' + verbGroupText(row.color)">
-                II例外
-              </td>
-              <td colspan="2" class="border border-slate-200 px-3 py-3">
-                <p class="mb-2 text-xs font-bold text-amber-600">★ 外表像 I 類，需死記！</p>
-                <div class="flex flex-wrap gap-1.5">
-                  @for (ex of row.exceptions; track ex) {
-                    <span class="rounded-lg border border-amber-200 bg-amber-50 px-2 py-0.5 text-xs font-medium text-amber-800">{{ ex }}</span>
-                  }
-                </div>
-              </td>
-            </tr>
-          } @else if (row.isIII) {
-            <tr [class]="verbRowBg(row.color)">
-              <td [class]="'border border-slate-200 px-3 py-2 text-xs font-bold whitespace-nowrap w-16 ' + verbGroupText(row.color)">
-                III類
-              </td>
-              <td colspan="2" class="border border-slate-200 px-3 py-3 space-y-1">
-                @for (item of row.items; track item) {
-                  <p class="text-xs text-slate-700">・{{ item }}</p>
-                }
-              </td>
-            </tr>
-          } @else {
-            <tr [class]="verbRowBg(row.color)">
-              <td [class]="'border border-slate-200 px-3 py-2 text-xs font-bold whitespace-nowrap w-16 ' + verbGroupText(row.color)">
-                {{ verbGroupLabel(row.group) }}
-              </td>
-              <td class="border border-slate-200 px-3 py-2 text-xs text-slate-700">{{ row.rule }}</td>
-              <td class="border border-slate-200 px-3 py-2">
-                <div class="flex flex-wrap gap-1">
-                  @for (ex of (row.examples ?? []); track ex) {
-                    <span [class]="'rounded px-1.5 py-0.5 text-xs ' + verbExampleChip(row.color)">{{ ex }}</span>
-                  }
-                </div>
-              </td>
-            </tr>
-          }
-        }
-      </tbody>
-    </table>
-  </div>
-</ng-template>
-
-<!-- ── Shared accordion template ───────────────────────────────── -->
-<ng-template #accordionGroup let-group="group" let-isExam="isExam">
-  <div
-    [class]="
-      'overflow-hidden rounded-2xl border shadow-sm ' +
-      (isExam ? 'border-rose-200/70 bg-rose-50/20' : 'border-slate-200 bg-white')
-    "
-  >
-    <!-- Group header -->
+  <!-- Tabs -->
+  <div class="flex gap-1 overflow-x-auto rounded-full border border-border bg-surface p-1">
     <button
-      (click)="store.toggleGroup(group.id)"
+      type="button"
+      (click)="store.switchTab('conjugation')"
       [class]="
-        'flex w-full items-center justify-between px-4 py-3.5 text-left transition ' +
-        (isExam ? 'hover:bg-rose-50/50' : 'hover:bg-slate-50')
+        'shrink-0 rounded-full px-4 py-2 text-sm font-bold transition ' +
+        (store.activeTab() === 'conjugation' ? 'bg-accent-soft text-accent' : 'text-text-secondary hover:text-ink')
       "
     >
-      <div class="flex items-center gap-3">
-        @if (isExam) {
-          <span
-            [class]="
-              'rounded-lg border px-2.5 py-0.5 text-xs font-semibold ' +
-              badgeClass(group.color)
-            "
-          >
-            {{ group.patterns.length }} 個語法點
-          </span>
-        } @else {
-          <span
-            [class]="
-              'rounded-lg border px-2.5 py-0.5 text-xs font-semibold ' +
-              badgeClass(group.color)
-            "
-          >
-            {{ group.patterns.length }} 個文法點
-          </span>
-        }
-        <div>
-          <p class="font-semibold text-slate-800">{{ group.title }}</p>
-          <p class="text-xs text-slate-400">{{ group.description }}</p>
+      動詞活用
+    </button>
+    <button
+      type="button"
+      (click)="store.switchTab('keigo')"
+      [class]="
+        'shrink-0 rounded-full px-4 py-2 text-sm font-bold transition ' +
+        (store.activeTab() === 'keigo' ? 'bg-accent-soft text-accent' : 'text-text-secondary hover:text-ink')
+      "
+    >
+      敬語
+    </button>
+    <button
+      type="button"
+      (click)="store.switchTab('transitivity')"
+      [class]="
+        'shrink-0 rounded-full px-4 py-2 text-sm font-bold transition ' +
+        (store.activeTab() === 'transitivity' ? 'bg-accent-soft text-accent' : 'text-text-secondary hover:text-ink')
+      "
+    >
+      自他動詞
+    </button>
+    <button
+      type="button"
+      (click)="store.switchTab('rules')"
+      [class]="
+        'shrink-0 rounded-full px-4 py-2 text-sm font-bold transition ' +
+        (store.activeTab() === 'rules' ? 'bg-accent-soft text-accent' : 'text-text-secondary hover:text-ink')
+      "
+    >
+      活用規則
+    </button>
+  </div>
+
+  <!-- ══════════════ 動詞活用 ══════════════ -->
+  @if (store.activeTab() === 'conjugation') {
+    @if (store.verbLoading()) {
+      <div class="flex items-center justify-center py-20 text-text-muted">
+        <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
+      </div>
+    } @else if (store.verbData(); as data) {
+      <div class="flex flex-col gap-3">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">動詞分類</h2>
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          @for (card of verbClassCards; track card.title) {
+            <div class="flex flex-col gap-2.5 rounded-lg border border-border bg-surface p-4">
+              <span [class]="'w-fit rounded-full px-2.5 py-1 text-xs font-bold ' + card.badgeClass">{{ card.badge }}</span>
+              <p class="font-heading text-base font-bold text-ink">{{ card.title }}</p>
+              <p class="text-xs text-text-secondary">{{ card.description }}</p>
+              <p class="rounded-md bg-bg px-3 py-2 text-sm text-ink">{{ card.examples }}</p>
+            </div>
+          }
         </div>
       </div>
-      <svg
-        class="h-4 w-4 shrink-0 text-slate-400 transition-transform"
-        [class.rotate-180]="isGroupExpanded(group.id)"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </button>
 
-    <!-- Group content -->
-    @if (isGroupExpanded(group.id)) {
-      <div
-        [class]="
-          'border-t px-4 pb-4 pt-3 ' +
-          (isExam ? 'border-rose-100' : 'border-slate-100')
-        "
-      >
-        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          @for (pattern of group.patterns; track pattern.id) {
-            <div [class]="'rounded-xl border p-3 ' + patternCardClass(group.color)">
-              <!-- Pattern name -->
-              <p class="text-sm font-bold text-slate-900">{{ pattern.pattern }}</p>
-
-              <!-- Formation -->
-              @if (parseFormation(pattern.formation); as p) {
-                <div
-                  class="mt-2 rounded-lg bg-slate-800 px-2.5 py-2 text-xs text-slate-200"
-                >
-                  <span class="mb-1 block font-semibold text-slate-400">接続</span>
-                  <div class="flex items-center gap-2">
-                    <div class="leading-5">
-                      @for (form of p.forms; track form) {
-                        <p>{{ form }}</p>
-                      }
-                    </div>
-                    <span class="shrink-0 self-center text-slate-400">＋</span>
-                    <div class="leading-5">
-                      @for (suffix of p.suffixes; track suffix) {
-                        <p>{{ suffix }}</p>
-                      }
-                    </div>
-                  </div>
-                </div>
-              } @else {
-                <div
-                  class="mt-2 rounded-lg bg-slate-800 px-2.5 py-1.5 text-xs text-slate-200"
-                >
-                  <span class="font-semibold text-slate-400">接続　</span
-                  >{{ pattern.formation }}
-                </div>
+      <div class="flex flex-col gap-3">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">主要活用表</h2>
+        <div class="overflow-x-auto rounded-lg border border-border">
+          <table class="w-full min-w-[520px] border-collapse text-sm">
+            <thead>
+              <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+                <th class="px-4 py-2.5">活用形</th>
+                <th class="px-4 py-2.5">I 群（書く）</th>
+                <th class="px-4 py-2.5">II 群（食べる）</th>
+                <th class="px-4 py-2.5">III 群（する）</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-border">
+              @for (row of store.filteredQuickReference(); track row.formLabel) {
+                <tr class="bg-surface">
+                  <td class="px-4 py-2.5">
+                    <span class="rounded-full bg-accent-soft px-2.5 py-1 text-xs font-bold text-accent">{{ row.formLabel }}</span>
+                  </td>
+                  <td class="px-4 py-2.5 text-ink">{{ row.groupI }}</td>
+                  <td class="px-4 py-2.5 text-ink">{{ row.groupII }}</td>
+                  <td class="px-4 py-2.5 text-ink">{{ row.groupIII }}</td>
+                </tr>
               }
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-              <!-- Meaning -->
-              <p class="mt-2 text-xs font-medium text-slate-700">{{ pattern.meaning }}</p>
-
-              <!-- Notes -->
-              @if (pattern.notes) {
-                <div
-                  class="mt-2 rounded-lg bg-slate-100 px-2.5 py-2 text-xs leading-relaxed text-slate-600"
-                >
-                  @for (line of splitNotes(pattern.notes); track line) {
-                    <p>{{ line }}</p>
-                  }
-                </div>
+      <div class="flex flex-col gap-3">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">敬語速查（尊敬語・謙譲語）</h2>
+        <div class="overflow-x-auto rounded-lg border border-border">
+          <table class="w-full min-w-[420px] border-collapse text-sm">
+            <thead>
+              <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+                <th class="px-4 py-2.5">原形</th>
+                <th class="px-4 py-2.5">尊敬語</th>
+                <th class="px-4 py-2.5">謙讓語</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-border">
+              @for (row of store.filteredSpecialVerbTable(); track row.plain) {
+                <tr class="bg-surface">
+                  <td class="px-4 py-2.5 font-bold text-ink">{{ row.plain }}</td>
+                  <td class="px-4 py-2.5 text-accent">{{ row.sonkei }}</td>
+                  <td class="px-4 py-2.5 text-matcha">{{ row.kenjou }}</td>
+                </tr>
               }
+            </tbody>
+          </table>
+        </div>
+      </div>
+    }
+  }
 
-              <!-- Expand toggle (examples only) -->
-              @if (pattern.examples.length) {
-                <button
-                  (click)="store.togglePattern(pattern.id)"
-                  class="mt-2 flex w-full items-center gap-1 text-xs text-slate-400 transition hover:text-slate-600"
-                >
-                  <svg
-                    class="h-3 w-3 transition-transform"
-                    [class.rotate-180]="isPatternExpanded(pattern.id)"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2.5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                  {{ isPatternExpanded(pattern.id) ? '收起例句' : '展開例句' }}
-                </button>
+  <!-- ══════════════ 敬語 ══════════════ -->
+  @if (store.activeTab() === 'keigo') {
+    @if (store.verbLoading()) {
+      <div class="flex items-center justify-center py-20 text-text-muted">
+        <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
+      </div>
+    } @else if (store.verbData()) {
+      <div class="flex flex-col gap-3">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">敬語三分類</h2>
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          @for (card of keigoCategoryCards; track card.label) {
+            <div class="flex flex-col gap-2.5 rounded-lg border border-border bg-surface p-4">
+              <span [class]="'w-fit rounded-full px-2.5 py-1 text-xs font-bold ' + card.badgeClass">{{ card.label }}</span>
+              <p class="text-xs text-text-secondary">{{ card.description }}</p>
+              <p class="rounded-md bg-bg px-3 py-2 text-sm text-ink">{{ card.example }}</p>
+            </div>
+          }
+        </div>
+      </div>
 
-                @if (isPatternExpanded(pattern.id)) {
-                  <div class="mt-2 space-y-2 border-t border-white/60 pt-2">
-                    @for (ex of pattern.examples; track ex.jp) {
-                      <div
-                        [class]="
-                          'rounded-lg border-l-4 px-2.5 py-2 ' +
-                          exampleCardClass(group.color)
-                        "
-                      >
-                        <p class="text-xs font-medium text-slate-800">{{ ex.jp }}</p>
-                        <p class="mt-0.5 text-xs text-slate-500">{{ ex.zh }}</p>
-                      </div>
-                    }
-                  </div>
-                }
+      <div class="flex flex-col gap-3">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">特殊動詞 対応表</h2>
+        <div class="overflow-x-auto rounded-lg border border-border">
+          <table class="w-full min-w-[560px] border-collapse text-sm">
+            <thead>
+              <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+                <th class="px-4 py-2.5">原形</th>
+                <th class="px-4 py-2.5">尊敬語</th>
+                <th class="px-4 py-2.5">謙讓語</th>
+                <th class="px-4 py-2.5">中文</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-border">
+              @for (row of store.filteredSpecialVerbTable(); track row.plain) {
+                <tr class="bg-surface">
+                  <td class="px-4 py-2.5 font-bold text-ink">{{ row.plain }}</td>
+                  <td class="px-4 py-2.5 text-accent">{{ row.sonkei }}</td>
+                  <td class="px-4 py-2.5 text-matcha">{{ row.kenjou }}</td>
+                  <td class="px-4 py-2.5 text-text-secondary">{{ row.meaning }}</td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">敬語の作り方（規則型）</h2>
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          @for (group of keigoFormationGroups; track group.label) {
+            <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
+              <span [class]="'w-fit rounded-full px-2.5 py-1 text-xs font-bold ' + group.badgeClass">{{ group.label }}</span>
+              @for (rule of group.rules; track rule.rule) {
+                <div class="rounded-md bg-bg px-3 py-2.5">
+                  <p class="text-sm font-bold text-ink">{{ rule.rule }}</p>
+                  <p class="mt-0.5 text-xs text-accent">{{ rule.example }}</p>
+                </div>
               }
             </div>
           }
         </div>
       </div>
+
+      <div class="flex items-center gap-2.5 rounded-lg bg-sun-yellow/25 px-4 py-3.5 text-sm text-ink">
+        <i class="fa-regular fa-lightbulb text-[#B08514]"></i>
+        {{ keigoTip }}
+      </div>
     }
-  </div>
-</ng-template>
+  }
+
+  <!-- ══════════════ 自他動詞 ══════════════ -->
+  @if (store.activeTab() === 'transitivity') {
+    @if (store.transitivityLoading()) {
+      <div class="flex items-center justify-center py-20 text-text-muted">
+        <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
+      </div>
+    } @else if (store.transitivityData(); as data) {
+      <div class="flex flex-col gap-3">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">自他動詞是什麼</h2>
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          @for (card of data.definitionCards; track card.label) {
+            <div class="flex flex-col gap-2.5 rounded-lg border border-border bg-surface p-4">
+              <span
+                [class]="
+                  'w-fit rounded-full px-2.5 py-1 text-xs font-bold ' +
+                  (card.label === '自動詞' ? 'bg-matcha text-white' : 'bg-accent text-white')
+                "
+              >
+                {{ card.label }}
+              </span>
+              <p class="text-xs text-text-secondary">{{ card.description }}</p>
+              <p class="rounded-md bg-bg px-3 py-2 text-sm text-ink">{{ card.example }}</p>
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">自他動詞 対応表</h2>
+        <div class="overflow-x-auto rounded-lg border border-border">
+          <table class="w-full min-w-[560px] border-collapse text-sm">
+            <thead>
+              <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+                <th class="px-4 py-2.5">自動詞（～が）</th>
+                <th class="px-4 py-2.5">他動詞（～を）</th>
+                <th class="px-4 py-2.5">中文</th>
+                <th class="px-4 py-2.5">規律</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-border">
+              @for (row of store.filteredTransitivityPairs(); track row.jidoushi) {
+                <tr class="bg-surface">
+                  <td class="px-4 py-2.5 font-bold text-ink">{{ row.jidoushi }}</td>
+                  <td class="px-4 py-2.5 font-bold text-ink">{{ row.tadoushi }}</td>
+                  <td class="px-4 py-2.5 text-text-secondary">{{ row.meaning }}</td>
+                  <td class="px-4 py-2.5">
+                    <span class="rounded-full border border-border bg-bg px-2.5 py-1 text-xs font-bold text-text-secondary">{{ row.rule }}</span>
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">語尾規律速記</h2>
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          @for (card of data.suffixCards; track card.pattern) {
+            <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
+              <p class="font-heading text-base font-bold text-ink">{{ card.pattern }}</p>
+              <div class="flex flex-wrap gap-1.5">
+                @if (card.jidoushiTag) {
+                  <span class="rounded-full bg-matcha-soft px-2 py-0.5 text-xs font-bold text-matcha">{{ card.jidoushiTag }}</span>
+                }
+                @if (card.tadoushiTag) {
+                  <span class="rounded-full bg-accent-soft px-2 py-0.5 text-xs font-bold text-accent">{{ card.tadoushiTag }}</span>
+                }
+              </div>
+              <p class="text-xs text-text-secondary">{{ card.description }}</p>
+              <p class="rounded-md bg-bg px-3 py-2 text-sm text-ink">{{ card.example }}</p>
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2.5 rounded-lg bg-matcha-soft px-4 py-3.5 text-sm text-ink">
+        <i class="fa-regular fa-lightbulb text-matcha"></i>
+        {{ data.tip }}
+      </div>
+    }
+  }
+
+  <!-- ══════════════ 活用規則 ══════════════ -->
+  @if (store.activeTab() === 'rules') {
+    @if (store.verbLoading()) {
+      <div class="flex items-center justify-center py-20 text-text-muted">
+        <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
+      </div>
+    } @else if (store.verbData(); as data) {
+      <div class="flex flex-col gap-3">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">動詞活用形 一覽（全變化）</h2>
+        <div class="overflow-x-auto rounded-lg border border-border">
+          <table class="w-full min-w-[680px] border-collapse text-sm">
+            <thead>
+              <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+                <th class="px-4 py-2.5">活用形</th>
+                <th class="px-4 py-2.5">I 群（書く）</th>
+                <th class="px-4 py-2.5">II 群（食べる）</th>
+                <th class="px-4 py-2.5">III 群（する・来る）</th>
+                <th class="px-4 py-2.5 text-accent">例外情況</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-border">
+              @for (category of store.filteredAllForms(); track category.category) {
+                <tr class="bg-bg/60">
+                  <td colspan="5" class="px-4 py-1.5 text-xs font-bold text-text-muted">{{ category.category }}</td>
+                </tr>
+                @for (row of category.rows; track row.formLabel) {
+                  <tr class="bg-surface align-top">
+                    <td class="px-4 py-2.5">
+                      <span class="rounded-full bg-accent-soft px-2.5 py-1 text-xs font-bold text-accent">{{ row.formLabel }}</span>
+                    </td>
+                    <td class="px-4 py-2.5">
+                      <p class="text-xs text-text-muted">{{ splitCell(row.groupI).rule }}</p>
+                      <p class="font-bold text-ink">{{ splitCell(row.groupI).example }}</p>
+                    </td>
+                    <td class="px-4 py-2.5">
+                      <p class="text-xs text-text-muted">{{ splitCell(row.groupII).rule }}</p>
+                      <p class="font-bold text-ink">{{ splitCell(row.groupII).example }}</p>
+                    </td>
+                    <td class="px-4 py-2.5">
+                      <p class="text-xs text-text-muted">{{ splitCell(row.groupIII).rule }}</p>
+                      <p class="font-bold text-ink">{{ splitCell(row.groupIII).example }}</p>
+                    </td>
+                    <td class="px-4 py-2.5 text-xs text-text-secondary">{{ row.exception }}</td>
+                  </tr>
+                }
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">※ て・た形音便（I 群・語尾別）</h2>
+        <div class="overflow-x-auto rounded-lg border border-border">
+          <table class="w-full min-w-[520px] border-collapse text-sm">
+            <thead>
+              <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+                <th class="px-4 py-2.5">語尾</th>
+                <th class="px-4 py-2.5">音便</th>
+                <th class="px-4 py-2.5">變化</th>
+                <th class="px-4 py-2.5">例</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-border">
+              @for (row of data.onbinTable; track row.ending) {
+                <tr class="bg-surface">
+                  <td class="px-4 py-2.5">
+                    <span class="rounded-full border border-border bg-bg px-2.5 py-1 text-xs font-bold text-text-secondary">{{ row.ending }}</span>
+                  </td>
+                  <td class="px-4 py-2.5 text-ink">{{ row.onbinType }}</td>
+                  <td class="px-4 py-2.5 text-text-secondary">{{ row.change }}</td>
+                  <td class="px-4 py-2.5 text-ink">{{ row.example }}</td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2.5 rounded-lg bg-sun-yellow/25 px-4 py-3.5 text-sm text-ink">
+        <i class="fa-regular fa-lightbulb text-[#B08514]"></i>
+        用法：先判斷動詞群別，再對照該欄位；最右「例外情況」欄標出該活用形特別注意的不規則個案（する・来る・行く・ある 等）。
+      </div>
+    }
+  }
+</div>

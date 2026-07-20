@@ -15,14 +15,37 @@
       "questionText": "（試題原文未收錄）母から（　）聞いた。",
       "questionTranslation": "從媽媽那裡聽（　　）了。",
       "options": [
-        { "id": "n3-2022-12-g-01-a", "text": "から", "isCorrect": false },
-        { "id": "n3-2022-12-g-01-b", "text": "に", "isCorrect": false },
-        { "id": "n3-2022-12-g-01-c", "text": "で", "isCorrect": false },
-        { "id": "n3-2022-12-g-01-d", "text": "と", "isCorrect": true }
+        {
+          "id": "n3-2022-12-g-01-a",
+          "text": "から",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-01-b",
+          "text": "に",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-01-c",
+          "text": "で",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-01-d",
+          "text": "と",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2022-12-g-01-d",
       "explanation": "引用のと：「〜と聞いた」「〜と思った」等，表示轉述或引用內容時使用と。此句型「〜と聞いた」表示聽說某件事，引號內的內容用と引出。",
-      "tags": ["particle", "と", "quotation", "n3-grammar"]
+      "tags": [
+        "particle",
+        "と",
+        "quotation",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-02",
@@ -33,14 +56,38 @@
       "questionText": "北山公園（　）夏祭りが行われました。",
       "questionTranslation": "夏日祭典在北山公園（　　）舉辦了。",
       "options": [
-        { "id": "n3-2022-12-g-02-a", "text": "において", "isCorrect": true },
-        { "id": "n3-2022-12-g-02-b", "text": "にとって", "isCorrect": false },
-        { "id": "n3-2022-12-g-02-c", "text": "に対して", "isCorrect": false },
-        { "id": "n3-2022-12-g-02-d", "text": "について", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-02-a",
+          "text": "において",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-02-b",
+          "text": "にとって",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-02-c",
+          "text": "に対して",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-02-d",
+          "text": "について",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-02-a",
       "explanation": "において＝在〜（場所・場面），書面語，用於正式的地點或場合表達。「北山公園において開催」＝在北山公園舉辦。にとって＝對〜而言；に対して＝對〜（相對・反應）；について＝關於〜。「〜において開催/行われる」是公告文常用句型。",
-      "tags": ["particle", "において", "location", "formal", "n3-grammar"]
+      "tags": [
+        "particle",
+        "において",
+        "location",
+        "formal",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-03",
@@ -51,14 +98,37 @@
       "questionText": "誰（　）親切で優しい兄をとても尊敬している。",
       "questionTranslation": "我非常尊敬對任何人（　　）親切溫柔的哥哥。",
       "options": [
-        { "id": "n3-2022-12-g-03-a", "text": "にだけ", "isCorrect": false },
-        { "id": "n3-2022-12-g-03-b", "text": "からだけ", "isCorrect": false },
-        { "id": "n3-2022-12-g-03-c", "text": "にでも", "isCorrect": true },
-        { "id": "n3-2022-12-g-03-d", "text": "からでも", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-03-a",
+          "text": "にだけ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-03-b",
+          "text": "からだけ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-03-c",
+          "text": "にでも",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-03-d",
+          "text": "からでも",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-03-c",
       "explanation": "誰にでも＝對任何人都〜，表示不限定對象。「誰にでも親切」＝對任何人都親切。にだけ＝只對〜（限定）；からだけ＝只從〜（方向限定）；からでも＝從任何地方也（來源不限，但語意不符）。「誰でも・どこでも・何でも」表示「任何〜都」。",
-      "tags": ["particle", "でも", "scope", "n3-grammar"]
+      "tags": [
+        "particle",
+        "でも",
+        "scope",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-04",
@@ -69,14 +139,37 @@
       "questionText": "来週の授業でこのプリントを使いますから、（　）持ってきてください。",
       "questionTranslation": "因為下週的課要用這份講義，請（　　）帶來。",
       "options": [
-        { "id": "n3-2022-12-g-04-a", "text": "全く", "isCorrect": false },
-        { "id": "n3-2022-12-g-04-b", "text": "非常に", "isCorrect": false },
-        { "id": "n3-2022-12-g-04-c", "text": "決して", "isCorrect": false },
-        { "id": "n3-2022-12-g-04-d", "text": "必ず", "isCorrect": true }
+        {
+          "id": "n3-2022-12-g-04-a",
+          "text": "全く",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-04-b",
+          "text": "非常に",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-04-c",
+          "text": "決して",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-04-d",
+          "text": "必ず",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2022-12-g-04-d",
       "explanation": "必ず＝務必、一定（強調必須做某事）。老師叮嚀要「一定帶來」→必ず持ってきてください。全く＝完全（後常接否定）；非常に＝非常（修飾形容詞）；決して＝絕對（後接否定）。「必ず〜してください」＝請務必〜。",
-      "tags": ["adverb", "必ず", "instruction", "n3-grammar"]
+      "tags": [
+        "adverb",
+        "必ず",
+        "instruction",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-05",
@@ -87,14 +180,37 @@
       "questionText": "せっかく友達の結婚式に招待されたが、出張があって（　）行けない。",
       "questionTranslation": "難得被邀請參加朋友的婚禮，卻因為有出差（　　）去不了。",
       "options": [
-        { "id": "n3-2022-12-g-05-a", "text": "どうしても", "isCorrect": true },
-        { "id": "n3-2022-12-g-05-b", "text": "それほど", "isCorrect": false },
-        { "id": "n3-2022-12-g-05-c", "text": "なかなか", "isCorrect": false },
-        { "id": "n3-2022-12-g-05-d", "text": "つい", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-05-a",
+          "text": "どうしても",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-05-b",
+          "text": "それほど",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-05-c",
+          "text": "なかなか",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-05-d",
+          "text": "つい",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-05-a",
       "explanation": "どうしても〜ない＝無論如何也不能〜（強調不可能）。難得受邀卻因出差怎麼也去不了→どうしても行けない。「せっかく」已在句幹中，不在空格。それほど＝那麼（程度）；なかなか〜ない＝不容易〜；つい＝不小心（接肯定）。",
-      "tags": ["adverb", "どうしても", "impossibility", "n3-grammar"]
+      "tags": [
+        "adverb",
+        "どうしても",
+        "impossibility",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-06",
@@ -105,14 +221,37 @@
       "questionText": "肩のけがの（　）、しばらく試合に出られなくなった。",
       "questionTranslation": "因為肩膀受傷的（　　），一段時間無法出賽了。",
       "options": [
-        { "id": "n3-2022-12-g-06-a", "text": "途中で", "isCorrect": false },
-        { "id": "n3-2022-12-g-06-b", "text": "一方で", "isCorrect": false },
-        { "id": "n3-2022-12-g-06-c", "text": "ように", "isCorrect": false },
-        { "id": "n3-2022-12-g-06-d", "text": "ために", "isCorrect": true }
+        {
+          "id": "n3-2022-12-g-06-a",
+          "text": "途中で",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-06-b",
+          "text": "一方で",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-06-c",
+          "text": "ように",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-06-d",
+          "text": "ために",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2022-12-g-06-d",
       "explanation": "〜のために＝因為〜（原因・理由）。「肩のけがのために試合に出られない」＝因為肩膀受傷而無法出賽。途中で＝在途中；一方で＝另一方面；ように＝為了〜（目的，接可控行為）。「〜ために」表示客觀原因。",
-      "tags": ["expression", "ために", "reason", "n3-grammar"]
+      "tags": [
+        "expression",
+        "ために",
+        "reason",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-07",
@@ -123,14 +262,37 @@
       "questionText": "歯を（　）寝てしまうと、虫歯になりやすくなります。",
       "questionTranslation": "（　　）牙齒就睡著的話，容易蛀牙。",
       "options": [
-        { "id": "n3-2022-12-g-07-a", "text": "磨いて", "isCorrect": false },
-        { "id": "n3-2022-12-g-07-b", "text": "磨かずに", "isCorrect": true },
-        { "id": "n3-2022-12-g-07-c", "text": "磨くたび", "isCorrect": false },
-        { "id": "n3-2022-12-g-07-d", "text": "磨かなくて", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-07-a",
+          "text": "磨いて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-07-b",
+          "text": "磨かずに",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-07-c",
+          "text": "磨くたび",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-07-d",
+          "text": "磨かなくて",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-07-b",
       "explanation": "〜ずに（＝〜ないで）＝沒有做〜就〜。「磨かずに寝る」＝不刷牙就睡覺。磨いて寝る＝刷了牙再睡（語意相反）；磨くたび＝每次刷牙（時機用法不符）；磨かなくて表示原因（不是手段）。「ずに」後接動作是不刷牙情況下進行的行為。",
-      "tags": ["expression", "ずに", "without-doing", "n3-grammar"]
+      "tags": [
+        "expression",
+        "ずに",
+        "without-doing",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-08",
@@ -141,14 +303,37 @@
       "questionText": "これから（　）、あとでこっちから電話するね。",
       "questionTranslation": "我現在（　　），之後我這邊再打給你吧。",
       "options": [
-        { "id": "n3-2022-12-g-08-a", "text": "出かけるところなのに", "isCorrect": false },
-        { "id": "n3-2022-12-g-08-b", "text": "出かけているところなのに", "isCorrect": false },
-        { "id": "n3-2022-12-g-08-c", "text": "出かけるところだから", "isCorrect": true },
-        { "id": "n3-2022-12-g-08-d", "text": "出かけているところだから", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-08-a",
+          "text": "出かけるところなのに",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-08-b",
+          "text": "出かけているところなのに",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-08-c",
+          "text": "出かけるところだから",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-08-d",
+          "text": "出かけているところだから",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-08-c",
       "explanation": "〜ところだから＝正好要〜，所以（說明當下即將發生的狀況作為理由）。「これから出かけるところだから」＝正要出門，所以（待會再打）。のに表示遺憾/轉折，語意不符。出かけているところ表示「正在出門中」（已經在外面了），不符合「あとで電話する」的語境。",
-      "tags": ["expression", "ところ", "current-situation", "n3-grammar"]
+      "tags": [
+        "expression",
+        "ところ",
+        "current-situation",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-09",
@@ -159,14 +344,38 @@
       "questionText": "この坂を（　）郵便局がありますから、その角を右に曲がってください。",
       "questionTranslation": "（　　）這個坡道就有郵局，請在那個轉角右轉。",
       "options": [
-        { "id": "n3-2022-12-g-09-a", "text": "のぼっていくと", "isCorrect": true },
-        { "id": "n3-2022-12-g-09-b", "text": "のぼっていきながら", "isCorrect": false },
-        { "id": "n3-2022-12-g-09-c", "text": "のぼってくるには", "isCorrect": false },
-        { "id": "n3-2022-12-g-09-d", "text": "のぼってくるとき", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-09-a",
+          "text": "のぼっていくと",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-09-b",
+          "text": "のぼっていきながら",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-09-c",
+          "text": "のぼってくるには",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-09-d",
+          "text": "のぼってくるとき",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-09-a",
       "explanation": "〜（動詞）と＝〜的話就（自然結果）。「坂をのぼっていくと郵便局がある」＝走上坡道就會看到郵局。のぼっていく＝朝目標方向上去（行き方向）；ながら＝邊〜邊（兩動作同時）；には＝要〜的話（目的）；とき＝的時候（時間點）。「〜と」表示前件自然導致後件。",
-      "tags": ["conjunction", "と", "conditional", "direction", "n3-grammar"]
+      "tags": [
+        "conjunction",
+        "と",
+        "conditional",
+        "direction",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-10",
@@ -177,14 +386,37 @@
       "questionText": "さくら駅の近くに新しくできたラーメン屋、（　）？",
       "questionTranslation": "櫻花站附近新開的拉麵店，（　　）？",
       "options": [
-        { "id": "n3-2022-12-g-10-a", "text": "知っとく", "isCorrect": false },
-        { "id": "n3-2022-12-g-10-b", "text": "知っちゃう", "isCorrect": false },
-        { "id": "n3-2022-12-g-10-c", "text": "知ってく", "isCorrect": false },
-        { "id": "n3-2022-12-g-10-d", "text": "知ってる", "isCorrect": true }
+        {
+          "id": "n3-2022-12-g-10-a",
+          "text": "知っとく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-10-b",
+          "text": "知っちゃう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-10-c",
+          "text": "知ってく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-10-d",
+          "text": "知ってる",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2022-12-g-10-d",
       "explanation": "知ってる？＝知っている？（口語縮略形）＝你知道嗎？詢問對方是否知道某件事。知っとく＝知っておく（先知道/備用）；知っちゃう＝知ってしまう（知道了/洩漏）；知ってく＝知っていく（不自然）。口語中「〜ている」常縮略成「〜てる」。",
-      "tags": ["colloquial", "verb-form", "contraction", "n3-grammar"]
+      "tags": [
+        "colloquial",
+        "verb-form",
+        "contraction",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-11",
@@ -195,14 +427,38 @@
       "questionText": "山下「はい、中川が（　）ので、今、代わります。」",
       "questionTranslation": "山下：「是的，中川（　　），我現在請他來接電話。」",
       "options": [
-        { "id": "n3-2022-12-g-11-a", "text": "おります", "isCorrect": true },
-        { "id": "n3-2022-12-g-11-b", "text": "います", "isCorrect": false },
-        { "id": "n3-2022-12-g-11-c", "text": "いたします", "isCorrect": false },
-        { "id": "n3-2022-12-g-11-d", "text": "ございます", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-11-a",
+          "text": "おります",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-11-b",
+          "text": "います",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-11-c",
+          "text": "いたします",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-11-d",
+          "text": "ございます",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-11-a",
       "explanation": "おります＝います的謙讓語（自謙語）。對外部（客戶/對方）提到自己公司/群體的人時，需用謙讓語貶低己方。「中川がおります」＝中川在（謙遜說法）。います是普通形；いたします是做〜的謙讓；ございます是あります的鄭重語（物・事）。公司電話接聽場景是謙讓語的經典考題。",
-      "tags": ["keigo", "謙讓語", "おる", "business", "n3-grammar"]
+      "tags": [
+        "keigo",
+        "謙讓語",
+        "おる",
+        "business",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-12",
@@ -213,14 +469,37 @@
       "questionText": "国内の美術館が多いが、海外の美術館に（　）。",
       "questionTranslation": "雖然國內的多，但海外的美術館（　　）。",
       "options": [
-        { "id": "n3-2022-12-g-12-a", "text": "行ったこともある", "isCorrect": false },
-        { "id": "n3-2022-12-g-12-b", "text": "行ったことはない", "isCorrect": true },
-        { "id": "n3-2022-12-g-12-c", "text": "行くこともできる", "isCorrect": false },
-        { "id": "n3-2022-12-g-12-d", "text": "行くこともできない", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-12-a",
+          "text": "行ったこともある",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-12-b",
+          "text": "行ったことはない",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-12-c",
+          "text": "行くこともできる",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-12-d",
+          "text": "行くこともできない",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-12-b",
       "explanation": "〜たことはない＝未曾〜（強調從來沒有此經驗）。「海外の美術館に行ったことはない」＝海外的從未去過。行ったこともある＝也曾去過（語意相反）；行くこともできる＝也可以去（能力）；行くこともできない＝也無法去（能力否定）。「〜たことはない」中の「は」強調否定。",
-      "tags": ["expression", "たことはない", "experience", "n3-grammar"]
+      "tags": [
+        "expression",
+        "たことはない",
+        "experience",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-13",
@@ -231,14 +510,37 @@
       "questionText": "（靴屋で）客「すみません。この靴、（　）。」",
       "questionTranslation": "（在鞋店）客人：「不好意思，這雙鞋（　　）。」",
       "options": [
-        { "id": "n3-2022-12-g-13-a", "text": "履いてもらえませんか", "isCorrect": false },
-        { "id": "n3-2022-12-g-13-b", "text": "履かないんですか", "isCorrect": false },
-        { "id": "n3-2022-12-g-13-c", "text": "履いてみてもいいですか", "isCorrect": true },
-        { "id": "n3-2022-12-g-13-d", "text": "履くことになりますか", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-13-a",
+          "text": "履いてもらえませんか",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-13-b",
+          "text": "履かないんですか",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-13-c",
+          "text": "履いてみてもいいですか",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-13-d",
+          "text": "履くことになりますか",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-13-c",
       "explanation": "〜てみてもいいですか＝可以試著〜嗎？（請求允許嘗試）。「履いてみてもいいですか」＝可以試穿嗎？是鞋店的自然對話。履いてもらえませんか＝請（店員）幫我穿（語意奇怪）；履かないんですか＝你不穿嗎？（對對方的確認）；履くことになりますか＝將來會穿嗎？（不自然）。",
-      "tags": ["expression", "てみてもいいですか", "request", "n3-grammar"]
+      "tags": [
+        "expression",
+        "てみてもいいですか",
+        "request",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
     },
     {
       "id": "n3-2022-12-g-14",
@@ -249,14 +551,36 @@
       "questionText": "留学している息子 ＿＿ ＿＿ ★ ＿＿ 毎日楽しく過ごしていると書かれていて安心した。\n正しい語順：[から②] [の④] [★メール①] [に③]",
       "questionTranslation": "留學中的兒子寄來的信中，寫著每天都過得很愉快，讓我安心了。",
       "options": [
-        { "id": "n3-2022-12-g-14-a", "text": "メール", "isCorrect": true },
-        { "id": "n3-2022-12-g-14-b", "text": "から", "isCorrect": false },
-        { "id": "n3-2022-12-g-14-c", "text": "に", "isCorrect": false },
-        { "id": "n3-2022-12-g-14-d", "text": "の", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-14-a",
+          "text": "メール",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-14-b",
+          "text": "から",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-14-c",
+          "text": "に",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-14-d",
+          "text": "の",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-14-a",
       "explanation": "完整句：留学している息子からのメールに、毎日楽しく過ごしていると書かれていて安心した。語順：から②→の④→★メール①→に③。構造：「息子からの（名詞修飾）＋メール（名詞）＋に（助詞）」→從兒子那裡的信件上（有寫）。★位置是「メール」（選項1）。",
-      "tags": ["sentence-arrangement", "の修飾", "n3-grammar"]
+      "tags": [
+        "sentence-arrangement",
+        "の修飾",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
     },
     {
       "id": "n3-2022-12-g-15",
@@ -267,14 +591,37 @@
       "questionText": "東京には ＿＿ ＿＿ ★ ＿＿ 一緒に食事でもしたいと思う。\n正しい語順：[友達が③] [いるので①] [★東京に④] [いる間に②]",
       "questionTranslation": "東京有朋友，所以想趁在東京的期間一起吃個飯。",
       "options": [
-        { "id": "n3-2022-12-g-15-a", "text": "いるので", "isCorrect": false },
-        { "id": "n3-2022-12-g-15-b", "text": "いる間に", "isCorrect": false },
-        { "id": "n3-2022-12-g-15-c", "text": "友達が", "isCorrect": false },
-        { "id": "n3-2022-12-g-15-d", "text": "東京に", "isCorrect": true }
+        {
+          "id": "n3-2022-12-g-15-a",
+          "text": "いるので",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-15-b",
+          "text": "いる間に",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-15-c",
+          "text": "友達が",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-15-d",
+          "text": "東京に",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2022-12-g-15-d",
       "explanation": "完整句：東京には友達がいるので東京にいる間に一緒に食事でもしたいと思う。語順：友達が③→いるので①→★東京に④→いる間に②。「〜いる間に」＝趁著〜期間，「東京にいる間に」＝趁在東京的時候。★位置是「東京に」（選項4）。",
-      "tags": ["sentence-arrangement", "間に", "while", "n3-grammar"]
+      "tags": [
+        "sentence-arrangement",
+        "間に",
+        "while",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
     },
     {
       "id": "n3-2022-12-g-16",
@@ -285,14 +632,37 @@
       "questionText": "バイオリンが ＿＿ ＿＿ ★ ＿＿ こんなに面白い楽器はないと感じる。\n正しい語順：[弾けるようになりたくて④] [年前に習い始めたのだが①] [★弾けば③] [弾くほど②]",
       "questionTranslation": "因為想學會拉小提琴，幾年前開始學，但越拉越覺得沒有比這更有趣的樂器了。",
       "options": [
-        { "id": "n3-2022-12-g-16-a", "text": "年前に習い始めたのだが", "isCorrect": false },
-        { "id": "n3-2022-12-g-16-b", "text": "弾くほど", "isCorrect": false },
-        { "id": "n3-2022-12-g-16-c", "text": "弾けば", "isCorrect": true },
-        { "id": "n3-2022-12-g-16-d", "text": "弾けるようになりたくて", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-16-a",
+          "text": "年前に習い始めたのだが",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-16-b",
+          "text": "弾くほど",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-16-c",
+          "text": "弾けば",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-16-d",
+          "text": "弾けるようになりたくて",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-16-c",
       "explanation": "完整句：バイオリンが弾けるようになりたくて年前に習い始めたのだが、弾けば弾くほどこんなに面白い楽器はないと感じる。語順：弾けるようになりたくて④→年前に習い始めたのだが①→★弾けば③→弾くほど②。「〜ば〜ほど」＝越〜越〜，是重要句型。★位置是「弾けば」（選項3）。",
-      "tags": ["sentence-arrangement", "ばほど", "progressive", "n3-grammar"]
+      "tags": [
+        "sentence-arrangement",
+        "ばほど",
+        "progressive",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
     },
     {
       "id": "n3-2022-12-g-17",
@@ -303,14 +673,37 @@
       "questionText": "ちょうど ＿＿ ＿＿ ★ ＿＿ んだ。ありがとう。\n正しい語順：[こういう色の①] [かばんが④] [★欲しい②] [と思っていた③]",
       "questionTranslation": "哇，是包包！正好就是這個顏色的包包，我本來就很想要！謝謝。",
       "options": [
-        { "id": "n3-2022-12-g-17-a", "text": "こういう色の", "isCorrect": false },
-        { "id": "n3-2022-12-g-17-b", "text": "欲しい", "isCorrect": true },
-        { "id": "n3-2022-12-g-17-c", "text": "と思っていた", "isCorrect": false },
-        { "id": "n3-2022-12-g-17-d", "text": "かばんが", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-17-a",
+          "text": "こういう色の",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-17-b",
+          "text": "欲しい",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-17-c",
+          "text": "と思っていた",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-17-d",
+          "text": "かばんが",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-17-b",
       "explanation": "完整句：ちょうどこういう色のかばんが欲しいと思っていたんだ。語順：こういう色の①→かばんが④→★欲しい②→と思っていた③。構造：「〜が欲しいと思っていた」＝一直想要〜。★位置是「欲しい」（選項2）。「欲しいと思っていた」是表達心情的重要表達。",
-      "tags": ["sentence-arrangement", "欲しい", "want", "n3-grammar"]
+      "tags": [
+        "sentence-arrangement",
+        "欲しい",
+        "want",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
     },
     {
       "id": "n3-2022-12-g-18",
@@ -321,14 +714,37 @@
       "questionText": "人が働き、 ＿＿ ＿＿ ★ ＿＿ 。\n正しい語順：[生活している③] [という点で①] [★違いは②] [ない④]",
       "questionTranslation": "都市和鄉村雖然有很多不同，但在人們工作生活這一點上並無差異。",
       "options": [
-        { "id": "n3-2022-12-g-18-a", "text": "という点で", "isCorrect": false },
-        { "id": "n3-2022-12-g-18-b", "text": "違いは", "isCorrect": true },
-        { "id": "n3-2022-12-g-18-c", "text": "生活している", "isCorrect": false },
-        { "id": "n3-2022-12-g-18-d", "text": "ない", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-18-a",
+          "text": "という点で",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-18-b",
+          "text": "違いは",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-18-c",
+          "text": "生活している",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-18-d",
+          "text": "ない",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-18-b",
       "explanation": "完整句：人が働き、生活しているという点で違いはない。語順：生活している③→という点で①→★違いは②→ない④。「〜という点で違いはない」＝在〜這一點上沒有差異。「という点で」指定對比的觀點。★位置是「違いは」（選項2）。「違いはない（＋は強調否定）」是重要表達。",
-      "tags": ["sentence-arrangement", "という点で", "comparison", "n3-grammar"]
+      "tags": [
+        "sentence-arrangement",
+        "という点で",
+        "comparison",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
     },
     {
       "id": "n3-2022-12-g-19",
@@ -339,14 +755,37 @@
       "questionText": "畳の部屋に入るのは初めてでした。（19）にも初めて入りました。",
       "questionTranslation": "第一次進入有榻榻米的房間。也是第一次進入（19）。",
       "options": [
-        { "id": "n3-2022-12-g-19-a", "text": "温泉", "isCorrect": true },
-        { "id": "n3-2022-12-g-19-b", "text": "あの温泉", "isCorrect": false },
-        { "id": "n3-2022-12-g-19-c", "text": "そんな温泉", "isCorrect": false },
-        { "id": "n3-2022-12-g-19-d", "text": "これらの温泉", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-19-a",
+          "text": "温泉",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-19-b",
+          "text": "あの温泉",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-19-c",
+          "text": "そんな温泉",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-19-d",
+          "text": "これらの温泉",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-19-a",
       "explanation": "前文描述旅館有溫泉，接著說也是第一次進溫泉。用「温泉」（不加指示詞）最自然，因為前文剛提到，讀者已知是哪個溫泉，但接著說的是「初次體驗溫泉」這件事，不需要指示詞強調「那個特定的溫泉」。あの・そんな・これらの加了指示詞反而語感奇怪。",
-      "tags": ["passage-grammar", "reference", "demonstrative", "n3-grammar"]
+      "tags": [
+        "passage-grammar",
+        "reference",
+        "demonstrative",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     },
     {
       "id": "n3-2022-12-g-20",
@@ -357,14 +796,38 @@
       "questionText": "腕時計（20）ないことに気がつきました。",
       "questionTranslation": "注意到手錶（20）了。",
       "options": [
-        { "id": "n3-2022-12-g-20-a", "text": "まで", "isCorrect": false },
-        { "id": "n3-2022-12-g-20-b", "text": "しか", "isCorrect": false },
-        { "id": "n3-2022-12-g-20-c", "text": "は", "isCorrect": true },
-        { "id": "n3-2022-12-g-20-d", "text": "が", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-20-a",
+          "text": "まで",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-20-b",
+          "text": "しか",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-20-c",
+          "text": "は",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-20-d",
+          "text": "が",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-20-c",
       "explanation": "「腕時計は〜ない」中的「は」把手錶提為話題，強調「那個手錶不見了」。「は」用於對比或強調主題（這裡強調手錶的缺失）。が用於描述存在/事件；まで＝到（範圍）；しか＋否定＝只有（限定）。「〜は〜ない」的「は」強調對比，帶有「偏偏手錶不見了」的語感。",
-      "tags": ["passage-grammar", "particle", "は", "topic", "n3-grammar"]
+      "tags": [
+        "passage-grammar",
+        "particle",
+        "は",
+        "topic",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     },
     {
       "id": "n3-2022-12-g-21",
@@ -375,14 +838,37 @@
       "questionText": "温泉の入口のところに（21）。",
       "questionTranslation": "（21）在溫泉入口那裡。",
       "options": [
-        { "id": "n3-2022-12-g-21-a", "text": "落ちたままです", "isCorrect": false },
-        { "id": "n3-2022-12-g-21-b", "text": "落ちたばかりです", "isCorrect": false },
-        { "id": "n3-2022-12-g-21-c", "text": "落ちていたそうです", "isCorrect": true },
-        { "id": "n3-2022-12-g-21-d", "text": "落ちていたことです", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-21-a",
+          "text": "落ちたままです",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-21-b",
+          "text": "落ちたばかりです",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-21-c",
+          "text": "落ちていたそうです",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-21-d",
+          "text": "落ちていたことです",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-21-c",
       "explanation": "「〜ていたそうです」＝聽說是在那裡（傳聞）。前台人員把手錶帶回來並告知筆者落在溫泉入口，筆者轉述這個資訊時用傳聞的「そうです」。落ちたまま＝落著沒動（現在還在）；落ちたばかり＝剛剛掉落（不符語境）；落ちていたことです不自然。「〜そうです」表示從別人那裡聽來的資訊。",
-      "tags": ["passage-grammar", "そうです", "hearsay", "n3-grammar"]
+      "tags": [
+        "passage-grammar",
+        "そうです",
+        "hearsay",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     },
     {
       "id": "n3-2022-12-g-22",
@@ -393,14 +879,37 @@
       "questionText": "旅行では観光地や食べ物だけではなく、人の優しさもいい思い出に（22）。",
       "questionTranslation": "旅行中，不只景點和美食，人們的溫柔也（22）美好的回憶。",
       "options": [
-        { "id": "n3-2022-12-g-22-a", "text": "なっただろうと思います", "isCorrect": false },
-        { "id": "n3-2022-12-g-22-b", "text": "なるのだと感じました", "isCorrect": false },
-        { "id": "n3-2022-12-g-22-c", "text": "なったのではないでしょうか", "isCorrect": true },
-        { "id": "n3-2022-12-g-22-d", "text": "なるでしょうか", "isCorrect": false }
+        {
+          "id": "n3-2022-12-g-22-a",
+          "text": "なっただろうと思います",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-22-b",
+          "text": "なるのだと感じました",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-g-22-c",
+          "text": "なったのではないでしょうか",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-g-22-d",
+          "text": "なるでしょうか",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2022-12-g-22-c",
       "explanation": "「〜のではないでしょうか」＝不是〜嗎（委婉的推測・感慨，帶有對讀者的邀請）。文章結尾以柔和的語氣向讀者傳達感想。なっただろうと思います＝語氣過強；なるのだと感じました＝直白（缺少委婉）；なるでしょうか＝詢問讀者（像在問問題）。「〜のではないでしょうか」是隨筆文常見結語語氣。",
-      "tags": ["passage-grammar", "のではないでしょうか", "conjecture-soft", "n3-grammar"]
+      "tags": [
+        "passage-grammar",
+        "のではないでしょうか",
+        "conjecture-soft",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     }
   ]
 }

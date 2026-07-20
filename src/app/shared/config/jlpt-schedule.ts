@@ -1,12 +1,15 @@
 /**
- * JLPT 官方考試日期通常為每年 7 月、12 月的第一個週日，此處先寫死下一次考試日期。
- * TODO: 之後應讓使用者在個人設定中選擇報考級別與日期，而非寫死常數。
+ * JLPT 官方考試日期通常為每年 7 月、12 月的第一個週日。
+ * 使用者尚未在個人中心設定應試目標時，以此日期作為預設值。
  */
 export const NEXT_JLPT_EXAM_DATE = '2026-12-06';
 
-export function daysUntilNextExam(): number {
+/** 使用者尚未在個人中心設定應試目標級別時，以此級別作為預設值。 */
+export const DEFAULT_TARGET_LEVEL = 'N3';
+
+export function daysUntil(dateStr: string): number {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  const exam = new Date(NEXT_JLPT_EXAM_DATE);
-  return Math.ceil((exam.getTime() - today.getTime()) / 86_400_000);
+  const target = new Date(dateStr);
+  return Math.ceil((target.getTime() - today.getTime()) / 86_400_000);
 }

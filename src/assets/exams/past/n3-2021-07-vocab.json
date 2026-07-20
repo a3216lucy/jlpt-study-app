@@ -15,14 +15,36 @@
       "questionText": "このビルの裏に小さなレストランがあります。",
       "questionTranslation": "這棟大樓的（　　）有一家小餐廳。",
       "options": [
-        { "id": "n3-2021-07-v-01-a", "text": "そば", "isCorrect": false },
-        { "id": "n3-2021-07-v-01-b", "text": "よこ", "isCorrect": false },
-        { "id": "n3-2021-07-v-01-c", "text": "かげ", "isCorrect": false },
-        { "id": "n3-2021-07-v-01-d", "text": "うら", "isCorrect": true }
+        {
+          "id": "n3-2021-07-v-01-a",
+          "text": "そば",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-01-b",
+          "text": "よこ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-01-c",
+          "text": "かげ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-01-d",
+          "text": "うら",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-v-01-d",
       "explanation": "裏（うら）＝背面、後面。そば＝「側」旁邊；よこ＝「横」橫側面；かげ＝「影」陰影。「ビルの裏」＝大樓背面。",
-      "tags": ["reading", "kanji", "n3-vocab"]
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
     },
     {
       "id": "n3-2021-07-v-02",
@@ -33,14 +55,36 @@
       "questionText": "それではゆっくり呼吸をしてください。",
       "questionTranslation": "那麼，請慢慢地（　　）。",
       "options": [
-        { "id": "n3-2021-07-v-02-a", "text": "こぎゅう", "isCorrect": false },
-        { "id": "n3-2021-07-v-02-b", "text": "こきゅう", "isCorrect": true },
-        { "id": "n3-2021-07-v-02-c", "text": "よぎゅう", "isCorrect": false },
-        { "id": "n3-2021-07-v-02-d", "text": "よきゅう", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-02-a",
+          "text": "こぎゅう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-02-b",
+          "text": "こきゅう",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-02-c",
+          "text": "よぎゅう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-02-d",
+          "text": "よきゅう",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-02-b",
       "explanation": "呼吸（こきゅう）＝呼吸。注意：「呼」讀「こ」、「吸」讀「きゅう」（不是ぎゅう），要有清音。",
-      "tags": ["reading", "kanji", "n3-vocab"]
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
     },
     {
       "id": "n3-2021-07-v-03",
@@ -51,14 +95,36 @@
       "questionText": "あの少年の悲しそうな顔が忘れられない。",
       "questionTranslation": "那個少年（　　）的臉孔令我難以忘懷。",
       "options": [
-        { "id": "n3-2021-07-v-03-a", "text": "やさしそう", "isCorrect": false },
-        { "id": "n3-2021-07-v-03-b", "text": "かなしそう", "isCorrect": true },
-        { "id": "n3-2021-07-v-03-c", "text": "きびしそう", "isCorrect": false },
-        { "id": "n3-2021-07-v-03-d", "text": "さびしそう", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-03-a",
+          "text": "やさしそう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-03-b",
+          "text": "かなしそう",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-03-c",
+          "text": "きびしそう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-03-d",
+          "text": "さびしそう",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-03-b",
       "explanation": "悲しい（かなしい）＝悲傷的。やさしい（優しい）＝溫柔；きびしい（厳しい）＝嚴格；さびしい（寂しい）＝寂寞。",
-      "tags": ["reading", "kanji", "n3-vocab"]
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
     },
     {
       "id": "n3-2021-07-v-04",
@@ -69,14 +135,36 @@
       "questionText": "このあたりに駐車しましょう。",
       "questionTranslation": "讓我們在這附近（　　）吧。",
       "options": [
-        { "id": "n3-2021-07-v-04-a", "text": "しゅしゃ", "isCorrect": false },
-        { "id": "n3-2021-07-v-04-b", "text": "しゅうしゃ", "isCorrect": false },
-        { "id": "n3-2021-07-v-04-c", "text": "ちゅしゃ", "isCorrect": false },
-        { "id": "n3-2021-07-v-04-d", "text": "ちゅうしゃ", "isCorrect": true }
+        {
+          "id": "n3-2021-07-v-04-a",
+          "text": "しゅしゃ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-04-b",
+          "text": "しゅうしゃ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-04-c",
+          "text": "ちゅしゃ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-04-d",
+          "text": "ちゅうしゃ",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-v-04-d",
       "explanation": "駐車（ちゅうしゃ）＝停車。注意「駐」讀「ちゅう」（長音），不是「ちゅ」。易混淆同音：注射（ちゅうしゃ）打針，字不同意思不同。",
-      "tags": ["reading", "kanji", "n3-vocab"]
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
     },
     {
       "id": "n3-2021-07-v-05",
@@ -87,14 +175,36 @@
       "questionText": "もう逃げてしまったようだ。",
       "questionTranslation": "看來已經（　　）了。",
       "options": [
-        { "id": "n3-2021-07-v-05-a", "text": "にげて", "isCorrect": true },
-        { "id": "n3-2021-07-v-05-b", "text": "なげて", "isCorrect": false },
-        { "id": "n3-2021-07-v-05-c", "text": "こげて", "isCorrect": false },
-        { "id": "n3-2021-07-v-05-d", "text": "あげて", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-05-a",
+          "text": "にげて",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-05-b",
+          "text": "なげて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-05-c",
+          "text": "こげて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-05-d",
+          "text": "あげて",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-05-a",
       "explanation": "逃げる（にげる）＝逃跑。なげる（投げる）＝丟、投；こげる（焦げる）＝燒焦；あげる（上げる）＝舉起、給。",
-      "tags": ["reading", "kanji", "n3-vocab"]
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
     },
     {
       "id": "n3-2021-07-v-06",
@@ -105,14 +215,36 @@
       "questionText": "努力することは大切だと思います。",
       "questionTranslation": "我認為（　　）是很重要的事。",
       "options": [
-        { "id": "n3-2021-07-v-06-a", "text": "どうりょく", "isCorrect": false },
-        { "id": "n3-2021-07-v-06-b", "text": "とうりょく", "isCorrect": false },
-        { "id": "n3-2021-07-v-06-c", "text": "どりょく", "isCorrect": true },
-        { "id": "n3-2021-07-v-06-d", "text": "とりょく", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-06-a",
+          "text": "どうりょく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-06-b",
+          "text": "とうりょく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-06-c",
+          "text": "どりょく",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-06-d",
+          "text": "とりょく",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-06-c",
       "explanation": "努力（どりょく）＝努力。「努」讀「ど」不是「どう」；「力」讀「りょく」。動力（どうりょく）是另一個詞，意思是「動力、驅動力」。",
-      "tags": ["reading", "kanji", "n3-vocab"]
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
     },
     {
       "id": "n3-2021-07-v-07",
@@ -123,14 +255,36 @@
       "questionText": "それは過去のことです。",
       "questionTranslation": "那是（　　）的事了。",
       "options": [
-        { "id": "n3-2021-07-v-07-a", "text": "かこ", "isCorrect": true },
-        { "id": "n3-2021-07-v-07-b", "text": "かこう", "isCorrect": false },
-        { "id": "n3-2021-07-v-07-c", "text": "かきよ", "isCorrect": false },
-        { "id": "n3-2021-07-v-07-d", "text": "かきょう", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-07-a",
+          "text": "かこ",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-07-b",
+          "text": "かこう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-07-c",
+          "text": "かきよ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-07-d",
+          "text": "かきょう",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-07-a",
       "explanation": "過去（かこ）＝過去。かこう是「加工」（加工處理）的讀法；かきょう是「家郷」等字的讀法，均非「過去」。",
-      "tags": ["reading", "kanji", "n3-vocab"]
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
     },
     {
       "id": "n3-2021-07-v-08",
@@ -141,14 +295,36 @@
       "questionText": "彼は話し方も動作もゆっくりしている。",
       "questionTranslation": "他說話方式和（　　）都很緩慢。",
       "options": [
-        { "id": "n3-2021-07-v-08-a", "text": "とうさ", "isCorrect": false },
-        { "id": "n3-2021-07-v-08-b", "text": "とうさく", "isCorrect": false },
-        { "id": "n3-2021-07-v-08-c", "text": "どうさ", "isCorrect": true },
-        { "id": "n3-2021-07-v-08-d", "text": "どうさく", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-08-a",
+          "text": "とうさ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-08-b",
+          "text": "とうさく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-08-c",
+          "text": "どうさ",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-08-d",
+          "text": "どうさく",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-08-c",
       "explanation": "動作（どうさ）＝動作、舉止。注意「動」讀濁音「ど」，不是清音「と」；「作」讀「さ」，不加く。盗作（とうさく）是「剽竊」，意思完全不同。",
-      "tags": ["reading", "kanji", "n3-vocab"]
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
     },
     {
       "id": "n3-2021-07-v-09",
@@ -159,14 +335,35 @@
       "questionText": "昨日、友達が家にとまりにきた。",
       "questionTranslation": "昨天，朋友來我家（過夜/住宿）。",
       "options": [
-        { "id": "n3-2021-07-v-09-a", "text": "停まり", "isCorrect": false },
-        { "id": "n3-2021-07-v-09-b", "text": "留まり", "isCorrect": false },
-        { "id": "n3-2021-07-v-09-c", "text": "泊まり", "isCorrect": true },
-        { "id": "n3-2021-07-v-09-d", "text": "止まり", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-09-a",
+          "text": "停まり",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-09-b",
+          "text": "留まり",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-09-c",
+          "text": "泊まり",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-09-d",
+          "text": "止まり",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-09-c",
       "explanation": "泊まる（とまる）＝住宿、過夜。【四字辨析】停まる＝停止（車輛）；留まる＝停留、留下；止まる＝停止（一般）；泊まる＝過夜住宿。「在朋友家住」用「泊まる」。",
-      "tags": ["kanji-writing", "n3-vocab"]
+      "tags": [
+        "kanji-writing",
+        "n3-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
     },
     {
       "id": "n3-2021-07-v-10",
@@ -177,14 +374,35 @@
       "questionText": "書類にはこの学校のきそくが書かれていた。",
       "questionTranslation": "文件上寫著這所學校的（　　）。",
       "options": [
-        { "id": "n3-2021-07-v-10-a", "text": "現販", "isCorrect": false },
-        { "id": "n3-2021-07-v-10-b", "text": "規則", "isCorrect": true },
-        { "id": "n3-2021-07-v-10-c", "text": "規販", "isCorrect": false },
-        { "id": "n3-2021-07-v-10-d", "text": "現則", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-10-a",
+          "text": "現販",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-10-b",
+          "text": "規則",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-10-c",
+          "text": "規販",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-10-d",
+          "text": "現則",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-10-b",
       "explanation": "規則（きそく）＝規則、規定。其他選項均為不存在的詞語組合。「規」＝規範，「則」＝法則。",
-      "tags": ["kanji-writing", "n3-vocab"]
+      "tags": [
+        "kanji-writing",
+        "n3-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
     },
     {
       "id": "n3-2021-07-v-11",
@@ -195,14 +413,35 @@
       "questionText": "ここはあたたかいですね。",
       "questionTranslation": "這裡很（　　）呢。",
       "options": [
-        { "id": "n3-2021-07-v-11-a", "text": "明るい", "isCorrect": false },
-        { "id": "n3-2021-07-v-11-b", "text": "著かい", "isCorrect": false },
-        { "id": "n3-2021-07-v-11-c", "text": "暖かい", "isCorrect": true },
-        { "id": "n3-2021-07-v-11-d", "text": "熱かい", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-11-a",
+          "text": "明るい",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-11-b",
+          "text": "著かい",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-11-c",
+          "text": "暖かい",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-11-d",
+          "text": "熱かい",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-11-c",
       "explanation": "暖かい（あたたかい）＝（氣溫）暖和。明るい＝明亮（あかるい）；熱い（あつい）＝燙、熱。另注意：溫かい也讀あたたかい，但指食物溫熱；暖かい指空氣或環境暖和。",
-      "tags": ["kanji-writing", "n3-vocab"]
+      "tags": [
+        "kanji-writing",
+        "n3-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
     },
     {
       "id": "n3-2021-07-v-12",
@@ -213,14 +452,35 @@
       "questionText": "やっきょくがなかなか見つかりません。",
       "questionTranslation": "（　　）怎麼找都找不到。",
       "options": [
-        { "id": "n3-2021-07-v-12-a", "text": "薬局", "isCorrect": true },
-        { "id": "n3-2021-07-v-12-b", "text": "薬曲", "isCorrect": false },
-        { "id": "n3-2021-07-v-12-c", "text": "楽局", "isCorrect": false },
-        { "id": "n3-2021-07-v-12-d", "text": "楽曲", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-12-a",
+          "text": "薬局",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-12-b",
+          "text": "薬曲",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-12-c",
+          "text": "楽局",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-12-d",
+          "text": "楽曲",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-12-a",
       "explanation": "薬局（やっきょく）＝藥局。注意「薬」音讀為「やく→やっ」（促音便）；「楽曲（がっきょく）」是「樂曲」讀法不同。薬＝藥，楽＝快樂/音樂，不要混用。",
-      "tags": ["kanji-writing", "n3-vocab"]
+      "tags": [
+        "kanji-writing",
+        "n3-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
     },
     {
       "id": "n3-2021-07-v-13",
@@ -231,14 +491,35 @@
       "questionText": "お皿はかさねてその棚にしまってください。",
       "questionTranslation": "請把盤子（　　）放到那個架子上。",
       "options": [
-        { "id": "n3-2021-07-v-13-a", "text": "整ねて", "isCorrect": false },
-        { "id": "n3-2021-07-v-13-b", "text": "列ねて", "isCorrect": false },
-        { "id": "n3-2021-07-v-13-c", "text": "階ねて", "isCorrect": false },
-        { "id": "n3-2021-07-v-13-d", "text": "重ねて", "isCorrect": true }
+        {
+          "id": "n3-2021-07-v-13-a",
+          "text": "整ねて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-13-b",
+          "text": "列ねて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-13-c",
+          "text": "階ねて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-13-d",
+          "text": "重ねて",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-v-13-d",
       "explanation": "重ねる（かさねる）＝疊放、層疊。整ねる、列ねる、階ねる均不是正確詞語。「重」有堆疊之意，盤子「かさねる」就是一個個疊起來放。",
-      "tags": ["kanji-writing", "n3-vocab"]
+      "tags": [
+        "kanji-writing",
+        "n3-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
     },
     {
       "id": "n3-2021-07-v-14",
@@ -249,14 +530,35 @@
       "questionText": "机の上にでんごんのメモがあった。",
       "questionTranslation": "桌上有一張（　　）便條。",
       "options": [
-        { "id": "n3-2021-07-v-14-a", "text": "伝記", "isCorrect": false },
-        { "id": "n3-2021-07-v-14-b", "text": "伝言", "isCorrect": true },
-        { "id": "n3-2021-07-v-14-c", "text": "転記", "isCorrect": false },
-        { "id": "n3-2021-07-v-14-d", "text": "転言", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-14-a",
+          "text": "伝記",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-14-b",
+          "text": "伝言",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-14-c",
+          "text": "転記",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-14-d",
+          "text": "転言",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-14-b",
       "explanation": "伝言（でんごん）＝留言、口信。伝記（でんき）＝傳記（讀法不同）；転記（てんき）＝抄寫、轉記（讀法不同）；転言不存在。",
-      "tags": ["kanji-writing", "n3-vocab"]
+      "tags": [
+        "kanji-writing",
+        "n3-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
     },
     {
       "id": "n3-2021-07-v-15",
@@ -267,14 +569,35 @@
       "questionText": "マラソン大会は台風で（　）されることになりました。",
       "questionTranslation": "馬拉松大會因颱風將被（　　）。",
       "options": [
-        { "id": "n3-2021-07-v-15-a", "text": "遅刻", "isCorrect": false },
-        { "id": "n3-2021-07-v-15-b", "text": "連休", "isCorrect": false },
-        { "id": "n3-2021-07-v-15-c", "text": "延期", "isCorrect": true },
-        { "id": "n3-2021-07-v-15-d", "text": "早退", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-15-a",
+          "text": "遅刻",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-15-b",
+          "text": "連休",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-15-c",
+          "text": "延期",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-15-d",
+          "text": "早退",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-15-c",
       "explanation": "延期（えんき）＝延後、推遲（活動日期）。遅刻（ちこく）＝遲到（個人行為）；連休（れんきゅう）＝連假；早退（そうたい）＝提早退場（個人行為）。活動因颱風推遲日期用「延期」。",
-      "tags": ["context-fill", "n3-vocab"]
+      "tags": [
+        "context-fill",
+        "n3-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文脈規定"
     },
     {
       "id": "n3-2021-07-v-16",
@@ -285,14 +608,35 @@
       "questionText": "毎日水をやらないと、花が（　）しまう。",
       "questionTranslation": "如果不每天澆水，花就會（　　）。",
       "options": [
-        { "id": "n3-2021-07-v-16-a", "text": "とけて", "isCorrect": false },
-        { "id": "n3-2021-07-v-16-b", "text": "さめて", "isCorrect": false },
-        { "id": "n3-2021-07-v-16-c", "text": "やせて", "isCorrect": false },
-        { "id": "n3-2021-07-v-16-d", "text": "かれて", "isCorrect": true }
+        {
+          "id": "n3-2021-07-v-16-a",
+          "text": "とけて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-16-b",
+          "text": "さめて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-16-c",
+          "text": "やせて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-16-d",
+          "text": "かれて",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-v-16-d",
       "explanation": "枯れる（かれる）＝植物枯萎。とける（溶ける）＝融化（用於冰雪等）；さめる（冷める）＝冷卻、覺醒；やせる（痩せる）＝變瘦（用於生物體重）。",
-      "tags": ["context-fill", "n3-vocab"]
+      "tags": [
+        "context-fill",
+        "n3-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文脈規定"
     },
     {
       "id": "n3-2021-07-v-17",
@@ -303,14 +647,35 @@
       "questionText": "この犬は、子犬のころから（　）されているので、人が大勢いてもおとなしい。",
       "questionTranslation": "這隻狗從小就受過（　　），所以即使周圍有很多人也很乖巧。",
       "options": [
-        { "id": "n3-2021-07-v-17-a", "text": "工夫", "isCorrect": false },
-        { "id": "n3-2021-07-v-17-b", "text": "用意", "isCorrect": false },
-        { "id": "n3-2021-07-v-17-c", "text": "訓練", "isCorrect": true },
-        { "id": "n3-2021-07-v-17-d", "text": "計画", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-17-a",
+          "text": "工夫",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-17-b",
+          "text": "用意",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-17-c",
+          "text": "訓練",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-17-d",
+          "text": "計画",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-17-c",
       "explanation": "訓練（くんれん）＝訓練。工夫（くふう）＝想辦法、下工夫（不用於動物訓練）；用意（ようい）＝準備；計画（けいかく）＝計畫。從小訓練→因此乖巧，用「訓練」最合邏輯。",
-      "tags": ["context-fill", "n3-vocab"]
+      "tags": [
+        "context-fill",
+        "n3-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文脈規定"
     },
     {
       "id": "n3-2021-07-v-18",
@@ -321,14 +686,36 @@
       "questionText": "明日は7時に出かけるので、目覚まし時計を6時に（　）した。",
       "questionTranslation": "因為明天要7點出門，所以把鬧鐘（　　）在6點。",
       "options": [
-        { "id": "n3-2021-07-v-18-a", "text": "スタート", "isCorrect": false },
-        { "id": "n3-2021-07-v-18-b", "text": "セット", "isCorrect": true },
-        { "id": "n3-2021-07-v-18-c", "text": "ストップ", "isCorrect": false },
-        { "id": "n3-2021-07-v-18-d", "text": "マーク", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-18-a",
+          "text": "スタート",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-18-b",
+          "text": "セット",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-18-c",
+          "text": "ストップ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-18-d",
+          "text": "マーク",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-18-b",
       "explanation": "セットする＝設定、設置（鬧鐘設定時間）。スタートする＝開始；ストップする＝停止；マークする＝標記。「目覚まし時計をセットする」是固定說法。",
-      "tags": ["context-fill", "loanword", "n3-vocab"]
+      "tags": [
+        "context-fill",
+        "loanword",
+        "n3-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文脈規定"
     },
     {
       "id": "n3-2021-07-v-19",
@@ -339,14 +726,36 @@
       "questionText": "忙しいのに、こんなに待たされて時間が（　）。",
       "questionTranslation": "明明這麼忙，卻被這樣等著，時間真是（　　）。",
       "options": [
-        { "id": "n3-2021-07-v-19-a", "text": "だらしない", "isCorrect": false },
-        { "id": "n3-2021-07-v-19-b", "text": "しょうがない", "isCorrect": false },
-        { "id": "n3-2021-07-v-19-c", "text": "なさけない", "isCorrect": false },
-        { "id": "n3-2021-07-v-19-d", "text": "もったいない", "isCorrect": true }
+        {
+          "id": "n3-2021-07-v-19-a",
+          "text": "だらしない",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-19-b",
+          "text": "しょうがない",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-19-c",
+          "text": "なさけない",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-19-d",
+          "text": "もったいない",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-v-19-d",
       "explanation": "もったいない＝可惜、浪費（寶貴的東西被浪費）。「時間がもったいない」＝浪費時間，可惜。だらしない＝邋遢；しょうがない＝沒辦法；なさけない＝可悲、沒出息。",
-      "tags": ["context-fill", "adjective", "n3-vocab"]
+      "tags": [
+        "context-fill",
+        "adjective",
+        "n3-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文脈規定"
     },
     {
       "id": "n3-2021-07-v-20",
@@ -357,14 +766,35 @@
       "questionText": "友人の家で食べたケーキがおいしかったので、（　）と作り方を教えてもらった。",
       "questionTranslation": "因為在朋友家吃的蛋糕很好吃，所以請他教我（　　）和作法。",
       "options": [
-        { "id": "n3-2021-07-v-20-a", "text": "資源", "isCorrect": false },
-        { "id": "n3-2021-07-v-20-b", "text": "材料", "isCorrect": true },
-        { "id": "n3-2021-07-v-20-c", "text": "部品", "isCorrect": false },
-        { "id": "n3-2021-07-v-20-d", "text": "原因", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-20-a",
+          "text": "資源",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-20-b",
+          "text": "材料",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-20-c",
+          "text": "部品",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-20-d",
+          "text": "原因",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-20-b",
       "explanation": "材料（ざいりょう）＝食材、原料（做菜用）。資源（しげん）＝資源（自然資源等）；部品（ぶひん）＝零件（機器用）；原因（げんいん）＝原因（語意完全不符）。",
-      "tags": ["context-fill", "n3-vocab"]
+      "tags": [
+        "context-fill",
+        "n3-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文脈規定"
     },
     {
       "id": "n3-2021-07-v-21",
@@ -375,14 +805,36 @@
       "questionText": "このソファーの愛用（　）にアンケートをした。",
       "questionTranslation": "向這款沙發的愛用（　　）進行了問卷調查。",
       "options": [
-        { "id": "n3-2021-07-v-21-a", "text": "生", "isCorrect": false },
-        { "id": "n3-2021-07-v-21-b", "text": "人", "isCorrect": false },
-        { "id": "n3-2021-07-v-21-c", "text": "者", "isCorrect": true },
-        { "id": "n3-2021-07-v-21-d", "text": "員", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-21-a",
+          "text": "生",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-21-b",
+          "text": "人",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-21-c",
+          "text": "者",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-21-d",
+          "text": "員",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-21-c",
       "explanation": "愛用者（あいようしゃ）＝愛用者、習慣使用者。〜者（しゃ）是常見後綴：消費者・読者・愛用者・関係者。「愛用人」「愛用員」均不存在。",
-      "tags": ["context-fill", "suffix", "n3-vocab"]
+      "tags": [
+        "context-fill",
+        "suffix",
+        "n3-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文脈規定"
     },
     {
       "id": "n3-2021-07-v-22",
@@ -393,14 +845,35 @@
       "questionText": "工事のせいで道路が（　）していて、車がなかなか前に進まない。",
       "questionTranslation": "因為施工，道路（　　），車子怎麼也前進不了。",
       "options": [
-        { "id": "n3-2021-07-v-22-a", "text": "渋滞", "isCorrect": true },
-        { "id": "n3-2021-07-v-22-b", "text": "故障", "isCorrect": false },
-        { "id": "n3-2021-07-v-22-c", "text": "増加", "isCorrect": false },
-        { "id": "n3-2021-07-v-22-d", "text": "集合", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-22-a",
+          "text": "渋滞",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-22-b",
+          "text": "故障",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-22-c",
+          "text": "増加",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-22-d",
+          "text": "集合",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-22-a",
       "explanation": "渋滞（じゅうたい）＝塞車、阻塞。故障（こしょう）＝故障（機器）；増加（ぞうか）＝增加；集合（しゅうごう）＝集合。「道路が渋滞する」是固定說法。",
-      "tags": ["context-fill", "n3-vocab"]
+      "tags": [
+        "context-fill",
+        "n3-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文脈規定"
     },
     {
       "id": "n3-2021-07-v-23",
@@ -411,14 +884,35 @@
       "questionText": "くすりの（　）が出て、少し具合がよくなりました。",
       "questionTranslation": "藥的（　　）出來了，身體稍微好一點了。",
       "options": [
-        { "id": "n3-2021-07-v-23-a", "text": "成績", "isCorrect": false },
-        { "id": "n3-2021-07-v-23-b", "text": "効果", "isCorrect": true },
-        { "id": "n3-2021-07-v-23-c", "text": "応援", "isCorrect": false },
-        { "id": "n3-2021-07-v-23-d", "text": "価値", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-23-a",
+          "text": "成績",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-23-b",
+          "text": "効果",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-23-c",
+          "text": "応援",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-23-d",
+          "text": "価値",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-23-b",
       "explanation": "効果（こうか）＝效果。「薬の効果が出る」＝藥效出現了，是固定說法。成績（せいせき）＝成績（考試）；応援（おうえん）＝加油；価値（かち）＝價值。",
-      "tags": ["context-fill", "n3-vocab"]
+      "tags": [
+        "context-fill",
+        "n3-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文脈規定"
     },
     {
       "id": "n3-2021-07-v-24",
@@ -429,14 +923,36 @@
       "questionText": "彼は日本にまだ一年しか住んでいないのに、日本語が（　）だ。",
       "questionTranslation": "他在日本才住了一年，日語卻說得（　　）。",
       "options": [
-        { "id": "n3-2021-07-v-24-a", "text": "さらさら", "isCorrect": false },
-        { "id": "n3-2021-07-v-24-b", "text": "ぽらぽら", "isCorrect": false },
-        { "id": "n3-2021-07-v-24-c", "text": "ふらふら", "isCorrect": false },
-        { "id": "n3-2021-07-v-24-d", "text": "べらべら", "isCorrect": true }
+        {
+          "id": "n3-2021-07-v-24-a",
+          "text": "さらさら",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-24-b",
+          "text": "ぽらぽら",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-24-c",
+          "text": "ふらふら",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-24-d",
+          "text": "べらべら",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-v-24-d",
       "explanation": "べらべら＝（說話）流利順暢、口若懸河。「日本語がべらべら」＝日語說得很流利。さらさら＝清爽流暢（觸感）；ふらふら＝搖搖晃晃、頭昏；ぽらぽら不存在。",
-      "tags": ["context-fill", "onomatopoeia", "n3-vocab"]
+      "tags": [
+        "context-fill",
+        "onomatopoeia",
+        "n3-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文脈規定"
     },
     {
       "id": "n3-2021-07-v-25",
@@ -447,14 +963,36 @@
       "questionText": "この学校で一生懸命に勉強して、知識や技術を（　）思っている。",
       "questionTranslation": "我想在這所學校努力學習，（　　）知識和技術。",
       "options": [
-        { "id": "n3-2021-07-v-25-a", "text": "身につけたい", "isCorrect": true },
-        { "id": "n3-2021-07-v-25-b", "text": "気に入りたい", "isCorrect": false },
-        { "id": "n3-2021-07-v-25-c", "text": "押し込みたい", "isCorrect": false },
-        { "id": "n3-2021-07-v-25-d", "text": "取りあげたい", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-25-a",
+          "text": "身につけたい",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-25-b",
+          "text": "気に入りたい",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-25-c",
+          "text": "押し込みたい",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-25-d",
+          "text": "取りあげたい",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-25-a",
       "explanation": "身につける＝掌握、習得（知識・技術）。気に入る＝喜歡上；押し込む＝塞進去；取りあげる＝拿走・提及。「知識や技術を身につける」是固定說法。",
-      "tags": ["context-fill", "compound-verb", "n3-vocab"]
+      "tags": [
+        "context-fill",
+        "compound-verb",
+        "n3-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文脈規定"
     },
     {
       "id": "n3-2021-07-v-26",
@@ -465,14 +1003,35 @@
       "questionText": "今日の会議ではさまざまな意見が出た。",
       "questionTranslation": "今天的會議上提出了（　　）意見。",
       "options": [
-        { "id": "n3-2021-07-v-26-a", "text": "とくべつな", "isCorrect": false },
-        { "id": "n3-2021-07-v-26-b", "text": "すばらしい", "isCorrect": false },
-        { "id": "n3-2021-07-v-26-c", "text": "いろいろな", "isCorrect": true },
-        { "id": "n3-2021-07-v-26-d", "text": "あたらしい", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-26-a",
+          "text": "とくべつな",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-26-b",
+          "text": "すばらしい",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-26-c",
+          "text": "いろいろな",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-26-d",
+          "text": "あたらしい",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-26-c",
       "explanation": "さまざま（様々）＝いろいろ，都表示「各種各樣」。とくべつ＝特別；すばらしい＝了不起；あたらしい＝新的。",
-      "tags": ["synonym", "n3-vocab"]
+      "tags": [
+        "synonym",
+        "n3-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "言い換え"
     },
     {
       "id": "n3-2021-07-v-27",
@@ -483,14 +1042,35 @@
       "questionText": "できるだけ早めに報告してください。",
       "questionTranslation": "請盡量早點（　　）。",
       "options": [
-        { "id": "n3-2021-07-v-27-a", "text": "頼んで", "isCorrect": false },
-        { "id": "n3-2021-07-v-27-b", "text": "知らせて", "isCorrect": true },
-        { "id": "n3-2021-07-v-27-c", "text": "尋ねて", "isCorrect": false },
-        { "id": "n3-2021-07-v-27-d", "text": "探して", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-27-a",
+          "text": "頼んで",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-27-b",
+          "text": "知らせて",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-27-c",
+          "text": "尋ねて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-27-d",
+          "text": "探して",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-27-b",
       "explanation": "報告する≒知らせる（告知、通知）。頼む＝拜託；尋ねる＝詢問；探す＝尋找。報告是「把資訊傳達給對方」，最接近知らせる。",
-      "tags": ["synonym", "n3-vocab"]
+      "tags": [
+        "synonym",
+        "n3-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "言い換え"
     },
     {
       "id": "n3-2021-07-v-28",
@@ -501,14 +1081,36 @@
       "questionText": "山田さんは絶対に来ると思います。",
       "questionTranslation": "我認為山田先生（　　）會來。",
       "options": [
-        { "id": "n3-2021-07-v-28-a", "text": "あとで", "isCorrect": false },
-        { "id": "n3-2021-07-v-28-b", "text": "すぐに", "isCorrect": false },
-        { "id": "n3-2021-07-v-28-c", "text": "たぶん", "isCorrect": false },
-        { "id": "n3-2021-07-v-28-d", "text": "かならず", "isCorrect": true }
+        {
+          "id": "n3-2021-07-v-28-a",
+          "text": "あとで",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-28-b",
+          "text": "すぐに",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-28-c",
+          "text": "たぶん",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-28-d",
+          "text": "かならず",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-v-28-d",
       "explanation": "絶対（ぜったい）≒必ず（かならず），都表示「一定、必定」。あとで＝之後；すぐに＝馬上；たぶん＝大概（表示不確定，與「絶対」相反）。",
-      "tags": ["synonym", "adverb", "n3-vocab"]
+      "tags": [
+        "synonym",
+        "adverb",
+        "n3-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "言い換え"
     },
     {
       "id": "n3-2021-07-v-29",
@@ -519,14 +1121,35 @@
       "questionText": "この話はおしまいです。",
       "questionTranslation": "這個故事（　　）了。",
       "options": [
-        { "id": "n3-2021-07-v-29-a", "text": "おわり", "isCorrect": true },
-        { "id": "n3-2021-07-v-29-b", "text": "すごい", "isCorrect": false },
-        { "id": "n3-2021-07-v-29-c", "text": "はじめて", "isCorrect": false },
-        { "id": "n3-2021-07-v-29-d", "text": "おもしろい", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-29-a",
+          "text": "おわり",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-29-b",
+          "text": "すごい",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-29-c",
+          "text": "はじめて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-29-d",
+          "text": "おもしろい",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-29-a",
       "explanation": "おしまい≒おわり（終わり），都表示「結束」。すごい＝厲害；はじめて＝第一次；おもしろい＝有趣。おしまい是較口語的說法。",
-      "tags": ["synonym", "n3-vocab"]
+      "tags": [
+        "synonym",
+        "n3-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "言い換え"
     },
     {
       "id": "n3-2021-07-v-30",
@@ -537,14 +1160,36 @@
       "questionText": "先週、学校をサボってしまった。",
       "questionTranslation": "上週我蹺課了。（サボる＝蹺課/偷懶，最接近哪個句子？）",
       "options": [
-        { "id": "n3-2021-07-v-30-a", "text": "病気になって学校をやめてしまった", "isCorrect": false },
-        { "id": "n3-2021-07-v-30-b", "text": "病気になって学校を休んでしまった", "isCorrect": false },
-        { "id": "n3-2021-07-v-30-c", "text": "あそびたくて学校をやめてしまった", "isCorrect": false },
-        { "id": "n3-2021-07-v-30-d", "text": "あそびたくて学校を休んでしまった", "isCorrect": true }
+        {
+          "id": "n3-2021-07-v-30-a",
+          "text": "病気になって学校をやめてしまった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-30-b",
+          "text": "病気になって学校を休んでしまった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-30-c",
+          "text": "あそびたくて学校をやめてしまった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-30-d",
+          "text": "あそびたくて学校を休んでしまった",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-v-30-d",
       "explanation": "サボる（法語 saboter）＝故意缺席、翹課。關鍵：①原因是「想玩」（不是生病）→排除1、2；②動作是「休む缺課」（不是「やめる退學」）→排除3。正解：想玩而翹課。",
-      "tags": ["synonym", "loanword", "n3-vocab"]
+      "tags": [
+        "synonym",
+        "loanword",
+        "n3-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "言い換え"
     },
     {
       "id": "n3-2021-07-v-31",
@@ -555,14 +1200,36 @@
       "questionText": "オーバー（over）の正しい使い方はどれですか。",
       "questionTranslation": "「オーバー」哪個用法正確？",
       "options": [
-        { "id": "n3-2021-07-v-31-a", "text": "飛行機の出発時間がオーバーになった", "isCorrect": false },
-        { "id": "n3-2021-07-v-31-b", "text": "安いのがなくて、1万円もオーバーしてしまった", "isCorrect": true },
-        { "id": "n3-2021-07-v-31-c", "text": "考えすぎて、頭がオーバーになった", "isCorrect": false },
-        { "id": "n3-2021-07-v-31-d", "text": "料理がオーバーして、もう食べられない", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-31-a",
+          "text": "飛行機の出発時間がオーバーになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-31-b",
+          "text": "安いのがなくて、1万円もオーバーしてしまった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-31-c",
+          "text": "考えすぎて、頭がオーバーになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-31-d",
+          "text": "料理がオーバーして、もう食べられない",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-31-b",
       "explanation": "オーバーする＝超出（預算、數量等）。2「1万円もオーバーした」＝超出預算一萬日圓，正確。1飛機延誤應說「遅れた」；3頭腦過載應說「パンクした」；4料理吃不下應說「満腹だ」。",
-      "tags": ["word-usage", "loanword", "n3-vocab"]
+      "tags": [
+        "word-usage",
+        "loanword",
+        "n3-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "用法"
     },
     {
       "id": "n3-2021-07-v-32",
@@ -573,14 +1240,35 @@
       "questionText": "欠点（けってん）の正しい使い方はどれですか。",
       "questionTranslation": "「欠點」哪個用法正確？",
       "options": [
-        { "id": "n3-2021-07-v-32-a", "text": "ここは景色のいい場所だが、駅から遠いという欠点がある", "isCorrect": true },
-        { "id": "n3-2021-07-v-32-b", "text": "栄養に欠点が出ないように、食事のメニューを考えている", "isCorrect": false },
-        { "id": "n3-2021-07-v-32-c", "text": "カードレールにぶつけて、車に欠点がついてしまった", "isCorrect": false },
-        { "id": "n3-2021-07-v-32-d", "text": "メールを送る前に、メールアドレスに欠点がないか確認した", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-32-a",
+          "text": "ここは景色のいい場所だが、駅から遠いという欠点がある",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-32-b",
+          "text": "栄養に欠点が出ないように、食事のメニューを考えている",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-32-c",
+          "text": "カードレールにぶつけて、車に欠点がついてしまった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-32-d",
+          "text": "メールを送る前に、メールアドレスに欠点がないか確認した",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-32-a",
       "explanation": "欠点（けってん）＝缺點、短處。1「駅から遠いという欠点」＝「站得遠」這個缺點，正確。2應說「栄養不足（ふそく）」；3應說「傷（きず）」刮痕；4應說「ミス・間違い」錯誤。",
-      "tags": ["word-usage", "n3-vocab"]
+      "tags": [
+        "word-usage",
+        "n3-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "用法"
     },
     {
       "id": "n3-2021-07-v-33",
@@ -591,14 +1279,36 @@
       "questionText": "親しい（したしい）の正しい使い方はどれですか。",
       "questionTranslation": "「親近/親密」哪個用法正確？",
       "options": [
-        { "id": "n3-2021-07-v-33-a", "text": "私は学生のころ、数学より理科の方が親しかった", "isCorrect": false },
-        { "id": "n3-2021-07-v-33-b", "text": "彼女はとても親しい道を教えてくれた", "isCorrect": false },
-        { "id": "n3-2021-07-v-33-c", "text": "久しぶりに友達と会って、親しかった", "isCorrect": false },
-        { "id": "n3-2021-07-v-33-d", "text": "引っ越してきたばかりで、近くにまだ親しい人はいない", "isCorrect": true }
+        {
+          "id": "n3-2021-07-v-33-a",
+          "text": "私は学生のころ、数学より理科の方が親しかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-33-b",
+          "text": "彼女はとても親しい道を教えてくれた",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-33-c",
+          "text": "久しぶりに友達と会って、親しかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-33-d",
+          "text": "引っ越してきたばかりで、近くにまだ親しい人はいない",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2021-07-v-33-d",
       "explanation": "親しい（したしい）＝親密的、熟識的（關係上的親近）。4「親しい人がいない」＝沒有熟識的人，正確。1應說「得意（とくい）だった」擅長；2應說「優しい（やさしい）」親切；3用法不自然（久別重逢不用「親しかった」描述）。",
-      "tags": ["word-usage", "adjective", "n3-vocab"]
+      "tags": [
+        "word-usage",
+        "adjective",
+        "n3-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "用法"
     },
     {
       "id": "n3-2021-07-v-34",
@@ -609,14 +1319,36 @@
       "questionText": "詰める（つめる）の正しい使い方はどれですか。",
       "questionTranslation": "「詰める/塞進」哪個用法正確？",
       "options": [
-        { "id": "n3-2021-07-v-34-a", "text": "明日帰国するので、かばんに洋服やお土産を詰めた", "isCorrect": true },
-        { "id": "n3-2021-07-v-34-b", "text": "テーブルに食器を2枚詰めて、朝食の準備をした", "isCorrect": false },
-        { "id": "n3-2021-07-v-34-c", "text": "忘れないように、大切なことをノートに詰めた", "isCorrect": false },
-        { "id": "n3-2021-07-v-34-d", "text": "ジャケットのポケットに手を詰めて、切符を出した", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-34-a",
+          "text": "明日帰国するので、かばんに洋服やお土産を詰めた",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-34-b",
+          "text": "テーブルに食器を2枚詰めて、朝食の準備をした",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-34-c",
+          "text": "忘れないように、大切なことをノートに詰めた",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-34-d",
+          "text": "ジャケットのポケットに手を詰めて、切符を出した",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-34-a",
       "explanation": "詰める（つめる）＝把東西塞入/裝入容器。1「かばんに洋服を詰めた」＝把衣服塞進包包，正確。2應說「並べて（ならべて）」擺放；3應說「書いた（かいた）」寫下；4應說「入れて（いれて）」放入。",
-      "tags": ["word-usage", "verb", "n3-vocab"]
+      "tags": [
+        "word-usage",
+        "verb",
+        "n3-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "用法"
     },
     {
       "id": "n3-2021-07-v-35",
@@ -627,14 +1359,35 @@
       "questionText": "支給（しきゅう）の正しい使い方はどれですか。",
       "questionTranslation": "「支給（機構發給）」哪個用法正確？",
       "options": [
-        { "id": "n3-2021-07-v-35-a", "text": "母の誕生日に、何かプレゼントを支給しよう思う", "isCorrect": false },
-        { "id": "n3-2021-07-v-35-b", "text": "これから先生にレポートを支給しに行くつもりだ", "isCorrect": false },
-        { "id": "n3-2021-07-v-35-c", "text": "この会社は、家から会社までの交通費を支給してくれる", "isCorrect": true },
-        { "id": "n3-2021-07-v-35-d", "text": "買い物のとき、お釣りを支給してもらうのを忘れた", "isCorrect": false }
+        {
+          "id": "n3-2021-07-v-35-a",
+          "text": "母の誕生日に、何かプレゼントを支給しよう思う",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-35-b",
+          "text": "これから先生にレポートを支給しに行くつもりだ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2021-07-v-35-c",
+          "text": "この会社は、家から会社までの交通費を支給してくれる",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2021-07-v-35-d",
+          "text": "買い物のとき、お釣りを支給してもらうのを忘れた",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2021-07-v-35-c",
       "explanation": "支給（しきゅう）＝（公司、機關等）正式發給（薪資、補助、費用）。3「交通費を支給してくれる」＝公司提供交通費，正確。1送禮應說「贈る（おくる）」；2提交作業應說「提出（ていしゅつ）する」；4找零應說「もらう・受け取る」。",
-      "tags": ["word-usage", "n3-vocab"]
+      "tags": [
+        "word-usage",
+        "n3-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "用法"
     }
   ]
 }
