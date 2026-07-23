@@ -66,13 +66,14 @@ export interface VocabFilterCategory {
 
 export const VOCAB_FILTER_CATEGORIES: VocabFilterCategory[] = [
   { id: 'verb', label: '動詞', pos: ['verb'] },
+  { id: 'compound-verb', label: '複合動詞', pos: ['compound-verb'] },
   { id: 'adjective', label: '形容詞', pos: ['adjective', 'noun-adj'] },
   { id: 'adverb', label: '副詞・擬態語', pos: ['adverb', 'adverb-onomatopoeia'] },
   { id: 'noun', label: '名詞', pos: ['noun', 'noun-katakana'] },
 ];
 
-/** 單詞列表的常考標記篩選：全部 or 只看常考 */
-export type VocabTagFilter = 'all' | 'frequent';
+/** 單詞列表的常考標記篩選：全部 or 只看常考 or 個人複習整理 */
+export type VocabTagFilter = 'all' | 'frequent' | 'personal-review';
 
 /** 原始 pos 值 → 顯示用中文標籤 */
 export const POS_DISPLAY_LABEL: Record<string, string> = {
@@ -84,4 +85,5 @@ export const POS_DISPLAY_LABEL: Record<string, string> = {
   noun: '名詞',
   'noun-katakana': '名詞',
   expression: '慣用語',
+  'compound-verb': '複合動詞',
 };

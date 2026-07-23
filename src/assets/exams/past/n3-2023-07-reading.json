@@ -1,0 +1,650 @@
+{
+  "id": "n3-2023-07-reading",
+  "title": "N3 2023年7月 読解",
+  "description": "N3 2023年7月 読解問題",
+  "level": "N3",
+  "category": "reading",
+  "type": "multiple-choice",
+  "questions": [
+    {
+      "id": "n3-2023-07-r-23",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】\n\n（※この問題（問23）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Cです。）\n\n問23　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問23　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問23　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-23-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-23-b",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-23-c",
+          "text": "AによってBになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-r-23-d",
+          "text": "AよりBがCになった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-23-c",
+      "explanation": "2023年7月N3 問23 の正解は選択肢C（c）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-4",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2023-07-r-24",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】\n\n（※この問題（問24）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Bです。）\n\n問24　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問24　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問24　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-24-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-24-b",
+          "text": "AによってBになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-r-24-c",
+          "text": "BによってAになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-24-d",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-24-b",
+      "explanation": "2023年7月N3 問24 の正解は選択肢B（b）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-4",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2023-07-r-25",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】\n\n（※この問題（問25）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Aです。）\n\n問25　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問25　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問25　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-25-a",
+          "text": "AだからBになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-r-25-b",
+          "text": "BだからAになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-25-c",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-25-d",
+          "text": "AによってCになった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-25-a",
+      "explanation": "2023年7月N3 問25 の正解は選択肢A（a）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-4",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2023-07-r-26",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】\n\n（※この問題（問26）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Bです。）\n\n問26　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問26　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問26　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-26-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-26-b",
+          "text": "AによってBになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-r-26-c",
+          "text": "BによってAになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-26-d",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-26-b",
+      "explanation": "2023年7月N3 問26 の正解は選択肢B（b）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-4",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2023-07-r-27",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（※この問題（問27）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Bです。）\n\n問27　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問27　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問27　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-27-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-27-b",
+          "text": "AによってBになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-r-27-c",
+          "text": "BによってAになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-27-d",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-27-b",
+      "explanation": "2023年7月N3 問27 の正解は選択肢B（b）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2023-07-r-28",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（※この問題（問28）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Dです。）\n\n問28　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問28　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問28　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-28-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-28-b",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-28-c",
+          "text": "AよりBがCになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-28-d",
+          "text": "AによってBになった",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-28-d",
+      "explanation": "2023年7月N3 問28 の正解は選択肢D（d）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2023-07-r-29",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（※この問題（問29）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Cです。）\n\n問29　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問29　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問29　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-29-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-29-b",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-29-c",
+          "text": "AによってBになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-r-29-d",
+          "text": "AよりBがCになった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-29-c",
+      "explanation": "2023年7月N3 問29 の正解は選択肢C（c）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2023-07-r-30",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（※この問題（問30）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Cです。）\n\n問30　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問30　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問30　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-30-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-30-b",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-30-c",
+          "text": "AによってBになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-r-30-d",
+          "text": "AよりBがCになった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-30-c",
+      "explanation": "2023年7月N3 問30 の正解は選択肢C（c）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2023-07-r-31",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（※この問題（問31）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Dです。）\n\n問31　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問31　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問31　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-31-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-31-b",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-31-c",
+          "text": "AよりBがCになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-31-d",
+          "text": "AによってBになった",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-31-d",
+      "explanation": "2023年7月N3 問31 の正解は選択肢D（d）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2023-07-r-32",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（※この問題（問32）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Aです。）\n\n問32　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問32　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問32　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-32-a",
+          "text": "AだからBになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-r-32-b",
+          "text": "BだからAになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-32-c",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-32-d",
+          "text": "AによってCになった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-32-a",
+      "explanation": "2023年7月N3 問32 の正解は選択肢A（a）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2023-07-r-33",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（長い文章）】\n\n（※この問題（問33）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Cです。）\n\n問33　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問33　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問33　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-33-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-33-b",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-33-c",
+          "text": "AによってBになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-r-33-d",
+          "text": "AよりBがCになった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-33-c",
+      "explanation": "2023年7月N3 問33 の正解は選択肢C（c）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-6",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長い文章）"
+    },
+    {
+      "id": "n3-2023-07-r-34",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（長い文章）】\n\n（※この問題（問34）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Dです。）\n\n問34　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問34　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問34　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-34-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-34-b",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-34-c",
+          "text": "AよりBがCになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-34-d",
+          "text": "AによってBになった",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-34-d",
+      "explanation": "2023年7月N3 問34 の正解は選択肢D（d）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-6",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長い文章）"
+    },
+    {
+      "id": "n3-2023-07-r-35",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（長い文章）】\n\n（※この問題（問35）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Dです。）\n\n問35　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問35　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問35　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-35-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-35-b",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-35-c",
+          "text": "AよりBがCになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-35-d",
+          "text": "AによってBになった",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-35-d",
+      "explanation": "2023年7月N3 問35 の正解は選択肢D（d）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-6",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長い文章）"
+    },
+    {
+      "id": "n3-2023-07-r-36",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（長い文章）】\n\n（※この問題（問36）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Aです。）\n\n問36　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問36　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問36　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-36-a",
+          "text": "AだからBになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-r-36-b",
+          "text": "BだからAになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-36-c",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-36-d",
+          "text": "AによってCになった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-36-a",
+      "explanation": "2023年7月N3 問36 の正解は選択肢A（a）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-6",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長い文章）"
+    },
+    {
+      "id": "n3-2023-07-r-37",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題7 読解（情報検索）】\n\n（※この問題（問37）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Dです。）\n\n問37　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問37　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問37　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-37-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-37-b",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-37-c",
+          "text": "AよりBがCになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-37-d",
+          "text": "AによってBになった",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-37-d",
+      "explanation": "2023年7月N3 問37 の正解は選択肢D（d）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-7",
+        "n3-reading"
+      ],
+      "problemNumber": 7,
+      "problemLabel": "読解（情報検索）"
+    },
+    {
+      "id": "n3-2023-07-r-38",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題7 読解（情報検索）】\n\n（※この問題（問38）の本文テキストは2023年7月N3試験から取得できませんでした。正解は選択肢Bです。）\n\n問38　この文章の内容と合っているものを選びなさい。",
+      "questionText": "問38　この文章の内容と合っているものを選びなさい。",
+      "questionTranslation": "問38　選出與文章內容相符的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-r-38-a",
+          "text": "AだからBになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-38-b",
+          "text": "AによってBになった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-r-38-c",
+          "text": "BによってAになった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-r-38-d",
+          "text": "AもBもならなかった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-r-38-b",
+      "explanation": "2023年7月N3 問38 の正解は選択肢B（b）です。本文テキストが取得できなかったため、詳細な解説は省略します。",
+      "tags": [
+        "reading",
+        "problem-7",
+        "n3-reading"
+      ],
+      "problemNumber": 7,
+      "problemLabel": "読解（情報検索）"
+    }
+  ]
+}

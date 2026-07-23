@@ -326,6 +326,339 @@
           ],
           "confusionNote": "⚠ 自他動詞對比：当たる（自動詞）＝球/物自己打到（無意志）；当てる（他動詞）＝人把球打出去；ぶつかる＝相撞（更強的衝撞感）。「ボールが人に当たる」的主語是球，不是人。",
           "frequentlyTested": true
+        },
+        {
+          "word": "疑う",
+          "reading": "うたがう",
+          "meaning": "懷疑、猜疑、不信任",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "理由もないのに人を疑うのはよくない。",
+              "zh": "沒有理由就懷疑別人是不對的。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-v-001"
+        },
+        {
+          "word": "炊く",
+          "reading": "たく",
+          "meaning": "煮（飯）、炊飯",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "夕食のためにご飯を炊いた。",
+              "zh": "為了晚餐煮了飯。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：煮る（にる）＝用水煮（菜肉等）；炊く（たく）＝炊米飯",
+          "id": "pe23-v-002"
+        },
+        {
+          "word": "取り囲む",
+          "reading": "とりかこむ",
+          "meaning": "包圍、圍繞",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "子どもたちが演奏者を取り囲んで聴いていた。",
+              "zh": "孩子們圍繞著演奏者聆聽。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-v-003"
+        },
+        {
+          "word": "付き合う",
+          "reading": "つきあう",
+          "meaning": "交往、交際；陪伴、配合",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "3年間付き合って、去年結婚した。",
+              "zh": "交往了3年，去年結婚了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 多義：①男女交往；②泛指交際往來；③陪伴（付き合ってくれてありがとう）",
+          "id": "pe23-v-004"
+        },
+        {
+          "word": "覚える",
+          "reading": "おぼえる",
+          "meaning": "記住、背誦；感覺到",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "新しい単語をなかなか覚えられない。",
+              "zh": "很難記住新單字。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 多義：①記住（おぼえる/学習して記憶する）；②感覺（眠気を覚える＝感到睏意）",
+          "id": "pe23-v-005"
+        },
+        {
+          "word": "どなる",
+          "reading": "",
+          "meaning": "叫喊、大聲吼叫",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "そんなにどならなくても、聞こえますよ。",
+              "zh": "不用喊那麼大聲，我聽得到的。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：叫ぶ（さけぶ）＝大叫（偏驚呼或呼叫）；どなる偏指憤怒地大聲罵",
+          "id": "pe23-v-006"
+        },
+        {
+          "word": "話しかける",
+          "reading": "はなしかける",
+          "meaning": "主動搭話、攀談",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "道で迷っている外国人に日本語で話しかけた。",
+              "zh": "用日語向在路上迷路的外國人搭話。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-v-007"
+        },
+        {
+          "word": "汚す",
+          "reading": "よごす",
+          "meaning": "弄髒、汙染、玷汙",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "服を汚してしまったので、洗濯した。",
+              "zh": "把衣服弄髒了，洗了一下。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 注意：汚す（よごす）＝弄髒（他動詞）；汚れる（よごれる）＝變髒（自動詞）",
+          "id": "pe23-v-008"
+        },
+        {
+          "word": "断る",
+          "reading": "ことわる",
+          "meaning": "拒絕、謝絕；事先告知",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "誘いを断るのは難しいが、今日は断った。",
+              "zh": "拒絕邀約很難，但今天拒絕了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 多義：①拒絕（頼みを断る）；②事先告知或請求（断ってから入る）",
+          "id": "pe23-v-009"
+        },
+        {
+          "word": "降りる",
+          "reading": "おりる",
+          "meaning": "下車、下降、下山",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "次の駅で降りてください。",
+              "zh": "請在下一站下車。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 對比：乗る（のる）＝搭乘；降りる也可表示「霜降」「幕降る」等；同音：下りる",
+          "id": "pe23-v-010"
+        },
+        {
+          "word": "指す",
+          "reading": "さす",
+          "meaning": "指向、指名、指出",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "地図で目的地を指して説明した。",
+              "zh": "在地圖上指出目的地說明。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：指さす（ゆびさす）＝用手指指；指す也可指將棋等棋類「走一步」",
+          "id": "pe23-v-011"
+        },
+        {
+          "word": "扱う",
+          "reading": "あつかう",
+          "meaning": "處理、操作、對待、搬運",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "お客様を丁寧に扱ってください。",
+              "zh": "請細心對待顧客。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 多義：①對待（人を丁寧に扱う）；②操作（機械を扱う）；③搬運/處理（荷物を扱う）",
+          "id": "pe23-v-012"
+        },
+        {
+          "word": "振る",
+          "reading": "ふる",
+          "meaning": "揮、搖、甩；分配；甩掉（對象）",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "手を振って友達を見送った。",
+              "zh": "揮手送別朋友。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 多義：①揮手（手を振る）；②甩開（彼女を振る＝分手）；③分配（役を振る）；自動詞：振れる",
+          "id": "pe23-v-013"
+        },
+        {
+          "word": "押す",
+          "reading": "おす",
+          "meaning": "推、按、蓋章",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "ドアを押して開けてください。",
+              "zh": "請推門打開。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 對比：引く（ひく）＝拉；押す也可指「ハンコを押す」＝蓋章；「強引に押す」＝強行推動",
+          "id": "pe23-v-014"
+        },
+        {
+          "word": "かじる",
+          "reading": "",
+          "meaning": "咬、啃；略懂皮毛",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "りんごをかじりながら歩いた。",
+              "zh": "一邊啃蘋果一邊走路。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：噛む（かむ）＝咬（咀嚼）；かじる強調「啃咬、咬下一口」；也有「かじる程度」＝略懂皮毛之意",
+          "id": "pe23-v-015"
+        },
+        {
+          "word": "なめる",
+          "reading": "",
+          "meaning": "舔；小看、輕視",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "アイスをなめながら公園を歩いた。",
+              "zh": "舔著冰淇淋在公園散步。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 多義：①舔（舐める）；②小看（相手をなめる）＝看輕對手",
+          "id": "pe23-v-016"
+        },
+        {
+          "word": "かむ",
+          "reading": "",
+          "meaning": "咬、咀嚼；咬住",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "食べ物をよくかんで食べてください。",
+              "zh": "吃東西請充分咀嚼。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 漢字：噛む；近義：かじる＝啃咬；かむ＝咀嚼（偏一般咀嚼動作）；噛む也指：間違えて発音する＝說結巴",
+          "id": "pe23-v-017"
+        },
+        {
+          "word": "まぜる",
+          "reading": "",
+          "meaning": "混合、攪拌、攙雜",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "材料をよくまぜてから、焼いてください。",
+              "zh": "將材料充分攪拌後，再烤。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 漢字：混ぜる；近義：かき混ぜる（かきまぜる）＝大力攪拌；混合する（こんごうする）偏書面語",
+          "id": "pe23-v-018"
+        },
+        {
+          "word": "避難する",
+          "reading": "ひなんする",
+          "meaning": "避難、疏散、逃生",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "地震が起きたら、すぐに避難してください。",
+              "zh": "發生地震時，請立刻疏散。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：逃げる（にげる）＝逃跑（偏緊急逃離）；避難（ひなん）偏有組織的撤離/躲避災難",
+          "id": "pe23-v-019"
+        },
+        {
+          "word": "逃げる",
+          "reading": "にげる",
+          "meaning": "逃跑、逃走、逃避",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "犯人が逃げたので、警察が追った。",
+              "zh": "犯人逃跑了，警察追了上去。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：避難する（ひなんする）＝有組織的疏散；逃げる偏緊急逃離或逃避責任",
+          "id": "pe23-v-020"
+        },
+        {
+          "word": "黙る",
+          "reading": "だまる",
+          "meaning": "沉默、閉嘴、不說話",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "怒ったとき、彼は黙ってしまう。",
+              "zh": "生氣的時候，他就沉默不語。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 近義：無言になる（むごんになる）＝變得無言；黙る是動作（沉默下來）；黙っている是狀態（保持沉默）",
+          "id": "pe23-v-021"
         }
       ]
     },
@@ -549,6 +882,181 @@
           ],
           "confusionNote": "⚠ 近義形容詞比較：きつい≒大変（だいへん）＝辛苦費力；厳しい（きびしい）＝嚴格・嚴峻；つらい＝痛苦難以承受（心理層面更重）。「仕事がきつい」「坂がきつい（陡坡）」「スカートがきつい（緊）」多重含義。",
           "frequentlyTested": true
+        },
+        {
+          "word": "必ず",
+          "reading": "かならず",
+          "meaning": "一定、必定、務必",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "約束したら、必ず守ってください。",
+              "zh": "既然約定了，請務必遵守。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-adv-001"
+        },
+        {
+          "word": "はっきり",
+          "reading": "",
+          "meaning": "清楚地、明確地",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "自分の意見をはっきり言ってください。",
+              "zh": "請清楚地說出你的意見。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：しっかり＝確實、扎實；きちんと＝整齊、正確；ちゃんと＝好好地",
+          "id": "pe23-adv-002"
+        },
+        {
+          "word": "しっかり",
+          "reading": "",
+          "meaning": "確實地、牢固地、紮實地",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "仕事の前に、しっかり準備をしておこう。",
+              "zh": "工作前先確實做好準備吧。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：はっきり＝清楚地、明確地；しっかり多指「踏實、不馬虎」",
+          "id": "pe23-adv-003"
+        },
+        {
+          "word": "うっかり",
+          "reading": "",
+          "meaning": "不小心、疏忽地、恍神地",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "うっかりして、大切な約束を忘れてしまった。",
+              "zh": "一不小心忘記了重要的約定。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：ぼんやり＝恍惚、漫不經心（偏感覺）；うっかり強調因粗心犯錯",
+          "id": "pe23-adv-004"
+        },
+        {
+          "word": "にこにこ",
+          "reading": "",
+          "meaning": "笑瞇瞇地、面帶笑容",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "祖母はいつもにこにこしている。",
+              "zh": "奶奶總是笑瞇瞇的。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 擬態語比較：にっこり＝淺淺一笑（短暫）；にこにこ＝持續帶著笑容；にやにや＝嘿嘿笑（不懷好意）",
+          "id": "pe23-adv-005"
+        },
+        {
+          "word": "そっと",
+          "reading": "",
+          "meaning": "輕輕地、悄悄地、靜靜地",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "寝ている子どもをそっと部屋から出た。",
+              "zh": "悄悄地把睡著的孩子抱出房間。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：静かに（しずかに）＝靜靜地（狀態）；そっと強調「輕柔、不打擾地」的動作",
+          "id": "pe23-adv-006"
+        },
+        {
+          "word": "きちんと",
+          "reading": "",
+          "meaning": "整齊地、確實地、正確地",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "書類をきちんと整理してファイルに入れた。",
+              "zh": "把文件整齊地整理後放入資料夾。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：はっきり＝清楚；ちゃんと＝好好地（口語）；きちんと偏書面語，強調整齊/確實",
+          "id": "pe23-adv-007"
+        },
+        {
+          "word": "たまに",
+          "reading": "",
+          "meaning": "偶爾、偶然、有時候",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "たまに実家に帰って、家族と食事をする。",
+              "zh": "偶爾回老家和家人一起吃飯。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 近義：時々（ときどき）＝有時（頻率稍高）；たまに頻率更低，偶爾才一次",
+          "id": "pe23-adv-008"
+        },
+        {
+          "word": "ついでに",
+          "reading": "",
+          "meaning": "順便、趁機、附帶",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "買い物のついでに、図書館に本を返してきた。",
+              "zh": "買東西順便把書還給圖書館了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 跟〜ついでに（文法）同概念；已存在 grammar 條目，這裡作為副詞/慣用表達",
+          "id": "pe23-adv-009"
+        },
+        {
+          "word": "おたがいに",
+          "reading": "",
+          "meaning": "互相、彼此、相互地",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "これからもおたがいに助け合いましょう。",
+              "zh": "今後也讓我們互相幫助吧。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 漢字：お互いに；近義：互いに（たがいに）是更書面的形式",
+          "id": "pe23-adv-010"
+        },
+        {
+          "word": "おもに",
+          "reading": "",
+          "meaning": "主要地、以…為主",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "この研究は主に若者を対象にしている。",
+              "zh": "這項研究主要以年輕人為對象。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 漢字：主に；近義：中心に（ちゅうしんに）＝以〜為中心；おもに強調比例上的大多數",
+          "id": "pe23-adv-011"
         }
       ]
     },
@@ -928,6 +1436,1342 @@
           ],
           "confusionNote": "⚠ 近義比較：チャレンジ（する）＝挑戰新事物（積極語感）；挑戦（ちょうせん）する＝向某人/事挑戰（可指競爭）；試みる（こころみる）＝嘗試（較書面）。「〜にチャレンジする」是固定搭配，後接對象用「に」。",
           "frequentlyTested": true
+        },
+        {
+          "word": "復習",
+          "reading": "ふくしゅう",
+          "meaning": "複習、再學習；溫故知新",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "試験の前に、復習をしっかりしておいた。",
+              "zh": "考試前認真複習了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-001"
+        },
+        {
+          "word": "小型",
+          "reading": "こがた",
+          "meaning": "小型的、輕小型",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "小型のカメラを買って旅行に持っていった。",
+              "zh": "買了一台小型相機帶去旅行。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：大型（おおがた）＝大型的；中型（ちゅうがた）＝中型的",
+          "id": "pe23-n-002"
+        },
+        {
+          "word": "退院",
+          "reading": "たいいん",
+          "meaning": "出院",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "手術後3日で退院できた。",
+              "zh": "手術後三天就出院了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 對比：入院（にゅういん）＝住院",
+          "id": "pe23-n-003"
+        },
+        {
+          "word": "夫婦",
+          "reading": "ふうふ",
+          "meaning": "夫妻、已婚夫婦",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "あの夫婦はいつも仲よさそうに見える。",
+              "zh": "那對夫妻看起來總是感情很好。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 注意：夫婦（ふうふ）≠ 夫（おっと）一人；另：夫婦で＝作為夫妻、以夫妻身份",
+          "id": "pe23-n-004"
+        },
+        {
+          "word": "留守",
+          "reading": "るす",
+          "meaning": "不在家；暫時離開",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "留守の間に宅配便が届いた。",
+              "zh": "不在家的時候快遞送到了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-005"
+        },
+        {
+          "word": "高価",
+          "reading": "こうか",
+          "meaning": "昂貴、價格高",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "これは高価な壺なので、大切に扱ってください。",
+              "zh": "這是昂貴的花瓶，請小心使用。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：値段が高い（普通表達）；高価 is more formal",
+          "id": "pe23-n-006"
+        },
+        {
+          "word": "心配",
+          "reading": "しんぱい",
+          "meaning": "擔心、焦慮、操心",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "子どもが遅く帰ってきたので、とても心配した。",
+              "zh": "孩子回來得很晚，很擔心。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-007"
+        },
+        {
+          "word": "制服",
+          "reading": "せいふく",
+          "meaning": "制服（學校、公司等）",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この学校には制服があって、毎日着なければならない。",
+              "zh": "這所學校有制服，每天都必須穿。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-008"
+        },
+        {
+          "word": "薬局",
+          "reading": "やっきょく",
+          "meaning": "藥局、藥房",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "薬局で風邪薬を買ってきた。",
+              "zh": "在藥局買了感冒藥。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-009"
+        },
+        {
+          "word": "平気",
+          "reading": "へいき",
+          "meaning": "不在乎、沒問題、冷靜",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "少しくらいの失敗は平気だ。",
+              "zh": "些許失敗也無所謂。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-010"
+        },
+        {
+          "word": "安全",
+          "reading": "あんぜん",
+          "meaning": "安全、安心",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "この道は車が少なくて、安全に歩けます。",
+              "zh": "這條路車輛少，可以安全地走。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 對比：危険（きけん）＝危險",
+          "id": "pe23-n-011"
+        },
+        {
+          "word": "正常",
+          "reading": "せいじょう",
+          "meaning": "正常、正規",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "機械が正常に動いているか確認した。",
+              "zh": "確認了機器是否正常運作。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 對比：異常（いじょう）＝異常",
+          "id": "pe23-n-012"
+        },
+        {
+          "word": "十分",
+          "reading": "じゅうぶん",
+          "meaning": "充分、足夠、完全地",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "時間は十分あるから、慌てなくていい。",
+              "zh": "時間很充裕，不用著急。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 也可以寫作「充分」，作副詞用時＝充分地",
+          "id": "pe23-n-013"
+        },
+        {
+          "word": "だらしない",
+          "reading": "",
+          "meaning": "邋遢、懶散、鬆懈",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "部屋がだらしなくて、いつも散らかっている。",
+              "zh": "房間邋遢，總是亂成一團。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-014"
+        },
+        {
+          "word": "めんどうくさい",
+          "reading": "",
+          "meaning": "麻煩死了、厭煩、懶得做",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "料理を作るのがめんどうくさくて、よく外食する。",
+              "zh": "嫌麻煩做菜，常常外食。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：めんどう（面倒）＝麻煩（較正式）；めんどうくさい是口語、語氣更強",
+          "id": "pe23-n-015"
+        },
+        {
+          "word": "にくらしい",
+          "reading": "",
+          "meaning": "可惡的、令人厭惡的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "あんなにくらしい態度を取られると、腹が立つ。",
+              "zh": "被那樣可惡地對待，真讓人生氣。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：憎い（にくい）；にくらしい偏重「讓人厭惡的行為/態度」",
+          "id": "pe23-n-016"
+        },
+        {
+          "word": "しゃっくり",
+          "reading": "",
+          "meaning": "打嗝（生理性）",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "水を飲んだらしゃっくりが止まった。",
+              "zh": "喝了水之後打嗝停了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-017"
+        },
+        {
+          "word": "くしゃみ",
+          "reading": "",
+          "meaning": "噴嚏",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "花粉のせいで、くしゃみが止まらない。",
+              "zh": "因為花粉症，噴嚏不停。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-018"
+        },
+        {
+          "word": "せき",
+          "reading": "",
+          "meaning": "咳嗽",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "風邪を引いてせきが出る。",
+              "zh": "感冒了，一直咳嗽。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 漢字：咳。近義動詞：せきをする＝咳嗽；比較：くしゃみ＝噴嚏；しゃっくり＝打嗝",
+          "id": "pe23-n-019"
+        },
+        {
+          "word": "サイン",
+          "reading": "",
+          "meaning": "簽名；暗號；手勢",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "有名な選手にサインをもらった。",
+              "zh": "跟知名選手要了簽名。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-020"
+        },
+        {
+          "word": "ルール",
+          "reading": "",
+          "meaning": "規則、規定",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "このゲームのルールを説明してください。",
+              "zh": "請說明這個遊戲的規則。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-021"
+        },
+        {
+          "word": "差",
+          "reading": "さ",
+          "meaning": "差距、差異、間隔",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "二人の実力には大きな差がある。",
+              "zh": "兩人的實力有很大的差距。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：違い（ちがい）＝不同之處（較口語）；差 強調可量化的差距",
+          "id": "pe23-n-022"
+        },
+        {
+          "word": "台",
+          "reading": "だい",
+          "meaning": "台（數量詞・機器/車輛）；台子",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この工場では、毎日100台の車を生産している。",
+              "zh": "這家工廠每天生產100台車。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 也作：~台（量詞，數機器、車、電腦等大型物品）",
+          "id": "pe23-n-023"
+        },
+        {
+          "word": "段",
+          "reading": "だん",
+          "meaning": "階段、等級、段落、段位",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この仕事で次の段に進めた。",
+              "zh": "在這份工作中晉升到了下一個等級。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：段（だん）多用於段位/等級；階（かい）＝樓層；段落（だんらく）＝段落",
+          "id": "pe23-n-024"
+        },
+        {
+          "word": "列",
+          "reading": "れつ",
+          "meaning": "列、排、隊伍",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "人気のお店には長い列ができていた。",
+              "zh": "人氣餐廳前排了長長的隊伍。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：行列（ぎょうれつ）＝行列、長隊",
+          "id": "pe23-n-025"
+        },
+        {
+          "word": "デザイン",
+          "reading": "",
+          "meaning": "設計、圖案、款式",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "このカバンのデザインがとても気に入っている。",
+              "zh": "非常喜歡這個包包的設計。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-026"
+        },
+        {
+          "word": "完全",
+          "reading": "かんぜん",
+          "meaning": "完全、完整、完美",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "この仕事は完全には終わっていない。",
+              "zh": "這份工作還沒完全結束。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-027"
+        },
+        {
+          "word": "可能",
+          "reading": "かのう",
+          "meaning": "可能、可行",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "このプロジェクトは今の予算では実現可能だ。",
+              "zh": "這個企劃在現有預算內是可行的。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 對比：不可能（ふかのう）＝不可能",
+          "id": "pe23-n-028"
+        },
+        {
+          "word": "平等",
+          "reading": "びょうどう",
+          "meaning": "平等、公平",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "すべての人は法の前に平等である。",
+              "zh": "所有人在法律面前是平等的。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：公平（こうへい）＝公平；平等強調「相同對待」",
+          "id": "pe23-n-029"
+        },
+        {
+          "word": "行動",
+          "reading": "こうどう",
+          "meaning": "行動、行為、舉止",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "次の行動を慎重に考えた。",
+              "zh": "認真考慮了下一步行動。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：活動（かつどう）＝活動（偏組織性）；動作（どうさ）＝動作（偏機械性）；行動（こうどう）＝具體的行為",
+          "id": "pe23-n-030"
+        },
+        {
+          "word": "活動",
+          "reading": "かつどう",
+          "meaning": "活動、運作",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この団体は地域の環境保護活動をしている。",
+              "zh": "這個團體在進行地區環保活動。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：行動（こうどう）＝具體行動（個人）；活動（かつどう）偏組織性活動；サークル活動＝社團活動",
+          "id": "pe23-n-031"
+        },
+        {
+          "word": "動作",
+          "reading": "どうさ",
+          "meaning": "動作、動態、操作",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "機械の動作がおかしいので、修理に出した。",
+              "zh": "機器動作異常，所以送修了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：行動は人の目的的な行い；動作は機械や生物の動き方",
+          "id": "pe23-n-032"
+        },
+        {
+          "word": "運動",
+          "reading": "うんどう",
+          "meaning": "運動、鍛鍊；（社會性）運動",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "毎日30分の運動を続けている。",
+              "zh": "每天持續做30分鐘運動。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：スポーツ＝體育/運動（偏競技）；エクササイズ＝健身；運動 also means 'campaign/movement'（社会運動）",
+          "id": "pe23-n-033"
+        },
+        {
+          "word": "期限",
+          "reading": "きげん",
+          "meaning": "期限、截止日期",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "レポートの提出期限は来週の金曜日だ。",
+              "zh": "報告的繳交期限是下週五。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：期間（きかん）＝期間/一段時間；期限（きげん）＝截止日期（有終點概念）",
+          "id": "pe23-n-034"
+        },
+        {
+          "word": "期間",
+          "reading": "きかん",
+          "meaning": "期間、時期、一段時間",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "留学の期間は1年間だった。",
+              "zh": "留學的期間是一年。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：期限（きげん）＝截止期限；期間（きかん）指一段時間的長度，沒有特定截止概念",
+          "id": "pe23-n-035"
+        },
+        {
+          "word": "日程",
+          "reading": "にってい",
+          "meaning": "日程、行程、行事曆",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "旅行の日程を決めて、ホテルを予約した。",
+              "zh": "定好了旅行日程，預訂了飯店。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：スケジュール＝schedule（同義）；プログラム＝program（活動節目表）",
+          "id": "pe23-n-036"
+        },
+        {
+          "word": "日常",
+          "reading": "にちじょう",
+          "meaning": "日常、平日、日常生活",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "日常の小さな楽しみを大切にしたい。",
+              "zh": "希望珍視日常生活中的小樂趣。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：普段（ふだん）＝平常（副詞用法）；日常（にちじょう）偏名詞、可修飾 日常生活・日常的",
+          "id": "pe23-n-037"
+        },
+        {
+          "word": "苦しい",
+          "reading": "くるしい",
+          "meaning": "痛苦的、難受的、艱難的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "経済的に苦しい時期を乗り越えた。",
+              "zh": "渡過了經濟困難的時期。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：辛い（つらい）＝艱辛、難以承受（情感上）；苦しい可表生理或經濟苦境",
+          "id": "pe23-n-038"
+        },
+        {
+          "word": "貧しい",
+          "reading": "まずしい",
+          "meaning": "貧窮的、貧乏的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "貧しい生活の中でも、家族は明るく過ごしていた。",
+              "zh": "即使生活貧困，一家人也過得開朗。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：貧乏な（びんぼうな）＝窮困（口語）；貧しい偏書面語、形容詞",
+          "id": "pe23-n-039"
+        },
+        {
+          "word": "サイズ",
+          "reading": "",
+          "meaning": "尺寸、大小、規格",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "このコートはどのサイズがありますか。",
+              "zh": "這件外套有哪些尺寸？"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-040"
+        },
+        {
+          "word": "重さ",
+          "reading": "おもさ",
+          "meaning": "重量、分量",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "荷物の重さを量ってから送った。",
+              "zh": "量了行李重量後才寄出。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-041"
+        },
+        {
+          "word": "数",
+          "reading": "かず",
+          "meaning": "數量、數目",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "参加者の数を数えてください。",
+              "zh": "請計算一下參加者的人數。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-042"
+        },
+        {
+          "word": "形",
+          "reading": "かたち",
+          "meaning": "形狀、形式、樣子",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "雲の形がどんどん変わっていく。",
+              "zh": "雲的形狀不斷地在變化。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "id": "pe23-n-043"
+        },
+        {
+          "word": "大きさ",
+          "reading": "おおきさ",
+          "meaning": "大小、尺寸、規模",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "部屋の大きさを確認してから家具を買った。",
+              "zh": "確認了房間的大小才買傢俱。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：サイズ＝size（外來語）；大きさ偏指體積/面積概念",
+          "id": "pe23-n-044"
+        },
+        {
+          "word": "暗記",
+          "reading": "あんき",
+          "meaning": "背誦、記憶（憑記憶）",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "単語を暗記するのが苦手だ。",
+              "zh": "很不擅長背單字。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 近義：覚える（おぼえる）＝記住（動詞）；暗記する＝死背、靠記憶記住",
+          "id": "pe23-n-045"
+        },
+        {
+          "word": "進歩",
+          "reading": "しんぽ",
+          "meaning": "進步、發展、進化",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "技術の進歩によって、生活が豊かになった。",
+              "zh": "由於技術進步，生活變得更富裕。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：発展（はってん）＝發展（規模擴大）；進歩（しんぽ）強調品質/能力的提升",
+          "id": "pe23-n-046"
+        },
+        {
+          "word": "交流",
+          "reading": "こうりゅう",
+          "meaning": "交流、互動；交流電（AC）",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "海外の学校と文化交流をしている。",
+              "zh": "正在與海外學校進行文化交流。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年7月 N3 語彙",
+          "confusionNote": "⚠ 比較：交換（こうかん）＝交換（物品）；交際（こうさい）＝往來、交際；交流偏文化/意見的互相流通",
+          "id": "pe23-n-047"
+        },
+        {
+          "word": "選手",
+          "reading": "せんしゅ",
+          "meaning": "選手、運動員、競技者",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "サッカーの選手を目指して、毎日練習している。",
+              "zh": "以成為足球選手為目標，每天練習。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "id": "pe23-n-048"
+        },
+        {
+          "word": "月末",
+          "reading": "げつまつ",
+          "meaning": "月底、月末",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "月末になると、いつも忙しくなる。",
+              "zh": "每到月底就會變忙。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：月初（つきはじめ）or 月初め＝月初；月半ば（つきなかば）＝月中",
+          "id": "pe23-n-049"
+        },
+        {
+          "word": "裏",
+          "reading": "うら",
+          "meaning": "背面、後面；反面；內情",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この服は裏が赤くなっている。",
+              "zh": "這件衣服裡面是紅色的。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 多義：①物品背面/裡面；②表裏（おもて/うら）的裏；③內情/幕後（裏を知る）",
+          "id": "pe23-n-050"
+        },
+        {
+          "word": "産業",
+          "reading": "さんぎょう",
+          "meaning": "產業、工業",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この地域の主な産業は農業だ。",
+              "zh": "這個地區的主要產業是農業。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "id": "pe23-n-051"
+        },
+        {
+          "word": "朝刊",
+          "reading": "ちょうかん",
+          "meaning": "晨報、早報",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "朝起きたらまず朝刊を読む習慣がある。",
+              "zh": "早上起床後有先看早報的習慣。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 對比：夕刊（ゆうかん）＝晚報",
+          "id": "pe23-n-052"
+        },
+        {
+          "word": "広場",
+          "reading": "ひろば",
+          "meaning": "廣場、公共空地",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "休日には広場でイベントが開かれる。",
+              "zh": "假日廣場上會舉辦活動。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "id": "pe23-n-053"
+        },
+        {
+          "word": "帰宅",
+          "reading": "きたく",
+          "meaning": "回家、返家",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "仕事が終わったら、すぐに帰宅した。",
+              "zh": "工作結束後立刻回家了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：帰る（かえる）＝回去（動詞）；帰宅する＝return home（書面/正式用語）",
+          "id": "pe23-n-054"
+        },
+        {
+          "word": "法律",
+          "reading": "ほうりつ",
+          "meaning": "法律",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "法律を破ったら、罰せられる。",
+              "zh": "違反法律的話會受到處罰。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 近義：法（ほう）＝法（廣義）；規則（きそく）＝規則；法律 is the enacted law",
+          "id": "pe23-n-055"
+        },
+        {
+          "word": "空",
+          "reading": "から",
+          "meaning": "空的、空無一物",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "財布の中が空になっていた。",
+              "zh": "錢包裡面變空了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 多音字：空（そら）＝天空；空（から）＝空的（形容詞）；空（くう）偏佛教/哲學用法",
+          "id": "pe23-n-056"
+        },
+        {
+          "word": "会費",
+          "reading": "かいひ",
+          "meaning": "會費、入場費",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "年間の会費は12,000円です。",
+              "zh": "一年的會費是12,000日圓。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 近義：参加費（さんかひ）＝參加費；入会金（にゅうかいきん）＝入會費",
+          "id": "pe23-n-057"
+        },
+        {
+          "word": "ヒント",
+          "reading": "",
+          "meaning": "提示、線索、暗示",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "答えが分からないから、ヒントをください。",
+              "zh": "不知道答案，請給我提示。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "id": "pe23-n-058"
+        },
+        {
+          "word": "マナー",
+          "reading": "",
+          "meaning": "禮節、禮貌、規矩",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "食事中のマナーに気をつけてください。",
+              "zh": "請注意用餐禮節。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "id": "pe23-n-059"
+        },
+        {
+          "word": "チェック",
+          "reading": "",
+          "meaning": "確認、核對；格紋",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "出発前にチェックリストで忘れ物を確認した。",
+              "zh": "出發前用清單確認了忘帶的東西。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "id": "pe23-n-060"
+        },
+        {
+          "word": "承知",
+          "reading": "しょうち",
+          "meaning": "了解、知道；同意、允許",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "その件については承知しています。",
+              "zh": "關於那件事，我已了解。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 注意：承知は上司→部下、または正式な文脈；部下→上司用「かしこまりました」；比較：了解（りょうかい）＝理解（上→下或平輩OK）",
+          "id": "pe23-n-061"
+        },
+        {
+          "word": "希望",
+          "reading": "きぼう",
+          "meaning": "希望、願望、期盼",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "将来の希望を語ってください。",
+              "zh": "請說說您未來的希望。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：願い（ねがい）＝願望（個人的）；希望（きぼう）偏理想與期待；夢（ゆめ）＝夢想",
+          "id": "pe23-n-062"
+        },
+        {
+          "word": "想像",
+          "reading": "そうぞう",
+          "meaning": "想像、猜測",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "100年後の世界を想像してみてください。",
+              "zh": "請試著想像100年後的世界。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：想像（そうぞう）＝想像（不確定）；想像力（力）；近義：イメージ",
+          "id": "pe23-n-063"
+        },
+        {
+          "word": "感動",
+          "reading": "かんどう",
+          "meaning": "感動、深受感動",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "映画を見て深く感動した。",
+              "zh": "看電影深受感動。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：感激（かんげき）＝感激（更強烈）；感心（かんしん）＝欽佩；感動 is moving/touching",
+          "id": "pe23-n-064"
+        },
+        {
+          "word": "感覚",
+          "reading": "かんかく",
+          "meaning": "感覺、知覺、感官",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "寒さで手の感覚がなくなった。",
+              "zh": "因為寒冷，手失去了知覺。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：感情（かんじょう）＝情感；気持ち（きもち）＝心情/感覺（口語）；感覚偏生理感知",
+          "id": "pe23-n-065"
+        },
+        {
+          "word": "感激",
+          "reading": "かんげき",
+          "meaning": "感激、深受感動（程度更強）",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "助けてもらって、感激しました。",
+              "zh": "受到幫助，非常感激。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 感激 > 感動 > 感心（感情強度）；感激は驚きを伴う深い感謝",
+          "id": "pe23-n-066"
+        },
+        {
+          "word": "感心",
+          "reading": "かんしん",
+          "meaning": "欽佩、佩服、令人讚賞",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "彼の努力には感心した。",
+              "zh": "對他的努力感到十分佩服。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：感動（かんどう）＝感動（情感被打動）；感心（かんしん）＝對某人的能力/態度感到佩服",
+          "id": "pe23-n-067"
+        },
+        {
+          "word": "自動的",
+          "reading": "じどうてき",
+          "meaning": "自動的、自動化",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "このドアは自動的に閉まる。",
+              "zh": "這扇門會自動關閉。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 對比：手動的（しゅどうてき）＝手動的；〜的（てき）接尾辭可加在名詞後形成な形容詞",
+          "id": "pe23-n-068"
+        },
+        {
+          "word": "効果的",
+          "reading": "こうかてき",
+          "meaning": "有效的、高效的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "効果的な勉強方法を教えてください。",
+              "zh": "請教我有效的學習方法。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：効率的（こうりつてき）＝有效率的（重視效率）；効果的（こうかてき）＝有效果的（強調成效）",
+          "id": "pe23-n-069"
+        },
+        {
+          "word": "人工的",
+          "reading": "じんこうてき",
+          "meaning": "人工的、人為製造的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "この花は人工的に作られたものです。",
+              "zh": "這朵花是人工製造的。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 對比：自然な（しぜんな）＝自然的；人工的（じんこうてき）强調非自然、人為製造",
+          "id": "pe23-n-070"
+        },
+        {
+          "word": "消極的",
+          "reading": "しょうきょくてき",
+          "meaning": "消極的、被動的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "もっと積極的に発言してほしい。",
+              "zh": "希望你能更積極地發言。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 對比：積極的（せっきょくてき）＝積極的、主動的；消極的 is passive/negative",
+          "id": "pe23-n-071"
+        },
+        {
+          "word": "運",
+          "reading": "うん",
+          "meaning": "運氣、命運",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "運がよくて、試験に合格した。",
+              "zh": "運氣好，考試合格了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 近義：幸運（こううん）＝好運；巡り合わせ（めぐりあわせ）＝緣分；運命（うんめい）＝命運",
+          "id": "pe23-n-072"
+        },
+        {
+          "word": "番",
+          "reading": "ばん",
+          "meaning": "順番、輪到、號碼；值班",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "次は私の番だ。",
+              "zh": "接下來輪到我了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 多義：①順番（じゅんばん）的「番」；②番号（ばんごう）的「番」；③見張り番（みはりばん）＝守衛；番組（ばんぐみ）＝節目",
+          "id": "pe23-n-073"
+        },
+        {
+          "word": "制限",
+          "reading": "せいげん",
+          "meaning": "限制、規定、管制",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この飛行機は荷物の重さに制限がある。",
+              "zh": "這班飛機對行李重量有限制。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：禁止（きんし）＝完全禁止；制限（せいげん）＝限制（量/範圍等）；規制（きせい）＝管制",
+          "id": "pe23-n-074"
+        },
+        {
+          "word": "禁止",
+          "reading": "きんし",
+          "meaning": "禁止、禁令",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この公園では犬の散歩が禁止されている。",
+              "zh": "這個公園禁止遛狗。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：制限（せいげん）＝限制（部分）；禁止（きんし）＝完全禁止",
+          "id": "pe23-n-075"
+        },
+        {
+          "word": "検査",
+          "reading": "けんさ",
+          "meaning": "檢查、檢驗",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "空港で荷物の検査を受けた。",
+              "zh": "在機場接受了行李檢查。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 比較：検診（けんしん）＝健康檢診；調査（ちょうさ）＝調查；検査は実物の確認・測定",
+          "id": "pe23-n-076"
+        },
+        {
+          "word": "解決",
+          "reading": "かいけつ",
+          "meaning": "解決、解除、排解",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "問題がついに解決した。",
+              "zh": "問題終於解決了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 近義：片付く（かたづく）＝（問題）了結；解決（かいけつ）是書面語，偏正式",
+          "id": "pe23-n-077"
+        },
+        {
+          "word": "ぬるい",
+          "reading": "",
+          "meaning": "微溫的、溫熱的；鬆散的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "お風呂がぬるくなってしまったので、お湯を足した。",
+              "zh": "洗澡水變溫了，加了熱水。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 近義：生ぬるい（なまぬるい）＝lukewarm（帶有批評意味，指「態度不積極」）；冷たい（つめたい）＝冷的；熱い（あつい）＝燙的",
+          "id": "pe23-n-078"
+        },
+        {
+          "word": "にがい",
+          "reading": "",
+          "meaning": "苦的、苦澀的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "この薬はとてもにがくて、飲みにくい。",
+              "zh": "這個藥非常苦，很難吞。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 漢字：苦い；味の五基本：甘い（あまい）・辛い（からい）・苦い（にがい）・酸っぱい（すっぱい）・しょっぱい",
+          "id": "pe23-n-079"
+        },
+        {
+          "word": "案",
+          "reading": "あん",
+          "meaning": "方案、提案、構想",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "いいアイデアが思い浮かんだので、みんなに案を出した。",
+              "zh": "想到了好點子，就向大家提出了方案。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 近義：アイデア＝idea（外來語）；提案（ていあん）＝提案（偏正式）；案（あん）也指「草案」",
+          "id": "pe23-n-080"
+        },
+        {
+          "word": "アイデア",
+          "reading": "",
+          "meaning": "點子、創意、構想",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "新しいアイデアを出し合って、プロジェクトを進めた。",
+              "zh": "大家各自提出新點子，推進了企劃。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "id": "pe23-n-081"
+        },
+        {
+          "word": "ベスト",
+          "reading": "",
+          "meaning": "最好的、最佳狀態",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "今の自分にできるベストを尽くした。",
+              "zh": "盡了現在的自己能做到的最好。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 英語：best；近義：最善（さいぜん）＝最大努力（盡最大努力：最善を尽くす）",
+          "id": "pe23-n-082"
+        },
+        {
+          "word": "診察",
+          "reading": "しんさつ",
+          "meaning": "診察、看診",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "医者に診察してもらった。",
+              "zh": "讓醫生看診了。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 近義：診療（しんりょう）＝診療（偏整個治療過程）；診察（しんさつ）偏指診視確認病情",
+          "id": "pe23-n-083"
+        },
+        {
+          "word": "行き先",
+          "reading": "いきさき",
+          "meaning": "目的地、去處",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "旅行の行き先はまだ決めていない。",
+              "zh": "旅行的目的地還沒決定。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 近義：目的地（もくてきち）＝目的地（書面語）；行き先較口語，也指「下落/去向」",
+          "id": "pe23-n-084"
+        },
+        {
+          "word": "共通",
+          "reading": "きょうつう",
+          "meaning": "共通的、共同的、通用的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "二人には共通の趣味がある。",
+              "zh": "兩個人有共同的興趣。"
+            }
+          ],
+          "frequentlyTested": true,
+          "examSource": "2023年12月 N3 語彙",
+          "confusionNote": "⚠ 近義：共同（きょうどう）＝共同（偏一起做）；共通（きょうつう）偏「有共同點/共用」的概念",
+          "id": "pe23-n-085"
         }
       ]
     },
@@ -2951,6 +4795,758 @@
             {
               "jp": "あの辺にコンビニがある。",
               "zh": "那一帶有便利商店。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compoundVerbs",
+      "label": "複合動詞",
+      "color": "rose",
+      "entries": [
+        {
+          "id": "cv-001",
+          "word": "思い出す",
+          "reading": "おもいだす",
+          "meaning": "想起來",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "子供の頃のことを思い出す。",
+              "zh": "想起小時候的事。"
+            }
+          ]
+        },
+        {
+          "id": "cv-002",
+          "word": "引き出す",
+          "reading": "ひきだす",
+          "meaning": "拉出、提款",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "銀行でお金を引き出す。",
+              "zh": "在銀行提款。"
+            }
+          ]
+        },
+        {
+          "id": "cv-003",
+          "word": "取り出す",
+          "reading": "とりだす",
+          "meaning": "拿出",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "かばんから財布を取り出す。",
+              "zh": "從包包裡拿出錢包。"
+            }
+          ]
+        },
+        {
+          "id": "cv-004",
+          "word": "呼び出す",
+          "reading": "よびだす",
+          "meaning": "叫出來",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "部長に呼び出された。",
+              "zh": "被部長叫出去了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-005",
+          "word": "書き出す",
+          "reading": "かきだす",
+          "meaning": "開始寫",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "思いついたことを書き出す。",
+              "zh": "把想到的事寫下來。"
+            }
+          ]
+        },
+        {
+          "id": "cv-006",
+          "word": "話し出す",
+          "reading": "はなしだす",
+          "meaning": "開始說",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "彼は突然話し出した。",
+              "zh": "他突然開始說了起來。"
+            }
+          ],
+          "confusionNote": "⚠ 動詞ます形＋出す，除了本義，也常表示「開始做某動作」：話し出す＝開始說、泣き出す＝開始哭、笑い出す＝開始笑。"
+        },
+        {
+          "id": "cv-007",
+          "word": "泣き出す",
+          "reading": "なきだす",
+          "meaning": "開始哭",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "赤ちゃんが急に泣き出した。",
+              "zh": "嬰兒突然開始哭了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-008",
+          "word": "笑い出す",
+          "reading": "わらいだす",
+          "meaning": "開始笑",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "みんな急に笑い出した。",
+              "zh": "大家突然笑了出來。"
+            }
+          ]
+        },
+        {
+          "id": "cv-009",
+          "word": "飛び出す",
+          "reading": "とびだす",
+          "meaning": "衝出去",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "子供が道路に飛び出した。",
+              "zh": "小孩衝到馬路上。"
+            }
+          ]
+        },
+        {
+          "id": "cv-010",
+          "word": "入り込む",
+          "reading": "はいりこむ",
+          "meaning": "進入、深入",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "猫が部屋に入り込んだ。",
+              "zh": "貓咪跑進了房間裡。"
+            }
+          ]
+        },
+        {
+          "id": "cv-011",
+          "word": "飛び込む",
+          "reading": "とびこむ",
+          "meaning": "跳進去",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "プールに飛び込む。",
+              "zh": "跳進游泳池。"
+            }
+          ]
+        },
+        {
+          "id": "cv-012",
+          "word": "飲み込む",
+          "reading": "のみこむ",
+          "meaning": "吞下去",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "薬を水で飲み込む。",
+              "zh": "用水把藥吞下去。"
+            }
+          ]
+        },
+        {
+          "id": "cv-013",
+          "word": "書き込む",
+          "reading": "かきこむ",
+          "meaning": "寫入",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "アンケートに答えを書き込む。",
+              "zh": "在問卷上寫下答案。"
+            }
+          ]
+        },
+        {
+          "id": "cv-014",
+          "word": "打ち込む",
+          "reading": "うちこむ",
+          "meaning": "輸入、投入",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "パソコンにデータを打ち込む。",
+              "zh": "把資料輸入電腦。"
+            }
+          ]
+        },
+        {
+          "id": "cv-015",
+          "word": "落ち込む",
+          "reading": "おちこむ",
+          "meaning": "消沉",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "試験に落ちて落ち込んでいる。",
+              "zh": "因為考試落榜而消沉。"
+            }
+          ],
+          "confusionNote": "⚠ 動詞ます形＋込む，常表示「進入、深入某狀態」：落ち込む＝陷入消沉、考え込む＝陷入沉思、話し込む＝聊得很深入（很久）。"
+        },
+        {
+          "id": "cv-016",
+          "word": "考え込む",
+          "reading": "かんがえこむ",
+          "meaning": "陷入沉思",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "彼は黙って考え込んでいる。",
+              "zh": "他沉默地陷入沉思。"
+            }
+          ]
+        },
+        {
+          "id": "cv-017",
+          "word": "話し込む",
+          "reading": "はなしこむ",
+          "meaning": "聊很久",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "友達と長い時間話し込んだ。",
+              "zh": "和朋友聊了很久。"
+            }
+          ]
+        },
+        {
+          "id": "cv-018",
+          "word": "読み終わる",
+          "reading": "よみおわる",
+          "meaning": "看完",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "この本をもうすぐ読み終わる。",
+              "zh": "這本書快看完了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-019",
+          "word": "食べ終わる",
+          "reading": "たべおわる",
+          "meaning": "吃完",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "食べ終わったら片付けてください。",
+              "zh": "吃完後請收拾。"
+            }
+          ]
+        },
+        {
+          "id": "cv-020",
+          "word": "書き終わる",
+          "reading": "かきおわる",
+          "meaning": "寫完",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "レポートを書き終わった。",
+              "zh": "報告寫完了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-021",
+          "word": "勉強し始める",
+          "reading": "べんきょうしはじめる",
+          "meaning": "開始學習",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "去年から日本語を勉強し始めた。",
+              "zh": "從去年開始學日文。"
+            }
+          ]
+        },
+        {
+          "id": "cv-022",
+          "word": "降り始める",
+          "reading": "ふりはじめる",
+          "meaning": "開始下雨",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "急に雨が降り始めた。",
+              "zh": "突然下起雨來了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-023",
+          "word": "咲き始める",
+          "reading": "さきはじめる",
+          "meaning": "開始開花",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "桜が咲き始めた。",
+              "zh": "櫻花開始開了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-024",
+          "word": "食べ続ける",
+          "reading": "たべつづける",
+          "meaning": "一直吃",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "甘い物を食べ続けると太る。",
+              "zh": "一直吃甜食會變胖。"
+            }
+          ]
+        },
+        {
+          "id": "cv-025",
+          "word": "働き続ける",
+          "reading": "はたらきつづける",
+          "meaning": "持續工作",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "彼は10年間働き続けている。",
+              "zh": "他持續工作了十年。"
+            }
+          ]
+        },
+        {
+          "id": "cv-026",
+          "word": "勉強し続ける",
+          "reading": "べんきょうしつづける",
+          "meaning": "持續學習",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "合格するまで勉強し続ける。",
+              "zh": "持續學習直到合格為止。"
+            }
+          ]
+        },
+        {
+          "id": "cv-027",
+          "word": "持って行く",
+          "reading": "もっていく",
+          "meaning": "帶去",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "傘を持って行ったほうがいい。",
+              "zh": "最好帶把傘去。"
+            }
+          ],
+          "confusionNote": "⚠ 物品用「持って行く／持って来る」；人用「連れて行く／連れて来る」。"
+        },
+        {
+          "id": "cv-028",
+          "word": "持って来る",
+          "reading": "もってくる",
+          "meaning": "帶來",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "資料を持って来てください。",
+              "zh": "請把資料帶來。"
+            }
+          ]
+        },
+        {
+          "id": "cv-029",
+          "word": "持ち帰る",
+          "reading": "もちかえる",
+          "meaning": "帶回",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "食べ残しを持ち帰る。",
+              "zh": "把吃剩的帶回家。"
+            }
+          ]
+        },
+        {
+          "id": "cv-030",
+          "word": "持ち出す",
+          "reading": "もちだす",
+          "meaning": "帶出去",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "会社の書類を持ち出してはいけない。",
+              "zh": "不可以把公司的文件帶出去。"
+            }
+          ]
+        },
+        {
+          "id": "cv-031",
+          "word": "連れて行く",
+          "reading": "つれていく",
+          "meaning": "帶人去",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "子供を動物園に連れて行く。",
+              "zh": "帶小孩去動物園。"
+            }
+          ]
+        },
+        {
+          "id": "cv-032",
+          "word": "連れて来る",
+          "reading": "つれてくる",
+          "meaning": "帶人來",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "友達を家に連れて来た。",
+              "zh": "帶朋友來家裡了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-033",
+          "word": "迎えに行く",
+          "reading": "むかえにいく",
+          "meaning": "去接",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "駅まで迎えに行く。",
+              "zh": "去車站接人。"
+            }
+          ]
+        },
+        {
+          "id": "cv-034",
+          "word": "迎えに来る",
+          "reading": "むかえにくる",
+          "meaning": "來接",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "母が空港まで迎えに来てくれた。",
+              "zh": "媽媽來機場接我了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-035",
+          "word": "買いに行く",
+          "reading": "かいにいく",
+          "meaning": "去買",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "コンビニへ牛乳を買いに行く。",
+              "zh": "去便利商店買牛奶。"
+            }
+          ]
+        },
+        {
+          "id": "cv-036",
+          "word": "受け取る",
+          "reading": "うけとる",
+          "meaning": "收到",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "荷物を受け取った。",
+              "zh": "收到了包裹。"
+            }
+          ]
+        },
+        {
+          "id": "cv-037",
+          "word": "取り替える",
+          "reading": "とりかえる",
+          "meaning": "更換",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "電池を新しいものに取り替える。",
+              "zh": "把電池換成新的。"
+            }
+          ]
+        },
+        {
+          "id": "cv-038",
+          "word": "取り消す",
+          "reading": "とりけす",
+          "meaning": "取消",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "予約を取り消す。",
+              "zh": "取消預約。"
+            }
+          ]
+        },
+        {
+          "id": "cv-039",
+          "word": "取り返す",
+          "reading": "とりかえす",
+          "meaning": "拿回",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "貸したお金を取り返す。",
+              "zh": "拿回借出去的錢。"
+            }
+          ]
+        },
+        {
+          "id": "cv-040",
+          "word": "取り入れる",
+          "reading": "とりいれる",
+          "meaning": "採納",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "新しい方法を取り入れる。",
+              "zh": "採納新的方法。"
+            }
+          ]
+        },
+        {
+          "id": "cv-041",
+          "word": "取り組む",
+          "reading": "とりくむ",
+          "meaning": "致力於",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "環境問題に取り組む。",
+              "zh": "致力於環境問題。"
+            }
+          ]
+        },
+        {
+          "id": "cv-042",
+          "word": "取り戻す",
+          "reading": "とりもどす",
+          "meaning": "恢復、奪回",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "元気を取り戻す。",
+              "zh": "恢復精神。"
+            }
+          ]
+        },
+        {
+          "id": "cv-043",
+          "word": "引っ越す",
+          "reading": "ひっこす",
+          "meaning": "搬家",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "来月、新しい町に引っ越す。",
+              "zh": "下個月要搬到新的城鎮。"
+            }
+          ]
+        },
+        {
+          "id": "cv-044",
+          "word": "引き返す",
+          "reading": "ひきかえす",
+          "meaning": "折返",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "忘れ物に気づいて引き返した。",
+              "zh": "發現忘了東西而折返。"
+            }
+          ]
+        },
+        {
+          "id": "cv-045",
+          "word": "引き止める",
+          "reading": "ひきとめる",
+          "meaning": "挽留",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "辞めようとする社員を引き止める。",
+              "zh": "挽留想離職的員工。"
+            }
+          ]
+        },
+        {
+          "id": "cv-046",
+          "word": "引き続き",
+          "reading": "ひきつづき",
+          "meaning": "持續（副詞）",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "引き続きご協力をお願いします。",
+              "zh": "請繼續協助。"
+            }
+          ]
+        },
+        {
+          "id": "cv-047",
+          "word": "思い込む",
+          "reading": "おもいこむ",
+          "meaning": "深信",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "自分が正しいと思い込んでいる。",
+              "zh": "深信自己是對的。"
+            }
+          ]
+        },
+        {
+          "id": "cv-048",
+          "word": "思い切る",
+          "reading": "おもいきる",
+          "meaning": "下定決心",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "思い切って告白した。",
+              "zh": "下定決心告白了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-049",
+          "word": "見つける",
+          "reading": "みつける",
+          "meaning": "找到",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "なくした鍵を見つけた。",
+              "zh": "找到了弄丟的鑰匙。"
+            }
+          ]
+        },
+        {
+          "id": "cv-050",
+          "word": "見送る",
+          "reading": "みおくる",
+          "meaning": "送行",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "空港で友達を見送った。",
+              "zh": "在機場為朋友送行。"
+            }
+          ]
+        },
+        {
+          "id": "cv-051",
+          "word": "見舞う",
+          "reading": "みまう",
+          "meaning": "探病",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "入院中の友人を見舞う。",
+              "zh": "去探望住院中的朋友。"
+            }
+          ]
+        },
+        {
+          "id": "cv-052",
+          "word": "見比べる",
+          "reading": "みくらべる",
+          "meaning": "比較",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "二つの店の値段を見比べる。",
+              "zh": "比較兩家店的價格。"
+            }
+          ]
+        },
+        {
+          "id": "cv-053",
+          "word": "食べ切る",
+          "reading": "たべきる",
+          "meaning": "吃光",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "大盛りのラーメンを食べ切った。",
+              "zh": "把大碗的拉麵吃光了。"
+            }
+          ],
+          "confusionNote": "⚠ ～切る／～切れる／～干す 這組都表示「把動作做到完、做到底」：食べ切る＝吃光、売り切れる＝賣光、飲み干す＝喝光。"
+        },
+        {
+          "id": "cv-054",
+          "word": "読み切る",
+          "reading": "よみきる",
+          "meaning": "看完（讀完）",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "長い小説を一気に読み切った。",
+              "zh": "一口氣把長篇小說看完了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-055",
+          "word": "使い切る",
+          "reading": "つかいきる",
+          "meaning": "用光",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "予算を使い切ってしまった。",
+              "zh": "把預算用光了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-056",
+          "word": "飲み干す",
+          "reading": "のみほす",
+          "meaning": "喝光",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "コップの水を一気に飲み干した。",
+              "zh": "一口氣把杯子裡的水喝光了。"
+            }
+          ]
+        },
+        {
+          "id": "cv-057",
+          "word": "売り切れる",
+          "reading": "うりきれる",
+          "meaning": "售完",
+          "pos": "compound-verb",
+          "examples": [
+            {
+              "jp": "人気のケーキはすぐ売り切れる。",
+              "zh": "人氣蛋糕很快就會賣完。"
             }
           ]
         }

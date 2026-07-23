@@ -1,0 +1,450 @@
+{
+  "id": "n3-2023-12-grammar",
+  "title": "N3 2023年12月 文法",
+  "description": "N3 2023年12月 文法問題",
+  "level": "N3",
+  "category": "grammar",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n3-2023-12-g-01",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\nこの辺りは古いお寺や神社が多く、外国（　）観光客にも人気がある。",
+      "questionText": "この辺りは古いお寺や神社が多く、外国（　）観光客にも人気がある。",
+      "questionTranslation": "這一帶有很多古寺和神社，對來自外國的觀光客也很受歡迎。",
+      "options": [
+        { "id": "n3-2023-12-g-01-a", "text": "への", "isCorrect": false },
+        { "id": "n3-2023-12-g-01-b", "text": "でも", "isCorrect": false },
+        { "id": "n3-2023-12-g-01-c", "text": "との", "isCorrect": false },
+        { "id": "n3-2023-12-g-01-d", "text": "からの", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2023-12-g-01-d",
+      "explanation": "〜からの＋名詞＝來自〜的（名詞修飾）。「外国からの観光客」＝來自外國的觀光客。「への」是「向〜的」，「との」是「與〜的」，此處需要表示來源，故用「からの」。",
+      "tags": ["particle", "からの", "source", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-02",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n10年前に友人と2人で会社を作った。10年間で会社は少しずつ大きくなり、社員の数は100人（　）増えた。",
+      "questionText": "10年前に友人と2人で会社を作った。10年間で会社は少しずつ大きくなり、社員の数は100人（　）増えた。",
+      "questionTranslation": "10年前和朋友兩人一起創業。10年間公司漸漸壯大，員工人數甚至增加到了100人。",
+      "options": [
+        { "id": "n3-2023-12-g-02-a", "text": "にも", "isCorrect": false },
+        { "id": "n3-2023-12-g-02-b", "text": "でも", "isCorrect": false },
+        { "id": "n3-2023-12-g-02-c", "text": "にまで", "isCorrect": true },
+        { "id": "n3-2023-12-g-02-d", "text": "までも", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-02-c",
+      "explanation": "〜にまで＝甚至到達〜的程度（強調達到某數量的驚訝感）。「100人にまで増えた」＝增加到了100人。「に」表示到達點，「まで」強調程度之深。",
+      "tags": ["particle", "にまで", "degree", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-03",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n弁当屋で働いている友人が、よく売れる弁当は天気（　）違うと言っていた。",
+      "questionText": "弁当屋で働いている友人が、よく売れる弁当は天気（　）違うと言っていた。",
+      "questionTranslation": "在便當店工作的朋友說，賣得好的便當因天氣而不同。",
+      "options": [
+        { "id": "n3-2023-12-g-03-a", "text": "にとって", "isCorrect": false },
+        { "id": "n3-2023-12-g-03-b", "text": "によって", "isCorrect": true },
+        { "id": "n3-2023-12-g-03-c", "text": "に対して", "isCorrect": false },
+        { "id": "n3-2023-12-g-03-d", "text": "に関して", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-03-b",
+      "explanation": "〜によって＝因〜而異、根據〜。「天気によって違う」＝因天氣而不同。にとって＝對〜來說；に対して＝對〜；に関して＝關於〜。",
+      "tags": ["particle", "によって", "variation", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-04",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n中学生のころから留学したいと思っていた日本に、（　）留学できることになった。",
+      "questionText": "中学生のころから留学したいと思っていた日本に、（　）留学できることになった。",
+      "questionTranslation": "從國中時代就想去留學的日本，終於可以去留學了。",
+      "options": [
+        { "id": "n3-2023-12-g-04-a", "text": "たしかに", "isCorrect": false },
+        { "id": "n3-2023-12-g-04-b", "text": "すでに", "isCorrect": false },
+        { "id": "n3-2023-12-g-04-c", "text": "ついに", "isCorrect": true },
+        { "id": "n3-2023-12-g-04-d", "text": "ようやく", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-04-c",
+      "explanation": "ついに＝終於（帶有期待已久、等待很久後實現的感慨）。從中學起就想留學，終於實現，有長時間等待後的感動語氣。「ようやく」也有「終於」之意，但「ついに」更強調長期盼望後的感慨。",
+      "tags": ["adverb", "ついに", "finally", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-05",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n虫歯は、ひどくなってからだと治すのに時間がかかる。ひどくならない（　）歯医者に診てもらうことが重要だ。",
+      "questionText": "虫歯は、ひどくなってからだと治すのに時間がかかる。ひどくならない（　）歯医者に診てもらうことが重要だ。",
+      "questionTranslation": "蛀牙如果惡化後再治療需要很長時間。趁還沒惡化之前去看牙醫很重要。",
+      "options": [
+        { "id": "n3-2023-12-g-05-a", "text": "うちに", "isCorrect": true },
+        { "id": "n3-2023-12-g-05-b", "text": "ように", "isCorrect": false },
+        { "id": "n3-2023-12-g-05-c", "text": "ために", "isCorrect": false },
+        { "id": "n3-2023-12-g-05-d", "text": "ままに", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-05-a",
+      "explanation": "〜ないうちに＝趁還沒〜的時候。「ひどくならないうちに歯医者に行く」＝趁還沒惡化之前去看牙醫。此文型強調「在某狀態改變之前趕快做某事」。",
+      "tags": ["grammar-pattern", "うちに", "before-change", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-06",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n来月から大学の近くで一人暮らしを始める。通学のしやすさを（　）、大学まで歩いて通れる所にした。",
+      "questionText": "来月から大学の近くで一人暮らしを始める。通学のしやすさを（　）、大学まで歩いて通れる所にした。",
+      "questionTranslation": "從下個月開始在大學附近獨居。考慮到通學的方便性，選擇了可以步行到大學的地方。",
+      "options": [
+        { "id": "n3-2023-12-g-06-a", "text": "考えると", "isCorrect": false },
+        { "id": "n3-2023-12-g-06-b", "text": "考えて", "isCorrect": true },
+        { "id": "n3-2023-12-g-06-c", "text": "考えながら", "isCorrect": false },
+        { "id": "n3-2023-12-g-06-d", "text": "考えるなら", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-06-b",
+      "explanation": "〜を考えて＝考慮到〜（テ形表示理由/根據）。「通学のしやすさを考えて〜にした」＝考慮到通勤方便性，選擇了〜。テ形在此表示判斷的依據。",
+      "tags": ["te-form", "考えて", "reason", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-07",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n実家からみかんがたくさん送られてきた。一人では全部（　）と思ったので、友達に半分あげた。",
+      "questionText": "実家からみかんがたくさん送られてきた。一人では全部（　）と思ったので、友達に半分あげた。",
+      "questionTranslation": "從老家寄來了很多橘子。覺得一個人好像吃不完，就給了朋友一半。",
+      "options": [
+        { "id": "n3-2023-12-g-07-a", "text": "食べられそうにない", "isCorrect": true },
+        { "id": "n3-2023-12-g-07-b", "text": "食べられないようだ", "isCorrect": false },
+        { "id": "n3-2023-12-g-07-c", "text": "食べそうにない", "isCorrect": false },
+        { "id": "n3-2023-12-g-07-d", "text": "食べないようにしたい", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-07-a",
+      "explanation": "〜そうにない＝看起來不像會〜、似乎不可能〜。「食べられそうにない」＝看起來吃不完。〜られそうにない＝看起來不太能〜（能力+推測的否定）。",
+      "tags": ["grammar-pattern", "そうにない", "potential-negative", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-08",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n動物が好きな2歳の娘を（　）、先週初めて動物園に連れていった。",
+      "questionText": "動物が好きな2歳の娘を（　）、先週初めて動物園に連れていった。",
+      "questionTranslation": "為了讓喜歡動物的2歲女兒開心，上週第一次帶她去了動物園。",
+      "options": [
+        { "id": "n3-2023-12-g-08-a", "text": "喜んだら", "isCorrect": false },
+        { "id": "n3-2023-12-g-08-b", "text": "喜びたくて", "isCorrect": false },
+        { "id": "n3-2023-12-g-08-c", "text": "喜ばせたら", "isCorrect": false },
+        { "id": "n3-2023-12-g-08-d", "text": "喜ばせたくて", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2023-12-g-08-d",
+      "explanation": "〜させたくて＝因為想讓（別人）〜。「娘を喜ばせたくて動物園に連れていった」＝因為想讓女兒開心而帶她去動物園。「喜ぶ」＝（自己）高興 → 「喜びたい」＝自己想高興（不合語意）；「喜ばせる」＝讓別人高興 → 「喜ばせたい」＝想讓別人高興。",
+      "tags": ["causative", "たくて", "purpose", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-09",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n最近、バレエを習い始めた。上手に（　）何年かかるかわからないが、頑張りたい。",
+      "questionText": "最近、バレエを習い始めた。上手に（　）何年かかるかわからないが、頑張りたい。",
+      "questionTranslation": "最近開始學芭蕾舞。不知道要花幾年才能跳得好，但我想努力。",
+      "options": [
+        { "id": "n3-2023-12-g-09-a", "text": "踊れるようにすると", "isCorrect": false },
+        { "id": "n3-2023-12-g-09-b", "text": "踊れるようになっても", "isCorrect": false },
+        { "id": "n3-2023-12-g-09-c", "text": "踊れるようにして", "isCorrect": false },
+        { "id": "n3-2023-12-g-09-d", "text": "踊れるようになるのに", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2023-12-g-09-d",
+      "explanation": "〜のに（時間・労力がかかる）＝…需要（時間/努力）。「〜ようになるのに何年かかるか」＝要達到〜的程度不知道需要幾年。「のに」此處是「為了達成〜」的意思，後接「かかる」。",
+      "tags": ["grammar-pattern", "のに", "time-effort", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-10",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\nうちの犬は散歩が大好きだが、雨の日はぬれるのが嫌なようで、散歩に（　）。",
+      "questionText": "うちの犬は散歩が大好きだが、雨の日はぬれるのが嫌なようで、散歩に（　）。",
+      "questionTranslation": "我家的狗非常喜歡散步，但雨天好像討厭被淋濕，不想去散步。",
+      "options": [
+        { "id": "n3-2023-12-g-10-a", "text": "行かなくてはいけない", "isCorrect": false },
+        { "id": "n3-2023-12-g-10-b", "text": "行きたがらない", "isCorrect": true },
+        { "id": "n3-2023-12-g-10-c", "text": "行ってもかまわない", "isCorrect": false },
+        { "id": "n3-2023-12-g-10-d", "text": "行くに違いない", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-10-b",
+      "explanation": "〜たがらない＝（第三人稱）不想〜、不願意〜。「行きたがらない」＝（狗）不想去。「〜たい」表達的是說話者自己的願望；描述第三人稱的願望時要用「〜たがる」。",
+      "tags": ["grammar-pattern", "たがらない", "third-person-desire", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-11",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n（デパートで）客「すみません、子供服の売り場は何階ですか。」店員「5階（　）。」",
+      "questionText": "（デパートで）客「すみません、子供服の売り場は何階ですか。」店員「5階（　）。」",
+      "questionTranslation": "（在百貨公司）顧客：「不好意思，童裝賣場在幾樓？」店員：「在5樓。」",
+      "options": [
+        { "id": "n3-2023-12-g-11-a", "text": "がございます", "isCorrect": false },
+        { "id": "n3-2023-12-g-11-b", "text": "がいらっしゃいます", "isCorrect": false },
+        { "id": "n3-2023-12-g-11-c", "text": "でございます", "isCorrect": true },
+        { "id": "n3-2023-12-g-11-d", "text": "でいらっしゃいます", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-11-c",
+      "explanation": "でございます＝「です」的鄭重語（丁寧語の最上級）。百貨公司店員使用的禮貌說法。「5階でございます」＝在5樓。「いらっしゃいます」是「います」的尊敬語，用於人，不用於樓層。",
+      "tags": ["keigo", "でございます", "polite-speech", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-12",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n（家で）A「夕飯に使う卵が足りないから、ちょっとスーパーまで（　）ね。」B「うん、わかった。」",
+      "questionText": "（家で）A「夕飯に使う卵が足りないから、ちょっとスーパーまで（　）ね。」B「うん、わかった。」",
+      "questionTranslation": "（在家）A：「晚飯要用的雞蛋不夠，我去超市買一下。」B：「嗯，好的。」",
+      "options": [
+        { "id": "n3-2023-12-g-12-a", "text": "買ってきておく", "isCorrect": false },
+        { "id": "n3-2023-12-g-12-b", "text": "買いにきている", "isCorrect": false },
+        { "id": "n3-2023-12-g-12-c", "text": "買いにいってくる", "isCorrect": true },
+        { "id": "n3-2023-12-g-12-d", "text": "買っていってしまう", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-12-c",
+      "explanation": "〜にいってくる＝去〜（然後回來）。「買いにいってくる」＝去買（回來）。說話者離開現在的地方去做某事後回來。「くる」在此表示說話者會回來的移動方向。",
+      "tags": ["grammar-pattern", "にいってくる", "movement", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-13",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 1,
+      "problemLabel": "文法形式",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n（電話で）田中「もしもし、田中です。山下さん、今ちょっといいですか。」山下「あ、田中さん。私も今ちょうど田中さんに電話をしようと（　）。」",
+      "questionText": "（電話で）田中「もしもし、田中です。山下さん、今ちょっといいですか。」山下「あ、田中さん。私も今ちょうど田中さんに電話をしようと（　）。」",
+      "questionTranslation": "（電話中）田中：「喂，我是田中。山下先生，現在方便說話嗎？」山下：「啊，田中先生。我也剛好正打算打電話給您。」",
+      "options": [
+        { "id": "n3-2023-12-g-13-a", "text": "思っていたところでした", "isCorrect": true },
+        { "id": "n3-2023-12-g-13-b", "text": "思っているところです", "isCorrect": false },
+        { "id": "n3-2023-12-g-13-c", "text": "思っていたからでした", "isCorrect": false },
+        { "id": "n3-2023-12-g-13-d", "text": "思っているからです", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-13-a",
+      "explanation": "ちょうど〜しようと思っていたところでした＝剛好正打算〜（某時機點剛好有那個想法）。「ところ」表示動作發生的時機點，過去形「〜たところでした」表示剛好在電話來的瞬間有那個想法。",
+      "tags": ["grammar-pattern", "ところでした", "timing", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-14",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n私は歌手の石川あかりが大好きだ。彼女 ＿＿ ＿＿ ★ ＿＿ いないと思う。\n選択肢：1.声がきれいな　2.は　3.歌手　4.ほど",
+      "questionText": "彼女 ＿＿ ＿＿ ★ ＿＿ いないと思う。\n正しい語順：[は②] [声がきれいな①] [歌手③] [★ほど④]",
+      "questionTranslation": "我很喜歡歌手石川明里。我覺得沒有比她聲音更好聽的歌手了。",
+      "options": [
+        { "id": "n3-2023-12-g-14-a", "text": "声がきれいな", "isCorrect": false },
+        { "id": "n3-2023-12-g-14-b", "text": "は", "isCorrect": false },
+        { "id": "n3-2023-12-g-14-c", "text": "歌手", "isCorrect": false },
+        { "id": "n3-2023-12-g-14-d", "text": "ほど", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2023-12-g-14-d",
+      "explanation": "〜ほど〜はない＝沒有比〜更〜的。「彼女ほど声がきれいな歌手はいない」（否定文強調）。完整語順：は②→声がきれいな①→歌手③→ほど④★。★位置（第4格）填入「ほど」。",
+      "tags": ["sentence-arrangement", "ほど", "comparison", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-15",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n最近は野菜や魚などの食料品も ＿＿ ＿＿ ★ ＿＿ ニュースで知った。\n選択肢：1.人が　2.増えてきている　3.インターネットで買う　4.ということを",
+      "questionText": "最近は野菜や魚などの食料品も ＿＿ ＿＿ ★ ＿＿ ニュースで知った。\n正しい語順：[インターネットで買う③] [人が①] [★増えてきている②] [ということを④]",
+      "questionTranslation": "最近從新聞上得知，透過網路購買蔬菜魚類等食品的人也越來越多了。",
+      "options": [
+        { "id": "n3-2023-12-g-15-a", "text": "人が", "isCorrect": false },
+        { "id": "n3-2023-12-g-15-b", "text": "増えてきている", "isCorrect": true },
+        { "id": "n3-2023-12-g-15-c", "text": "インターネットで買う", "isCorrect": false },
+        { "id": "n3-2023-12-g-15-d", "text": "ということを", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-15-b",
+      "explanation": "〜てきている＝逐漸〜、越來越〜（變化持續進行中）。完整語順：インターネットで買う③→人が①→増えてきている②★→ということを④。★位置填入「増えてきている」。",
+      "tags": ["sentence-arrangement", "てきている", "gradual-change", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-16",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n（大学で）中山「林先輩、ゼミの発表で使う資料を作ったんですが、 ＿＿ ＿＿ ★ ＿＿ でしょうか。」\n選択肢：1.もらえない　2.ところがあるので　3.一度チェックして　4.自信がない",
+      "questionText": "ゼミの発表で使う資料を作ったんですが、 ＿＿ ＿＿ ★ ＿＿ でしょうか。\n正しい語順：[自信がない④] [ところがあるので②] [★一度チェックして③] [もらえない①]",
+      "questionTranslation": "（在大學）中山：「學長，我製作了研討會發表用的資料，有些地方沒有把握，可以請您幫我看一下嗎？」",
+      "options": [
+        { "id": "n3-2023-12-g-16-a", "text": "もらえない", "isCorrect": false },
+        { "id": "n3-2023-12-g-16-b", "text": "ところがあるので", "isCorrect": false },
+        { "id": "n3-2023-12-g-16-c", "text": "一度チェックして", "isCorrect": true },
+        { "id": "n3-2023-12-g-16-d", "text": "自信がない", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-16-c",
+      "explanation": "〜てもらえないでしょうか＝能否請您〜（禮貌的請求）。比「〜てください」更委婉。完整語順：自信がない④→ところがあるので②→一度チェックして③★→もらえない①。★位置填入「一度チェックして」。",
+      "tags": ["sentence-arrangement", "てもらえないでしょうか", "polite-request", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-17",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n今朝は急いでいたから、 ＿＿ ＿＿ ★ ＿＿ しまった。\n選択肢：1.玄関の電気を消すのを　2.きて　3.家を出て　4.忘れて",
+      "questionText": "今朝は急いでいたから、 ＿＿ ＿＿ ★ ＿＿ しまった。\n正しい語順：[玄関の電気を消すのを①] [忘れて④] [★家を出て③] [きて②]",
+      "questionTranslation": "今天早上因為很著急，忘了關玄關的電燈就出門了。",
+      "options": [
+        { "id": "n3-2023-12-g-17-a", "text": "玄関の電気を消すのを", "isCorrect": false },
+        { "id": "n3-2023-12-g-17-b", "text": "きて", "isCorrect": false },
+        { "id": "n3-2023-12-g-17-c", "text": "家を出て", "isCorrect": true },
+        { "id": "n3-2023-12-g-17-d", "text": "忘れて", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-17-c",
+      "explanation": "〜てくる＝（離開某處後）來（移動方向朝向說話現場）。「家を出てきてしまった」＝（忘了關燈就）從家裡出來了。完整語順：玄関の電気を消すのを①→忘れて④→家を出て③★→きて②。★位置填入「家を出て」。",
+      "tags": ["sentence-arrangement", "てくる", "movement", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-18",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n読書が趣味の友人は、いつどんな本を読んだかを ＿＿ ＿＿ ★ ＿＿ そうだ。\n選択肢：1.必ずノートに記録する　2.忘れない　3.ように　4.ことにしている",
+      "questionText": "読書が趣味の友人は、いつどんな本を読んだかを ＿＿ ＿＿ ★ ＿＿ そうだ。\n正しい語順：[忘れない②] [ように③] [★必ずノートに記録する①] [ことにしている④]",
+      "questionTranslation": "喜歡讀書的朋友說，為了不忘記，他養成了一定要在筆記本上記錄自己何時讀了什麼書的習慣。",
+      "options": [
+        { "id": "n3-2023-12-g-18-a", "text": "必ずノートに記録する", "isCorrect": true },
+        { "id": "n3-2023-12-g-18-b", "text": "忘れない", "isCorrect": false },
+        { "id": "n3-2023-12-g-18-c", "text": "ように", "isCorrect": false },
+        { "id": "n3-2023-12-g-18-d", "text": "ことにしている", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-18-a",
+      "explanation": "〜ないように〜することにしている＝為了不〜，決定（習慣）做〜。「忘れないように〜することにしている」＝為了不忘記而養成了〜的習慣。完整語順：忘れない②→ように③→必ずノートに記録する①★→ことにしている④。★位置填入「必ずノートに記録する」。",
+      "tags": ["sentence-arrangement", "ないように", "habit", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-19",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 3,
+      "problemLabel": "文章の文法",
+      "prompt": "【問題3 文章の文法】文章を読んで、（　）に入れるのに最もよいものを選びなさい。\n\n【文章：ガソリンスタンドのサービス（作文：アレン マット）】\n\n　私がガソリンスタンドに初めて行ったのは、日本に来てすぐのときです。私の国には、セルフのスタンドしかありません。自分でガソリンを入れる店（19）知りませんでした。\n\n　ところが日本のガソリンスタンドには店員がいて、車のそばに来てくれました。そして、ガソリンを入れてくれているあいだに、「窓を拭きましょうか」と聞いてくれたのです。（20）、別の店員が来て、車の窓も丁寧に拭いてくれたのです。とても驚きました。\n\n　それから、私はいろいろなガソリンスタンドを利用しましたが、私たちが（21）ガソリンスタンドでは、ガソリンを入れた車が道路に出るとき、店員が左右を見て車が来ないか確認して、見送りもしていました。\n\n　日本のガソリンスタンドのサービスはとても（22）。",
+      "questionText": "（19）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（19）中填入最合適的選項。",
+      "options": [
+        { "id": "n3-2023-12-g-19-a", "text": "は", "isCorrect": false },
+        { "id": "n3-2023-12-g-19-b", "text": "も", "isCorrect": false },
+        { "id": "n3-2023-12-g-19-c", "text": "だけ", "isCorrect": false },
+        { "id": "n3-2023-12-g-19-d", "text": "しか", "isCorrect": true }
+      ],
+      "correctAnswer": "n3-2023-12-g-19-d",
+      "explanation": "〜しか〜ない＝只有〜（帶有「這就是全部，別無其他」的語氣）。「自分でガソリンを入れる店しか知りませんでした」＝只知道自己加油的店（從來沒見過有店員服務的加油站）。「しか」必須搭配否定形。「だけ」也是「只有」，但不要求否定形。",
+      "tags": ["particle", "しか", "restriction-negative", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-20",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 3,
+      "problemLabel": "文章の文法",
+      "prompt": "【問題3 文章の文法】文章を読んで、（　）に入れるのに最もよいものを選びなさい。\n\n【文章：ガソリンスタンドのサービス（作文：アレン マット）】\n\n　私がガソリンスタンドに初めて行ったのは、日本に来てすぐのときです。私の国には、セルフのスタンドしかありません。自分でガソリンを入れる店（19）知りませんでした。\n\n　ところが日本のガソリンスタンドには店員がいて、車のそばに来てくれました。そして、ガソリンを入れてくれているあいだに、「窓を拭きましょうか」と聞いてくれたのです。（20）、別の店員が来て、車の窓も丁寧に拭いてくれたのです。とても驚きました。\n\n　それから、私はいろいろなガソリンスタンドを利用しましたが、私たちが（21）ガソリンスタンドでは、ガソリンを入れた車が道路に出るとき、店員が左右を見て車が来ないか確認して、見送りもしていました。\n\n　日本のガソリンスタンドのサービスはとても（22）。",
+      "questionText": "（20）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（20）中填入最合適的選項。",
+      "options": [
+        { "id": "n3-2023-12-g-20-a", "text": "ただ", "isCorrect": false },
+        { "id": "n3-2023-12-g-20-b", "text": "例えば", "isCorrect": false },
+        { "id": "n3-2023-12-g-20-c", "text": "そのうえ", "isCorrect": true },
+        { "id": "n3-2023-12-g-20-d", "text": "ところが", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-20-c",
+      "explanation": "そのうえ＝而且、此外（追加更多同類的好事）。「窓を拭いてくれた、そのうえ別の店員も来て〜」＝除此之外還有〜。「ところが」是轉折用語，「ただ」是「只是/但是」，「例えば」是「例如」，都不適合這裡的追加語境。",
+      "tags": ["conjunction", "そのうえ", "addition", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-21",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 3,
+      "problemLabel": "文章の文法",
+      "prompt": "【問題3 文章の文法】文章を読んで、（　）に入れるのに最もよいものを選びなさい。\n\n【文章：ガソリンスタンドのサービス（作文：アレン マット）】\n\n　私がガソリンスタンドに初めて行ったのは、日本に来てすぐのときです。私の国には、セルフのスタンドしかありません。自分でガソリンを入れる店（19）知りませんでした。\n\n　ところが日本のガソリンスタンドには店員がいて、車のそばに来てくれました。そして、ガソリンを入れてくれているあいだに、「窓を拭きましょうか」と聞いてくれたのです。（20）、別の店員が来て、車の窓も丁寧に拭いてくれたのです。とても驚きました。\n\n　それから、私はいろいろなガソリンスタンドを利用しましたが、私たちが（21）ガソリンスタンドでは、ガソリンを入れた車が道路に出るとき、店員が左右を見て車が来ないか確認して、見送りもしていました。\n\n　日本のガソリンスタンドのサービスはとても（22）。",
+      "questionText": "（21）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（21）中填入最合適的選項。",
+      "options": [
+        { "id": "n3-2023-12-g-21-a", "text": "行った", "isCorrect": true },
+        { "id": "n3-2023-12-g-21-b", "text": "行ける", "isCorrect": false },
+        { "id": "n3-2023-12-g-21-c", "text": "行くような", "isCorrect": false },
+        { "id": "n3-2023-12-g-21-d", "text": "行きたかった", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-21-a",
+      "explanation": "「私たちが行ったガソリンスタンド」＝我們去過的加油站。此為連體修飾，用過去式「行った」修飾後面的名詞「ガソリンスタンド」，表示實際已去過的地方。其他選項時態或語意不符。",
+      "tags": ["verb-form", "past-tense", "relative-clause", "n3-grammar"]
+    },
+    {
+      "id": "n3-2023-12-g-22",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "problemNumber": 3,
+      "problemLabel": "文章の文法",
+      "prompt": "【問題3 文章の文法】文章を読んで、（　）に入れるのに最もよいものを選びなさい。\n\n【文章：ガソリンスタンドのサービス（作文：アレン マット）】\n\n　私がガソリンスタンドに初めて行ったのは、日本に来てすぐのときです。私の国には、セルフのスタンドしかありません。自分でガソリンを入れる店（19）知りませんでした。\n\n　ところが日本のガソリンスタンドには店員がいて、車のそばに来てくれました。そして、ガソリンを入れてくれているあいだに、「窓を拭きましょうか」と聞いてくれたのです。（20）、別の店員が来て、車の窓も丁寧に拭いてくれたのです。とても驚きました。\n\n　それから、私はいろいろなガソリンスタンドを利用しましたが、私たちが（21）ガソリンスタンドでは、ガソリンを入れた車が道路に出るとき、店員が左右を見て車が来ないか確認して、見送りもしていました。\n\n　日本のガソリンスタンドのサービスはとても（22）。",
+      "questionText": "（22）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（22）中填入最合適的選項。",
+      "options": [
+        { "id": "n3-2023-12-g-22-a", "text": "いいサービスだろうと思うからです", "isCorrect": false },
+        { "id": "n3-2023-12-g-22-b", "text": "いいサービスだと思いました", "isCorrect": true },
+        { "id": "n3-2023-12-g-22-c", "text": "いいサービスにするつもりです", "isCorrect": false },
+        { "id": "n3-2023-12-g-22-d", "text": "いいサービスにしようとしました", "isCorrect": false }
+      ],
+      "correctAnswer": "n3-2023-12-g-22-b",
+      "explanation": "整篇作文是留學生描述在日本加油站的親身體驗後，表達自己的感想。結尾句應是作者的個人感想（過去的印象），故用「〜だと思いました」。「だろうと思う」是推測語氣，「するつもり」「しようとした」是意志表達，都不符合此處的「感想」語境。",
+      "tags": ["text-grammar", "quotation", "impression", "n3-grammar"]
+    }
+  ]
+}

@@ -1,0 +1,650 @@
+{
+  "id": "n3-2022-12-reading",
+  "title": "N3 2022年12月 読解",
+  "description": "N3 2022年12月 読解問題（問題4〜7）",
+  "level": "N3",
+  "category": "reading",
+  "type": "multiple-choice",
+  "questions": [
+    {
+      "id": "n3-2022-12-r-23",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】\n\n（コピー機の張り紙）\n営業課のコピー機が故障中。修理は明日午後。今日急ぎの場合は会計課のコピー機を使うこと。50枚以上は事前に中島に連絡すること。\n\n問23　ホンさんは、明日の朝の会議で使う資料を今日中に5枚コピーしたいと考えている。どうしなければならないか。",
+      "questionText": "問23　ホンさんは、明日の朝の会議で使う資料を今日中に5枚コピーしたいと考えている。どうしなければならないか。",
+      "questionTranslation": "問23　洪先生想在今天之內影印5張明天早上開會要用的資料，他應該怎麼做？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-23-a",
+          "text": "営業課でコピーをする。中島さんに言う必要はない。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-23-b",
+          "text": "会計課でコピーをする。中島さんに言う必要はない。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-r-23-c",
+          "text": "中島さんに言ってから、営業課でコピーをする。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-23-d",
+          "text": "中島さんに言ってから、会計課でコピーをする。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-23-b",
+      "explanation": "営業課のコピー機は故障中。5枚は50枚未満なので中島さんへの連絡不要。会計課のコピー機を使う。",
+      "tags": [
+        "reading",
+        "problem-4",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2022-12-r-24",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】\n\n（ボール投げの練習）\nテレビ番組では、異なる大きさのボールや紙飛機を使い、ちょうどいい力の入れ方を体で覚えさせる方法が紹介されていた。\n\n問24　テレビ番組を見て、「私」は娘のボール投げがうまくならないのは、なぜだと考えたか。",
+      "questionText": "問24　テレビ番組を見て、「私」は娘のボール投げがうまくならないのは、なぜだと考えたか。",
+      "questionTranslation": "問24　看了電視節目後，「我」認為女兒球擲不好的原因是什麼？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-24-a",
+          "text": "上手な投げ方についての「私」の説明が下手だったから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-24-b",
+          "text": "繰り返し同じ投げ方で投げる練習をさせていなかったから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-24-c",
+          "text": "実際に「私」が上手に投げているところを見せていなかったから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-24-d",
+          "text": "ちょうどいい力の入れ方を体で覚える練習をさせていなかったから。",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-24-d",
+      "explanation": "電視節目用不同大小的球讓孩子用身體記住適當的出力方式。筆者認為女兒缺少用身體記住ちょうどいい力の入れ方的練習。",
+      "tags": [
+        "reading",
+        "problem-4",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2022-12-r-25",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】\n\n（財布専門店タキグチからのメール）\n2/4にご注文の茶色革製財布は品切れ。最短3月上旬発送。継続か取消かご連絡ください。同款別色は即時発送可能。\n\n問25　このメールで言いたいこととして、合っているのはどれか。",
+      "questionText": "問25　このメールで言いたいこととして、合っているのはどれか。",
+      "questionTranslation": "問25　這封信想表達的意思，符合的是哪個？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-25-a",
+          "text": "商品が品切れになったから、3月上旬に送る。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-25-b",
+          "text": "商品が品切れになったから、3月上旬にもう一度注文してほしい。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-25-c",
+          "text": "商品が品切れで、届けるまでに時間がかかるから、どうしたいか知らせてほしい。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-r-25-d",
+          "text": "注文と違う色の商品を送ってしまったから、正しい色のものをすぐに送る。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-25-c",
+      "explanation": "茶色の財布が品切れで3月上旬までかかる。継続か取消かを客に問い合わせているメール。",
+      "tags": [
+        "reading",
+        "problem-4",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2022-12-r-26",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】\n\n（古い靴のリサイクル）\n旧靴を持参すると店内で使える割引券と交換。回収した靴の燃焼熱で発電。筆者は一人では環境への影響は小さいと思いつつ、安く新靴が買えるなら持って行こうと決めた。\n\n問26　「私」が古い靴を店に持っていこうと思った理由の中で、最も大きいものはどれか。",
+      "questionText": "問26　「私」が古い靴を店に持っていこうと思った理由の中で、最も大きいものはどれか。",
+      "questionTranslation": "問26　「我」想把舊鞋帶去店裡的理由中，最主要的是哪個？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-26-a",
+          "text": "古い靴を割引券と交換して、新しい靴を買うときに使いたいと思ったから。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-r-26-b",
+          "text": "古い靴を売ってお金をもらい、そのお金で新しい靴を買いたいと思ったから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-26-c",
+          "text": "古い靴をきれいに直してもらって、もう一度履きたいと思ったから。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-26-d",
+          "text": "古い靴を利用してもらって、環境をよくしたいと思ったから。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-26-a",
+      "explanation": "「新しい靴が安く買えるなら」が最後の決め手。環境への貢献は副次的な動機。",
+      "tags": [
+        "reading",
+        "problem-4",
+        "n3-reading"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2022-12-r-27",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（ラジオの良さ）\n衣櫥で父の古いラジオを見つけて電源を入れたら、高校時代に大好きだった音楽番組のアナウンサーの声が聞こえてきた。\n\n問27　①懐かしい声とあるが、何か。",
+      "questionText": "問27　①懐かしい声とあるが、何か。",
+      "questionTranslation": "問27　①「懷念的聲音」是指什麼？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-27-a",
+          "text": "「私」が高校のころ、父の声",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-27-b",
+          "text": "「私」が高校のころ、自分の声",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-27-c",
+          "text": "「私」が高校のころ、大好きだった歌手の声",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-27-d",
+          "text": "「私」が高校のころ、よく聞いていたアナウンサーの声",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-27-d",
+      "explanation": "文中：「高校生のころ、大好きだったラジオの音楽番組のアナウンサーだった」→懐かしい声はそのアナウンサーの声。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2022-12-r-28",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（ラジオの良さ）\nネットで何でも調べられる今もドライバーや農作業者はラジオを聞く。ラジオには「他のことをしながらでも情報が得られる」独自の良さがある。\n\n問28　②また、ラジオを聞こうと思ったのはどうしてか。",
+      "questionText": "問28　②また、ラジオを聞こうと思ったのはどうしてか。",
+      "questionTranslation": "問28　②為什麼想「再次聽廣播」？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-28-a",
+          "text": "ラジオはテレビより小さくて、そばに置けるから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-28-b",
+          "text": "ラジオはインターネットより多くのことが学べるから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-28-c",
+          "text": "ラジオは新しいことだけでなく、昔のことも伝えるから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-28-d",
+          "text": "ラジオはほかのことをしながらでも、さまざまなことが知れるから",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-28-d",
+      "explanation": "「ほかのことをしながらでも、さまざまな情報が手に入るというラジオにしかない良さ、便利さがある」→掃除や料理をしながらラジオを聞けることに気づいた。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2022-12-r-29",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（ラジオの良さ）\n\n問29　この文章のテーマは何か。",
+      "questionText": "問29　この文章のテーマは何か。",
+      "questionTranslation": "問29　這篇文章的主題是什麼？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-29-a",
+          "text": "ラジオ番組の楽しみ方",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-29-b",
+          "text": "ラジオの良さ",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-r-29-c",
+          "text": "ラジオの歴史の長さ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-29-d",
+          "text": "ラジオの上手な使い方",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-29-b",
+      "explanation": "全文がラジオの独自の良さ（懐かしさ・ながら聴き）を軸に展開しており、テーマは「ラジオの良さ」。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2022-12-r-30",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（田舎暮らしの夢）\n夫婦で農業をしながら田舎に住む夢を持つ筆者が、ある町の移住説明会に参加。町は移住者を募集するため説明会を開催。\n\n問30　町が①説明会を開いた目的は何か。",
+      "questionText": "問30　町が①説明会を開いた目的は何か。",
+      "questionTranslation": "問30　城鎮舉辦①說明會的目的是什麼？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-30-a",
+          "text": "町に住んでくれる人を集めるため",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-r-30-b",
+          "text": "移住者を助けてくれる町民を集めるため",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-30-c",
+          "text": "農業についてアドバイスする専門家を集めるため",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-30-d",
+          "text": "町の人口を増やす方法を考えてくれる人を集めるため",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-30-a",
+      "explanation": "文中：「町民を募集するために説明会を開いています」→移住者（新しい町民）を集めるため。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2022-12-r-31",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（田舎暮らしの夢）\n移住に失敗した人の②共通点として、田舎暮らしへの憧れで来たが日常生活・農業ともに想像より辛く最終的に都市に戻ったと説明会で紹介された。\n\n問31　②共通点とあるが、それはどのような点だと考えられるか。",
+      "questionText": "問31　②共通点とあるが、それはどのような点だと考えられるか。",
+      "questionTranslation": "問31　②共通點被認為是怎樣的點？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-31-a",
+          "text": "思っていた生活はできなかったが、がまんして生活している",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-31-b",
+          "text": "思っていた生活ができて、楽しく生活している",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-31-c",
+          "text": "思っていた生活と違うが、満足している",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-31-d",
+          "text": "思っていた生活と違い、不満だ",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-31-d",
+      "explanation": "失敗例の共通点：田舎生活や農業が想像より大変で、結局都市に戻った。期待と現実のギャップによる不満が共通点。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2022-12-r-32",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中くらいの文章）】\n\n（田舎暮らしの夢）\n\n問32　説明会に行ってから、自分の夢について、「私」はどう思うようになったか。",
+      "questionText": "問32　説明会に行ってから、自分の夢について、「私」はどう思うようになったか。",
+      "questionTranslation": "問32　參加說明會後，「我」對自己的夢想有何想法？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-32-a",
+          "text": "失敗例が多いので、実行しないほうがいいと思った",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-32-b",
+          "text": "失敗例を知ったので、実行するかどうか考えたいと思った",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-32-c",
+          "text": "失敗例も考えたうえで、きちんと計画を立てて実行したいと思った",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-r-32-d",
+          "text": "成功例のほうが多いので、失敗例は気にせず、すぐに実行しようと思った",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-32-c",
+      "explanation": "「よく調べて、計画を立てて、実行できるように頑張りたいと思います」→諦めずに計画を立てて実行したいと思った。",
+      "tags": [
+        "reading",
+        "problem-5",
+        "n3-reading"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "読解（中くらいの文章）"
+    },
+    {
+      "id": "n3-2022-12-r-33",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（長い文章）】\n\n（眠れない悩みと体の中心温度）\n筆者は布団に入ってもしばらく眠れない悩みを持ち、寝る1時間前にジョギングを始めたが2週間経っても①全然変わらなかった。\n\n問33　①全然変わらないとあるが、何が変わらないのか。",
+      "questionText": "問33　①全然変わらないとあるが、何が変わらないのか。",
+      "questionTranslation": "問33　①「完全沒有改變」——是什麼沒有改變？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-33-a",
+          "text": "布団に入ってもしばらく眠れないこと",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-r-33-b",
+          "text": "運動しないと眠れないこと",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-33-c",
+          "text": "朝、決まった時刻に起きられないこと",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-33-d",
+          "text": "1時間走り続けることができないこと",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-33-a",
+      "explanation": "本文冒頭の悩みは「布団に入ってもしばらく眠れない」こと。寝る1時間前に走る習慣を2週間続けたが、この問題が「全然変わらない」。",
+      "tags": [
+        "reading",
+        "problem-6",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長い文章）"
+    },
+    {
+      "id": "n3-2022-12-r-34",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（長い文章）】\n\n（眠れない悩みと体の中心温度）\n②体の中心の温度の変化：寝る2〜3時間前に軽い運動や温めの入浴→中心温度が上昇→体表への放熱→中心温度低下→睡眠しやすい状態。\n\n問34　②体の中心の温度の変化が重要だとあるが、この変化を起こすためには、どうすればいいか。",
+      "questionText": "問34　②体の中心の温度の変化が重要だとあるが、この変化を起こすためには、どうすればいいか。",
+      "questionTranslation": "問34　②「體內中心溫度的變化很重要」——要引起這個變化該怎麼做？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-34-a",
+          "text": "体の中心の温度を低くした後、中心の温度が上がった状態を作る",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-34-b",
+          "text": "体の中心の温度を高くした後、中心の温度が上がった状態を作る",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-34-c",
+          "text": "体の中心の温度を高くした後、中心の温度が下がった状態を作る",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-r-34-d",
+          "text": "体の中心の温度を低くしたり高くしたりして、温度が変化し続ける状態を作る",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-34-c",
+      "explanation": "寝る2〜3時間前に軽い運動か温めの湯船→体の中心温度が上がる→体表へ放熱→中心温度が下がる→眠くなる。先に上げてから下げる状態を作る。",
+      "tags": [
+        "reading",
+        "problem-6",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長い文章）"
+    },
+    {
+      "id": "n3-2022-12-r-35",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（長い文章）】\n\n（眠れない悩みと体の中心温度）\n正しいのは「寝る2〜3時間前に軽い運動」。筆者は「寝る1時間前に体が疲れるまで走る」という③間違いをしていた。\n\n問35　③間違いとあるが、「私」が間違えて、していたことは何か。",
+      "questionText": "問35　③間違いとあるが、「私」が間違えて、していたことは何か。",
+      "questionTranslation": "問35　③「錯誤」——「我」做錯了什麼事？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-35-a",
+          "text": "寝る1時間前に体が疲れるような運動をすること",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-r-35-b",
+          "text": "寝る1時間前に軽い運動をすること",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-35-c",
+          "text": "寝る2、3時間前に体が疲れるような運動をすること",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-35-d",
+          "text": "寝る2、3時間前に軽い運動をすること",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-35-a",
+      "explanation": "筆者の行動：「寝る1時間前に走ること」＋「体が疲れるまで走っていた」。タイミング（2〜3時間前でなく1時間前）と強度（軽くなく激しい）の両方が間違い。",
+      "tags": [
+        "reading",
+        "problem-6",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長い文章）"
+    },
+    {
+      "id": "n3-2022-12-r-36",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（長い文章）】\n\n（眠れない悩みと体の中心温度）\n筆者：運動が好きでなく夜の一人走りは怖い。温めの入浴でも同じ効果があることを知り、（　）と決めた。\n\n問36　（　）に入れるのに最もよいものはどれか。",
+      "questionText": "問36　（　）に入れるのに最もよいものはどれか。",
+      "questionTranslation": "問36　（　）中填入最合適的是哪個？",
+      "options": [
+        {
+          "id": "n3-2022-12-r-36-a",
+          "text": "起きる時間をおそくしよう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-36-b",
+          "text": "布団に入って、自然に眠くなるのを待とう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-36-c",
+          "text": "ぬるいお湯に入ってから寝よう",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-r-36-d",
+          "text": "少し走ってから寝よう",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-36-c",
+      "explanation": "筆者は運動が嫌いで夜の一人ランニングも怖い。「運動以外の良い方法」として温めの入浴が有効と知り喜んだ。よって（　）には「ぬるいお湯に入ってから寝よう」が最適。",
+      "tags": [
+        "reading",
+        "problem-6",
+        "n3-reading"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "読解（長い文章）"
+    },
+    {
+      "id": "n3-2022-12-r-37",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題7 読解（情報検索）】\n\n【問題7 読解（情報検索）】\n（※この問題の本文テキストは取得できませんでした。正解は選択肢4です。）\n\n問37　（本文を参照して答えてください。）",
+      "questionText": "問37　（本文を参照して答えてください。）",
+      "questionTranslation": "問37　（請參照本文作答。）",
+      "options": [
+        {
+          "id": "n3-2022-12-r-37-a",
+          "text": "選択肢1",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-37-b",
+          "text": "選択肢2",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-37-c",
+          "text": "選択肢3",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-37-d",
+          "text": "選択肢4",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-37-d",
+      "explanation": "2022年12月N3 問37 の正解は選択肢4（d）です。",
+      "tags": [
+        "reading",
+        "problem-7",
+        "n3-reading"
+      ],
+      "problemNumber": 7,
+      "problemLabel": "読解（情報検索）"
+    },
+    {
+      "id": "n3-2022-12-r-38",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題7 読解（情報検索）】\n\n【問題7 読解（情報検索）】\n（※この問題の本文テキストは取得できませんでした。正解は選択肢2です。）\n\n問38　（本文を参照して答えてください。）",
+      "questionText": "問38　（本文を参照して答えてください。）",
+      "questionTranslation": "問38　（請參照本文作答。）",
+      "options": [
+        {
+          "id": "n3-2022-12-r-38-a",
+          "text": "選択肢1",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-38-b",
+          "text": "選択肢2",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2022-12-r-38-c",
+          "text": "選択肢3",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2022-12-r-38-d",
+          "text": "選択肢4",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2022-12-r-38-b",
+      "explanation": "2022年12月N3 問38 の正解は選択肢2（b）です。",
+      "tags": [
+        "reading",
+        "problem-7",
+        "n3-reading"
+      ],
+      "problemNumber": 7,
+      "problemLabel": "読解（情報検索）"
+    }
+  ]
+}

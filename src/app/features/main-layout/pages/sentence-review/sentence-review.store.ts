@@ -40,7 +40,7 @@ export class SentenceReviewStore {
   readonly hasData = computed(() => !!LEVEL_DATA_MAP[this.selectedLevel()]);
 
   readonly commonGroups = computed<SentencePatternGroup[]>(() =>
-    (this.reviewData()?.groups ?? []).filter((g) => !g.id.startsWith('exam-')),
+    (this.reviewData()?.groups ?? []).filter((g) => !g.id.startsWith('exam-') && g.id !== 'compound-verbs'),
   );
 
   readonly examGroups = computed<SentencePatternGroup[]>(() =>

@@ -22,6 +22,9 @@ import type {
 const WRONG_WORDS_KEY = 'jlpt-app:wrong-words';
 const MARKED_WORDS_KEY = 'jlpt-app:marked-words';
 
+/** 原本就依詞性命名的群組，跟詞性篩選重複，不在「單字分類」篩選列另外列出；personal-review 在常考標記列單獨顯示 */
+const BASE_GROUP_IDS = new Set(['verbs', 'adverbs', 'nouns', 'expressions', 'personal-review', 'compoundVerbs']);
+
 function todayStr(): string {
   return new Date().toISOString().slice(0, 10);
 }
@@ -54,6 +57,7 @@ export class QuizStore {
   // --------------------------------------------------------------------
   readonly selectedCategoryId = signal<string | null>(null);
   readonly tagFilter = signal<VocabTagFilter>('all');
+  readonly selectedGroupId = signal<string | null>(null);
   readonly expandedIds = signal<Set<string>>(new Set());
 
   // Flashcard
@@ -98,14 +102,29 @@ export class QuizStore {
   readonly groups = computed(() => this.data()?.groups ?? []);
   readonly allEntries = computed(() => this.groups().flatMap((g) => g.entries));
 
+  /** 只列出詞性以外的「額外收藏」群組（個人複習整理／複合動詞…），避免跟詞性篩選重複 */
+  readonly extraGroups = computed(() =>
+    this.groups().filter((g) => !BASE_GROUP_IDS.has(g.id)),
+  );
+
   readonly filteredEntries = computed<VocabEntry[]>(() => {
     const categoryId = this.selectedCategoryId();
     const category = categoryId ? VOCAB_FILTER_CATEGORIES.find((c) => c.id === categoryId) : null;
-    const onlyFrequent = this.tagFilter() === 'frequent';
+    const tagFilter = this.tagFilter();
+    const groupId = this.selectedGroupId();
 
-    return this.allEntries().filter((e) => {
+    let source: VocabEntry[];
+    if (tagFilter === 'personal-review') {
+      const prGroup = this.groups().find((g) => g.id === 'personal-review');
+      source = prGroup ? prGroup.entries : [];
+    } else {
+      const group = groupId ? this.groups().find((g) => g.id === groupId) : null;
+      source = group ? group.entries : this.allEntries();
+    }
+
+    return source.filter((e) => {
       if (category && !category.pos.includes(e.pos)) return false;
-      if (onlyFrequent && !e.frequentlyTested) return false;
+      if (tagFilter === 'frequent' && !e.frequentlyTested) return false;
       return true;
     });
   });
@@ -114,6 +133,10 @@ export class QuizStore {
 
   readonly frequentlyTestedCount = computed(
     () => this.allEntries().filter((e) => e.frequentlyTested).length,
+  );
+
+  readonly personalReviewCount = computed(
+    () => this.groups().find((g) => g.id === 'personal-review')?.entries.length ?? 0,
   );
 
   // Computed — SRS stage counts (for plan card progress bar)
@@ -260,6 +283,10 @@ export class QuizStore {
 
   selectTagFilter(filter: VocabTagFilter) {
     this.tagFilter.set(filter);
+  }
+
+  selectGroup(id: string | null) {
+    this.selectedGroupId.set(id);
   }
 
   toggleExpand(id: string) {

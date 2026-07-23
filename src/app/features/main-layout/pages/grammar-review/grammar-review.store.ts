@@ -5,6 +5,8 @@ import { HttpClient } from '@angular/common/http';
 // Models
 import type {
   AllFormsCategory,
+  CompoundVerbPattern,
+  CompoundVerbRuleData,
   QuickReferenceRow,
   ReviewTab,
   SpecialVerbRow,
@@ -31,6 +33,9 @@ export class GrammarReviewStore {
 
   readonly transitivityData = signal<TransitivityData | null>(null);
   readonly transitivityLoading = signal(false);
+
+  readonly compoundVerbData = signal<CompoundVerbRuleData | null>(null);
+  readonly compoundVerbLoading = signal(false);
 
   // Computed
   // --------------------------------------------------------------------
@@ -89,6 +94,19 @@ export class GrammarReviewStore {
       .filter((c) => c.rows.length > 0);
   });
 
+  readonly filteredCompoundVerbPatterns = computed<CompoundVerbPattern[]>(() => {
+    const q = this.searchQuery().trim().toLowerCase();
+    const patterns = this.compoundVerbData()?.groups[0]?.patterns ?? [];
+    if (!q) return patterns;
+    return patterns.filter(
+      (p) =>
+        p.pattern.includes(q) ||
+        p.meaning.includes(q) ||
+        p.notes.includes(q) ||
+        p.examples.some((e) => e.jp.includes(q) || e.zh.includes(q)),
+    );
+  });
+
   // Lifecycle
   // --------------------------------------------------------------------
   init(): void {
@@ -102,6 +120,9 @@ export class GrammarReviewStore {
     this.searchQuery.set('');
     if (tab === 'transitivity' && !this.transitivityData() && !this.transitivityLoading()) {
       this.loadTransitivityData();
+    }
+    if (tab === 'compound-verb' && !this.compoundVerbData() && !this.compoundVerbLoading()) {
+      this.loadCompoundVerbData();
     }
   }
 
@@ -124,6 +145,15 @@ export class GrammarReviewStore {
     this.http.get<TransitivityData>('assets/data/verb-transitivity.json').subscribe((data) => {
       this.transitivityData.set(data);
       this.transitivityLoading.set(false);
+    });
+  }
+
+  private loadCompoundVerbData(): void {
+    this.compoundVerbLoading.set(true);
+    this.http.get<CompoundVerbRuleData>('assets/data/grammar-n3-review.json').subscribe((data) => {
+      const cvGroup = data.groups.find((g) => g.id === 'compound-verbs');
+      this.compoundVerbData.set({ title: data.title, groups: cvGroup ? [cvGroup] : [] });
+      this.compoundVerbLoading.set(false);
     });
   }
 }

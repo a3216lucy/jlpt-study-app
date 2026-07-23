@@ -1,4 +1,4 @@
-export type ReviewTab = 'conjugation' | 'keigo' | 'transitivity' | 'rules';
+export type ReviewTab = 'conjugation' | 'keigo' | 'transitivity' | 'rules' | 'compound-verb';
 
 // ── 動詞活用／活用規則 types ──────────────────────────────────────────────────
 
@@ -150,4 +150,34 @@ export interface KeigoFormationRule {
 export interface KeigoFormationGroup {
   label: string;
   rules: KeigoFormationRule[];
+}
+
+// ── 複合動詞規則 types ────────────────────────────────────────────────────────
+
+export interface CompoundVerbExample {
+  jp: string;
+  zh: string;
+}
+
+export interface CompoundVerbPattern {
+  id: string;
+  pattern: string;
+  reading?: string;
+  formation: string;
+  meaning: string;
+  notes: string;
+  examples: CompoundVerbExample[];
+}
+
+export interface CompoundVerbRuleGroup {
+  id: string;
+  title: string;
+  description: string;
+  color: string;
+  patterns: CompoundVerbPattern[];
+}
+
+export interface CompoundVerbRuleData {
+  title: string;
+  groups: CompoundVerbRuleGroup[];
 }

@@ -527,6 +527,366 @@
       ],
       "problemNumber": 1,
       "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2020-12-g-14",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\nこの喫茶店はコーヒー ＿＿ ＿＿ ★ ＿＿ おいしい。\n選択肢：1.などの　2.だけでなく　3.スパゲッティ　4.料理も",
+      "questionText": "この喫茶店はコーヒー ＿＿ ＿＿ ★ ＿＿ おいしい。\n正しい語順：[だけでなく②] [スパゲッティ③] [★などの①] [料理も④]",
+      "questionTranslation": "這家咖啡廳不只咖啡，義大利麵等料理也很美味。",
+      "options": [
+        {
+          "id": "n3-2020-12-g-14-a",
+          "text": "などの",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2020-12-g-14-b",
+          "text": "だけでなく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-14-c",
+          "text": "スパゲッティ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-14-d",
+          "text": "料理も",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2020-12-g-14-a",
+      "explanation": "完整句：この喫茶店はコーヒーだけでなくスパゲッティなどの★料理もおいしい。語順：だけでなく②→スパゲッティ③→★などの①→料理も④。「〜だけでなく〜も」＝不只〜也〜。★位置は「などの」（選項1）。",
+      "tags": [
+        "sentence-arrangement",
+        "だけでなく",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2020-12-g-15",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n映画が ＿＿ ＿＿ ★ ＿＿ よ。急いでね。\n選択肢：1.始まる　2.まで　3.あと3分　4.しかない",
+      "questionText": "映画が ＿＿ ＿＿ ★ ＿＿ よ。急いでね。\n正しい語順：[始まる①] [まで②] [★あと3分③] [しかない④]",
+      "questionTranslation": "電影開始前只剩3分鐘了，快點！",
+      "options": [
+        {
+          "id": "n3-2020-12-g-15-a",
+          "text": "始まる",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-15-b",
+          "text": "まで",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-15-c",
+          "text": "あと3分",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2020-12-g-15-d",
+          "text": "しかない",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2020-12-g-15-c",
+      "explanation": "完整句：映画が始まるまであと3分★しかないよ。語順：始まる①→まで②→★あと3分③→しかない④。「〜まであと〜しかない」＝距〜只剩〜。★位置は「あと3分」（選項3）。",
+      "tags": [
+        "sentence-arrangement",
+        "しかない",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2020-12-g-16",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n今度の日曜日に友人の結婚式がある。＿＿ ＿＿ ★ ＿＿ だが。\n選択肢：1.晴れる　2.いい　3.と　4.の",
+      "questionText": "今度の日曜日に友人の結婚式がある。＿＿ ＿＿ ★ ＿＿ だが。\n正しい語順：[晴れる①] [と③] [★いい②] [の④] だが",
+      "questionTranslation": "這個週日有朋友的婚禮，希望能放晴就好了。",
+      "options": [
+        {
+          "id": "n3-2020-12-g-16-a",
+          "text": "晴れる",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-16-b",
+          "text": "いい",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2020-12-g-16-c",
+          "text": "と",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-16-d",
+          "text": "の",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2020-12-g-16-b",
+      "explanation": "完整句：晴れるといい★のだが。語順：晴れる①→と③→★いい②→の④だが。「〜といいのだが」＝希望〜就好了（帶有不確定感）。★位置は「いい」（選項2）。",
+      "tags": [
+        "sentence-arrangement",
+        "といい",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2020-12-g-17",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n息子は、サッカーの練習がきついと ＿＿ ＿＿ ★ ＿＿ 好きだから と思う。\n選択肢：1.よく言っているが　2.それでもやめずに　3.続けているのは　4.やっぱりサッカーが",
+      "questionText": "息子は、サッカーの練習がきついと ＿＿ ＿＿ ★ ＿＿ 好きだから と思う。\n正しい語順：[よく言っているが①] [それでもやめずに②] [★続けているのは③] [やっぱりサッカーが④]",
+      "questionTranslation": "兒子常說足球練習很辛苦，但我想他之所以不放棄地堅持下去，還是因為喜歡足球。",
+      "options": [
+        {
+          "id": "n3-2020-12-g-17-a",
+          "text": "よく言っているが",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-17-b",
+          "text": "それでもやめずに",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-17-c",
+          "text": "続けているのは",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2020-12-g-17-d",
+          "text": "やっぱりサッカーが",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2020-12-g-17-c",
+      "explanation": "完整句：きついとよく言っているがそれでもやめずに続けているのは★やっぱりサッカーが好きだからと思う。★位置は「続けているのは」（選項3）。「〜のは〜から」＝之所以〜是因為〜。",
+      "tags": [
+        "sentence-arrangement",
+        "のは〜から",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2020-12-g-18",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n朝の ＿＿ ＿＿ ★ ＿＿ 自転車で通っている。\n選択肢：1.こんでいる電車は　2.嫌いだし　3.よい運動になるから　4.自転車で行けば",
+      "questionText": "朝の ＿＿ ＿＿ ★ ＿＿ 自転車で通っている。\n正しい語順：[こんでいる電車は①] [嫌いだし②] [★自転車で行けば④] [よい運動になるから③]",
+      "questionTranslation": "我討厭早上擁擠的電車，加上騎自行車的話也能當作良好運動，所以每天騎車上班。",
+      "options": [
+        {
+          "id": "n3-2020-12-g-18-a",
+          "text": "こんでいる電車は",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-18-b",
+          "text": "嫌いだし",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-18-c",
+          "text": "よい運動になるから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-18-d",
+          "text": "自転車で行けば",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2020-12-g-18-d",
+      "explanation": "完整句：朝のこんでいる電車は嫌いだし自転車で行けば★よい運動になるから自転車で通っている。★位置は「自転車で行けば」（選項4）。「〜し〜ば〜から」＝既〜又〜所以〜。",
+      "tags": [
+        "sentence-arrangement",
+        "〜し〜から",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2020-12-g-19",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】文章の（　）に入る最もよいものを選びなさい。\n【本文大意】外国人留学生索菲亞（Sofia）在東京看到飲食店前排隊，描述自己對排隊等待的看法。",
+      "questionText": "飲食店の前にたくさんの人が並んでいる。店に入るために（19）。",
+      "questionTranslation": "（19）填入最合適的是哪個？→ 飲食店前有很多人在排隊。是為了進店（　　）。",
+      "options": [
+        {
+          "id": "n3-2020-12-g-19-a",
+          "text": "待つことです",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-19-b",
+          "text": "待ちにくいからです",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-19-c",
+          "text": "待ったところです",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-19-d",
+          "text": "待っているのです",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2020-12-g-19-d",
+      "explanation": "待っているのです（のです強調說明）＝正在等待。1「待つことです」＝（做的事情）是等待，語感不自然；3「待ったところです」＝剛剛等完了，與上文時態不符。「〜のです」用於說明理由或強調事實。",
+      "tags": [
+        "passage-grammar",
+        "のです",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2020-12-g-20",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】文章の（　）に入る最もよいものを選びなさい。\n【本文】作者第一次排隊，等了很長時間，但和朋友聊天讓時間過得很快。",
+      "questionText": "やはりたくさんの人が並んでいました。（20）、友達と話しながら待っていたら、長い時間待ったとは感じませんでした。",
+      "questionTranslation": "（20）填入最合適的是哪個？→ 果然有很多人在排隊。（　　），一邊和朋友聊天一邊等待，完全不覺得等了很長時間。",
+      "options": [
+        {
+          "id": "n3-2020-12-g-20-a",
+          "text": "でも",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2020-12-g-20-b",
+          "text": "また",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-20-c",
+          "text": "つまり",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-20-d",
+          "text": "そのうえ",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2020-12-g-20-a",
+      "explanation": "でも＝但是（逆接）。雖然排了很長的隊（不利情況），但和朋友聊天等待就不覺得漫長（逆轉情況）。また＝又、再（添加）；つまり＝也就是說（整理）；そのうえ＝而且（添加）。",
+      "tags": [
+        "passage-grammar",
+        "接続詞",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2020-12-g-21",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】文章の（　）に入る最もよいものを選びなさい。\n【本文】作者把排隊的經驗告訴邀請她的前輩，前輩的反應讓作者感到高興。",
+      "questionText": "先輩は「いいなあ。私も今度行ってみよう。」と（21）、うれしかったです。",
+      "questionTranslation": "（21）填入最合適的是哪個？→ 前輩說「好羨慕。我下次也去看看。」，（　　）感到很開心。",
+      "options": [
+        {
+          "id": "n3-2020-12-g-21-a",
+          "text": "言えて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-21-b",
+          "text": "言われて",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2020-12-g-21-c",
+          "text": "言ってきて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-21-d",
+          "text": "言ってくれて",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2020-12-g-21-b",
+      "explanation": "言われて＝被（前輩）說了。前輩說的是表達自己意願的話，並非特地「為了我」說的行為，用受身形「言われて」自然描述。言ってくれて＝前輩特意為我說了（暗示恩惠），此處前輩只是羨慕地說「我也想去」，語意略有不符。",
+      "tags": [
+        "passage-grammar",
+        "受身形",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2020-12-g-22",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】文章の（　）に入る最もよいものを選びなさい。\n【本文】吃了排隊買到的起司蛋糕後，作者想再去挑戰其他知名店家。",
+      "questionText": "また機会があったら、（22）人気店でも並んでみたいです。",
+      "questionTranslation": "（22）填入最合適的是哪個？→ 如果再有機會的話，也想試著去（　　）知名店家排隊。",
+      "options": [
+        {
+          "id": "n3-2020-12-g-22-a",
+          "text": "その",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-22-b",
+          "text": "どの",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2020-12-g-22-c",
+          "text": "別の",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2020-12-g-22-d",
+          "text": "チーズケーキの",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2020-12-g-22-c",
+      "explanation": "別の＝其他的。作者想去排隊「其他的」知名店家，表達想再有新挑戰的心情。その＝那個（指示詞，指之前提到的同一家）；どの＝哪個（疑問詞，不符）；チーズケーキの＝起司蛋糕的（過度限定）。",
+      "tags": [
+        "passage-grammar",
+        "指示語",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
     }
   ]
 }

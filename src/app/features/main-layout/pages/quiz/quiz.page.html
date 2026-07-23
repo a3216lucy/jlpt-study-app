@@ -324,9 +324,9 @@
         </button>
       </div>
 
-      <!-- ── 常考標記篩選 ──────────────────────────────────────── -->
+      <!-- ── 分類標記篩選 ──────────────────────────────────────── -->
       <div class="flex flex-wrap items-center gap-2">
-        <span class="text-xs font-bold text-text-muted">常考標記</span>
+        <span class="text-xs font-bold text-text-muted">分類標記</span>
         <button
           type="button"
           (click)="store.selectTagFilter('all')"
@@ -351,10 +351,23 @@
         >
           常考 <span class="ml-0.5 opacity-80">{{ store.frequentlyTestedCount() }}</span>
         </button>
+        <button
+          type="button"
+          (click)="store.selectTagFilter('personal-review')"
+          [class]="
+            'rounded-full px-3.5 py-1.5 text-[13px] font-bold transition ' +
+            (store.tagFilter() === 'personal-review'
+              ? 'bg-accent text-white'
+              : 'border border-border bg-surface text-text-secondary hover:border-accent/40')
+          "
+        >
+          個人複習整理 <span class="ml-0.5 opacity-80">{{ store.personalReviewCount() }}</span>
+        </button>
       </div>
 
       <!-- ── 分類篩選 ──────────────────────────────────────────── -->
       <div class="flex flex-wrap items-center gap-2">
+        <span class="text-xs font-bold text-text-muted">單字詞性</span>
         <button
           type="button"
           (click)="store.selectCategory(null)"
@@ -407,7 +420,10 @@
                 >{{ posLabel(entry.pos) }}</span
               >
               @if (entry.frequentlyTested) {
-                <span class="rounded-full bg-accent-soft px-2.5 py-0.5 text-[11px] font-bold text-accent">常考</span>
+                <span
+                  class="rounded-full bg-accent-soft px-2.5 py-0.5 text-[11px] font-bold text-accent"
+                  >常考</span
+                >
               }
               @let s = stageInfo(entry);
               <span

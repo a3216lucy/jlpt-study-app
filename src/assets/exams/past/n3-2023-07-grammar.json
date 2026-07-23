@@ -1,0 +1,912 @@
+{
+  "id": "n3-2023-07-grammar",
+  "title": "N3 2023年7月 文法",
+  "description": "N3 2023年7月 文法問題",
+  "level": "N3",
+  "category": "grammar",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n3-2023-07-g-01",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n彼女は毎朝、公園（　）ジョギングをする。",
+      "questionText": "彼女は毎朝、公園（　）ジョギングをする。",
+      "questionTranslation": "她每天早上在公園慢跑。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-01-a",
+          "text": "が",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-01-b",
+          "text": "で",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-01-c",
+          "text": "の",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-01-d",
+          "text": "を",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-01-d",
+      "explanation": "格助詞「を」の移動経路用法。「公園を走る」のように移動する経路を表す。「が」は主格、「で」は動作の場所、「の」は連体修飾。",
+      "tags": [
+        "particle",
+        "を",
+        "movement-path",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-02",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n年を取る（　）、記憶力が落ちてくる。",
+      "questionText": "年を取る（　）、記憶力が落ちてくる。",
+      "questionTranslation": "隨著年齡增長，記憶力也下降了。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-02-a",
+          "text": "ことから",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-02-b",
+          "text": "としたら",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-02-c",
+          "text": "にしたがって",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-02-d",
+          "text": "のに比べて",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-02-c",
+      "explanation": "〜にしたがって（〜に従って）＝隨著〜・依照〜。前項の変化に比例して後項も変化することを表す。ことから＝從〜可知；としたら＝如果〜；のに比べて＝與〜相比。",
+      "tags": [
+        "grammar-pattern",
+        "にしたがって",
+        "proportion",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-03",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\nあの人の行動は失礼（　）思えない。",
+      "questionText": "あの人の行動は失礼（　）思えない。",
+      "questionTranslation": "那個人的行為只能認為是無禮之舉。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-03-a",
+          "text": "だけで",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-03-b",
+          "text": "だけが",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-03-c",
+          "text": "とならば",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-03-d",
+          "text": "としか",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-03-d",
+      "explanation": "〜としか思えない＝只能認為是〜。「としか」後接否定形（ない・思えないなど）。だけで＝僅僅；だけが＝只有；とならば＝如果是〜的話。",
+      "tags": [
+        "grammar-pattern",
+        "としか",
+        "restriction",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-04",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n（　）早めに提出してほしいのですが。",
+      "questionText": "（　）早めに提出してほしいのですが。",
+      "questionTranslation": "如果可以的話，希望能早點繳交。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-04-a",
+          "text": "できれば",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-04-b",
+          "text": "別に",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-04-c",
+          "text": "せっかく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-04-d",
+          "text": "確かに",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-04-a",
+      "explanation": "できれば＝如果可以的話・盡可能；表達有條件的希望或委婉請求。別に＝另外；せっかく＝難得；確かに＝確實。",
+      "tags": [
+        "adverb",
+        "できれば",
+        "conditional-wish",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-05",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n雨が（　）出したので、急いで帰った。",
+      "questionText": "雨が（　）出したので、急いで帰った。",
+      "questionTranslation": "因為開始下雨，所以趕緊回家了。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-05-a",
+          "text": "降る",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-05-b",
+          "text": "降り",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-05-c",
+          "text": "降って",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-05-d",
+          "text": "降った",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-05-b",
+      "explanation": "複合動詞「降り出す」＝開始下雨。複合動詞を作るとき、前の動詞はます形（連用形）を使う。「降り」はます形。「降る」辞書形・「降って」て形・「降った」過去形はいずれも複合動詞には使えない。",
+      "tags": [
+        "compound-verb",
+        "降り",
+        "verb-stem",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-06",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n名前を（　）、外でお待ちください。",
+      "questionText": "名前を（　）、外でお待ちください。",
+      "questionTranslation": "請等到被叫到名字為止，在外面等待。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-06-a",
+          "text": "呼ぶと",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-06-b",
+          "text": "呼ぶまで",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-06-c",
+          "text": "呼ばれると",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-06-d",
+          "text": "呼ばれるまで",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-06-d",
+      "explanation": "〜まで＝直到〜為止；受身形「呼ばれる」＝被叫。「呼ばれるまで待つ」＝等到被叫名字為止。「呼ぶまで」は自分が呼ぶ場合；「呼ばれると」＝一被叫到就（非等待）。",
+      "tags": [
+        "grammar-pattern",
+        "まで",
+        "passive",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-07",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n電車が遅れた（　）、試験に間に合わなかった。",
+      "questionText": "電車が遅れた（　）、試験に間に合わなかった。",
+      "questionTranslation": "因為電車誤點，沒能趕上考試。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-07-a",
+          "text": "間に",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-07-b",
+          "text": "点で",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-07-c",
+          "text": "たびで",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-07-d",
+          "text": "せいで",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-07-d",
+      "explanation": "〜せいで＝因為〜（帶有責怪/負面語氣）；用於負面結果的原因。反義：〜おかげで（多虧〜，正面）。間に＝趁著〜的時候；点で＝在〜方面；たびで（誤形，正しくはたびに＝每次）。",
+      "tags": [
+        "grammar-pattern",
+        "せいで",
+        "negative-cause",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-08",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n来週の会議までにこの資料を（　）。",
+      "questionText": "来週の会議までにこの資料を（　）。",
+      "questionTranslation": "必須事先讀好這份資料，以備下週的會議。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-08-a",
+          "text": "読んでおいてはいけない",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-08-b",
+          "text": "読んでおかなければならない",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-08-c",
+          "text": "読むことにしてはいけない",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-08-d",
+          "text": "読むことにしなければならない",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-08-b",
+      "explanation": "〜ておく＝事先…・預先做好（為了某目的）；〜なければならない＝必須〜。「読んでおかなければならない」＝必須事先讀好。「てはいけない」は禁止を表し意味が逆になる。「読むことにする」＝決定讀（決意），語意不合。",
+      "tags": [
+        "grammar-pattern",
+        "ておく",
+        "なければならない",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-09",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n心配事があって、なかなか（　）。",
+      "questionText": "心配事があって、なかなか（　）。",
+      "questionTranslation": "因為有擔心的事，怎麼也睡不著。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-09-a",
+          "text": "眠りたかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-09-b",
+          "text": "眠ろうとした",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-09-c",
+          "text": "眠れなかった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-09-d",
+          "text": "眠らなくなった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-09-c",
+      "explanation": "眠れる（ねむれる）＝能睡著（可能形）；眠れなかった＝無法入睡（可能形否定過去）。「なかなか〜ない」＝怎麼也不〜。眠りたかった＝想睡（意志）；眠ろうとした＝試著要睡；眠らなくなった＝不再睡了（習慣変化）。",
+      "tags": [
+        "potential",
+        "negative-past",
+        "なかなか",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-10",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n友達が欲しいなら、もっと自分から心を（　）。",
+      "questionText": "友達が欲しいなら、もっと自分から心を（　）。",
+      "questionTranslation": "如果想要朋友，你應該更主動地敞開心扉。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-10-a",
+          "text": "開くと思う",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-10-b",
+          "text": "開きたいと思う",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-10-c",
+          "text": "開くことだ",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-10-d",
+          "text": "開きたいことだ",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-10-c",
+      "explanation": "〜ことだ＝應該〜（建議・忠告）；給對方建議時使用。例：もっと心を開くことだ。＝你應該更打開心扉。只能用於第二人稱（給對方建議），不用於自己。開くと思う＝我認為會打開；開きたいと思う＝我想打開（自己的願望）。",
+      "tags": [
+        "grammar-pattern",
+        "ことだ",
+        "advice",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-11",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n空を見ると、雨が（　）。",
+      "questionText": "空を見ると、雨が（　）。",
+      "questionTranslation": "看了看天空，雨好像不打算停。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-11-a",
+          "text": "やまないはずがない",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-11-b",
+          "text": "やみそうにない",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-11-c",
+          "text": "やむに違いない",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-11-d",
+          "text": "やんでもしかたない",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-11-b",
+      "explanation": "やむ（止む）＝停止（雨・風）；〜そうにない＝看起來不像要〜・感覺不會〜。「雨がやみそうにない」＝雨看起來不像要停。やまないはずがない＝不可能不停；やむに違いない＝一定會停；やんでもしかたない＝即使停了也沒辦法。",
+      "tags": [
+        "grammar-pattern",
+        "そうにない",
+        "negative-appearance",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-12",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n聞いた話では、田中さんは中国語が（　）。",
+      "questionText": "聞いた話では、田中さんは中国語が（　）。",
+      "questionTranslation": "據我聽說，田中先生好像會中文。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-12-a",
+          "text": "できるらしい",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-12-b",
+          "text": "できてほしい",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-12-c",
+          "text": "できることがある",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-12-d",
+          "text": "できたほうがいい",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-12-a",
+      "explanation": "〜らしい＝好像・似乎（根據間接訊息推測）。「聞いた話では〜らしい」＝據聽說好像〜。できてほしい＝希望他能做到（期待他人）；できることがある＝有時候能做到；できたほうがいい＝最好會比較好（建議）。",
+      "tags": [
+        "grammar-pattern",
+        "らしい",
+        "hearsay",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-13",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n少し声を小さく（　）。",
+      "questionText": "少し声を小さく（　）。",
+      "questionTranslation": "可以請您把聲音稍微放小聲一點嗎？",
+      "options": [
+        {
+          "id": "n3-2023-07-g-13-a",
+          "text": "してあげますか",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-13-b",
+          "text": "なってあげますか",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-13-c",
+          "text": "してもらえますか",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-13-d",
+          "text": "なってもらえますか",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-13-c",
+      "explanation": "〜てもらえますか＝可以請你〜嗎（委婉請求）。「声を小さくする」＝把聲音放小（他動詞）。「なる」は自動詞（自然に変化する）なので「声を小さくしてもらう」が正確。「してあげますか」＝你要幫我做嗎（方向が逆）。",
+      "tags": [
+        "grammar-pattern",
+        "てもらえますか",
+        "request",
+        "n3-grammar"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2023-07-g-14",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\nこの研究者の ＿＿ ＿＿ ★ ＿＿ 発表された。\n選択肢：1.調査　2.による　3.が　4.結果",
+      "questionText": "この研究者の ＿＿ ＿＿ ★ ＿＿ 発表された。\n正しい語順：[調査①] [★による②] [結果④] [が③]",
+      "questionTranslation": "這位研究人員的調查結果被發表了。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-14-a",
+          "text": "調査",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-14-b",
+          "text": "による",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-14-c",
+          "text": "が",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-14-d",
+          "text": "結果",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-14-b",
+      "explanation": "〜による＝根據〜・依〜。「調査による結果」＝根據調查的結果。完整語順：調査①→による②★→結果④→が③。★位置（第2格）填入「による」。",
+      "tags": [
+        "sentence-arrangement",
+        "による",
+        "cause",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2023-07-g-15",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\nピアノを ＿＿ ＿＿ ★ ＿＿ 悔しい。\n選択肢：1.上手に弾けない　2.練習しても　3.のが　4.いくら",
+      "questionText": "ピアノを ＿＿ ＿＿ ★ ＿＿ 悔しい。\n正しい語順：[いくら④] [練習しても②] [★上手に弾けない①] [のが③]",
+      "questionTranslation": "無論再怎麼練習鋼琴，彈不好真令人沮喪。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-15-a",
+          "text": "上手に弾けない",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-15-b",
+          "text": "練習しても",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-15-c",
+          "text": "のが",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-15-d",
+          "text": "いくら",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-15-a",
+      "explanation": "弾ける（ひける）＝會彈奏（可能形）；上手に弾けない＝彈不好。完整語順：いくら④→練習しても②→上手に弾けない①★→のが③。「いくら〜ても〜ない」＝無論多〜也無法〜。★位置（第3格）填入「上手に弾けない」。",
+      "tags": [
+        "sentence-arrangement",
+        "potential-negative",
+        "いくら",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2023-07-g-16",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\nせっかくの機会に ＿＿ ＿＿ ★ ＿＿ 後悔している。\n選択肢：1.失敗をしてしまった　2.うっかり　3.のが　4.本当に",
+      "questionText": "せっかくの機会に ＿＿ ＿＿ ★ ＿＿ 後悔している。\n正しい語順：[うっかり②] [★失敗をしてしまった①] [のが③] [本当に④]",
+      "questionTranslation": "難得的機會卻一不小心失敗了，真的很後悔。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-16-a",
+          "text": "失敗をしてしまった",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-16-b",
+          "text": "うっかり",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-16-c",
+          "text": "のが",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-16-d",
+          "text": "本当に",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-16-a",
+      "explanation": "〜てしまった＝（不小心）做了〜（帶有遺憾/意外語氣）。うっかり＝一不小心。完整語順：うっかり②→失敗をしてしまった①★→のが③→本当に④。★位置（第2格）填入「失敗をしてしまった」。",
+      "tags": [
+        "sentence-arrangement",
+        "てしまった",
+        "regret",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2023-07-g-17",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\n週末は映画を見る ＿＿ ＿＿ ★ ＿＿ して過ごしています。\n選択肢：1.友達と　2.買い物に行く　3.とか　4.など",
+      "questionText": "週末は映画を見る ＿＿ ＿＿ ★ ＿＿ して過ごしています。\n正しい語順：[とか③★] [友達と①] [買い物に行く②] [など④]",
+      "questionTranslation": "週末就這樣度過，比如看電影啦、和朋友去購物啦之類的。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-17-a",
+          "text": "友達と",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-17-b",
+          "text": "買い物に行く",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-17-c",
+          "text": "とか",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-17-d",
+          "text": "など",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-17-c",
+      "explanation": "〜とか＝〜啦（口語列舉）。「映画を見るとか友達と買い物に行くなどして」＝看電影、跟朋友購物等等。完整語順：とか③★→友達と①→買い物に行く②→など④。★位置（第1格）填入「とか」。",
+      "tags": [
+        "sentence-arrangement",
+        "とか",
+        "enumeration",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2023-07-g-18",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入る最もよいものを選びなさい。\nこのクラスでは毎週 ＿＿ ＿＿ ★ ＿＿ いただいています。\n選択肢：1.ピアノを　2.教えて　3.日本舞踊を　4.山下花子先生に",
+      "questionText": "このクラスでは毎週 ＿＿ ＿＿ ★ ＿＿ いただいています。\n正しい語順：[日本舞踊を③] [★山下花子先生に④] [ピアノを①] [教えて②]",
+      "questionTranslation": "在這個班上，每週都請山下花子老師教我們鋼琴等，真的很感謝。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-18-a",
+          "text": "ピアノを",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-18-b",
+          "text": "教えて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-18-c",
+          "text": "日本舞踊を",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-18-d",
+          "text": "山下花子先生に",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-18-d",
+      "explanation": "〜に教えていただく＝請〜教我（謙讓語）。「山下花子先生にピアノを教えていただく」＝請山下花子老師教鋼琴。完整語順：日本舞踊を③→山下花子先生に④★→ピアノを①→教えて②。★位置（第2格）填入「山下花子先生に」。",
+      "tags": [
+        "sentence-arrangement",
+        "に教えていただく",
+        "keigo",
+        "n3-grammar"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2023-07-g-19",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】文章を読んで、（　）に入れるのに最もよいものを選びなさい。\n\n【文章：仲間からのメッセージ】\n\n　私は高校を卒業したあと、ずっと一緒にいた友達と離れ、遠くの大学に進学することになりました。引っ越しの準備をしていたとき、仲間から一冊のノートをもらいました。\n\n　ノートの中には、友達一人一人のメッセージが（19）。とてもうれしかったです。（20）、自分が一人で遠くに行くのが少し心配になってきていたので、仲間の言葉を読んで、元気が出ました。\n\n　メッセージには「（21）でも、友達はずっとここにいるからね」とか「会えない日々が続いても、気持ちはいつも一緒だよ」などと書いてありました。\n\n　仲間のメッセージは、これから一人で生活していく私にとって、大きな力です。辛いことがあっても（22）。",
+      "questionText": "（19）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（19）中填入最合適的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-19-a",
+          "text": "書いてありました",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-19-b",
+          "text": "書いていました",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-19-c",
+          "text": "書かれていました",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-19-d",
+          "text": "書かせていました",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-19-a",
+      "explanation": "書いてある＝（準備・結果として）書いてある状態；「ノートの中にメッセージが書いてありました」＝筆記本裡寫著訊息（他者が書き込んだ結果が存在する）。書いていました＝（某人）正在寫；書かれていました＝被動形で書かれていた（也可だが「書いてある」の方が自然）；書かせていました＝させ使役形。",
+      "tags": [
+        "text-grammar",
+        "te-aru",
+        "result-state",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2023-07-g-20",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】（文章は問19と同じ）",
+      "questionText": "（20）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（20）中填入最合適的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-20-a",
+          "text": "そして",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-20-b",
+          "text": "しかも",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-20-c",
+          "text": "でも",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-20-d",
+          "text": "それに",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-20-c",
+      "explanation": "でも＝但是・不過（逆接接続詞）。前文「うれしかった」から「実は心配もあった」という転換に「でも」が適切。そして＝而且（順接）；しかも＝而且・況且（強調追加）；それに＝再加上（順接）。",
+      "tags": [
+        "text-grammar",
+        "conjunction",
+        "reversal",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2023-07-g-21",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】（文章は問19と同じ）",
+      "questionText": "（21）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（21）中填入最合適的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-21-a",
+          "text": "高校",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-21-b",
+          "text": "大学",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-21-c",
+          "text": "会社",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-21-d",
+          "text": "家族",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-21-b",
+      "explanation": "文脈に合う語として「大学」が入る。主人公は「遠くの大学に進学」するため引っ越す。友達のメッセージは「大学でも、友達はずっとここにいる」という内容が自然。前後の文脈から「大学」が最適。",
+      "tags": [
+        "text-grammar",
+        "context",
+        "vocabulary",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2023-07-g-22",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】（文章は問19と同じ）",
+      "questionText": "（22）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（22）中填入最合適的選項。",
+      "options": [
+        {
+          "id": "n3-2023-07-g-22-a",
+          "text": "頑張ることができそうです",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-22-b",
+          "text": "頑張ることができるからです",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-g-22-c",
+          "text": "頑張るつもりはないです",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-g-22-d",
+          "text": "頑張ることにしています",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n3-2023-07-g-22-b",
+      "explanation": "〜からです＝因為〜（理由・原因の説明）。「辛いことがあっても頑張ることができるからです」＝（仲間のメッセージが大きな力である理由は）因為即使有困難也能夠繼續努力。文章の締めくくりとして、仲間の力を受けて前向きに頑張れる理由を述べる。",
+      "tags": [
+        "text-grammar",
+        "reason",
+        "conclusion",
+        "n3-grammar"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    }
+  ]
+}
