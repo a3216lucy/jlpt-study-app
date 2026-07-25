@@ -4797,6 +4797,2726 @@
               "zh": "那一帶有便利商店。"
             }
           ]
+        },
+        {
+          "id": "pr-137",
+          "word": "腹が立つ",
+          "reading": "はらがたつ",
+          "meaning": "生氣、發怒（＝頭にくる）",
+          "pos": "expression",
+          "examples": [
+            {
+              "jp": "彼の失礼な態度に腹が立った。",
+              "zh": "對他沒禮貌的態度感到生氣。"
+            }
+          ],
+          "confusionNote": "⚠ 與「頭にくる」同義，都表示生氣、發怒。"
+        },
+        {
+          "id": "pr-138",
+          "word": "飛ぶ",
+          "reading": "とぶ",
+          "meaning": "飛翔、飛行",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "鳥が空を飛んでいる。",
+              "zh": "鳥在天空飛翔。"
+            }
+          ]
+        },
+        {
+          "id": "pr-139",
+          "word": "育つ",
+          "reading": "そだつ",
+          "meaning": "成長、長大（自動詞）",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "この子は元気に育っている。",
+              "zh": "這孩子健康地成長著。"
+            }
+          ],
+          "confusionNote": "⚠ 自他對比：育つ（自，～が）＝自己成長；育てる（他，～を）＝養育某人事物。"
+        },
+        {
+          "id": "pr-140",
+          "word": "育てる",
+          "reading": "そだてる",
+          "meaning": "養育、撫養（他動詞）",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "両親は私を大切に育ててくれた。",
+              "zh": "父母細心地把我養大。"
+            }
+          ]
+        },
+        {
+          "id": "pr-141",
+          "word": "泳ぐ",
+          "reading": "およぐ",
+          "meaning": "游泳",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "毎週プールで泳いでいる。",
+              "zh": "每週都在游泳池游泳。"
+            }
+          ]
+        },
+        {
+          "id": "pr-142",
+          "word": "救う",
+          "reading": "すくう",
+          "meaning": "拯救、救助",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "消防士が子供を救った。",
+              "zh": "消防員救了小孩。"
+            }
+          ],
+          "confusionNote": "⚠ 救う（主動救助）／救われる（被救、獲救，受身形）。"
+        },
+        {
+          "id": "pr-143",
+          "word": "救われる",
+          "reading": "すくわれる",
+          "meaning": "獲救、被拯救",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "彼の一言に救われた気がした。",
+              "zh": "覺得因為他的一句話而得救了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-144",
+          "word": "過ごす",
+          "reading": "すごす",
+          "meaning": "過（時間）、度過",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "家族と楽しい時間を過ごした。",
+              "zh": "和家人度過了愉快的時光。"
+            }
+          ]
+        },
+        {
+          "id": "pr-145",
+          "word": "学ぶ",
+          "reading": "まなぶ",
+          "meaning": "學習",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "大学で経済学を学んでいる。",
+              "zh": "在大學學習經濟學。"
+            }
+          ]
+        },
+        {
+          "id": "pr-146",
+          "word": "苦しむ",
+          "reading": "くるしむ",
+          "meaning": "受苦、受折磨",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "彼は長い間病気で苦しんでいる。",
+              "zh": "他長期為病所苦。"
+            }
+          ]
+        },
+        {
+          "id": "pr-147",
+          "word": "つらい",
+          "reading": "つらい",
+          "meaning": "痛苦的、折磨的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "毎日残業が続いてつらい。",
+              "zh": "每天持續加班很痛苦。"
+            }
+          ]
+        },
+        {
+          "id": "pr-148",
+          "word": "みにくい",
+          "reading": "みにくい",
+          "meaning": "醜陋的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "嘘をつくのはみにくい行為だ。",
+              "zh": "說謊是很醜陋的行為。"
+            }
+          ]
+        },
+        {
+          "id": "pr-149",
+          "word": "ぜいたくな",
+          "reading": "ぜいたくな",
+          "meaning": "奢華的、奢侈的",
+          "pos": "noun-adj",
+          "examples": [
+            {
+              "jp": "たまにはぜいたくな旅行がしたい。",
+              "zh": "偶爾想來一趟奢華的旅行。"
+            }
+          ]
+        },
+        {
+          "id": "pr-150",
+          "word": "貧乏な",
+          "reading": "びんぼうな",
+          "meaning": "貧窮的",
+          "pos": "noun-adj",
+          "examples": [
+            {
+              "jp": "貧乏な生活から抜け出したい。",
+              "zh": "想脫離貧窮的生活。"
+            }
+          ]
+        },
+        {
+          "id": "pr-151",
+          "word": "怪しい",
+          "reading": "あやしい",
+          "meaning": "可疑的、怪異的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "あの人の態度は怪しい。",
+              "zh": "那個人的態度很可疑。"
+            }
+          ]
+        },
+        {
+          "id": "pr-152",
+          "word": "くだらない",
+          "reading": "くだらない",
+          "meaning": "無聊的、沒意思的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "そんなくだらない話はやめてください。",
+              "zh": "請不要再說那種無聊的話了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-153",
+          "word": "しつこい",
+          "reading": "しつこい",
+          "meaning": "糾纏不休的、執著的、濃烈的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "彼のしつこい誘いに困っている。",
+              "zh": "對他糾纏不休的邀約感到困擾。"
+            }
+          ]
+        },
+        {
+          "id": "pr-154",
+          "word": "ぶらぶら",
+          "reading": "ぶらぶら",
+          "meaning": "閒晃、漫步",
+          "pos": "adverb-onomatopoeia",
+          "examples": [
+            {
+              "jp": "休日は公園をぶらぶら歩いた。",
+              "zh": "假日在公園裡閒晃。"
+            }
+          ]
+        },
+        {
+          "id": "pr-155",
+          "word": "そろそろ",
+          "reading": "そろそろ",
+          "meaning": "快要、差不多（要〜了）",
+          "pos": "adverb-onomatopoeia",
+          "examples": [
+            {
+              "jp": "そろそろ出かける時間だ。",
+              "zh": "差不多是該出門的時間了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-156",
+          "word": "のろのろ",
+          "reading": "のろのろ",
+          "meaning": "遲緩、慢吞吞地",
+          "pos": "adverb-onomatopoeia",
+          "examples": [
+            {
+              "jp": "道が混んでいて車がのろのろ進む。",
+              "zh": "路上塞車，車子慢吞吞地前進。"
+            }
+          ]
+        },
+        {
+          "id": "pr-157",
+          "word": "どんどん",
+          "reading": "どんどん",
+          "meaning": "順利地、接連不斷地",
+          "pos": "adverb-onomatopoeia",
+          "examples": [
+            {
+              "jp": "新しい注文がどんどん入ってくる。",
+              "zh": "新訂單接連不斷地進來。"
+            }
+          ]
+        },
+        {
+          "id": "pr-158",
+          "word": "ほっと",
+          "reading": "ほっと",
+          "meaning": "鬆一口氣",
+          "pos": "adverb-onomatopoeia",
+          "examples": [
+            {
+              "jp": "無事に終わってほっとした。",
+              "zh": "順利結束後鬆了一口氣。"
+            }
+          ]
+        },
+        {
+          "id": "pr-159",
+          "word": "じっと",
+          "reading": "じっと",
+          "meaning": "凝視、不動地",
+          "pos": "adverb-onomatopoeia",
+          "examples": [
+            {
+              "jp": "子供がじっと座って絵本を見ている。",
+              "zh": "小孩靜靜地坐著看繪本。"
+            }
+          ]
+        },
+        {
+          "id": "pr-160",
+          "word": "さっと",
+          "reading": "さっと",
+          "meaning": "迅速地、快速地",
+          "pos": "adverb-onomatopoeia",
+          "examples": [
+            {
+              "jp": "テーブルをさっとふいた。",
+              "zh": "快速地擦了桌子。"
+            }
+          ]
+        },
+        {
+          "id": "pr-161",
+          "word": "ペコペコ",
+          "reading": "ぺこぺこ",
+          "meaning": "肚子餓",
+          "pos": "adverb-onomatopoeia",
+          "examples": [
+            {
+              "jp": "お腹がぺこぺこで何も手につかない。",
+              "zh": "肚子餓得什麼事都做不了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-162",
+          "word": "ぴかぴか",
+          "reading": "ぴかぴか",
+          "meaning": "閃閃發光",
+          "pos": "adverb-onomatopoeia",
+          "examples": [
+            {
+              "jp": "靴をぴかぴかに磨いた。",
+              "zh": "把鞋子擦得閃閃發亮。"
+            }
+          ]
+        },
+        {
+          "id": "pr-163",
+          "word": "ペラペラ",
+          "reading": "ぺらぺら",
+          "meaning": "流利地（說外語）",
+          "pos": "adverb-onomatopoeia",
+          "examples": [
+            {
+              "jp": "彼は英語がぺらぺらだ。",
+              "zh": "他英文說得很流利。"
+            }
+          ]
+        },
+        {
+          "id": "pr-164",
+          "word": "イメージ",
+          "reading": "イメージ",
+          "meaning": "形象、印象",
+          "pos": "noun-katakana",
+          "examples": [
+            {
+              "jp": "この色は爽やかなイメージがある。",
+              "zh": "這個顏色給人清爽的印象。"
+            }
+          ]
+        },
+        {
+          "id": "pr-165",
+          "word": "レベル",
+          "reading": "レベル",
+          "meaning": "層級、級別",
+          "pos": "noun-katakana",
+          "examples": [
+            {
+              "jp": "このクラスはレベルが高い。",
+              "zh": "這個班級的程度很高。"
+            }
+          ]
+        },
+        {
+          "id": "pr-166",
+          "word": "テンポ",
+          "reading": "テンポ",
+          "meaning": "節奏",
+          "pos": "noun-katakana",
+          "examples": [
+            {
+              "jp": "この曲はテンポが速い。",
+              "zh": "這首曲子的節奏很快。"
+            }
+          ]
+        },
+        {
+          "id": "pr-167",
+          "word": "誘い",
+          "reading": "さそい",
+          "meaning": "邀請、誘惑",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "友達の誘いを断った。",
+              "zh": "拒絕了朋友的邀約。"
+            }
+          ]
+        },
+        {
+          "id": "pr-168",
+          "word": "ところどころ",
+          "reading": "ところどころ",
+          "meaning": "有些地方、到處",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "この本はところどころ難しい表現がある。",
+              "zh": "這本書有些地方有困難的表達方式。"
+            }
+          ]
+        },
+        {
+          "id": "pr-169",
+          "word": "次々",
+          "reading": "つぎつぎ",
+          "meaning": "接二連三地、接續不斷地",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "新しい問題が次々に起こる。",
+              "zh": "新問題接二連三地發生。"
+            }
+          ]
+        },
+        {
+          "id": "pr-170",
+          "word": "歯",
+          "reading": "は",
+          "meaning": "牙齒",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "毎日ちゃんと歯を磨いている。",
+              "zh": "每天都有好好刷牙。"
+            }
+          ]
+        },
+        {
+          "id": "pr-171",
+          "word": "歯医者",
+          "reading": "はいしゃ",
+          "meaning": "牙醫",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "歯が痛くて歯医者に行った。",
+              "zh": "因為牙痛去看了牙醫。"
+            }
+          ]
+        },
+        {
+          "id": "pr-172",
+          "word": "看護婦",
+          "reading": "かんごふ",
+          "meaning": "女護士（舊稱）",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "昔は看護婦と呼ばれていた。",
+              "zh": "以前被稱為看護婦。"
+            }
+          ],
+          "confusionNote": "⚠ 看護婦是舊稱，現行通用「看護師」（不分性別）。"
+        },
+        {
+          "id": "pr-173",
+          "word": "看護師",
+          "reading": "かんごし",
+          "meaning": "護理師（現行通用）",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "姉は病院で看護師として働いている。",
+              "zh": "姊姊在醫院擔任護理師。"
+            }
+          ]
+        },
+        {
+          "id": "pr-174",
+          "word": "主婦",
+          "reading": "しゅふ",
+          "meaning": "家庭主婦",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "彼女は専業主婦だ。",
+              "zh": "她是全職家庭主婦。"
+            }
+          ]
+        },
+        {
+          "id": "pr-175",
+          "word": "暖房",
+          "reading": "だんぼう",
+          "meaning": "暖氣",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "寒いので暖房をつけた。",
+              "zh": "因為冷所以開了暖氣。"
+            }
+          ],
+          "confusionNote": "⚠ 相對詞：暖房＝暖氣；冷房＝冷氣。"
+        },
+        {
+          "id": "pr-176",
+          "word": "冷房",
+          "reading": "れいぼう",
+          "meaning": "冷氣",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "夏は冷房がないと暑くて眠れない。",
+              "zh": "夏天沒有冷氣的話熱得睡不著。"
+            }
+          ]
+        },
+        {
+          "id": "pr-177",
+          "word": "地域",
+          "reading": "ちいき",
+          "meaning": "地區",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この地域は静かで住みやすい。",
+              "zh": "這個地區安靜、適合居住。"
+            }
+          ]
+        },
+        {
+          "id": "pr-178",
+          "word": "物語",
+          "reading": "ものがたり",
+          "meaning": "故事",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "子供の頃に読んだ物語を思い出す。",
+              "zh": "想起小時候讀過的故事。"
+            }
+          ]
+        },
+        {
+          "id": "pr-179",
+          "word": "文学",
+          "reading": "ぶんがく",
+          "meaning": "文學",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "大学で日本文学を専攻している。",
+              "zh": "在大學主修日本文學。"
+            }
+          ]
+        },
+        {
+          "id": "pr-180",
+          "word": "作文",
+          "reading": "さくぶん",
+          "meaning": "作文",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "夏休みの宿題で作文を書いた。",
+              "zh": "暑假作業寫了作文。"
+            }
+          ]
+        },
+        {
+          "id": "pr-181",
+          "word": "書物",
+          "reading": "しょもつ",
+          "meaning": "書籍、書本",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "図書館には古い書物がたくさんある。",
+              "zh": "圖書館裡有很多古老的書籍。"
+            }
+          ]
+        },
+        {
+          "id": "pr-182",
+          "word": "貝",
+          "reading": "かい",
+          "meaning": "貝類、貝殻",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "海で貝を拾った。",
+              "zh": "在海邊撿了貝殼。"
+            }
+          ]
+        },
+        {
+          "id": "pr-183",
+          "word": "島",
+          "reading": "しま",
+          "meaning": "島嶼",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "夏に小さな島へ旅行に行った。",
+              "zh": "夏天去了一個小島旅行。"
+            }
+          ]
+        },
+        {
+          "id": "pr-184",
+          "word": "水泳",
+          "reading": "すいえい",
+          "meaning": "游泳（名詞）",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "週末は水泳教室に通っている。",
+              "zh": "週末去上游泳課。"
+            }
+          ]
+        },
+        {
+          "id": "pr-185",
+          "word": "輸出する",
+          "reading": "ゆしゅつする",
+          "meaning": "出口",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "この会社は自動車を輸出している。",
+              "zh": "這家公司出口汽車。"
+            }
+          ],
+          "confusionNote": "⚠ 相對詞：輸出する＝出口；輸入する＝進口。"
+        },
+        {
+          "id": "pr-186",
+          "word": "輸入する",
+          "reading": "ゆにゅうする",
+          "meaning": "進口",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "日本は多くの食料を輸入している。",
+              "zh": "日本進口很多食品。"
+            }
+          ]
+        },
+        {
+          "id": "pr-187",
+          "word": "反対",
+          "reading": "はんたい",
+          "meaning": "反對",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "彼はその計画に反対した。",
+              "zh": "他反對那個計畫。"
+            }
+          ]
+        },
+        {
+          "id": "pr-188",
+          "word": "反対語",
+          "reading": "はんたいご",
+          "meaning": "相反詞、反義詞",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "「大きい」の反対語は「小さい」だ。",
+              "zh": "「大」的反義詞是「小」。"
+            }
+          ]
+        },
+        {
+          "id": "pr-189",
+          "word": "量る",
+          "reading": "はかる",
+          "meaning": "測量",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "体重計で体重を量る。",
+              "zh": "用體重計測量體重。"
+            }
+          ]
+        },
+        {
+          "id": "pr-190",
+          "word": "減らす",
+          "reading": "へらす",
+          "meaning": "減少（他動詞）",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "支出を減らすように心がけている。",
+              "zh": "留意減少支出。"
+            }
+          ],
+          "confusionNote": "⚠ 自他對比：減らす／増やす（他動詞，主動使減少／增加）；減る／増える（自動詞，事物自己變化）。"
+        },
+        {
+          "id": "pr-191",
+          "word": "増やす",
+          "reading": "ふやす",
+          "meaning": "增加（他動詞）",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "貯金を増やしたい。",
+              "zh": "想增加存款。"
+            }
+          ]
+        },
+        {
+          "id": "pr-192",
+          "word": "減る",
+          "reading": "へる",
+          "meaning": "減少（自動詞）",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "人口が年々減っている。",
+              "zh": "人口逐年減少。"
+            }
+          ]
+        },
+        {
+          "id": "pr-193",
+          "word": "増える",
+          "reading": "ふえる",
+          "meaning": "增加（自動詞）",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "最近、体重が増えた。",
+              "zh": "最近體重增加了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-194",
+          "word": "苦手",
+          "reading": "にがて",
+          "meaning": "不擅長、不喜歡",
+          "pos": "noun-adj",
+          "examples": [
+            {
+              "jp": "虫が苦手だ。",
+              "zh": "很怕蟲子（不喜歡蟲子）。"
+            }
+          ],
+          "confusionNote": "⚠ 苦手＝不擅長／不喜歡，跟「苦い（にがい，味道苦）」「苦しい（くるしい，痛苦）」寫法相近但意思不同，考試常混淆。"
+        },
+        {
+          "id": "pr-195",
+          "word": "定期券",
+          "reading": "ていきけん",
+          "meaning": "定期票",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "定期券を使って通学している。",
+              "zh": "使用定期票通學。"
+            }
+          ]
+        },
+        {
+          "id": "pr-196",
+          "word": "乗車賃",
+          "reading": "じょうしゃちん",
+          "meaning": "車資",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "バスの乗車賃が値上がりした。",
+              "zh": "公車的車資漲價了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-197",
+          "word": "確かに",
+          "reading": "たしかに",
+          "meaning": "確實地",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "確かに彼の言う通りだ。",
+              "zh": "確實如他所說的。"
+            }
+          ],
+          "confusionNote": "⚠ 確かに＝確實地（肯定語氣）；確か＝我記得...應該是...（帶推測、不百分之百確定的語氣）。"
+        },
+        {
+          "id": "pr-198",
+          "word": "確か",
+          "reading": "たしか",
+          "meaning": "確實、應該（表推測）",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "確か彼は来月結婚するはずだ。",
+              "zh": "應該他下個月要結婚。"
+            }
+          ]
+        },
+        {
+          "id": "pr-199",
+          "word": "興味",
+          "reading": "きょうみ",
+          "meaning": "興趣",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "日本の文化に興味を持っている。",
+              "zh": "對日本文化很感興趣。"
+            }
+          ]
+        },
+        {
+          "id": "pr-200",
+          "word": "趣味",
+          "reading": "しゅみ",
+          "meaning": "興趣、嗜好",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "私の趣味は写真を撮ることです。",
+              "zh": "我的興趣是拍照。"
+            }
+          ]
+        },
+        {
+          "id": "pr-201",
+          "word": "作家",
+          "reading": "さっか",
+          "meaning": "作家",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "彼は有名な作家だ。",
+              "zh": "他是有名的作家。"
+            }
+          ]
+        },
+        {
+          "id": "pr-202",
+          "word": "頑張る",
+          "reading": "がんばる",
+          "meaning": "努力、加油",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "最後まで頑張るつもりだ。",
+              "zh": "打算努力到最後。"
+            }
+          ]
+        },
+        {
+          "id": "pr-203",
+          "word": "幼稚園",
+          "reading": "ようちえん",
+          "meaning": "幼稚園",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "娘は幼稚園に通っている。",
+              "zh": "女兒在上幼稚園。"
+            }
+          ]
+        },
+        {
+          "id": "pr-204",
+          "word": "理由",
+          "reading": "りゆう",
+          "meaning": "理由",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "遅刻した理由を説明する。",
+              "zh": "說明遲到的理由。"
+            }
+          ]
+        },
+        {
+          "id": "pr-205",
+          "word": "日記",
+          "reading": "にっき",
+          "meaning": "日記",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "毎日日記をつけている。",
+              "zh": "每天寫日記。"
+            }
+          ]
+        },
+        {
+          "id": "pr-206",
+          "word": "贈る",
+          "reading": "おくる",
+          "meaning": "贈送",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "誕生日に花を贈る。",
+              "zh": "生日時送花。"
+            }
+          ]
+        },
+        {
+          "id": "pr-207",
+          "word": "送る",
+          "reading": "おくる",
+          "meaning": "寄送、送行",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "荷物を実家に送る。",
+              "zh": "把行李寄回老家。"
+            }
+          ]
+        },
+        {
+          "id": "pr-208",
+          "word": "種類",
+          "reading": "しゅるい",
+          "meaning": "種類",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この店には様々な種類のパンがある。",
+              "zh": "這家店有各種各樣的麵包。"
+            }
+          ]
+        },
+        {
+          "id": "pr-209",
+          "word": "書類",
+          "reading": "しょるい",
+          "meaning": "文件",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "書類にサインしてください。",
+              "zh": "請在文件上簽名。"
+            }
+          ]
+        },
+        {
+          "id": "pr-210",
+          "word": "国際",
+          "reading": "こくさい",
+          "meaning": "國際",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "国際会議に参加する。",
+              "zh": "參加國際會議。"
+            }
+          ]
+        },
+        {
+          "id": "pr-211",
+          "word": "今度",
+          "reading": "こんど",
+          "meaning": "這次、下次",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "今度の旅行が楽しみだ。",
+              "zh": "期待這次的旅行。"
+            }
+          ]
+        },
+        {
+          "id": "pr-212",
+          "word": "この度",
+          "reading": "このたび",
+          "meaning": "這次（正式）",
+          "pos": "expression",
+          "examples": [
+            {
+              "jp": "この度はご迷惑をおかけしました。",
+              "zh": "這次給您添麻煩了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-213",
+          "word": "ゴール",
+          "reading": "ゴール",
+          "meaning": "目標、終點",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "ゴールまであと少しだ。",
+              "zh": "距離終點還差一點。"
+            }
+          ]
+        },
+        {
+          "id": "pr-214",
+          "word": "辺り",
+          "reading": "あたり",
+          "meaning": "附近",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この辺りに本屋はありますか。",
+              "zh": "這附近有書店嗎。"
+            }
+          ]
+        },
+        {
+          "id": "pr-215",
+          "word": "お巡りさん",
+          "reading": "おまわりさん",
+          "meaning": "警察先生",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "お巡りさんに道を尋ねる。",
+              "zh": "向警察問路。"
+            }
+          ]
+        },
+        {
+          "id": "pr-216",
+          "word": "郊外",
+          "reading": "こうがい",
+          "meaning": "郊外",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "郊外に引っ越した。",
+              "zh": "搬到了郊外。"
+            }
+          ]
+        },
+        {
+          "id": "pr-217",
+          "word": "箪笥",
+          "reading": "たんす",
+          "meaning": "衣櫃",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "服を箪笥にしまう。",
+              "zh": "把衣服收進衣櫃。"
+            }
+          ]
+        },
+        {
+          "id": "pr-218",
+          "word": "今朝",
+          "reading": "けさ",
+          "meaning": "今天早上",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "今朝は早く起きた。",
+              "zh": "今天早上很早起床。"
+            }
+          ]
+        },
+        {
+          "id": "pr-219",
+          "word": "電子",
+          "reading": "でんし",
+          "meaning": "電子",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "電子メールを送る。",
+              "zh": "寄電子郵件。"
+            }
+          ]
+        },
+        {
+          "id": "pr-220",
+          "word": "若い",
+          "reading": "わかい",
+          "meaning": "年輕的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "彼はまだ若い。",
+              "zh": "他還很年輕。"
+            }
+          ]
+        },
+        {
+          "id": "pr-221",
+          "word": "弱い",
+          "reading": "よわい",
+          "meaning": "弱的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "体が弱い。",
+              "zh": "身體虛弱。"
+            }
+          ]
+        },
+        {
+          "id": "pr-222",
+          "word": "目一杯",
+          "reading": "めいっぱい",
+          "meaning": "竭盡全力",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "目一杯頑張った。",
+              "zh": "竭盡全力努力了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-223",
+          "word": "例の件",
+          "reading": "れいのけん",
+          "meaning": "老樣子的那件事",
+          "pos": "expression",
+          "examples": [
+            {
+              "jp": "例の件、どうなりましたか。",
+              "zh": "那件老樣子的事怎麼樣了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-224",
+          "word": "部内",
+          "reading": "ぶない",
+          "meaning": "部門內部",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "部内で情報を共有する。",
+              "zh": "在部門內部分享資訊。"
+            }
+          ]
+        },
+        {
+          "id": "pr-225",
+          "word": "故郷",
+          "reading": "こきょう",
+          "meaning": "故鄉",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "故郷が恋しい。",
+              "zh": "想念故鄉。"
+            }
+          ]
+        },
+        {
+          "id": "pr-226",
+          "word": "訪ねる",
+          "reading": "たずねる",
+          "meaning": "拜訪",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "恩師を訪ねる。",
+              "zh": "拜訪恩師。"
+            }
+          ]
+        },
+        {
+          "id": "pr-227",
+          "word": "訪れる",
+          "reading": "おとずれる",
+          "meaning": "造訪",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "春が訪れる。",
+              "zh": "春天到來。"
+            }
+          ]
+        },
+        {
+          "id": "pr-228",
+          "word": "営業部",
+          "reading": "えいぎょうぶ",
+          "meaning": "業務部",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "営業部に配属された。",
+              "zh": "被分配到業務部。"
+            }
+          ]
+        },
+        {
+          "id": "pr-229",
+          "word": "喜ぶ",
+          "reading": "よろこぶ",
+          "meaning": "開心、喜悅",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "合格の知らせに喜ぶ。",
+              "zh": "為合格的消息感到開心。"
+            }
+          ]
+        },
+        {
+          "id": "pr-230",
+          "word": "嬉しい",
+          "reading": "うれしい",
+          "meaning": "開心的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "会えて嬉しい。",
+              "zh": "能見到面很開心。"
+            }
+          ]
+        },
+        {
+          "id": "pr-231",
+          "word": "帰省",
+          "reading": "きせい",
+          "meaning": "返鄉",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "お盆に帰省する。",
+              "zh": "盂蘭盆節時返鄉。"
+            }
+          ]
+        },
+        {
+          "id": "pr-232",
+          "word": "帰国",
+          "reading": "きこく",
+          "meaning": "回國",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "来月帰国する予定だ。",
+              "zh": "預計下個月回國。"
+            }
+          ]
+        },
+        {
+          "id": "pr-233",
+          "word": "陰",
+          "reading": "かげ",
+          "meaning": "陰影、背後",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "木の陰で休む。",
+              "zh": "在樹蔭下休息。"
+            }
+          ]
+        },
+        {
+          "id": "pr-234",
+          "word": "散々",
+          "reading": "さんざん",
+          "meaning": "狠狠地、慘兮兮地",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "散々叱られた。",
+              "zh": "被狠狠地罵了一頓。"
+            }
+          ]
+        },
+        {
+          "id": "pr-235",
+          "word": "この辺",
+          "reading": "このへん",
+          "meaning": "這一帶",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この辺で失礼します。",
+              "zh": "就到這裡告辭了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-236",
+          "word": "この辺り",
+          "reading": "このあたり",
+          "meaning": "這附近",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この辺りは静かだ。",
+              "zh": "這附近很安靜。"
+            }
+          ]
+        },
+        {
+          "id": "pr-237",
+          "word": "済む",
+          "reading": "すむ",
+          "meaning": "解決、完結",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "この問題はお金では済まない。",
+              "zh": "這個問題不是花錢就能解決的。"
+            }
+          ]
+        },
+        {
+          "id": "pr-238",
+          "word": "普段",
+          "reading": "ふだん",
+          "meaning": "平常",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "普段より早く起きた。",
+              "zh": "比平常更早起床。"
+            }
+          ]
+        },
+        {
+          "id": "pr-239",
+          "word": "許す",
+          "reading": "ゆるす",
+          "meaning": "原諒、允許",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "彼のミスを許す。",
+              "zh": "原諒他的失誤。"
+            }
+          ]
+        },
+        {
+          "id": "pr-240",
+          "word": "真似る",
+          "reading": "まねる",
+          "meaning": "模仿",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "先生の発音を真似る。",
+              "zh": "模仿老師的發音。"
+            }
+          ]
+        },
+        {
+          "id": "pr-241",
+          "word": "試合",
+          "reading": "しあい",
+          "meaning": "比賽",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "試合に勝つ。",
+              "zh": "贏得比賽。"
+            }
+          ]
+        },
+        {
+          "id": "pr-242",
+          "word": "練習",
+          "reading": "れんしゅう",
+          "meaning": "練習",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "毎日ピアノを練習する。",
+              "zh": "每天練習鋼琴。"
+            }
+          ]
+        },
+        {
+          "id": "pr-243",
+          "word": "飽きる",
+          "reading": "あきる",
+          "meaning": "厭倦",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "同じ仕事に飽きる。",
+              "zh": "對同樣的工作感到厭倦。"
+            }
+          ]
+        },
+        {
+          "id": "pr-244",
+          "word": "仕方",
+          "reading": "しかた",
+          "meaning": "方法、辦法",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "仕方がない。",
+              "zh": "沒有辦法。"
+            }
+          ]
+        },
+        {
+          "id": "pr-245",
+          "word": "仕様",
+          "reading": "しよう",
+          "meaning": "規格",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "製品の仕様を確認する。",
+              "zh": "確認產品的規格。"
+            }
+          ]
+        },
+        {
+          "id": "pr-246",
+          "word": "今更",
+          "reading": "いまさら",
+          "meaning": "事到如今",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "今更後悔しても遅い。",
+              "zh": "事到如今後悔也遲了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-247",
+          "word": "上司",
+          "reading": "じょうし",
+          "meaning": "上司",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "上司に相談する。",
+              "zh": "跟上司商量。"
+            }
+          ]
+        },
+        {
+          "id": "pr-248",
+          "word": "叱る",
+          "reading": "しかる",
+          "meaning": "責罵",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "子供を叱る。",
+              "zh": "責罵孩子。"
+            }
+          ]
+        },
+        {
+          "id": "pr-249",
+          "word": "家庭",
+          "reading": "かてい",
+          "meaning": "家庭",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "家庭を大切にする。",
+              "zh": "珍惜家庭。"
+            }
+          ]
+        },
+        {
+          "id": "pr-250",
+          "word": "大雨",
+          "reading": "おおあめ",
+          "meaning": "大雨",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "大雨で電車が遅れた。",
+              "zh": "因大雨電車誤點了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-251",
+          "word": "奢る",
+          "reading": "おごる",
+          "meaning": "請客",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "今日は私が奢るよ。",
+              "zh": "今天我請客。"
+            }
+          ]
+        },
+        {
+          "id": "pr-252",
+          "word": "ご馳走",
+          "reading": "ごちそう",
+          "meaning": "美食、請客",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "今日はご馳走になりました。",
+              "zh": "今天被請客了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-253",
+          "word": "激しい",
+          "reading": "はげしい",
+          "meaning": "激烈的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "激しい雨が降っている。",
+              "zh": "下著猛烈的雨。"
+            }
+          ]
+        },
+        {
+          "id": "pr-254",
+          "word": "結果",
+          "reading": "けっか",
+          "meaning": "結果",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "試験の結果が出た。",
+              "zh": "考試結果出來了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-255",
+          "word": "親",
+          "reading": "おや",
+          "meaning": "父母",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "親に心配をかけたくない。",
+              "zh": "不想讓父母擔心。"
+            }
+          ]
+        },
+        {
+          "id": "pr-256",
+          "word": "期末",
+          "reading": "きまつ",
+          "meaning": "期末",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "期末試験が近い。",
+              "zh": "期末考試快到了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-257",
+          "word": "収入",
+          "reading": "しゅうにゅう",
+          "meaning": "收入",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "収入が増えた。",
+              "zh": "收入增加了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-258",
+          "word": "成長",
+          "reading": "せいちょう",
+          "meaning": "成長",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "子供の成長は早い。",
+              "zh": "孩子的成長很快。"
+            }
+          ]
+        },
+        {
+          "id": "pr-259",
+          "word": "相応しい",
+          "reading": "ふさわしい",
+          "meaning": "合適的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "この仕事に相応しい人材だ。",
+              "zh": "適合這份工作的人才。"
+            }
+          ]
+        },
+        {
+          "id": "pr-260",
+          "word": "厳しい",
+          "reading": "きびしい",
+          "meaning": "嚴格的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "厳しい先生だ。",
+              "zh": "是位嚴格的老師。"
+            }
+          ]
+        },
+        {
+          "id": "pr-261",
+          "word": "素人",
+          "reading": "しろうと",
+          "meaning": "外行、新手",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "素人にはわからない。",
+              "zh": "外行人不懂。"
+            }
+          ]
+        },
+        {
+          "id": "pr-262",
+          "word": "玄人",
+          "reading": "くろうと",
+          "meaning": "内行、專家",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "玄人はだしの腕前だ。",
+              "zh": "專家級的手藝。"
+            }
+          ]
+        },
+        {
+          "id": "pr-263",
+          "word": "挨拶",
+          "reading": "あいさつ",
+          "meaning": "打招呼",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "近所の人に挨拶する。",
+              "zh": "跟鄰居打招呼。"
+            }
+          ]
+        },
+        {
+          "id": "pr-264",
+          "word": "男子",
+          "reading": "だんし",
+          "meaning": "男生",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "男子トイレはあちらです。",
+              "zh": "男廁在那邊。"
+            }
+          ]
+        },
+        {
+          "id": "pr-265",
+          "word": "女子",
+          "reading": "じょし",
+          "meaning": "女生",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "女子会を開く。",
+              "zh": "舉辦女生聚會。"
+            }
+          ]
+        },
+        {
+          "id": "pr-266",
+          "word": "癖",
+          "reading": "くせ",
+          "meaning": "毛病、習慣",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "彼は爪を噛む癖がある。",
+              "zh": "他有咬指甲的習慣。"
+            }
+          ]
+        },
+        {
+          "id": "pr-267",
+          "word": "式",
+          "reading": "しき",
+          "meaning": "儀式",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "卒業式に出席する。",
+              "zh": "出席畢業典禮。"
+            }
+          ]
+        },
+        {
+          "id": "pr-268",
+          "word": "梅雨",
+          "reading": "つゆ",
+          "meaning": "梅雨季",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "梅雨に入った。",
+              "zh": "進入梅雨季了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-269",
+          "word": "入場者数",
+          "reading": "にゅうじょうしゃすう",
+          "meaning": "入場人數",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "入場者数が予想を上回った。",
+              "zh": "入場人數超過預期。"
+            }
+          ]
+        },
+        {
+          "id": "pr-270",
+          "word": "やる気満々",
+          "reading": "やるきまんまん",
+          "meaning": "幹勁十足",
+          "pos": "expression",
+          "examples": [
+            {
+              "jp": "彼はやる気満々だ。",
+              "zh": "他幹勁十足。"
+            }
+          ]
+        },
+        {
+          "id": "pr-271",
+          "word": "砂糖",
+          "reading": "さとう",
+          "meaning": "砂糖",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "砂糖を入れて甘くする。",
+              "zh": "加砂糖讓它變甜。"
+            }
+          ],
+          "confusionNote": "與姓氏「佐藤（さとう）」同音，需靠漢字或語境區分。"
+        },
+        {
+          "id": "pr-272",
+          "word": "人口",
+          "reading": "じんこう",
+          "meaning": "人口",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "この町の人口は減っている。",
+              "zh": "這個城鎮的人口在減少。"
+            }
+          ]
+        },
+        {
+          "id": "pr-273",
+          "word": "進む",
+          "reading": "すすむ",
+          "meaning": "前進",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "計画通りに進む。",
+              "zh": "按照計畫進行。"
+            }
+          ]
+        },
+        {
+          "id": "pr-274",
+          "word": "下品",
+          "reading": "げひん",
+          "meaning": "粗鄙的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "下品な言葉遣いはやめよう。",
+              "zh": "別用粗鄙的措辭。"
+            }
+          ]
+        },
+        {
+          "id": "pr-275",
+          "word": "割と",
+          "reading": "わりと",
+          "meaning": "意外地、比較",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "このカフェは割と静かだ。",
+              "zh": "這家咖啡廳意外地安靜。"
+            }
+          ]
+        },
+        {
+          "id": "pr-276",
+          "word": "一旦",
+          "reading": "いったん",
+          "meaning": "一旦、暫且",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "一旦家に帰る。",
+              "zh": "先暫時回家一趟。"
+            }
+          ]
+        },
+        {
+          "id": "pr-277",
+          "word": "報告書",
+          "reading": "ほうこくしょ",
+          "meaning": "報告書",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "報告書を提出する。",
+              "zh": "提交報告書。"
+            }
+          ]
+        },
+        {
+          "id": "pr-278",
+          "word": "卒業論文",
+          "reading": "そつぎょうろんぶん",
+          "meaning": "畢業論文",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "卒業論文を書いている。",
+              "zh": "正在寫畢業論文。"
+            }
+          ]
+        },
+        {
+          "id": "pr-279",
+          "word": "改竄",
+          "reading": "かいざん",
+          "meaning": "竄改",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "データを改竄する。",
+              "zh": "竄改資料。"
+            }
+          ]
+        },
+        {
+          "id": "pr-280",
+          "word": "いとこ",
+          "reading": "いとこ",
+          "meaning": "堂/表兄弟姊妹",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "いとこと遊びに行く。",
+              "zh": "跟表兄弟姊妹去玩。"
+            }
+          ]
+        },
+        {
+          "id": "pr-281",
+          "word": "太る",
+          "reading": "ふとる",
+          "meaning": "變胖",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "最近太った気がする。",
+              "zh": "覺得最近變胖了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-282",
+          "word": "重要",
+          "reading": "じゅうよう",
+          "meaning": "重要",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "重要な会議に出る。",
+              "zh": "出席重要的會議。"
+            }
+          ]
+        },
+        {
+          "id": "pr-283",
+          "word": "選択科目",
+          "reading": "せんたくかもく",
+          "meaning": "選修科目",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "選択科目を決める。",
+              "zh": "決定選修科目。"
+            }
+          ]
+        },
+        {
+          "id": "pr-284",
+          "word": "嫌う",
+          "reading": "きらう",
+          "meaning": "討厭",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "彼に嫌われたくない。",
+              "zh": "不想被他討厭。"
+            }
+          ]
+        },
+        {
+          "id": "pr-285",
+          "word": "好く",
+          "reading": "すく",
+          "meaning": "喜歡",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "皆に好かれる性格だ。",
+              "zh": "受大家喜愛的性格。"
+            }
+          ]
+        },
+        {
+          "id": "pr-286",
+          "word": "嘘",
+          "reading": "うそ",
+          "meaning": "謊言",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "嘘をつくのはよくない。",
+              "zh": "說謊不好。"
+            }
+          ]
+        },
+        {
+          "id": "pr-287",
+          "word": "ほうれん草",
+          "reading": "ほうれんそう",
+          "meaning": "菠菜",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "ほうれん草を茹でる。",
+              "zh": "燙菠菜。"
+            }
+          ]
+        },
+        {
+          "id": "pr-288",
+          "word": "報連相",
+          "reading": "ほうれんそう",
+          "meaning": "報告聯絡商量（職場用語）",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "報連相を徹底する。",
+              "zh": "徹底做好報告聯絡商量。"
+            }
+          ],
+          "confusionNote": "與蔬菜「ほうれん草」同音，為「報告・連絡・相談」的職場用語縮寫。"
+        },
+        {
+          "id": "pr-289",
+          "word": "打ち合わせる",
+          "reading": "うちあわせる",
+          "meaning": "事先商量、碰頭",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "明日の予定を打ち合わせる。",
+              "zh": "商量明天的行程。"
+            }
+          ]
+        },
+        {
+          "id": "pr-290",
+          "word": "大勢",
+          "reading": "おおぜい",
+          "meaning": "很多人",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "大勢の人が集まった。",
+              "zh": "聚集了很多人。"
+            }
+          ]
+        },
+        {
+          "id": "pr-291",
+          "word": "思い浮かぶ",
+          "reading": "おもいうかぶ",
+          "meaning": "浮現（想法）",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "いいアイデアが思い浮かぶ。",
+              "zh": "浮現出好點子。"
+            }
+          ]
+        },
+        {
+          "id": "pr-292",
+          "word": "思い浮かべる",
+          "reading": "おもいうかべる",
+          "meaning": "想起、回想",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "昔のことを思い浮かべる。",
+              "zh": "回想起以前的事。"
+            }
+          ]
+        },
+        {
+          "id": "pr-293",
+          "word": "大した",
+          "reading": "たいした",
+          "meaning": "了不起的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "大した問題ではない。",
+              "zh": "不是什麼大不了的問題。"
+            }
+          ]
+        },
+        {
+          "id": "pr-294",
+          "word": "新人",
+          "reading": "しんじん",
+          "meaning": "新人",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "新人研修を受ける。",
+              "zh": "接受新人培訓。"
+            }
+          ]
+        },
+        {
+          "id": "pr-295",
+          "word": "新米",
+          "reading": "しんまい",
+          "meaning": "新手",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "新米ですが、よろしくお願いします。",
+              "zh": "我是新手，請多指教。"
+            }
+          ]
+        },
+        {
+          "id": "pr-296",
+          "word": "酔っ払う",
+          "reading": "よっぱらう",
+          "meaning": "喝醉",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "お酒を飲んで酔っ払った。",
+              "zh": "喝酒喝醉了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-297",
+          "word": "猫の額",
+          "reading": "ねこのひたい",
+          "meaning": "面積狹小",
+          "pos": "expression",
+          "examples": [
+            {
+              "jp": "うちの庭は猫の額ほどしかない。",
+              "zh": "我家的院子小得跟貓額頭一樣。"
+            }
+          ]
+        },
+        {
+          "id": "pr-298",
+          "word": "代わる",
+          "reading": "かわる",
+          "meaning": "代替",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "部長に代わって挨拶する。",
+              "zh": "代替部長致詞。"
+            }
+          ]
+        },
+        {
+          "id": "pr-299",
+          "word": "人々",
+          "reading": "ひとびと",
+          "meaning": "人們",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "人々の関心を集める。",
+              "zh": "引起人們的關注。"
+            }
+          ]
+        },
+        {
+          "id": "pr-300",
+          "word": "心地",
+          "reading": "ここち",
+          "meaning": "心情、感覺",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "心地よい風が吹く。",
+              "zh": "吹來舒服的風。"
+            }
+          ]
+        },
+        {
+          "id": "pr-301",
+          "word": "上級者",
+          "reading": "じょうきゅうしゃ",
+          "meaning": "高手、進階者",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "上級者向けのコースだ。",
+              "zh": "面向高手的課程。"
+            }
+          ]
+        },
+        {
+          "id": "pr-302",
+          "word": "仮に",
+          "reading": "かりに",
+          "meaning": "假如",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "仮に失敗しても後悔しない。",
+              "zh": "就算假設失敗了也不後悔。"
+            }
+          ]
+        },
+        {
+          "id": "pr-303",
+          "word": "面倒",
+          "reading": "めんどう",
+          "meaning": "麻煩、照顧",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "妹の面倒を見る。",
+              "zh": "照顧妹妹。"
+            }
+          ]
+        },
+        {
+          "id": "pr-304",
+          "word": "市場",
+          "reading": "しじょう",
+          "meaning": "市場",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "海外市場に進出する。",
+              "zh": "打入海外市場。"
+            }
+          ]
+        },
+        {
+          "id": "pr-305",
+          "word": "進出",
+          "reading": "しんしゅつ",
+          "meaning": "進軍、打入",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "新分野に進出する。",
+              "zh": "進軍新領域。"
+            }
+          ]
+        },
+        {
+          "id": "pr-306",
+          "word": "小雨",
+          "reading": "こさめ",
+          "meaning": "小雨",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "小雨が降っている。",
+              "zh": "下著小雨。"
+            }
+          ]
+        },
+        {
+          "id": "pr-307",
+          "word": "大声",
+          "reading": "おおごえ",
+          "meaning": "大聲",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "大声で叫ぶ。",
+              "zh": "大聲叫喊。"
+            }
+          ]
+        },
+        {
+          "id": "pr-308",
+          "word": "操作",
+          "reading": "そうさ",
+          "meaning": "操作",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "機械を操作する。",
+              "zh": "操作機器。"
+            }
+          ]
+        },
+        {
+          "id": "pr-309",
+          "word": "関わる",
+          "reading": "かかわる",
+          "meaning": "有關、涉及",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "命に関わる問題だ。",
+              "zh": "攸關性命的問題。"
+            }
+          ]
+        },
+        {
+          "id": "pr-310",
+          "word": "溜まる",
+          "reading": "たまる",
+          "meaning": "積累",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "ストレスが溜まる。",
+              "zh": "累積壓力。"
+            }
+          ]
+        },
+        {
+          "id": "pr-311",
+          "word": "解消",
+          "reading": "かいしょう",
+          "meaning": "消除",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "ストレスを解消する。",
+              "zh": "消除壓力。"
+            }
+          ]
+        },
+        {
+          "id": "pr-312",
+          "word": "発散",
+          "reading": "はっさん",
+          "meaning": "發散、排解",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "ストレスを発散する。",
+              "zh": "排解壓力。"
+            }
+          ]
+        },
+        {
+          "id": "pr-313",
+          "word": "随分",
+          "reading": "ずいぶん",
+          "meaning": "相當、很",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "随分久しぶりですね。",
+              "zh": "真的好久不見了呢。"
+            }
+          ]
+        },
+        {
+          "id": "pr-314",
+          "word": "楽しむ",
+          "reading": "たのしむ",
+          "meaning": "享受",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "旅行を楽しむ。",
+              "zh": "享受旅行。"
+            }
+          ]
+        },
+        {
+          "id": "pr-315",
+          "word": "楽しい",
+          "reading": "たのしい",
+          "meaning": "開心的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "毎日が楽しい。",
+              "zh": "每天都很開心。"
+            }
+          ]
+        },
+        {
+          "id": "pr-316",
+          "word": "楽しみ",
+          "reading": "たのしみ",
+          "meaning": "期待、樂趣",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "週末が楽しみだ。",
+              "zh": "很期待週末。"
+            }
+          ]
+        },
+        {
+          "id": "pr-317",
+          "word": "楽",
+          "reading": "らく",
+          "meaning": "輕鬆的",
+          "pos": "adjective",
+          "examples": [
+            {
+              "jp": "この仕事は楽だ。",
+              "zh": "這份工作很輕鬆。"
+            }
+          ]
+        },
+        {
+          "id": "pr-318",
+          "word": "わざわざ",
+          "reading": "わざわざ",
+          "meaning": "特意",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "わざわざ来てくれてありがとう。",
+              "zh": "謝謝你特意前來。"
+            }
+          ]
+        },
+        {
+          "id": "pr-319",
+          "word": "わざと",
+          "reading": "わざと",
+          "meaning": "故意",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "わざと負けてあげた。",
+              "zh": "故意讓他贏。"
+            }
+          ]
+        },
+        {
+          "id": "pr-320",
+          "word": "盗む",
+          "reading": "ぬすむ",
+          "meaning": "偷",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "財布を盗まれた。",
+              "zh": "錢包被偷了。"
+            }
+          ]
+        },
+        {
+          "id": "pr-321",
+          "word": "始発",
+          "reading": "しはつ",
+          "meaning": "首班車",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "始発電車に乗る。",
+              "zh": "搭乘首班電車。"
+            }
+          ]
+        },
+        {
+          "id": "pr-322",
+          "word": "気に入る",
+          "reading": "きにいる",
+          "meaning": "中意",
+          "pos": "expression",
+          "examples": [
+            {
+              "jp": "このデザインが気に入った。",
+              "zh": "很中意這個設計。"
+            }
+          ]
+        },
+        {
+          "id": "pr-323",
+          "word": "朝一",
+          "reading": "あさいち",
+          "meaning": "一大早、第一件事",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "朝一で連絡します。",
+              "zh": "一早就會聯絡。"
+            }
+          ]
+        },
+        {
+          "id": "pr-324",
+          "word": "じっくり",
+          "reading": "じっくり",
+          "meaning": "仔細地、慢慢地",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "じっくり考える。",
+              "zh": "仔細地思考。"
+            }
+          ]
+        },
+        {
+          "id": "pr-325",
+          "word": "営業本部長",
+          "reading": "えいぎょうほんぶちょう",
+          "meaning": "業務總部長",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "営業本部長に報告する。",
+              "zh": "向業務總部長報告。"
+            }
+          ]
+        },
+        {
+          "id": "pr-326",
+          "word": "翻訳",
+          "reading": "ほんやく",
+          "meaning": "翻譯",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "小説を翻訳する。",
+              "zh": "翻譯小說。"
+            }
+          ]
+        },
+        {
+          "id": "pr-327",
+          "word": "最も",
+          "reading": "もっとも",
+          "meaning": "最",
+          "pos": "adverb",
+          "examples": [
+            {
+              "jp": "最も重要なことだ。",
+              "zh": "最重要的事。"
+            }
+          ]
+        },
+        {
+          "id": "pr-328",
+          "word": "拾い物",
+          "reading": "ひろいもの",
+          "meaning": "撿到的東西",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "拾い物を交番に届ける。",
+              "zh": "把撿到的東西送到派出所。"
+            }
+          ]
+        },
+        {
+          "id": "pr-329",
+          "word": "落とし物",
+          "reading": "おとしもの",
+          "meaning": "遺失物",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "落とし物センターに問い合わせる。",
+              "zh": "向遺失物中心洽詢。"
+            }
+          ]
+        },
+        {
+          "id": "pr-330",
+          "word": "忘れ物",
+          "reading": "わすれもの",
+          "meaning": "忘記帶的東西",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "忘れ物をしないように気をつける。",
+              "zh": "小心不要忘記帶東西。"
+            }
+          ]
+        },
+        {
+          "id": "pr-331",
+          "word": "頼む",
+          "reading": "たのむ",
+          "meaning": "拜託",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "友達に頼む。",
+              "zh": "拜託朋友。"
+            }
+          ]
+        },
+        {
+          "id": "pr-332",
+          "word": "頼る",
+          "reading": "たよる",
+          "meaning": "依賴",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "親に頼ってばかりはいられない。",
+              "zh": "不能總是依賴父母。"
+            }
+          ]
+        },
+        {
+          "id": "pr-333",
+          "word": "不運",
+          "reading": "ふうん",
+          "meaning": "不幸運",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "不運が続く。",
+              "zh": "厄運連連。"
+            }
+          ]
+        },
+        {
+          "id": "pr-334",
+          "word": "不幸",
+          "reading": "ふこう",
+          "meaning": "不幸",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "不幸な出来事が起きた。",
+              "zh": "發生了不幸的事。"
+            }
+          ]
+        },
+        {
+          "id": "pr-335",
+          "word": "幸運",
+          "reading": "こううん",
+          "meaning": "幸運",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "幸運を祈る。",
+              "zh": "祈求幸運。"
+            }
+          ]
+        },
+        {
+          "id": "pr-336",
+          "word": "敗れる",
+          "reading": "やぶれる",
+          "meaning": "落敗",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "試合に敗れる。",
+              "zh": "比賽落敗。"
+            }
+          ]
+        },
+        {
+          "id": "pr-337",
+          "word": "眠る",
+          "reading": "ねむる",
+          "meaning": "睡覺",
+          "pos": "verb",
+          "examples": [
+            {
+              "jp": "ぐっすり眠る。",
+              "zh": "熟睡。"
+            }
+          ]
+        },
+        {
+          "id": "pr-338",
+          "word": "手に入れる",
+          "reading": "てにいれる",
+          "meaning": "得到",
+          "pos": "expression",
+          "examples": [
+            {
+              "jp": "貴重な情報を手に入れる。",
+              "zh": "得到寶貴的資訊。"
+            }
+          ]
+        },
+        {
+          "id": "pr-339",
+          "word": "予報",
+          "reading": "よほう",
+          "meaning": "預報",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "天気予報を確認する。",
+              "zh": "確認天氣預報。"
+            }
+          ]
+        },
+        {
+          "id": "pr-340",
+          "word": "出席",
+          "reading": "しゅっせき",
+          "meaning": "出席",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "会議に出席する。",
+              "zh": "出席會議。"
+            }
+          ]
+        },
+        {
+          "id": "pr-341",
+          "word": "欠席",
+          "reading": "けっせき",
+          "meaning": "缺席",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "病気で欠席する。",
+              "zh": "因病缺席。"
+            }
+          ]
+        },
+        {
+          "id": "pr-342",
+          "word": "貴様",
+          "reading": "きさま",
+          "meaning": "你這傢伙（粗俗）",
+          "pos": "other",
+          "examples": [
+            {
+              "jp": "貴様、覚えていろ！",
+              "zh": "你這傢伙，給我記住！"
+            }
+          ]
+        },
+        {
+          "id": "pr-343",
+          "word": "部長",
+          "reading": "ぶちょう",
+          "meaning": "部長",
+          "pos": "noun",
+          "examples": [
+            {
+              "jp": "部長に報告する。",
+              "zh": "向部長報告。"
+            }
+          ]
+        },
+        {
+          "id": "pr-344",
+          "word": "迷惑",
+          "reading": "めいわく",
+          "meaning": "困擾、麻煩",
+          "pos": "noun",
+          "confusionNote": "〜に迷惑をかける／〜の迷惑になる＝給……添麻煩；迷惑する／迷惑だ＝感到困擾；迷惑メール＝騷擾郵件。",
+          "examples": [
+            {
+              "jp": "他人に迷惑をかけないようにする。",
+              "zh": "盡量不給別人添麻煩。"
+            },
+            {
+              "jp": "夜中の電話は迷惑だ。",
+              "zh": "半夜打電話很讓人困擾。"
+            }
+          ]
         }
       ]
     },

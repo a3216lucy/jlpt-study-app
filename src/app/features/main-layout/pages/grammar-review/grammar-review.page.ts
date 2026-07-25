@@ -67,6 +67,8 @@ const KEIGO_FORMATION_GROUPS: (KeigoFormationGroup & { badgeClass: string })[] =
       { rule: 'お＋ます形＋になる', example: '例：お読みになる' },
       { rule: '～れる・られる', example: '例：話される・来られる' },
       { rule: '特別動詞', example: '例：いらっしゃる 等' },
+      { rule: 'て形＋ください→お/ご＋ます形/漢語＋ください', example: '例：お待ちください・ご確認ください' },
+      { rule: 'てくださる→お/ご＋ます形/漢語＋くださる', example: '例：お越しくださる' },
     ],
   },
   {
@@ -76,6 +78,8 @@ const KEIGO_FORMATION_GROUPS: (KeigoFormationGroup & { badgeClass: string })[] =
       { rule: 'お＋ます形＋する', example: '例：お持ちする' },
       { rule: 'ご＋漢語＋する', example: '例：ご案内する' },
       { rule: '特別動詞', example: '例：伺う・申す 等' },
+      { rule: 'ていただく→お/ご＋ます形/漢語＋いただく', example: '例：お待ちいただく・ご了承いただく' },
+      { rule: 'お/ご＋ます形/漢語＋申し上げる', example: '例：お礼申し上げる（傳達、依頼、祝賀、謝罪等）' },
     ],
   },
 ];

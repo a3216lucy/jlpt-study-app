@@ -34,6 +34,7 @@ export class SentenceReviewStore {
   readonly loading = signal(false);
   readonly selectedGroupId = signal<string | null>(null);
   readonly bookmarkedIds = signal<Set<string>>(new Set());
+  readonly searchQuery = signal('');
 
   // Computed
   // --------------------------------------------------------------------
@@ -58,6 +59,23 @@ export class SentenceReviewStore {
   });
 
   readonly displayPatterns = computed<SentencePattern[]>(() => this.selectedGroup()?.patterns ?? []);
+
+  readonly isSearching = computed(() => this.searchQuery().trim().length > 0);
+
+  /** 有搜尋字串時跨目前頁籤（常用/考題）所有分類搜尋，而非只搜當前選取的分類 */
+  readonly searchResults = computed<SentencePattern[]>(() => {
+    const query = this.searchQuery().trim().toLowerCase();
+    if (!query) return [];
+    return this.displayGroups()
+      .flatMap((g) => g.patterns)
+      .filter((p) =>
+        [p.pattern, p.meaning, p.formation, p.notes].some((field) => field?.toLowerCase().includes(query)),
+      );
+  });
+
+  readonly visiblePatterns = computed<SentencePattern[]>(() =>
+    this.isSearching() ? this.searchResults() : this.displayPatterns(),
+  );
 
   readonly totalPatternCount = computed(() =>
     this.displayGroups().reduce((sum, g) => sum + g.patterns.length, 0),
@@ -91,6 +109,10 @@ export class SentenceReviewStore {
 
   selectGroup(id: string): void {
     this.selectedGroupId.set(id);
+  }
+
+  setSearchQuery(query: string): void {
+    this.searchQuery.set(query);
   }
 
   isBookmarked(patternId: string): boolean {
