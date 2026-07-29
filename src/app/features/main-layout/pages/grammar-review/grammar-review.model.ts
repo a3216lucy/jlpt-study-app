@@ -59,6 +59,9 @@ export interface SpecialVerbRow {
   sonkei: string;
   kenjou: string;
   meaning: string;
+  plain_kana?: string;
+  sonkei_kana?: string;
+  kenjou_kana?: string;
 }
 
 /** 動詞活用頁「主要活用表」單一列（I/II/III群各一個例字） */
@@ -67,6 +70,12 @@ export interface QuickReferenceRow {
   groupI: string;
   groupII: string;
   groupIII: string;
+  groupI_kana?: string;
+  groupII_kana?: string;
+  groupIII_kana?: string;
+  groupI_rule?: string;
+  groupII_rule?: string;
+  groupIII_rule?: string;
 }
 
 /** 活用規則頁完整表：單一列（含例外情況欄） */

@@ -250,4 +250,37 @@ export const PAST_EXAM_CATALOG: readonly PastExamEntry[] = [
       },
     ],
   },
+  {
+    id: 'n3-2024-07',
+    year: 2024,
+    month: 7,
+    level: 'N3',
+    examLabel: '2024年7月 N3',
+    sections: [
+      {
+        id: 'n3-2024-07-vocab',
+        sectionLabel: '語彙（問題1〜5）',
+        category: 'vocabulary',
+        questionType: 'sentence-fill',
+        questionCount: 35,
+        path: 'assets/exams/past/n3-2024-07-vocab.json',
+      },
+      {
+        id: 'n3-2024-07-grammar',
+        sectionLabel: '文法（問題1〜3）',
+        category: 'grammar',
+        questionType: 'sentence-fill',
+        questionCount: 22,
+        path: 'assets/exams/past/n3-2024-07-grammar.json',
+      },
+      {
+        id: 'n3-2024-07-reading',
+        sectionLabel: '読解（問題4〜7）',
+        category: 'reading',
+        questionType: 'multiple-choice',
+        questionCount: 16,
+        path: 'assets/exams/past/n3-2024-07-reading.json',
+      },
+    ],
+  },
 ];

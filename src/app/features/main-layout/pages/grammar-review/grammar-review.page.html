@@ -121,7 +121,7 @@
                 <th class="px-4 py-2.5">活用形</th>
                 <th class="px-4 py-2.5">I 群（書く）</th>
                 <th class="px-4 py-2.5">II 群（食べる）</th>
-                <th class="px-4 py-2.5">III 群（する）</th>
+                <th class="px-4 py-2.5">III 群（する・来る）</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-border">
@@ -130,9 +130,33 @@
                   <td class="px-4 py-2.5">
                     <span class="rounded-full bg-accent-soft px-2.5 py-1 text-xs font-bold text-accent">{{ row.formLabel }}</span>
                   </td>
-                  <td class="px-4 py-2.5 text-ink">{{ row.groupI }}</td>
-                  <td class="px-4 py-2.5 text-ink">{{ row.groupII }}</td>
-                  <td class="px-4 py-2.5 text-ink">{{ row.groupIII }}</td>
+                  <td class="px-4 py-2.5 text-ink">
+                    {{ row.groupI }}
+                    @if (row.groupI_kana) {
+                      <p class="text-xs text-text-muted">{{ row.groupI_kana }}</p>
+                    }
+                    @if (row.groupI_rule) {
+                      <p class="text-xs text-accent/70">{{ row.groupI_rule }}</p>
+                    }
+                  </td>
+                  <td class="px-4 py-2.5 text-ink">
+                    {{ row.groupII }}
+                    @if (row.groupII_kana) {
+                      <p class="text-xs text-text-muted">{{ row.groupII_kana }}</p>
+                    }
+                    @if (row.groupII_rule) {
+                      <p class="text-xs text-accent/70">{{ row.groupII_rule }}</p>
+                    }
+                  </td>
+                  <td class="px-4 py-2.5 text-ink">
+                    {{ row.groupIII }}
+                    @if (row.groupIII_kana) {
+                      <p class="text-xs text-text-muted">{{ row.groupIII_kana }}</p>
+                    }
+                    @if (row.groupIII_rule) {
+                      <p class="text-xs text-accent/70">{{ row.groupIII_rule }}</p>
+                    }
+                  </td>
                 </tr>
               }
             </tbody>
@@ -154,9 +178,24 @@
             <tbody class="divide-y divide-border">
               @for (row of store.filteredSpecialVerbTable(); track row.plain) {
                 <tr class="bg-surface">
-                  <td class="px-4 py-2.5 font-bold text-ink">{{ row.plain }}</td>
-                  <td class="px-4 py-2.5 text-accent">{{ row.sonkei }}</td>
-                  <td class="px-4 py-2.5 text-matcha">{{ row.kenjou }}</td>
+                  <td class="px-4 py-2.5 font-bold text-ink">
+                    {{ row.plain }}
+                    @if (row.plain_kana) {
+                      <p class="text-xs font-normal text-text-muted">{{ row.plain_kana }}</p>
+                    }
+                  </td>
+                  <td class="px-4 py-2.5 text-accent">
+                    {{ row.sonkei }}
+                    @if (row.sonkei_kana) {
+                      <p class="text-xs text-accent/60">{{ row.sonkei_kana }}</p>
+                    }
+                  </td>
+                  <td class="px-4 py-2.5 text-matcha">
+                    {{ row.kenjou }}
+                    @if (row.kenjou_kana) {
+                      <p class="text-xs text-matcha/60">{{ row.kenjou_kana }}</p>
+                    }
+                  </td>
                 </tr>
               }
             </tbody>
@@ -201,9 +240,24 @@
             <tbody class="divide-y divide-border">
               @for (row of store.filteredSpecialVerbTable(); track row.plain) {
                 <tr class="bg-surface">
-                  <td class="px-4 py-2.5 font-bold text-ink">{{ row.plain }}</td>
-                  <td class="px-4 py-2.5 text-accent">{{ row.sonkei }}</td>
-                  <td class="px-4 py-2.5 text-matcha">{{ row.kenjou }}</td>
+                  <td class="px-4 py-2.5 font-bold text-ink">
+                    {{ row.plain }}
+                    @if (row.plain_kana) {
+                      <p class="text-xs font-normal text-text-muted">{{ row.plain_kana }}</p>
+                    }
+                  </td>
+                  <td class="px-4 py-2.5 text-accent">
+                    {{ row.sonkei }}
+                    @if (row.sonkei_kana) {
+                      <p class="text-xs text-accent/60">{{ row.sonkei_kana }}</p>
+                    }
+                  </td>
+                  <td class="px-4 py-2.5 text-matcha">
+                    {{ row.kenjou }}
+                    @if (row.kenjou_kana) {
+                      <p class="text-xs text-matcha/60">{{ row.kenjou_kana }}</p>
+                    }
+                  </td>
                   <td class="px-4 py-2.5 text-text-secondary">{{ row.meaning }}</td>
                 </tr>
               }

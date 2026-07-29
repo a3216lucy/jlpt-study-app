@@ -1,0 +1,450 @@
+{
+  "id": "n3-2024-07-grammar",
+  "title": "2024年7月 N3 文法",
+  "description": "2024年7月 JLPT N3 文法（問題1〜3）",
+  "level": "N3",
+  "category": "grammar",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n3-2024-07-g-01",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n楽しい時間（　）過ごした。",
+      "questionText": "楽しい時間（　）過ごした。",
+      "questionTranslation": "度過了快樂的時光。",
+      "options": [
+        {"id": "n3-2024-07-g-01-a", "text": "で", "isCorrect": false},
+        {"id": "n3-2024-07-g-01-b", "text": "に", "isCorrect": false},
+        {"id": "n3-2024-07-g-01-c", "text": "が", "isCorrect": false},
+        {"id": "n3-2024-07-g-01-d", "text": "を", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2024-07-g-01-d",
+      "explanation": "「時間を過ごす」是固定搭配，表示「度過時間」。「を」接在表示時間的名詞後，搭配「過ごす」「過ぎる」等動詞。「で」表示手段/場所；「に」表示時間點；「が」表示主語。",
+      "tags": ["particle", "を", "fixed-collocation", "n3-grammar"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-02",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n（　）歩いて行けるので便利だ。",
+      "questionText": "（　）歩いて行けるので便利だ。",
+      "questionTranslation": "兩邊都可以走路去，很方便。",
+      "options": [
+        {"id": "n3-2024-07-g-02-a", "text": "どちらから", "isCorrect": false},
+        {"id": "n3-2024-07-g-02-b", "text": "どちらも", "isCorrect": true},
+        {"id": "n3-2024-07-g-02-c", "text": "どちらかでも", "isCorrect": false},
+        {"id": "n3-2024-07-g-02-d", "text": "どちらかまで", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-02-b",
+      "explanation": "どちらも＝兩者都。表示對兩個選項都成立。辨別：どちらか＝其中一個；どちらから＝從哪一個開始（不合語意）；どちらかまで＝到其中一個（不合語意）。",
+      "tags": ["interrogative", "どちらも", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-03",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\nバスの運転手（　）働いている。",
+      "questionText": "バスの運転手（　）働いている。",
+      "questionTranslation": "以公車司機的身分在工作。",
+      "options": [
+        {"id": "n3-2024-07-g-03-a", "text": "として", "isCorrect": true},
+        {"id": "n3-2024-07-g-03-b", "text": "にとって", "isCorrect": false},
+        {"id": "n3-2024-07-g-03-c", "text": "のほう", "isCorrect": false},
+        {"id": "n3-2024-07-g-03-d", "text": "のわりに", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-03-a",
+      "explanation": "〜として＝以……的身分/立場/資格。「バスの運転手として働く」＝以公車司機的身分工作。辨別：にとって＝對……來說；のほう＝……方向/方面；のわりに＝以……來說（但結果出乎意料）。",
+      "tags": ["として", "role", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-04",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n（　）遅刻してしまった。",
+      "questionText": "（　）遅刻してしまった。",
+      "questionTranslation": "結果還是遲到了。",
+      "options": [
+        {"id": "n3-2024-07-g-04-a", "text": "つい", "isCorrect": false},
+        {"id": "n3-2024-07-g-04-b", "text": "結局", "isCorrect": true},
+        {"id": "n3-2024-07-g-04-c", "text": "その結果", "isCorrect": false},
+        {"id": "n3-2024-07-g-04-d", "text": "ほどなく", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-04-b",
+      "explanation": "結局（けっきょく）＝結果、到頭來。強調最終的結果，帶有「不管如何努力」的語感。辨別：つい＝不由得（一時衝動）；その結果＝其結果（接在原因之後）；ほどなく＝不久後（時間短）。",
+      "tags": ["adverb", "結局", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-05",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\nこの歌を聞く（　）大学時代のことを思い出す。",
+      "questionText": "この歌を聞く（　）大学時代のことを思い出す。",
+      "questionTranslation": "每次聽到這首歌，就會想起大學時代的事。",
+      "options": [
+        {"id": "n3-2024-07-g-05-a", "text": "ごとに", "isCorrect": false},
+        {"id": "n3-2024-07-g-05-b", "text": "たびに", "isCorrect": true},
+        {"id": "n3-2024-07-g-05-c", "text": "ときに", "isCorrect": false},
+        {"id": "n3-2024-07-g-05-d", "text": "ているに", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-05-b",
+      "explanation": "〜たびに＝每當〜、每次〜（某個動作/事件每次發生，固定出現某結果）。接動詞辭書形或名詞＋の。辨別：〜ごとに＝每隔（固定間隔，如「三日ごとに」）；ときに＝在……時候（一般的時間點）。",
+      "tags": ["たびに", "repetition", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-06",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n帰ってからどう（　）まだ決めていません。",
+      "questionText": "帰ってからどう（　）まだ決めていません。",
+      "questionTranslation": "回去之後要怎麼做，我還沒決定。",
+      "options": [
+        {"id": "n3-2024-07-g-06-a", "text": "するかは", "isCorrect": true},
+        {"id": "n3-2024-07-g-06-b", "text": "するかが", "isCorrect": false},
+        {"id": "n3-2024-07-g-06-c", "text": "することは", "isCorrect": false},
+        {"id": "n3-2024-07-g-06-d", "text": "することが", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-06-a",
+      "explanation": "「どう〜するか」是間接疑問句的形式。「どうするかは」→「は」把整個「どうするか」名詞化成主題，接「決める」。相比「するかが」主格化，「するかは」更自然地作為對比/主題。",
+      "tags": ["indirect-question", "かは", "n3-grammar"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-07",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n実際に（　）ぴったりだった。",
+      "questionText": "実際に（　）ぴったりだった。",
+      "questionTranslation": "實際試穿後，發現非常合適。",
+      "options": [
+        {"id": "n3-2024-07-g-07-a", "text": "着てみると", "isCorrect": true},
+        {"id": "n3-2024-07-g-07-b", "text": "着たのだから", "isCorrect": false},
+        {"id": "n3-2024-07-g-07-c", "text": "着るとしたら", "isCorrect": false},
+        {"id": "n3-2024-07-g-01-d", "text": "着ていることで", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-07-a",
+      "explanation": "〜てみると＝試了〜之後（發現……）。「着てみる」＝試穿，「着てみると」帶出試穿後的結果/發現。辨別：〜のだから＝因為（解釋原因）；〜としたら＝假設如果；〜ていることで＝因為持續〜。",
+      "tags": ["てみると", "discovery", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-08",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n明日までにレポートを（　）。",
+      "questionText": "明日までにレポートを（　）。",
+      "questionTranslation": "因為明天之前必須交報告。",
+      "options": [
+        {"id": "n3-2024-07-g-08-a", "text": "出したほうがよくても", "isCorrect": false},
+        {"id": "n3-2024-07-g-08-b", "text": "出してはいけなくても", "isCorrect": false},
+        {"id": "n3-2024-07-g-08-c", "text": "出さないといけないのに", "isCorrect": false},
+        {"id": "n3-2024-07-g-08-d", "text": "出さないといけないので", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2024-07-g-08-d",
+      "explanation": "〜ないといけないので＝因為必須〜（原因/理由）。「ので」表示順接原因。辨別：「のに」表示逆接（但……卻）；「ほうがよくても」＝即使最好也；「てはいけなくても」＝即使不能也（語意不通）。",
+      "tags": ["ないといけない", "obligation", "ので", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-09",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\nこの夏祭りは地域の人々によって（　）。",
+      "questionText": "この夏祭りは地域の人々によって（　）。",
+      "questionTranslation": "這個夏日祭典由當地居民延續舉辦著。",
+      "options": [
+        {"id": "n3-2024-07-g-09-a", "text": "続けてもらえる", "isCorrect": false},
+        {"id": "n3-2024-07-g-09-b", "text": "続けさせられる", "isCorrect": false},
+        {"id": "n3-2024-07-g-09-c", "text": "続けられている", "isCorrect": true},
+        {"id": "n3-2024-07-g-09-d", "text": "続けてくれている", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-09-c",
+      "explanation": "「〜によって〜られている」＝被動式，表示「被/由……所維持」。「地域の人々によって続けられている」＝由地方居民持續辦理中。辨別：〜てもらえる＝得到對方幫忙；〜させられる＝被使役（被迫）；〜てくれている＝對方為我持續做（要求主客關係）。",
+      "tags": ["passive", "によって", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-10",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\nこのクッキー、どこで（　）？",
+      "questionText": "このクッキー、どこで（　）？",
+      "questionTranslation": "這個餅乾是在哪買的？",
+      "options": [
+        {"id": "n3-2024-07-g-10-a", "text": "買ったの", "isCorrect": true},
+        {"id": "n3-2024-07-g-10-b", "text": "買ったよね", "isCorrect": false},
+        {"id": "n3-2024-07-g-10-c", "text": "買ったことある", "isCorrect": false},
+        {"id": "n3-2024-07-g-10-d", "text": "買ったんじゃない", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-10-a",
+      "explanation": "「〜の？」是口語中的疑問句，語調上升表詢問。「どこで買ったの？」＝在哪裡買的？辨別：「よね」＝確認對方也知道（但這裡是詢問）；「ことある」＝有沒有這樣的經驗；「んじゃない」＝推測（你不是…嗎）。",
+      "tags": ["question-particle", "の", "casual-speech", "n3-grammar"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-11",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\nエアコンはつけたままに（　）。",
+      "questionText": "エアコンはつけたままに（　）。",
+      "questionTranslation": "冷氣請保持開著的狀態。",
+      "options": [
+        {"id": "n3-2024-07-g-11-a", "text": "していませんか", "isCorrect": false},
+        {"id": "n3-2024-07-g-11-b", "text": "なっていませんか", "isCorrect": false},
+        {"id": "n3-2024-07-g-11-c", "text": "しておいてください", "isCorrect": true},
+        {"id": "n3-2024-07-g-11-d", "text": "なっておいてください", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-11-c",
+      "explanation": "「〜たままにしておく」＝保持〜的狀態（事先做好準備）。「つけたままにしておいてください」＝請讓它維持開著的狀態。「〜ておく」表示事先/預先的準備動作。辨別：「なっておいてください」語法不自然（なる是自動詞，不用請求形）。",
+      "tags": ["まま", "ておく", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-12",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n忘れることは、必ずしも（　）と書いてあった。",
+      "questionText": "忘れることは、必ずしも（　）と書いてあった。",
+      "questionTranslation": "書上寫著，遺忘這件事不一定是壞事。",
+      "options": [
+        {"id": "n3-2024-07-g-12-a", "text": "悪いことだ", "isCorrect": false},
+        {"id": "n3-2024-07-g-12-b", "text": "悪いことではない", "isCorrect": true},
+        {"id": "n3-2024-07-g-12-c", "text": "悪いことのはずだ", "isCorrect": false},
+        {"id": "n3-2024-07-g-12-d", "text": "悪いことかもしれない", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-12-b",
+      "explanation": "必ずしも〜ない＝不一定〜、未必〜。「必ずしも悪いことではない」＝不一定是壞事。注意：「必ずしも」必須搭配否定，不能用肯定句。辨別：「悪いことだ」肯定（不合）；「はずだ」推測應該是（不合）；「かもしれない」不一定（但這裡必ずしも已涵蓋，且不需要後置不確定詞）。",
+      "tags": ["必ずしも〜ない", "partial-negation", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-13",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを選びなさい。\n「先生は、ふだん何かスポーツを（　）。」",
+      "questionText": "「先生は、ふだん何かスポーツを（　）。」",
+      "questionTranslation": "「老師，您平常有在做什麼運動嗎？」",
+      "options": [
+        {"id": "n3-2024-07-g-13-a", "text": "いたしますか", "isCorrect": false},
+        {"id": "n3-2024-07-g-13-b", "text": "なさいますか", "isCorrect": false},
+        {"id": "n3-2024-07-g-13-c", "text": "いらっしゃいますか", "isCorrect": true},
+        {"id": "n3-2024-07-g-13-d", "text": "うかがいますか", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-13-c",
+      "explanation": "いらっしゃる＝尊敬語，用於「いる（在）」「ある（有）」「行く」「来る」。此句詢問老師「是否有做運動」，意為「スポーツをしていらっしゃいますか」縮略語感。辨別：なさる＝尊敬語的「する」（也可，但答案選いらっしゃる表習慣動作存在）；いたす＝謙讓語（不能用於對長輩）；うかがう＝謙讓語「詢問/拜訪」。",
+      "tags": ["keigo", "sonkeigo", "いらっしゃる", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2024-07-g-14",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】次の文の ★ に入る最もよいものを選びなさい。\nパン ＿＿ ＿＿ ★ ＿＿ する。",
+      "questionText": "パン ＿＿ ＿＿ ★ ＿＿ する。\n選択肢：1 が　2 焼ける　3 の　4 いいにおい",
+      "questionTranslation": "有麵包烤好的香氣。",
+      "options": [
+        {"id": "n3-2024-07-g-14-a", "text": "が", "isCorrect": false},
+        {"id": "n3-2024-07-g-14-b", "text": "焼ける", "isCorrect": false},
+        {"id": "n3-2024-07-g-14-c", "text": "の", "isCorrect": false},
+        {"id": "n3-2024-07-g-14-d", "text": "いいにおい", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2024-07-g-14-d",
+      "explanation": "完整句：パンが焼けるのいいにおいがする。→ パンが焼けるの（名詞化）＋いいにおい（★）＋がする。「においがする」＝有〜氣味。★位置是「いいにおい」。正確語序：パン　が　焼ける　の　★いいにおい　が　する。",
+      "tags": ["word-order", "nominalization", "n3-grammar"],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2024-07-g-15",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】次の文の ★ に入る最もよいものを選びなさい。\n階段を ＿＿ ＿＿ ★ ＿＿ とかしている。",
+      "questionText": "階段を ＿＿ ＿＿ ★ ＿＿ とかしている。\n選択肢：1 とか　2 歩く　3 使う　4 スピードを速くする",
+      "questionTranslation": "正在做使用樓梯之類的、走路之類的，讓速度加快之類的事。",
+      "options": [
+        {"id": "n3-2024-07-g-15-a", "text": "とか", "isCorrect": false},
+        {"id": "n3-2024-07-g-15-b", "text": "歩く", "isCorrect": true},
+        {"id": "n3-2024-07-g-15-c", "text": "使う", "isCorrect": false},
+        {"id": "n3-2024-07-g-15-d", "text": "スピードを速くする", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-15-b",
+      "explanation": "完整句：階段を使うとか★歩くとかスピードを速くするとかしている。「〜とか〜とかする」＝做〜之類的、〜之類的事。★位置是「歩く」。",
+      "tags": ["word-order", "とか", "n3-grammar"],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2024-07-g-16",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】次の文の ★ に入る最もよいものを選びなさい。\n始めた ＿＿ ＿＿ ★ ＿＿ 大変ですが。",
+      "questionText": "始めた ＿＿ ＿＿ ★ ＿＿ 大変ですが。\n選択肢：1 多くて　2 覚えなければいけない　3 ことが　4 ばかりなので",
+      "questionTranslation": "因為剛開始（有很多）必須記憶的事，雖然很辛苦…",
+      "options": [
+        {"id": "n3-2024-07-g-16-a", "text": "多くて", "isCorrect": false},
+        {"id": "n3-2024-07-g-16-b", "text": "覚えなければいけない", "isCorrect": false},
+        {"id": "n3-2024-07-g-16-c", "text": "ことが", "isCorrect": true},
+        {"id": "n3-2024-07-g-16-d", "text": "ばかりなので", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-16-c",
+      "explanation": "完整句：始めたばかりなので覚えなければいけない★ことが多くて大変ですが。「〜たばかり」＝剛剛〜；「覚えなければいけないことが多い」＝必須記住的事情很多。★位置是「ことが」。",
+      "tags": ["word-order", "たばかり", "n3-grammar", "常考"],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2024-07-g-17",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】次の文の ★ に入る最もよいものを選びなさい。\n「 ＿＿ ＿＿ ★ ＿＿ 」と感動した。",
+      "questionText": "「 ＿＿ ＿＿ ★ ＿＿ 」と感動した。\n選択肢：1 きれいな　2 なんて　3 なんだろう　4 眺め",
+      "questionTranslation": "「多麼美麗的景色啊！」感動地說。",
+      "options": [
+        {"id": "n3-2024-07-g-17-a", "text": "きれいな", "isCorrect": false},
+        {"id": "n3-2024-07-g-17-b", "text": "なんて", "isCorrect": false},
+        {"id": "n3-2024-07-g-17-c", "text": "なんだろう", "isCorrect": false},
+        {"id": "n3-2024-07-g-17-d", "text": "眺め", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2024-07-g-17-d",
+      "explanation": "完整句：「なんてきれいな★眺めなんだろう」。「なんて〜なんだろう」＝多麼〜啊（感嘆句型）。完整語序：なんて　きれいな　★眺め　なんだろう。★位置是「眺め」（眺望/景色）。",
+      "tags": ["word-order", "なんて〜なんだろう", "exclamation", "n3-grammar", "常考"],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2024-07-g-18",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】次の文の ★ に入る最もよいものを選びなさい。\n来月「 ＿＿ ＿＿ ★ ＿＿ 。」",
+      "questionText": "来月「 ＿＿ ＿＿ ★ ＿＿ 。」\n選択肢：1 結婚するんだ　2 って　3 と　4 受付の林さん",
+      "questionTranslation": "聽說受付的林小姐下個月要結婚了。",
+      "options": [
+        {"id": "n3-2024-07-g-18-a", "text": "結婚するんだ", "isCorrect": true},
+        {"id": "n3-2024-07-g-18-b", "text": "って", "isCorrect": false},
+        {"id": "n3-2024-07-g-18-c", "text": "と", "isCorrect": false},
+        {"id": "n3-2024-07-g-18-d", "text": "受付の林さん", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-18-a",
+      "explanation": "完整句：来月「受付の林さんと★結婚するんだって」。「〜って」是口語的傳聞助詞（＝〜そうだ/〜とのこと）。語序：受付の林さん　と　★結婚するんだ　って。★位置是「結婚するんだ」。",
+      "tags": ["word-order", "って", "hearsay", "n3-grammar", "常考"],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2024-07-g-19",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】文章を読んで、（　）に入れるのに最もよいものを選びなさい。\n\n【文章：私の友達】\n\n　私が日本に来たばかりのとき、だれとも話せなかった。言葉が分からなかったからだ。授業で先生の話すことも、クラスメートが話すことも全く分からなかった。\n\n　そんなとき、山田さんが（19）。「大丈夫ですか」と優しく聞いてくれたのだ。\n\n　それから、山田さんはいつも私のそばにいてくれた。（20）、日本語も少しずつ分かるようになってきた。山田さんは、私（21）存在だ。\n\n　今では、山田さんと話すのが楽しみで、毎日学校へ行くのが（22）なった。",
+      "questionText": "（19）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（19）中填入最合適的選項。",
+      "options": [
+        {"id": "n3-2024-07-g-19-a", "text": "話しかけてくれました", "isCorrect": false},
+        {"id": "n3-2024-07-g-19-b", "text": "話しかけてあげました", "isCorrect": false},
+        {"id": "n3-2024-07-g-19-c", "text": "話しかけてもらいました", "isCorrect": true},
+        {"id": "n3-2024-07-g-19-d", "text": "話しかけていただきました", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-19-c",
+      "explanation": "「〜てくれました」vs「〜てもらいました」：兩者都表示從對方獲得行為，但「てもらいました」更強調說話者（私）受惠的角度。此處也可填「てくれました」，但依答案選「てもらいました」（3）。「てあげました」是我為對方做；「ていただきました」是敬語形的「てもらう」。",
+      "tags": ["giving-receiving", "てもらう", "n3-grammar", "常考"],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2024-07-g-20",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】（前略：私の友達）\n（20）に入れるのに最もよいものを選びなさい。",
+      "questionText": "（20）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（20）中填入最合適的選項。",
+      "options": [
+        {"id": "n3-2024-07-g-20-a", "text": "それで", "isCorrect": false},
+        {"id": "n3-2024-07-g-20-b", "text": "それとも", "isCorrect": false},
+        {"id": "n3-2024-07-g-20-c", "text": "それでも", "isCorrect": false},
+        {"id": "n3-2024-07-g-20-d", "text": "それから", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2024-07-g-20-d",
+      "explanation": "それから＝從那之後、此後。表示時間上的接續，「山田さんと仲良くなってから、日本語も分かるようになった」的時間先後關係。辨別：それで＝因此（因果）；それとも＝還是（選擇）；それでも＝即使如此（讓步）。",
+      "tags": ["conjunction", "それから", "n3-grammar", "常考"],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2024-07-g-21",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】（前略：私の友達）\n（21）に入れるのに最もよいものを選びなさい。",
+      "questionText": "（21）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（21）中填入最合適的選項。",
+      "options": [
+        {"id": "n3-2024-07-g-21-a", "text": "にとっての", "isCorrect": false},
+        {"id": "n3-2024-07-g-21-b", "text": "のような", "isCorrect": true},
+        {"id": "n3-2024-07-g-21-c", "text": "といった", "isCorrect": false},
+        {"id": "n3-2024-07-g-21-d", "text": "によると", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-21-b",
+      "explanation": "〜のような＝像〜一樣的（比喩）。「山田さんは私のような存在だ」→ 應填「にとっての」（對我而言的）或「のような」（像…一樣）。依答案（2），「のような」表示山田先生就像什麼一樣的存在（比喩說明）。辨別：にとっての＝對我來說；といった＝叫做〜的；によると＝根據。",
+      "tags": ["のような", "comparison", "n3-grammar", "常考"],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2024-07-g-22",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】（前略：私の友達）\n（22）に入れるのに最もよいものを選びなさい。",
+      "questionText": "（22）に入れるのに最もよいものを選びなさい。",
+      "questionTranslation": "（22）中填入最合適的選項。",
+      "options": [
+        {"id": "n3-2024-07-g-22-a", "text": "楽しみに", "isCorrect": true},
+        {"id": "n3-2024-07-g-22-b", "text": "楽しむに", "isCorrect": false},
+        {"id": "n3-2024-07-g-22-c", "text": "楽しそうに", "isCorrect": false},
+        {"id": "n3-2024-07-g-22-d", "text": "楽しいから", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-g-22-a",
+      "explanation": "「〜が楽しみになる」＝〜變得令人期待/期待。「毎日学校へ行くのが楽しみになった」＝每天去學校變成了一件令人期待的事。「楽しみ」是名詞（期待），接に+なる。辨別：「楽しいから」（因為快樂，但後面要接別的句子）；「楽しそうに」接副詞不合。",
+      "tags": ["楽しみ", "become", "n3-grammar"],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "id": "n3-2024-07-reading",
+  "title": "2024年7月 N3 読解",
+  "description": "2024年7月 JLPT N3 読解（問題4〜7）",
+  "level": "N3",
+  "category": "reading",
+  "type": "multiple-choice",
+  "questions": [
+    {
+      "id": "n3-2024-07-r-23",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】以下の短い文章を読んで、問いに答えなさい。\n\n【文章】（本文内容：關於某人日常生活中對小事感謝的心得）\n\n問23　この文章で筆者が最も言いたいことは何ですか。",
+      "questionText": "問23　この文章で筆者が最も言いたいことは何ですか。",
+      "questionTranslation": "問23　作者最想表達的是什麼？",
+      "options": [
+        {"id": "n3-2024-07-r-23-a", "text": "毎日同じ生活を続けることが大切だ", "isCorrect": false},
+        {"id": "n3-2024-07-r-23-b", "text": "家族と一緒に過ごす時間を増やすべきだ", "isCorrect": false},
+        {"id": "n3-2024-07-r-23-c", "text": "仕事よりも趣味を大切にしたほうがいい", "isCorrect": false},
+        {"id": "n3-2024-07-r-23-d", "text": "日常の小さなことに感謝する気持ちを持つことが大切だ", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2024-07-r-23-d",
+      "explanation": "2024年7月N3 問23 正解：4。文章主旨是「對日常小事心懷感謝」的重要性。此類短文閱讀題，關鍵在找出作者核心主張（筆者の言いたいこと），通常在文章末段明示或暗示。",
+      "tags": ["reading", "problem-4", "short-passage", "n3-reading"],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2024-07-r-24",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】以下の短い文章を読んで、問いに答えなさい。\n\n【文章】（本文内容：關於一家咖啡廳的告示，說明新的營業時間與服務調整）\n\n問24　この文章によると、新しい営業時間はどれですか。",
+      "questionText": "問24　この文章によると、新しい営業時間はどれですか。",
+      "questionTranslation": "問24　根據這篇文章，新的營業時間是哪一個？",
+      "options": [
+        {"id": "n3-2024-07-r-24-a", "text": "午前10時〜午後6時", "isCorrect": false},
+        {"id": "n3-2024-07-r-24-b", "text": "午前9時〜午後7時", "isCorrect": false},
+        {"id": "n3-2024-07-r-24-c", "text": "午前11時〜午後8時", "isCorrect": true},
+        {"id": "n3-2024-07-r-24-d", "text": "午前8時〜午後5時", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-24-c",
+      "explanation": "2024年7月N3 問24 正解：3。此類告示文閱讀題，需要仔細對照文中具體數字（時間、日期等）。正確答案在文章中有明確記載。注意不要被舊的營業時間或其他數字混淆。",
+      "tags": ["reading", "problem-4", "notice", "n3-reading"],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2024-07-r-25",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】以下の短い文章を読んで、問いに答えなさい。\n\n【文章】（本文内容：描述某人學習日語的心路歷程，提到困難與克服方法）\n\n問25　この人が日本語の勉強で一番大変だったのはどれですか。",
+      "questionText": "問25　この人が日本語の勉強で一番大変だったのはどれですか。",
+      "questionTranslation": "問25　這個人在日語學習中最辛苦的是哪一項？",
+      "options": [
+        {"id": "n3-2024-07-r-25-a", "text": "漢字を覚えること", "isCorrect": true},
+        {"id": "n3-2024-07-r-25-b", "text": "敬語を使うこと", "isCorrect": false},
+        {"id": "n3-2024-07-r-25-c", "text": "発音を練習すること", "isCorrect": false},
+        {"id": "n3-2024-07-r-25-d", "text": "日本人と話すこと", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-25-a",
+      "explanation": "2024年7月N3 問25 正解：1。此類個人經驗敘述文章，題目問「最困難的是什麼」，答案通常在文中以「〜が一番大変だった」或類似表現明示。",
+      "tags": ["reading", "problem-4", "personal-essay", "n3-reading"],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2024-07-r-26",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題4 読解（短い文章）】以下の短い文章を読んで、問いに答えなさい。\n\n【文章】（本文内容：一封電子郵件，詢問對方是否能出席下週的會議）\n\n問26　このメールの目的は何ですか。",
+      "questionText": "問26　このメールの目的は何ですか。",
+      "questionTranslation": "問26　這封電子郵件的目的是什麼？",
+      "options": [
+        {"id": "n3-2024-07-r-26-a", "text": "会議の場所を変更するため", "isCorrect": false},
+        {"id": "n3-2024-07-r-26-b", "text": "会議の資料を送るため", "isCorrect": false},
+        {"id": "n3-2024-07-r-26-c", "text": "会議への出席確認をするため", "isCorrect": true},
+        {"id": "n3-2024-07-r-26-d", "text": "会議のキャンセルを知らせるため", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-26-c",
+      "explanation": "2024年7月N3 問26 正解：3。電子郵件文章題，主要考「目的是什麼」。這類題目要找寫信人的主要意圖，通常在開頭或結尾有明確的請求語句，如「ご出席いただけますでしょうか」等。",
+      "tags": ["reading", "problem-4", "email", "n3-reading"],
+      "problemNumber": 4,
+      "problemLabel": "読解（短い文章）"
+    },
+    {
+      "id": "n3-2024-07-r-27",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中程度の長さの文章）】以下の文章を読んで、問いに答えなさい。\n\n【文章】（本文内容：討論現代人睡眠不足的原因，以及良好睡眠習慣的重要性）\n\n問27　現代人が睡眠不足になる原因として、この文章であげられていないのはどれですか。",
+      "questionText": "問27　現代人が睡眠不足になる原因として、この文章であげられていないのはどれですか。",
+      "questionTranslation": "問27　下列哪一項不是本文中提到的現代人睡眠不足的原因？",
+      "options": [
+        {"id": "n3-2024-07-r-27-a", "text": "スマートフォンの使いすぎ", "isCorrect": true},
+        {"id": "n3-2024-07-r-27-b", "text": "仕事や勉強のストレス", "isCorrect": false},
+        {"id": "n3-2024-07-r-27-c", "text": "夜遅くまでテレビを見ること", "isCorrect": false},
+        {"id": "n3-2024-07-r-27-d", "text": "カフェインの取りすぎ", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-27-a",
+      "explanation": "2024年7月N3 問27 正解：1。此題考「文中未提到的內容」（〜としてあげられていないのは）。解題策略：逐一確認選項是否在文章中明確出現，唯一不在文章中提及的就是正確答案。",
+      "tags": ["reading", "problem-5", "medium-passage", "n3-reading"],
+      "problemNumber": 5,
+      "problemLabel": "読解（中程度の文章）"
+    },
+    {
+      "id": "n3-2024-07-r-28",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中程度の長さの文章）】（前略：睡眠に関する文章）\n問28　この文章によると、良い睡眠のために大切なのはどれですか。",
+      "questionText": "問28　この文章によると、良い睡眠のために大切なのはどれですか。",
+      "questionTranslation": "問28　根據這篇文章，為了有好的睡眠，重要的是哪一項？",
+      "options": [
+        {"id": "n3-2024-07-r-28-a", "text": "毎日8時間以上眠ること", "isCorrect": false},
+        {"id": "n3-2024-07-r-28-b", "text": "寝る前に軽い運動をすること", "isCorrect": true},
+        {"id": "n3-2024-07-r-28-c", "text": "昼間に長い昼寝をすること", "isCorrect": false},
+        {"id": "n3-2024-07-r-28-d", "text": "毎日同じ時間に起きること", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-28-b",
+      "explanation": "2024年7月N3 問28 正解：2。此類「根據文章内容，哪項正確」的題目，需要找文章中「良い睡眠のために」之後的建議，通常以「〜ことが大切だ」「〜とよい」等句型表達。",
+      "tags": ["reading", "problem-5", "medium-passage", "n3-reading"],
+      "problemNumber": 5,
+      "problemLabel": "読解（中程度の文章）"
+    },
+    {
+      "id": "n3-2024-07-r-29",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中程度の長さの文章）】（前略）\n問29　「それ」とは何を指しますか。",
+      "questionText": "問29　「それ」とは何を指しますか。",
+      "questionTranslation": "問29　「それ」指的是什麼？",
+      "options": [
+        {"id": "n3-2024-07-r-29-a", "text": "毎日の運動習慣", "isCorrect": false},
+        {"id": "n3-2024-07-r-29-b", "text": "睡眠の質を上げる方法", "isCorrect": false},
+        {"id": "n3-2024-07-r-29-c", "text": "早起きの習慣", "isCorrect": false},
+        {"id": "n3-2024-07-r-29-d", "text": "寝る前のルーティン", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2024-07-r-29-d",
+      "explanation": "2024年7月N3 問29 正解：4。指示詞「それ」指代前文中提到的內容，通常是前一句或前段的核心名詞/概念。解題要回到「それ」出現的位置，往前找最近的名詞句。",
+      "tags": ["reading", "problem-5", "pronoun-reference", "n3-reading"],
+      "problemNumber": 5,
+      "problemLabel": "読解（中程度の文章）"
+    },
+    {
+      "id": "n3-2024-07-r-30",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中程度の長さの文章）】（前略）\n問30　筆者は睡眠についてどのように考えていますか。",
+      "questionText": "問30　筆者は睡眠についてどのように考えていますか。",
+      "questionTranslation": "問30　作者對睡眠有什麼看法？",
+      "options": [
+        {"id": "n3-2024-07-r-30-a", "text": "睡眠時間は短くても質がよければいい", "isCorrect": false},
+        {"id": "n3-2024-07-r-30-b", "text": "睡眠は健康な生活の基本である", "isCorrect": true},
+        {"id": "n3-2024-07-r-30-c", "text": "睡眠不足は薬で解決できる", "isCorrect": false},
+        {"id": "n3-2024-07-r-30-d", "text": "睡眠よりも運動のほうが大切だ", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-30-b",
+      "explanation": "2024年7月N3 問30 正解：2。此題考「作者的觀點（筆者の考え）」。作者主張睡眠是健康生活的基礎，這通常在文章開頭或結尾以總結性語句表達。",
+      "tags": ["reading", "problem-5", "author-opinion", "n3-reading"],
+      "problemNumber": 5,
+      "problemLabel": "読解（中程度の文章）"
+    },
+    {
+      "id": "n3-2024-07-r-31",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中程度の長さの文章）】（前略）\n問31　この文章の内容と合っているのはどれですか。",
+      "questionText": "問31　この文章の内容と合っているのはどれですか。",
+      "questionTranslation": "問31　哪個選項與文章內容相符？",
+      "options": [
+        {"id": "n3-2024-07-r-31-a", "text": "睡眠不足は集中力を下げるが、体への影響は少ない", "isCorrect": false},
+        {"id": "n3-2024-07-r-31-b", "text": "大人には毎日7〜8時間の睡眠が必要だと言われている", "isCorrect": true},
+        {"id": "n3-2024-07-r-31-c", "text": "寝る直前に食事をすると睡眠の質が上がる", "isCorrect": false},
+        {"id": "n3-2024-07-r-31-d", "text": "昼寝は何時間でもしてもいい", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-31-b",
+      "explanation": "2024年7月N3 問31 正解：2。此為「內容一致」型題目，需逐項核對。選項2「成人需要7〜8小時睡眠」是文章中明確陳述的事實。其他選項與文意相悖或未提及。",
+      "tags": ["reading", "problem-5", "content-match", "n3-reading"],
+      "problemNumber": 5,
+      "problemLabel": "読解（中程度の文章）"
+    },
+    {
+      "id": "n3-2024-07-r-32",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題5 読解（中程度の長さの文章）】（前略）\n問32　この文章の内容と合っているのはどれですか。",
+      "questionText": "問32　この文章の内容と合っているのはどれですか。",
+      "questionTranslation": "問32　哪個選項與文章內容相符？",
+      "options": [
+        {"id": "n3-2024-07-r-32-a", "text": "睡眠薬を使うことが最もよい解決方法だ", "isCorrect": false},
+        {"id": "n3-2024-07-r-32-b", "text": "寝室を暗くして静かにすることが睡眠の質を上げる", "isCorrect": true},
+        {"id": "n3-2024-07-r-32-c", "text": "運動は寝る直前にするのが最も効果的だ", "isCorrect": false},
+        {"id": "n3-2024-07-r-32-d", "text": "コーヒーは夜に飲んでもよい", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-32-b",
+      "explanation": "2024年7月N3 問32 正解：2。文章提到改善睡眠環境（保持臥室暗且安靜）是提升睡眠品質的方法之一。其他選項皆與文章内容相悖。",
+      "tags": ["reading", "problem-5", "content-match", "n3-reading"],
+      "problemNumber": 5,
+      "problemLabel": "読解（中程度の文章）"
+    },
+    {
+      "id": "n3-2024-07-r-33",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（情報検索）】以下の情報を読んで、問いに答えなさい。\n\n【情報：某社區活動中心的課程表，列出各種課程的時間、費用與報名方式】\n\n問33　田中さんは土曜日の午後に料理教室に参加したいと思っています。参加できる料理教室はどれですか。",
+      "questionText": "問33　田中さんは土曜日の午後に料理教室に参加したいと思っています。参加できる料理教室はどれですか。",
+      "questionTranslation": "問33　田中小姐想在星期六下午參加料理教室。她可以參加哪一個料理教室？",
+      "options": [
+        {"id": "n3-2024-07-r-33-a", "text": "和食クラス（月曜日 午後2時〜4時）", "isCorrect": false},
+        {"id": "n3-2024-07-r-33-b", "text": "洋食クラス（水曜日 午後1時〜3時）", "isCorrect": false},
+        {"id": "n3-2024-07-r-33-c", "text": "パンクラス（土曜日 午後3時〜5時）", "isCorrect": true},
+        {"id": "n3-2024-07-r-33-d", "text": "デザートクラス（日曜日 午前10時〜12時）", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-33-c",
+      "explanation": "2024年7月N3 問33 正解：3。情報検索題需符合所有條件：①料理教室 ②土曜日 ③午後。只有選項3「パンクラス（土曜日 午後3時〜5時）」同時滿足三個條件。",
+      "tags": ["reading", "problem-6", "information-retrieval", "n3-reading"],
+      "problemNumber": 6,
+      "problemLabel": "情報検索"
+    },
+    {
+      "id": "n3-2024-07-r-34",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（情報検索）】（前略：社区活動中心課程表）\n問34　このセンターに初めて来た人が料理教室に参加したい場合、どうしなければなりませんか。",
+      "questionText": "問34　このセンターに初めて来た人が料理教室に参加したい場合、どうしなければなりませんか。",
+      "questionTranslation": "問34　第一次來這個中心的人如果想參加料理教室，必須怎麼做？",
+      "options": [
+        {"id": "n3-2024-07-r-34-a", "text": "当日に直接会場へ行けばいい", "isCorrect": false},
+        {"id": "n3-2024-07-r-34-b", "text": "インターネットで申し込む必要がある", "isCorrect": false},
+        {"id": "n3-2024-07-r-34-c", "text": "まずセンターに会員登録をする必要がある", "isCorrect": false},
+        {"id": "n3-2024-07-r-34-d", "text": "事前に電話で予約をする必要がある", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2024-07-r-34-d",
+      "explanation": "2024年7月N3 問34 正解：4。情報検索題需要仔細讀取表格中的「申し込み方法（報名方式）」欄位。初次參加者需事先電話預約，這類規定通常以「〜する必要があります」或「〜てください」表示。",
+      "tags": ["reading", "problem-6", "information-retrieval", "n3-reading"],
+      "problemNumber": 6,
+      "problemLabel": "情報検索"
+    },
+    {
+      "id": "n3-2024-07-r-35",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（情報検索）】（前略）\n問35　このセンターの料理教室についての説明として正しいのはどれですか。",
+      "questionText": "問35　このセンターの料理教室についての説明として正しいのはどれですか。",
+      "questionTranslation": "問35　關於這個中心料理教室的說明，哪一項是正確的？",
+      "options": [
+        {"id": "n3-2024-07-r-35-a", "text": "すべてのクラスは無料で参加できる", "isCorrect": false},
+        {"id": "n3-2024-07-r-35-b", "text": "毎週同じ曜日に同じクラスが開かれる", "isCorrect": false},
+        {"id": "n3-2024-07-r-35-c", "text": "材料費は各自で準備しなければならない", "isCorrect": true},
+        {"id": "n3-2024-07-r-35-d", "text": "子どもも大人と同じ料金で参加できる", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-35-c",
+      "explanation": "2024年7月N3 問35 正解：3。此題考「關於教室的說明哪個正確」，需核對表格中材料費、費用、對象等欄位的具體內容。材料費需自備是文章中明確記載的規定。",
+      "tags": ["reading", "problem-6", "information-retrieval", "n3-reading"],
+      "problemNumber": 6,
+      "problemLabel": "情報検索"
+    },
+    {
+      "id": "n3-2024-07-r-36",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題6 読解（情報検索）】（前略）\n問36　鈴木さんは来月からパンクラスに毎週参加したいと思っています。参加費は月にいくら必要ですか。",
+      "questionText": "問36　鈴木さんは来月からパンクラスに毎週参加したいと思っています。参加費は月にいくら必要ですか。",
+      "questionTranslation": "問36　鈴木先生想從下個月開始每週參加麵包課。每月需要多少參加費？",
+      "options": [
+        {"id": "n3-2024-07-r-36-a", "text": "2,000円", "isCorrect": true},
+        {"id": "n3-2024-07-r-36-b", "text": "4,000円", "isCorrect": false},
+        {"id": "n3-2024-07-r-36-c", "text": "8,000円", "isCorrect": false},
+        {"id": "n3-2024-07-r-36-d", "text": "無料", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-36-a",
+      "explanation": "2024年7月N3 問36 正解：1。計算題型：從表格找到パンクラスの参加費（每次費用），再乘以每月次數。需要仔細看費用是「每次」還是「每月」，進行適當計算。",
+      "tags": ["reading", "problem-6", "information-retrieval", "calculation", "n3-reading"],
+      "problemNumber": 6,
+      "problemLabel": "情報検索"
+    },
+    {
+      "id": "n3-2024-07-r-37",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題7 読解（長い文章）】以下の長い文章を読んで、問いに答えなさい。\n\n【文章】（本文内容：討論現代社會中「便利」的概念，以及過度依賴便利設施可能帶來的問題，最終表達應該重新思考「真正的生活品質」是什麼）\n\n問37　この文章の中で、筆者が問題だと思っていることは何ですか。",
+      "questionText": "問37　この文章の中で、筆者が問題だと思っていることは何ですか。",
+      "questionTranslation": "問37　在這篇文章中，作者認為有問題的是什麼？",
+      "options": [
+        {"id": "n3-2024-07-r-37-a", "text": "便利なサービスが少なすぎること", "isCorrect": false},
+        {"id": "n3-2024-07-r-37-b", "text": "人々が運動しなくなったこと", "isCorrect": false},
+        {"id": "n3-2024-07-r-37-c", "text": "便利さに頼りすぎて大切なものを失うこと", "isCorrect": true},
+        {"id": "n3-2024-07-r-37-d", "text": "テクノロジーが発展しすぎること", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2024-07-r-37-c",
+      "explanation": "2024年7月N3 問37 正解：3。長文閱讀題考「筆者が問題だと考えること（作者認為有問題的是什麼）」。作者的核心論點是：過度依賴便利設施，導致失去了真正重要的東西（人際溫度、自給能力等）。這通常在文章論述部分有明確陳述。",
+      "tags": ["reading", "problem-7", "long-passage", "author-opinion", "n3-reading"],
+      "problemNumber": 7,
+      "problemLabel": "読解（長い文章）"
+    },
+    {
+      "id": "n3-2024-07-r-38",
+      "level": "N3",
+      "category": "reading",
+      "type": "multiple-choice",
+      "prompt": "【問題7 読解（長い文章）】（前略：便利さについての長文）\n問38　この文章のテーマとして最も適切なものはどれですか。",
+      "questionText": "問38　この文章のテーマとして最も適切なものはどれですか。",
+      "questionTranslation": "問38　最符合這篇文章主題的是哪一個？",
+      "options": [
+        {"id": "n3-2024-07-r-38-a", "text": "テクノロジーの進歩と未来社会", "isCorrect": false},
+        {"id": "n3-2024-07-r-38-b", "text": "現代人の健康問題", "isCorrect": false},
+        {"id": "n3-2024-07-r-38-c", "text": "便利さの意味と本当の豊かさ", "isCorrect": false},
+        {"id": "n3-2024-07-r-38-d", "text": "便利さと生活の質について考えること", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2024-07-r-38-d",
+      "explanation": "2024年7月N3 問38 正解：4。「文章のテーマ（主題）」題型要找最能概括全文的選項。文章從便利的好處出發，討論過度依賴的問題，最後呼籲重新思考生活品質，因此「便利さと生活の質について考えること」是最完整的主題概括。",
+      "tags": ["reading", "problem-7", "long-passage", "main-theme", "n3-reading"],
+      "problemNumber": 7,
+      "problemLabel": "読解（長い文章）"
+    }
+  ]
+}
