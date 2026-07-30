@@ -1,0 +1,37 @@
+<div class="flex flex-col gap-3 sm:flex-row sm:gap-4 lg:gap-[22px]">
+  <div class="flex flex-1 items-center gap-3.5 rounded-lg border border-accent bg-accent-soft px-4 py-3.5 sm:px-5 sm:py-4">
+    <span class="flex h-9 w-9 flex-none items-center justify-center rounded-md bg-white sm:h-10 sm:w-10">
+      <i class="fa-solid fa-list text-accent"></i>
+    </span>
+    <span class="flex flex-col gap-0.5">
+      <span class="font-heading text-[15px] font-bold text-accent sm:text-base">單詞總覽</span>
+      <span class="text-xs text-text-secondary">瀏覽全部單字</span>
+    </span>
+  </div>
+  <button
+    type="button"
+    (click)="store.startFlashcard({ todayOnly: store.hasActivePlan() })"
+    class="flex flex-1 items-center gap-3.5 rounded-lg border border-border bg-surface px-4 py-3.5 text-left transition hover:border-accent/40 hover:bg-accent-soft/20 sm:px-5 sm:py-4"
+  >
+    <span class="flex h-9 w-9 flex-none items-center justify-center rounded-md bg-bg sm:h-10 sm:w-10">
+      <i class="fa-solid fa-layer-group text-text-secondary"></i>
+    </span>
+    <span class="flex flex-col gap-0.5">
+      <span class="font-heading text-[15px] font-bold text-ink sm:text-base">卡牌背誦</span>
+      <span class="text-xs text-text-secondary">發音・漢字・例句</span>
+    </span>
+  </button>
+  <button
+    type="button"
+    (click)="store.startQuiz({ todayOnly: store.hasActivePlan() })"
+    class="flex flex-1 items-center gap-3.5 rounded-lg border border-border bg-surface px-4 py-3.5 text-left transition hover:border-accent/40 hover:bg-accent-soft/20 sm:px-5 sm:py-4"
+  >
+    <span class="flex h-9 w-9 flex-none items-center justify-center rounded-md bg-bg sm:h-10 sm:w-10">
+      <i class="fa-solid fa-circle-check text-text-secondary"></i>
+    </span>
+    <span class="flex flex-col gap-0.5">
+      <span class="font-heading text-[15px] font-bold text-ink sm:text-base">單字測驗</span>
+      <span class="text-xs text-text-secondary">四選一・錯題複習</span>
+    </span>
+  </button>
+</div>

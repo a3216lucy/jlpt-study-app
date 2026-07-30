@@ -1,0 +1,38 @@
+<div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5 lg:p-6">
+  <div class="flex items-center justify-between">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">單字掌握進度</h2>
+    <span class="rounded-full border border-border bg-bg px-2.5 py-1 text-[11px] font-bold text-text-secondary">
+      {{ store.planLevel() }} 計畫
+    </span>
+  </div>
+
+  <div class="flex items-end gap-1.5">
+    <span class="font-heading text-3xl font-bold text-ink">{{ store.progressedCount() }}</span>
+    <span class="pb-1 text-[13px] font-medium text-text-muted">/ {{ store.totalWords() }} 字</span>
+  </div>
+
+  <div class="flex h-2.5 w-full overflow-hidden rounded-full bg-[#F1EAE0]">
+    <div class="bg-matcha" [style.flex]="store.learnedCount() || 0"></div>
+    <div class="bg-sun-yellow" [style.flex]="store.learningCount() || 0"></div>
+    <div class="flex-1"></div>
+  </div>
+
+  <div class="grid grid-cols-2 gap-2 sm:gap-2.5">
+    <div class="flex flex-col gap-0.5 rounded-md bg-bg px-3 py-2.5">
+      <span class="font-heading text-xl font-bold text-text-secondary">{{ store.newCount() }}</span>
+      <span class="text-[11px] text-text-muted">未開始</span>
+    </div>
+    <div class="flex flex-col gap-0.5 rounded-md bg-bg px-3 py-2.5">
+      <span class="font-heading text-xl font-bold text-[#B08514]">{{ store.learningCount() }}</span>
+      <span class="text-[11px] text-text-muted">複習中</span>
+    </div>
+    <div class="flex flex-col gap-0.5 rounded-md bg-bg px-3 py-2.5">
+      <span class="font-heading text-xl font-bold text-[#4E8A76]">{{ store.learnedCount() }}</span>
+      <span class="text-[11px] text-text-muted">已掌握</span>
+    </div>
+    <div class="flex flex-col gap-0.5 rounded-md bg-bg px-3 py-2.5">
+      <span class="font-heading text-xl font-bold text-accent">{{ store.dueToday() }}</span>
+      <span class="text-[11px] text-text-muted">今日待複習</span>
+    </div>
+  </div>
+</div>

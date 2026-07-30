@@ -1,0 +1,79 @@
+<div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
+  <div class="flex flex-col gap-1 sm:gap-1.5">
+    <h1 class="font-heading text-xl font-bold text-ink sm:text-2xl lg:text-[26px]">句型測驗</h1>
+    <p class="text-sm text-text-secondary">挑一個題組和級別，隨機抽 10 題句型填空測驗</p>
+  </div>
+
+  <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+    <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
+      <p class="font-heading text-base font-bold text-ink">選擇句型題組</p>
+      <div class="flex flex-col gap-2">
+        @for (examGroup of store.examGroups; track examGroup.id) {
+          <button
+            type="button"
+            (click)="store.selectExamGroup(examGroup.id)"
+            [class]="
+              'w-full rounded-lg border px-4 py-3 text-left transition ' +
+              (store.selectedExamGroup() === examGroup.id
+                ? 'border-accent bg-accent-soft'
+                : 'border-border bg-bg hover:border-accent/40')
+            "
+          >
+            <p class="text-sm font-bold text-ink">{{ examGroup.label }}</p>
+            <p class="mt-0.5 text-xs text-text-secondary">{{ examGroup.description }}</p>
+          </button>
+        }
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
+      <p class="font-heading text-base font-bold text-ink">選擇 JLPT 級別</p>
+      <div class="grid grid-cols-2 gap-2">
+        @for (level of levels; track level) {
+          <button
+            type="button"
+            (click)="store.isLevelAvailable(level) && store.selectLevel(level)"
+            [disabled]="!store.isLevelAvailable(level)"
+            [class]="
+              'flex flex-col items-start gap-0.5 rounded-lg border px-3.5 py-3 text-left transition ' +
+              (!store.isLevelAvailable(level)
+                ? 'cursor-not-allowed border-border bg-bg text-text-muted opacity-60'
+                : store.selectedLevel() === level
+                  ? 'border-accent bg-accent-soft'
+                  : 'border-border bg-bg hover:border-accent/40')
+            "
+          >
+            <span class="text-sm font-bold text-ink">{{ level }}</span>
+            <span class="text-xs text-text-muted">
+              {{ store.isLevelAvailable(level) ? levelDescription(level) : '題組準備中' }}
+            </span>
+          </button>
+        }
+      </div>
+
+      <div class="mt-1 rounded-md border border-dashed border-accent/30 bg-accent-soft/40 p-3.5">
+        <p class="text-sm font-bold text-ink">{{ store.examTitle() }}</p>
+        <p class="mt-1 text-xs text-text-secondary">{{ store.examDescription() }}</p>
+      </div>
+    </div>
+  </div>
+
+  @if (store.loadError()) {
+    <div class="rounded-md border border-accent/30 bg-accent-soft px-4 py-3 text-sm text-accent">
+      {{ store.loadError() }}
+    </div>
+  }
+
+  <button
+    type="button"
+    (click)="store.startQuiz()"
+    [disabled]="store.loading()"
+    class="flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-base font-bold text-white transition hover:brightness-105 disabled:opacity-60"
+  >
+    @if (store.loading()) {
+      <i class="fa-solid fa-spinner fa-spin"></i> 載入中...
+    } @else {
+      <i class="fa-solid fa-play text-sm"></i> 開始句型測驗
+    }
+  </button>
+</div>

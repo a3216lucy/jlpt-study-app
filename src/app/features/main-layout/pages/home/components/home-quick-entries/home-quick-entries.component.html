@@ -1,0 +1,30 @@
+<div class="flex flex-col gap-2.5 rounded-lg border border-border bg-surface p-4 sm:gap-3 sm:p-5 lg:p-6">
+  <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">快速入口</h2>
+
+  @for (entry of quickEntries; track entry.id) {
+    @if (entry.comingSoon) {
+      <div class="flex items-center justify-between rounded-full bg-bg px-3.5 py-2.5 opacity-60 sm:px-4">
+        <span class="flex items-center gap-2.5">
+          <span class="flex h-7 w-7 items-center justify-center rounded-full {{ entry.iconBg }}">
+            <i class="fa-solid {{ entry.icon }} {{ entry.iconColor }} text-xs"></i>
+          </span>
+          <span class="text-sm font-bold text-ink">{{ entry.label }}</span>
+        </span>
+        <span class="text-[11px] font-medium text-text-muted">敬請期待</span>
+      </div>
+    } @else {
+      <a
+        [routerLink]="entry.routerLink"
+        class="flex items-center justify-between rounded-full bg-bg px-3.5 py-2.5 transition hover:brightness-97 sm:px-4"
+      >
+        <span class="flex items-center gap-2.5">
+          <span class="flex h-7 w-7 items-center justify-center rounded-full {{ entry.iconBg }}">
+            <i class="fa-solid {{ entry.icon }} {{ entry.iconColor }} text-xs"></i>
+          </span>
+          <span class="text-sm font-bold text-ink">{{ entry.label }}</span>
+        </span>
+        <i class="fa-solid fa-chevron-right text-xs text-text-muted"></i>
+      </a>
+    }
+  }
+</div>

@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, effect, inject, signal } from '@ang
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 // Services
 import { AuthService } from '@core/services/auth.service';
-import { StreakService } from '@shared/services/streak.service';
+import { StreakService } from '@core/services/streak.service';
 
 interface NavItem {
   label: string;

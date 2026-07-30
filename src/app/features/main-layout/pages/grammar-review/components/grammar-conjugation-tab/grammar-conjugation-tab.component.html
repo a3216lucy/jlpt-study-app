@@ -1,0 +1,110 @@
+@if (store.verbLoading()) {
+  <div class="flex items-center justify-center py-20 text-text-muted">
+    <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
+  </div>
+} @else if (store.verbData(); as data) {
+  <div class="flex flex-col gap-3">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">動詞分類</h2>
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+      @for (card of verbClassCards; track card.title) {
+        <div class="flex flex-col gap-2.5 rounded-lg border border-border bg-surface p-4">
+          <span [class]="'w-fit rounded-full px-2.5 py-1 text-xs font-bold ' + card.badgeClass">{{ card.badge }}</span>
+          <p class="font-heading text-base font-bold text-ink">{{ card.title }}</p>
+          <p class="text-xs text-text-secondary">{{ card.description }}</p>
+          <p class="rounded-md bg-bg px-3 py-2 text-sm text-ink">{{ card.examples }}</p>
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-3">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">主要活用表</h2>
+    <div class="overflow-x-auto rounded-lg border border-border">
+      <table class="w-full min-w-[520px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+            <th class="px-4 py-2.5">活用形</th>
+            <th class="px-4 py-2.5">I 群（書く）</th>
+            <th class="px-4 py-2.5">II 群（食べる）</th>
+            <th class="px-4 py-2.5">III 群（する・来る）</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-border">
+          @for (row of store.filteredQuickReference(); track row.formLabel) {
+            <tr class="bg-surface">
+              <td class="px-4 py-2.5">
+                <span class="rounded-full bg-accent-soft px-2.5 py-1 text-xs font-bold text-accent">{{ row.formLabel }}</span>
+              </td>
+              <td class="px-4 py-2.5 text-ink">
+                {{ row.groupI }}
+                @if (row.groupI_kana) {
+                  <p class="text-xs text-text-muted">{{ row.groupI_kana }}</p>
+                }
+                @if (row.groupI_rule) {
+                  <p class="text-xs text-accent/70">{{ row.groupI_rule }}</p>
+                }
+              </td>
+              <td class="px-4 py-2.5 text-ink">
+                {{ row.groupII }}
+                @if (row.groupII_kana) {
+                  <p class="text-xs text-text-muted">{{ row.groupII_kana }}</p>
+                }
+                @if (row.groupII_rule) {
+                  <p class="text-xs text-accent/70">{{ row.groupII_rule }}</p>
+                }
+              </td>
+              <td class="px-4 py-2.5 text-ink">
+                {{ row.groupIII }}
+                @if (row.groupIII_kana) {
+                  <p class="text-xs text-text-muted">{{ row.groupIII_kana }}</p>
+                }
+                @if (row.groupIII_rule) {
+                  <p class="text-xs text-accent/70">{{ row.groupIII_rule }}</p>
+                }
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-3">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">敬語速查（尊敬語・謙譲語）</h2>
+    <div class="overflow-x-auto rounded-lg border border-border">
+      <table class="w-full min-w-[420px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+            <th class="px-4 py-2.5">原形</th>
+            <th class="px-4 py-2.5">尊敬語</th>
+            <th class="px-4 py-2.5">謙讓語</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-border">
+          @for (row of store.filteredSpecialVerbTable(); track row.plain) {
+            <tr class="bg-surface">
+              <td class="px-4 py-2.5 font-bold text-ink">
+                {{ row.plain }}
+                @if (row.plain_kana) {
+                  <p class="text-xs font-normal text-text-muted">{{ row.plain_kana }}</p>
+                }
+              </td>
+              <td class="px-4 py-2.5 text-accent">
+                {{ row.sonkei }}
+                @if (row.sonkei_kana) {
+                  <p class="text-xs text-accent/60">{{ row.sonkei_kana }}</p>
+                }
+              </td>
+              <td class="px-4 py-2.5 text-matcha">
+                {{ row.kenjou }}
+                @if (row.kenjou_kana) {
+                  <p class="text-xs text-matcha/60">{{ row.kenjou_kana }}</p>
+                }
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+}

@@ -1,0 +1,17 @@
+<div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
+  <p class="font-heading text-base font-bold text-ink sm:text-[17px]">單字學習統計</p>
+  <div class="grid grid-cols-2 gap-2.5">
+    <div class="flex flex-col items-center gap-1 rounded-md bg-bg px-3 py-4 text-center">
+      <span class="font-heading text-2xl font-bold text-matcha">
+        {{ store.vocabStats().knownWords }}
+      </span>
+      <span class="text-xs text-text-muted">認識的單字數</span>
+    </div>
+    <div class="flex flex-col items-center gap-1 rounded-md bg-bg px-3 py-4 text-center">
+      <span class="font-heading text-2xl font-bold text-matcha">
+        {{ store.vocabStats().totalSessions }}
+      </span>
+      <span class="text-xs text-text-muted">練習次數</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="flex flex-col gap-2.5 rounded-lg border border-border bg-surface p-4 sm:gap-3 sm:p-5 lg:p-6">
+  <div class="flex items-center justify-between">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">今日學習計畫</h2>
+    <span class="rounded-full bg-matcha-soft px-2.5 py-1 text-[11px] font-bold text-matcha">
+      {{ store.completedTaskCount() }} / {{ store.todayTasks().length }} 完成
+    </span>
+  </div>
+
+  @for (task of store.todayTasks(); track task.id) {
+    <a
+      [routerLink]="task.routerLink"
+      class="flex items-center justify-between gap-2 rounded-md bg-bg px-3 py-2.5 transition hover:brightness-97 sm:px-4 sm:py-3"
+    >
+      <span class="flex items-center gap-2">
+        <i class="fa-solid {{ task.icon }} {{ task.iconColor }} w-4 text-center text-sm"></i>
+        <span class="text-sm font-bold text-ink">{{ task.label }}</span>
+      </span>
+      <span
+        class="rounded-full px-2.5 py-0.5 text-[11px] font-bold"
+        [class]="chipBgClass(task.chipColor) + ' ' + chipTextClass(task.chipColor)"
+      >
+        {{ task.chipLabel }}
+      </span>
+    </a>
+  }
+
+  <div class="flex sm:justify-end">
+    <button
+      type="button"
+      (click)="startTodayStudy()"
+      class="flex w-full items-center justify-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white transition hover:brightness-105 active:scale-[0.98] sm:w-auto"
+    >
+      <i class="fa-solid fa-play text-xs"></i>
+      開始今日學習
+    </button>
+  </div>
+</div>

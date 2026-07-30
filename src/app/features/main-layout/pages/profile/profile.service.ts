@@ -3,8 +3,8 @@ import { EnvironmentInjector, Injectable, inject, runInInjectionContext } from '
 // Angular Fire
 import { Firestore, collection, getDocs } from '@angular/fire/firestore';
 // Shared
-import { ExamHistoryService } from '@shared/services/exam-history.service';
-import { StudyPlanStatsService } from '@shared/services/study-plan-stats.service';
+import { ExamHistoryService } from '@core/services/exam-history.service';
+import { StudyPlanStatsService } from '@core/services/study-plan-stats.service';
 // Models
 import type { ExamHistoryEntry, StudyPlanStats, VocabStats } from './profile.model';
 

@@ -1,0 +1,28 @@
+<div class="flex flex-col gap-1 rounded-lg border border-border bg-surface p-4 sm:p-5">
+  <p class="font-heading text-base font-bold text-ink sm:text-[17px]">測驗紀錄</p>
+
+  @if (store.examHistory().length === 0) {
+    <p class="py-6 text-center text-sm text-text-muted">尚無測驗紀錄，快去挑戰看看！</p>
+  } @else {
+    <div class="flex flex-col divide-y divide-border">
+      @for (entry of store.examHistory(); track entry.id) {
+        <div class="flex items-center justify-between gap-2 py-3">
+          <div class="flex flex-col gap-0.5">
+            <span class="text-sm font-bold text-ink">{{ entry.examLabel }}</span>
+            <span class="text-xs text-text-muted">
+              {{ entry.sectionLabel }}・{{ formatDate(entry.completedAt) }}
+            </span>
+          </div>
+          <div class="flex flex-col items-end gap-0.5">
+            <span [class]="'font-heading text-base font-bold ' + scoreColorClass(scorePercent(entry.score, entry.total))">
+              {{ entry.score }}<span class="text-xs font-normal text-text-muted">/{{ entry.total }}</span>
+            </span>
+            <span class="text-xs text-text-muted">
+              {{ scorePercent(entry.score, entry.total) }}%
+            </span>
+          </div>
+        </div>
+      }
+    </div>
+  }
+</div>

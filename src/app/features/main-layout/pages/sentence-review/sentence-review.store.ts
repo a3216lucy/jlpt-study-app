@@ -1,11 +1,13 @@
 // Cores
-import { Injectable, computed, inject, signal } from '@angular/core';
+import { computed, inject } from '@angular/core';
+// NgRx Signals
+import { patchState, signalStore, withComputed, withMethods, withState } from '@ngrx/signals';
 // Angular
 import { HttpClient } from '@angular/common/http';
 // Angular Fire
 import { Auth } from '@angular/fire/auth';
 // Shared
-import { BookmarkService } from '@shared/services/bookmark.service';
+import { BookmarkService } from '@core/services/bookmark.service';
 // Models
 import {
   LEVEL_DATA_MAP,
@@ -18,150 +20,149 @@ import {
 
 const BOOKMARK_KEY = 'sentencePatterns';
 
-@Injectable()
-export class SentenceReviewStore {
-  // Dependencies
-  // --------------------------------------------------------------------
-  private http = inject(HttpClient);
-  private auth = inject(Auth);
-  private bookmarkService = inject(BookmarkService);
-
-  // Signals
-  // --------------------------------------------------------------------
-  readonly selectedLevel = signal<JlptLevel>('N3');
-  readonly activeTab = signal<SentenceReviewTab>('common');
-  readonly reviewData = signal<SentenceReviewData | null>(null);
-  readonly loading = signal(false);
-  readonly selectedGroupId = signal<string | null>(null);
-  readonly bookmarkedIds = signal<Set<string>>(new Set());
-  readonly searchQuery = signal('');
-
-  // Computed
-  // --------------------------------------------------------------------
-  readonly hasData = computed(() => !!LEVEL_DATA_MAP[this.selectedLevel()]);
-
-  readonly commonGroups = computed<SentencePatternGroup[]>(() =>
-    (this.reviewData()?.groups ?? []).filter((g) => !g.id.startsWith('exam-') && g.id !== 'compound-verbs'),
-  );
-
-  readonly examGroups = computed<SentencePatternGroup[]>(() =>
-    (this.reviewData()?.groups ?? []).filter((g) => g.id.startsWith('exam-')),
-  );
-
-  readonly displayGroups = computed(() =>
-    this.activeTab() === 'common' ? this.commonGroups() : this.examGroups(),
-  );
-
-  readonly selectedGroup = computed<SentencePatternGroup | null>(() => {
-    const groups = this.displayGroups();
-    const id = this.selectedGroupId();
-    return groups.find((g) => g.id === id) ?? groups[0] ?? null;
-  });
-
-  readonly displayPatterns = computed<SentencePattern[]>(() => this.selectedGroup()?.patterns ?? []);
-
-  readonly isSearching = computed(() => this.searchQuery().trim().length > 0);
-
-  /** 有搜尋字串時跨目前頁籤（常用/考題）所有分類搜尋，而非只搜當前選取的分類 */
-  readonly searchResults = computed<SentencePattern[]>(() => {
-    const query = this.searchQuery().trim().toLowerCase();
-    if (!query) return [];
-    return this.displayGroups()
-      .flatMap((g) => g.patterns)
-      .filter((p) =>
-        [p.pattern, p.meaning, p.formation, p.notes].some((field) => field?.toLowerCase().includes(query)),
-      );
-  });
-
-  readonly visiblePatterns = computed<SentencePattern[]>(() =>
-    this.isSearching() ? this.searchResults() : this.displayPatterns(),
-  );
-
-  readonly totalPatternCount = computed(() =>
-    this.displayGroups().reduce((sum, g) => sum + g.patterns.length, 0),
-  );
-
-  readonly bookmarkedCount = computed(() => this.bookmarkedIds().size);
-
-  // Lifecycle
-  // --------------------------------------------------------------------
-  init(): void {
-    this.loadLevel('N3');
-    this.loadBookmarks();
-  }
-
-  // Public Handlers
-  // --------------------------------------------------------------------
-  selectLevel(level: JlptLevel): void {
-    this.selectedLevel.set(level);
-    this.selectedGroupId.set(null);
-    if (LEVEL_DATA_MAP[level]) {
-      this.loadLevel(level);
-    } else {
-      this.reviewData.set(null);
-    }
-  }
-
-  switchTab(tab: SentenceReviewTab): void {
-    this.activeTab.set(tab);
-    this.selectedGroupId.set(null);
-  }
-
-  selectGroup(id: string): void {
-    this.selectedGroupId.set(id);
-  }
-
-  setSearchQuery(query: string): void {
-    this.searchQuery.set(query);
-  }
-
-  isBookmarked(patternId: string): boolean {
-    return this.bookmarkedIds().has(patternId);
-  }
-
-  async toggleBookmark(patternId: string): Promise<void> {
-    const uid = this.auth.currentUser?.uid;
-    if (!uid) return;
-
-    const current = new Set(this.bookmarkedIds());
-    if (current.has(patternId)) {
-      current.delete(patternId);
-    } else {
-      current.add(patternId);
-    }
-    this.bookmarkedIds.set(current);
-
-    try {
-      await this.bookmarkService.setBookmarks(uid, BOOKMARK_KEY, Array.from(current));
-    } catch (e) {
-      console.error('save bookmark failed', e);
-    }
-  }
-
-  // Private
-  // --------------------------------------------------------------------
-  private loadLevel(level: JlptLevel): void {
-    const path = LEVEL_DATA_MAP[level];
-    if (!path) return;
-
-    this.loading.set(true);
-    this.reviewData.set(null);
-    this.http.get<SentenceReviewData>(path).subscribe((data) => {
-      this.reviewData.set(data);
-      this.selectedGroupId.set(data.groups.find((g) => !g.id.startsWith('exam-'))?.id ?? null);
-      this.loading.set(false);
-    });
-  }
-
-  private async loadBookmarks(): Promise<void> {
-    const uid = this.auth.currentUser?.uid;
-    if (!uid) return;
-
-    try {
-      const ids = await this.bookmarkService.getBookmarks(uid, BOOKMARK_KEY);
-      this.bookmarkedIds.set(new Set(ids));
-    } catch (e) {
-      console.error('load bookmarks failed', e);
-    }
-  }
+interface SentenceReviewState {
+  selectedLevel: JlptLevel;
+  activeTab: SentenceReviewTab;
+  reviewData: SentenceReviewData | null;
+  loading: boolean;
+  selectedGroupId: string | null;
+  bookmarkedIds: Set<string>;
+  searchQuery: string;
 }
+
+const initialState: SentenceReviewState = {
+  selectedLevel: 'N3',
+  activeTab: 'common',
+  reviewData: null,
+  loading: false,
+  selectedGroupId: null,
+  bookmarkedIds: new Set(),
+  searchQuery: '',
+};
+
+export const SentenceReviewStore = signalStore(
+  withState(initialState),
+  withComputed((store) => ({
+    hasData: computed(() => !!LEVEL_DATA_MAP[store.selectedLevel()]),
+    commonGroups: computed<SentencePatternGroup[]>(() =>
+      (store.reviewData()?.groups ?? []).filter((g) => !g.id.startsWith('exam-') && g.id !== 'compound-verbs'),
+    ),
+    examGroups: computed<SentencePatternGroup[]>(() =>
+      (store.reviewData()?.groups ?? []).filter((g) => g.id.startsWith('exam-')),
+    ),
+    isSearching: computed(() => store.searchQuery().trim().length > 0),
+    bookmarkedCount: computed(() => store.bookmarkedIds().size),
+  })),
+  withComputed((store) => ({
+    displayGroups: computed(() => (store.activeTab() === 'common' ? store.commonGroups() : store.examGroups())),
+  })),
+  withComputed((store) => ({
+    selectedGroup: computed<SentencePatternGroup | null>(() => {
+      const groups = store.displayGroups();
+      const id = store.selectedGroupId();
+      return groups.find((g) => g.id === id) ?? groups[0] ?? null;
+    }),
+    /** 有搜尋字串時跨目前頁籤（常用/考題）所有分類搜尋，而非只搜當前選取的分類 */
+    searchResults: computed<SentencePattern[]>(() => {
+      const query = store.searchQuery().trim().toLowerCase();
+      if (!query) return [];
+      return store
+        .displayGroups()
+        .flatMap((g) => g.patterns)
+        .filter((p) =>
+          [p.pattern, p.meaning, p.formation, p.notes].some((field) => field?.toLowerCase().includes(query)),
+        );
+    }),
+    totalPatternCount: computed(() => store.displayGroups().reduce((sum, g) => sum + g.patterns.length, 0)),
+  })),
+  withComputed((store) => ({
+    displayPatterns: computed<SentencePattern[]>(() => store.selectedGroup()?.patterns ?? []),
+  })),
+  withComputed((store) => ({
+    visiblePatterns: computed<SentencePattern[]>(() =>
+      store.isSearching() ? store.searchResults() : store.displayPatterns(),
+    ),
+  })),
+  withMethods((store, http = inject(HttpClient), auth = inject(Auth), bookmarkService = inject(BookmarkService)) => {
+    const loadLevel = (level: JlptLevel): void => {
+      const path = LEVEL_DATA_MAP[level];
+      if (!path) return;
+
+      patchState(store, { loading: true, reviewData: null });
+      http.get<SentenceReviewData>(path).subscribe((data) => {
+        patchState(store, {
+          reviewData: data,
+          selectedGroupId: data.groups.find((g) => !g.id.startsWith('exam-'))?.id ?? null,
+          loading: false,
+        });
+      });
+    };
+
+    const loadBookmarks = async (): Promise<void> => {
+      const uid = auth.currentUser?.uid;
+      if (!uid) return;
+
+      try {
+        const ids = await bookmarkService.getBookmarks(uid, BOOKMARK_KEY);
+        patchState(store, { bookmarkedIds: new Set(ids) });
+      } catch (e) {
+        console.error('load bookmarks failed', e);
+      }
+    };
+
+    return {
+      // Lifecycle
+      // --------------------------------------------------------------------
+      init(): void {
+        loadLevel('N3');
+        loadBookmarks();
+      },
+
+      // Public Handlers
+      // --------------------------------------------------------------------
+      selectLevel(level: JlptLevel): void {
+        patchState(store, { selectedLevel: level, selectedGroupId: null });
+        if (LEVEL_DATA_MAP[level]) {
+          loadLevel(level);
+        } else {
+          patchState(store, { reviewData: null });
+        }
+      },
+
+      switchTab(tab: SentenceReviewTab): void {
+        patchState(store, { activeTab: tab, selectedGroupId: null });
+      },
+
+      selectGroup(id: string): void {
+        patchState(store, { selectedGroupId: id });
+      },
+
+      setSearchQuery(query: string): void {
+        patchState(store, { searchQuery: query });
+      },
+
+      isBookmarked(patternId: string): boolean {
+        return store.bookmarkedIds().has(patternId);
+      },
+
+      async toggleBookmark(patternId: string): Promise<void> {
+        const uid = auth.currentUser?.uid;
+        if (!uid) return;
+
+        const current = new Set(store.bookmarkedIds());
+        if (current.has(patternId)) {
+          current.delete(patternId);
+        } else {
+          current.add(patternId);
+        }
+        patchState(store, { bookmarkedIds: current });
+
+        try {
+          await bookmarkService.setBookmarks(uid, BOOKMARK_KEY, Array.from(current));
+        } catch (e) {
+          console.error('save bookmark failed', e);
+        }
+      },
+    };
+  }),
+);

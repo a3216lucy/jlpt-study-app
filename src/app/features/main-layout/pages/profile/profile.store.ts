@@ -1,104 +1,130 @@
 // Cores
-import { Injectable, computed, inject, signal } from '@angular/core';
+import { computed, inject } from '@angular/core';
+// NgRx Signals
+import { patchState, signalStore, withComputed, withMethods, withState } from '@ngrx/signals';
 // Angular Fire
 import { Auth } from '@angular/fire/auth';
 // Services
 import { AuthService } from '@core/services/auth.service';
-import { UserSettingsService } from '@shared/services/user-settings.service';
-import { DEFAULT_TARGET_LEVEL, daysUntil, NEXT_JLPT_EXAM_DATE } from '@shared/config/jlpt-schedule';
+import { UserSettingsService } from '@core/services/user-settings.service';
+import { DEFAULT_TARGET_LEVEL, daysUntil, NEXT_JLPT_EXAM_DATE } from '@core/config/jlpt-schedule';
 import { ProfileService } from './profile.service';
 // Models
 import type { ExamHistoryEntry, StudyPlanStats, VocabStats } from './profile.model';
 
-@Injectable()
-export class ProfileStore {
-  // Dependencies
-  // --------------------------------------------------------------------
-  private readonly auth = inject(Auth);
-  private readonly authService = inject(AuthService);
-  private readonly profileService = inject(ProfileService);
-  private readonly userSettingsService = inject(UserSettingsService);
-
-  // Signals
-  // --------------------------------------------------------------------
-  readonly loading = signal(true);
-  readonly examHistory = signal<ExamHistoryEntry[]>([]);
-  readonly vocabStats = signal<VocabStats>({ totalSessions: 0, knownWords: 0 });
-  readonly studyPlanStats = signal<StudyPlanStats[]>([]);
-  readonly currentUser = this.authService.currentUser;
-
-  // Signals — 應試目標
-  // --------------------------------------------------------------------
-  readonly targetLevel = signal(DEFAULT_TARGET_LEVEL);
-  readonly examDate = signal(NEXT_JLPT_EXAM_DATE);
-  readonly editingGoal = signal(false);
-  readonly draftLevel = signal(DEFAULT_TARGET_LEVEL);
-  readonly draftExamDate = signal(NEXT_JLPT_EXAM_DATE);
-  readonly savingGoal = signal(false);
-
-  readonly daysUntilGoalExam = computed(() => daysUntil(this.examDate()));
-
-  // profilePage
-  // --------------------------------------------------------------------
-  async init(): Promise<void> {
-    const uid = this.auth.currentUser?.uid;
-    if (!uid) {
-      this.loading.set(false);
-      return;
-    }
-
-    try {
-      const [examHistory, vocabStats, studyPlanStats, settings] = await Promise.all([
-        this.profileService.getExamHistory(uid),
-        this.profileService.getVocabStats(uid),
-        this.profileService.getStudyPlanStats(uid),
-        this.userSettingsService.get(uid),
-      ]);
-      this.examHistory.set(examHistory);
-      this.vocabStats.set(vocabStats);
-      this.studyPlanStats.set(studyPlanStats);
-      if (settings) {
-        this.targetLevel.set(settings.targetLevel);
-        this.examDate.set(settings.examDate);
-      }
-    } catch (e) {
-      console.error('profile load failed', e);
-    } finally {
-      this.loading.set(false);
-    }
-  }
-
-  async logout(): Promise<void> {
-    await this.authService.logout();
-  }
-
+interface ProfileState {
+  loading: boolean;
+  examHistory: ExamHistoryEntry[];
+  vocabStats: VocabStats;
+  studyPlanStats: StudyPlanStats[];
   // 應試目標
-  // --------------------------------------------------------------------
-  startEditGoal(): void {
-    this.draftLevel.set(this.targetLevel());
-    this.draftExamDate.set(this.examDate());
-    this.editingGoal.set(true);
-  }
-
-  cancelEditGoal(): void {
-    this.editingGoal.set(false);
-  }
-
-  async saveGoal(): Promise<void> {
-    const uid = this.auth.currentUser?.uid;
-    if (!uid) return;
-
-    this.savingGoal.set(true);
-    try {
-      const settings = { targetLevel: this.draftLevel(), examDate: this.draftExamDate() };
-      await this.userSettingsService.set(uid, settings);
-      this.targetLevel.set(settings.targetLevel);
-      this.examDate.set(settings.examDate);
-      this.editingGoal.set(false);
-    } catch (e) {
-      console.error('save goal failed', e);
-    } finally {
-      this.savingGoal.set(false);
-    }
-  }
+  targetLevel: string;
+  examDate: string;
+  editingGoal: boolean;
+  draftLevel: string;
+  draftExamDate: string;
+  savingGoal: boolean;
 }
+
+const initialState: ProfileState = {
+  loading: true,
+  examHistory: [],
+  vocabStats: { totalSessions: 0, knownWords: 0 },
+  studyPlanStats: [],
+  targetLevel: DEFAULT_TARGET_LEVEL,
+  examDate: NEXT_JLPT_EXAM_DATE,
+  editingGoal: false,
+  draftLevel: DEFAULT_TARGET_LEVEL,
+  draftExamDate: NEXT_JLPT_EXAM_DATE,
+  savingGoal: false,
+};
+
+export const ProfileStore = signalStore(
+  withState(initialState),
+  withComputed((store, authService = inject(AuthService)) => ({
+    currentUser: authService.currentUser,
+    daysUntilGoalExam: computed(() => daysUntil(store.examDate())),
+  })),
+  withMethods(
+    (
+      store,
+      auth = inject(Auth),
+      authService = inject(AuthService),
+      profileService = inject(ProfileService),
+      userSettingsService = inject(UserSettingsService),
+    ) => ({
+      // profilePage
+      // --------------------------------------------------------------------
+      async init(): Promise<void> {
+        const uid = auth.currentUser?.uid;
+        if (!uid) {
+          patchState(store, { loading: false });
+          return;
+        }
+
+        try {
+          const [examHistory, vocabStats, studyPlanStats, settings] = await Promise.all([
+            profileService.getExamHistory(uid),
+            profileService.getVocabStats(uid),
+            profileService.getStudyPlanStats(uid),
+            userSettingsService.get(uid),
+          ]);
+          patchState(store, { examHistory, vocabStats, studyPlanStats });
+          if (settings) {
+            patchState(store, { targetLevel: settings.targetLevel, examDate: settings.examDate });
+          }
+        } catch (e) {
+          console.error('profile load failed', e);
+        } finally {
+          patchState(store, { loading: false });
+        }
+      },
+
+      async logout(): Promise<void> {
+        await authService.logout();
+      },
+
+      // 應試目標
+      // --------------------------------------------------------------------
+      startEditGoal(): void {
+        patchState(store, {
+          draftLevel: store.targetLevel(),
+          draftExamDate: store.examDate(),
+          editingGoal: true,
+        });
+      },
+
+      cancelEditGoal(): void {
+        patchState(store, { editingGoal: false });
+      },
+
+      setDraftLevel(level: string): void {
+        patchState(store, { draftLevel: level });
+      },
+
+      setDraftExamDate(date: string): void {
+        patchState(store, { draftExamDate: date });
+      },
+
+      async saveGoal(): Promise<void> {
+        const uid = auth.currentUser?.uid;
+        if (!uid) return;
+
+        patchState(store, { savingGoal: true });
+        try {
+          const settings = { targetLevel: store.draftLevel(), examDate: store.draftExamDate() };
+          await userSettingsService.set(uid, settings);
+          patchState(store, {
+            targetLevel: settings.targetLevel,
+            examDate: settings.examDate,
+            editingGoal: false,
+          });
+        } catch (e) {
+          console.error('save goal failed', e);
+        } finally {
+          patchState(store, { savingGoal: false });
+        }
+      },
+    }),
+  ),
+);

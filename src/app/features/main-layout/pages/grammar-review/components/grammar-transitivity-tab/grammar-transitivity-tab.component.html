@@ -1,0 +1,79 @@
+@if (store.transitivityLoading()) {
+  <div class="flex items-center justify-center py-20 text-text-muted">
+    <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
+  </div>
+} @else if (store.transitivityData(); as data) {
+  <div class="flex flex-col gap-3">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">自他動詞是什麼</h2>
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+      @for (card of data.definitionCards; track card.label) {
+        <div class="flex flex-col gap-2.5 rounded-lg border border-border bg-surface p-4">
+          <span
+            [class]="
+              'w-fit rounded-full px-2.5 py-1 text-xs font-bold ' +
+              (card.label === '自動詞' ? 'bg-matcha text-white' : 'bg-accent text-white')
+            "
+          >
+            {{ card.label }}
+          </span>
+          <p class="text-xs text-text-secondary">{{ card.description }}</p>
+          <p class="rounded-md bg-bg px-3 py-2 text-sm text-ink">{{ card.example }}</p>
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-3">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">自他動詞 対応表</h2>
+    <div class="overflow-x-auto rounded-lg border border-border">
+      <table class="w-full min-w-[560px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+            <th class="px-4 py-2.5">自動詞（～が）</th>
+            <th class="px-4 py-2.5">他動詞（～を）</th>
+            <th class="px-4 py-2.5">中文</th>
+            <th class="px-4 py-2.5">規律</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-border">
+          @for (row of store.filteredTransitivityPairs(); track row.jidoushi) {
+            <tr class="bg-surface">
+              <td class="px-4 py-2.5 font-bold text-ink">{{ row.jidoushi }}</td>
+              <td class="px-4 py-2.5 font-bold text-ink">{{ row.tadoushi }}</td>
+              <td class="px-4 py-2.5 text-text-secondary">{{ row.meaning }}</td>
+              <td class="px-4 py-2.5">
+                <span class="rounded-full border border-border bg-bg px-2.5 py-1 text-xs font-bold text-text-secondary">{{ row.rule }}</span>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-3">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">語尾規律速記</h2>
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      @for (card of data.suffixCards; track card.pattern) {
+        <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
+          <p class="font-heading text-base font-bold text-ink">{{ card.pattern }}</p>
+          <div class="flex flex-wrap gap-1.5">
+            @if (card.jidoushiTag) {
+              <span class="rounded-full bg-matcha-soft px-2 py-0.5 text-xs font-bold text-matcha">{{ card.jidoushiTag }}</span>
+            }
+            @if (card.tadoushiTag) {
+              <span class="rounded-full bg-accent-soft px-2 py-0.5 text-xs font-bold text-accent">{{ card.tadoushiTag }}</span>
+            }
+          </div>
+          <p class="text-xs text-text-secondary">{{ card.description }}</p>
+          <p class="rounded-md bg-bg px-3 py-2 text-sm text-ink">{{ card.example }}</p>
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="flex items-center gap-2.5 rounded-lg bg-matcha-soft px-4 py-3.5 text-sm text-ink">
+    <i class="fa-regular fa-lightbulb text-matcha"></i>
+    {{ data.tip }}
+  </div>
+}

@@ -1,0 +1,450 @@
+{
+  "id": "n3-2025-12-grammar",
+  "title": "2025年12月 N3 文法",
+  "description": "2025年12月 JLPT N3 文法（問題1〜3）",
+  "level": "N3",
+  "category": "grammar",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n3-2025-12-g-01",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "この問題は何度（　）挑戦しても難しくて解けない。",
+      "questionTranslation": "這道題無論嘗試多少次都很難解出來。",
+      "options": [
+        {"id": "n3-2025-12-g-01-a", "text": "も", "isCorrect": true},
+        {"id": "n3-2025-12-g-01-b", "text": "は", "isCorrect": false},
+        {"id": "n3-2025-12-g-01-c", "text": "など", "isCorrect": false},
+        {"id": "n3-2025-12-g-01-d", "text": "ぐらい", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-01-a",
+      "explanation": "何度も〜ても＝無論試了多少次〜。「何度も」表示強調次數之多。×2 何度は（不自然）×3 何度など（不適合）×4 何度ぐらい（意味が違う）",
+      "tags": ["grammar", "particle", "n3-grammar"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-02",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "こんな寒い日に外に出るなんて、温かいうどん（　）食べたいなあ。",
+      "questionTranslation": "這麼冷的天要出門啊，好想吃熱騰騰的烏龍麵之類的。",
+      "options": [
+        {"id": "n3-2025-12-g-02-a", "text": "に", "isCorrect": false},
+        {"id": "n3-2025-12-g-02-b", "text": "だけ", "isCorrect": false},
+        {"id": "n3-2025-12-g-02-c", "text": "まで", "isCorrect": false},
+        {"id": "n3-2025-12-g-02-d", "text": "なんか", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2025-12-g-02-d",
+      "explanation": "〜なんか＝〜之類的、〜什麼的（列舉或輕描淡寫）。「うどんなんか食べたい」表示輕鬆地提出一個選項。×1 に（方向格助詞）×2 だけ（只有）×3 まで（甚至）",
+      "tags": ["grammar", "particle", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-03",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "あの人への感謝の気持ちは、手紙（　）伝えられないと思います。",
+      "questionTranslation": "對那個人的感謝之情，我覺得只能透過書信才能傳達。",
+      "options": [
+        {"id": "n3-2025-12-g-03-a", "text": "でなら", "isCorrect": false},
+        {"id": "n3-2025-12-g-03-b", "text": "になら", "isCorrect": false},
+        {"id": "n3-2025-12-g-03-c", "text": "でしか", "isCorrect": true},
+        {"id": "n3-2025-12-g-03-d", "text": "にしか", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-03-c",
+      "explanation": "〜でしか〜ない＝只有用〜才能〜（強調唯一手段）。手段・方法を表す「で」＋「しか〜ない」。×1 でなら（不自然）×2 になら（不自然）×4 にしか（方向・対象には合わない）",
+      "tags": ["grammar", "only", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-04",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "（　）雨が強かったので、外で行う予定だった試合が中止になった。",
+      "questionTranslation": "因為雨勢太強，原本預定在戶外舉行的比賽取消了。",
+      "options": [
+        {"id": "n3-2025-12-g-04-a", "text": "ちっとも", "isCorrect": false},
+        {"id": "n3-2025-12-g-04-b", "text": "あまりに", "isCorrect": true},
+        {"id": "n3-2025-12-g-04-c", "text": "次第に", "isCorrect": false},
+        {"id": "n3-2025-12-g-04-d", "text": "今にも", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-04-b",
+      "explanation": "あまりに〜ので＝因為太〜。強調程度過於極端而導致結果。×1 ちっとも（一點也不）×3 次第に（逐漸）×4 今にも（眼看就要）",
+      "tags": ["grammar", "adverb", "degree", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-05",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "山を登っていく（　）、景色がどんどんよくなっていった。",
+      "questionTranslation": "隨著往山上爬，景色越來越好了。",
+      "options": [
+        {"id": "n3-2025-12-g-05-a", "text": "とすると", "isCorrect": false},
+        {"id": "n3-2025-12-g-05-b", "text": "のと比べると", "isCorrect": false},
+        {"id": "n3-2025-12-g-05-c", "text": "にしたがって", "isCorrect": true},
+        {"id": "n3-2025-12-g-05-d", "text": "のに対して", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-05-c",
+      "explanation": "〜にしたがって＝隨著〜（伴隨変化）。A事態の変化と同時にB事態も変化する。×1 とすると（假設）×2 のと比べると（比較）×4 のに対して（對比）",
+      "tags": ["grammar", "conjunction", "change", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-06",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "その本を（　）貸してあげるから、それまで待っていてね。",
+      "questionTranslation": "等我看完那本書之後會借給你，在那之前請等一等喔。",
+      "options": [
+        {"id": "n3-2025-12-g-06-a", "text": "読んでいたら", "isCorrect": false},
+        {"id": "n3-2025-12-g-06-b", "text": "読み続けたら", "isCorrect": false},
+        {"id": "n3-2025-12-g-06-c", "text": "読んでおいたら", "isCorrect": false},
+        {"id": "n3-2025-12-g-06-d", "text": "読み終わったら", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2025-12-g-06-d",
+      "explanation": "読み終わったら＝看完之後。「〜終わったら」表示動作完成後才做後續行動。×1 読んでいたら（正在看的時候）×2 読み続けたら（繼續看的話）×3 読んでおいたら（預先看了的話）",
+      "tags": ["grammar", "conditional", "completion", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-07",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "マリアさんが外国に（　）、一緒にいろいろな所に行きたい。",
+      "questionTranslation": "在瑪麗亞回國之前，想和她一起去各種地方。",
+      "options": [
+        {"id": "n3-2025-12-g-07-a", "text": "帰っていて", "isCorrect": false},
+        {"id": "n3-2025-12-g-07-b", "text": "帰ってしまえば", "isCorrect": false},
+        {"id": "n3-2025-12-g-07-c", "text": "帰っている間", "isCorrect": false},
+        {"id": "n3-2025-12-g-07-d", "text": "帰ってしまう前に", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2025-12-g-07-d",
+      "explanation": "〜てしまう前に＝在〜（就這樣回去）之前。「前に」後接想做的事，表示截止時間。×1 帰っていて（不自然）×2 帰ってしまえば（帰ったら）×3 帰っている間（在這裡的時候，相反的意思）",
+      "tags": ["grammar", "before", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-08",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "このお寺が（　）、今から1000年以上も前のことだ。",
+      "questionTranslation": "這座寺廟的建造，是1000年以上前的事了。",
+      "options": [
+        {"id": "n3-2025-12-g-08-a", "text": "建てられてからは", "isCorrect": false},
+        {"id": "n3-2025-12-g-08-b", "text": "建てられたのは", "isCorrect": true},
+        {"id": "n3-2025-12-g-08-c", "text": "建てさせるまでは", "isCorrect": false},
+        {"id": "n3-2025-12-g-08-d", "text": "建てさせたときは", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-08-b",
+      "explanation": "建てられたのは〜前だ＝建造是〜前的事。「〜のは〜だ」是強調句型，強調時間。×1 建てられてからは（自から）×3 建てさせる（使役：讓別人建）×4 建てさせた（使役過去）",
+      "tags": ["grammar", "passive", "emphasis", "n3-grammar"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-09",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "このカフェは最近、若者の間で人気がある（　）。",
+      "questionTranslation": "這家咖啡廳最近在年輕人之間好像很受歡迎。",
+      "options": [
+        {"id": "n3-2025-12-g-09-a", "text": "ことだ", "isCorrect": false},
+        {"id": "n3-2025-12-g-09-b", "text": "せいだ", "isCorrect": false},
+        {"id": "n3-2025-12-g-09-c", "text": "みたいだ", "isCorrect": true},
+        {"id": "n3-2025-12-g-09-d", "text": "つもりだ", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-09-c",
+      "explanation": "〜みたいだ＝好像〜（推測）。表示說話者對某情況的推測或印象，語氣較輕鬆。×1 ことだ（建議）×2 せいだ（原因・責任）×4 つもりだ（打算）",
+      "tags": ["grammar", "inference", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-10",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "目がかゆくて困っているんですが、いい眼科を知っていたら（　）。",
+      "questionTranslation": "眼睛癢得很困擾，如果知道好的眼科的話，可以告訴我嗎？",
+      "options": [
+        {"id": "n3-2025-12-g-10-a", "text": "教えたいんですが", "isCorrect": false},
+        {"id": "n3-2025-12-g-10-b", "text": "教えてもいいですか", "isCorrect": false},
+        {"id": "n3-2025-12-g-10-c", "text": "教えてもらうんですか", "isCorrect": false},
+        {"id": "n3-2025-12-g-10-d", "text": "教えてほしいんですが", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2025-12-g-10-d",
+      "explanation": "〜てほしいんですが＝希望你〜。客氣地向對方提出請求。知っていたら＝如果知道的話，是個假設條件。×1 教えたいんですが（我想告訴你）×2 方向錯誤×3 教えてもらうんですか（疑問）",
+      "tags": ["grammar", "request", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-11",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "この料理は林さんが作ったのだから、（　）。",
+      "questionTranslation": "這道料理是林先生做的，不可能不好吃。",
+      "options": [
+        {"id": "n3-2025-12-g-11-a", "text": "おいしくないに違いない", "isCorrect": false},
+        {"id": "n3-2025-12-g-11-b", "text": "おいしくないはずがない", "isCorrect": true},
+        {"id": "n3-2025-12-g-11-c", "text": "おいしくないかもしれない", "isCorrect": false},
+        {"id": "n3-2025-12-g-11-d", "text": "おいしくなくてもしかたない", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-11-b",
+      "explanation": "〜はずがない＝不可能〜（根據理由排除可能性）。林さんが作った→おいしい（當然），所以おいしくないはずがない。×1 に違いない（一定）×3 かもしれない（也許）×4 しかたない（沒辦法）",
+      "tags": ["grammar", "certainty", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-12",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "田中さんは旅行に行ったとき、必ずお土産を（　）。",
+      "questionTranslation": "田中先生每次去旅行，一定會買伴手禮帶來給（我們）。",
+      "options": [
+        {"id": "n3-2025-12-g-12-a", "text": "買ってきてあげる", "isCorrect": false},
+        {"id": "n3-2025-12-g-12-b", "text": "買っていってあげる", "isCorrect": false},
+        {"id": "n3-2025-12-g-12-c", "text": "買ってきてくれる", "isCorrect": true},
+        {"id": "n3-2025-12-g-12-d", "text": "買っていってくれる", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-12-c",
+      "explanation": "買ってきてくれる＝買來給（我們）。くる＝向這裡移動，くれる＝對方為我做。旅行先→こちら向きなのでくる。×1 あげる（我給別人）×2 いっていってあげる（去那裡）×4 いってくれる（去那裡）",
+      "tags": ["grammar", "giving-receiving", "direction", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-13",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題1 文法形式】（　）に入れるのに最もよいものを、１・２・３・４からえらびなさい。",
+      "questionText": "熱はもう下がったし、体の調子もよくなってきたので、明日は授業に（　）。",
+      "questionTranslation": "燒退了，身體狀況也好多了，明天應該能去上課了。",
+      "options": [
+        {"id": "n3-2025-12-g-13-a", "text": "出られそうだ", "isCorrect": true},
+        {"id": "n3-2025-12-g-13-b", "text": "出られるそうだ", "isCorrect": false},
+        {"id": "n3-2025-12-g-13-c", "text": "出そうだ", "isCorrect": false},
+        {"id": "n3-2025-12-g-13-d", "text": "出るそうだ", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-13-a",
+      "explanation": "出られそうだ＝好像能去（自己的推測）。出られる（可能形）＋そうだ（様態）。×2 出られるそうだ（傳聞）×3 出そうだ（看起來要出去）×4 出るそうだ（據說出去）",
+      "tags": ["grammar", "potential", "inference", "n3-grammar", "常考"],
+      "problemNumber": 1,
+      "problemLabel": "文法形式"
+    },
+    {
+      "id": "n3-2025-12-g-14",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入るものはどれですか。",
+      "questionText": "私は小説を2冊と、___①___ ___②___ ___★___ ___③___本を1冊買った。\n①小説2冊と　②の　★について　③レポートの書き方",
+      "questionTranslation": "我買了2本小說，和1本關於報告寫法的書。\n正確語順：小説2冊と　レポートの書き方　★について　の　本を1冊買った",
+      "options": [
+        {"id": "n3-2025-12-g-14-a", "text": "①の位置", "isCorrect": false},
+        {"id": "n3-2025-12-g-14-b", "text": "②の位置", "isCorrect": false},
+        {"id": "n3-2025-12-g-14-c", "text": "③の位置（★について）", "isCorrect": true},
+        {"id": "n3-2025-12-g-14-d", "text": "④の位置", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-14-c",
+      "explanation": "正しい語順：小説を2冊と[レポートの書き方][★について][の]本を1冊買った。「レポートの書き方についての本」で「報告寫法的書」。「について」の前は名詞、後は「の」が続き名詞修飾する。",
+      "tags": ["grammar", "sentence-construction", "n3-grammar"],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2025-12-g-15",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入るものはどれですか。",
+      "questionText": "テレビ___①___ ___②___ ___★___ ___③___があるよ。\n①か何か　②見たこと　★で　③テレビ",
+      "questionTranslation": "在電視或什麼上看過的喔。\n正確語順：テレビ　か何か　★で　見たこと　があるよ",
+      "options": [
+        {"id": "n3-2025-12-g-15-a", "text": "①の位置（★で）", "isCorrect": true},
+        {"id": "n3-2025-12-g-15-b", "text": "②の位置", "isCorrect": false},
+        {"id": "n3-2025-12-g-15-c", "text": "③の位置", "isCorrect": false},
+        {"id": "n3-2025-12-g-15-d", "text": "④の位置", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-15-a",
+      "explanation": "正しい語順：テレビ[か何か][★で][見たこと]があるよ。テレビか何かで見たことがある＝在電視之類的上看到過。「か何か」は並列、「で」は媒体を示す助詞。",
+      "tags": ["grammar", "sentence-construction", "n3-grammar"],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2025-12-g-16",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入るものはどれですか。",
+      "questionText": "弾けば弾くほど___①___ ___②___ ___★___ ___③___のが楽しい。\n①上手に　②なっていく　★弾けるように　③弾けば弾くほど",
+      "questionTranslation": "越練越能彈得好，越來越流暢，這讓我感到很開心。\n正確語順：弾けば弾くほど　上手に　★弾けるように　なっていく　のが楽しい",
+      "options": [
+        {"id": "n3-2025-12-g-16-a", "text": "①の位置", "isCorrect": false},
+        {"id": "n3-2025-12-g-16-b", "text": "②の位置", "isCorrect": false},
+        {"id": "n3-2025-12-g-16-c", "text": "③の位置", "isCorrect": false},
+        {"id": "n3-2025-12-g-16-d", "text": "④の位置（★弾けるように）", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2025-12-g-16-d",
+      "explanation": "正しい語順：弾けば弾くほど[上手に][★弾けるように][なっていく]のが楽しい。「上手に弾けるようになっていく」で「越來越能彈得好」。ように+なる是表示能力/狀態的變化。",
+      "tags": ["grammar", "sentence-construction", "comparison", "n3-grammar", "常考"],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2025-12-g-17",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入るものはどれですか。",
+      "questionText": "住む場所に___①___ ___②___ ___★___ ___③___からだ。\n①北町を選んだ　②ずっと北町に住んでみたかった　★のは　③のに",
+      "questionTranslation": "選擇北町作為居住地，是因為一直以來都很想住在北町。\n正確語順：のに　北町を選んだ　★のは　ずっと北町に住んでみたかった　からだ",
+      "options": [
+        {"id": "n3-2025-12-g-17-a", "text": "①の位置", "isCorrect": false},
+        {"id": "n3-2025-12-g-17-b", "text": "②の位置（★のは）", "isCorrect": true},
+        {"id": "n3-2025-12-g-17-c", "text": "③の位置", "isCorrect": false},
+        {"id": "n3-2025-12-g-17-d", "text": "④の位置", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-17-b",
+      "explanation": "正しい語順：のに[北町を選んだ][★のは][ずっと北町に住んでみたかった]からだ。「〜を選んだのは〜からだ」是強調原因的強調句型。",
+      "tags": ["grammar", "sentence-construction", "reason", "n3-grammar", "常考"],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2025-12-g-18",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題2 文の組み立て】★に入るものはどれですか。",
+      "questionText": "包丁を長持ちさせる___①___ ___②___ ___★___ ___③___重要らしい。\n①ことが　②使った後　★ぬれたままにしない　③ためには",
+      "questionTranslation": "要讓菜刀用得長久，使用後不要讓它保持濕潤狀態，這一點好像很重要。\n正確語順：ためには　使った後　★ぬれたままにしない　ことが　重要らしい",
+      "options": [
+        {"id": "n3-2025-12-g-18-a", "text": "①の位置", "isCorrect": false},
+        {"id": "n3-2025-12-g-18-b", "text": "②の位置", "isCorrect": false},
+        {"id": "n3-2025-12-g-18-c", "text": "③の位置（★ぬれたままにしない）", "isCorrect": true},
+        {"id": "n3-2025-12-g-18-d", "text": "④の位置", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-18-c",
+      "explanation": "正しい語順：ためには[使った後][★ぬれたままにしない][ことが]重要らしい。「〜ためには〜ことが重要」表示目標和必要條件。「ぬれたままにしない」是禁止狀態持續的表達。",
+      "tags": ["grammar", "sentence-construction", "purpose", "n3-grammar"],
+      "problemNumber": 2,
+      "problemLabel": "文の組み立て"
+    },
+    {
+      "id": "n3-2025-12-g-19",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】次の文章を読んで、文章全体の内容を考えて、（19）から（22）の中に入る最もよいものを、１・２・３・４からえらびなさい。\n\n【コンビニについて】\n日本のコンビニはどのお店も同じだと（19）。でも実は、各コンビニには少し違いがあります。どのお店も季節ごとの新商品を出したり、地域の食材を使ったりと工夫しています。",
+      "questionText": "日本のコンビニはどのお店も同じだと（19）。",
+      "questionTranslation": "以前我以為日本的便利商店每一家都一樣。",
+      "options": [
+        {"id": "n3-2025-12-g-19-a", "text": "思います", "isCorrect": false},
+        {"id": "n3-2025-12-g-19-b", "text": "思ってしまいます", "isCorrect": false},
+        {"id": "n3-2025-12-g-19-c", "text": "思っていたからです", "isCorrect": true},
+        {"id": "n3-2025-12-g-19-d", "text": "思ったことです", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-19-c",
+      "explanation": "「同じだと思っていたからです」＝因為（以前）以為都一樣。「〜ていた」表示過去持續的想法，「〜からです」說明原因。前後文脈：以前以為一樣→但其實有差異。×1 現在の想像 ×2 しまいます（不自然）×4 〜ことです（事実述べ）",
+      "tags": ["grammar", "passage", "n3-grammar"],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2025-12-g-20",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】各コンビニには少し違いがありますが、共通している点もあります。（20）、どの店も、お客さんに楽しい時間を過ごしてほしいと考えています。",
+      "questionText": "各コンビニには少し違いがありますが、共通している点もあります。（20）、どの店も、お客さんに楽しい時間を過ごしてほしいと考えています。",
+      "questionTranslation": "雖然各家便利商店有些不同，但也有共通點。不過，每家店都希望顧客能度過愉快的時光。",
+      "options": [
+        {"id": "n3-2025-12-g-20-a", "text": "つまり", "isCorrect": false},
+        {"id": "n3-2025-12-g-20-b", "text": "ところで", "isCorrect": false},
+        {"id": "n3-2025-12-g-20-c", "text": "ちなみに", "isCorrect": false},
+        {"id": "n3-2025-12-g-20-d", "text": "でも", "isCorrect": true}
+      ],
+      "correctAnswer": "n3-2025-12-g-20-d",
+      "explanation": "でも＝但是（逆接）。前は「共通点もある」→後は「どの店も〜」。前句否定了完全相同，後句補充共通的願望，形成轉折。×1 つまり（結論）×2 ところで（話題転換）×3 ちなみに（順便一提）",
+      "tags": ["grammar", "conjunction", "contrast", "n3-grammar", "常考"],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2025-12-g-21",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】（21）会社もいい商品を作るために努力しています。",
+      "questionText": "（21）会社もいい商品を作るために努力しています。",
+      "questionTranslation": "每一家公司都在努力製作好商品。",
+      "options": [
+        {"id": "n3-2025-12-g-21-a", "text": "どの", "isCorrect": true},
+        {"id": "n3-2025-12-g-21-b", "text": "その", "isCorrect": false},
+        {"id": "n3-2025-12-g-21-c", "text": "この", "isCorrect": false},
+        {"id": "n3-2025-12-g-21-d", "text": "あの", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-21-a",
+      "explanation": "どの〜も＝每一個〜都。「どの会社も」表示所有公司不例外。×2 その（那個）×3 この（這個）×4 あの（那個・遠称）",
+      "tags": ["grammar", "pronoun", "n3-grammar", "常考"],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    },
+    {
+      "id": "n3-2025-12-g-22",
+      "level": "N3",
+      "category": "grammar",
+      "type": "sentence-fill",
+      "prompt": "【問題3 文章の文法】コンビニはただ買い物をする場所ではなく、お客さんが楽しい気分になれる（22）。",
+      "questionText": "コンビニはただ買い物をする場所ではなく、お客さんが楽しい気分になれる（22）。",
+      "questionTranslation": "便利商店不僅僅是購物的地方，而是能讓顧客心情愉悅的場所。",
+      "options": [
+        {"id": "n3-2025-12-g-22-a", "text": "場所にしたのです", "isCorrect": false},
+        {"id": "n3-2025-12-g-22-b", "text": "場所なのです", "isCorrect": true},
+        {"id": "n3-2025-12-g-22-c", "text": "場所にするのでしょう", "isCorrect": false},
+        {"id": "n3-2025-12-g-22-d", "text": "場所なのでしょうか", "isCorrect": false}
+      ],
+      "correctAnswer": "n3-2025-12-g-22-b",
+      "explanation": "〜なのです＝就是〜（說明・強調）。「なのです（んです）」用於強調和解釋現有狀態，表示「就是這樣一個地方」。×1 にしたのです（已改造）×3 でしょう（推測）×4 でしょうか（疑問）",
+      "tags": ["grammar", "explanation", "n3-grammar", "常考"],
+      "problemNumber": 3,
+      "problemLabel": "文章の文法"
+    }
+  ]
+}

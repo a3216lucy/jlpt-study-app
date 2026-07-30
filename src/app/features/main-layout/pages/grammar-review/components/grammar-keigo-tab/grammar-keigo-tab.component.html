@@ -1,0 +1,81 @@
+@if (store.verbLoading()) {
+  <div class="flex items-center justify-center py-20 text-text-muted">
+    <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
+  </div>
+} @else if (store.verbData()) {
+  <div class="flex flex-col gap-3">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">敬語三分類</h2>
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+      @for (card of keigoCategoryCards; track card.label) {
+        <div class="flex flex-col gap-2.5 rounded-lg border border-border bg-surface p-4">
+          <span [class]="'w-fit rounded-full px-2.5 py-1 text-xs font-bold ' + card.badgeClass">{{ card.label }}</span>
+          <p class="text-xs text-text-secondary">{{ card.description }}</p>
+          <p class="rounded-md bg-bg px-3 py-2 text-sm text-ink">{{ card.example }}</p>
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-3">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">特殊動詞 対応表</h2>
+    <div class="overflow-x-auto rounded-lg border border-border">
+      <table class="w-full min-w-[560px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+            <th class="px-4 py-2.5">原形</th>
+            <th class="px-4 py-2.5">尊敬語</th>
+            <th class="px-4 py-2.5">謙讓語</th>
+            <th class="px-4 py-2.5">中文</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-border">
+          @for (row of store.filteredSpecialVerbTable(); track row.plain) {
+            <tr class="bg-surface">
+              <td class="px-4 py-2.5 font-bold text-ink">
+                {{ row.plain }}
+                @if (row.plain_kana) {
+                  <p class="text-xs font-normal text-text-muted">{{ row.plain_kana }}</p>
+                }
+              </td>
+              <td class="px-4 py-2.5 text-accent">
+                {{ row.sonkei }}
+                @if (row.sonkei_kana) {
+                  <p class="text-xs text-accent/60">{{ row.sonkei_kana }}</p>
+                }
+              </td>
+              <td class="px-4 py-2.5 text-matcha">
+                {{ row.kenjou }}
+                @if (row.kenjou_kana) {
+                  <p class="text-xs text-matcha/60">{{ row.kenjou_kana }}</p>
+                }
+              </td>
+              <td class="px-4 py-2.5 text-text-secondary">{{ row.meaning }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-3">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">敬語の作り方（規則型）</h2>
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+      @for (group of keigoFormationGroups; track group.label) {
+        <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
+          <span [class]="'w-fit rounded-full px-2.5 py-1 text-xs font-bold ' + group.badgeClass">{{ group.label }}</span>
+          @for (rule of group.rules; track rule.rule) {
+            <div class="rounded-md bg-bg px-3 py-2.5">
+              <p class="text-sm font-bold text-ink">{{ rule.rule }}</p>
+              <p class="mt-0.5 text-xs text-accent">{{ rule.example }}</p>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="flex items-center gap-2.5 rounded-lg bg-sun-yellow/25 px-4 py-3.5 text-sm text-ink">
+    <i class="fa-regular fa-lightbulb text-[#B08514]"></i>
+    {{ keigoTip }}
+  </div>
+}

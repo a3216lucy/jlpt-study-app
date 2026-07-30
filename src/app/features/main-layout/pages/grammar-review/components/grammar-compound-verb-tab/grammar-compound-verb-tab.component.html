@@ -1,0 +1,69 @@
+@if (store.compoundVerbLoading()) {
+  <div class="flex items-center justify-center py-20 text-text-muted">
+    <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
+  </div>
+} @else if (store.compoundVerbData()) {
+  <div class="flex flex-col gap-3">
+    @for (p of store.filteredCompoundVerbPatterns(); track p.id) {
+      <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4">
+        <!-- pattern header -->
+        <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+          <span class="font-heading text-lg font-bold text-accent">{{ p.pattern }}</span>
+          @if (p.reading) {
+            <span class="font-sans text-sm text-text-secondary">（{{ p.reading }}）</span>
+          }
+          <span class="text-xs text-text-muted">{{ p.formation }}</span>
+        </div>
+        <!-- meaning -->
+        <p class="text-sm font-bold text-ink">{{ p.meaning }}</p>
+        <!-- notes -->
+        @if (p.notes) {
+          <div class="flex flex-col gap-0.5">
+            @for (line of parseNotes(p.notes); track $index) {
+              @if (line.text === '') {
+                <div class="h-1.5"></div>
+              } @else if (line.isCallout) {
+                <p class="text-xs font-medium text-matcha">{{ line.text }}</p>
+              } @else {
+                <p class="text-xs text-text-secondary">{{ line.text }}</p>
+              }
+            }
+          </div>
+        }
+        <!-- examples -->
+        <div class="flex flex-col gap-2 border-t border-border pt-3">
+          @for (ex of p.examples; track ex.jp) {
+            <div class="flex flex-col gap-0.5">
+              <p class="text-sm text-ink">{{ ex.jp }}</p>
+              <p class="text-xs text-text-muted">{{ ex.zh }}</p>
+            </div>
+          }
+        </div>
+      </div>
+    }
+
+    @if (store.filteredCompoundVerbPatterns().length === 0) {
+      <div class="flex flex-col items-center gap-2 rounded-lg border border-dashed border-border py-12 text-center text-sm text-text-muted">
+        沒有符合搜尋條件的句型
+      </div>
+    }
+  </div>
+
+  <a
+    routerLink="/vocab"
+    class="flex flex-col gap-2 rounded-lg border border-matcha/30 bg-matcha-soft/60 p-4 transition hover:bg-matcha-soft sm:flex-row sm:items-center sm:justify-between"
+  >
+    <span class="flex items-center gap-2.5">
+      <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-matcha">
+        <i class="fa-solid fa-language text-sm"></i>
+      </span>
+      <span class="flex flex-col">
+        <span class="font-heading text-sm font-bold text-ink">完整複合動詞單字表</span>
+        <span class="text-xs text-text-secondary">完整單字在單詞頁「複合動詞」分類</span>
+      </span>
+    </span>
+    <span class="flex items-center justify-center gap-1.5 self-start rounded-full bg-matcha px-4 py-2 text-sm font-bold text-white sm:self-auto">
+      前往單詞頁 <i class="fa-solid fa-arrow-right text-xs"></i>
+    </span>
+  </a>
+}

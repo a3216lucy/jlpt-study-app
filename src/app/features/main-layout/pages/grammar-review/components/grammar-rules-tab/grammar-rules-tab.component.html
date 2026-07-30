@@ -1,0 +1,82 @@
+@if (store.verbLoading()) {
+  <div class="flex items-center justify-center py-20 text-text-muted">
+    <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
+  </div>
+} @else if (store.verbData(); as data) {
+  <div class="flex flex-col gap-3">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">動詞活用形 一覽（全變化）</h2>
+    <div class="overflow-x-auto rounded-lg border border-border">
+      <table class="w-full min-w-[680px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+            <th class="px-4 py-2.5">活用形</th>
+            <th class="px-4 py-2.5">I 群（書く）</th>
+            <th class="px-4 py-2.5">II 群（食べる）</th>
+            <th class="px-4 py-2.5">III 群（する・来る）</th>
+            <th class="px-4 py-2.5 text-accent">例外情況</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-border">
+          @for (category of store.filteredAllForms(); track category.category) {
+            <tr class="bg-bg/60">
+              <td colspan="5" class="px-4 py-1.5 text-xs font-bold text-text-muted">{{ category.category }}</td>
+            </tr>
+            @for (row of category.rows; track row.formLabel) {
+              <tr class="bg-surface align-top">
+                <td class="px-4 py-2.5">
+                  <span class="rounded-full bg-accent-soft px-2.5 py-1 text-xs font-bold text-accent">{{ row.formLabel }}</span>
+                </td>
+                <td class="px-4 py-2.5">
+                  <p class="text-xs text-text-muted">{{ splitCell(row.groupI).rule }}</p>
+                  <p class="font-bold text-ink">{{ splitCell(row.groupI).example }}</p>
+                </td>
+                <td class="px-4 py-2.5">
+                  <p class="text-xs text-text-muted">{{ splitCell(row.groupII).rule }}</p>
+                  <p class="font-bold text-ink">{{ splitCell(row.groupII).example }}</p>
+                </td>
+                <td class="px-4 py-2.5">
+                  <p class="text-xs text-text-muted">{{ splitCell(row.groupIII).rule }}</p>
+                  <p class="font-bold text-ink">{{ splitCell(row.groupIII).example }}</p>
+                </td>
+                <td class="px-4 py-2.5 text-xs text-text-secondary">{{ row.exception }}</td>
+              </tr>
+            }
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-3">
+    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">※ て・た形音便（I 群・語尾別）</h2>
+    <div class="overflow-x-auto rounded-lg border border-border">
+      <table class="w-full min-w-[520px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+            <th class="px-4 py-2.5">語尾</th>
+            <th class="px-4 py-2.5">音便</th>
+            <th class="px-4 py-2.5">變化</th>
+            <th class="px-4 py-2.5">例</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-border">
+          @for (row of data.onbinTable; track row.ending) {
+            <tr class="bg-surface">
+              <td class="px-4 py-2.5">
+                <span class="rounded-full border border-border bg-bg px-2.5 py-1 text-xs font-bold text-text-secondary">{{ row.ending }}</span>
+              </td>
+              <td class="px-4 py-2.5 text-ink">{{ row.onbinType }}</td>
+              <td class="px-4 py-2.5 text-text-secondary">{{ row.change }}</td>
+              <td class="px-4 py-2.5 text-ink">{{ row.example }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="flex items-center gap-2.5 rounded-lg bg-sun-yellow/25 px-4 py-3.5 text-sm text-ink">
+    <i class="fa-regular fa-lightbulb text-[#B08514]"></i>
+    用法：先判斷動詞群別，再對照該欄位；最右「例外情況」欄標出該活用形特別注意的不規則個案（する・来る・行く・ある 等）。
+  </div>
+}

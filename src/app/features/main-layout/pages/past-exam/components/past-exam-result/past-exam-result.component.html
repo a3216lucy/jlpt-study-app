@@ -1,0 +1,86 @@
+<div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
+  <div class="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
+    <button
+      type="button"
+      (click)="store.backToOverview()"
+      class="flex items-center gap-1.5 rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-bold text-text-secondary transition hover:border-accent/40"
+    >
+      <i class="fa-solid fa-chevron-left text-xs"></i> 返回考古題
+    </button>
+    <p class="font-heading text-sm font-bold text-ink sm:text-base">{{ store.selectedExam()?.examLabel }}・考卷回顧</p>
+    <button
+      type="button"
+      (click)="store.restartSameExam()"
+      class="flex items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-bold text-white transition hover:brightness-105"
+    >
+      <i class="fa-solid fa-rotate-right text-xs"></i> 重新測驗
+    </button>
+  </div>
+
+  <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:gap-6">
+    <div class="flex flex-1 flex-col gap-4">
+      <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
+        <p class="font-heading text-lg font-bold text-ink">總成績 {{ store.totalPercent() }} 分</p>
+        <div class="flex gap-2">
+          <div class="flex flex-col items-center rounded-md bg-matcha-soft px-4 py-2">
+            <span class="font-heading text-lg font-bold text-matcha">{{ store.score() }} / {{ store.flatItems().length }}</span>
+            <span class="text-[11px] text-text-muted">答對題數</span>
+          </div>
+          <div class="flex flex-col items-center rounded-md bg-accent-soft px-4 py-2">
+            <span class="font-heading text-lg font-bold text-accent">{{ store.wrongItems().length }}</span>
+            <span class="text-[11px] text-text-muted">答錯</span>
+          </div>
+          <div class="flex flex-col items-center rounded-md bg-bg px-4 py-2">
+            <span class="font-heading text-lg font-bold text-ink">{{ store.totalPercent() }}%</span>
+            <span class="text-[11px] text-text-muted">正確率</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
+        <p class="font-heading text-base font-bold text-ink">各科目表現</p>
+        @for (s of store.sectionScores(); track s.section.id) {
+          <div class="flex flex-col gap-1.5">
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-ink">{{ categoryLabel(s.section) }}（{{ s.section.sectionLabel }}）</span>
+              <span class="text-text-secondary">
+                {{ s.score }} / {{ s.total }}
+                <span [class]="'ml-1 font-bold ' + scoreColorClass(scorePercent(s.score, s.total))">
+                  {{ scorePercent(s.score, s.total) }}%
+                </span>
+              </span>
+            </div>
+            <div class="h-2 w-full overflow-hidden rounded-full bg-bg">
+              <div
+                [class]="'h-full ' + scoreBarClass(scorePercent(s.score, s.total))"
+                [style.width.%]="scorePercent(s.score, s.total)"
+              ></div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="flex flex-1 flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
+      <div class="flex items-center justify-between">
+        <p class="font-heading text-base font-bold text-ink">錯題解析</p>
+        <span class="rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent">{{ store.wrongItems().length }} 題</span>
+      </div>
+      @if (store.wrongItems().length === 0) {
+        <p class="py-8 text-center text-sm text-text-muted">全部答對，太厲害了！</p>
+      } @else {
+        <div class="flex max-h-[560px] flex-col gap-3 overflow-y-auto">
+          @for (w of store.wrongItems(); track w.item.question.id) {
+            <div class="rounded-md bg-bg p-3.5">
+              <span class="rounded-full border border-border bg-surface px-2 py-0.5 text-[11px] font-bold text-text-secondary">
+                {{ categoryLabel(w.item.section) }} {{ w.item.question.problemLabel }}
+              </span>
+              <p class="mt-2 text-sm font-bold text-ink">{{ w.item.question.questionText || w.item.question.prompt }}</p>
+              <p class="mt-1 text-xs leading-5 text-text-secondary">{{ w.item.question.explanation }}</p>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
+  <div class="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
+    <button
+      type="button"
+      (click)="store.restart()"
+      class="flex items-center gap-1.5 rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-bold text-text-secondary transition hover:border-accent/40"
+    >
+      <i class="fa-solid fa-chevron-left text-xs"></i> 返回句型
+    </button>
+    <p class="font-heading text-sm font-bold text-ink sm:text-base">{{ store.selectedLevel() }} 句型測驗・測驗結果</p>
+    @if (store.score() < store.questions().length) {
+      <button
+        type="button"
+        (click)="store.retryWrongQuestions()"
+        class="flex items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-bold text-white transition hover:brightness-105"
+      >
+        <i class="fa-solid fa-rotate-left text-xs"></i> 錯題再測一次
+      </button>
+    }
+  </div>
+
+  <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
+    <div class="flex flex-col gap-0.5">
+      <p class="font-heading text-lg font-bold text-ink">測驗完成！</p>
+      <p class="text-xs text-text-muted">{{ store.examTitle() }}・{{ store.selectedLevel() }}</p>
+    </div>
+    <div class="flex items-center gap-3">
+      <div class="flex items-baseline gap-1">
+        <span class="font-heading text-3xl font-bold text-accent">{{ store.score() }}</span>
+        <span class="text-sm text-text-muted">/ {{ store.questions().length }} 題</span>
+      </div>
+      <div class="flex flex-col items-center rounded-md bg-matcha-soft px-4 py-2">
+        <span class="font-heading text-lg font-bold text-matcha">{{ scorePercent() }}%</span>
+        <span class="text-[11px] text-text-muted">正確率</span>
+      </div>
+      <div class="flex flex-col items-center rounded-md bg-accent-soft px-4 py-2">
+        <span class="font-heading text-lg font-bold text-accent">{{ store.questions().length - store.score() }}</span>
+        <span class="text-[11px] text-text-muted">答錯</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-3">
+    <div class="flex items-center justify-between">
+      <p class="font-heading text-base font-bold text-ink">錯誤回顧</p>
+      @if (store.score() < store.questions().length) {
+        <span class="text-xs text-text-muted">
+          {{ store.questions().length - store.score() }} 題答錯，已自動加入複習清單
+        </span>
+      }
+    </div>
+
+    @if (store.score() === store.questions().length) {
+      <p class="py-8 text-center text-sm text-text-muted">全部答對，太厲害了！</p>
+    } @else {
+      @for (q of store.questions(); track q.id; let i = $index) {
+        @let result = store.results()[i];
+        @if (result && !result.isCorrect) {
+          <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
+            <p class="text-sm font-bold text-ink">問題 {{ i + 1 }}　{{ q.questionText || q.prompt }}</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="rounded-full bg-accent-soft px-2.5 py-1 text-xs font-bold text-accent">
+                你的答案 {{ selectedOptionText(q, result.selectedOptionId) }}
+              </span>
+              <span class="rounded-full bg-matcha-soft px-2.5 py-1 text-xs font-bold text-matcha">
+                正確答案 {{ correctOptionText(q) }}
+              </span>
+            </div>
+            <div class="rounded-md bg-bg px-3.5 py-2.5">
+              <p class="text-xs font-bold text-text-muted">解析</p>
+              <p class="mt-1 text-sm text-text-secondary">{{ q.explanation }}</p>
+            </div>
+          </div>
+        }
+      }
+    }
+  </div>
+</div>

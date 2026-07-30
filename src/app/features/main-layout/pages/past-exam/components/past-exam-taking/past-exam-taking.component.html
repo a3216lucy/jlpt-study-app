@@ -1,0 +1,166 @@
+<div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
+  <div class="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
+    <div class="flex items-center gap-3">
+      <button
+        type="button"
+        (click)="store.backToOverview()"
+        class="flex items-center gap-1.5 rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-bold text-text-secondary transition hover:border-accent/40"
+      >
+        <i class="fa-solid fa-chevron-left text-xs"></i> 離開測驗
+      </button>
+      <div class="flex flex-col">
+        <p class="font-heading text-sm font-bold text-ink sm:text-base">{{ store.selectedExam()?.examLabel }}</p>
+        @if (store.currentSection(); as section) {
+          <span class="w-fit rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent">
+            {{ categoryLabel(section) }}・{{ section.sectionLabel }}
+          </span>
+        }
+      </div>
+    </div>
+    <button
+      type="button"
+      (click)="store.submitNow()"
+      class="rounded-full bg-accent px-5 py-2 text-sm font-bold text-white transition hover:brightness-105"
+    >
+      交卷
+    </button>
+  </div>
+
+  @if (store.currentSection().category !== 'reading' && store.currentSectionProblemGroups().length > 1) {
+    <div class="flex gap-1.5 overflow-x-auto pb-1">
+      @for (group of store.currentSectionProblemGroups(); track group.number) {
+        <span
+          [class]="
+            'shrink-0 rounded-full px-3.5 py-1.5 text-xs font-bold ' +
+            (store.currentProblemNumber() === group.number
+              ? 'bg-accent text-white'
+              : 'border border-border bg-surface text-text-secondary')
+          "
+        >
+          問題{{ group.number }} {{ group.label }}
+        </span>
+      }
+    </div>
+  }
+
+  <div class="flex flex-col gap-1.5">
+    <div class="flex items-center justify-between text-sm">
+      <span class="text-text-secondary">第 {{ store.currentIndex() + 1 }} 題 / 共 {{ store.flatItems().length }} 題</span>
+      <span class="text-xs text-text-muted">已作答 {{ store.answeredCount() }} 題</span>
+    </div>
+    <div class="h-1.5 w-full overflow-hidden rounded-full bg-bg">
+      <div class="h-full bg-accent transition-all" [style.width.%]="store.progress()"></div>
+    </div>
+  </div>
+
+  @if (store.currentQuestion(); as question) {
+    @if (splitPassage(question.prompt); as p) {
+      <!-- 読解：左右分割版面 -->
+      <div class="flex flex-col gap-4 lg:flex-row lg:items-start">
+        <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4 sm:p-5 lg:w-1/2">
+          <p class="font-heading text-sm font-bold text-ink">本文</p>
+          @if (p.intro) {
+            <p class="rounded-md bg-bg px-3 py-2 text-xs text-text-muted">{{ p.intro }}</p>
+          }
+          <p class="whitespace-pre-line text-sm leading-7 text-ink">{{ p.passage }}</p>
+        </div>
+
+        <div class="flex flex-col gap-3 lg:w-1/2">
+          <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4 sm:p-5">
+            <span class="w-fit rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent">
+              問 {{ store.currentIndex() + 1 }}
+            </span>
+            <p class="font-heading text-base font-bold text-ink">{{ question.questionText || question.prompt }}</p>
+            @if (question.questionTranslation) {
+              <p class="text-sm text-text-secondary">{{ question.questionTranslation }}</p>
+            }
+          </div>
+
+          <div class="flex flex-col gap-2">
+            @for (option of question.options; track option.id) {
+              <button
+                type="button"
+                (click)="store.selectOption(option)"
+                [class]="
+                  'flex items-center gap-3 rounded-lg border-2 px-4 py-3 text-left text-sm font-medium transition ' +
+                  optionCardClass(option)
+                "
+              >
+                <span
+                  [class]="
+                    'flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold ' +
+                    optionPrefixClass(option)
+                  "
+                >
+                  {{ $index + 1 }}
+                </span>
+                {{ option.text }}
+              </button>
+            }
+          </div>
+        </div>
+      </div>
+    } @else {
+      <!-- 語彙／文法：單題 -->
+      <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
+        <span class="w-fit rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent">
+          問 {{ store.currentIndex() + 1 }}
+        </span>
+        <p class="font-heading text-lg font-bold leading-relaxed text-ink">{{ question.questionText || question.prompt }}</p>
+        @if (question.questionTranslation) {
+          <p class="text-sm text-text-secondary">{{ question.questionTranslation }}</p>
+        }
+      </div>
+
+      <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        @for (option of question.options; track option.id) {
+          <button
+            type="button"
+            (click)="store.selectOption(option)"
+            [class]="
+              'flex items-center gap-3 rounded-lg border-2 px-4 py-3.5 text-left text-sm font-bold transition ' +
+              optionCardClass(option)
+            "
+          >
+            <span
+              [class]="
+                'flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ' +
+                optionPrefixClass(option)
+              "
+            >
+              {{ $index + 1 }}
+            </span>
+            {{ option.text }}
+          </button>
+        }
+      </div>
+    }
+
+    <div class="flex items-center justify-between">
+      <button
+        type="button"
+        (click)="store.toggleMarkQuestion(question.id)"
+        [class]="'flex items-center gap-1.5 text-sm transition ' + (store.isMarked(question.id) ? 'text-accent' : 'text-text-secondary hover:text-accent')"
+      >
+        <i [class]="(store.isMarked(question.id) ? 'fa-solid' : 'fa-regular') + ' fa-bookmark'"></i> 標記此題
+      </button>
+      <div class="flex gap-2">
+        <button
+          type="button"
+          (click)="store.prev()"
+          [disabled]="store.currentIndex() === 0"
+          class="rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-bold text-text-secondary transition hover:bg-bg disabled:opacity-40"
+        >
+          上一題
+        </button>
+        <button
+          type="button"
+          (click)="store.next()"
+          class="flex items-center gap-1.5 rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white transition hover:brightness-105"
+        >
+          {{ store.isLast() ? '交卷' : '下一題' }} <i class="fa-solid fa-arrow-right text-xs"></i>
+        </button>
+      </div>
+    </div>
+  }
+</div>

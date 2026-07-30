@@ -1,0 +1,61 @@
+@for (item of store.studyPlanStats(); track item.plan.id) {
+  <div class="flex flex-col gap-4 rounded-lg border border-border bg-surface p-4 sm:p-5 lg:p-6">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+      <div class="flex items-center gap-2">
+        <span class="rounded-full bg-accent-soft px-3 py-1 text-sm font-bold text-accent">
+          {{ item.plan.level }} 單字計畫
+        </span>
+        <span
+          [class]="
+            'rounded-full px-3 py-1 text-xs font-bold ' +
+            (item.plan.status === 'active' ? 'bg-matcha-soft text-matcha' : 'bg-bg text-text-secondary')
+          "
+        >
+          {{ item.plan.status === 'active' ? '進行中' : '已暫停' }}
+        </span>
+      </div>
+      <span class="text-xs text-text-muted">
+        開始 {{ item.plan.startDate }}・預計完成 {{ item.plan.endDate }}・每日新單字
+        {{ item.plan.dailyNewWords }}
+      </span>
+    </div>
+
+    <div class="flex flex-col gap-1.5">
+      <div class="flex items-center justify-between text-xs text-text-secondary">
+        <span>整體掌握</span>
+        <span class="font-heading font-bold text-ink">
+          {{ item.learnedCount + item.learningCount }} / {{ item.plan.totalWords }}
+        </span>
+      </div>
+      <div class="flex h-2.5 w-full overflow-hidden rounded-full bg-[#F1EAE0]">
+        <div class="bg-matcha" [style.flex]="item.learnedCount || 0"></div>
+        <div class="bg-sun-yellow" [style.flex]="item.learningCount || 0"></div>
+        <div class="flex-1"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-2.5">
+      <div class="flex flex-col items-center gap-0.5 rounded-md bg-bg px-2 py-2.5 text-center">
+        <span class="font-heading text-lg font-bold text-text-secondary">{{ item.newCount }}</span>
+        <span class="text-[11px] text-text-muted">未開始</span>
+      </div>
+      <div class="flex flex-col items-center gap-0.5 rounded-md bg-[#FFF3D6] px-2 py-2.5 text-center">
+        <span class="font-heading text-lg font-bold text-[#B08514]">{{ item.learningCount }}</span>
+        <span class="text-[11px] text-text-muted">複習中</span>
+      </div>
+      <div class="flex flex-col items-center gap-0.5 rounded-md bg-matcha-soft px-2 py-2.5 text-center">
+        <span class="font-heading text-lg font-bold text-matcha">{{ item.learnedCount }}</span>
+        <span class="text-[11px] text-text-muted">已掌握</span>
+      </div>
+      <div class="flex flex-col items-center gap-0.5 rounded-md bg-accent-soft px-2 py-2.5 text-center">
+        <span class="font-heading text-lg font-bold text-accent">{{ item.dueToday }}</span>
+        <span class="text-[11px] text-text-muted">今日待複習</span>
+      </div>
+    </div>
+  </div>
+} @empty {
+  <div class="flex flex-col items-center gap-2 rounded-lg border border-dashed border-accent/40 bg-accent-soft/40 px-6 py-8 text-center">
+    <p class="text-sm font-bold text-ink">尚未建立單字學習計畫</p>
+    <p class="text-xs text-text-secondary">到「單詞」頁面建立計畫，這裡就會顯示學習進度</p>
+  </div>
+}

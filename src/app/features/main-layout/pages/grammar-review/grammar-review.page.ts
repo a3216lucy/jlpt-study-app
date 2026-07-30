@@ -1,91 +1,13 @@
 // Cores
 import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
-// Angular
-import { RouterLink } from '@angular/router';
 // Store
-import type { KeigoCategoryCard, KeigoFormationGroup } from './grammar-review.model';
 import { GrammarReviewStore } from './grammar-review.store';
-
-interface VerbClassCard {
-  badge: string;
-  badgeClass: string;
-  title: string;
-  description: string;
-  examples: string;
-}
-
-const VERB_CLASS_CARDS: VerbClassCard[] = [
-  {
-    badge: 'I 群',
-    badgeClass: 'bg-accent text-white',
-    title: '五段動詞',
-    description: '語尾為 u 段音（く・ぐ・す・つ・ぬ・ぶ・む・る）',
-    examples: '書く・話す・待つ・飲む',
-  },
-  {
-    badge: 'II 群',
-    badgeClass: 'bg-matcha text-white',
-    title: '一段動詞',
-    description: 'る 前為 i/e 段音，去る＋活用',
-    examples: '食べる・見る・起きる',
-  },
-  {
-    badge: 'III 群',
-    badgeClass: 'bg-sun-yellow text-ink',
-    title: '不規則動詞',
-    description: 'サ変・力変，需個別記憶',
-    examples: 'する・来る',
-  },
-];
-
-const KEIGO_CATEGORY_CARDS: (KeigoCategoryCard & { badgeClass: string })[] = [
-  {
-    label: '尊敬語',
-    badgeClass: 'bg-accent text-white',
-    description: '抬高對方（動作者）的行為，表示尊敬',
-    example: '先生が話される／いらっしゃる',
-  },
-  {
-    label: '謙讓語',
-    badgeClass: 'bg-matcha text-white',
-    description: '壓低自己一方的行為，間接抬高對方',
-    example: '私が伺う／申し上げる',
-  },
-  {
-    label: '丁寧語',
-    badgeClass: 'bg-sun-yellow text-ink',
-    description: '用です・ます讓語氣禮貌，對聽者客氣',
-    example: '行きます／本です',
-  },
-];
-
-const KEIGO_FORMATION_GROUPS: (KeigoFormationGroup & { badgeClass: string })[] = [
-  {
-    label: '尊敬語',
-    badgeClass: 'bg-accent text-white',
-    rules: [
-      { rule: 'お＋ます形＋になる', example: '例：お読みになる' },
-      { rule: '～れる・られる', example: '例：話される・来られる' },
-      { rule: '特別動詞', example: '例：いらっしゃる 等' },
-      { rule: 'て形＋ください→お/ご＋ます形/漢語＋ください', example: '例：お待ちください・ご確認ください' },
-      { rule: 'てくださる→お/ご＋ます形/漢語＋くださる', example: '例：お越しくださる' },
-    ],
-  },
-  {
-    label: '謙讓語',
-    badgeClass: 'bg-matcha text-white',
-    rules: [
-      { rule: 'お＋ます形＋する', example: '例：お持ちする' },
-      { rule: 'ご＋漢語＋する', example: '例：ご案内する' },
-      { rule: '特別動詞', example: '例：伺う・申す 等' },
-      { rule: 'ていただく→お/ご＋ます形/漢語＋いただく', example: '例：お待ちいただく・ご了承いただく' },
-      { rule: 'お/ご＋ます形/漢語＋申し上げる', example: '例：お礼申し上げる（傳達、依頼、祝賀、謝罪等）' },
-    ],
-  },
-];
-
-const KEIGO_TIP =
-  '注意：有特殊動詞時優先用特殊形（例：食べる→召し上がる），不要再套「お～になる」造成雙重敬語。';
+// Components
+import { GrammarConjugationTabComponent } from './components/grammar-conjugation-tab/grammar-conjugation-tab.component';
+import { GrammarKeigoTabComponent } from './components/grammar-keigo-tab/grammar-keigo-tab.component';
+import { GrammarTransitivityTabComponent } from './components/grammar-transitivity-tab/grammar-transitivity-tab.component';
+import { GrammarRulesTabComponent } from './components/grammar-rules-tab/grammar-rules-tab.component';
+import { GrammarCompoundVerbTabComponent } from './components/grammar-compound-verb-tab/grammar-compound-verb-tab.component';
 
 const SEARCH_PLACEHOLDER: Record<string, string> = {
   conjugation: '搜尋動詞或活用形…',
@@ -99,7 +21,13 @@ const SEARCH_PLACEHOLDER: Record<string, string> = {
   selector: 'app-grammar-review',
   templateUrl: './grammar-review.page.html',
   standalone: true,
-  imports: [RouterLink],
+  imports: [
+    GrammarConjugationTabComponent,
+    GrammarKeigoTabComponent,
+    GrammarTransitivityTabComponent,
+    GrammarRulesTabComponent,
+    GrammarCompoundVerbTabComponent,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [GrammarReviewStore],
 })
@@ -107,13 +35,6 @@ export class GrammarReviewPage implements OnInit {
   // Dependencies
   // --------------------------------------------------------------------
   readonly store = inject(GrammarReviewStore);
-
-  // Constants
-  // --------------------------------------------------------------------
-  readonly verbClassCards = VERB_CLASS_CARDS;
-  readonly keigoCategoryCards = KEIGO_CATEGORY_CARDS;
-  readonly keigoFormationGroups = KEIGO_FORMATION_GROUPS;
-  readonly keigoTip = KEIGO_TIP;
 
   // Lifecycle
   // --------------------------------------------------------------------
@@ -125,20 +46,5 @@ export class GrammarReviewPage implements OnInit {
   // --------------------------------------------------------------------
   searchPlaceholder(): string {
     return SEARCH_PLACEHOLDER[this.store.activeTab()] ?? '搜尋…';
-  }
-
-  /** allForms 表格儲存格內容格式為「規則\n例字」，拆成兩行分別渲染 */
-  splitCell(value: string): { rule: string; example: string } {
-    const idx = value.indexOf('\n');
-    if (idx === -1) return { rule: '', example: value };
-    return { rule: value.slice(0, idx), example: value.slice(idx + 1) };
-  }
-
-  /** 把 notes 字串按行拆開，標記 注意/辨別/重要 開頭的行為 callout */
-  parseNotes(notes: string): { text: string; isCallout: boolean }[] {
-    return notes.split('\n').map((line) => ({
-      text: line,
-      isCallout: /^(注意|辨別|重要|核心語感|常用固定搭配|重點|對比|語感重點)[：:]/.test(line),
-    }));
   }
 }

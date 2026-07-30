@@ -1,0 +1,90 @@
+<!-- 級別篩選 -->
+<div class="flex flex-wrap items-center gap-2">
+  <span class="text-xs font-bold text-text-muted">級別</span>
+  @for (lv of levelOptions; track lv.value) {
+    <button
+      type="button"
+      (click)="store.selectLevelFilter(lv.value)"
+      [class]="
+        'rounded-full px-3.5 py-1.5 text-[13px] font-bold transition ' +
+        (store.levelFilter() === lv.value
+          ? 'bg-matcha text-white'
+          : 'border border-border bg-surface text-text-secondary hover:border-matcha/40')
+      "
+    >
+      {{ lv.label }}
+    </button>
+  }
+</div>
+
+<!-- 分類標記篩選 -->
+<div class="flex flex-wrap items-center gap-2">
+  <span class="text-xs font-bold text-text-muted">分類標記</span>
+  <button
+    type="button"
+    (click)="store.selectTagFilter('all')"
+    [class]="
+      'rounded-full px-3.5 py-1.5 text-[13px] font-bold transition ' +
+      (store.tagFilter() === 'all'
+        ? 'bg-accent text-white'
+        : 'border border-border bg-surface text-text-secondary hover:border-accent/40')
+    "
+  >
+    全部
+  </button>
+  <button
+    type="button"
+    (click)="store.selectTagFilter('frequent')"
+    [class]="
+      'rounded-full px-3.5 py-1.5 text-[13px] font-bold transition ' +
+      (store.tagFilter() === 'frequent'
+        ? 'bg-accent text-white'
+        : 'border border-border bg-surface text-text-secondary hover:border-accent/40')
+    "
+  >
+    常考 <span class="ml-0.5 opacity-80">{{ store.frequentlyTestedCount() }}</span>
+  </button>
+  <button
+    type="button"
+    (click)="store.selectTagFilter('personal-review')"
+    [class]="
+      'rounded-full px-3.5 py-1.5 text-[13px] font-bold transition ' +
+      (store.tagFilter() === 'personal-review'
+        ? 'bg-accent text-white'
+        : 'border border-border bg-surface text-text-secondary hover:border-accent/40')
+    "
+  >
+    個人複習整理 <span class="ml-0.5 opacity-80">{{ store.personalReviewCount() }}</span>
+  </button>
+</div>
+
+<!-- 分類篩選 -->
+<div class="flex flex-wrap items-center gap-2">
+  <span class="text-xs font-bold text-text-muted">單字詞性</span>
+  <button
+    type="button"
+    (click)="store.selectCategory(null)"
+    [class]="
+      'rounded-full px-3.5 py-1.5 text-[13px] font-bold transition ' +
+      (!store.selectedCategoryId()
+        ? 'bg-ink text-white'
+        : 'border border-border bg-surface text-text-secondary hover:border-ink/30')
+    "
+  >
+    全部
+  </button>
+  @for (cat of filterCategories; track cat.id) {
+    <button
+      type="button"
+      (click)="store.selectCategory(cat.id)"
+      [class]="
+        'rounded-full px-3.5 py-1.5 text-[13px] font-medium transition ' +
+        (store.selectedCategoryId() === cat.id
+          ? 'bg-ink font-bold text-white'
+          : 'border border-border bg-surface text-text-secondary hover:border-ink/30')
+      "
+    >
+      {{ cat.label }}
+    </button>
+  }
+</div>
