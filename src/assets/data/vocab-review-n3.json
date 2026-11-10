@@ -989,6 +989,448 @@
             }
           ],
           "confusionNote": "⚠ 對象是人（多為小孩）。食物變甜＝甘くする；小看＝甘く見る；考試變簡單＝易しくなる。"
+        },
+        {
+          "id": "v-1512-arasou",
+          "word": "争う",
+          "reading": "あらそう",
+          "meaning": "爭奪、競爭",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "二つの会社が販売権を争っている。",
+              "zh": "兩家公司在爭奪銷售權。"
+            }
+          ],
+          "confusionNote": "⚠ 讀音易混：戦う（たたかう）＝戰鬥；競う（きそう）＝競爭。優勝を争う＝爭冠。"
+        },
+        {
+          "id": "v-1512-nigoru",
+          "word": "濁る",
+          "reading": "にごる",
+          "meaning": "（水）混濁",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "雨の後、川の水が濁っている。",
+              "zh": "下雨後河水很混濁。"
+            }
+          ],
+          "confusionNote": "⚠ 反義：澄む（すむ）＝清澈。曇る（くもる）＝陰天／玻璃起霧。"
+        },
+        {
+          "id": "v-1512-tsubusu",
+          "word": "つぶす",
+          "reading": "つぶす",
+          "meaning": "弄碎；打發（時間）",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "駅前の本屋で時間をつぶした。",
+              "zh": "在車站前的書店打發時間。"
+            }
+          ],
+          "confusionNote": "⚠ 時間をつぶす＝打發時間。約束を破る（やぶる）＝違約；壊す（こわす）＝弄壞。"
+        },
+        {
+          "id": "v-1512-sasayaku",
+          "word": "ささやく",
+          "reading": "ささやく",
+          "meaning": "低聲細語、耳語",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼女は友達の耳元でささやいた。",
+              "zh": "她在朋友耳邊低聲說話。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：ささやくように＝小声で。"
+        },
+        {
+          "id": "v-1607-osameru",
+          "word": "納める",
+          "reading": "おさめる",
+          "meaning": "繳納",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "期日までに税金を納める。",
+              "zh": "在期限前繳稅。"
+            }
+          ],
+          "confusionNote": "⚠ 同音異字：収める（收進）、治める（治理）、修める（修習）。"
+        },
+        {
+          "id": "v-1607-otoru",
+          "word": "劣る",
+          "reading": "おとる",
+          "meaning": "不如、遜色",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "この製品は品質が他社より劣る。",
+              "zh": "這個產品品質比別家差。"
+            }
+          ],
+          "confusionNote": "⚠ 〜より劣る＝比〜差；反義 優る（まさる）。"
+        },
+        {
+          "id": "v-1607-kogeru",
+          "word": "焦げる",
+          "reading": "こげる",
+          "meaning": "燒焦",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "火が強すぎて魚が焦げた。",
+              "zh": "火太大，魚燒焦了。"
+            }
+          ],
+          "confusionNote": "⚠ 同一漢字：焦る（あせる）＝焦急。焼ける＝烤熟。"
+        },
+        {
+          "id": "v-1607-shoujiru",
+          "word": "生じる",
+          "reading": "しょうじる",
+          "meaning": "產生、發生",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "習慣の違いから誤解が生じた。",
+              "zh": "因習慣不同而產生誤解。"
+            }
+          ],
+          "confusionNote": "⚠ 用於問題・誤解・變化等抽象事物。植物生長＝栽培される；人才輩出＝輩出する。"
+        },
+        {
+          "id": "v-1607-shoutotsu",
+          "word": "衝突する",
+          "reading": "しょうとつする",
+          "meaning": "撞上；衝突",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "車が電柱に衝突した。",
+              "zh": "車撞上了電線桿。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：衝突する＝ぶつかる。意見が衝突する＝意見衝突。"
+        },
+        {
+          "id": "v-1612-tomonau",
+          "word": "伴う",
+          "reading": "ともなう",
+          "meaning": "伴隨",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "この仕事は危険を伴う。",
+              "zh": "這份工作伴隨危險。"
+            }
+          ],
+          "confusionNote": "⚠ 〜を伴う＝伴隨〜。払う＝支付；扱う＝處理；救う＝拯救。"
+        },
+        {
+          "id": "v-1612-maneku",
+          "word": "招く",
+          "reading": "まねく",
+          "meaning": "邀請、招待；招致",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "友人を家に招いた。",
+              "zh": "邀請朋友到家裡。"
+            }
+          ],
+          "confusionNote": "⚠ 「招」＝招待的招。誤解を招く＝招致誤解。"
+        },
+        {
+          "id": "v-1612-warikomu",
+          "word": "割り込む",
+          "reading": "わりこむ",
+          "meaning": "插隊、擠進",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "列に割り込まないでください。",
+              "zh": "請不要插隊。"
+            }
+          ],
+          "confusionNote": "⚠ 当てはまる＝符合；付け加える＝附加；行き着く＝抵達。"
+        },
+        {
+          "id": "v-1612-sabiru",
+          "word": "さびる",
+          "reading": "さびる",
+          "meaning": "生鏽",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "雨にぬれて自転車がさびた。",
+              "zh": "自行車淋雨生鏽了。"
+            }
+          ],
+          "confusionNote": "⚠ 只用於金屬。食物壞＝腐る；花枯＝枯れる。"
+        },
+        {
+          "id": "v-1707-shiboru",
+          "word": "絞る",
+          "reading": "しぼる",
+          "meaning": "擰；縮小範圍",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "研究のテーマを一つに絞った。",
+              "zh": "把研究主題縮小到一個。"
+            }
+          ],
+          "confusionNote": "⚠ テーマを絞る＝聚焦主題；タオルを絞る＝擰毛巾。"
+        },
+        {
+          "id": "v-1707-kooru",
+          "word": "凍る",
+          "reading": "こおる",
+          "meaning": "結冰",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "寒くて道が凍っている。",
+              "zh": "太冷了路面結冰。"
+            }
+          ],
+          "confusionNote": "⚠ 冷凍（れいとう）的「凍」。"
+        },
+        {
+          "id": "v-1707-kuyamu",
+          "word": "悔やむ",
+          "reading": "くやむ",
+          "meaning": "後悔",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "過去の失敗を悔やんでも仕方がない。",
+              "zh": "後悔過去的失敗也沒用。"
+            }
+          ],
+          "confusionNote": "⚠ 悔しい（くやしい）＝不甘心。"
+        },
+        {
+          "id": "v-1707-yuzuru",
+          "word": "譲る",
+          "reading": "ゆずる",
+          "meaning": "讓給、轉讓",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "電車でお年寄りに席を譲った。",
+              "zh": "在電車上讓座給老人。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：譲る≒あげる。"
+        },
+        {
+          "id": "v-1707-ryakusu",
+          "word": "略す",
+          "reading": "りゃくす",
+          "meaning": "省略",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "詳しい説明は略します。",
+              "zh": "詳細說明省略。"
+            }
+          ],
+          "confusionNote": "⚠ 免運費＝無料；拿掉牆＝なくす。"
+        },
+        {
+          "id": "v-1707-oou",
+          "word": "覆う",
+          "reading": "おおう",
+          "meaning": "覆蓋",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "山は雪に覆われている。",
+              "zh": "山被雪覆蓋。"
+            }
+          ],
+          "confusionNote": "⚠ 四周包圍＝囲む。"
+        },
+        {
+          "id": "v-1712-midareru",
+          "word": "乱れる",
+          "reading": "みだれる",
+          "meaning": "凌亂",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "風で髪が乱れた。",
+              "zh": "頭髮被風吹亂了。"
+            }
+          ],
+          "confusionNote": "⚠ 崩れる＝崩塌；潰れる＝壓扁；汚れる＝弄髒。"
+        },
+        {
+          "id": "v-1712-kakaeru",
+          "word": "抱える",
+          "reading": "かかえる",
+          "meaning": "抱著；承擔",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼は多くの問題を抱えている。",
+              "zh": "他背負著很多問題。"
+            }
+          ],
+          "confusionNote": "⚠ 捕まえる＝抓住；押さえる＝壓住；支える＝支撐。"
+        },
+        {
+          "id": "v-1712-shitagau",
+          "word": "従う",
+          "reading": "したがう",
+          "meaning": "遵從、服從",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "先生の指示に従ってください。",
+              "zh": "請遵照老師的指示。"
+            }
+          ],
+          "confusionNote": "⚠ 沿う＝沿著；伴う＝伴隨；頼る＝依靠。"
+        },
+        {
+          "id": "v-1712-uchikesu",
+          "word": "打ち消す",
+          "reading": "うちけす",
+          "meaning": "否定、消除",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼はうわさをきっぱり打ち消した。",
+              "zh": "他斷然否認了傳聞。"
+            }
+          ],
+          "confusionNote": "⚠ 入れ替える＝替換；追い返す＝趕回；差し引く＝扣除。"
+        },
+        {
+          "id": "v-1712-mukatsuku",
+          "word": "むかつく",
+          "reading": "むかつく",
+          "meaning": "火大、生氣（口語）",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼の態度にはむかつく。",
+              "zh": "他的態度讓人火大。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：むかつく＝怒る。"
+        },
+        {
+          "id": "v-1712-yabureru",
+          "word": "破れる",
+          "reading": "やぶれる",
+          "meaning": "（紙、布）破掉",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "紙袋が破れてしまった。",
+              "zh": "紙袋破了。"
+            }
+          ],
+          "confusionNote": "⚠ 玻璃碎＝割れる；樹枝斷＝折れる；食物壞＝腐る。"
+        },
+        {
+          "id": "v-1712-chirakasu",
+          "word": "散らかす",
+          "reading": "ちらかす",
+          "meaning": "弄亂、亂丟",
+          "pos": "verb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "子供がおもちゃを散らかした。",
+              "zh": "小孩把玩具丟得到處都是。"
+            }
+          ],
+          "confusionNote": "⚠ 分配＝配る；分次＝分ける。"
         }
       ]
     },
@@ -1487,6 +1929,244 @@
             }
           ],
           "confusionNote": "⚠ 言い換え：おそらく＝たぶん，常接〜だろう／〜と思う。やはり＝果然；当然＝當然；絶対＝絕對。"
+        },
+        {
+          "id": "adv-1512-yaya",
+          "word": "やや",
+          "reading": "やや",
+          "meaning": "稍微、略微",
+          "pos": "adverb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "今日は昨日よりやや暖かい。",
+              "zh": "今天比昨天稍微暖和一點。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：やや＝少し。"
+        },
+        {
+          "id": "adv-1512-katsute",
+          "word": "かつて",
+          "reading": "かつて",
+          "meaning": "以前、曾經",
+          "pos": "adverb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "ここはかつて小さな漁村だった。",
+              "zh": "這裡以前是個小漁村。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：かつて＝以前。かつてない＝前所未有。"
+        },
+        {
+          "id": "adv-1512-ittan",
+          "word": "いったん",
+          "reading": "いったん",
+          "meaning": "暫且、先（做某事）",
+          "pos": "adverb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "いったん家に帰ってから、また出かけた。",
+              "zh": "先回家一趟再出門。"
+            }
+          ],
+          "confusionNote": "⚠ いったん＝暫時〜之後還會再〜。表示「一次」要用 一度（いちど）。"
+        },
+        {
+          "id": "adv-1512-tappuri",
+          "word": "たっぷり",
+          "reading": "たっぷり",
+          "meaning": "充足、滿滿的",
+          "pos": "adverb-onomatopoeia",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "野菜がたっぷり入ったスープ。",
+              "zh": "加了滿滿蔬菜的湯。"
+            }
+          ],
+          "confusionNote": "⚠ 擬態語比較：ふんわり＝鬆軟；すっきり＝清爽；ぼんやり＝模糊、發呆。"
+        },
+        {
+          "id": "adv-1607-tabitabi",
+          "word": "たびたび",
+          "reading": "たびたび",
+          "meaning": "屢次、好幾次",
+          "pos": "adverb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼はたびたび遅刻する。",
+              "zh": "他屢次遲到。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：たびたび＝何度も。"
+        },
+        {
+          "id": "adv-1607-jikani",
+          "word": "じかに",
+          "reading": "じかに",
+          "meaning": "直接",
+          "pos": "adverb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "社長にじかに話を聞いた。",
+              "zh": "直接聽社長說了。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：じかに（直に）＝直接。"
+        },
+        {
+          "id": "adv-1607-nonbiri",
+          "word": "のんびり",
+          "reading": "のんびり",
+          "meaning": "悠閒地",
+          "pos": "adverb-onomatopoeia",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "休日は家でのんびり過ごした。",
+              "zh": "假日在家悠閒度過。"
+            }
+          ],
+          "confusionNote": "⚠ ぐっすり只搭配「眠る」；だぶだぶ＝鬆垮；がらがら＝空蕩蕩。"
+        },
+        {
+          "id": "adv-1612-guttari",
+          "word": "ぐったり",
+          "reading": "ぐったり",
+          "meaning": "筋疲力盡、癱軟",
+          "pos": "adverb-onomatopoeia",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "暑さでぐったりしてしまった。",
+              "zh": "因為太熱整個人癱了。"
+            }
+          ],
+          "confusionNote": "⚠ しっかり＝扎實；すっきり＝清爽；ぎっしり＝塞滿。"
+        },
+        {
+          "id": "adv-1612-tsuneni",
+          "word": "常に",
+          "reading": "つねに",
+          "meaning": "總是、經常",
+          "pos": "adverb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼は常に笑顔でいる。",
+              "zh": "他總是笑容滿面。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：常に＝いつも。"
+        },
+        {
+          "id": "adv-1612-sonouchi",
+          "word": "そのうち",
+          "reading": "そのうち",
+          "meaning": "不久、遲早",
+          "pos": "adverb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "練習すればそのうちできるようになる。",
+              "zh": "練習的話遲早會學會。"
+            }
+          ],
+          "confusionNote": "⚠ 必ずしも〜ない＝不一定；たとえ〜ても＝即使。"
+        },
+        {
+          "id": "adv-1707-hisohiso",
+          "word": "ひそひそ",
+          "reading": "ひそひそ",
+          "meaning": "竊竊私語",
+          "pos": "adverb-onomatopoeia",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "二人はひそひそ話していた。",
+              "zh": "兩人在竊竊私語。"
+            }
+          ],
+          "confusionNote": "⚠ うろうろ＝徘徊；ばっさり＝一刀砍斷。"
+        },
+        {
+          "id": "adv-1707-tokkuni",
+          "word": "とっくに",
+          "reading": "とっくに",
+          "meaning": "早就",
+          "pos": "adverb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "会議はとっくに終わっています。",
+              "zh": "會議早就結束了。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：とっくに＝ずっと前に。"
+        },
+        {
+          "id": "adv-1712-girigiri",
+          "word": "ぎりぎり",
+          "reading": "ぎりぎり",
+          "meaning": "勉強、剛好及時",
+          "pos": "adverb-onomatopoeia",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "締め切りぎりぎりで提出した。",
+              "zh": "在截止前勉強交出去了。"
+            }
+          ],
+          "confusionNote": "⚠ ばったり＝偶然碰見；がらがら＝空蕩蕩。"
+        },
+        {
+          "id": "adv-1712-isseini",
+          "word": "いっせいに",
+          "reading": "いっせいに",
+          "meaning": "一齊、同時",
+          "pos": "adverb",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "合図で選手がいっせいに走り出した。",
+              "zh": "一聲令下選手們一齊衝出。"
+            }
+          ],
+          "confusionNote": "⚠ 只用於多人同一瞬間做同一動作。"
         }
       ]
     },
@@ -4083,6 +4763,1723 @@
             }
           ],
           "confusionNote": "⚠ 行方＝不知道去哪了（行方不明＝失蹤）。事先決定的目的地＝行き先（いきさき）；前方＝前方・行く手。"
+        },
+        {
+          "id": "n-1512-kyohi",
+          "word": "拒否",
+          "reading": "きょひ",
+          "meaning": "拒絕",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼は取材を拒否した。",
+              "zh": "他拒絕了採訪。"
+            }
+          ],
+          "confusionNote": "⚠ 讀音是短音きょ＋ひ，不是きょう。拒絶（きょぜつ）＝拒絕。"
+        },
+        {
+          "id": "n-1512-songai",
+          "word": "損害",
+          "reading": "そんがい",
+          "meaning": "損害、損失",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "台風で農作物に大きな損害が出た。",
+              "zh": "颱風對農作物造成很大損失。"
+            }
+          ],
+          "confusionNote": "⚠ 讀音そんがい。易混：災害（さいがい）＝災害；被害（ひがい）＝受害。"
+        },
+        {
+          "id": "n-1512-genshou",
+          "word": "現象",
+          "reading": "げんしょう",
+          "meaning": "現象",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "これは珍しい自然現象だ。",
+              "zh": "這是罕見的自然現象。"
+            }
+          ],
+          "confusionNote": "⚠ 「象」讀しょう（現象・印象），動物「象」讀ぞう。"
+        },
+        {
+          "id": "n-1512-nikui",
+          "word": "憎い",
+          "reading": "にくい",
+          "meaning": "可恨、可憎",
+          "pos": "adjective",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "犯人が憎い。",
+              "zh": "犯人很可恨。"
+            }
+          ],
+          "confusionNote": "⚠ 憎い＝可恨；怖い（こわい）＝可怕；ずるい＝狡猾；ひどい＝過分。"
+        },
+        {
+          "id": "n-1512-konran",
+          "word": "混乱",
+          "reading": "こんらん",
+          "meaning": "混亂",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "事故で駅が混乱している。",
+              "zh": "因為事故車站一片混亂。"
+            }
+          ],
+          "confusionNote": "⚠ 混乱＝混亂；混雑（こんざつ）＝擁擠。"
+        },
+        {
+          "id": "n-1512-shiteki",
+          "word": "指摘",
+          "reading": "してき",
+          "meaning": "指出",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "先生に間違いを指摘された。",
+              "zh": "被老師指出錯誤。"
+            }
+          ],
+          "confusionNote": "⚠ 「摘」不是「的」。指摘する＝指出缺點或問題。"
+        },
+        {
+          "id": "n-1512-azayaka",
+          "word": "鮮やか",
+          "reading": "あざやか",
+          "meaning": "鮮豔、鮮明",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "秋の山は紅葉が鮮やかだ。",
+              "zh": "秋天的山紅葉很鮮豔。"
+            }
+          ],
+          "confusionNote": "⚠ 「鮮」＝新鮮的鮮。晴れやか＝晴朗；濃やか（こまやか）＝細膩。"
+        },
+        {
+          "id": "n-1512-ouendan",
+          "word": "応援団",
+          "reading": "おうえんだん",
+          "meaning": "啦啦隊、後援團",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "応援団が大きな声で応援している。",
+              "zh": "啦啦隊大聲加油。"
+            }
+          ],
+          "confusionNote": "⚠ 〜団＝團體（選手団・観光団）。"
+        },
+        {
+          "id": "n-1512-akueikyou",
+          "word": "悪影響",
+          "reading": "あくえいきょう",
+          "meaning": "不良影響",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "スマホの使いすぎは目に悪影響を与える。",
+              "zh": "過度使用手機對眼睛有不良影響。"
+            }
+          ],
+          "confusionNote": "⚠ 接頭語「悪」：悪影響・悪循環（あくじゅんかん）。"
+        },
+        {
+          "id": "n-1512-seikouritsu",
+          "word": "成功率",
+          "reading": "せいこうりつ",
+          "meaning": "成功率",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "この手術の成功率は高い。",
+              "zh": "這個手術的成功率很高。"
+            }
+          ],
+          "confusionNote": "⚠ 〜率＝比率（合格率・出生率）；〜割＝成（一割＝10%）。"
+        },
+        {
+          "id": "n-1512-genjitsubanare",
+          "word": "現実離れ",
+          "reading": "げんじつばなれ",
+          "meaning": "脫離現實",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼の計画は現実離れしている。",
+              "zh": "他的計畫脫離現實。"
+            }
+          ],
+          "confusionNote": "⚠ 〜離れ＝脫離〜（活字離れ・理科離れ）。"
+        },
+        {
+          "id": "n-1512-fuu",
+          "word": "〜風",
+          "reading": "ふう",
+          "meaning": "〜風格、〜式",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "ヨーロッパ風の建物が並んでいる。",
+              "zh": "歐式建築林立。"
+            }
+          ],
+          "confusionNote": "⚠ 國名・地名＋風＝〜樣式（和風・中華風）。"
+        },
+        {
+          "id": "n-1512-yosoku",
+          "word": "予測",
+          "reading": "よそく",
+          "meaning": "預測",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "データから将来の人口を予測する。",
+              "zh": "從資料預測未來人口。"
+            }
+          ],
+          "confusionNote": "⚠ 予報＝（天氣）預報；予感＝預感；予習＝預習。"
+        },
+        {
+          "id": "n-1512-kanryou",
+          "word": "完了",
+          "reading": "かんりょう",
+          "meaning": "完成、結束",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "登録が完了しました。",
+              "zh": "註冊完成了。"
+            }
+          ],
+          "confusionNote": "⚠ 手続きが完了する。達成＝達成目標；実現＝實現夢想。"
+        },
+        {
+          "id": "n-1512-baransu",
+          "word": "バランス",
+          "reading": "バランス",
+          "meaning": "平衡、均衡",
+          "pos": "noun-katakana",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "栄養のバランスを考えて食事をする。",
+              "zh": "考慮營養均衡來用餐。"
+            }
+          ],
+          "confusionNote": "⚠ 栄養のバランス・バランスを取る（保持平衡）。"
+        },
+        {
+          "id": "n-1512-soui",
+          "word": "相違",
+          "reading": "そうい",
+          "meaning": "差異、分歧",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "二人の意見には大きな相違がある。",
+              "zh": "兩人的意見有很大分歧。"
+            }
+          ],
+          "confusionNote": "⚠ 意見の相違。対比＝對比；間隔＝間隔。"
+        },
+        {
+          "id": "n-1512-myou",
+          "word": "妙",
+          "reading": "みょう",
+          "meaning": "奇怪、奇妙",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "夜中に妙な音が聞こえた。",
+              "zh": "半夜聽到奇怪的聲音。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：妙な＝変な。"
+        },
+        {
+          "id": "n-1512-sakusei",
+          "word": "作成",
+          "reading": "さくせい",
+          "meaning": "製作（文件、資料）",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "会議の資料を作成する。",
+              "zh": "製作會議資料。"
+            }
+          ],
+          "confusionNote": "⚠ 只用於文件・計畫書。成立公司＝設立；生產水果＝生産。"
+        },
+        {
+          "id": "n-1512-chuudan",
+          "word": "中断",
+          "reading": "ちゅうだん",
+          "meaning": "中斷",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "雨で試合が中断された。",
+              "zh": "比賽因雨中斷。"
+            }
+          ],
+          "confusionNote": "⚠ 中断＝進行中暫停；中止＝取消（還沒開始或不再進行）。"
+        },
+        {
+          "id": "n-1512-takumashii",
+          "word": "たくましい",
+          "reading": "たくましい",
+          "meaning": "堅強、健壯",
+          "pos": "adjective",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2015年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼は困難に負けず、たくましく生きている。",
+              "zh": "他不畏困難、堅強地活著。"
+            }
+          ],
+          "confusionNote": "⚠ 用於人的身體或精神。物品結實＝丈夫（じょうぶ）。"
+        },
+        {
+          "id": "n-1607-chiryou",
+          "word": "治療",
+          "reading": "ちりょう",
+          "meaning": "治療",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "病院で治療を受けた。",
+              "zh": "在醫院接受治療。"
+            }
+          ],
+          "confusionNote": "⚠ 讀音ちりょう（長音）。"
+        },
+        {
+          "id": "n-1607-hihyou",
+          "word": "批評",
+          "reading": "ひひょう",
+          "meaning": "評論、批評",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "新聞に映画の批評が載った。",
+              "zh": "報紙刊登了電影評論。"
+            }
+          ],
+          "confusionNote": "⚠ 「評」讀ひょう（評判・評価）。"
+        },
+        {
+          "id": "n-1607-kanketsu",
+          "word": "簡潔",
+          "reading": "かんけつ",
+          "meaning": "簡潔",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "要点を簡潔に説明してください。",
+              "zh": "請簡潔說明要點。"
+            }
+          ],
+          "confusionNote": "⚠ 完結（かんけつ）＝完結，同音不同字。"
+        },
+        {
+          "id": "n-1607-sanshou",
+          "word": "参照",
+          "reading": "さんしょう",
+          "meaning": "參照、參閱",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "詳しくは資料をご参照ください。",
+              "zh": "詳情請參閱資料。"
+            }
+          ],
+          "confusionNote": "⚠ 参考（さんこう）＝參考，讀音不同。"
+        },
+        {
+          "id": "n-1607-shoujou",
+          "word": "症状",
+          "reading": "しょうじょう",
+          "meaning": "症狀",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "風邪の症状が出てきた。",
+              "zh": "出現感冒症狀了。"
+            }
+          ],
+          "confusionNote": "⚠ 「症」病字旁；「障」是障害的障。"
+        },
+        {
+          "id": "n-1607-kokoroyoi",
+          "word": "快い",
+          "reading": "こころよい",
+          "meaning": "愉快、爽快",
+          "pos": "adjective",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼は快く手伝ってくれた。",
+              "zh": "他爽快地幫了我。"
+            }
+          ],
+          "confusionNote": "⚠ 快く引き受ける・応じる＝欣然答應。"
+        },
+        {
+          "id": "n-1607-ibunka",
+          "word": "異文化",
+          "reading": "いぶんか",
+          "meaning": "異國文化",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "留学で異文化に触れた。",
+              "zh": "透過留學接觸了異文化。"
+            }
+          ],
+          "confusionNote": "⚠ 異〜＝不同的〜（異業種・異性）。"
+        },
+        {
+          "id": "n-1607-nendaijun",
+          "word": "年代順",
+          "reading": "ねんだいじゅん",
+          "meaning": "按年代順序",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "作品が年代順に並んでいる。",
+              "zh": "作品按年代順序排列。"
+            }
+          ],
+          "confusionNote": "⚠ 〜順＝按〜順序（五十音順・番号順）。"
+        },
+        {
+          "id": "n-1607-kanrika",
+          "word": "管理下",
+          "reading": "かんりか",
+          "meaning": "管理之下",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "この施設は市の管理下にある。",
+              "zh": "這個設施在市政府的管理之下。"
+            }
+          ],
+          "confusionNote": "⚠ 〜下（か）＝在〜之下（影響下・支配下）。"
+        },
+        {
+          "id": "n-1607-saikaihatsu",
+          "word": "再開発",
+          "reading": "さいかいはつ",
+          "meaning": "再開發、重新開發",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "駅前の再開発が進んでいる。",
+              "zh": "車站前的再開發正在進行。"
+            }
+          ],
+          "confusionNote": "⚠ 再〜＝再次〜（再確認・再提出）。"
+        },
+        {
+          "id": "n-1607-shuseibun",
+          "word": "主成分",
+          "reading": "しゅせいぶん",
+          "meaning": "主要成分",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "この薬の主成分は何ですか。",
+              "zh": "這種藥的主要成分是什麼？"
+            }
+          ],
+          "confusionNote": "⚠ 主〜＝主要的〜（主原料）。"
+        },
+        {
+          "id": "n-1607-ani",
+          "word": "安易",
+          "reading": "あんい",
+          "meaning": "輕易、草率",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "安易に人を信じてはいけない。",
+              "zh": "不可以輕易相信別人。"
+            }
+          ],
+          "confusionNote": "⚠ 負面語感。率直＝坦率；柔軟＝靈活；短気＝性急。"
+        },
+        {
+          "id": "n-1607-shuukaku",
+          "word": "収穫",
+          "reading": "しゅうかく",
+          "meaning": "收穫、收成",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "今年は米の収穫が多い。",
+              "zh": "今年稻米收成多。"
+            }
+          ],
+          "confusionNote": "⚠ 採集＝採集（標本）；取得＝取得（資格）。"
+        },
+        {
+          "id": "n-1607-fukyuu",
+          "word": "普及",
+          "reading": "ふきゅう",
+          "meaning": "普及",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "スマートフォンが急速に普及した。",
+              "zh": "智慧型手機迅速普及。"
+            }
+          ],
+          "confusionNote": "⚠ 充満＝充滿；伝染＝傳染。"
+        },
+        {
+          "id": "n-1607-riidaa",
+          "word": "リーダー",
+          "reading": "リーダー",
+          "meaning": "領導者",
+          "pos": "noun-katakana",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼はチームのリーダーとしてみんなをまとめた。",
+              "zh": "他身為團隊領導者統整大家。"
+            }
+          ],
+          "confusionNote": "⚠ ライバル＝對手；ゲスト＝來賓。"
+        },
+        {
+          "id": "n-1607-tanomoshii",
+          "word": "頼もしい",
+          "reading": "たのもしい",
+          "meaning": "可靠、靠得住",
+          "pos": "adjective",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "困ったときに助けてくれる頼もしい先輩だ。",
+              "zh": "是遇到困難時會幫忙的可靠學長。"
+            }
+          ],
+          "confusionNote": "⚠ 親しい＝親近；懐かしい＝懷念；詳しい＝詳細。"
+        },
+        {
+          "id": "n-1607-chuumoku",
+          "word": "注目",
+          "reading": "ちゅうもく",
+          "meaning": "注目、關注",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "新製品が世界中から注目されている。",
+              "zh": "新產品受到全世界關注。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：注目する＝関心を持つ。"
+        },
+        {
+          "id": "n-1607-hikyou",
+          "word": "ひきょう",
+          "reading": "ひきょう",
+          "meaning": "卑鄙、卑怯",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "うそをついて勝つのはひきょうだ。",
+              "zh": "靠說謊贏太卑鄙了。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：ひきょう（卑怯）＝ずるい。"
+        },
+        {
+          "id": "n-1607-hattatsu",
+          "word": "発達",
+          "reading": "はったつ",
+          "meaning": "發達、發展",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "医学の発達で寿命が延びた。",
+              "zh": "因醫學發達壽命延長了。"
+            }
+          ],
+          "confusionNote": "⚠ 身高＝伸びる；服務＝向上；植物＝育ち。"
+        },
+        {
+          "id": "n-1607-kikkake",
+          "word": "きっかけ",
+          "reading": "きっかけ",
+          "meaning": "契機、開端",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "旅行をきっかけに日本語を勉強し始めた。",
+              "zh": "以旅行為契機開始學日語。"
+            }
+          ],
+          "confusionNote": "⚠ 下次機會＝機会；起源＝起源；理由＝理由。"
+        },
+        {
+          "id": "n-1607-intai",
+          "word": "引退",
+          "reading": "いんたい",
+          "meaning": "引退、退休（生涯）",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "その選手は30歳で引退した。",
+              "zh": "那位選手30歲就引退了。"
+            }
+          ],
+          "confusionNote": "⚠ 拒絕機會＝辞退；辭打工＝辞める。"
+        },
+        {
+          "id": "n-1612-ikinuki",
+          "word": "息抜き",
+          "reading": "いきぬき",
+          "meaning": "喘口氣、休息一下",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "勉強の合間に息抜きをする。",
+              "zh": "讀書空檔休息一下。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：息抜きする＝休む。"
+        },
+        {
+          "id": "n-1612-kichou",
+          "word": "貴重",
+          "reading": "きちょう",
+          "meaning": "珍貴",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "貴重な体験をさせていただきました。",
+              "zh": "讓我得到了寶貴的經驗。"
+            }
+          ],
+          "confusionNote": "⚠ 「重」讀ちょう（慎重・尊重）。"
+        },
+        {
+          "id": "n-1612-youshi",
+          "word": "容姿",
+          "reading": "ようし",
+          "meaning": "容貌、外貌",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼女は容姿が美しい。",
+              "zh": "她容貌美麗。"
+            }
+          ],
+          "confusionNote": "⚠ 様子（ようす）＝樣子，讀音易混。"
+        },
+        {
+          "id": "n-1612-ganbou",
+          "word": "願望",
+          "reading": "がんぼう",
+          "meaning": "願望",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "海外で暮らしたいという願望がある。",
+              "zh": "有想在國外生活的願望。"
+            }
+          ],
+          "confusionNote": "⚠ 「望」讀ぼう（長音）。"
+        },
+        {
+          "id": "n-1612-hoshou",
+          "word": "保証",
+          "reading": "ほしょう",
+          "meaning": "保證",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "この製品には1年間の保証がつく。",
+              "zh": "這個產品有一年保固。"
+            }
+          ],
+          "confusionNote": "⚠ 保障＝保障（權利）；補償＝賠償。"
+        },
+        {
+          "id": "n-1612-moyooshi",
+          "word": "催し",
+          "reading": "もよおし",
+          "meaning": "活動、集會",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "駅前で夏祭りの催しがある。",
+              "zh": "車站前有夏日祭的活動。"
+            }
+          ],
+          "confusionNote": "⚠ 催す（もよおす）＝舉辦。"
+        },
+        {
+          "id": "n-1612-kouka",
+          "word": "硬貨",
+          "reading": "こうか",
+          "meaning": "硬幣",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "自動販売機に硬貨を入れる。",
+              "zh": "把硬幣投進自動販賣機。"
+            }
+          ],
+          "confusionNote": "⚠ 同音：効果（こうか）＝效果。"
+        },
+        {
+          "id": "n-1612-seizou",
+          "word": "製造",
+          "reading": "せいぞう",
+          "meaning": "製造",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "この工場では車を製造している。",
+              "zh": "這座工廠製造汽車。"
+            }
+          ],
+          "confusionNote": "⚠ 「製」不是「制」。"
+        },
+        {
+          "id": "n-1612-kekkonkan",
+          "word": "結婚観",
+          "reading": "けっこんかん",
+          "meaning": "結婚觀",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "若者の結婚観が変わってきた。",
+              "zh": "年輕人的結婚觀改變了。"
+            }
+          ],
+          "confusionNote": "⚠ 〜観＝看法（人生観・価値観）。"
+        },
+        {
+          "id": "n-1612-misiyou",
+          "word": "未使用",
+          "reading": "みしよう",
+          "meaning": "未使用",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "未使用の商品なら返品できます。",
+              "zh": "未使用的商品可以退貨。"
+            }
+          ],
+          "confusionNote": "⚠ 未〜＝還沒〜（未成年・未経験）。"
+        },
+        {
+          "id": "n-1612-benkyouzuke",
+          "word": "勉強漬け",
+          "reading": "べんきょうづけ",
+          "meaning": "整天埋頭讀書",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "試験前は勉強漬けの毎日だ。",
+              "zh": "考前每天都泡在書堆裡。"
+            }
+          ],
+          "confusionNote": "⚠ 〜漬け＝完全沉浸於〜。"
+        },
+        {
+          "id": "n-1612-teikyou",
+          "word": "提供",
+          "reading": "ていきょう",
+          "meaning": "提供",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "市民に学習の場を提供する。",
+              "zh": "為市民提供學習場所。"
+            }
+          ],
+          "confusionNote": "⚠ 寄付＝捐贈；指示＝指示。"
+        },
+        {
+          "id": "n-1612-jama",
+          "word": "邪魔",
+          "reading": "じゃま",
+          "meaning": "妨礙、打擾",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "通路に荷物を置くと邪魔になる。",
+              "zh": "在走道放行李會妨礙別人。"
+            }
+          ],
+          "confusionNote": "⚠ 〜の邪魔になる；お邪魔します＝打擾了。"
+        },
+        {
+          "id": "n-1612-nadaraka",
+          "word": "なだらか",
+          "reading": "なだらか",
+          "meaning": "平緩",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "なだらかな坂を上った。",
+              "zh": "爬上平緩的坡。"
+            }
+          ],
+          "confusionNote": "⚠ おとなしい＝溫順；ささやか＝微小。"
+        },
+        {
+          "id": "n-1612-kappatsu",
+          "word": "活発",
+          "reading": "かっぱつ",
+          "meaning": "活潑、活躍",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "会議で活発な意見交換が行われた。",
+              "zh": "會議上進行了熱烈的意見交流。"
+            }
+          ],
+          "confusionNote": "⚠ 円満＝圓滿；機敏＝機敏。"
+        },
+        {
+          "id": "n-1612-yukai",
+          "word": "愉快",
+          "reading": "ゆかい",
+          "meaning": "愉快、有趣",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼は愉快な人で、一緒にいると楽しい。",
+              "zh": "他很有趣，和他在一起很開心。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：愉快な＝面白い。"
+        },
+        {
+          "id": "n-1612-enchou",
+          "word": "延長",
+          "reading": "えんちょう",
+          "meaning": "延長",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "会議が1時間延長された。",
+              "zh": "會議延長了一小時。"
+            }
+          ],
+          "confusionNote": "⚠ 把日期往後挪＝延期（えんき）。"
+        },
+        {
+          "id": "n-1612-meue",
+          "word": "目上",
+          "reading": "めうえ",
+          "meaning": "長輩、上級",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "目上の人には敬語を使う。",
+              "zh": "對長輩要用敬語。"
+            }
+          ],
+          "confusionNote": "⚠ 反義：目下（めした）。高級品不用目上。"
+        },
+        {
+          "id": "n-1612-oogesa",
+          "word": "大げさ",
+          "reading": "おおげさ",
+          "meaning": "誇大、小題大作",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼はいつも話を大げさに言う。",
+              "zh": "他總是把話說得很誇張。"
+            }
+          ],
+          "confusionNote": "⚠ 數量多＝大量；大幅變化＝大幅に。"
+        },
+        {
+          "id": "n-1612-hansei",
+          "word": "反省",
+          "reading": "はんせい",
+          "meaning": "反省",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "自分の失敗を反省している。",
+              "zh": "在反省自己的失敗。"
+            }
+          ],
+          "confusionNote": "⚠ 單純回憶＝振り返る；複習＝復習。"
+        },
+        {
+          "id": "n-1707-osanai",
+          "word": "幼い",
+          "reading": "おさない",
+          "meaning": "年幼；幼稚",
+          "pos": "adjective",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "幼い子どもを連れて旅行した。",
+              "zh": "帶著年幼的孩子旅行。"
+            }
+          ],
+          "confusionNote": "⚠ くどい＝囉嗦；しつこい＝糾纏。"
+        },
+        {
+          "id": "n-1707-mippei",
+          "word": "密閉",
+          "reading": "みっぺい",
+          "meaning": "密封",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "残った料理は密閉容器に入れる。",
+              "zh": "剩菜放進密封容器。"
+            }
+          ],
+          "confusionNote": "⚠ 讀音みっぺい（促音＋半濁音）。"
+        },
+        {
+          "id": "n-1707-suichoku",
+          "word": "垂直",
+          "reading": "すいちょく",
+          "meaning": "垂直",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "壁に垂直に線を引く。",
+              "zh": "在牆上畫垂直線。"
+            }
+          ],
+          "confusionNote": "⚠ 反義：水平（すいへい）。"
+        },
+        {
+          "id": "n-1707-touron",
+          "word": "討論",
+          "reading": "とうろん",
+          "meaning": "討論",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "クラスで環境問題について討論した。",
+              "zh": "在班上討論了環境問題。"
+            }
+          ],
+          "confusionNote": "⚠ 討議（とうぎ）＝討論（讀音不同）。"
+        },
+        {
+          "id": "n-1707-kouchou",
+          "word": "好調",
+          "reading": "こうちょう",
+          "meaning": "情況良好",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "新商品の売れ行きは好調だ。",
+              "zh": "新商品銷售良好。"
+            }
+          ],
+          "confusionNote": "⚠ 反義：不調。快調＝暢快。"
+        },
+        {
+          "id": "n-1707-eikyuu",
+          "word": "永久",
+          "reading": "えいきゅう",
+          "meaning": "永久",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "この約束は永久に忘れない。",
+              "zh": "這個約定我永遠不會忘。"
+            }
+          ],
+          "confusionNote": "⚠ 永遠（えいえん）讀音不同。"
+        },
+        {
+          "id": "n-1707-shonendo",
+          "word": "初年度",
+          "reading": "しょねんど",
+          "meaning": "第一年度",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "初年度の会費は無料です。",
+              "zh": "第一年度會費免費。"
+            }
+          ],
+          "confusionNote": "⚠ 初〜＝最初的（初対面・初心者）。"
+        },
+        {
+          "id": "n-1707-zenshachou",
+          "word": "前社長",
+          "reading": "ぜんしゃちょう",
+          "meaning": "前任社長",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "前社長は今も相談役として働いている。",
+              "zh": "前社長現在仍以顧問身分工作。"
+            }
+          ],
+          "confusionNote": "⚠ 前〜＝前任的；元〜（もと）＝原本的。"
+        },
+        {
+          "id": "n-1707-kaiinsei",
+          "word": "会員制",
+          "reading": "かいいんせい",
+          "meaning": "會員制",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "このジムは会員制だ。",
+              "zh": "這間健身房是會員制。"
+            }
+          ],
+          "confusionNote": "⚠ 〜制＝制度（予約制）。"
+        },
+        {
+          "id": "n-1707-maushiro",
+          "word": "真後ろ",
+          "reading": "まうしろ",
+          "meaning": "正後方",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "真後ろの席に先生が座っていた。",
+              "zh": "老師坐在我正後方的座位。"
+            }
+          ],
+          "confusionNote": "⚠ 真〜＝正〜（真上・真ん中）。"
+        },
+        {
+          "id": "n-1707-houfu",
+          "word": "豊富",
+          "reading": "ほうふ",
+          "meaning": "豐富",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "この地域は水資源が豊富だ。",
+              "zh": "這個地區水資源豐富。"
+            }
+          ],
+          "confusionNote": "⚠ 鮮明＝清楚；活発＝活潑。"
+        },
+        {
+          "id": "n-1707-odayaka",
+          "word": "穏やか",
+          "reading": "おだやか",
+          "meaning": "平穩、溫和",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "今日は穏やかな天気だ。",
+              "zh": "今天天氣平穩。"
+            }
+          ],
+          "confusionNote": "⚠ 滑らか＝光滑；緩やか＝平緩。"
+        },
+        {
+          "id": "n-1707-kakuho",
+          "word": "確保",
+          "reading": "かくほ",
+          "meaning": "確保",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "勉強時間を確保する。",
+              "zh": "確保讀書時間。"
+            }
+          ],
+          "confusionNote": "⚠ 制作＝製作作品；作成＝製作文件。"
+        },
+        {
+          "id": "n-1707-apiiru",
+          "word": "アピール",
+          "reading": "アピール",
+          "meaning": "宣傳、訴求",
+          "pos": "noun-katakana",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "面接で自分の長所をアピールした。",
+              "zh": "面試時展現了自己的優點。"
+            }
+          ],
+          "confusionNote": "⚠ インストール＝安裝；チャージ＝充值。"
+        },
+        {
+          "id": "n-1707-keiki",
+          "word": "契機",
+          "reading": "けいき",
+          "meaning": "契機",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "この事故を契機に安全対策が見直された。",
+              "zh": "以這次事故為契機重新檢討安全對策。"
+            }
+          ],
+          "confusionNote": "⚠ 契機＝きっかけ。"
+        },
+        {
+          "id": "n-1707-kajou",
+          "word": "過剰",
+          "reading": "かじょう",
+          "meaning": "過剩",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "過剰な期待はしないほうがいい。",
+              "zh": "最好不要有過度期待。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：過剰＝多すぎる。"
+        },
+        {
+          "id": "n-1707-ayamari",
+          "word": "誤り",
+          "reading": "あやまり",
+          "meaning": "錯誤",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "計算に誤りがあった。",
+              "zh": "計算有錯誤。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：誤り＝間違い。"
+        },
+        {
+          "id": "n-1707-okubyou",
+          "word": "臆病",
+          "reading": "おくびょう",
+          "meaning": "膽小",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼は臆病で暗い所が苦手だ。",
+              "zh": "他膽小怕黑。"
+            }
+          ],
+          "confusionNote": "⚠ 不是「生病」，是「膽小」＝何でも怖がる。"
+        },
+        {
+          "id": "n-1707-choujou",
+          "word": "頂上",
+          "reading": "ちょうじょう",
+          "meaning": "山頂、頂峰",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "やっと山の頂上に着いた。",
+              "zh": "終於到了山頂。"
+            }
+          ],
+          "confusionNote": "⚠ 天花板＝天井；物品上面＝上。"
+        },
+        {
+          "id": "n-1707-setsuyaku",
+          "word": "節約",
+          "reading": "せつやく",
+          "meaning": "節省",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "電気代を節約する。",
+              "zh": "節省電費。"
+            }
+          ],
+          "confusionNote": "⚠ 溫度控制＝調節；減少打工＝減らす。"
+        },
+        {
+          "id": "n-1707-bunkai",
+          "word": "分解",
+          "reading": "ぶんかい",
+          "meaning": "拆解",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年7月 N2 語彙",
+          "examples": [
+            {
+              "jp": "時計を分解して修理した。",
+              "zh": "把手錶拆開修理。"
+            }
+          ],
+          "confusionNote": "⚠ 分工＝分担；換零錢＝くずす。"
+        },
+        {
+          "id": "n-1712-tsuyobi",
+          "word": "強火",
+          "reading": "つよび",
+          "meaning": "大火",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "強火で3分炒めてください。",
+              "zh": "請用大火炒3分鐘。"
+            }
+          ],
+          "confusionNote": "⚠ 中火（ちゅうび）・弱火（よわび）。"
+        },
+        {
+          "id": "n-1712-kyuujin",
+          "word": "求人",
+          "reading": "きゅうじん",
+          "meaning": "招募人才",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "新聞の求人広告を見た。",
+              "zh": "看了報紙的徵人廣告。"
+            }
+          ],
+          "confusionNote": "⚠ 「人」讀じん。"
+        },
+        {
+          "id": "n-1712-zaiseki",
+          "word": "在籍",
+          "reading": "ざいせき",
+          "meaning": "在籍、在學",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼は今も大学に在籍している。",
+              "zh": "他現在仍在大學在籍。"
+            }
+          ],
+          "confusionNote": "⚠ 在籍＝在＋籍。"
+        },
+        {
+          "id": "n-1712-fukushi",
+          "word": "福祉",
+          "reading": "ふくし",
+          "meaning": "福利",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "社会福祉の仕事をしている。",
+              "zh": "從事社會福利工作。"
+            }
+          ],
+          "confusionNote": "⚠ 「祉」示字旁。"
+        },
+        {
+          "id": "n-1712-ryoushuusho",
+          "word": "領収書",
+          "reading": "りょうしゅうしょ",
+          "meaning": "收據",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "店で領収書をもらった。",
+              "zh": "在店裡拿了收據。"
+            }
+          ],
+          "confusionNote": "⚠ レシート＝收銀條。"
+        },
+        {
+          "id": "n-1712-arai",
+          "word": "荒い",
+          "reading": "あらい",
+          "meaning": "粗暴；急促",
+          "pos": "adjective",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "走ったあとで息が荒い。",
+              "zh": "跑完後呼吸急促。"
+            }
+          ],
+          "confusionNote": "⚠ 粗い（あらい）＝粗糙，同音不同字。"
+        },
+        {
+          "id": "n-1712-juutakugai",
+          "word": "住宅街",
+          "reading": "じゅうたくがい",
+          "meaning": "住宅區",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "静かな住宅街に住んでいる。",
+              "zh": "住在安靜的住宅區。"
+            }
+          ],
+          "confusionNote": "⚠ 〜街＝商店街など。"
+        },
+        {
+          "id": "n-1712-fuseikaku",
+          "word": "不正確",
+          "reading": "ふせいかく",
+          "meaning": "不正確",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "不正確な情報に注意しよう。",
+              "zh": "注意不正確的資訊。"
+            }
+          ],
+          "confusionNote": "⚠ 「正確」的否定用「不」。"
+        },
+        {
+          "id": "n-1712-shogaikoku",
+          "word": "諸外国",
+          "reading": "しょがいこく",
+          "meaning": "各外國",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "諸外国と協力する。",
+              "zh": "與各國合作。"
+            }
+          ],
+          "confusionNote": "⚠ 諸〜＝各個〜（諸問題）。"
+        },
+        {
+          "id": "n-1712-kujou",
+          "word": "苦情",
+          "reading": "くじょう",
+          "meaning": "投訴、抱怨",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "騒音について苦情が来た。",
+              "zh": "收到噪音投訴。"
+            }
+          ],
+          "confusionNote": "⚠ 苦情を言う・苦情が寄せられる。"
+        },
+        {
+          "id": "n-1712-meisho",
+          "word": "名所",
+          "reading": "めいしょ",
+          "meaning": "名勝",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "ここは紅葉の名所だ。",
+              "zh": "這裡是賞楓名勝。"
+            }
+          ],
+          "confusionNote": "⚠ 要所＝要地；現場＝現場。"
+        },
+        {
+          "id": "n-1712-yuuri",
+          "word": "有利",
+          "reading": "ゆうり",
+          "meaning": "有利",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "英語ができると就職に有利だ。",
+              "zh": "會英語對求職有利。"
+            }
+          ],
+          "confusionNote": "⚠ 反義：不利（ふり）。"
+        },
+        {
+          "id": "n-1712-sosokkashii",
+          "word": "そそっかしい",
+          "reading": "そそっかしい",
+          "meaning": "冒失、粗心",
+          "pos": "adjective",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼はそそっかしくて、よく物を忘れる。",
+              "zh": "他很冒失，常忘東西。"
+            }
+          ],
+          "confusionNote": "⚠ あつかましい＝厚臉皮；そうぞうしい＝吵鬧。"
+        },
+        {
+          "id": "n-1712-kioku",
+          "word": "記憶",
+          "reading": "きおく",
+          "meaning": "記憶",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "子供のころの記憶がない。",
+              "zh": "沒有小時候的記憶。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：記憶している＝覚えている。"
+        },
+        {
+          "id": "n-1712-fuhei",
+          "word": "不平",
+          "reading": "ふへい",
+          "meaning": "不滿、牢騷",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "彼女は不平を言わずに働いた。",
+              "zh": "她毫無怨言地工作。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：不平＝文句。"
+        },
+        {
+          "id": "n-1712-katte",
+          "word": "勝手",
+          "reading": "かって",
+          "meaning": "任性、隨意",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "勝手なことをしないでください。",
+              "zh": "請不要擅自行動。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：勝手な＝わがままな。"
+        },
+        {
+          "id": "n-1712-mare",
+          "word": "まれ",
+          "reading": "まれ",
+          "meaning": "罕見",
+          "pos": "noun-adj",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "こんなことはまれだ。",
+              "zh": "這種事很罕見。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：まれな＝ほとんどない。"
+        },
+        {
+          "id": "n-1712-gentei",
+          "word": "限定",
+          "reading": "げんてい",
+          "meaning": "限定、限量",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "このお菓子は期間限定だ。",
+              "zh": "這款點心是期間限定。"
+            }
+          ],
+          "confusionNote": "⚠ 指定席＝指定；設定溫度＝設定；斷定＝断定。"
+        },
+        {
+          "id": "n-1712-ronsou",
+          "word": "論争",
+          "reading": "ろんそう",
+          "meaning": "爭論、論戰",
+          "pos": "noun",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2017年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "その問題で激しい論争が起きた。",
+              "zh": "那個問題引發激烈爭論。"
+            }
+          ],
+          "confusionNote": "⚠ 反駁＝反論；商量＝相談。"
         }
       ]
     },
@@ -4322,6 +6719,40 @@
           ],
           "confusionNote": "⚠ 近義比較：無駄（むだ）＝浪費・白費（沒有意義或效果的）；もったいない＝可惜・浪費（強調惋惜的情感）；無意味（むいみ）＝無意義（偏書面）。「時間の無駄」「お金の無駄」「無駄遣い（むだづかい）」是重要搭配。",
           "frequentlyTested": true
+        },
+        {
+          "id": "ex-1612-yamuwoenai",
+          "word": "やむを得ない",
+          "reading": "やむをえない",
+          "meaning": "不得已",
+          "pos": "expression",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "病気なら欠席もやむを得ない。",
+              "zh": "生病的話缺席也是不得已的。"
+            }
+          ],
+          "confusionNote": "⚠ 言い換え：やむを得ない＝しかたない。"
+        },
+        {
+          "id": "ex-1612-tsuiteiru",
+          "word": "ついている",
+          "reading": "ついている",
+          "meaning": "走運",
+          "pos": "expression",
+          "level": "N2",
+          "frequentlyTested": true,
+          "examSource": "2016年12月 N2 語彙",
+          "examples": [
+            {
+              "jp": "今日は朝からついている。",
+              "zh": "今天從早上就很走運。"
+            }
+          ],
+          "confusionNote": "⚠ ついていない＝倒楣。"
         }
       ]
     },
