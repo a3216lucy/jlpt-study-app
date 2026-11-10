@@ -90,9 +90,12 @@ export const SentenceReviewStore = signalStore(
 
       patchState(store, { loading: true, reviewData: null });
       http.get<SentenceReviewData>(path).subscribe((data) => {
+        const firstCommon = data.groups.find((g) => !g.id.startsWith('exam-'));
         patchState(store, {
           reviewData: data,
-          selectedGroupId: data.groups.find((g) => !g.id.startsWith('exam-'))?.id ?? null,
+          selectedGroupId: firstCommon?.id ?? null,
+          // N2 目前只有考古題句型（exam- 群組），沒有常用句型時直接切到「考題重點」
+          ...(firstCommon ? {} : { activeTab: 'exam' as SentenceReviewTab }),
           loading: false,
         });
       });

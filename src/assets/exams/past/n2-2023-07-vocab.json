@@ -1,0 +1,1185 @@
+{
+  "id": "n2-2023-07-vocab",
+  "title": "2023年7月 N2 語彙",
+  "description": "2023年7月 JLPT N2 語彙（問題1〜6）",
+  "level": "N2",
+  "category": "vocabulary",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n2-2023-07-v-01",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "バスの<u>運賃</u>を払う。",
+      "questionTranslation": "支付公車的車資。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-01-a",
+          "text": "うんしん",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-01-b",
+          "text": "うんちん",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-01-c",
+          "text": "うんにん",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-01-d",
+          "text": "うんりん",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-01-b",
+      "explanation": "💡 賃＝ちん（家賃（やちん）・賃金（ちんぎん）・運賃）。運＝うん（運転（うんてん））。\n【選項解析】\n×1 うんしん：（無此讀法）\n○2 うんちん：運賃（うんちん）＝運費、車資\n×3 うんにん：（無此讀法）\n×4 うんりん：（無此讀法）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2023-07-v-02",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "風が強くて、髪が<u>乱れて</u>しまった。",
+      "questionTranslation": "風很大，頭髮都亂掉了。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-02-a",
+          "text": "くずれて",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-02-b",
+          "text": "あれて",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-02-c",
+          "text": "あばれて",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-02-d",
+          "text": "みだれて",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-02-d",
+      "explanation": "💡 髪が乱れる＝頭髮凌亂；乱（らん）（混乱（こんらん））的訓讀為「みだ（れる）」。\n【選項解析】\n×1 くずれて：崩（くず）れる＝崩塌、變形\n×2 あれて：荒（あ）れる＝（天氣、皮膚）變粗糙、荒廢\n×3 あばれて：暴（あば）れる＝胡鬧、亂闖\n○4 みだれて：乱（みだ）れる＝凌亂、紊亂",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2023-07-v-03",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "前田さんは子供たちに正しい泳ぎ方の<u>模範</u>を示した。",
+      "questionTranslation": "前田先生向孩子們示範了正確的游泳方式。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-03-a",
+          "text": "もうばん",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-03-b",
+          "text": "もうはん",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-03-c",
+          "text": "もばん",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-03-d",
+          "text": "もはん",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-03-d",
+      "explanation": "💡 模＝も（模型（もけい）・模様（もよう））；範＝はん（範囲（はんい））。模範を示す＝做示範。\n【選項解析】\n×1 もうばん：（無此詞）\n×2 もうはん：（無此詞）\n×3 もばん：（無此詞，濁音錯誤）\n○4 もはん：模範（もはん）＝模範、示範",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2023-07-v-04",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "思った以上に<u>険しかった</u>。",
+      "questionTranslation": "比想像中還要險峻。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-04-a",
+          "text": "けわしかった",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-04-b",
+          "text": "まぶしかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-04-c",
+          "text": "おそろしかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-04-d",
+          "text": "はげしかった",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-04-a",
+      "explanation": "💡 険しい山道（やまみち）＝險峻的山路；険しい顔（かお）＝嚴厲的表情。\n【選項解析】\n○1 けわしかった：険（けわ）しい＝（山路）險峻、（表情）嚴峻\n×2 まぶしかった：眩（まぶ）しい＝刺眼\n×3 おそろしかった：恐（おそ）ろしい＝可怕\n×4 はげしかった：激（はげ）しい＝激烈",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2023-07-v-05",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "さっき<u>握手</u>していた人は誰ですか。",
+      "questionTranslation": "剛剛在握手的那個人是誰？",
+      "options": [
+        {
+          "id": "n2-2023-07-v-05-a",
+          "text": "おくしゅ",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-05-b",
+          "text": "はくしゅ",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-05-c",
+          "text": "あくしゅ",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-05-d",
+          "text": "ほくしゅ",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-05-c",
+      "explanation": "💡 握＝あく（握力（あくりょく））；手＝しゅ。握手（あくしゅ）與拍手（はくしゅ）字形、聲音接近，要分清。\n【選項解析】\n×1 おくしゅ：（無此詞）\n×2 はくしゅ：拍手（はくしゅ）＝拍手\n○3 あくしゅ：握手（あくしゅ）＝握手\n×4 ほくしゅ：（無此詞）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2023-07-v-06",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "その<u>ぬの</u>を広げてください。",
+      "questionTranslation": "請把那塊布攤開。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-06-a",
+          "text": "布",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-06-b",
+          "text": "袋",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-06-c",
+          "text": "衣（ころも／い）",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-06-d",
+          "text": "帯",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-06-a",
+      "explanation": "💡 布（ぬの）＝布料；音讀為「ふ」（毛布（もうふ））。袋・衣・帯字形都有「衣」部件，容易混淆。\n【選項解析】\n○1 布：布\n×2 袋：袋子\n×3 衣（ころも／い）：衣（衣服、外皮）\n×4 帯：腰帶（和服的帶）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2023-07-v-07",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "今後は<u>ふくし</u>の仕事に就く予定です。",
+      "questionTranslation": "我打算今後從事社會福利的工作。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-07-a",
+          "text": "福支",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-07-b",
+          "text": "副支",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-07-c",
+          "text": "福祉",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-07-d",
+          "text": "副祉",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-07-c",
+      "explanation": "💡 福祉（ふくし）＝社會福利（社会福祉・福祉施設）。「福」與「祉」都是示字旁。\n【選項解析】\n×1 福支：（無此詞）\n×2 副支：（無此詞）\n○3 福祉：福祉＝福利\n×4 副祉：（無此詞）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2023-07-v-08",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "毎日たくさんのごみが<u>すてられて</u>いる。",
+      "questionTranslation": "每天有很多垃圾被丟棄。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-08-a",
+          "text": "拾てられて",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-08-b",
+          "text": "投てられて",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-08-c",
+          "text": "採てられて",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-08-d",
+          "text": "捨てられて",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-08-d",
+      "explanation": "💡 捨（す）てる＝丟掉；與「拾う（撿）」字形相似但意思相反。選項1〜3的送假名也不成立。\n【選項解析】\n×1 拾てられて：拾（ひろ）う＝撿\n×2 投てられて：投（な）げる＝投擲\n×3 採てられて：採（と）る＝採集\n○4 捨てられて：捨（す）てる＝丟棄",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2023-07-v-09",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "小山さんの<u>きげん</u>がよいときに頼んでみよう。",
+      "questionTranslation": "趁小山先生心情好的時候拜託看看吧。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-09-a",
+          "text": "機兼",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-09-b",
+          "text": "機嫌",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-09-c",
+          "text": "気嫌",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-09-d",
+          "text": "気兼",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-09-b",
+      "explanation": "💡 機嫌がいい／悪い＝心情好／壞；「機」不是「気」。気兼ね＝因顧慮而拘謹。\n【選項解析】\n×1 機兼：（無此詞）\n○2 機嫌：心情、情緒\n×3 気嫌：（常見誤寫）\n×4 気兼：顧慮、客氣（讀作きがね）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2023-07-v-10",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "これは、会社にとって大きな<u>そんしつ</u>だ。",
+      "questionTranslation": "這對公司來說是很大的損失。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-10-a",
+          "text": "削失",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-10-b",
+          "text": "隕失",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-10-c",
+          "text": "消失",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-10-d",
+          "text": "損失",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-10-d",
+      "explanation": "💡 損失（そんしつ）＝金錢、利益上的損失（大きな損失）；消失＝東西不見了。\n【選項解析】\n×1 削失：（無此詞）\n×2 隕失：（無此詞）\n×3 消失：消失\n○4 損失：損失",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2023-07-v-11",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 語形成】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "アンケートでは、質問に（　）回答の人もいた。",
+      "questionTranslation": "問卷調查中，也有人對問題「無回答」。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-11-a",
+          "text": "無",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-11-b",
+          "text": "空",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-11-c",
+          "text": "欠",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-11-d",
+          "text": "失",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-11-a",
+      "explanation": "💡 無〜＝沒有〜（無回答・無関心（むかんしん）・無責任（むせきにん））。\n【選項解析】\n○1 無：無回答（むかいとう）＝沒有回答\n×2 空：空\n×3 欠：欠\n×4 失：失",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "語形成"
+    },
+    {
+      "id": "n2-2023-07-v-12",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 語形成】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "この本には海外にある日本（　）の家がたくさん載っている。",
+      "questionTranslation": "這本書裡刊載了許多位於海外的日式風格房屋。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-12-a",
+          "text": "気",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-12-b",
+          "text": "類",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-12-c",
+          "text": "風",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-12-d",
+          "text": "状",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-12-c",
+      "explanation": "💡 〜風（ふう）＝〜風格、〜式（和風・洋風・西洋風）。\n【選項解析】\n×1 気：〜氣\n×2 類：〜類\n○3 風：日本風（にほんふう）＝日式風格\n×4 状：〜狀",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "語形成"
+    },
+    {
+      "id": "n2-2023-07-v-13",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 語形成】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "壁（　）のソファーに座る。",
+      "questionTranslation": "坐在靠牆邊的沙發上。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-13-a",
+          "text": "所",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-13-b",
+          "text": "際",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-13-c",
+          "text": "辺（あたり／へん）",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-13-d",
+          "text": "域",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-13-b",
+      "explanation": "💡 〜際（ぎわ）＝緊鄰〜的邊緣（窓際（まどぎわ）・水際（みずぎわ）・壁際）。\n【選項解析】\n×1 所：〜處\n○2 際：壁際（かべぎわ）＝牆邊\n×3 辺（あたり／へん）：〜附近\n×4 域：〜區域",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "語形成"
+    },
+    {
+      "id": "n2-2023-07-v-14",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "彼は本当は優しい人なのに、無口なせいで、冷たい人だとよく（　）される。",
+      "questionTranslation": "他其實是個溫柔的人，卻因為沉默寡言，常被誤會是個冷淡的人。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-14-a",
+          "text": "観測",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-14-b",
+          "text": "誤解",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-14-c",
+          "text": "決意",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-14-d",
+          "text": "承認",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-14-b",
+      "explanation": "💡 「本当は優しいのに〜冷たい人だと」＝與事實不符的看法 → 誤解される。観測は天気・星などに使う。\n【選項解析】\n×1 観測：觀測\n○2 誤解：誤解、誤會\n×3 決意：決心\n×4 承認：承認、認可",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2023-07-v-15",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "新製品の売れ行きが（　）なので、生産量を増やすことにした。",
+      "questionTranslation": "新產品銷路很好，所以決定增加產量。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-15-a",
+          "text": "温厚",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-15-b",
+          "text": "円満",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-15-c",
+          "text": "好調",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-15-d",
+          "text": "適切",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-15-c",
+      "explanation": "💡 売れ行きが好調＝銷路順利。反義詞＝不調（ふちょう）。円満は「円満な家庭・円満に解決」。\n【選項解析】\n×1 温厚：溫厚（形容人的個性）\n×2 円満：圓滿、和睦\n○3 好調：順利、狀況良好\n×4 適切：適當",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2023-07-v-16",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "彼は、どんな仕事でもミス一つなく期日までに仕上げてくれるので、本当に（　）部下だと思う。",
+      "questionTranslation": "他不管什麼工作都能毫無差錯地在期限內完成，我覺得他真是個可靠的部下。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-16-a",
+          "text": "頼もしい",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-16-b",
+          "text": "たくましい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-16-c",
+          "text": "輝かしい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-16-d",
+          "text": "親しい",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-16-a",
+      "explanation": "💡 頼もしい＝讓人覺得可以放心依靠。たくましい＝體格或意志強健；輝かしい＝光輝的成就、未來。\n【選項解析】\n○1 頼もしい：可靠的、值得依賴的\n×2 たくましい：強壯的、堅韌的\n×3 輝かしい：輝煌的（輝かしい成績）\n×4 親しい：親近的",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2023-07-v-17",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "食費を（　）するために、なるべく外食をしないようにしている。",
+      "questionTranslation": "為了節省伙食費，我盡量不外食。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-17-a",
+          "text": "減量",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-17-b",
+          "text": "省略",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-17-c",
+          "text": "短縮",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-17-d",
+          "text": "節約",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-17-d",
+      "explanation": "💡 食費を節約する＝省錢。短縮は時間・距離に使う（時間を短縮）；省略は一部を省くこと。\n【選項解析】\n×1 減量：減量（減少分量、減重）\n×2 省略：省略\n×3 短縮：縮短\n○4 節約：節約",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2023-07-v-18",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "簡単にお金がもうかるというような話に、すぐ（　）のはやめたほうがいい。",
+      "questionTranslation": "聽到可以輕鬆賺錢之類的話，最好不要馬上就撲上去（輕易上鉤）。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-18-a",
+          "text": "駆け込む",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-18-b",
+          "text": "触れ合う",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-18-c",
+          "text": "寄りかかる",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-18-d",
+          "text": "飛びつく",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-18-d",
+      "explanation": "💡 〜話に飛びつく＝對好康的事一聽就馬上跟進。寄りかかる＝倚在物體上，也可比喻「依賴」。\n【選項解析】\n×1 駆け込む：衝進去（駅に駆け込む）\n×2 触れ合う：互相接觸、交流\n×3 寄りかかる：倚靠\n○4 飛びつく：撲上去；（毫不思考地）搶著接受",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2023-07-v-19",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "やりたい仕事内容の（　）があったので、早速応募することにした。",
+      "questionTranslation": "因為有我想做的工作內容的徵才，所以決定馬上應徵。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-19-a",
+          "text": "催促",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-19-b",
+          "text": "入社",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-19-c",
+          "text": "求人",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-19-d",
+          "text": "収集",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-19-c",
+      "explanation": "💡 求人（きゅうじん）→ 応募（おうぼ）是一組搭配。入社是「已錄取、進公司」，不能放在「應徵」之前。\n【選項解析】\n×1 催促：催促\n×2 入社：進入公司\n○3 求人：徵人、徵才\n×4 収集：收集",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2023-07-v-20",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "友達だと思っていたのに、私のいないところで（　）と私の悪口を言っていたなんてひどい。",
+      "questionTranslation": "我還以為是朋友，竟然在我不在的地方偷偷摸摸地說我壞話，太過分了。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-20-a",
+          "text": "うとうと",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-20-b",
+          "text": "こそこそ",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-20-c",
+          "text": "ぶるぶる",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-20-d",
+          "text": "じろじろ",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-20-b",
+      "explanation": "💡 こそこそ話（はなし）をする＝偷偷講話，避人耳目。じろじろ見る＝盯著人看。\n【選項解析】\n×1 うとうと：昏昏欲睡\n○2 こそこそ：偷偷摸摸、鬼鬼祟祟\n×3 ぶるぶる：發抖貌\n×4 じろじろ：盯著看（失禮地）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2023-07-v-21",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "この建物を壊すのは<u>惜しい</u>。",
+      "questionTranslation": "拆掉這棟建築很可惜。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-21-a",
+          "text": "危ない",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-21-b",
+          "text": "もったいない",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-21-c",
+          "text": "めんどうくさい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-21-d",
+          "text": "難しい",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-21-b",
+      "explanation": "💡 惜しい＝捨不得、可惜（有價值的東西失去、浪費）≒ もったいない。\n【選項解析】\n×1 危ない：危險\n○2 もったいない：可惜、浪費\n×3 めんどうくさい：麻煩\n×4 難しい：困難",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2023-07-v-22",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "きちんと<u>テンポ</u>を合わせてください。",
+      "questionTranslation": "請確實對準節奏。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-22-a",
+          "text": "長さ",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-22-b",
+          "text": "高さ",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-22-c",
+          "text": "大きさ",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-22-d",
+          "text": "速さ",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-22-d",
+      "explanation": "💡 テンポ（tempo）＝速度、節拍（音樂的速度）。テンポを合わせる＝配合速度。\n【選項解析】\n×1 長さ：長度\n×2 高さ：高度\n×3 大きさ：大小\n○4 速さ：速度",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2023-07-v-23",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "そのニュースは<u>たちまち</u>広まった。",
+      "questionTranslation": "那則新聞轉眼間就傳開了。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-23-a",
+          "text": "すぐに",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-23-b",
+          "text": "次第に",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-23-c",
+          "text": "確かに",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-23-d",
+          "text": "意外に",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-23-a",
+      "explanation": "💡 たちまち＝轉眼之間（短時間內急速變化）。次第に＝慢慢地逐步，兩者速度感相反。\n【選項解析】\n○1 すぐに：立刻\n×2 次第に：漸漸地\n×3 確かに：的確\n×4 意外に：意外地",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2023-07-v-24",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "研究の<u>概要</u>を述べる。",
+      "questionTranslation": "陳述研究的概要。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-24-a",
+          "text": "詳しい内容",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-24-b",
+          "text": "大体の内容",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-24-c",
+          "text": "主な目的",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-24-d",
+          "text": "最終的な目的",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-24-b",
+      "explanation": "💡 概要＝大要、梗概（≒ あらまし）。與「詳細」相反。\n【選項解析】\n×1 詳しい内容：詳細的內容\n○2 大体の内容：大致的內容\n×3 主な目的：主要目的\n×4 最終的な目的：最終目的",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2023-07-v-25",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "あのときは<u>油断していた</u>。",
+      "questionTranslation": "那時候我疏忽大意了。",
+      "options": [
+        {
+          "id": "n2-2023-07-v-25-a",
+          "text": "慌てていた",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-25-b",
+          "text": "何も覚えていなかった",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-25-c",
+          "text": "気を付けていなかった",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-25-d",
+          "text": "迷っていた",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-25-c",
+      "explanation": "💡 油断する＝掉以輕心、疏忽（≒ 気を抜く）。油断大敵（ゆだんたいてき）＝大意是大敵。\n【選項解析】\n×1 慌てていた：慌張\n×2 何も覚えていなかった：什麼都不記得\n○3 気を付けていなかった：沒有留意\n×4 迷っていた：猶豫、迷惘",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2023-07-v-26",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【早期】次の選択肢の中で「早期」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【早期、及早】以下哪個選項中「早期」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2023-07-v-26-a",
+          "text": "夏休みの早期は旅行をして、その後は試験勉強をする予定だ。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-26-b",
+          "text": "明日の飛行機は早期の便だから、朝5時に家を出なければならない。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-26-c",
+          "text": "一人暮らしの早期は、料理などの失敗も多くて苦労した。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-26-d",
+          "text": "医学の進歩によって、病気を早期の段階で見つけられるようになった。",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-26-d",
+      "explanation": "💡 早期＝事情剛開始的早階段（早期発見・早期治療・早期に解決）。不能指「一段期間的前半」或「一天之中的早上」。\n【選項解析】\n×1 夏休みの早期は旅行をして、その後は試験勉強をする予定だ。：暑假的前半段去旅行，之後預定準備考試。 → 夏休みの**前半（ぜんはん）**\n×2 明日の飛行機は早期の便だから、朝5時に家を出なければならない。：明天的飛機是很早的班次，早上5點就得出門。 → **早朝（そうちょう）／早（はや）い**便\n×3 一人暮らしの早期は、料理などの失敗も多くて苦労した。：剛開始一個人住的時期，料理等失敗很多很辛苦。 → **初期（しょき）／始（はじ）めたころ**\n○4 医学の進歩によって、病気を早期の段階で見つけられるようになった。：由於醫學進步，現在能在早期階段發現疾病。",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2023-07-v-27",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【偉大】次の選択肢の中で「偉大」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【偉大】以下哪個選項中「偉大」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2023-07-v-27-a",
+          "text": "山川さんのフランス語のスピーチはとても偉大だった。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-27-b",
+          "text": "この国には偉大な画家がたくさんいる。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-27-c",
+          "text": "あの家は、この辺りでいちばん偉大な家です。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-27-d",
+          "text": "あの人は偉大な馬を何頭も飼っている。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-27-b",
+      "explanation": "💡 偉大＝人物、功績、事業的偉大（偉大な科学者・偉大な業績）。形容建築、動物的大小不用「偉大」。\n【選項解析】\n×1 山川さんのフランス語のスピーチはとても偉大だった。：山川先生的法語演講非常偉大。 → **立派（りっぱ）／素晴（すば）らしかった**\n○2 この国には偉大な画家がたくさんいる。：這個國家有許多偉大的畫家。\n×3 あの家は、この辺りでいちばん偉大な家です。：那棟房子是這一帶最偉大的房子。 → **大（おお）きな／立派（りっぱ）な**家\n×4 あの人は偉大な馬を何頭も飼っている。：那個人養了好幾匹偉大的馬。 → **立派（りっぱ）な／大（おお）きな**馬",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2023-07-v-28",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【印】次の選択肢の中で「印」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【記號】以下哪個選項中「印」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2023-07-v-28-a",
+          "text": "復習するときのために、大切な単語に赤のペンで印をつけた。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-28-b",
+          "text": "係員が旗を上げたのを印に、選手たちは一斉に走りだした。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-28-c",
+          "text": "角に病院がありますから、それを印に私の家まで来てください。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-28-d",
+          "text": "運転する人は、交通の印の意味を全部知っていなければならない。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-28-a",
+      "explanation": "💡 印（しるし）＝做上去的記號（印をつける）。「以～為信號」＝合図に；「以～為地標」＝目印に；交通標誌＝標識。\n【選項解析】\n○1 復習するときのために、大切な単語に赤のペンで印をつけた。：為了複習時用，在重要的單字上用紅筆做了記號。\n×2 係員が旗を上げたのを印に、選手たちは一斉に走りだした。：以工作人員舉起旗子為信號，選手們一齊起跑。 → **合図（あいず）**に\n×3 角に病院がありますから、それを印に私の家まで来てください。：轉角有醫院，請以那個為標記來我家。 → **目印（めじるし）**に\n×4 運転する人は、交通の印の意味を全部知っていなければならない。：開車的人必須知道所有交通標誌的意思。 → 交通の**標識（ひょうしき）**",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2023-07-v-29",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【続出】次の選択肢の中で「続出」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【接連出現】以下哪個選項中「続出」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2023-07-v-29-a",
+          "text": "昨日からの雪で、転んでけがをする人が続出している。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-29-b",
+          "text": "ゆうべはせきが続出して、あまりよく眠れなかった。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-29-c",
+          "text": "鈴木アナウンサーは、このテレビ番組に5年間続出している。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-29-d",
+          "text": "この映画に関係する本や商品が、来週から続出するらしい。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-29-a",
+      "explanation": "💡 続出＝相同的事物（多半是事故、問題、人）一個接一個冒出來（不満が続出・けが人が続出）。「持續做同一件事」不是続出。\n【選項解析】\n○1 昨日からの雪で、転んでけがをする人が続出している。：因為昨天開始的雪，接連有人跌倒受傷。\n×2 ゆうべはせきが続出して、あまりよく眠れなかった。：昨晚一直咳嗽，沒睡好。 → せきが**出続けて／止まらなくて**\n×3 鈴木アナウンサーは、このテレビ番組に5年間続出している。：鈴木主播連續5年在這個電視節目中。 → **出演（しゅつえん）し続けて**\n×4 この映画に関係する本や商品が、来週から続出するらしい。：與這部電影相關的書和商品，聽說下週起陸續推出。 → **発売（はつばい）される**",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2023-07-v-30",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【さまたげる（妨げる）】次の選択肢の中で「さまたげる（妨げる）」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【妨礙】以下哪個選項中「さまたげる（妨げる）」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2023-07-v-30-a",
+          "text": "掲示板のポスターが取れそうになっていたので、テープでさまたげた。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-30-b",
+          "text": "原材料が高くなったが、製造方法を変えて、製品の値上げをさまたげた。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2023-07-v-30-c",
+          "text": "関係のない発言で、会議の進行をさまたげないでください。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2023-07-v-30-d",
+          "text": "工場内の事故をさまたげるために、作業の前に安全確認を行う。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2023-07-v-30-c",
+      "explanation": "💡 さまたげる＝使事情無法順利進行（進行・睡眠・交通を妨げる）。「防止」＝防ぐ；「固定」＝止める。\n【選項解析】\n×1 掲示板のポスターが取れそうになっていたので、テープでさまたげた。：佈告欄的海報快掉下來，所以用膠帶固定。 → テープで**止（と）めた**\n×2 原材料が高くなったが、製造方法を変えて、製品の値上げをさまたげた。：原料變貴了，但改變製造方法，避免了產品漲價。 → 値上げを**避（さ）けた／防（ふせ）いだ**\n○3 関係のない発言で、会議の進行をさまたげないでください。：請不要用無關的發言妨礙會議進行。\n×4 工場内の事故をさまたげるために、作業の前に安全確認を行う。：為了防止工廠內的事故，作業前進行安全確認。 → 事故を**防（ふせ）ぐ**",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    }
+  ]
+}

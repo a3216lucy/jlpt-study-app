@@ -1,0 +1,1185 @@
+{
+  "id": "n2-2021-12-vocab",
+  "title": "2021年12月 N2 語彙",
+  "description": "2021年12月 JLPT N2 語彙（問題1〜6）",
+  "level": "N2",
+  "category": "vocabulary",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n2-2021-12-v-01",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "美しい<u>情景</u>が目に浮かんだ。",
+      "questionTranslation": "腦中浮現出美麗的情景。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-01-a",
+          "text": "じょうけい",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-01-b",
+          "text": "じょけい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-01-c",
+          "text": "じょうえい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-01-d",
+          "text": "じょえい",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-01-a",
+      "explanation": "💡 情＝じょう（感情（かんじょう））；景＝けい（風景（ふうけい））。「情」的長音「じょう」不能漏掉。\n【選項解析】\n○1 じょうけい：情景（じょうけい）＝情景、景象\n×2 じょけい：無此詞（把長音「じょう」唸短了）\n×3 じょうえい：上映（じょうえい）＝上映\n×4 じょえい：無此詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2021-12-v-02",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "この世代の人達はコンピューターの知識が<u>乏しい</u>ように思う。",
+      "questionTranslation": "我覺得這個世代的人，電腦方面的知識很貧乏。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-02-a",
+          "text": "くわしい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-02-b",
+          "text": "とぼしい",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-02-c",
+          "text": "まずしい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-02-d",
+          "text": "あやしい",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-02-b",
+      "explanation": "💡 乏しい＝「不足、很少」（資源（しげん）に乏しい・経験（けいけん）に乏しい）；貧しい＝「窮」，主要指金錢、生活。\n【選項解析】\n×1 くわしい：詳（くわ）しい＝詳細、熟悉\n○2 とぼしい：乏（とぼ）しい＝缺乏、貧乏\n×3 まずしい：貧（まず）しい＝貧窮\n×4 あやしい：怪（あや）しい＝可疑",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2021-12-v-03",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "ボランティアでお年寄りの<u>介護</u>をしている。",
+      "questionTranslation": "以志工身分照顧老人。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-03-a",
+          "text": "かいごう",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-03-b",
+          "text": "かんごう",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-03-c",
+          "text": "かいご",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-03-d",
+          "text": "かんご",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-03-c",
+      "explanation": "💡 介＝かい（紹介（しょうかい）），護＝ご（保護（ほご））。注意與「看護（かんご）」不同。\n【選項解析】\n×1 かいごう：多了長音\n×2 かんごう：無此詞\n○3 かいご：介護（かいご）＝照護、看護（照顧老人、身障者）\n×4 かんご：看護（かんご）＝（醫療上的）護理",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2021-12-v-04",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "今頃になって<u>焦っても</u>しかたない。",
+      "questionTranslation": "事到如今才著急也沒用了。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-04-a",
+          "text": "あせっても",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-04-b",
+          "text": "しかっても",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-04-c",
+          "text": "まよっても",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-04-d",
+          "text": "いのっても",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-04-a",
+      "explanation": "💡 〜てもしかたない＝就算〜也無濟於事。焦（あせ）る（焦急）／あせり（焦燥）。\n【選項解析】\n○1 あせっても：焦（あせ）る＝焦急\n×2 しかっても：叱（しか）る＝責罵\n×3 まよっても：迷（まよ）う＝迷惑、猶豫\n×4 いのっても：祈（いの）る＝祈禱",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2021-12-v-05",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "高速道路の建設については、<u>賛否</u>が分かれた。",
+      "questionTranslation": "關於高速公路的興建，意見贊成與反對分歧。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-05-a",
+          "text": "さんふ",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-05-b",
+          "text": "さんぷ",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-05-c",
+          "text": "きんひ",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-05-d",
+          "text": "さんぴ",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-05-d",
+      "explanation": "💡 賛＝さん（賛成（さんせい））；否＝ひ（否定（ひてい））。「ん」後面的「ひ」半濁音化成「ぴ」（賛否・反比（はんぴ）型）；固定唸法要背起來。\n【選項解析】\n×1 さんふ：無此詞\n×2 さんぷ：無此詞\n×3 きんひ：無此詞\n○4 さんぴ：賛否（さんぴ）＝贊成與否",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2021-12-v-06",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "この仕事は、山本さんに<u>まかせて</u>おけば安心です。",
+      "questionTranslation": "這份工作只要交給山本先生就可以放心。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-06-a",
+          "text": "仕せて",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-06-b",
+          "text": "担せて",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-06-c",
+          "text": "任せて",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-06-d",
+          "text": "但せて",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-06-c",
+      "explanation": "💡 任（にん）＋せる＝まかせる（責任（せきにん）・任務（にんむ））。〜に〜を任せる＝把〜交給〜。\n【選項解析】\n×1 仕せて：「仕」＝つか（える）、し（事（しごと））\n×2 担せて：「担」＝かつ（ぐ）、にな（う）\n○3 任せて：任（まか）せる＝交給、委託\n×4 但せて：「但」＝ただ（し）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2021-12-v-07",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "新入生をテニスサークルに<u>かんゆう</u>した。",
+      "questionTranslation": "邀請（拉）新生加入網球社。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-07-a",
+          "text": "勧誘",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-07-b",
+          "text": "勧遊",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-07-c",
+          "text": "観誘",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-07-d",
+          "text": "観遊",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-07-a",
+      "explanation": "💡 勧（かん）＝勸（勧（すす）める）；誘（ゆう）＝誘（誘（さそ）う）。與「観（かん）」（観光（かんこう））形近易混。\n【選項解析】\n○1 勧誘：勸誘、拉人加入\n×2 勧遊：無此詞\n×3 観誘：無此詞\n×4 観遊：無此詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2021-12-v-08",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "この計画は<u>じゅんちょう</u>に進んでいる。",
+      "questionTranslation": "這個計畫進行得很順利。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-08-a",
+          "text": "準長",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-08-b",
+          "text": "準調",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-08-c",
+          "text": "順長",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-08-d",
+          "text": "順調",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-08-d",
+      "explanation": "💡 順（じゅん）＝順序、順；調（ちょう）＝狀態、調子（調子（ちょうし））。「順調に進む」是固定搭配；「準（じゅん）」（準備（じゅんび））別混淆。\n【選項解析】\n×1 準長：無此詞\n×2 準調：無此詞\n×3 順長：無此詞\n○4 順調：順利",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2021-12-v-09",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "落ち葉が<u>つもった</u>道を歩いた。",
+      "questionTranslation": "走在落葉堆積的路上。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-09-a",
+          "text": "詰まった",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-09-b",
+          "text": "満もった",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-09-c",
+          "text": "占もった",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-09-d",
+          "text": "積もった",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-09-d",
+      "explanation": "💡 雪（ゆき）が積もる／ほこりが積もる＝一層層堆起來。詰まる＝空隙被填塞（鼻が詰まる）。\n【選項解析】\n×1 詰まった：詰（つ）まる＝塞滿、堵住\n×2 満もった：無此詞（満（み）ちる・満（み）たす）\n×3 占もった：無此詞（占（し）める）\n○4 積もった：積（つ）もる＝堆積",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2021-12-v-10",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "この状態が<u>えいきゅう</u>に続くわけではない。",
+      "questionTranslation": "這個狀態並不會永遠持續下去。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-10-a",
+          "text": "延久",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-10-b",
+          "text": "永久",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-10-c",
+          "text": "延及",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-10-d",
+          "text": "永及",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-10-b",
+      "explanation": "💡 永（えい）＝永遠（永遠（えいえん））；久（きゅう）＝久（持久（じきゅう））。「延（えん）」＝延長（延期（えんき））是延遲、延伸，不是永遠。\n【選項解析】\n×1 延久：無此詞\n○2 永久：永久\n×3 延及：無此詞\n×4 永及：無此詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2021-12-v-11",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 語形成】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "私も山口さんと（　）意見です。",
+      "questionTranslation": "我也和山口先生意見相同。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-11-a",
+          "text": "等",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-11-b",
+          "text": "同",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-11-c",
+          "text": "共",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-11-d",
+          "text": "似",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-11-b",
+      "explanation": "💡 同〜＝相同的〜（同意見・同年齢（どうねんれい）・同時（どうじ））。\n【選項解析】\n×1 等：等意見 不成詞\n○2 同：同意見（どういけん）＝相同的意見\n×3 共：共意見 不成詞\n×4 似：似意見 不成詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "語形成"
+    },
+    {
+      "id": "n2-2021-12-v-12",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 語形成】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "このバナナは甘い香りがするので、そろそろ食べ（　）ですよ。",
+      "questionTranslation": "這根香蕉散發出甜香，差不多是可以吃的時候了。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-12-a",
+          "text": "頃",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-12-b",
+          "text": "期",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-12-c",
+          "text": "刻",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-12-d",
+          "text": "節",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-12-a",
+      "explanation": "💡 動詞ます形＋頃＝最適當的時機（見頃（みごろ）・食べ頃・買い頃（がいごろ））。\n【選項解析】\n○1 頃：食（た）べ頃（ごろ）＝正是適合吃的時候\n×2 期：食べ期 不成詞\n×3 刻：食べ刻 不成詞\n×4 節：食べ節 不成詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "語形成"
+    },
+    {
+      "id": "n2-2021-12-v-13",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 語形成】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "本登録の前に、まずは（　）登録を行ってください。",
+      "questionTranslation": "正式註冊之前，請先進行暫時性（預先）註冊。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-13-a",
+          "text": "先",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-13-b",
+          "text": "予",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-13-c",
+          "text": "仮",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-13-d",
+          "text": "近",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-13-c",
+      "explanation": "💡 仮〜＝暫時的〜（仮契約（かりけいやく）・仮免許（かりめんきょ））；與「本（ほん）〜」成對（本登録／仮登録）。\n【選項解析】\n×1 先：先登録 不成詞\n×2 予：予登録 不成詞（「予約」「予告」才是常用）\n○3 仮：仮登録（かりとうろく）＝暫時註冊、臨時登記\n×4 近：近登録 不成詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "語形成"
+    },
+    {
+      "id": "n2-2021-12-v-14",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "学生の頃、宿題は（　）になってからやることが多かった。",
+      "questionTranslation": "學生時代，作業常常是到了最後一刻才寫。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-14-a",
+          "text": "びりびり",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-14-b",
+          "text": "ばりばり",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-14-c",
+          "text": "ぎりぎり",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-14-d",
+          "text": "じりじり",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-14-c",
+      "explanation": "💡 ぎりぎりになる＝到了極限的時間。じりじり是「慢慢逼近、焦急」，語感不同。\n【選項解析】\n×1 びりびり：撕破聲、麻麻的感覺\n×2 ばりばり：脆硬的聲音、幹勁十足地工作\n○3 ぎりぎり：勉強、臨界（最後關頭）\n×4 じりじり：一點一點逼近、焦躁",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2021-12-v-15",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "生命保険を（　）したいので、手続きを教えてください。",
+      "questionTranslation": "我想解約人壽保險，請告訴我辦理手續。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-15-a",
+          "text": "廃止",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-15-b",
+          "text": "解約",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-15-c",
+          "text": "中止",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-15-d",
+          "text": "解消",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-15-b",
+      "explanation": "💡 保険・携帯電話の契約を「解約する」。解消は「ストレスを解消する」「提携を解消する」。\n【選項解析】\n×1 廃止：廢止（制度、設施）\n○2 解約：解約（解除契約）\n×3 中止：中止（活動、進行中的事）\n×4 解消：解除、消除（問題、關係、婚約）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2021-12-v-16",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "私たちは、お客様の（　）に対応したサービスを提供しています。",
+      "questionTranslation": "我們提供符合顧客需求的服務。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-16-a",
+          "text": "ニーズ",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-16-b",
+          "text": "ストライキ",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-16-c",
+          "text": "セールス",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-16-d",
+          "text": "エコノミー",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-16-a",
+      "explanation": "💡 お客様のニーズに応える／対応する＝滿足顧客需求。\n【選項解析】\n○1 ニーズ：需求（needs）\n×2 ストライキ：罷工\n×3 セールス：銷售、推銷\n×4 エコノミー：經濟（經濟艙）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2021-12-v-17",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "来年ここに新しい支店を（　）することが決まった。",
+      "questionTranslation": "決定明年在這裡開設新分店。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-17-a",
+          "text": "創造",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-17-b",
+          "text": "形成",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-17-c",
+          "text": "工作",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-17-d",
+          "text": "開設",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-17-d",
+      "explanation": "💡 開設＝新設置（支店・口座・窓口）。創造是創造出新的事物，形成是逐漸成形。\n【選項解析】\n×1 創造：創造\n×2 形成：形成\n×3 工作：手工製作、策動\n○4 開設：開設、設立（支店、口座）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2021-12-v-18",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "卒業パーティーには、ちゃんとした（　）で行ったほうがいいのかな。",
+      "questionTranslation": "畢業派對，是不是穿得正式一點去比較好呢？",
+      "options": [
+        {
+          "id": "n2-2021-12-v-18-a",
+          "text": "様子",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-18-b",
+          "text": "容姿",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-18-c",
+          "text": "外見",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-18-d",
+          "text": "格好",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-18-d",
+      "explanation": "💡 ちゃんとした格好＝端正得體的穿著；「格好」＝服裝樣式、姿態。容姿與外見偏向「長相、外觀」，不能搭配「で行く」。\n【選項解析】\n×1 様子：樣子、情況\n×2 容姿：容貌、外貌長相\n×3 外見：外表、外觀\n○4 格好：打扮、裝束",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2021-12-v-19",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "店が忙しい時は臨時にアルバイトを（　）いる。",
+      "questionTranslation": "店裡忙的時候，會臨時僱用打工的人。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-19-a",
+          "text": "つかんで",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-19-b",
+          "text": "ふくんで",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-19-c",
+          "text": "やとって",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-19-d",
+          "text": "かせいで",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-19-c",
+      "explanation": "💡 アルバイトを雇う＝僱用打工者；（アルバイトで）稼ぐ＝打工賺錢，主語不同。\n【選項解析】\n×1 つかんで：掴（つか）む＝抓住\n×2 ふくんで：含（ふく）む＝包含\n○3 やとって：雇（やと）う＝僱用\n×4 かせいで：稼（かせ）ぐ＝賺錢",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2021-12-v-20",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "誰にも言えずにずっと悩んでいたが、昨日親友に（　）相談してみた。",
+      "questionTranslation": "一直沒對任何人說、獨自煩惱，昨天鼓起勇氣找好朋友商量了。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-20-a",
+          "text": "思いきって",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-20-b",
+          "text": "うっかり",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-20-c",
+          "text": "せっかく",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-20-d",
+          "text": "知らず知らず",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-20-a",
+      "explanation": "💡 思い切って〜する＝下定決心做某事（有勇氣踏出一步）。うっかり是「無意中的疏忽」，與「相談してみた」的有意行為不合。\n【選項解析】\n○1 思いきって：下定決心、毅然決然\n×2 うっかり：不留神\n×3 せっかく：難得、特意\n×4 知らず知らず：不知不覺",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2021-12-v-21",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "私の会社は<u>最寄り</u>の駅から歩いて15分です。",
+      "questionTranslation": "我的公司從最近的車站走路要15分鐘。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-21-a",
+          "text": "一番大きい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-21-b",
+          "text": "一番近い",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-21-c",
+          "text": "終点",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-21-d",
+          "text": "始発",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-21-b",
+      "explanation": "💡 最寄り（もより）の〜＝離（所在地）最近的〜（最寄りの駅・最寄りのコンビニ）。\n【選項解析】\n×1 一番大きい：最大的\n○2 一番近い：最近的\n×3 終点：終點\n×4 始発：首班車（始發站）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2021-12-v-22",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "演奏会で着るドレスは、いつも近所の店で<u>レンタル</u>しています。",
+      "questionTranslation": "演奏會上穿的禮服，我總是在附近的店租。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-22-a",
+          "text": "作って",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-22-b",
+          "text": "買って",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-22-c",
+          "text": "直して",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-22-d",
+          "text": "借りて",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-22-d",
+      "explanation": "💡 レンタル＝租借（有償）。レンタカー（租車）・レンタルビデオ。\n【選項解析】\n×1 作って：製作\n×2 買って：買\n×3 直して：修改、修理\n○4 借りて：借、租",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2021-12-v-23",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "村上さんはほかの人に<u>指図</u>されるのが嫌いだそうだ。",
+      "questionTranslation": "聽說村上先生討厭被別人指使。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-23-a",
+          "text": "命令",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-23-b",
+          "text": "反対",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-23-c",
+          "text": "注意",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-23-d",
+          "text": "自慢",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-23-a",
+      "explanation": "💡 指図（さしず）する＝下指示、發號施令（多帶有「被人指使」的不快感）。\n【選項解析】\n○1 命令：命令、指使\n×2 反対：反對\n×3 注意：提醒、注意\n×4 自慢：自誇",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2021-12-v-24",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "この時期に旅行するなら、かさは<u>欠かせない</u>。",
+      "questionTranslation": "這個時期去旅行的話，傘是不可或缺的。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-24-a",
+          "text": "ないといい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-24-b",
+          "text": "あるとじゃまだ",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-24-c",
+          "text": "ないと困る",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-24-d",
+          "text": "あると便利だ",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-24-c",
+      "explanation": "💡 欠かせない＝不可缺少。選項4只是「有比較方便」，語氣比「欠かせない」弱，不是同義。\n【選項解析】\n×1 ないといい：沒有比較好\n×2 あるとじゃまだ：有了反而礙事\n○3 ないと困る：沒有會很麻煩\n×4 あると便利だ：有的話很方便（但不是必需）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2021-12-v-25",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "雨は<u>依然</u>強かった。",
+      "questionTranslation": "雨依然很大。",
+      "options": [
+        {
+          "id": "n2-2021-12-v-25-a",
+          "text": "確かに",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-25-b",
+          "text": "まだ",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-25-c",
+          "text": "意外に",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-25-d",
+          "text": "とても",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-25-b",
+      "explanation": "💡 依然（として）＝依舊、仍然（状態が続いている）。依然として＝相変わらず。\n【選項解析】\n×1 確かに：的確\n○2 まだ：仍然、還\n×3 意外に：出乎意料地\n×4 とても：非常",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2021-12-v-26",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【栽培】次の選択肢の中で「栽培」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【栽培、種植】以下哪個選項中「栽培」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2021-12-v-26-a",
+          "text": "両親は牧場で牛を栽培して、チーズを作っています。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-26-b",
+          "text": "私は今、生まれて半年の赤ちゃんを栽培しています。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-26-c",
+          "text": "庭で見つけた虫の卵を栽培して、観察日記を書いた。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-26-d",
+          "text": "この農場では、農薬を使わずに野菜を栽培しています。",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-26-d",
+      "explanation": "💡 栽培＝種植植物（野菜・花・果物）。動物＝飼育，小孩＝育てる／養育。\n【選項解析】\n×1 両親は牧場で牛を栽培して、チーズを作っています。：父母在牧場養牛、做起司。 → 牛を**飼育（しいく）**して\n×2 私は今、生まれて半年の赤ちゃんを栽培しています。：我現在在帶出生半年的嬰兒。 → 赤ちゃんを**育（そだ）てて**（養育）\n×3 庭で見つけた虫の卵を栽培して、観察日記を書いた。：把院子裡找到的蟲卵養大，寫了觀察日記。 → **飼育**して／育てて\n○4 この農場では、農薬を使わずに野菜を栽培しています。：這座農場不使用農藥栽種蔬菜。",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2021-12-v-27",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【急激】次の選択肢の中で「急激」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【急遽、劇烈】以下哪個選項中「急激」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2021-12-v-27-a",
+          "text": "イベントの開催日が近くなり、準備が急激に進められている。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-27-b",
+          "text": "新しい駅ができて、市の人口が急激に増加している。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-27-c",
+          "text": "このパンは非常に人気があり、朝8時に開店すると急激に売れていく。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-27-d",
+          "text": "人気歌手が現れると、ファンの人たちが急激に取り囲んだ。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-27-b",
+      "explanation": "💡 急激（な）＝程度、數量「急速變化」（急激な変化・急激に増える／減る）。單純「很快」「立刻」不能用急激。\n【選項解析】\n×1 イベントの開催日が近くなり、準備が急激に進められている。：活動日期逼近，準備正在加緊進行。 → **急ピッチ**で／どんどん（「急激」多用於「變化」的幅度）\n○2 新しい駅ができて、市の人口が急激に増加している。：新車站啟用後，市的人口急遽增加。\n×3 このパンは非常に人気があり、朝8時に開店すると急激に売れていく。：這種麵包非常受歡迎，早上8點一開店就迅速賣光。 → **飛ぶように**／あっという間に\n×4 人気歌手が現れると、ファンの人たちが急激に取り囲んだ。：人氣歌手一出現，粉絲立刻圍上來。 → **いっせいに／どっと**",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2021-12-v-28",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【漏れる】次の選択肢の中で「漏れる」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【漏出、洩漏】以下哪個選項中「漏れる」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2021-12-v-28-a",
+          "text": "ジュースを注ぎすぎて、コップから漏れてしまった。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-28-b",
+          "text": "転んでしまって、膝から血が漏れてきた。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-28-c",
+          "text": "水道管に穴が開いているのか、水が漏れてきている。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-28-d",
+          "text": "悲しい映画を見たせいか、涙が漏れてきた。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-28-c",
+      "explanation": "💡 漏れる＝液體、氣體、光、情報從縫隙、洞口「漏出」（ガスが漏れる・情報が漏れる）。杯子裝太滿＝あふれる／こぼれる。\n【選項解析】\n×1 ジュースを注ぎすぎて、コップから漏れてしまった。：果汁倒太多，從杯子溢出來了。 → **あふれて／こぼれて**\n×2 転んでしまって、膝から血が漏れてきた。：跌倒了，膝蓋流出血來。 → 血が**出（で）て／流（なが）れて**きた\n○3 水道管に穴が開いているのか、水が漏れてきている。：大概是水管破洞，水漏出來了。\n×4 悲しい映画を見たせいか、涙が漏れてきた。：也許是看了悲傷的電影，流出了眼淚。 → 涙が**こぼれて／出て**きた",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2021-12-v-29",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【傾向】次の選択肢の中で「傾向」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【傾向、趨勢】以下哪個選項中「傾向」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2021-12-v-29-a",
+          "text": "ファッション誌によると、今年は黄色が傾向するそうだ。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-29-b",
+          "text": "最近では、家族がばらばらに食事する傾向がある。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-29-c",
+          "text": "姉は日本文学の研究に傾向している。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-29-d",
+          "text": "この坂は傾向がきつくて、自転車だとつらい。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-29-b",
+      "explanation": "💡 傾向＝（事物）傾向於某方向的趨勢，用法是「〜する傾向がある」（名詞）。不能當動詞用「傾向する」。傾斜＝坡度；傾倒＝熱衷。\n【選項解析】\n×1 ファッション誌によると、今年は黄色が傾向するそうだ。：據時尚雜誌說，今年黃色流行。 → 黄色が**流行（はや）る**\n○2 最近では、家族がばらばらに食事する傾向がある。：最近有家人各自分開用餐的傾向。\n×3 姉は日本文学の研究に傾向している。：姊姊專注於日本文學研究。 → **傾倒（けいとう）**している／没頭（ぼっとう）\n×4 この坂は傾向がきつくて、自転車だとつらい。：這個坡度很陡，騎腳踏車很吃力。 → **傾斜（けいしゃ）**がきつくて",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2021-12-v-30",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【さっさと】次の選択肢の中で「さっさと」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【趕快、迅速（毫不拖拉）】以下哪個選項中「さっさと」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2021-12-v-30-a",
+          "text": "いつまでもテレビを見ていないで、さっさと宿題をしなさい。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2021-12-v-30-b",
+          "text": "雷鳴が出たと思ったら、さっさと雨が降り出した。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-30-c",
+          "text": "さっさと着くので、もう少しそこで待っていてください。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2021-12-v-30-d",
+          "text": "買ってまだ一週間なのに、さっさと壊れた。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2021-12-v-30-a",
+      "explanation": "💡 さっさと＝人的動作「毫不猶豫地迅速做」（常用於催促、命令：さっさと食べなさい）。自然現象、狀態的「很快」不能用。\n【選項解析】\n○1 いつまでもテレビを見ていないで、さっさと宿題をしなさい。：別一直看電視，趕快去寫作業。\n×2 雷鳴が出たと思ったら、さっさと雨が降り出した。：才剛打雷，雨就下起來了。 → **すぐに／ざあっと**\n×3 さっさと着くので、もう少しそこで待っていてください。：馬上就到，請在那裡再等一下。 → **もうすぐ／まもなく**\n×4 買ってまだ一週間なのに、さっさと壊れた。：才買一個禮拜就壞了。 → **あっさり／あっけなく**",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    }
+  ]
+}

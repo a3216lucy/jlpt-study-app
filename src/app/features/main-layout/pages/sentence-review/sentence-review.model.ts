@@ -52,4 +52,5 @@ export interface SentenceReviewData {
 /** JLPT 級別 → 對應資料檔路徑（僅列出已有資料的級別） */
 export const LEVEL_DATA_MAP: Partial<Record<JlptLevel, string>> = {
   N3: 'assets/data/grammar-n3-review.json',
+  N2: 'assets/data/grammar-n2-review.json',
 };

@@ -1,0 +1,1185 @@
+{
+  "id": "n2-2020-12-vocab",
+  "title": "2020年12月 N2 語彙",
+  "description": "2020年12月 JLPT N2 語彙（問題1〜6）",
+  "level": "N2",
+  "category": "vocabulary",
+  "type": "sentence-fill",
+  "questions": [
+    {
+      "id": "n2-2020-12-v-01",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "<u>倒さない</u>ように気をつけてください。",
+      "questionTranslation": "請小心不要弄倒。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-01-a",
+          "text": "くずさない",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-01-b",
+          "text": "たおさない",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-01-c",
+          "text": "こわさない",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-01-d",
+          "text": "つぶさない",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-01-b",
+      "explanation": "💡 倒す（他動詞）＝使站著的東西倒下；倒れる（自動詞）＝自己倒下。崩す＝讓整體的形狀/秩序散掉（体調を崩す・山を崩す），不是「使倒下」。\n【選項解析】\n×1 くずさない：崩（くず）す＝弄垮、弄亂（形狀、結構）\n○2 たおさない：倒（たお）す＝把（立著的東西）弄倒\n×3 こわさない：壊（こわ）す＝弄壞\n×4 つぶさない：潰（つぶ）す＝壓扁、搞垮",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2020-12-v-02",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "今回の件での<u>損害</u>は数千万円にのぼった。",
+      "questionTranslation": "這次事件造成的損害高達數千萬日圓。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-02-a",
+          "text": "ひかい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-02-b",
+          "text": "そんかい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-02-c",
+          "text": "そんがい",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-02-d",
+          "text": "ひがい",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-02-c",
+      "explanation": "💡 損害＝そん＋がい（害濁音）。害＝がい（公害・障害・被害）。「被害＝受到的損害、受害」，「損害＝損失」，漢字不同讀音也不同；〜にのぼる＝（數量）達到〜。\n【選項解析】\n×1 ひかい：無此詞\n×2 そんかい：無此詞（害不唸「かい」）\n○3 そんがい：損害（そんがい）＝損害\n×4 ひがい：被害（ひがい）＝受害（損（そん）→被（ひ）才是「ひ」）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2020-12-v-03",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "思ったより<u>険しい</u>山道だった。",
+      "questionTranslation": "這條山路比想像中險峻。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-03-a",
+          "text": "くるしい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-03-b",
+          "text": "さびしい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-03-c",
+          "text": "はげしい",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-03-d",
+          "text": "けわしい",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-03-d",
+      "explanation": "💡 険しい山道＝陡峭難走的山路；也可用於表情（険しい顔つき）、前途（険しい道のり）。\n【選項解析】\n×1 くるしい：苦（くる）しい＝痛苦、難受\n×2 さびしい：寂（さび）しい＝寂寞\n×3 はげしい：激（はげ）しい＝激烈\n○4 けわしい：険（けわ）しい＝（地勢）陡峭險峻、（表情）嚴峻",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2020-12-v-04",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "この辺は<u>比較的</u>人通りが少ない。",
+      "questionTranslation": "這一帶人潮相對來說比較少。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-04-a",
+          "text": "ひこうてき",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-04-b",
+          "text": "ひこてき",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-04-c",
+          "text": "ひかくてき",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-04-d",
+          "text": "ひかてき",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-04-c",
+      "explanation": "💡 比較的＋形容詞/動詞＝相對來說〜（比較的安い・比較的簡単）。比＝ひ，較＝かく，短音不要少一拍。\n【選項解析】\n×1 ひこうてき：無此詞（飛行（ひこう）的混淆）\n×2 ひこてき：無此詞\n○3 ひかくてき：比較的（ひかくてき）＝相對地、比較起來\n×4 ひかてき：無此詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2020-12-v-05",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題1 漢字読み】＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "飛行機は<u>下降</u>を始めた。",
+      "questionTranslation": "飛機開始下降了。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-05-a",
+          "text": "かこう",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-05-b",
+          "text": "かくう",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-05-c",
+          "text": "げこう",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-05-d",
+          "text": "げくう",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-05-a",
+      "explanation": "💡 下＝か（下降・低下・地下）／げ（下校・下旬・下車）。下降（かこう）↔ 上昇（じょうしょう）；ここでは「飛行機が降りはじめた」の意味。\n【選項解析】\n○1 かこう：下降（かこう）＝下降\n×2 かくう：無此詞（架空（かくう）＝虛構，漢字不同）\n×3 げこう：下校（げこう）＝放學離校\n×4 げくう：無此詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 1,
+      "problemLabel": "漢字読み"
+    },
+    {
+      "id": "n2-2020-12-v-06",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "鈴木さんは<u>あざやか</u>な色のシャツを着ていた。",
+      "questionTranslation": "鈴木先生穿著顏色鮮豔的襯衫。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-06-a",
+          "text": "鮮やか",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-06-b",
+          "text": "美やか",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-06-c",
+          "text": "清やか",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-06-d",
+          "text": "純やか",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-06-a",
+      "explanation": "💡 鮮やか＝顏色/印象/手法鮮明漂亮（鮮やかな色・鮮やかな勝利・鮮やかな手並み）。鮮＝セン・あざ(やか)（新鮮・鮮明）。\n【選項解析】\n○1 鮮やか：鮮豔、鮮明\n×2 美やか：無此寫法（美（うつく）しい）\n×3 清やか：無此寫法（清（きよ）らか・清（すが）しい 才有）\n×4 純やか：無此寫法（純（じゅん）粋（すい））",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2020-12-v-07",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "今年の夏休みは<u>きせい</u>の予定はありません。",
+      "questionTranslation": "今年的暑假沒有回鄉的計畫。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-07-a",
+          "text": "帰勢",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-07-b",
+          "text": "帰斉",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-07-c",
+          "text": "帰省",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-07-d",
+          "text": "帰成",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-07-c",
+      "explanation": "💡 帰省＝回故鄉（盆暮れの帰省ラッシュ）。省＝しょう（省略）／せい（帰省・反省）。同音異義：規制（きせい）＝規範限制、既成（きせい）＝已成的。\n【選項解析】\n×1 帰勢：無此詞\n×2 帰斉：無此詞\n○3 帰省：帰省＝返鄉（探望老家）\n×4 帰成：無此詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2020-12-v-08",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "もう少し<u>ちぢめて</u>ください。",
+      "questionTranslation": "請再縮短一點。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-08-a",
+          "text": "薄めて",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-08-b",
+          "text": "納めて",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-08-c",
+          "text": "貯めて",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-08-d",
+          "text": "縮めて",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-08-d",
+      "explanation": "💡 縮める（他動詞）／縮む（自動詞）。縮＝シュク・ちぢ(む)（短縮・縮小）。例：距離を縮める・差を縮める。\n【選項解析】\n×1 薄めて：薄める＝稀釋、弄淡\n×2 納めて：納める＝繳納、收納\n×3 貯めて：貯める＝存（錢）\n○4 縮めて：縮める＝縮短、縮小",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2020-12-v-09",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "これからさまざまなことを<u>じっせん</u>していきたい。",
+      "questionTranslation": "今後想要實際去實踐各種事情。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-09-a",
+          "text": "実施",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-09-b",
+          "text": "実践",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-09-c",
+          "text": "実栈",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-09-d",
+          "text": "実旋",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-09-b",
+      "explanation": "💡 実践＝把想法/理論實際做出來（理論を実践する）；実施＝把決定好的計畫、措施施行（試験を実施する）。践＝セン。\n【選項解析】\n×1 実施：實施（制度、措施、考試）\n○2 実践：實踐、付諸實行\n×3 実栈：無此詞\n×4 実旋：無此詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2020-12-v-10",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題2 表記】＿＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "西村氏の作品の中でこの小説は、かなり<u>いしょく</u>だ。",
+      "questionTranslation": "在西村先生的作品之中，這部小說相當與眾不同。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-10-a",
+          "text": "異色",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-10-b",
+          "text": "違色",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-10-c",
+          "text": "異食",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-10-d",
+          "text": "違食",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-10-a",
+      "explanation": "💡 異色＝（同類之中）色彩/風格迥異、獨樹一格（異色の作品・異色の経歴）。異＝イ・こと(なる)。\n【選項解析】\n○1 異色：異色＝與一般不同、風格特別\n×2 違色：無此詞\n×3 異食：異食（いしょく）＝（醫）異食癖，非此意\n×4 違食：無此詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 2,
+      "problemLabel": "表記"
+    },
+    {
+      "id": "n2-2020-12-v-11",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 語形成】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "宿題を（　）提出するよう、先生に言われた。",
+      "questionTranslation": "老師要我重新提交作業。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-11-a",
+          "text": "復",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-11-b",
+          "text": "改",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-11-c",
+          "text": "再",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-11-d",
+          "text": "補",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-11-c",
+      "explanation": "💡 再＋名詞（再提出・再確認・再開発）＝重新〜。與「改（かい）〜」（改善・改正）、「復（ふっ）〜」（復活・復旧）區分。\n【選項解析】\n×1 復：復提出（無此詞）\n×2 改：改提出（無此詞）\n○3 再：再提出（さいていしゅつ）＝重新提出\n×4 補：補提出（無此詞；補習・補充 才用補）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "語形成"
+    },
+    {
+      "id": "n2-2020-12-v-12",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 語形成】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "あの人は都会（　）だ。",
+      "questionTranslation": "那個人是在都市長大的。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-12-a",
+          "text": "育ち",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-12-b",
+          "text": "過ごし",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-12-c",
+          "text": "始まり",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-12-d",
+          "text": "生き",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-12-a",
+      "explanation": "💡 地名/場所＋育ち＝在〜長大（東京育ち・田舎育ち・都会育ち）；是「出身背景」的固定說法。\n【選項解析】\n○1 育ち：都会育ち（とかいそだち）＝在都市長大\n×2 過ごし：都会過ごし（無此詞）\n×3 始まり：無此詞\n×4 生き：無此詞",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "語形成"
+    },
+    {
+      "id": "n2-2020-12-v-13",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題3 語形成】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "（　）仕事終わったので、休憩しよう。",
+      "questionTranslation": "告一段落了，休息一下吧。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-13-a",
+          "text": "半",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-13-b",
+          "text": "短",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-13-c",
+          "text": "小",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-13-d",
+          "text": "一",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-13-d",
+      "explanation": "💡 一＋動作名詞（ひと〜）＝「做完一回」的感覺：一仕事・一休み・一眠り・一苦労。一仕事終える＝忙完一個段落。\n【選項解析】\n×1 半：半仕事（無此詞）\n×2 短：無此詞\n×3 小：無此詞\n○4 一：一仕事（ひとしごと）＝一件（有份量的）工作、告一段落的工作",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 3,
+      "problemLabel": "語形成"
+    },
+    {
+      "id": "n2-2020-12-v-14",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "彼の演技はとても個性的で、見る人の（　）が大きく分かれる。",
+      "questionTranslation": "他的演技非常有個性，觀眾的評價大相逕庭。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-14-a",
+          "text": "考慮",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-14-b",
+          "text": "評価",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-14-c",
+          "text": "信頼",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-14-d",
+          "text": "測定",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-14-b",
+      "explanation": "💡 評価が分かれる＝評價（好壞）兩極、意見分歧。前面「個性的」＝有強烈特色，所以看的人評價不一。\n【選項解析】\n×1 考慮：考慮\n○2 評価：評價\n×3 信頼：信賴\n×4 測定：測量、測定",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2020-12-v-15",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "話し合いでは、相手の意見を（　）し、よく聞くことが大切だ。",
+      "questionTranslation": "討論時，重要的是尊重對方的意見並仔細聆聽。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-15-a",
+          "text": "尊重",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-15-b",
+          "text": "信仰",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-15-c",
+          "text": "提案",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-15-d",
+          "text": "発揮",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-15-a",
+      "explanation": "💡 意見を尊重する＝重視並接納他人的意見（個性・意思を尊重する）。提案は「自分が出す」もの，発揮は「能力・実力」と一緒に使う。\n【選項解析】\n○1 尊重：尊重\n×2 信仰：信仰（宗教）\n×3 提案：提案\n×4 発揮：發揮（能力）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2020-12-v-16",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "この商品は健康を気にする40代から50代の人を（　）に開発しました。",
+      "questionTranslation": "這項商品是以在意健康的40到50多歲族群為目標對象所開發的。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-16-a",
+          "text": "ゴール",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-16-b",
+          "text": "インパクト",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-16-c",
+          "text": "アピール",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-16-d",
+          "text": "ターゲット",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-16-d",
+      "explanation": "💡 〜をターゲットに（開発／販売）する＝以〜為目標客群。ゴール＝達成的終點，アピール＝向外展示優點，皆不能接「人を〜に」。\n【選項解析】\n×1 ゴール：終點、目標（goal）\n×2 インパクト：衝擊、強烈印象（impact）\n×3 アピール：訴求、吸引（appeal）\n○4 ターゲット：目標對象、客群（target）",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2020-12-v-17",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "佐藤さんは服装や髪形が個性的で、他の人とは違う（　）の雰囲気がある。",
+      "questionTranslation": "佐藤小姐的服裝與髮型很有個性，散發著與其他人不同的獨特氛圍。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-17-a",
+          "text": "定着",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-17-b",
+          "text": "専用",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-17-c",
+          "text": "独特",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-17-d",
+          "text": "区別",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-17-c",
+      "explanation": "💡 独特の＋名詞（独特の雰囲気・独特の味・独特の文化）＝獨有的〜。注意「独特」是形容詞（独特だ／独特な／独特の）。\n【選項解析】\n×1 定着：固定下來、扎根\n×2 専用：專用\n○3 独特：獨特（只有自己/該事物才有）\n×4 区別：區別",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2020-12-v-18",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "前回の大会では、あの二人は最後まで優勝を（　）した。",
+      "questionTranslation": "上一屆的大賽中，那兩個人一直到最後都在爭奪冠軍。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-18-a",
+          "text": "戦って",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-18-b",
+          "text": "争って",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-18-c",
+          "text": "奪って",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-18-d",
+          "text": "破って",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-18-b",
+      "explanation": "💡 優勝を争う＝爭奪冠軍（固定搭配）；「最後まで〜した」＝一路爭到最後。奪う＝實際搶走某物，破る＝記録を破る・相手を破る。\n【選項解析】\n×1 戦って：戰鬥、對戰（對象常用「〜と戦う」）\n○2 争って：爭奪（優勝を争う）\n×3 奪って：搶奪\n×4 破って：打破、擊敗",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2020-12-v-19",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "高橋さんの家を訪ねたが、みんな出かけているようで、人の（　）がなかった。",
+      "questionTranslation": "我去拜訪高橋先生的家，大家似乎都出門了，感覺不到有人的跡象。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-19-a",
+          "text": "動作",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-19-b",
+          "text": "実感",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-19-c",
+          "text": "気配",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-19-d",
+          "text": "状態",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-19-c",
+      "explanation": "💡 人の気配がない／〜の気配を感じる＝（沒有）有人/東西存在的跡象。気配＝讀「けはい」（不是きはい）。\n【選項解析】\n×1 動作：動作\n×2 実感：實際感受\n○3 気配：跡象、動靜\n×4 状態：狀態",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2020-12-v-20",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題4 文脈規定】（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "彼は自分で決めたルールも守らない、（　）人だ。",
+      "questionTranslation": "他是個連自己定的規矩都不遵守、馬馬虎虎不負責任的人。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-20-a",
+          "text": "不規則な",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-20-b",
+          "text": "あやふやな",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-20-c",
+          "text": "大まかな",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-20-d",
+          "text": "いいかげんな",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-20-d",
+      "explanation": "💡 いい加減（いいかげん）な人＝做事不認真、不負責任的人。「自分で決めたルールも守らない」＝缺乏責任感 → いいかげん。大まか是「抓大方向」，沒有責備之意。\n【選項解析】\n×1 不規則な：不規律（生活が不規則だ）\n×2 あやふやな：含糊、不確定（態度・記憶があやふや）\n×3 大まかな：大致的、粗略的（不一定是負面）\n○4 いいかげんな：馬虎的、不負責任的",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 4,
+      "problemLabel": "文脈規定"
+    },
+    {
+      "id": "n2-2020-12-v-21",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "ボランティアで町の名所を<u>ガイドして</u>いる。",
+      "questionTranslation": "以志工身分為人導覽城鎮的名勝。（掃描檔此處印刷模糊，疑似「名所」）",
+      "options": [
+        {
+          "id": "n2-2020-12-v-21-a",
+          "text": "案内して",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-21-b",
+          "text": "宣伝して",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-21-c",
+          "text": "調査して",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-21-d",
+          "text": "記録して",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-21-a",
+      "explanation": "💡 ガイドする＝為遊客帶路、導覽＝案内する。（掃描檔「名所」二字印得像「名作」，不影響答案：不論是名所或名作，ガイドする都＝案内する。）\n【選項解析】\n○1 案内して：導覽、帶路\n×2 宣伝して：宣傳\n×3 調査して：調查\n×4 記録して：記錄",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2020-12-v-22",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "山口さんも<u>真剣に</u>作っていた。",
+      "questionTranslation": "山口先生也很認真地在製作。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-22-a",
+          "text": "上手に",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-22-b",
+          "text": "自由に",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-22-c",
+          "text": "積極的に",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-22-d",
+          "text": "まじめに",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-22-d",
+      "explanation": "💡 真剣に＝以認真嚴肅的態度（真剣に取り組む）≒ まじめに。注意「真剣（しんけん）」和「真面目（まじめ）」都表態度，不涉及技術好壞（上手）。\n【選項解析】\n×1 上手に：擅長地、熟練地\n×2 自由に：自由地\n×3 積極的に：積極地\n○4 まじめに：認真地",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2020-12-v-23",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "彼女のような歌手は<u>まれ</u>だと思う。",
+      "questionTranslation": "我認為像她這樣的歌手很罕見。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-23-a",
+          "text": "あまりない",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-23-b",
+          "text": "人気が出ない",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-23-c",
+          "text": "人気が出る",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-23-d",
+          "text": "たくさんいる",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-23-a",
+      "explanation": "💡 まれ（稀）＝很少見、罕見 ≒ めったにない・珍しい。「まれだ」是數量少，與人氣無關，所以 2、3 都不對。\n【選項解析】\n○1 あまりない：不太有、很少\n×2 人気が出ない：不受歡迎\n×3 人気が出る：受歡迎\n×4 たくさんいる：有很多",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2020-12-v-24",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "この道は<u>終日</u>通行止めです。",
+      "questionTranslation": "這條路整天禁止通行。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-24-a",
+          "text": "週末",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-24-b",
+          "text": "夜間",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-24-c",
+          "text": "一日中",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-24-d",
+          "text": "今日まで",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-24-c",
+      "explanation": "💡 終日＝從早到晚、整天（終日雨・終日営業）≒ 一日中。終＝しゅう；「終日」→ しゅうじつ，注意別和「週末（しゅうまつ）」混淆。\n【選項解析】\n×1 週末：週末\n×2 夜間：夜間\n○3 一日中：整天\n×4 今日まで：到今天為止",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2020-12-v-25",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題5 言い換え類義】＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "青木さんは髪を<u>いじって</u>いた。",
+      "questionTranslation": "青木小姐正在撥弄頭髮。",
+      "options": [
+        {
+          "id": "n2-2020-12-v-25-a",
+          "text": "切って",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-25-b",
+          "text": "触って",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-25-c",
+          "text": "洗って",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-25-d",
+          "text": "乾かして",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-25-b",
+      "explanation": "💡 いじる＝用手擺弄、把玩、觸摸（髪をいじる・携帯をいじる）≒ 触る。注意：「いじる」不含剪、洗的意思（但「機械をいじる」可指動手調整）。\n【選項解析】\n×1 切って：剪\n○2 触って：摸、碰\n×3 洗って：洗\n×4 乾かして：吹乾、弄乾",
+      "tags": [
+        "vocabulary",
+        "n2-vocab"
+      ],
+      "problemNumber": 5,
+      "problemLabel": "言い換え類義"
+    },
+    {
+      "id": "n2-2020-12-v-26",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【初期】次の選択肢の中で「初期」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【初期、早期】以下哪個選項中「初期」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2020-12-v-26-a",
+          "text": "曲の初期の部分を聞いただけで、題名が何かわかりました。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-26-b",
+          "text": "この建物は有名な建築物で、明治時代の初期に建てられました。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-26-c",
+          "text": "池田選手は、試合の初期では負けていたが、最後には勝つことができた。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-26-d",
+          "text": "今日は朝から雲に覆われ、初期は雨だったが、途中から雪に変わった。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-26-b",
+      "explanation": "💡 初期＝較長一段時期的最初階段（時代・病気・計画の初期）。一首歌、一場比賽、一天之內的「最初」不用「初期」，改用「冒頭・序盤・はじめ」。\n【選項解析】\n×1 曲の初期の部分を聞いただけで、題名が何かわかりました。：只聽了曲子最初的部分就知道曲名。 → 曲の**冒頭（ぼうとう）**の部分\n○2 この建物は有名な建築物で、明治時代の初期に建てられました。：這棟建築是有名的建築物，建於明治時代初期。\n×3 池田選手は、試合の初期では負けていたが、最後には勝つことができた。：池田選手比賽一開始落後，最後卻贏了。 → 試合の**序盤（じょばん）**／はじめのうち\n×4 今日は朝から雲に覆われ、初期は雨だったが、途中から雪に変わった。：今天一早烏雲密布，起初是雨，途中變成雪。 → **はじめ**は雨だったが",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2020-12-v-27",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【打ち明ける】次の選択肢の中で「打ち明ける」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【坦白說出（秘密、心事）】以下哪個選項中「打ち明ける」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2020-12-v-27-a",
+          "text": "仕事でわからないことがあれば、彼が何でも打ち明けてくれますよ。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-27-b",
+          "text": "谷口さんが戻ってきたら、伝言を打ち明けておいてもらえますか。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-27-c",
+          "text": "大事な情報はすぐに上司に打ち明けましょう。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-27-d",
+          "text": "ずっと秘密にしていたことを友達に打ち明けた。",
+          "isCorrect": true
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-27-d",
+      "explanation": "💡 打ち明ける＝把藏在心裡的秘密、煩惱、真心話毫無保留地說出來（秘密・悩み・本音を打ち明ける）。單純傳達訊息用「伝える」，工作上的報告用「報告する」。\n【選項解析】\n×1 仕事でわからないことがあれば、彼が何でも打ち明けてくれますよ。：工作上有不懂的事，他什麼都會…。 → 何でも**教（おし）えて**くれますよ\n×2 谷口さんが戻ってきたら、伝言を打ち明けておいてもらえますか。：谷口先生回來的話，可以幫我轉達留言嗎？ → 伝言を**伝（つた）えて**おいて\n×3 大事な情報はすぐに上司に打ち明けましょう。：重要的資訊要立刻向上司…。 → すぐに上司に**報告（ほうこく）しましょう**\n○4 ずっと秘密にしていたことを友達に打ち明けた。：把一直保密的事情向朋友坦白了。",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2020-12-v-28",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【欠陥】次の選択肢の中で「欠陥」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【缺陷、瑕疵】以下哪個選項中「欠陥」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2020-12-v-28-a",
+          "text": "あの人の欠陥は、自分に都合の悪いことがあるとうそをつくことだ。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-28-b",
+          "text": "眼鏡のレンズを硬い布でふいたら、欠陥がついてしまった。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-28-c",
+          "text": "先月発売された車のブレーキに欠陥が見つかり、販売が中止された。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-28-d",
+          "text": "このサービスを利用することの欠陥は費用が非常にかかることだ。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-28-c",
+      "explanation": "💡 欠陥＝產品、制度、構造本身的缺陷／瑕疵（欠陥商品・欠陥住宅・システムの欠陥）。人的性格缺點＝欠点；物體表面的刮傷＝傷；缺點（相對於優點）＝デメリット。\n【選項解析】\n×1 あの人の欠陥は、自分に都合の悪いことがあるとうそをつくことだ。：那個人的缺點，是對自己不利時就說謊。 → あの人の**欠点（けってん）**は\n×2 眼鏡のレンズを硬い布でふいたら、欠陥がついてしまった。：用硬布擦眼鏡鏡片，結果…。 → **傷（きず）**がついてしまった\n○3 先月発売された車のブレーキに欠陥が見つかり、販売が中止された。：上個月發售的車子煞車被發現有缺陷，停止了販售。\n×4 このサービスを利用することの欠陥は費用が非常にかかることだ。：使用這項服務的…是花費非常高。 → **デメリット／難点（なんてん）**",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2020-12-v-29",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【引退】次の選択肢の中で「引退」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【引退】以下哪個選項中「引退」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2020-12-v-29-a",
+          "text": "山本さんは去年入学したばかりの大学を引退し、別の大学を受験するらしい。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-29-b",
+          "text": "これまで多くの名作を残した映画監督が、今回限りで引退することを発表した。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-29-c",
+          "text": "この書店はもうすぐ商店街から引退し、駅前のビルの中で店を始めるらしい。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-29-d",
+          "text": "中村選手は前大会でのけがが回復せず、次の試合への出場を引退した。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-29-b",
+      "explanation": "💡 引退＝從長期從事的職位、職業、競技生涯退下來（現役を引退・政界を引退）。放棄參加某場比賽＝辞退；退學＝退学；店搬走＝移転。\n【選項解析】\n×1 山本さんは去年入学したばかりの大学を引退し、別の大学を受験するらしい。：山本同學好像要…去年剛入學的大學，改考別的大學。 → 大学を**やめ**（退学（たいがく）し）\n○2 これまで多くの名作を残した映画監督が、今回限りで引退することを発表した。：留下許多名作的電影導演，宣布這次之後引退。\n×3 この書店はもうすぐ商店街から引退し、駅前のビルの中で店を始めるらしい。：這家書店似乎快要離開商店街，在車站前大樓裡開店。 → 商店街から**撤退（てったい）／移転（いてん）**し\n×4 中村選手は前大会でのけがが回復せず、次の試合への出場を引退した。：中村選手因上屆大賽的傷沒有恢復，…參加下一場比賽。 → 出場を**辞退（じたい）**した",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    },
+    {
+      "id": "n2-2020-12-v-30",
+      "level": "N2",
+      "category": "vocabulary",
+      "type": "sentence-fill",
+      "prompt": "【問題6 用法】次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questionText": "【ぎっしり】次の選択肢の中で「ぎっしり」の使い方が最も正しいものはどれですか。",
+      "questionTranslation": "【（塞得）滿滿的、密密麻麻】以下哪個選項中「ぎっしり」的用法最正確？",
+      "options": [
+        {
+          "id": "n2-2020-12-v-30-a",
+          "text": "大きな箱に本がぎっしり詰まっている。",
+          "isCorrect": true
+        },
+        {
+          "id": "n2-2020-12-v-30-b",
+          "text": "ジュースがコップにぎっしり入っている。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-30-c",
+          "text": "少し太ったせいで、ズボンがぎっしりしている。",
+          "isCorrect": false
+        },
+        {
+          "id": "n2-2020-12-v-30-d",
+          "text": "朝の電車はいつも人でぎっしりしている。",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "n2-2020-12-v-30-a",
+      "explanation": "💡 ぎっしり＝（固體的）東西毫無空隙地塞滿、排滿（ぎっしり詰まる／並ぶ／入る／スケジュールがぎっしり）。液體不能用，「〜している」不自然；衣服緊＝きつい。（註：4 的「人でぎっしり」口語偶爾會聽到，但「ぎっしりしている」不是標準用法，答案卡以 1 為準。）\n【選項解析】\n○1 大きな箱に本がぎっしり詰まっている。：大箱子裡塞滿了書。\n×2 ジュースがコップにぎっしり入っている。：果汁滿滿地裝在杯子裡。 → **なみなみ**と／**いっぱい**入っている（液體不用ぎっしり）\n×3 少し太ったせいで、ズボンがぎっしりしている。：因為胖了一點，褲子很緊。 → ズボンが**きつい**\n×4 朝の電車はいつも人でぎっしりしている。：早上的電車總是擠滿人。 → 人で**いっぱい（満員（まんいん））**だ",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n2-vocab"
+      ],
+      "problemNumber": 6,
+      "problemLabel": "用法"
+    }
+  ]
+}
