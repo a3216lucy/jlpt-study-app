@@ -1,5 +1,5 @@
 // Cores
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 // Store
 import { SentenceReviewStore } from '../../sentence-review.store';
 
@@ -32,8 +32,15 @@ export class SentenceCategorySidebarComponent {
   // --------------------------------------------------------------------
   readonly store = inject(SentenceReviewStore);
 
+  /** 所有分類加起來的句型數（「全部」旁邊的數字） */
+  readonly totalCount = computed(() => this.store.displayGroups().reduce((n, g) => n + g.patterns.length, 0));
+
   // Public Handlers
   // --------------------------------------------------------------------
+  onSelect(event: Event): void {
+    this.store.selectGroup((event.target as HTMLSelectElement).value);
+  }
+
   dotClass(color: string): string {
     return DOT_COLOR_CLASS[color] ?? 'bg-slate-400';
   }

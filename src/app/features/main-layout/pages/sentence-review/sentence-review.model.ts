@@ -1,7 +1,5 @@
 /** 句型頁支援的 JLPT 級別（目前僅 N3 有資料） */
 export type JlptLevel = 'N1' | 'N2' | 'N3' | 'N4' | 'N5';
-/** 頁籤：常用句型／考題重點 */
-export type SentenceReviewTab = 'common' | 'exam';
 
 /** 句型例句 */
 export interface SentenceExample {
@@ -25,6 +23,12 @@ export interface SentencePattern {
   notes: string;
   /** 例句清單 */
   examples: SentenceExample[];
+  /** 後接：後面接什麼、前後項的限制（`後面：…\n限制：…`，可無） */
+  after?: string;
+  /** 後接已逐條對照考古題核對（未核對的不顯示） */
+  afterChecked?: boolean;
+  /** 是否為考古題考過的句型（畫面標出、可「只看常考」） */
+  hot?: boolean;
 }
 
 /** 句型分類 */
@@ -35,6 +39,8 @@ export interface SentencePatternGroup {
   title: string;
   /** 分類說明文字 */
   description: string;
+  /** 易混比較（一點一行，顯示在分類最上方；可空） */
+  compare?: string[];
   /** 分類側欄標示色 */
   color: string;
   /** 該分類底下的句型清單 */
@@ -53,4 +59,25 @@ export interface SentenceReviewData {
 export const LEVEL_DATA_MAP: Partial<Record<JlptLevel, string>> = {
   N3: 'assets/data/grammar-n3-review.json',
   N2: 'assets/data/grammar-n2-review.json',
+};
+
+/** 句型下的練習題（取自考古題） */
+export interface PatternPracticeQuestion {
+  /** 題幹（含 `<u>`／空格） */
+  q: string;
+  /** 四個選項文字 */
+  options: string[];
+  /** 正解索引（0–3） */
+  answer: number;
+  /** 解析重點（💡 那一行） */
+  why: string;
+}
+
+/** 句型 id → 練習題 */
+export type PatternPracticeMap = Record<string, PatternPracticeQuestion[]>;
+
+/** JLPT 級別 → 練習題檔案路徑 */
+export const PRACTICE_DATA_MAP: Partial<Record<JlptLevel, string>> = {
+  N3: 'assets/data/pattern-practice-n3.json',
+  N2: 'assets/data/pattern-practice-n2.json',
 };

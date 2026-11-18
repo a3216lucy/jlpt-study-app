@@ -9,3 +9,15 @@
 @if (store.phase() === 'result') {
   <app-past-exam-result />
 }
+
+@if (store.phase() === 'review') {
+  <app-past-exam-review />
+}
+
+@if (store.phase() === 'notebook') {
+  <app-past-exam-notebook />
+}
+
+@if (store.startDialogExam()) {
+  <app-past-exam-start-dialog />
+}

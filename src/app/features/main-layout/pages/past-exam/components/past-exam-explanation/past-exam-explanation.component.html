@@ -1,0 +1,81 @@
+@let p = parsed();
+@if (!p.structured) {
+  <p class="whitespace-pre-line text-xs leading-5 text-text-secondary">{{ p.raw }}</p>
+} @else {
+  <div class="flex flex-col gap-2.5 text-xs leading-5 text-text-secondary">
+    @if (p.tip) {
+      <p class="whitespace-pre-line rounded-md border border-dashed border-accent/60 bg-surface/70 px-3 py-2 text-ink">
+        <span class="mr-1 font-bold text-accent">重點</span><span [innerHTML]="tipText() | parenFurigana"></span>
+      </p>
+    }
+    @if (showOrder()) {
+      <p class="rounded-md bg-bg px-3 py-2"><span class="mr-1 font-bold text-ink">正確順序</span>{{ p.order }}</p>
+    }
+    @if (p.options.length > 0) {
+      <ul class="flex flex-col gap-1.5">
+        @for (o of p.options; track o.n) {
+          <li class="flex gap-2">
+            <span
+              [class]="
+                'flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] font-bold leading-none ' +
+                (o.correct ? 'bg-[#2F6F5A] text-white' : 'border border-border bg-surface text-text-secondary')
+              "
+            >
+              {{ o.n }}
+            </span>
+            <div class="min-w-0 flex-1">
+              <p>
+                <span
+                  [class]="(o.text.length <= 14 ? 'font-bold ' : 'font-medium ') + '[&_rt]:text-[0.55em] [&_rt]:font-normal [&_rt]:text-text-muted ' + (o.correct ? 'text-[#2F6F5A]' : 'text-ink')"
+                  [innerHTML]="o.text | parenFurigana"
+                ></span>
+                @if (o.note) {
+                  <span class="[&_rt]:text-[0.55em] [&_rt]:text-text-muted">：<span [innerHTML]="o.note | parenFurigana"></span></span>
+                }
+              </p>
+              @if (hasDetail(o)) {
+                <details class="group mt-1">
+                  <summary class="inline-flex cursor-pointer list-none items-center gap-1 text-[11px] font-bold text-accent">
+                    <i class="fa-solid fa-chevron-right text-[9px] transition group-open:rotate-90"></i>說明
+                  </summary>
+                  <dl class="mt-1.5 flex flex-col gap-1.5 rounded-md bg-surface px-3 py-2">
+                    @if (o.connect) {
+                      <div class="flex gap-2">
+                        <dt class="w-9 shrink-0 font-bold text-ink">接續</dt>
+                        <dd>{{ o.connect }}</dd>
+                      </div>
+                    }
+                    @if (o.limit) {
+                      <div class="flex gap-2">
+                        <dt class="w-9 shrink-0 font-bold text-ink">限制</dt>
+                        <dd>{{ o.limit }}</dd>
+                      </div>
+                    }
+                    @if (o.why) {
+                      <div class="flex gap-2">
+                        <dt class="w-9 shrink-0 font-bold text-accent">本題</dt>
+                        <dd class="text-ink">{{ o.why }}</dd>
+                      </div>
+                    }
+                  </dl>
+                </details>
+              }
+            </div>
+          </li>
+        }
+      </ul>
+    }
+    @if (p.script) {
+      <details class="rounded-md border border-border bg-surface px-3 py-2">
+        <summary class="cursor-pointer font-bold text-ink">聽力原文</summary>
+        <p class="mt-2 whitespace-pre-line leading-7 text-ink [&_rt]:text-[0.55em] [&_rt]:font-normal [&_rt]:text-text-muted" [innerHTML]="p.script | parenFurigana"></p>
+      </details>
+    }
+    @if (showTranslation() && p.passageTranslation) {
+      <details class="rounded-md border border-border bg-surface px-3 py-2">
+        <summary class="cursor-pointer font-bold text-ink">全文中譯</summary>
+        <p class="mt-2 whitespace-pre-line">{{ p.passageTranslation }}</p>
+      </details>
+    }
+  </div>
+}

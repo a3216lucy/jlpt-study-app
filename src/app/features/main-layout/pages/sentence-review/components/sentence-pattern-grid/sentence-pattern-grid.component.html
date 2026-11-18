@@ -1,44 +1,267 @@
-<div class="grid flex-1 grid-cols-1 gap-3 sm:grid-cols-2">
-  @for (pattern of store.visiblePatterns(); track pattern.id) {
-    <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
-      <div class="flex items-start justify-between gap-2">
-        <p class="font-heading text-base font-bold text-ink">{{ pattern.pattern }}</p>
-        <button
-          type="button"
-          (click)="store.toggleBookmark(pattern.id)"
-          [class]="
-            'shrink-0 text-base transition ' +
-            (store.isBookmarked(pattern.id) ? 'text-accent' : 'text-text-muted hover:text-accent')
-          "
-        >
-          <i [class]="(store.isBookmarked(pattern.id) ? 'fa-solid' : 'fa-regular') + ' fa-bookmark'"></i>
-        </button>
+<div class="flex flex-1 flex-col gap-3">
+  @if (compare().length > 0) {
+    <details open class="group rounded-md border border-dashed border-accent/60 bg-surface">
+      <summary class="flex cursor-pointer list-none items-center justify-between px-3.5 py-2.5 text-xs font-bold text-accent [&::-webkit-details-marker]:hidden">
+        易混比較
+        <i class="fa-solid fa-chevron-down text-[10px] transition group-open:rotate-180"></i>
+      </summary>
+      <div class="flex flex-col divide-y divide-border border-t border-dashed border-accent/30">
+        @for (c of compare(); track $index) {
+          <div class="flex flex-col gap-0.5 px-3.5 py-2">
+            @if (c.head && c.rows.length === 0) {
+              <p class="text-sm font-bold text-ink" [innerHTML]="ruby(c.head)"></p>
+            }
+            @if (c.plain && c.rows.length === 0) {
+              <p class="text-sm leading-5 text-text-secondary" [innerHTML]="ruby(c.plain)"></p>
+            } @else {
+              @if (c.plain) {
+                <p class="text-xs leading-5 text-text-secondary" [innerHTML]="ruby(c.plain)"></p>
+              }
+              <div class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 text-sm leading-5">
+                @for (r of c.rows; track $index) {
+                  <span class="whitespace-nowrap font-bold text-accent" [innerHTML]="ruby(r.term)"></span>
+                  <span class="text-ink" [innerHTML]="ruby(r.meaning)"></span>
+                }
+              </div>
+            }
+          </div>
+        }
       </div>
-
-      <div class="flex flex-wrap items-center gap-1.5">
-        <span class="rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent">意味</span>
-        <span class="text-sm text-ink">{{ pattern.meaning }}</span>
-      </div>
-      <div class="flex flex-wrap items-center gap-1.5">
-        <span class="rounded-full bg-matcha-soft px-2.5 py-0.5 text-xs font-bold text-matcha">接続</span>
-        <span class="text-sm text-text-secondary">{{ pattern.formation }}</span>
-      </div>
-
-      @if (pattern.examples.length) {
-        <div class="mt-1 rounded-md bg-bg px-3 py-2.5">
-          <p class="text-sm text-ink">{{ pattern.examples[0].jp }}</p>
-          <p class="mt-0.5 text-xs text-text-muted">{{ pattern.examples[0].zh }}</p>
-        </div>
-      }
-    </div>
+    </details>
   }
 
+  <div class="flex flex-col gap-2">
+    @for (pattern of store.visiblePatterns(); track pattern.id) {
+      <div class="rounded-lg border border-border bg-surface">
+        <div class="flex items-start gap-2 p-3.5">
+          <button type="button" (click)="toggle(pattern.id)" class="flex min-w-0 flex-1 flex-col gap-1 text-left">
+            <span [class]="(hasVs(pattern.pattern) ? 'flex flex-wrap items-center gap-x-2 gap-y-0.5 ' : 'flex flex-col ') + 'font-heading text-base ' + (pattern.hot ? 'font-extrabold text-accent' : 'font-bold text-ink')">
+              @for (t of titleParts(pattern.pattern); track $index; let i = $index) {
+                @if (i > 0 && hasVs(pattern.pattern)) {
+                  <span class="rounded-full bg-sun-yellow px-1.5 py-0.5 text-[11px] font-bold text-ink">vs</span>
+                }
+                <span [innerHTML]="ruby(t)"></span>
+              }
+            </span>
+            @let mv = meaningView(pattern.meaning);
+            @if (mv.rows.length > 1) {
+              <span class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-0.5 text-sm text-ink">
+                @for (r of mv.rows; track $index) {
+                  @if (mv.paired) {
+                    <span class="whitespace-nowrap font-bold" [innerHTML]="ruby(r.term)"></span>
+                  } @else {
+                    <span class="text-text-muted">{{ ['①', '②', '③', '④'][$index] }}</span>
+                  }
+                  <span [innerHTML]="ruby(r.text)"></span>
+                }
+              </span>
+            } @else {
+              <span class="text-sm text-ink" [innerHTML]="ruby(pattern.meaning)"></span>
+            }
+            @let fv = formationView(pattern.formation);
+            <span class="flex min-w-0 items-start gap-2 text-xs text-text-secondary">
+              <span class="shrink-0 rounded-full bg-matcha-soft px-2 py-0.5 text-[11px] font-bold text-matcha">接續</span>
+              @if (fv.chain.length) {
+                <span class="flex min-w-0 flex-col leading-5">
+                  @for (l of fv.left; track $index) {
+                    <span [innerHTML]="ruby(l)"></span>
+                  }
+                  @for (c of fv.chain; track $index) {
+                    <span class="font-bold text-ink"><span class="mr-1.5 font-normal text-text-secondary">＋</span><span [innerHTML]="ruby(c)"></span></span>
+                  }
+                </span>
+              } @else {
+                <span class="flex flex-col leading-5">
+                  @for (l of fv.left; track $index) {
+                    <span class="whitespace-nowrap" [innerHTML]="ruby(l)"></span>
+                  }
+                </span>
+                @if (fv.right.length) {
+                  <span class="shrink-0 leading-5">＋</span>
+                  <span class="flex min-w-0 flex-col font-bold leading-5 text-ink">
+                    @for (r of fv.right; track $index) {
+                      <span [innerHTML]="ruby(r)"></span>
+                    }
+                  </span>
+                }
+              }
+            </span>
+            @if (pattern.after && pattern.afterChecked) {
+              <span class="flex min-w-0 items-start gap-2 text-xs text-text-secondary">
+                <span class="shrink-0 rounded-full bg-sun-yellow px-2 py-0.5 text-[11px] font-bold text-ink">後接</span>
+                <span class="flex min-w-0 flex-col leading-5">
+                  @for (a of afterLines(pattern.after); track $index) {
+                    <span>
+                      @if (a.label) {
+                        <span class="mr-1 font-bold text-ink">{{ a.label }}</span>
+                      }<span [innerHTML]="ruby(a.text)"></span>
+                    </span>
+                  }
+                </span>
+              </span>
+            }
+          </button>
+          <button
+            type="button"
+            (click)="store.toggleBookmark(pattern.id)"
+            [class]="'shrink-0 p-1 text-base transition ' + (store.isBookmarked(pattern.id) ? 'text-accent' : 'text-text-muted hover:text-accent')"
+            aria-label="收藏"
+          >
+            <i [class]="(store.isBookmarked(pattern.id) ? 'fa-solid' : 'fa-regular') + ' fa-bookmark'"></i>
+          </button>
+          <button type="button" (click)="toggle(pattern.id)" class="shrink-0 p-1 text-xs text-text-muted" aria-label="展開">
+            <i [class]="'fa-solid fa-chevron-down transition ' + (isOpen(pattern.id) ? 'rotate-180' : '')"></i>
+          </button>
+        </div>
+
+        @if (isOpen(pattern.id)) {
+          <div class="flex flex-col gap-3 border-t border-border p-3.5">
+            @for (n of noteLines(pattern.notes); track $index) {
+              @if (n.label === '易混') {
+                <div class="rounded-md border border-accent/50 bg-accent-soft/50 px-3 py-2 text-sm leading-6 text-ink">
+                  <span class="mr-1.5 rounded-full bg-accent text-white px-2 py-0.5 text-xs font-bold">易混</span>
+                  <div class="mt-1 flex flex-col gap-1">
+                    @for (l of blockLines('易混', n.text); track $index) {
+                      <span [class]="'flex gap-1.5' + (l.indent ? ' pl-4' : '')">
+                        @if (l.bullet) {
+                          <span class="shrink-0 text-accent">・</span>
+                        }
+                        <span [innerHTML]="ruby(l.text)"></span>
+                      </span>
+                    }
+                  </div>
+                </div>
+              } @else if (n.label === '近義') {
+                <div class="rounded-md border border-sky-300 bg-sky-50 px-3 py-2 text-sm leading-6 text-ink">
+                  <span class="mr-1.5 rounded-full bg-sky-600 px-2 py-0.5 text-xs font-bold text-white">近義</span>
+                  <div class="mt-1 flex flex-col gap-1">
+                    @for (l of blockLines('近義', n.text); track $index) {
+                      <span [class]="'flex gap-1.5' + (l.indent ? ' pl-4' : '')">
+                        @if (l.bullet) {
+                          <span class="shrink-0 text-sky-600">・</span>
+                        }
+                        <span [innerHTML]="ruby(l.text)"></span>
+                      </span>
+                    }
+                  </div>
+                </div>
+              } @else if (n.label === '反義') {
+                <div class="rounded-md border border-purple-300 bg-purple-50 px-3 py-2 text-sm leading-6 text-ink">
+                  <span class="mr-1.5 rounded-full bg-purple-600 px-2 py-0.5 text-xs font-bold text-white">反義</span>
+                  <div class="mt-1 flex flex-col gap-1">
+                    @for (l of blockLines('反義', n.text); track $index) {
+                      <span [class]="'flex gap-1.5' + (l.indent ? ' pl-4' : '')">
+                        @if (l.bullet) {
+                          <span class="shrink-0 text-purple-600">・</span>
+                        }
+                        <span [innerHTML]="ruby(l.text)"></span>
+                      </span>
+                    }
+                  </div>
+                </div>
+              } @else if (n.label === '注意') {
+                <div class="rounded-md border border-orange-300 bg-orange-50 px-3 py-2 text-sm leading-6 text-ink">
+                  <span class="mr-1.5 rounded-full bg-orange-500 px-2 py-0.5 text-xs font-bold text-white">注意</span>
+                  <div class="mt-1 flex flex-col gap-1">
+                    @for (l of blockLines('注意', n.text); track $index) {
+                      <span [class]="'flex gap-1.5' + (l.indent ? ' pl-4' : '')">
+                        @if (l.bullet) {
+                          <span class="shrink-0 text-orange-500">・</span>
+                        }
+                        <span [innerHTML]="ruby(l.text)"></span>
+                      </span>
+                    }
+                  </div>
+                </div>
+              } @else if (n.label === '強調') {
+                <div class="rounded-md border border-ink/30 bg-bg px-3 py-2 text-sm leading-6 text-ink">
+                  <span class="mr-1.5 rounded-full bg-ink text-white px-2 py-0.5 text-xs font-bold">強調</span>
+                  <div class="mt-1 flex flex-col gap-1 font-bold">
+                    @for (l of blockLines('強調', n.text); track $index) {
+                      <span [class]="'flex gap-1.5' + (l.indent ? ' pl-4' : '')">
+                        @if (l.bullet) {
+                          <span class="shrink-0 text-ink">・</span>
+                        }
+                        <span [innerHTML]="ruby(l.text)"></span>
+                      </span>
+                    }
+                  </div>
+                </div>
+              } @else if (n.label === '比較') {
+                <div class="rounded-md border border-matcha/40 bg-matcha-soft/60 px-3 py-2 text-sm leading-6 text-ink">
+                  <span class="mr-1.5 rounded-full bg-matcha text-white px-2 py-0.5 text-xs font-bold">比較</span>
+                  <div class="mt-1 flex flex-col gap-1">
+                    @for (l of blockLines('比較', n.text); track $index) {
+                      <span [class]="'flex gap-1.5' + (l.indent ? ' pl-4' : '')">
+                        @if (l.bullet) {
+                          <span class="shrink-0 text-matcha">・</span>
+                        }
+                        <span [innerHTML]="ruby(l.text)"></span>
+                      </span>
+                    }
+                  </div>
+                </div>
+              } @else if (n.label === '慣用') {
+                <div class="rounded-md border border-sun-yellow/60 bg-sun-yellow/20 px-3 py-2 text-sm leading-6 text-ink">
+                  <span class="mr-1.5 rounded-full bg-sun-yellow text-ink px-2 py-0.5 text-xs font-bold">慣用</span>
+                  <div class="mt-1 flex flex-col gap-1 font-bold">
+                    @for (l of blockLines('慣用', n.text); track $index) {
+                      <span [class]="'flex gap-1.5' + (l.indent ? ' pl-4' : '')">
+                        @if (l.bullet) {
+                          <span class="shrink-0 text-ink">・</span>
+                        }
+                        <span [innerHTML]="ruby(l.text)"></span>
+                      </span>
+                    }
+                  </div>
+                </div>
+              } @else {
+                @if (n.label) {
+                  <div class="text-sm leading-6 text-ink">
+                    <span [class]="'mr-1.5 rounded-full px-2 py-0.5 text-xs font-bold ' + (n.label === '重點' ? 'bg-accent-soft text-accent' : n.label === '辨別' ? 'bg-matcha-soft text-matcha' : 'bg-bg text-text-secondary')">{{ n.label }}</span>
+                    @if (blockLines(n.label, n.text).length === 1) {
+                      <span [innerHTML]="ruby(n.text)"></span>
+                    } @else {
+                    <div class="mt-1 flex flex-col gap-1">
+                      @for (l of blockLines(n.label, n.text); track $index) {
+                        <span [class]="'flex gap-1.5' + (l.indent ? ' pl-4' : '')">
+                          @if (l.bullet) {
+                            <span class="shrink-0 text-text-muted">・</span>
+                          }
+                          <span [innerHTML]="ruby(l.text)"></span>
+                        </span>
+                      }
+                    </div>
+                    }
+                  </div>
+                } @else {
+                  <p class="whitespace-pre-line text-sm leading-6 text-ink" [innerHTML]="ruby(n.text)"></p>
+                }
+              }
+            }
+            @if (pattern.examples.length) {
+              <div class="flex flex-col gap-2">
+                @for (ex of pattern.examples; track $index) {
+                  <div class="rounded-md bg-bg px-3 py-2.5">
+                    <p class="text-sm leading-[2.1] text-ink" [innerHTML]="ruby(ex.jp)"></p>
+                    <p class="mt-0.5 text-xs text-text-muted">{{ ex.zh }}</p>
+                  </div>
+                }
+              </div>
+            }
+            <app-sentence-pattern-practice [patternId]="pattern.id" />
+          </div>
+        }
+      </div>
+    }
+  </div>
+
   @if (store.visiblePatterns().length === 0) {
-    <div class="col-span-full flex flex-col items-center gap-2 rounded-lg border border-dashed border-border py-12 text-center text-sm text-text-muted">
+    <div class="flex flex-col items-center gap-2 rounded-lg border border-dashed border-border py-12 text-center text-sm text-text-muted">
       @if (store.isSearching()) {
         找不到符合「{{ store.searchQuery() }}」的句型
       } @else {
-        這個分類還沒有句型資料
+        沒有符合的句型
       }
     </div>
   }

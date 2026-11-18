@@ -1,0 +1,72 @@
+<div class="flex flex-col gap-2">
+  <div class="relative">
+    <select
+      (change)="jumpTo($event)"
+      aria-label="跳到分類"
+      class="w-full cursor-pointer appearance-none rounded-lg border border-border bg-surface py-2.5 pl-4 pr-10 text-sm font-bold text-ink focus:border-accent focus:outline-none"
+    >
+      <option value="" selected>跳到分類…</option>
+      @for (o of options; track o.id) {
+        <option [value]="o.id">{{ o.label }}</option>
+      }
+    </select>
+    <i class="fa-solid fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-text-muted"></i>
+  </div>
+  <label class="flex cursor-pointer items-center justify-end gap-2 self-end text-sm text-ink">
+    <input type="checkbox" [checked]="onlyHot()" (change)="onlyHot.set($any($event.target).checked)" class="h-4 w-4 accent-[#E0664F]" />
+    只看常考（紅色粗體）
+  </label>
+</div>
+
+<div class="flex flex-col gap-3">
+  @for (g of groups(); track g.id) {
+    <details [id]="g.id" [open]="openAll()" class="group scroll-mt-20 rounded-lg border border-border bg-surface">
+      <summary class="flex cursor-pointer list-none items-center justify-between gap-3 p-4 [&::-webkit-details-marker]:hidden">
+        <span class="flex flex-col">
+          <span class="font-heading text-base font-bold text-ink">{{ g.label }}</span>
+          <span class="text-xs text-text-secondary">{{ g.hint }}</span>
+        </span>
+        <span class="flex shrink-0 items-center gap-1 text-xs text-text-muted">
+          <span class="group-open:hidden">展開</span><span class="hidden group-open:inline">收合</span>
+          <i class="fa-solid fa-chevron-down text-[10px] transition group-open:rotate-180"></i>
+        </span>
+      </summary>
+
+      <div class="flex flex-col gap-5 border-t border-border p-4">
+        @for (c of g.clusters; track c.title) {
+          <div class="flex flex-col gap-2.5">
+            <p class="text-sm font-bold text-ink">{{ c.title }}</p>
+            @if (c.compare) {
+              <div class="flex flex-col gap-0.5 rounded-md border border-dashed border-accent/60 bg-surface px-3.5 py-2.5 text-xs leading-5 text-ink">
+                @for (line of c.compare.split('；'); track $index) {
+                  <span>{{ line }}</span>
+                }
+              </div>
+            }
+            <div class="flex flex-col divide-y divide-border rounded-md border border-border">
+              @for (e of c.entries; track e.word) {
+                <div class="flex flex-col gap-1 px-3.5 py-3">
+                  <div class="flex flex-wrap items-baseline gap-x-2.5 gap-y-0.5">
+                    <span [class]="'font-heading text-lg ' + (e.hot ? 'font-extrabold text-accent' : 'font-medium text-ink')">{{ e.word }}</span>
+                    <span class="text-sm text-text-secondary">{{ e.meaning }}</span>
+                  </div>
+                  @if (e.note) {
+                    <p class="text-xs text-text-muted">{{ e.note }}</p>
+                  }
+                  <p class="text-sm leading-[2.1] text-ink" [innerHTML]="e.exampleHtml"></p>
+                  <p class="text-xs text-text-muted">{{ e.zh }}</p>
+                </div>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </details>
+  }
+
+  @if (groups().length === 0) {
+    <div class="flex flex-col items-center gap-2 rounded-lg border border-dashed border-border py-12 text-center text-sm text-text-muted">
+      沒有符合的擬聲擬態語
+    </div>
+  }
+</div>

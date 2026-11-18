@@ -1,8 +1,13 @@
+// Cores
+import { inject } from '@angular/core';
 // NgRx Signals
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 import type { SignalStoreFeature } from '@ngrx/signals';
+// Shared
+import { TargetLevelService } from '@core/services/target-level.service';
 // Models
-import type { PageMode } from './quiz.model';
+import { VOCAB_LEVELS } from './quiz.model';
+import type { PageMode, VocabLevel } from './quiz.model';
 // Store slices
 import { vocabDataFeature } from './store/vocab-data.feature';
 import { studyPlanFeature } from './store/study-plan.feature';
@@ -40,10 +45,21 @@ export const QuizStore = signalStore<
   studyPlanFeature(),
   flashcardFeature(),
   quizSessionFeature(),
-  withMethods((store) => ({
+  withMethods((store, targetLevel = inject(TargetLevelService)) => {
+    let levelApplied = false;
+    return {
     // Lifecycle
     // --------------------------------------------------------------------
     async init(): Promise<void> {
+      // 第一次進頁面：級別篩選、建立計畫的級別預設依個人設定的應考目標
+      if (!levelApplied) {
+        levelApplied = true;
+        const target = (await targetLevel.load()) as VocabLevel;
+        if (VOCAB_LEVELS.includes(target)) {
+          store.selectLevelFilter(target);
+          store.selectCreatePlanLevel(target);
+        }
+      }
       store.loadWrongMarkedWords();
       patchState(store, { loading: true });
       try {
@@ -53,5 +69,6 @@ export const QuizStore = signalStore<
         patchState(store, { loading: false });
       }
     },
-  })),
+    };
+  }),
 );

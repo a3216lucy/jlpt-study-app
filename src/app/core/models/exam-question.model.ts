@@ -1,7 +1,7 @@
 import { JlptLevel } from './vocab.model';
 
-/** 考題科目：語彙／文法／讀解 */
-export type ExamCategory = 'vocabulary' | 'grammar' | 'reading';
+/** 考題科目：語彙／文法／讀解／聽解（聽解只有答題卡，音檔另外播放） */
+export type ExamCategory = 'vocabulary' | 'grammar' | 'reading' | 'listening';
 /** 題型：一般四選一 or 句型填空 */
 export type ExamQuestionType = 'multiple-choice' | 'sentence-fill';
 
@@ -29,6 +29,10 @@ export interface ExamQuestion {
   prompt: string;
   /** 額外補充的題目文字（部分題型才有） */
   questionText?: string;
+  /** 題目附圖（聽解題本上印的圖），相對於網站根目錄的路徑 */
+  images?: string[];
+  /** 題本上印出來的選項原文（聽解作答前就看得到；沒印的題沒有這個欄位） */
+  printedOptions?: string[];
   /** 題目中文翻譯 */
   questionTranslation?: string;
   /** 選項清單 */

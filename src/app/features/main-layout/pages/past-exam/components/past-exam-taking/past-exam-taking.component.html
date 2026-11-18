@@ -1,140 +1,76 @@
 <div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
-  <div class="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
-    <div class="flex items-center gap-3">
+  <!-- 手機：往下捲時蓋住網站標題列，離開／交卷常駐頂端 -->
+  <div class="sticky top-0 z-30 -mx-4 -mt-4 flex items-center justify-between gap-2 border-b border-border bg-bg px-4 py-3 sm:top-16 sm:mx-0 sm:mt-0 sm:px-0 lg:top-[72px]">
+    <div class="flex min-w-0 items-center gap-2.5">
       <button
         type="button"
-        (click)="store.backToOverview()"
-        class="flex items-center gap-1.5 rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-bold text-text-secondary transition hover:border-accent/40"
+        (click)="store.requestLeave()"
+        class="flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-bold text-text-secondary transition hover:border-accent/40"
       >
-        <i class="fa-solid fa-chevron-left text-xs"></i> 離開測驗
+        <i class="fa-solid fa-chevron-left text-xs"></i> 離開
       </button>
-      <div class="flex flex-col">
-        <p class="font-heading text-sm font-bold text-ink sm:text-base">{{ store.selectedExam()?.examLabel }}</p>
-        @if (store.currentSection(); as section) {
-          <span class="w-fit rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent">
-            {{ categoryLabel(section) }}・{{ section.sectionLabel }}
-          </span>
-        }
+      <div class="flex min-w-0 flex-col">
+        <p class="truncate font-heading text-sm font-bold text-ink sm:text-base">
+          {{ store.isNotebookAttempt() && store.currentExamLabel() ? store.currentExamLabel() : store.examTitle() }}
+        </p>
+        <p class="truncate text-xs text-text-muted">
+          @if (store.mode() === 'mock') {
+            實際演練@if (store.currentStage(); as stage) {・{{ stage.label }}}
+          } @else {
+            練習模式@if (store.attempt(); as a) {・第 {{ a.attemptNo }} 次}
+          }
+        </p>
       </div>
     </div>
-    <button
-      type="button"
-      (click)="store.submitNow()"
-      class="rounded-full bg-accent px-5 py-2 text-sm font-bold text-white transition hover:brightness-105"
-    >
-      交卷
-    </button>
+    <div class="flex shrink-0 items-center gap-2">
+      @if (store.mode() === 'mock') {
+        <app-past-exam-timer />
+      }
+      <button
+        type="button"
+        (click)="store.requestSubmit()"
+        class="whitespace-nowrap rounded-full bg-accent px-4 py-2 text-sm font-bold text-white transition hover:brightness-105 sm:px-5"
+      >
+        {{ store.mode() === 'mock' ? '交卷' : '完成練習' }}
+      </button>
+    </div>
   </div>
 
-  @if (store.currentSection().category !== 'reading' && store.currentSectionProblemGroups().length > 1) {
-    <div class="flex gap-1.5 overflow-x-auto pb-1">
-      @for (group of store.currentSectionProblemGroups(); track group.number) {
-        <span
-          [class]="
-            'shrink-0 rounded-full px-3.5 py-1.5 text-xs font-bold ' +
-            (store.currentProblemNumber() === group.number
-              ? 'bg-accent text-white'
-              : 'border border-border bg-surface text-text-secondary')
-          "
-        >
-          問題{{ group.number }} {{ group.label }}
-        </span>
-      }
+  @if (store.currentSection()?.category !== 'reading' && store.currentSectionProblemGroups().length > 1) {
+    <div class="relative">
+      <select
+        (change)="jumpToProblem($event)"
+        aria-label="選擇大題"
+        class="w-full cursor-pointer appearance-none rounded-lg border border-border bg-surface py-2.5 pl-4 pr-10 text-sm font-bold text-ink focus:border-accent focus:outline-none"
+      >
+        @for (group of store.currentSectionProblemGroups(); track group.number) {
+          <option [value]="group.number" [selected]="store.currentProblemNumber() === group.number">
+            問題{{ group.number }}　{{ group.label }}
+          </option>
+        }
+      </select>
+      <i class="fa-solid fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-text-muted"></i>
     </div>
   }
 
   <div class="flex flex-col gap-1.5">
     <div class="flex items-center justify-between text-sm">
-      <span class="text-text-secondary">第 {{ store.currentIndex() + 1 }} 題 / 共 {{ store.flatItems().length }} 題</span>
-      <span class="text-xs text-text-muted">已作答 {{ store.answeredCount() }} 題</span>
+      <span class="text-text-secondary">
+        第 {{ store.positionInStage() + 1 }} 題 / 共 {{ store.stageIndices().length }} 題
+      </span>
+      <span class="text-xs text-text-muted">已作答 {{ store.stageAnsweredCount() }} 題</span>
     </div>
     <div class="h-1.5 w-full overflow-hidden rounded-full bg-bg">
       <div class="h-full bg-accent transition-all" [style.width.%]="store.progress()"></div>
     </div>
   </div>
 
+  @if (store.mode() === 'mock') {
+    <app-past-exam-navigator />
+  }
+
   @if (store.currentQuestion(); as question) {
-    @if (splitPassage(question.prompt); as p) {
-      <!-- 読解：左右分割版面 -->
-      <div class="flex flex-col gap-4 lg:flex-row lg:items-start">
-        <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4 sm:p-5 lg:w-1/2">
-          <p class="font-heading text-sm font-bold text-ink">本文</p>
-          @if (p.intro) {
-            <p class="rounded-md bg-bg px-3 py-2 text-xs text-text-muted">{{ p.intro }}</p>
-          }
-          <p class="whitespace-pre-line text-sm leading-7 text-ink">{{ p.passage }}</p>
-        </div>
-
-        <div class="flex flex-col gap-3 lg:w-1/2">
-          <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4 sm:p-5">
-            <span class="w-fit rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent">
-              問 {{ store.currentIndex() + 1 }}
-            </span>
-            <p class="font-heading text-base font-bold text-ink">{{ question.questionText || question.prompt }}</p>
-            @if (question.questionTranslation) {
-              <p class="text-sm text-text-secondary">{{ question.questionTranslation }}</p>
-            }
-          </div>
-
-          <div class="flex flex-col gap-2">
-            @for (option of question.options; track option.id) {
-              <button
-                type="button"
-                (click)="store.selectOption(option)"
-                [class]="
-                  'flex items-center gap-3 rounded-lg border-2 px-4 py-3 text-left text-sm font-medium transition ' +
-                  optionCardClass(option)
-                "
-              >
-                <span
-                  [class]="
-                    'flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold ' +
-                    optionPrefixClass(option)
-                  "
-                >
-                  {{ $index + 1 }}
-                </span>
-                {{ option.text }}
-              </button>
-            }
-          </div>
-        </div>
-      </div>
-    } @else {
-      <!-- 語彙／文法：單題 -->
-      <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
-        <span class="w-fit rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent">
-          問 {{ store.currentIndex() + 1 }}
-        </span>
-        <p class="font-heading text-lg font-bold leading-relaxed text-ink">{{ question.questionText || question.prompt }}</p>
-        @if (question.questionTranslation) {
-          <p class="text-sm text-text-secondary">{{ question.questionTranslation }}</p>
-        }
-      </div>
-
-      <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        @for (option of question.options; track option.id) {
-          <button
-            type="button"
-            (click)="store.selectOption(option)"
-            [class]="
-              'flex items-center gap-3 rounded-lg border-2 px-4 py-3.5 text-left text-sm font-bold transition ' +
-              optionCardClass(option)
-            "
-          >
-            <span
-              [class]="
-                'flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ' +
-                optionPrefixClass(option)
-              "
-            >
-              {{ $index + 1 }}
-            </span>
-            {{ option.text }}
-          </button>
-        }
-      </div>
-    }
+    <app-past-exam-question />
 
     <div class="flex items-center justify-between">
       <button
@@ -148,19 +84,117 @@
         <button
           type="button"
           (click)="store.prev()"
-          [disabled]="store.currentIndex() === 0"
+          [disabled]="store.positionInStage() === 0"
           class="rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-bold text-text-secondary transition hover:bg-bg disabled:opacity-40"
         >
           上一題
         </button>
-        <button
-          type="button"
-          (click)="store.next()"
-          class="flex items-center gap-1.5 rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white transition hover:brightness-105"
-        >
-          {{ store.isLast() ? '交卷' : '下一題' }} <i class="fa-solid fa-arrow-right text-xs"></i>
-        </button>
+        @if (store.isLast()) {
+          <button
+            type="button"
+            (click)="store.requestSubmit()"
+            class="flex items-center gap-1.5 rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white transition hover:brightness-105"
+          >
+            {{ store.mode() === 'mock' ? '交卷' : '完成練習' }}
+          </button>
+        } @else {
+          <button
+            type="button"
+            (click)="store.next()"
+            [class]="
+              'flex items-center gap-1.5 rounded-full px-5 py-2.5 text-sm font-bold transition ' +
+              (store.selectedOptionId() || store.mode() === 'mock'
+                ? 'bg-accent text-white hover:brightness-105'
+                : 'border border-border bg-surface text-text-secondary hover:bg-bg')
+            "
+          >
+            {{ store.selectedOptionId() || store.mode() === 'mock' ? '下一題' : '略過' }}
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        }
       </div>
     </div>
   }
 </div>
+
+@if (store.confirmSubmit()) {
+  <app-past-exam-dialog (dismiss)="store.cancelSubmit()">
+    <div class="flex flex-col gap-4">
+      <p class="font-heading text-lg font-bold text-ink">確定要{{ store.mode() === 'mock' ? '交卷' : '結算' }}嗎？</p>
+      <p class="text-sm text-text-secondary">
+        還有
+        <span class="font-bold text-accent">
+          {{ store.mode() === 'mock' ? store.stageIndices().length - store.stageAnsweredCount() : store.unansweredTotal() }}
+        </span>
+        題沒有作答，未作答的題目會算錯題。
+        @if (store.mode() === 'mock' && store.stageIndex() < store.stages().length - 1) {
+          交卷後這一段會鎖定，無法回頭修改。
+        }
+      </p>
+      <div class="flex gap-2">
+        <button
+          type="button"
+          (click)="store.cancelSubmit()"
+          class="flex-1 rounded-full border border-border bg-surface px-4 py-2.5 text-sm font-bold text-text-secondary"
+        >
+          繼續作答
+        </button>
+        <button
+          type="button"
+          (click)="store.confirmSubmitNow()"
+          class="flex-1 rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white"
+        >
+          {{ store.mode() === 'mock' ? '交卷' : '結算' }}
+        </button>
+      </div>
+    </div>
+  </app-past-exam-dialog>
+}
+
+@if (store.confirmLeave()) {
+  <app-past-exam-dialog (dismiss)="store.cancelLeave()">
+    <div class="flex flex-col gap-4">
+      <p class="font-heading text-lg font-bold text-ink">要離開實際演練嗎？</p>
+      <p class="text-sm text-text-secondary">實際演練不會保存進度，離開後這次作答會作廢，不留下成績。</p>
+      <div class="flex gap-2">
+        <button
+          type="button"
+          (click)="store.cancelLeave()"
+          class="flex-1 rounded-full border border-border bg-surface px-4 py-2.5 text-sm font-bold text-text-secondary"
+        >
+          繼續作答
+        </button>
+        <button
+          type="button"
+          (click)="store.leaveMockConfirmed()"
+          class="flex-1 rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white"
+        >
+          離開
+        </button>
+      </div>
+    </div>
+  </app-past-exam-dialog>
+}
+
+@if (store.stageBreak()) {
+  <app-past-exam-dialog [dismissible]="false">
+    <div class="flex flex-col gap-4">
+      <p class="font-heading text-lg font-bold text-ink">
+        {{ store.timedOut() ? '時間到，這一段已自動交卷' : '這一段已交卷' }}
+      </p>
+      @if (store.stages()[store.stageIndex() + 1]; as next) {
+        <p class="text-sm text-text-secondary">
+          接下來是「{{ next.label }}」，限時 {{ next.minutes }} 分鐘。上一段已鎖定，無法回頭。
+          準備好再按開始，按下後才開始倒數。
+        </p>
+      }
+      <button
+        type="button"
+        (click)="store.beginNextStage()"
+        class="rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white"
+      >
+        開始下一段
+      </button>
+    </div>
+  </app-past-exam-dialog>
+}

@@ -3,6 +3,20 @@
     <i class="fa-solid fa-spinner fa-spin mr-2"></i> 載入中...
   </div>
 } @else if (store.verbData()) {
+  <div class="relative">
+    <select
+      (change)="jumpTo($event)"
+      aria-label="跳到段落"
+      class="w-full cursor-pointer appearance-none rounded-lg border border-border bg-surface py-2.5 pl-4 pr-10 text-sm font-bold text-ink focus:border-accent focus:outline-none"
+    >
+      <option value="" selected>跳到段落…</option>
+      @for (item of sections; track item.id) {
+        <option [value]="item.id">{{ item.no }}　{{ item.label }}</option>
+      }
+    </select>
+    <i class="fa-solid fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-text-muted"></i>
+  </div>
+
   <div class="flex flex-col gap-3">
     <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">敬語三分類</h2>
     <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
@@ -10,44 +24,85 @@
         <div class="flex flex-col gap-2.5 rounded-lg border border-border bg-surface p-4">
           <span [class]="'w-fit rounded-full px-2.5 py-1 text-xs font-bold ' + card.badgeClass">{{ card.label }}</span>
           <p class="text-xs text-text-secondary">{{ card.description }}</p>
-          <p class="rounded-md bg-bg px-3 py-2 text-sm text-ink">{{ card.example }}</p>
+          <p class="rounded-md bg-bg px-3 py-2 text-sm text-ink"><span [innerHTML]="card.example | furigana"></span></p>
         </div>
       }
     </div>
   </div>
 
-  <div class="flex flex-col gap-3">
-    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">特殊動詞 対応表</h2>
-    <div class="overflow-x-auto rounded-lg border border-border">
+  <details id="keigo-steps" open class="group scroll-mt-6 rounded-lg border border-border bg-surface/60 p-4 open:bg-transparent open:p-0 open:border-transparent">
+    <summary class="flex cursor-pointer list-none items-start gap-2.5 group-open:mb-3 [&::-webkit-details-marker]:hidden">
+      <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ink text-xs font-bold text-white">1</span>
+      <div class="flex flex-col">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">怎麼判斷：先看「誰做的動作」</h2>
+        <p class="text-xs text-text-secondary">解題順序：找動作的人 → 對方用尊敬、自己用謙讓</p>
+      </div>
+    <span class="ml-auto flex items-center gap-1 text-xs text-text-muted"><span class="group-open:hidden">展開</span><span class="hidden group-open:inline">收合</span><i class="fa-solid fa-chevron-down text-[10px] transition group-open:rotate-180"></i></span>
+    </summary>
+    <div class="flex flex-col gap-3">
+    <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
+      @for (step of steps; track step.no) {
+        <div class="flex gap-3 rounded-lg border border-border bg-surface p-4">
+          <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">{{ step.no }}</span>
+          <div class="flex flex-col gap-1">
+            <p class="text-sm font-bold text-ink">{{ step.title }}</p>
+            <p class="text-xs leading-5 text-text-secondary">{{ step.body }}</p>
+          </div>
+        </div>
+      }
+    </div>
+    <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
+      <p class="text-sm font-bold text-ink">快速對照：同一個動作，誰做就用哪一種</p>
+      <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        @for (row of quickRows; track row.situation) {
+          <div [class]="'flex flex-col gap-0.5 rounded-md border-l-4 bg-bg px-3 py-2 ' + (row.kind === 'sonkei' ? 'border-accent' : 'border-[#2F6F5A]')">
+            <p class="text-xs text-text-secondary">{{ row.situation }}</p>
+            <p [class]="'text-sm font-bold ' + (row.kind === 'sonkei' ? 'text-accent' : 'text-[#2F6F5A]')">
+              <span [innerHTML]="row.answer | furigana"></span>
+              <span class="ml-1 text-[11px] font-normal">（{{ row.kind === 'sonkei' ? '尊敬語' : '謙讓語' }}）</span>
+            </p>
+          </div>
+        }
+      </div>
+    </div>
+    <div class="flex items-start gap-2.5 rounded-lg border border-dashed border-accent/60 bg-surface px-4 py-3 text-xs leading-5 text-ink">
+      <span class="shrink-0 rounded-full bg-accent px-2 py-0.5 text-[11px] font-bold text-white">考試常考</span>
+      <span>ウチ・ソト：對公司外的人提到自己公司的人（社長、課長），要當成自己這一方，用謙讓語，不能用尊敬語。</span>
+    </div>
+      </div>
+  </details>
+
+  <details id="keigo-special" open class="group scroll-mt-6 rounded-lg border border-border bg-surface/60 p-4 open:bg-transparent open:p-0 open:border-transparent">
+    <summary class="flex cursor-pointer list-none items-start gap-2.5 group-open:mb-3 [&::-webkit-details-marker]:hidden">
+      <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ink text-xs font-bold text-white">2</span>
+      <div class="flex flex-col">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">特殊動詞對照表</h2>
+        <p class="text-xs text-text-secondary">這些動詞有專用說法，優先用專用形，不要再套「お〜になる」</p>
+      </div>
+    <span class="ml-auto flex items-center gap-1 text-xs text-text-muted"><span class="group-open:hidden">展開</span><span class="hidden group-open:inline">收合</span><i class="fa-solid fa-chevron-down text-[10px] transition group-open:rotate-180"></i></span>
+    </summary>
+    <div class="flex flex-col gap-3">
+        <div class="overflow-x-auto rounded-lg border border-border">
       <table class="w-full min-w-[560px] border-collapse text-sm">
         <thead>
           <tr class="bg-bg text-left text-xs font-bold text-text-muted">
-            <th class="px-4 py-2.5">原形</th>
-            <th class="px-4 py-2.5">尊敬語</th>
-            <th class="px-4 py-2.5">謙讓語</th>
-            <th class="px-4 py-2.5">中文</th>
+            <th class="whitespace-nowrap px-4 py-2.5">原形</th>
+            <th class="whitespace-nowrap px-4 py-2.5">尊敬語</th>
+            <th class="whitespace-nowrap px-4 py-2.5">謙讓語</th>
+            <th class="whitespace-nowrap px-4 py-2.5">中文</th>
           </tr>
         </thead>
         <tbody class="divide-y divide-border">
           @for (row of store.filteredSpecialVerbTable(); track row.plain) {
             <tr class="bg-surface">
               <td class="px-4 py-2.5 font-bold text-ink">
-                {{ row.plain }}
-                @if (row.plain_kana) {
-                  <p class="text-xs font-normal text-text-muted">{{ row.plain_kana }}</p>
-                }
+                <span class="leading-[2]" [innerHTML]="row.plain | wordRuby: row.plain_kana"></span>
               </td>
               <td class="px-4 py-2.5 text-accent">
-                {{ row.sonkei }}
-                @if (row.sonkei_kana) {
-                  <p class="text-xs text-accent/60">{{ row.sonkei_kana }}</p>
-                }
+                <span class="leading-[2]" [innerHTML]="row.sonkei | wordRuby: row.sonkei_kana"></span>
               </td>
               <td class="px-4 py-2.5 text-matcha">
-                {{ row.kenjou }}
-                @if (row.kenjou_kana) {
-                  <p class="text-xs text-matcha/60">{{ row.kenjou_kana }}</p>
-                }
+                <span class="leading-[2]" [innerHTML]="row.kenjou | wordRuby: row.kenjou_kana"></span>
               </td>
               <td class="px-4 py-2.5 text-text-secondary">{{ row.meaning }}</td>
             </tr>
@@ -55,24 +110,232 @@
         </tbody>
       </table>
     </div>
-  </div>
+      </div>
+  </details>
 
-  <div class="flex flex-col gap-3">
-    <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">敬語の作り方（規則型）</h2>
+  <details id="keigo-humble" class="group scroll-mt-6 rounded-lg border border-border bg-surface/60 p-4 open:bg-transparent open:p-0 open:border-transparent">
+    <summary class="flex cursor-pointer list-none items-start gap-2.5 group-open:mb-3 [&::-webkit-details-marker]:hidden">
+      <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ink text-xs font-bold text-white">3</span>
+      <div class="flex flex-col">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">謙讓語分兩種：Ⅰ 與 Ⅱ</h2>
+        <p class="text-xs text-text-secondary"><span [innerHTML]="'同樣是「去」：伺う（有對象）和参る（只對聽者鄭重）差在哪裡' | furigana"></span></p>
+      </div>
+    <span class="ml-auto flex items-center gap-1 text-xs text-text-muted"><span class="group-open:hidden">展開</span><span class="hidden group-open:inline">收合</span><i class="fa-solid fa-chevron-down text-[10px] transition group-open:rotate-180"></i></span>
+    </summary>
+    <div class="flex flex-col gap-3">
+    <div class="overflow-x-auto rounded-lg border border-border">
+      <table class="w-full min-w-[520px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+            <th class="whitespace-nowrap px-4 py-2.5">原形</th>
+            <th class="whitespace-nowrap px-4 py-2.5">謙讓語Ⅰ<span class="block font-normal">向「動作的對象」表敬意</span></th>
+            <th class="whitespace-nowrap px-4 py-2.5">謙讓語Ⅱ（丁重語）<span class="block font-normal">向「聽者」表鄭重</span></th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-border">
+          @for (row of humbleRows; track row.plain) {
+            <tr class="bg-surface">
+              <td class="px-4 py-2.5 font-bold text-ink"><span [innerHTML]="row.plain | furigana"></span></td>
+              <td class="px-4 py-2.5 text-[#2F6F5A]"><span [innerHTML]="row.type1 | furigana"></span></td>
+              <td class="px-4 py-2.5 text-[#2F6F5A]"><span [innerHTML]="row.type2 | furigana"></span></td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
     <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+      <div class="flex flex-col gap-1.5 rounded-lg border border-border bg-surface p-4">
+        <p class="text-sm font-bold text-ink">Ⅰ：有「對象」，抬高對象</p>
+        <p class="text-xs leading-5 text-text-secondary">動作會涉及對方，所以對方被抬高。<br />例：<span [innerHTML]="'先生のお宅に' | furigana"></span><b class="text-[#2F6F5A]"><span [innerHTML]="'伺います' | furigana"></span></b>（抬高老師）</p>
+      </div>
+      <div class="flex flex-col gap-1.5 rounded-lg border border-border bg-surface p-4">
+        <p class="text-sm font-bold text-ink">Ⅱ：不需要對象，只對聽者鄭重</p>
+        <p class="text-xs leading-5 text-text-secondary">單純把自己的事說得鄭重，常搭配「ます」。<br />例：<span [innerHTML]="'明日、東京に' | furigana"></span><b class="text-[#2F6F5A]"><span [innerHTML]="'参ります' | furigana"></span></b>／<span [innerHTML]="'私は田中と' | furigana"></span><b class="text-[#2F6F5A]"><span [innerHTML]="'申します' | furigana"></span></b></p>
+      </div>
+    </div>
+      </div>
+  </details>
+
+  <details id="keigo-give" open class="group scroll-mt-6 rounded-lg border border-border bg-surface/60 p-4 open:bg-transparent open:p-0 open:border-transparent">
+    <summary class="flex cursor-pointer list-none items-start gap-2.5 group-open:mb-3 [&::-webkit-details-marker]:hidden">
+      <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ink text-xs font-bold text-white">4</span>
+      <div class="flex flex-col">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]"><span [innerHTML]="'授受的敬語：くださる・いただく・差し上げる' | furigana"></span></h2>
+        <p class="text-xs text-text-secondary">考題最愛考「主語是誰」</p>
+      </div>
+    <span class="ml-auto flex items-center gap-1 text-xs text-text-muted"><span class="group-open:hidden">展開</span><span class="hidden group-open:inline">收合</span><i class="fa-solid fa-chevron-down text-[10px] transition group-open:rotate-180"></i></span>
+    </summary>
+    <div class="flex flex-col gap-3">
+    <div class="overflow-x-auto rounded-lg border border-border">
+      <table class="w-full min-w-[640px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+            <th class="whitespace-nowrap px-4 py-2.5">方向</th>
+            <th class="whitespace-nowrap px-4 py-2.5">一般</th>
+            <th class="whitespace-nowrap px-4 py-2.5">敬語</th>
+            <th class="whitespace-nowrap px-4 py-2.5">主語</th>
+            <th class="whitespace-nowrap px-4 py-2.5">〜て形</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-border">
+          @for (row of giveReceiveRows; track row.direction) {
+            <tr class="bg-surface align-top">
+              <td class="px-4 py-2.5 font-bold text-ink">{{ row.direction }}</td>
+              <td class="px-4 py-2.5 text-text-secondary"><span [innerHTML]="row.plain | furigana"></span></td>
+              <td [class]="'px-4 py-2.5 font-bold ' + (row.kind === 'sonkei' ? 'text-accent' : 'text-[#2F6F5A]')">
+                <span [innerHTML]="row.keigo | furigana"></span>
+                <span class="block text-[11px] font-normal">（{{ row.kind === 'sonkei' ? '尊敬語' : '謙讓語' }}）</span>
+              </td>
+              <td class="px-4 py-2.5 text-text-secondary">{{ row.subject }}</td>
+              <td class="px-4 py-2.5 text-xs leading-5 text-text-secondary">
+                <span [innerHTML]="row.withTe | furigana"></span>
+                <span class="mt-1 block rounded bg-bg px-2 py-1 text-ink"><span [innerHTML]="row.example | furigana"></span></span>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+    <div class="flex items-start gap-2.5 rounded-lg border border-dashed border-accent/60 bg-surface px-4 py-3 text-xs leading-5 text-ink">
+      <span class="shrink-0 rounded-full bg-accent px-2 py-0.5 text-[11px] font-bold text-white">考試常考</span>
+      <span class="whitespace-pre-line leading-7">{{ giveReceiveTip }}</span>
+    </div>
+      </div>
+  </details>
+
+  <details id="keigo-forms" class="group scroll-mt-6 rounded-lg border border-border bg-surface/60 p-4 open:bg-transparent open:p-0 open:border-transparent">
+    <summary class="flex cursor-pointer list-none items-start gap-2.5 group-open:mb-3 [&::-webkit-details-marker]:hidden">
+      <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ink text-xs font-bold text-white">5</span>
+      <div class="flex flex-col">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">敬語的作法與「お／ご〜」各種形式</h2>
+        <p class="text-xs text-text-secondary">規則型要記接續，お〜です 是接待用語的常考形式</p>
+      </div>
+    <span class="ml-auto flex items-center gap-1 text-xs text-text-muted"><span class="group-open:hidden">展開</span><span class="hidden group-open:inline">收合</span><i class="fa-solid fa-chevron-down text-[10px] transition group-open:rotate-180"></i></span>
+    </summary>
+    <div class="flex flex-col gap-3">
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
       @for (group of keigoFormationGroups; track group.label) {
         <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
           <span [class]="'w-fit rounded-full px-2.5 py-1 text-xs font-bold ' + group.badgeClass">{{ group.label }}</span>
           @for (rule of group.rules; track rule.rule) {
             <div class="rounded-md bg-bg px-3 py-2.5">
-              <p class="text-sm font-bold text-ink">{{ rule.rule }}</p>
-              <p class="mt-0.5 text-xs text-accent">{{ rule.example }}</p>
+              <p class="text-sm font-bold text-ink"><span [innerHTML]="rule.rule | furigana"></span></p>
+              <p class="mt-0.5 text-xs text-accent"><span [innerHTML]="rule.example | furigana"></span></p>
             </div>
           }
         </div>
       }
     </div>
-  </div>
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+      @for (card of formCards; track card.form) {
+        <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
+          <div class="flex flex-wrap items-center gap-2">
+            <p class="font-heading text-sm font-bold text-ink"><span [innerHTML]="card.form | furigana"></span></p>
+            <span class="rounded-full bg-bg px-2 py-0.5 text-[11px] font-bold text-text-secondary">{{ card.kind }}</span>
+          </div>
+          <p class="text-xs leading-5 text-text-secondary">{{ card.meaning }}</p>
+          <ul class="flex flex-col gap-1">
+            @for (ex of card.examples; track ex) {
+              <li class="rounded-md bg-bg px-3 py-1.5 text-sm text-ink"><span [innerHTML]="ex | furigana"></span></li>
+            }
+          </ul>
+          @if (card.note) {
+            <p class="flex gap-1.5 text-xs leading-5 text-text-secondary">
+              <i class="fa-regular fa-lightbulb mt-0.5 text-[#B08514]"></i><span class="whitespace-pre-line">{{ card.note }}</span>
+            </p>
+          }
+        </div>
+      }
+    </div>
+      </div>
+  </details>
+
+  <details id="keigo-polite" class="group scroll-mt-6 rounded-lg border border-border bg-surface/60 p-4 open:bg-transparent open:p-0 open:border-transparent">
+    <summary class="flex cursor-pointer list-none items-start gap-2.5 group-open:mb-3 [&::-webkit-details-marker]:hidden">
+      <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ink text-xs font-bold text-white">6</span>
+      <div class="flex flex-col">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]"><span [innerHTML]="'丁寧語與丁重語：ございます・おります・参ります' | furigana"></span></h2>
+        <p class="text-xs text-text-secondary">對聽者鄭重，只能用在自己這一方或物品、事情</p>
+      </div>
+    <span class="ml-auto flex items-center gap-1 text-xs text-text-muted"><span class="group-open:hidden">展開</span><span class="hidden group-open:inline">收合</span><i class="fa-solid fa-chevron-down text-[10px] transition group-open:rotate-180"></i></span>
+    </summary>
+    <div class="flex flex-col gap-3">
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+      @for (card of politeCards; track card.form) {
+        <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
+          <div class="flex flex-wrap items-center gap-2">
+            <p class="font-heading text-sm font-bold text-ink"><span [innerHTML]="card.form | furigana"></span></p>
+            <span class="rounded-full bg-bg px-2 py-0.5 text-[11px] font-bold text-text-secondary">{{ card.kind }}</span>
+          </div>
+          <p class="text-xs leading-5 text-text-secondary">{{ card.meaning }}</p>
+          <ul class="flex flex-col gap-1">
+            @for (ex of card.examples; track ex) {
+              <li class="rounded-md bg-bg px-3 py-1.5 text-sm text-ink"><span [innerHTML]="ex | furigana"></span></li>
+            }
+          </ul>
+          @if (card.note) {
+            <p class="flex gap-1.5 text-xs leading-5 text-text-secondary">
+              <i class="fa-regular fa-lightbulb mt-0.5 text-[#B08514]"></i><span class="whitespace-pre-line">{{ card.note }}</span>
+            </p>
+          }
+        </div>
+      }
+    </div>
+      </div>
+  </details>
+
+  <details id="keigo-sasete" class="group scroll-mt-6 rounded-lg border border-border bg-surface/60 p-4 open:bg-transparent open:p-0 open:border-transparent">
+    <summary class="flex cursor-pointer list-none items-start gap-2.5 group-open:mb-3 [&::-webkit-details-marker]:hidden">
+      <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ink text-xs font-bold text-white">7</span>
+      <div class="flex flex-col">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">〜させていただく 怎麼用</h2>
+        <p class="text-xs text-text-secondary">有許可或恩惠才用，不要濫用</p>
+      </div>
+    <span class="ml-auto flex items-center gap-1 text-xs text-text-muted"><span class="group-open:hidden">展開</span><span class="hidden group-open:inline">收合</span><i class="fa-solid fa-chevron-down text-[10px] transition group-open:rotate-180"></i></span>
+    </summary>
+    <div class="flex flex-col gap-3">
+    <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
+      <div class="flex flex-wrap items-center gap-2">
+        <p class="font-heading text-sm font-bold text-ink"><span [innerHTML]="saseteCard.form | furigana"></span></p>
+        <span class="rounded-full bg-bg px-2 py-0.5 text-[11px] font-bold text-text-secondary">{{ saseteCard.kind }}</span>
+      </div>
+      <p class="text-xs leading-5 text-text-secondary">{{ saseteCard.meaning }}</p>
+      <ul class="grid grid-cols-1 gap-1 sm:grid-cols-3">
+        @for (ex of saseteCard.examples; track ex) {
+          <li class="rounded-md bg-bg px-3 py-1.5 text-sm text-ink"><span [innerHTML]="ex | furigana"></span></li>
+        }
+      </ul>
+      <p class="flex gap-1.5 text-xs leading-5 text-text-secondary">
+        <i class="fa-regular fa-lightbulb mt-0.5 text-[#B08514]"></i><span class="whitespace-pre-line">{{ saseteCard.note }}</span>
+      </p>
+    </div>
+      </div>
+  </details>
+
+  <details id="keigo-mistakes" open class="group scroll-mt-6 rounded-lg border border-border bg-surface/60 p-4 open:bg-transparent open:p-0 open:border-transparent">
+    <summary class="flex cursor-pointer list-none items-start gap-2.5 group-open:mb-3 [&::-webkit-details-marker]:hidden">
+      <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ink text-xs font-bold text-white">8</span>
+      <div class="flex flex-col">
+        <h2 class="font-heading text-base font-bold text-ink sm:text-[17px]">二重敬語與常見錯誤</h2>
+        <p class="text-xs text-text-secondary">左邊是常見錯誤，右邊是正確說法</p>
+      </div>
+    <span class="ml-auto flex items-center gap-1 text-xs text-text-muted"><span class="group-open:hidden">展開</span><span class="hidden group-open:inline">收合</span><i class="fa-solid fa-chevron-down text-[10px] transition group-open:rotate-180"></i></span>
+    </summary>
+    <div class="flex flex-col gap-3">
+    <div class="flex flex-col gap-2">
+      @for (m of mistakes; track m.wrong) {
+        <div class="flex flex-col gap-1.5 rounded-lg border border-border bg-surface p-3.5">
+          <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
+            <span class="rounded bg-accent-soft px-2 py-0.5 font-bold text-accent line-through decoration-accent/60">✗ <span [innerHTML]="m.wrong | furigana"></span></span>
+            <i class="fa-solid fa-arrow-right text-xs text-text-muted"></i>
+            <span class="rounded bg-matcha-soft px-2 py-0.5 font-bold text-[#2F6F5A]">○ <span [innerHTML]="m.right | furigana"></span></span>
+          </div>
+          <p class="text-xs leading-5 text-text-secondary">{{ m.reason }}</p>
+        </div>
+      }
+    </div>
+      </div>
+  </details>
 
   <div class="flex items-center gap-2.5 rounded-lg bg-sun-yellow/25 px-4 py-3.5 text-sm text-ink">
     <i class="fa-regular fa-lightbulb text-[#B08514]"></i>

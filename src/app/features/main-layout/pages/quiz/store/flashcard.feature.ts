@@ -11,6 +11,8 @@ interface FlashcardState {
   flipped: boolean;
   knownIds: Set<string>;
   unknownIds: Set<string>;
+  /** 這一輪背完了（最後一張也已標記） */
+  flashcardFinished: boolean;
 }
 
 const initialState: FlashcardState = {
@@ -19,6 +21,7 @@ const initialState: FlashcardState = {
   flipped: false,
   knownIds: new Set(),
   unknownIds: new Set(),
+  flashcardFinished: false,
 };
 
 /** 單詞頁：卡牌背誦 session（依賴 vocab-data 的 filteredEntries/wrongWords/markedWords、study-plan 的 todayQueue/updateSRS，以及根層的 pageMode） */
@@ -58,7 +61,39 @@ export function flashcardFeature() {
         }
       };
 
+      /** 最後一張標記完就進入「這一輪背完了」畫面 */
+      const finishOrAdvance = (): void => {
+        if (store.flashcardIsLast()) patchState(store, { flashcardFinished: true, flipped: false });
+        else advanceCard();
+      };
+
       return {
+        /** 同一批重新洗牌再背一輪 */
+        restartFlashcard(): void {
+          patchState(store, {
+            flashcardQueue: [...store.flashcardQueue()].sort(() => Math.random() - 0.5),
+            flashcardIndex: 0,
+            flipped: false,
+            knownIds: new Set(),
+            unknownIds: new Set(),
+            flashcardFinished: false,
+          });
+        },
+
+        /** 只再背這一輪標了「不熟」的 */
+        retryUnknownFlashcard(): void {
+          const unknown = store.flashcardQueue().filter((c) => store.unknownIds().has(c.id));
+          if (unknown.length === 0) return;
+          patchState(store, {
+            flashcardQueue: unknown.sort(() => Math.random() - 0.5),
+            flashcardIndex: 0,
+            flipped: false,
+            knownIds: new Set(),
+            unknownIds: new Set(),
+            flashcardFinished: false,
+          });
+        },
+
         startFlashcard(
           opts: { wrongOnly?: boolean; markedOnly?: boolean; todayOnly?: boolean; all?: boolean } = {},
         ): void {
@@ -80,6 +115,7 @@ export function flashcardFeature() {
             flipped: false,
             knownIds: new Set(),
             unknownIds: new Set(),
+            flashcardFinished: false,
             pageMode: 'flashcard',
           });
         },
@@ -103,7 +139,7 @@ export function flashcardFeature() {
           s.add(card.id);
           patchState(store, { knownIds: s });
           store.updateSRS(card.id, true);
-          advanceCard();
+          finishOrAdvance();
         },
 
         markUnknown(): void {
@@ -113,7 +149,7 @@ export function flashcardFeature() {
           s.add(card.id);
           patchState(store, { unknownIds: s });
           store.updateSRS(card.id, false);
-          advanceCard();
+          finishOrAdvance();
         },
 
         isKnown(id: string): boolean {

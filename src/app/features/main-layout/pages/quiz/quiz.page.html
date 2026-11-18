@@ -1,16 +1,13 @@
 @if (store.pageMode() === 'list') {
   <div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
     <!-- Header -->
-    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-      <div class="flex flex-col gap-1 sm:gap-1.5">
-        <h1 class="font-heading text-xl font-bold text-ink sm:text-2xl lg:text-[26px]">單詞</h1>
-        <p class="text-sm text-text-secondary">依照詞庫安排計畫，總覽、背誦、測驗一次到位</p>
-      </div>
+    <div class="flex items-center justify-between gap-3">
+      <h1 class="font-heading text-xl font-bold text-ink sm:text-2xl lg:text-[26px]">單詞</h1>
       @if (!store.showCreatePlan()) {
         <button
           type="button"
           (click)="store.setShowCreatePlan(true)"
-          class="flex w-full items-center justify-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white transition hover:brightness-105 active:scale-[0.98] sm:w-auto"
+          class="flex items-center justify-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-bold text-white transition hover:brightness-105 active:scale-[0.98]"
         >
           <i class="fa-solid fa-plus text-xs"></i> 建立學習計畫
         </button>

@@ -1,3 +1,59 @@
+<!-- 手機：三個篩選合成一排下拉選單 -->
+<div class="flex flex-col gap-2 sm:hidden">
+  <div class="grid grid-cols-3 gap-2">
+    <label class="flex min-w-0 flex-col gap-1">
+      <span class="text-[11px] font-bold text-text-muted">級別</span>
+      <span class="relative">
+        <select (change)="onLevel($event)" aria-label="級別" class="w-full cursor-pointer appearance-none rounded-lg border border-border bg-surface py-2 pl-3 pr-7 text-[13px] font-bold text-ink focus:border-accent focus:outline-none">
+          @for (lv of levelOptions; track lv.value) {
+            <option [value]="lv.value" [selected]="store.levelFilter() === lv.value">{{ lv.label }}</option>
+          }
+        </select>
+        <i class="fa-solid fa-chevron-down pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-text-muted"></i>
+      </span>
+    </label>
+    <label class="flex min-w-0 flex-col gap-1">
+      <span class="text-[11px] font-bold text-text-muted">分類標記</span>
+      <span class="relative">
+        <select (change)="onTag($event)" aria-label="分類標記" class="w-full cursor-pointer appearance-none rounded-lg border border-border bg-surface py-2 pl-3 pr-7 text-[13px] font-bold text-ink focus:border-accent focus:outline-none">
+          <option value="all" [selected]="store.tagFilter() === 'all'">全部</option>
+          <option value="frequent" [selected]="store.tagFilter() === 'frequent'">常考 {{ store.frequentlyTestedCount() }}</option>
+          <option value="personal-review" [selected]="store.tagFilter() === 'personal-review'">個人複習 {{ store.personalReviewCount() }}</option>
+        </select>
+        <i class="fa-solid fa-chevron-down pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-text-muted"></i>
+      </span>
+    </label>
+    <label class="flex min-w-0 flex-col gap-1">
+      <span class="text-[11px] font-bold text-text-muted">詞性</span>
+      <span class="relative">
+        <select (change)="onCategory($event)" aria-label="單字詞性" class="w-full cursor-pointer appearance-none rounded-lg border border-border bg-surface py-2 pl-3 pr-7 text-[13px] font-bold text-ink focus:border-accent focus:outline-none">
+          <option value="" [selected]="!store.selectedCategoryId()">全部</option>
+          @for (cat of filterCategories; track cat.id) {
+            <option [value]="cat.id" [selected]="store.selectedCategoryId() === cat.id">{{ cat.label }}</option>
+          }
+        </select>
+        <i class="fa-solid fa-chevron-down pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-text-muted"></i>
+      </span>
+    </label>
+  </div>
+  @if (store.selectedCategoryId() === 'adverb') {
+    <label class="flex flex-col gap-1">
+      <span class="text-[11px] font-bold text-text-muted">類型</span>
+      <span class="relative">
+        <select (change)="onSubtype($event)" aria-label="類型" class="w-full cursor-pointer appearance-none rounded-lg border border-border bg-surface py-2 pl-3 pr-7 text-[13px] font-bold text-ink focus:border-accent focus:outline-none">
+          <option value="" [selected]="!store.subtypeFilter()">全部</option>
+          @for (t of adverbSubtypes; track t.id) {
+            <option [value]="t.id" [selected]="store.subtypeFilter() === t.id">{{ t.label }} {{ store.adverbSubtypeCounts()[t.id] || 0 }}</option>
+          }
+        </select>
+        <i class="fa-solid fa-chevron-down pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-text-muted"></i>
+      </span>
+    </label>
+  }
+</div>
+
+<!-- 平板以上：膠囊按鈕 -->
+<div class="hidden flex-col gap-4 sm:flex lg:gap-5">
 <!-- 級別篩選 -->
 <div class="flex flex-wrap items-center gap-2">
   <span class="text-xs font-bold text-text-muted">級別</span>
@@ -87,4 +143,43 @@
       {{ cat.label }}
     </button>
   }
+</div>
+
+<!-- 副詞・擬態語的類型篩選（選了「副詞・擬態語」才出現） -->
+@if (store.selectedCategoryId() === 'adverb') {
+  <div class="flex flex-col gap-2">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="text-xs font-bold text-text-muted">類型</span>
+      <button
+        type="button"
+        (click)="store.selectSubtype(null)"
+        [class]="
+          'rounded-full px-3.5 py-1.5 text-[13px] font-bold transition ' +
+          (!store.subtypeFilter() ? 'bg-matcha text-white' : 'border border-border bg-surface text-text-secondary hover:border-matcha/40')
+        "
+      >
+        全部
+      </button>
+      @for (t of adverbSubtypes; track t.id) {
+        <button
+          type="button"
+          (click)="store.selectSubtype(t.id)"
+          [class]="
+            'rounded-full px-3.5 py-1.5 text-[13px] font-bold transition ' +
+            (store.subtypeFilter() === t.id ? 'bg-matcha text-white' : 'border border-border bg-surface text-text-secondary hover:border-matcha/40')
+          "
+        >
+          {{ t.label }} <span class="ml-0.5 opacity-80">{{ store.adverbSubtypeCounts()[t.id] || 0 }}</span>
+        </button>
+      }
+    </div>
+    @if (store.subtypeFilter(); as sid) {
+      @for (t of adverbSubtypes; track t.id) {
+        @if (t.id === sid) {
+          <p class="text-xs text-text-muted">{{ t.hint }}</p>
+        }
+      }
+    }
+  </div>
+}
 </div>

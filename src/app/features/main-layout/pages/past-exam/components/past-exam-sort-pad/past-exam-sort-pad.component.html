@@ -1,0 +1,69 @@
+@if (parsed(); as p) {
+  <div class="flex flex-col gap-3" aria-label="排序題試排區">
+    <p class="font-heading text-base font-bold leading-[2.6] text-ink sm:text-lg">
+      @for (part of p.parts; track $index) {
+        @if (part.kind === 'text') {
+          <span>{{ part.text }}</span>
+        } @else {
+          <span
+            [attr.data-slot]="part.slot"
+            [class]="
+              'mx-1 inline-flex min-h-9 min-w-[4.5rem] items-center justify-center rounded-md border-2 border-dashed px-1 align-middle transition ' +
+              (part.star ? 'border-accent bg-accent-soft/50' : 'border-border bg-bg')
+            "
+          >
+            @if (slots()[part.slot!] !== null) {
+              <button
+                type="button"
+                (pointerdown)="onPointerDown($event, slots()[part.slot!]!, part.slot!)"
+                (keydown)="onKey($event, slots()[part.slot!]!, part.slot!)"
+                class="touch-none select-none rounded bg-surface px-2 py-1 text-sm font-bold text-ink shadow-sm ring-1 ring-border"
+                aria-label="已放入的詞，點一下取出"
+              >
+                {{ words()[slots()[part.slot!]!] }}
+              </button>
+            } @else {
+              <span class="text-xs font-bold text-text-muted">{{ part.star ? '★' : part.slot! + 1 }}</span>
+            }
+          </span>
+        }
+      }
+    </p>
+
+    <div class="flex flex-col gap-2 rounded-md border border-dashed border-border bg-bg/70 p-2.5">
+      <div class="flex items-center justify-between gap-2">
+        <p class="text-xs text-text-muted">試排區：拖動或點選詞語排排看，再到下面選出★的答案</p>
+        <button
+          type="button"
+          (click)="reset()"
+          [disabled]="pool().length === words().length"
+          class="shrink-0 text-xs font-bold text-accent disabled:opacity-40"
+        >
+          重排
+        </button>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        @for (i of pool(); track i) {
+          <button
+            type="button"
+            (pointerdown)="onPointerDown($event, i, null)"
+            (keydown)="onKey($event, i, null)"
+            class="touch-none select-none rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-bold text-ink shadow-sm transition hover:border-accent/40"
+          >
+            {{ words()[i] }}
+          </button>
+        }
+      </div>
+    </div>
+  </div>
+
+  @if (ghost(); as g) {
+    <div
+      class="pointer-events-none fixed z-50 -translate-x-1/2 -translate-y-1/2 rounded-full border border-accent bg-surface px-3.5 py-1.5 text-sm font-bold text-ink shadow-lg"
+      [style.left.px]="g.x"
+      [style.top.px]="g.y"
+    >
+      {{ g.text }}
+    </div>
+  }
+}

@@ -22,6 +22,8 @@ interface VocabDataState {
   levelFilter: VocabLevelFilter;
   tagFilter: VocabTagFilter;
   selectedGroupId: string | null;
+  /** 「副詞・擬態語」的類型篩選（null＝全部） */
+  subtypeFilter: string | null;
   expandedIds: Set<string>;
   /** localStorage fallback when no plan */
   wrongWordIds: Set<string>;
@@ -36,6 +38,7 @@ const initialState: VocabDataState = {
   levelFilter: 'N3',
   tagFilter: 'all',
   selectedGroupId: null,
+  subtypeFilter: null,
   expandedIds: new Set(),
   wrongWordIds: new Set(),
   markedWordIds: new Set(),
@@ -73,6 +76,7 @@ export function vocabDataFeature() {
         const category = categoryId ? VOCAB_FILTER_CATEGORIES.find((c) => c.id === categoryId) : null;
         const tagFilter = store.tagFilter();
         const groupId = store.selectedGroupId();
+        const subtype = store.subtypeFilter();
 
         let source: VocabEntry[];
         if (tagFilter === 'personal-review') {
@@ -88,8 +92,17 @@ export function vocabDataFeature() {
           if (!matchesLevel(e)) return false;
           if (category && !category.pos.includes(e.pos)) return false;
           if (tagFilter === 'frequent' && !e.frequentlyTested) return false;
+          if (category?.id === 'adverb' && subtype && e.subtype !== subtype) return false;
           return true;
         });
+      }),
+      /** 副詞・擬態語各類型的字數（依目前級別） */
+      adverbSubtypeCounts: computed(() => {
+        const counts: Record<string, number> = {};
+        for (const e of store.allEntries()) {
+          if (e.subtype && store.matchesLevel()(e)) counts[e.subtype] = (counts[e.subtype] ?? 0) + 1;
+        }
+        return counts;
       }),
       frequentlyTestedCount: computed(
         () => store.allEntries().filter((e) => e.frequentlyTested && store.matchesLevel()(e)).length,
@@ -121,7 +134,11 @@ export function vocabDataFeature() {
         // List mode
         // --------------------------------------------------------------------
         selectCategory(id: string | null): void {
-          patchState(store, { selectedCategoryId: id });
+          patchState(store, { selectedCategoryId: id, subtypeFilter: null });
+        },
+
+        selectSubtype(id: string | null): void {
+          patchState(store, { subtypeFilter: id });
         },
 
         selectLevelFilter(level: VocabLevelFilter): void {

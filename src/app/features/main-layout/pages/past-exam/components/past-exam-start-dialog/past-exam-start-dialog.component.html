@@ -1,0 +1,138 @@
+@if (exam(); as exam) {
+  <app-past-exam-dialog (dismiss)="store.closeStartDialog()">
+    <div class="flex flex-col gap-4">
+      <div class="flex items-start justify-between gap-3">
+        <div>
+          <p class="font-heading text-lg font-bold text-ink">{{ exam.examLabel }}</p>
+          <p class="text-xs text-text-muted">共 {{ totalQuestions() }} 題（不含聽解）</p>
+        </div>
+        <button
+          type="button"
+          (click)="store.closeStartDialog()"
+          aria-label="關閉"
+          class="flex h-8 w-8 items-center justify-center rounded-full text-text-muted hover:bg-bg"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2">
+        <button
+          type="button"
+          (click)="mode.set('practice')"
+          [class]="
+            'flex flex-col gap-1 rounded-lg border-2 p-3 text-left transition ' +
+            (mode() === 'practice' ? 'border-accent bg-accent-soft' : 'border-border bg-surface hover:border-accent/40')
+          "
+        >
+          <span class="font-heading text-sm font-bold text-ink"><i class="fa-solid fa-pen mr-1.5 text-xs"></i>練習模式</span>
+          <span class="text-xs text-text-secondary">選完立刻對答案，並看翻譯與解析</span>
+        </button>
+        <button
+          type="button"
+          (click)="mode.set('mock')"
+          [class]="
+            'flex flex-col gap-1 rounded-lg border-2 p-3 text-left transition ' +
+            (mode() === 'mock' ? 'border-accent bg-accent-soft' : 'border-border bg-surface hover:border-accent/40')
+          "
+        >
+          <span class="font-heading text-sm font-bold text-ink"><i class="fa-solid fa-stopwatch mr-1.5 text-xs"></i>實際演練</span>
+          <span class="text-xs text-text-secondary">照考試時間倒數，交卷才公布答案</span>
+        </button>
+      </div>
+
+      @if (mode() === 'practice') {
+        <div class="flex flex-col gap-2">
+          <p class="text-sm font-bold text-ink">練習範圍</p>
+          <button
+            type="button"
+            (click)="scope.set({ type: 'all' })"
+            [class]="
+              'flex items-center justify-between rounded-lg border px-3.5 py-2.5 text-sm transition ' +
+              (isScope({ type: 'all' }) ? 'border-accent bg-accent-soft font-bold text-ink' : 'border-border bg-surface text-ink')
+            "
+          >
+            <span>整回</span><span class="text-xs text-text-muted">{{ totalQuestions() }} 題</span>
+          </button>
+
+          @for (section of exam.sections; track section.id) {
+            <div class="flex flex-col gap-1.5">
+              <button
+                type="button"
+                (click)="scope.set({ type: 'section', sectionId: section.id })"
+                [class]="
+                  'flex items-center justify-between rounded-lg border px-3.5 py-2.5 text-sm transition ' +
+                  (isScope({ type: 'section', sectionId: section.id })
+                    ? 'border-accent bg-accent-soft font-bold text-ink'
+                    : 'border-border bg-surface text-ink')
+                "
+              >
+                <span>{{ categoryLabel(section.category) }}</span>
+                <span class="text-xs text-text-muted">{{ section.questionCount }} 題</span>
+              </button>
+              @if (groupsOf(section.id).length > 1) {
+                <div class="flex flex-wrap gap-1.5 pl-3">
+                  @for (g of groupsOf(section.id); track g.number) {
+                    <button
+                      type="button"
+                      (click)="scope.set({ type: 'problem', sectionId: section.id, problemNumber: g.number })"
+                      [class]="
+                        'rounded-full border px-3 py-1 text-xs transition ' +
+                        (isScope({ type: 'problem', sectionId: section.id, problemNumber: g.number })
+                          ? 'border-accent bg-accent text-white'
+                          : 'border-border bg-bg text-text-secondary hover:border-accent/40')
+                      "
+                    >
+                      問題{{ g.number }} {{ g.label }}（{{ g.count }}）
+                    </button>
+                  }
+                </div>
+              }
+            </div>
+          }
+
+          <button
+            type="button"
+            [disabled]="store.startDialogUnmasteredCount() === 0"
+            (click)="scope.set({ type: 'unmastered' })"
+            [class]="
+              'flex items-center justify-between rounded-lg border px-3.5 py-2.5 text-sm transition disabled:opacity-40 ' +
+              (isScope({ type: 'unmastered' }) ? 'border-accent bg-accent-soft font-bold text-ink' : 'border-border bg-surface text-ink')
+            "
+          >
+            <span>只練還沒掌握的題</span>
+            <span class="text-xs text-text-muted">
+              {{ store.startDialogUnmasteredCount() > 0 ? store.startDialogUnmasteredCount() + ' 題' : '尚無錯題' }}
+            </span>
+          </button>
+          <p class="text-xs text-text-muted">中途離開會自動存進度，之後可以在這份考卷的紀錄裡繼續。</p>
+        </div>
+      } @else {
+        <div class="flex flex-col gap-2 rounded-lg bg-bg p-3.5 text-sm text-text-secondary">
+          <p class="font-bold text-ink">作答時間</p>
+          @for (stage of stages(); track stage.id) {
+            <p>{{ stage.label }}：<span class="font-bold text-ink">{{ stage.minutes }} 分鐘</span></p>
+          }
+          <ul class="mt-1 list-disc pl-5 text-xs leading-5">
+            <li>作答中不顯示翻譯、對錯與解析，交卷後才公布。</li>
+            <li>時間到會自動交卷。</li>
+            @if (stages().length > 1) {
+              <li>分段計時：上一段交卷後鎖定，無法回頭。</li>
+            }
+            <li>聽解不在 app 內，時間只涵蓋語言知識與読解。</li>
+            <li>離開不保存進度，這次不留下成績。</li>
+          </ul>
+        </div>
+      }
+
+      <button
+        type="button"
+        (click)="start()"
+        [disabled]="store.loading()"
+        class="rounded-full bg-accent px-4 py-3 text-sm font-bold text-white transition hover:brightness-105 disabled:opacity-60"
+      >
+        {{ mode() === 'mock' ? '開始實際演練' : '開始練習' }}
+      </button>
+    </div>
+  </app-past-exam-dialog>
+}

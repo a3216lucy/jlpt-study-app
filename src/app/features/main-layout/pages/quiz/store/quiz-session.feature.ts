@@ -3,7 +3,15 @@ import { Signal, computed } from '@angular/core';
 // NgRx Signals
 import { patchState, signalStoreFeature, type, withComputed, withMethods, withState } from '@ngrx/signals';
 // Models
-import type { PageMode, VocabEntry, VocabQuizOption, VocabQuizQuestion, VocabQuizResult } from '../quiz.model';
+import type {
+  PageMode,
+  VocabEntry,
+  VocabQuizOption,
+  VocabQuizQuestion,
+  VocabQuizResult,
+  VocabQuizType,
+  VocabQuizTypeSetting,
+} from '../quiz.model';
 
 interface QuizSessionState {
   quizQuestions: VocabQuizQuestion[];
@@ -13,6 +21,10 @@ interface QuizSessionState {
   quizResults: VocabQuizResult[];
   quizStartedAt: number | null;
   quizFinishedAt: number | null;
+  /** 題型設定（混合或固定一種） */
+  quizTypeSetting: VocabQuizTypeSetting;
+  /** 每回題數（0＝全部） */
+  quizCountSetting: number;
 }
 
 const initialState: QuizSessionState = {
@@ -23,6 +35,8 @@ const initialState: QuizSessionState = {
   quizResults: [],
   quizStartedAt: null,
   quizFinishedAt: null,
+  quizTypeSetting: 'mixed',
+  quizCountSetting: 10,
 };
 
 /** 單詞頁：單字測驗（4-choice）session（依賴 vocab-data 的 allEntries/filteredEntries/wrongWords/markedWords/markWordWrong、study-plan 的 todayQueue/updateSRS，以及根層的 pageMode/quizNewlyMasteredCount） */
@@ -68,27 +82,60 @@ export function quizSessionFeature() {
       }),
     })),
     withMethods((store) => {
+      const hasKanji = (w: string): boolean => /[一-鿿々]/.test(w);
+      const shuffle = <T,>(arr: T[]): T[] => [...arr].sort(() => Math.random() - 0.5);
+
+      /** 這個單字能出哪些題型（讀音題只有「有漢字且讀音不同」的字才出） */
+      const eligibleTypes = (entry: VocabEntry): VocabQuizType[] => {
+        const types: VocabQuizType[] = ['word-meaning', 'meaning-word'];
+        if (entry.reading && entry.reading !== entry.word && hasKanji(entry.word)) types.push('word-reading');
+        return types;
+      };
+
       const generateQuestions = (pool: VocabEntry[], count: number): VocabQuizQuestion[] => {
         const all = store.allEntries();
-        const shuffled = [...pool].sort(() => Math.random() - 0.5);
-        const selected = shuffled.slice(0, Math.min(count, shuffled.length));
+        const selected = shuffle(pool).slice(0, count > 0 ? Math.min(count, pool.length) : pool.length);
+        const setting = store.quizTypeSetting();
 
         return selected.map((entry) => {
-          const distractors = all
-            .filter((e) => e.id !== entry.id && e.meaning !== entry.meaning)
-            .sort(() => Math.random() - 0.5)
-            .slice(0, 3);
+          const eligible = eligibleTypes(entry);
+          const type: VocabQuizType =
+            setting === 'mixed'
+              ? eligible[Math.floor(Math.random() * eligible.length)]
+              : eligible.includes(setting)
+                ? setting
+                : 'word-meaning';
+          const others = all.filter((e) => e.id !== entry.id);
+          let correct: VocabQuizOption;
+          let wrong: VocabQuizOption[];
 
-          const opts: VocabQuizOption[] = [
-            { id: `${entry.id}:c`, text: entry.meaning, isCorrect: true },
-            ...distractors.map((d, i) => ({
-              id: `${entry.id}:w${i}`,
-              text: d.meaning,
-              isCorrect: false,
-            })),
-          ].sort(() => Math.random() - 0.5);
+          if (type === 'meaning-word') {
+            correct = { id: `${entry.id}:c`, text: entry.word, reading: entry.reading, isCorrect: true };
+            wrong = shuffle(others.filter((e) => e.word !== entry.word && e.meaning !== entry.meaning))
+              .slice(0, 3)
+              .map((d, i) => ({ id: `${entry.id}:w${i}`, text: d.word, reading: d.reading, isCorrect: false }));
+          } else if (type === 'word-reading') {
+            correct = { id: `${entry.id}:c`, text: entry.reading, isCorrect: true };
+            // 干擾選項：讀音長度相近的其他單字讀音
+            const seen = new Set([entry.reading]);
+            const sorted = shuffle(others)
+              .filter((e) => e.reading && e.reading !== entry.word)
+              .sort((a, b) => Math.abs(a.reading.length - entry.reading.length) - Math.abs(b.reading.length - entry.reading.length));
+            wrong = [];
+            for (const d of sorted) {
+              if (seen.has(d.reading)) continue;
+              seen.add(d.reading);
+              wrong.push({ id: `${entry.id}:w${wrong.length}`, text: d.reading, isCorrect: false });
+              if (wrong.length === 3) break;
+            }
+          } else {
+            correct = { id: `${entry.id}:c`, text: entry.meaning, isCorrect: true };
+            wrong = shuffle(others.filter((e) => e.meaning !== entry.meaning))
+              .slice(0, 3)
+              .map((d, i) => ({ id: `${entry.id}:w${i}`, text: d.meaning, isCorrect: false }));
+          }
 
-          return { id: `q:${entry.id}`, entry, options: opts };
+          return { id: `q:${entry.id}`, type, entry, options: shuffle([correct, ...wrong]) };
         });
       };
 
@@ -108,7 +155,7 @@ export function quizSessionFeature() {
 
       return {
         startQuiz(opts: { wrongOnly?: boolean; markedOnly?: boolean; todayOnly?: boolean; count?: number } = {}): void {
-          const count = opts.count ?? 10;
+          const count = opts.count ?? store.quizCountSetting();
           let pool: VocabEntry[];
 
           if (opts.wrongOnly) {
@@ -135,6 +182,14 @@ export function quizSessionFeature() {
             quizFinishedAt: null,
             pageMode: 'quiz',
           });
+        },
+
+        setQuizType(type: VocabQuizTypeSetting): void {
+          patchState(store, { quizTypeSetting: type });
+        },
+
+        setQuizCount(count: number): void {
+          patchState(store, { quizCountSetting: count });
         },
 
         /** 用同一批詞庫重新出一輪新題目 */

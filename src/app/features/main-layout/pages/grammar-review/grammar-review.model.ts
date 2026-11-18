@@ -1,5 +1,5 @@
 /** 文法頁頁籤：動詞活用／敬語／自他動詞／活用規則／複合動詞 */
-export type ReviewTab = 'conjugation' | 'keigo' | 'transitivity' | 'rules' | 'compound-verb';
+export type ReviewTab = 'conjugation' | 'style' | 'keigo' | 'give' | 'transitivity' | 'compound-verb' | 'onomatopoeia' | 'affix' | 'conjunction' | 'particle' | 'sort';
 
 // ── 動詞活用／活用規則 types ──────────────────────────────────────────────────
 
@@ -211,6 +211,14 @@ export interface TransitivityPair {
   meaning: string;
   /** 語尾規律說明 */
   rule: string;
+  /** 自動詞讀音 */
+  jidoushiKana: string;
+  /** 他動詞讀音 */
+  tadoushiKana: string;
+  /** 所屬語尾類型（分組標題） */
+  family: string;
+  /** 是否為考古題考過的動詞（畫面標出） */
+  hot?: boolean;
 }
 
 /** 自他動詞語尾規律速記卡片 */
@@ -267,6 +275,78 @@ export interface KeigoFormationGroup {
   rules: KeigoFormationRule[];
 }
 
+/** 敬語判斷步驟 */
+export interface KeigoStep {
+  /** 步驟編號 */
+  no: number;
+  /** 步驟標題 */
+  title: string;
+  /** 說明 */
+  body: string;
+}
+
+/** 「同一個動作、不同人做」的快速對照列 */
+export interface KeigoQuickRow {
+  /** 動作與誰做，如「客人來」 */
+  situation: string;
+  /** 該用的敬語 */
+  answer: string;
+  /** 屬於尊敬語或謙讓語 */
+  kind: 'sonkei' | 'kenjou';
+}
+
+/** 謙讓語Ⅰ／Ⅱ 對照列 */
+export interface KeigoHumbleRow {
+  /** 原形 */
+  plain: string;
+  /** 謙讓語Ⅰ（向動作的對象表敬） */
+  type1: string;
+  /** 謙讓語Ⅱ／丁重語（向聽者鄭重） */
+  type2: string;
+}
+
+/** 授受表現的敬語列 */
+export interface KeigoGiveReceiveRow {
+  /** 方向，如「對方給我」 */
+  direction: string;
+  /** 一般說法 */
+  plain: string;
+  /** 敬語說法 */
+  keigo: string;
+  /** 尊敬語或謙讓語 */
+  kind: 'sonkei' | 'kenjou';
+  /** 句子的主語是誰 */
+  subject: string;
+  /** 「〜て」形的敬語 */
+  withTe: string;
+  /** 例句 */
+  example: string;
+}
+
+/** 敬語句型卡片（お／ご〜です 等） */
+export interface KeigoFormCard {
+  /** 形式 */
+  form: string;
+  /** 種類（尊敬／謙讓／丁寧…） */
+  kind: string;
+  /** 意思與用法 */
+  meaning: string;
+  /** 例句 */
+  examples: string[];
+  /** 補充提醒 */
+  note?: string;
+}
+
+/** 常見敬語錯誤 */
+export interface KeigoMistake {
+  /** 錯誤說法 */
+  wrong: string;
+  /** 正確說法 */
+  right: string;
+  /** 原因 */
+  reason: string;
+}
+
 // ── 複合動詞規則 types ────────────────────────────────────────────────────────
 
 /** 複合動詞例句 */
@@ -315,4 +395,117 @@ export interface CompoundVerbRuleData {
   title: string;
   /** 分類清單（目前僅有一組） */
   groups: CompoundVerbRuleGroup[];
+}
+
+// ── 接頭・接尾詞 types ────────────────────────────────────────────────────────
+
+/** 接頭／接尾詞的例詞 */
+export interface AffixWord {
+  /** 詞（漢字寫法） */
+  word: string;
+  /** 假名讀音 */
+  reading: string;
+  /** 中文意思 */
+  gloss: string;
+  /** 是否為考過、必須會的詞 */
+  hot: boolean;
+}
+
+/** 一個接頭／接尾詞 */
+export interface AffixItem {
+  /** 標記，如「再〜」「〜的」 */
+  mark: string;
+  /** 讀音 */
+  reading: string;
+  /** 意思 */
+  meaning: string;
+  /** 用法說明 */
+  note: string;
+  /** 例詞（考過的排在前面） */
+  words: AffixWord[];
+  /** 這個接頭／接尾詞有沒有考過 */
+  hot: boolean;
+}
+
+/** 接頭詞／接尾詞的分組 */
+export interface AffixGroup {
+  /** 分組名稱 */
+  label: string;
+  /** 接頭詞或接尾詞 */
+  kind: 'prefix' | 'suffix';
+  /** 該組的接頭／接尾詞 */
+  items: AffixItem[];
+}
+
+// ── 擬聲擬態語 types ──────────────────────────────────────────────────────────
+
+/** 擬聲擬態語的一個詞 */
+export interface OnomatopoeiaEntry {
+  /** 詞（平假名／片假名） */
+  word: string;
+  /** 中文意思 */
+  meaning: string;
+  /** 補充說明（可空） */
+  note: string;
+  /** 例句（已加上 ruby 讀音的 HTML，目標詞以 `<b>` 標出） */
+  exampleHtml: string;
+  /** 例句中譯 */
+  zh: string;
+  /** 是否為考過、必須會的詞 */
+  hot: boolean;
+}
+
+/** 一組容易混淆、放在一起比較的詞 */
+export interface OnomatopoeiaCluster {
+  /** 小組標題 */
+  title: string;
+  /** 這一組的差異比較（用「；」分成多點） */
+  compare: string;
+  /** 詞 */
+  entries: OnomatopoeiaEntry[];
+}
+
+/** 擬聲擬態語的大類 */
+export interface OnomatopoeiaGroup {
+  /** 大類名稱 */
+  label: string;
+  /** 一句話說明這一類 */
+  hint: string;
+  /** 該類的小組 */
+  clusters: OnomatopoeiaCluster[];
+}
+
+// ── 文體／授受（通用說明頁）types ─────────────────────────────────────────────
+
+/** 說明卡片 */
+export interface NoteCard {
+  name: string;
+  tag: string;
+  use: string;
+  feel: string;
+  /** [日文（含 ruby HTML）, 中譯] */
+  ex: [string, string][];
+}
+
+/** 錯誤與正確的對照 */
+export interface NoteDo {
+  wrong: string;
+  right: string;
+  why: string;
+}
+
+/** 區塊：卡片、表格、提醒、錯誤對照 */
+export type NoteBlock =
+  | { kind: 'cards'; items: NoteCard[] }
+  | { kind: 'table'; head: string[]; rows: string[][] }
+  | { kind: 'tabs'; tabs: { label: string; hint: string; head: string[]; rows: string[][]; note: string }[] }
+  | { kind: 'note'; text: string }
+  | { kind: 'dos'; items: NoteDo[] };
+
+/** 一個可收合的段落 */
+export interface NoteSection {
+  id: string;
+  title: string;
+  hint: string;
+  blocks: NoteBlock[];
 }

@@ -59,25 +59,46 @@
       </div>
 
       <div class="flex flex-col gap-2.5 rounded-lg border border-border bg-surface p-5 sm:gap-3.5 sm:p-6 lg:p-7">
-        <div class="flex items-center justify-between sm:hidden">
-          <span class="rounded-full bg-accent-soft px-3 py-1 text-xs font-bold text-accent">四選一</span>
+        <div class="flex items-center justify-between">
+          <span class="rounded-full bg-accent-soft px-3 py-1 text-xs font-bold text-accent">{{ typeLabel(q.type) }}</span>
+          <span class="text-[13px] text-text-muted">{{ typeHint(q.type) }}</span>
         </div>
-        <div class="hidden items-center justify-between sm:flex">
-          <span class="rounded-full bg-accent-soft px-3 py-1 text-xs font-bold text-accent">四選一</span>
-          <span class="text-[13px] text-text-muted">請選出最符合這個單字的中文意思</span>
-        </div>
-        <div class="flex flex-col items-center gap-2 py-1 sm:flex-row sm:justify-center sm:gap-3.5">
-          <h2 class="font-heading text-4xl font-bold text-ink sm:text-[44px] lg:text-5xl">{{ q.entry.word }}</h2>
-          <button
-            type="button"
-            (click)="speakEntry(q.entry)"
-            class="flex h-8 w-8 flex-none items-center justify-center rounded-full border border-border bg-bg text-accent sm:h-9 sm:w-9"
-          >
-            <i class="fa-solid fa-volume-high text-sm"></i>
-          </button>
-        </div>
-        <p class="text-center font-heading text-base font-medium text-text-secondary sm:text-lg">{{ q.entry.reading }}</p>
-        <p class="text-center text-xs text-text-muted sm:hidden">請選出最符合的中文意思</p>
+
+        @if (q.type === 'meaning-word') {
+          <!-- 看意思選單字：題目是中文意思 -->
+          <h2 class="py-2 text-center font-heading text-2xl font-bold text-ink sm:text-3xl">{{ q.entry.meaning }}</h2>
+        } @else {
+          <!-- 看單字：讀音作答後才顯示（選讀音題的答案就是讀音） -->
+          <div class="flex flex-col items-center gap-2 py-1 sm:flex-row sm:justify-center sm:gap-3.5">
+            <h2 class="font-heading text-4xl font-bold text-ink sm:text-[44px] lg:text-5xl">{{ q.entry.word }}</h2>
+            @if (store.quizAnswered()) {
+              <button
+                type="button"
+                (click)="speakEntry(q.entry)"
+                class="flex h-8 w-8 flex-none items-center justify-center rounded-full border border-border bg-bg text-accent sm:h-9 sm:w-9"
+              >
+                <i class="fa-solid fa-volume-high text-sm"></i>
+              </button>
+            }
+          </div>
+        }
+
+        @if (store.quizAnswered()) {
+          <div class="flex flex-col items-center gap-0.5">
+            @if (q.type === 'word-meaning') {
+              <p class="text-center font-heading text-base font-medium text-text-secondary sm:text-lg">{{ q.entry.reading }}</p>
+            } @else if (q.type === 'word-reading') {
+              <p class="text-center font-heading text-base font-medium text-text-secondary sm:text-lg">{{ q.entry.meaning }}</p>
+            } @else {
+              <p class="flex items-center gap-2 text-center font-heading text-base font-medium text-text-secondary sm:text-lg">
+                {{ q.entry.word }}（{{ q.entry.reading }}）
+                <button type="button" (click)="speakEntry(q.entry)" class="flex h-7 w-7 items-center justify-center rounded-full border border-border bg-bg text-accent">
+                  <i class="fa-solid fa-volume-high text-xs"></i>
+                </button>
+              </p>
+            }
+          </div>
+        }
       </div>
 
       <div class="flex flex-col gap-2.5 sm:gap-3">
@@ -103,7 +124,7 @@
               class="text-base sm:text-[17px]"
               [class.font-bold]="store.quizAnswered() && option.isCorrect"
               [class.font-medium]="!(store.quizAnswered() && option.isCorrect)"
-              >{{ option.text }}</span
+              >{{ option.text }}@if (store.quizAnswered() && option.reading && q.type === 'meaning-word') {<span class="ml-2 text-sm font-normal text-text-muted">{{ option.reading }}</span>}</span
             >
           </button>
         }

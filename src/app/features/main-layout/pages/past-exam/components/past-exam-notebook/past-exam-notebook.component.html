@@ -1,0 +1,388 @@
+<ng-template #practiceBar let-source let-total="total">
+  @if (total > 0) {
+    <div class="flex flex-wrap items-center gap-2 rounded-lg border border-accent/30 bg-accent-soft/40 px-3.5 py-2.5">
+      <span class="text-xs font-bold text-ink">
+        <i class="fa-solid fa-pen mr-1 text-accent"></i>直接練習這些題（照目前的篩選與排序）
+      </span>
+      <span class="ml-auto flex flex-wrap gap-1.5">
+        @if (total > 10) {
+          <button type="button" (click)="store.startNotebookPractice(source, 10)" class="rounded-full bg-accent px-3.5 py-1 text-xs font-bold text-white transition hover:brightness-105">10 題</button>
+        }
+        @if (total > 20) {
+          <button type="button" (click)="store.startNotebookPractice(source, 20)" class="rounded-full bg-accent px-3.5 py-1 text-xs font-bold text-white transition hover:brightness-105">20 題</button>
+        }
+        <button type="button" (click)="store.startNotebookPractice(source, null)" class="rounded-full bg-accent px-3.5 py-1 text-xs font-bold text-white transition hover:brightness-105">全部 {{ total }} 題</button>
+      </span>
+    </div>
+  }
+</ng-template>
+
+<ng-template #card let-e>
+  <details class="group rounded-lg border border-border bg-surface">
+    <summary class="flex cursor-pointer list-none flex-col gap-2 p-4 sm:p-5">
+      <div class="flex flex-wrap items-center gap-1.5">
+        <span class="rounded-full border border-border bg-bg px-2 py-0.5 text-[11px] font-bold text-text-secondary">
+          {{ e.exam.examLabel }}・{{ categoryLabel(e.section.category) }} {{ e.question.problemLabel }}{{ numberOf(e) !== null ? '・問' + numberOf(e) : '' }}
+        </span>
+        @if (e.stat.wrongCount > 0) {
+          <span class="rounded-full bg-accent-soft px-2 py-0.5 text-[11px] font-bold text-accent">錯 {{ e.stat.wrongCount }} 次</span>
+        }
+        @if (e.stat.marked) {
+          <i class="fa-solid fa-bookmark text-xs text-accent"></i>
+        }
+        <i class="fa-solid fa-chevron-down ml-auto text-xs text-text-muted transition group-open:rotate-180"></i>
+      </div>
+      <p class="font-heading text-base font-bold leading-relaxed text-ink" [innerHTML]="e.question.questionText || e.question.prompt"></p>
+    </summary>
+
+    <div class="flex flex-col gap-3 border-t border-border p-4 sm:p-5">
+      @if (passageOf(e); as p) {
+        <details class="rounded-md bg-bg px-3 py-2">
+          <summary class="cursor-pointer text-xs font-bold text-ink">本文</summary>
+          @if (p.intro) {
+            <p class="mt-2 text-xs text-text-muted">{{ p.intro }}</p>
+          }
+          <p class="mt-2 whitespace-pre-line text-sm leading-7 text-ink">{{ p.passage }}</p>
+        </details>
+      }
+      @if (e.question.questionTranslation) {
+        <p class="text-sm text-text-secondary">{{ e.question.questionTranslation }}</p>
+      }
+      <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        @for (o of e.question.options; track o.id) {
+          <div
+            [class]="
+              'flex items-center gap-2.5 rounded-lg border-2 px-3.5 py-2.5 text-sm ' +
+              (o.isCorrect ? 'border-[#5E9C86] bg-matcha-soft text-ink' : 'border-border bg-surface text-text-muted')
+            "
+          >
+            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-bg text-xs font-bold text-text-secondary">
+              {{ $index + 1 }}
+            </span>
+            <span class="flex-1">{{ o.text }}</span>
+            @if (o.isCorrect) {
+              <i class="fa-solid fa-circle-check text-[#2F6F5A]"></i>
+            }
+          </div>
+        }
+      </div>
+      <app-past-exam-explanation [explanation]="e.question.explanation" />
+    </div>
+  </details>
+</ng-template>
+
+<div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
+  <div class="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
+    <button
+      type="button"
+      (click)="store.backToOverview()"
+      class="flex items-center gap-1.5 rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-bold text-text-secondary transition hover:border-accent/40"
+    >
+      <i class="fa-solid fa-chevron-left text-xs"></i> 返回考古題
+    </button>
+    <div class="flex flex-col items-end text-right">
+      <p class="font-heading text-sm font-bold text-ink sm:text-base">錯題本</p>
+      <p class="text-xs text-text-muted">
+        還沒掌握 {{ store.notebookWrong().length }} 題・標記 {{ store.notebookMarked().length }} 題
+      </p>
+    </div>
+  </div>
+
+  @if (store.loadError()) {
+    <div class="rounded-md border border-accent/30 bg-accent-soft px-4 py-3 text-sm text-accent">{{ store.loadError() }}</div>
+  }
+
+  @if (store.loading() && isEmpty()) {
+    <p class="py-10 text-center text-sm text-text-muted">載入錯題中…</p>
+  } @else if (isEmpty()) {
+    <div class="flex flex-col items-center gap-2 rounded-lg border border-dashed border-border px-6 py-12 text-center">
+      <p class="text-sm font-bold text-ink">錯題本還是空的</p>
+      <p class="text-xs text-text-secondary">完成幾次練習後，答錯的題會集中在這裡；做題時標記的題也會出現在「標記」分頁。</p>
+    </div>
+  } @else {
+    <!-- 篩選 -->
+    <div class="flex flex-col gap-2.5 rounded-lg border border-border bg-surface p-3.5 sm:p-4">
+      <!-- 手機：級別／科目／考卷合成一排下拉 -->
+      <div class="grid grid-cols-3 gap-2 sm:hidden">
+        <span class="relative min-w-0">
+          <select (change)="onLevelChange($event)" aria-label="級別" class="w-full cursor-pointer appearance-none rounded-lg border border-border bg-bg py-2 pl-3 pr-7 text-xs font-bold text-ink focus:border-accent focus:outline-none">
+            <option value="all" [selected]="store.notebookLevel() === 'all'">全部級別</option>
+            @for (lv of store.notebookLevels(); track lv) {
+              <option [value]="lv" [selected]="store.notebookLevel() === lv">{{ lv }}</option>
+            }
+          </select>
+          <i class="fa-solid fa-chevron-down pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-text-muted"></i>
+        </span>
+        <span class="relative min-w-0">
+          <select (change)="onCategoryChange($event)" aria-label="科目" class="w-full cursor-pointer appearance-none rounded-lg border border-border bg-bg py-2 pl-3 pr-7 text-xs font-bold text-ink focus:border-accent focus:outline-none">
+            @for (c of categories; track c.value) {
+              <option [value]="c.value" [selected]="store.notebookCategory() === c.value">{{ c.label }}</option>
+            }
+          </select>
+          <i class="fa-solid fa-chevron-down pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-text-muted"></i>
+        </span>
+        <span class="relative min-w-0">
+          <select (change)="onExamChange($event)" aria-label="依考卷篩選" class="w-full cursor-pointer appearance-none rounded-lg border border-border bg-bg py-2 pl-3 pr-7 text-xs font-bold text-ink focus:border-accent focus:outline-none">
+            <option value="all" [selected]="store.notebookExamId() === 'all'">全部考卷</option>
+            @for (x of store.notebookExams(); track x.id) {
+              <option [value]="x.id" [selected]="store.notebookExamId() === x.id">{{ x.label }}</option>
+            }
+          </select>
+          <i class="fa-solid fa-chevron-down pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-text-muted"></i>
+        </span>
+      </div>
+      <label class="flex items-center gap-1.5 text-xs text-text-secondary sm:hidden">
+        <input type="checkbox" [checked]="store.notebookIncludeMock()" (change)="onMockToggle($event)" class="accent-accent" />
+        含實際演練的錯題
+      </label>
+      <div class="hidden flex-wrap items-center gap-1.5 sm:flex">
+        <button
+          type="button"
+          (click)="store.setNotebookLevel('all')"
+          [class]="'rounded-full px-3 py-1 text-xs font-bold transition ' + (store.notebookLevel() === 'all' ? 'bg-ink text-white' : 'border border-border bg-bg text-text-secondary')"
+        >
+          全部級別
+        </button>
+        @for (lv of store.notebookLevels(); track lv) {
+          <button
+            type="button"
+            (click)="store.setNotebookLevel(levelValue(lv))"
+            [class]="'rounded-full px-3 py-1 text-xs font-bold transition ' + (store.notebookLevel() === lv ? 'bg-ink text-white' : 'border border-border bg-bg text-text-secondary')"
+          >
+            {{ lv }}
+          </button>
+        }
+        <span class="mx-1 h-4 w-px bg-border"></span>
+        @for (c of categories; track c.value) {
+          <button
+            type="button"
+            (click)="store.setNotebookCategory(c.value)"
+            [class]="'rounded-full px-3 py-1 text-xs font-bold transition ' + (store.notebookCategory() === c.value ? 'bg-ink text-white' : 'border border-border bg-bg text-text-secondary')"
+          >
+            {{ c.label }}
+          </button>
+        }
+      </div>
+      <div class="hidden flex-wrap items-center gap-3 sm:flex">
+        <select
+          (change)="onExamChange($event)"
+          [value]="store.notebookExamId()"
+          class="rounded-md border border-border bg-bg px-2.5 py-1.5 text-xs text-ink"
+          aria-label="依考卷篩選"
+        >
+          <option value="all">全部考卷</option>
+          @for (x of store.notebookExams(); track x.id) {
+            <option [value]="x.id" [selected]="store.notebookExamId() === x.id">{{ x.label }}</option>
+          }
+        </select>
+        <label class="flex items-center gap-1.5 text-xs text-text-secondary">
+          <input type="checkbox" [checked]="store.notebookIncludeMock()" (change)="onMockToggle($event)" class="accent-accent" />
+          含實際演練的錯題
+        </label>
+      </div>
+    </div>
+
+    <!-- 分頁 -->
+    <div class="relative sm:hidden">
+      <select
+        (change)="store.setNotebookTab($any($event.target).value)"
+        aria-label="切換分頁"
+        class="w-full cursor-pointer appearance-none rounded-full border border-border bg-surface py-2.5 pl-5 pr-11 text-sm font-bold text-accent focus:border-accent focus:outline-none"
+      >
+          <option value="wrong" [selected]="store.notebookTab() === 'wrong'">題目（{{ store.notebookWrong().length }}）</option>
+          <option value="vocab" [selected]="store.notebookTab() === 'vocab'">單字清單（{{ store.notebookLists().vocab.length }}）</option>
+          <option value="grammar" [selected]="store.notebookTab() === 'grammar'">文法清單（{{ store.notebookLists().grammar.length }}）</option>
+          <option value="marked" [selected]="store.notebookTab() === 'marked'">標記（{{ store.notebookMarked().length }}）</option>
+      </select>
+      <i class="fa-solid fa-chevron-down pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-xs text-text-muted"></i>
+    </div>
+    
+    <div class="hidden gap-1.5 sm:flex">
+      <button
+        type="button"
+        (click)="store.setNotebookTab('wrong')"
+        [class]="'shrink-0 rounded-full px-4 py-1.5 text-sm font-bold transition ' + (store.notebookTab() === 'wrong' ? 'bg-accent text-white' : 'border border-border bg-surface text-text-secondary')"
+      >
+        題目（{{ store.notebookWrong().length }}）
+      </button>
+      <button
+        type="button"
+        (click)="store.setNotebookTab('vocab')"
+        [class]="'shrink-0 rounded-full px-4 py-1.5 text-sm font-bold transition ' + (store.notebookTab() === 'vocab' ? 'bg-accent text-white' : 'border border-border bg-surface text-text-secondary')"
+      >
+        單字清單（{{ store.notebookLists().vocab.length }}）
+      </button>
+      <button
+        type="button"
+        (click)="store.setNotebookTab('grammar')"
+        [class]="'shrink-0 rounded-full px-4 py-1.5 text-sm font-bold transition ' + (store.notebookTab() === 'grammar' ? 'bg-accent text-white' : 'border border-border bg-surface text-text-secondary')"
+      >
+        文法清單（{{ store.notebookLists().grammar.length }}）
+      </button>
+      <button
+        type="button"
+        (click)="store.setNotebookTab('marked')"
+        [class]="'shrink-0 rounded-full px-4 py-1.5 text-sm font-bold transition ' + (store.notebookTab() === 'marked' ? 'bg-accent text-white' : 'border border-border bg-surface text-text-secondary')"
+      >
+        標記（{{ store.notebookMarked().length }}）
+      </button>
+    </div>
+
+    @switch (store.notebookTab()) {
+      @case ('wrong') {
+        <div class="flex flex-wrap items-center gap-1.5 text-xs">
+          <span class="text-text-muted">排序</span>
+          <button
+            type="button"
+            (click)="store.setNotebookSort('count')"
+            [class]="'rounded-full px-3 py-1 font-bold transition ' + (store.notebookSort() === 'count' ? 'bg-ink text-white' : 'border border-border bg-bg text-text-secondary')"
+          >
+            錯最多次
+          </button>
+          <button
+            type="button"
+            (click)="store.setNotebookSort('recent')"
+            [class]="'rounded-full px-3 py-1 font-bold transition ' + (store.notebookSort() === 'recent' ? 'bg-ink text-white' : 'border border-border bg-bg text-text-secondary')"
+          >
+            最近錯的
+          </button>
+          <span class="text-text-muted">點題目展開正解與解析</span>
+        </div>
+        <ng-container [ngTemplateOutlet]="practiceBar" [ngTemplateOutletContext]="{ $implicit: 'wrong', total: store.notebookWrong().length }" />
+        @if (store.notebookWrong().length === 0) {
+          <p class="rounded-lg border border-dashed border-border py-10 text-center text-sm text-text-muted">這個篩選條件下沒有還沒掌握的題。</p>
+        }
+        <div class="flex flex-col gap-3">
+          @for (e of wrongShown(); track e.question.id) {
+            <ng-container [ngTemplateOutlet]="card" [ngTemplateOutletContext]="{ $implicit: e }" />
+          }
+        </div>
+        @if (hasMoreWrong()) {
+          <button type="button" (click)="store.showMoreNotebook()" class="self-center rounded-full border border-border bg-surface px-5 py-2 text-sm font-bold text-text-secondary">
+            顯示更多
+          </button>
+        }
+      }
+
+      @case ('marked') {
+        <ng-container [ngTemplateOutlet]="practiceBar" [ngTemplateOutletContext]="{ $implicit: 'marked', total: store.notebookMarked().length }" />
+        @if (store.notebookMarked().length === 0) {
+          <p class="rounded-lg border border-dashed border-border py-10 text-center text-sm text-text-muted">還沒有標記的題。做題時按「標記此題」就會收在這裡。</p>
+        }
+        <div class="flex flex-col gap-3">
+          @for (e of markedShown(); track e.question.id) {
+            <ng-container [ngTemplateOutlet]="card" [ngTemplateOutletContext]="{ $implicit: e }" />
+          }
+        </div>
+        @if (hasMoreMarked()) {
+          <button type="button" (click)="store.showMoreNotebook()" class="self-center rounded-full border border-border bg-surface px-5 py-2 text-sm font-bold text-text-secondary">
+            顯示更多
+          </button>
+        }
+      }
+
+      @case ('vocab') {
+        @if (store.notebookLists().vocab.length === 0) {
+          <div class="flex flex-col items-center gap-2 rounded-lg border border-dashed border-border py-10 text-center text-sm text-text-muted">
+            <p>目前沒有待學的單字。</p>
+            @if (!store.notebookShowLearned() && store.notebookLearnedVocab().size > 0) {
+              <button type="button" (click)="store.setNotebookShowLearned(true)" class="text-xs font-bold text-accent">顯示已學會的 {{ store.notebookLearnedVocab().size }} 個</button>
+            }
+          </div>
+        } @else {
+          <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-text-muted">
+            <span>跨回次合併，錯最多次的排前面。背熟的按「已學會」收起來。</span>
+            <label class="flex items-center gap-1.5 text-text-secondary">
+              <input type="checkbox" [checked]="store.notebookShowLearned()" (change)="onShowLearnedToggle($event)" class="accent-accent" />
+              顯示已學會
+            </label>
+          </div>
+          <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            @for (v of store.notebookLists().vocab; track v.word) {
+              <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
+                <div class="flex items-start justify-between gap-2">
+                  <p class="font-heading text-lg font-bold text-ink">{{ v.word }}</p>
+                  @if (v.count > 1) {
+                    <span class="shrink-0 rounded-full bg-accent-soft px-2 py-0.5 text-[11px] font-bold text-accent">錯 {{ v.count }} 次</span>
+                  }
+                </div>
+                @if (v.note) {
+                  <p class="whitespace-pre-line text-sm text-text-secondary">{{ v.note }}</p>
+                }
+                @if (v.distractors.length > 0) {
+                  <div class="flex flex-col gap-1 rounded-md bg-bg px-3 py-2 text-xs text-text-secondary">
+                    <p class="font-bold text-ink">容易混淆</p>
+                    @for (d of v.distractors; track d.text) {
+                      <p><span class="font-bold text-ink">{{ d.text }}</span>@if (d.note) {：{{ d.note }}}</p>
+                    }
+                  </div>
+                }
+                <div class="flex items-center justify-between gap-2">
+                  <p class="text-[11px] text-text-muted">{{ v.sources.join('、') }}</p>
+                  <button
+                    type="button"
+                    (click)="store.toggleLearnedVocab(v.word)"
+                    [class]="'shrink-0 rounded-full px-3 py-1 text-xs font-bold transition ' + (store.notebookLearnedVocab().has(v.word) ? 'bg-matcha-soft text-[#2F6F5A]' : 'border border-border bg-bg text-text-secondary hover:border-accent/40')"
+                  >
+                    {{ store.notebookLearnedVocab().has(v.word) ? '✓ 已學會' : '已學會' }}
+                  </button>
+                </div>
+              </div>
+            }
+          </div>
+        }
+      }
+
+      @case ('grammar') {
+        @if (store.notebookLists().grammar.length === 0) {
+          <div class="flex flex-col items-center gap-2 rounded-lg border border-dashed border-border py-10 text-center text-sm text-text-muted">
+            <p>目前沒有待學的文法。</p>
+            @if (!store.notebookShowLearned() && store.notebookLearnedGrammar().size > 0) {
+              <button type="button" (click)="store.setNotebookShowLearned(true)" class="text-xs font-bold text-accent">顯示已學會的 {{ store.notebookLearnedGrammar().size }} 個</button>
+            }
+          </div>
+        } @else {
+          <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-text-muted">
+            <span>跨回次合併，錯最多次的排前面（読解題請在「題目」分頁看）。</span>
+            <label class="flex items-center gap-1.5 text-text-secondary">
+              <input type="checkbox" [checked]="store.notebookShowLearned()" (change)="onShowLearnedToggle($event)" class="accent-accent" />
+              顯示已學會
+            </label>
+          </div>
+          <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            @for (g of store.notebookLists().grammar; track g.point + g.tip) {
+              <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4">
+                <div class="flex items-start justify-between gap-2">
+                  <p class="font-heading text-base font-bold text-ink">{{ g.point }}</p>
+                  @if (g.count > 1) {
+                    <span class="shrink-0 rounded-full bg-accent-soft px-2 py-0.5 text-[11px] font-bold text-accent">錯 {{ g.count }} 次</span>
+                  }
+                </div>
+                @if (g.tip) {
+                  <p class="whitespace-pre-line text-sm text-text-secondary">{{ g.tip }}</p>
+                }
+                @if (g.order) {
+                  <p class="rounded-md bg-bg px-3 py-2 text-xs text-text-secondary">
+                    <span class="font-bold text-ink">正確順序</span> {{ g.order }}
+                  </p>
+                }
+                <div class="flex items-center justify-between gap-2">
+                  <p class="text-[11px] text-text-muted">{{ g.sources.join('、') }}</p>
+                  <button
+                    type="button"
+                    (click)="store.toggleLearnedGrammar(grammarKey(g))"
+                    [class]="'shrink-0 rounded-full px-3 py-1 text-xs font-bold transition ' + (store.notebookLearnedGrammar().has(grammarKey(g)) ? 'bg-matcha-soft text-[#2F6F5A]' : 'border border-border bg-bg text-text-secondary hover:border-accent/40')"
+                  >
+                    {{ store.notebookLearnedGrammar().has(grammarKey(g)) ? '✓ 已學會' : '已學會' }}
+                  </button>
+                </div>
+              </div>
+            }
+          </div>
+        }
+      }
+    }
+  }
+
+  <app-past-exam-attempts examId="notebook" />
+</div>

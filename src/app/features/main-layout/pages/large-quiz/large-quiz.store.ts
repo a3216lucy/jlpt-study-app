@@ -6,6 +6,7 @@ import { patchState, signalStore, withComputed, withMethods, withProps, withStat
 import { ExamOption, ExamQuestion, ExamQuestionType } from '@core/models/exam-question.model';
 import { JlptLevel } from '@core/models/vocab.model';
 import { ExamService, ExamSetGroupItem } from '@core/services/exam.service';
+import { TargetLevelService } from '@core/services/target-level.service';
 // Models
 import type { ExamResult, ExamGroupChoice } from './large-quiz.model';
 
@@ -86,8 +87,9 @@ export const LargeQuizStore = signalStore(
     answeredCount: computed(() => store.results().filter(Boolean).length),
     score: computed(() => store.results().filter((r) => r?.isCorrect).length),
   })),
-  withMethods((store, examService = inject(ExamService)) => {
+  withMethods((store, examService = inject(ExamService), targetLevel = inject(TargetLevelService)) => {
     let startTime = 0;
+    let levelApplied = false;
 
     const currentExamGroup = (): ExamGroupChoice =>
       store.examGroups.find((g) => g.id === store.selectedExamGroup()) ?? store.examGroups[0];
@@ -133,6 +135,17 @@ export const LargeQuizStore = signalStore(
       // --------------------------------------------------------------------
       init(): void {
         syncSelectionPreview();
+        // 第一次進頁面：級別預設依個人設定的應考目標（沒有該級別題組就維持預設）
+        if (!levelApplied) {
+          levelApplied = true;
+          void targetLevel.load().then((target) => {
+            const level = target as JlptLevel;
+            if (examService.hasExamSetForGroup(store.selectedExamGroup(), level)) {
+              patchState(store, { selectedLevel: level });
+              syncSelectionPreview();
+            }
+          });
+        }
       },
 
       // Public Handlers — setup

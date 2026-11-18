@@ -1,0 +1,153 @@
+<div class="flex flex-col gap-2">
+  <div class="relative">
+    <select
+      (change)="jumpTo($event)"
+      aria-label="跳到段落"
+      class="w-full cursor-pointer appearance-none rounded-lg border border-border bg-surface py-2.5 pl-4 pr-10 text-sm font-bold text-ink focus:border-accent focus:outline-none"
+    >
+      <option value="" selected>跳到段落…</option>
+      @for (s of sections(); track s.id) {
+        <option [value]="s.id">{{ s.title }}</option>
+      }
+    </select>
+    <i class="fa-solid fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-text-muted"></i>
+  </div>
+  <div class="flex justify-end gap-3 text-sm">
+    <button type="button" (click)="setAllOpen(true)" class="font-bold text-accent">全部展開</button>
+    <button type="button" (click)="setAllOpen(false)" class="font-bold text-text-secondary">全部收合</button>
+  </div>
+</div>
+
+@for (s of sections(); track s.id) {
+  <details
+    [id]="'ns-' + s.id"
+    [open]="openIds().has(s.id)"
+    (toggle)="onToggle(s.id, $event)"
+    class="group scroll-mt-20 rounded-lg border border-border bg-surface"
+  >
+    <summary class="flex cursor-pointer list-none items-center justify-between gap-3 p-4 [&::-webkit-details-marker]:hidden">
+      <span class="font-heading text-base font-bold text-ink">{{ s.title }}</span>
+      <span class="flex shrink-0 items-center gap-1 text-xs text-text-muted">
+        <span class="group-open:hidden">展開</span><span class="hidden group-open:inline">收合</span>
+        <i class="fa-solid fa-chevron-down text-[10px] transition group-open:rotate-180"></i>
+      </span>
+    </summary>
+
+    <div class="flex flex-col gap-4 border-t border-border p-4">
+      @for (b of s.blocks; track $index) {
+        @switch (b.kind) {
+          @case ('cards') {
+            <div class="flex flex-col gap-3">
+              @for (c of b.items; track c.name) {
+                <div class="flex flex-col gap-2 rounded-md border border-border p-3.5">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="font-heading text-base font-bold text-ink">{{ c.name }}</span>
+                    <span class="rounded-full bg-accent-soft px-2 py-0.5 text-[11px] font-bold text-accent">{{ c.tag }}</span>
+                  </div>
+                  <p class="text-sm text-ink"><span class="font-bold">用在：</span>{{ c.use }}</p>
+                  <p class="text-sm text-text-secondary"><span class="font-bold">語感：</span>{{ c.feel }}</p>
+                  @for (e of c.ex; track $index) {
+                    <div class="rounded-md bg-bg px-3 py-2">
+                      <p class="text-sm leading-[2.1] text-ink" [innerHTML]="e[0]"></p>
+                      <p class="text-xs text-text-muted">{{ e[1] }}</p>
+                    </div>
+                  }
+                </div>
+              }
+            </div>
+          }
+          @case ('table') {
+            <div class="overflow-x-auto rounded-lg border border-border">
+              <table class="w-full border-collapse text-sm" [style.min-width.px]="b.head.length * 130">
+                <thead>
+                  <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+                    @for (h of b.head; track $index) {
+                      <th class="whitespace-nowrap px-4 py-2.5">{{ h }}</th>
+                    }
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-border">
+                  @for (row of b.rows; track $index) {
+                    <tr class="bg-surface align-top">
+                      @for (cell of row; track $index; let i = $index) {
+                        <td
+                          [class]="'whitespace-nowrap px-4 py-2.5 leading-[2] ' + (i === 0 ? 'text-xs text-text-secondary' : 'text-ink')"
+                          [innerHTML]="cell"
+                        ></td>
+                      }
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          }
+          @case ('tabs') {
+            @let sel = b.tabs[tabSel()[s.id] ?? 0];
+            <div class="flex flex-col gap-3">
+              <div class="grid grid-cols-4 gap-1 rounded-full border border-border bg-bg p-1">
+                @for (t of b.tabs; track t.label; let i = $index) {
+                  <button
+                    type="button"
+                    (click)="selectTab(s.id, i)"
+                    [class]="
+                      'whitespace-nowrap rounded-full px-1 py-2 text-xs font-bold transition sm:text-sm ' +
+                      ((tabSel()[s.id] ?? 0) === i ? 'bg-accent text-white' : 'text-text-secondary')
+                    "
+                  >
+                    {{ t.label }}
+                  </button>
+                }
+              </div>
+              <div class="overflow-x-auto rounded-lg border border-border">
+                <table class="w-full min-w-[480px] border-collapse text-sm">
+                  <thead>
+                    <tr class="bg-bg text-left text-xs font-bold text-text-muted">
+                      @for (h of sel.head; track $index) {
+                        <th class="whitespace-nowrap px-4 py-2.5">{{ h }}</th>
+                      }
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-border">
+                    @for (row of sel.rows; track $index) {
+                      <tr class="bg-surface align-top">
+                        @for (cell of row; track $index; let i = $index) {
+                          <td
+                            [class]="'whitespace-nowrap px-4 py-2.5 leading-[2] ' + (i === 0 ? 'text-xs text-text-secondary' : 'text-ink')"
+                            [innerHTML]="cell"
+                          ></td>
+                        }
+                      </tr>
+                    }
+                  </tbody>
+                </table>
+              </div>
+              @if (sel.note) {
+                <div class="flex items-start gap-2.5 rounded-lg bg-matcha-soft px-4 py-3 text-sm text-ink">
+                  <i class="fa-regular fa-lightbulb mt-0.5 text-matcha"></i>
+                  <span [innerHTML]="sel.note"></span>
+                </div>
+              }
+            </div>
+          }
+          @case ('note') {
+            <div class="flex items-start gap-2.5 rounded-lg bg-matcha-soft px-4 py-3 text-sm text-ink">
+              <i class="fa-regular fa-lightbulb mt-0.5 text-matcha"></i>
+              <span class="leading-7" [innerHTML]="b.text"></span>
+            </div>
+          }
+          @case ('dos') {
+            <div class="flex flex-col gap-3">
+              @for (d of b.items; track $index) {
+                <div class="flex flex-col gap-1.5 rounded-md border border-border p-3.5 text-sm">
+                  <p class="leading-[2.1]"><span class="mr-1.5 font-bold text-accent">✗</span><span class="text-text-secondary line-through decoration-accent/50" [innerHTML]="d.wrong"></span></p>
+                  <p class="leading-[2.1]"><span class="mr-1.5 font-bold text-[#2F6F5A]">○</span><span class="font-bold text-ink" [innerHTML]="d.right"></span></p>
+                  <p class="text-xs text-text-secondary" [innerHTML]="d.why"></p>
+                </div>
+              }
+            </div>
+          }
+        }
+      }
+    </div>
+  </details>
+}

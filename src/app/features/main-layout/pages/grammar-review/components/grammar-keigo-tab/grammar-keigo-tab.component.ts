@@ -3,6 +3,21 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 // Store
 import type { KeigoCategoryCard, KeigoFormationGroup } from '../../grammar-review.model';
 import { GrammarReviewStore } from '../../grammar-review.store';
+// Pipes
+import { WordRubyPipe } from '@shared/pipes/word-ruby.pipe';
+import { FuriganaPipe } from './furigana.pipe';
+// Data
+import {
+  KEIGO_FORM_CARDS,
+  KEIGO_GIVE_RECEIVE_ROWS,
+  KEIGO_GIVE_RECEIVE_TIP,
+  KEIGO_HUMBLE_ROWS,
+  KEIGO_MISTAKES,
+  KEIGO_POLITE_CARDS,
+  KEIGO_QUICK_ROWS,
+  KEIGO_SASETE_CARD,
+  KEIGO_STEPS,
+} from './grammar-keigo.data';
 
 const KEIGO_CATEGORY_CARDS: (KeigoCategoryCard & { badgeClass: string })[] = [
   {
@@ -57,6 +72,8 @@ const KEIGO_TIP =
   selector: 'app-grammar-keigo-tab',
   templateUrl: './grammar-keigo-tab.component.html',
   standalone: true,
+  imports: [FuriganaPipe, WordRubyPipe],
+  host: { class: 'flex flex-col gap-10 sm:gap-12 [&_rt]:text-[0.5em] [&_rt]:font-normal [&_rt]:text-text-muted [&_ruby]:[ruby-align:center]' },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GrammarKeigoTabComponent {
@@ -69,4 +86,39 @@ export class GrammarKeigoTabComponent {
   readonly keigoCategoryCards = KEIGO_CATEGORY_CARDS;
   readonly keigoFormationGroups = KEIGO_FORMATION_GROUPS;
   readonly keigoTip = KEIGO_TIP;
+  readonly steps = KEIGO_STEPS;
+  readonly quickRows = KEIGO_QUICK_ROWS;
+  readonly humbleRows = KEIGO_HUMBLE_ROWS;
+  readonly giveReceiveRows = KEIGO_GIVE_RECEIVE_ROWS;
+  readonly giveReceiveTip = KEIGO_GIVE_RECEIVE_TIP;
+  readonly formCards = KEIGO_FORM_CARDS;
+  readonly politeCards = KEIGO_POLITE_CARDS;
+  readonly saseteCard = KEIGO_SASETE_CARD;
+  readonly mistakes = KEIGO_MISTAKES;
+
+  /** 頁內目錄（快速跳到想複習的段落） */
+  readonly sections = [
+    { id: 'keigo-steps', no: '1', label: '怎麼判斷' },
+    { id: 'keigo-special', no: '2', label: '特殊動詞' },
+    { id: 'keigo-humble', no: '3', label: '謙讓語Ⅰ・Ⅱ（補充）' },
+    { id: 'keigo-give', no: '4', label: '授受' },
+    { id: 'keigo-forms', no: '5', label: 'お／ご〜（補充）' },
+    { id: 'keigo-polite', no: '6', label: '丁寧・丁重（補充）' },
+    { id: 'keigo-sasete', no: '7', label: 'させていただく（補充）' },
+    { id: 'keigo-mistakes', no: '8', label: '常見錯誤' },
+  ];
+
+  // Public Handlers
+  // --------------------------------------------------------------------
+  jumpTo(event: Event): void {
+    const select = event.target as HTMLSelectElement;
+    if (select.value) this.scrollTo(select.value);
+    select.value = '';
+  }
+
+  scrollTo(id: string): void {
+    const el = document.getElementById(id);
+    if (el instanceof HTMLDetailsElement) el.open = true;
+    el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }

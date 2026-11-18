@@ -76,7 +76,12 @@ export const GrammarReviewStore = signalStore(
       const rows = store.transitivityData()?.pairs ?? [];
       if (!q) return rows;
       return rows.filter(
-        (r) => r.jidoushi.toLowerCase().includes(q) || r.tadoushi.toLowerCase().includes(q) || r.meaning.includes(q),
+        (r) =>
+          r.jidoushi.includes(q) ||
+          r.tadoushi.includes(q) ||
+          r.jidoushiKana.includes(q) ||
+          r.tadoushiKana.includes(q) ||
+          r.meaning.includes(q),
       );
     }),
     filteredAllForms: computed<AllFormsCategory[]>(() => {

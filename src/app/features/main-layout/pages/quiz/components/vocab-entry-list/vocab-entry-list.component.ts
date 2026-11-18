@@ -1,6 +1,9 @@
 // Cores
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 // Store
+// Shared
+import { WordRubyPipe } from '@shared/pipes/word-ruby.pipe';
+// Store
 import { QuizStore } from '../../quiz.store';
 import { VocabAudioService } from '../../vocab-audio.service';
 // Utils
@@ -12,6 +15,7 @@ import type { VocabEntry } from '../../quiz.model';
   selector: 'app-vocab-entry-list',
   templateUrl: './vocab-entry-list.component.html',
   standalone: true,
+  imports: [WordRubyPipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class VocabEntryListComponent {

@@ -31,6 +31,8 @@ export interface VocabEntry {
   examples: VocabExample[];
   /** 易混淆點補充說明 */
   confusionNote?: string;
+  /** 副詞・擬態語的類型（sound／body／state／time／degree／adj），其他群組不填 */
+  subtype?: string;
   /** 常考標記：出自實際考古題整理的單字為 true；之後新增的一般 N3 範圍單字可不填 */
   frequentlyTested?: boolean;
 }
@@ -59,12 +61,19 @@ export interface VocabReviewData {
 
 // ── Quiz (4-choice) types ────────────────────────────────────────────────────
 
+/** 測驗題型：看單字選意思／看意思選單字／看單字選讀音 */
+export type VocabQuizType = 'word-meaning' | 'meaning-word' | 'word-reading';
+/** 題型設定：三種混合，或固定一種 */
+export type VocabQuizTypeSetting = 'mixed' | VocabQuizType;
+
 /** 單字測驗單一選項 */
 export interface VocabQuizOption {
   /** 選項 id，格式 `{entry-id}:c`（正解）或 `{entry-id}:w{n}`（干擾選項） */
   id: string;
-  /** 選項顯示文字（單字意思） */
+  /** 選項顯示文字（依題型：意思／單字／讀音） */
   text: string;
+  /** 選項是單字時的讀音（作答後才顯示） */
+  reading?: string;
   /** 是否為正解 */
   isCorrect: boolean;
 }
@@ -73,6 +82,8 @@ export interface VocabQuizOption {
 export interface VocabQuizQuestion {
   /** 題目 id，格式 `q:{entry-id}` */
   id: string;
+  /** 題型 */
+  type: VocabQuizType;
   /** 出題的單字 */
   entry: VocabEntry;
   /** 選項清單（四選一，含正解與干擾選項） */
@@ -110,6 +121,16 @@ export const VOCAB_FILTER_CATEGORIES: VocabFilterCategory[] = [
   { id: 'adjective', label: '形容詞', pos: ['adjective', 'noun-adj'] },
   { id: 'adverb', label: '副詞・擬態語', pos: ['adverb', 'adverb-onomatopoeia'] },
   { id: 'noun', label: '名詞', pos: ['noun', 'noun-katakana'] },
+];
+
+/** 「副詞・擬態語」的類型篩選 */
+export const VOCAB_ADVERB_SUBTYPES: { id: string; label: string; hint: string }[] = [
+  { id: 'sound', label: '擬聲・說話', hint: '聲音、說話的樣子' },
+  { id: 'body', label: '身體・感覺', hint: '疼痛、疲累、肚子餓、濕黏乾燥等身體感受' },
+  { id: 'state', label: '狀態・樣子', hint: '事物的狀態、動作的樣子' },
+  { id: 'time', label: '時間・頻率', hint: '何時、多常、多快' },
+  { id: 'degree', label: '程度・語氣', hint: '程度高低、說話者的語氣' },
+  { id: 'adj', label: '情緒形容詞', hint: '和擬態語一起考的感覺形容詞' },
 ];
 
 /** 單字資料目前收錄的 JLPT 級別 */

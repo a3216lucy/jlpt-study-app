@@ -39,6 +39,19 @@
             {{ n }} 個
           </button>
         }
+        <label class="flex items-center gap-1.5 text-[13px] text-text-secondary">
+          自訂
+          <input
+            type="number"
+            min="1"
+            max="500"
+            inputmode="numeric"
+            [value]="store.createPlanDaily()"
+            (change)="onDailyInput($event)"
+            class="w-16 rounded-full border border-border bg-bg px-3 py-1.5 text-center text-sm font-bold text-ink focus:border-accent focus:outline-none"
+          />
+          個
+        </label>
       </div>
       <p class="text-xs text-text-muted">
         預計 {{ Math.ceil(store.allEntries().length / store.createPlanDaily()) }} 天完成 （共
@@ -87,16 +100,10 @@
           <span class="rounded-full bg-accent-soft px-3 py-1 text-sm font-bold text-accent">{{ plan.level }} 單字計畫</span>
           <span class="rounded-full bg-matcha-soft px-3 py-1 text-xs font-bold text-matcha">進行中</span>
         </div>
-        <div class="flex flex-col gap-1">
-          <span class="flex items-center gap-1.5 text-[13px] text-text-secondary">
-            <i class="fa-solid fa-calendar w-3.5 text-center text-text-muted"></i>
-            {{ plan.startDate }} – {{ plan.endDate }}
-          </span>
-          <span class="flex items-center gap-1.5 text-[13px] text-text-secondary">
-            <i class="fa-solid fa-book-open w-3.5 text-center text-text-muted"></i> 每日新單字
-            {{ plan.dailyNewWords }} 個
-          </span>
-        </div>
+        <span class="flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] text-text-secondary">
+          <span><i class="fa-solid fa-calendar mr-1.5 text-text-muted"></i>{{ plan.startDate }} – {{ plan.endDate }}</span>
+          <span><i class="fa-solid fa-book-open mr-1.5 text-text-muted"></i>每日 {{ plan.dailyNewWords }} 個</span>
+        </span>
       </div>
 
       <div class="flex flex-col gap-2 lg:w-[300px] lg:flex-none">

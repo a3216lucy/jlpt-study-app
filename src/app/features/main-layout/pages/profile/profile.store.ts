@@ -6,6 +6,7 @@ import { patchState, signalStore, withComputed, withMethods, withState } from '@
 import { Auth } from '@angular/fire/auth';
 // Services
 import { AuthService } from '@core/services/auth.service';
+import { TargetLevelService } from '@core/services/target-level.service';
 import { UserSettingsService } from '@core/services/user-settings.service';
 import { DEFAULT_TARGET_LEVEL, daysUntil, NEXT_JLPT_EXAM_DATE } from '@core/config/jlpt-schedule';
 import { ProfileService } from './profile.service';
@@ -52,6 +53,7 @@ export const ProfileStore = signalStore(
       authService = inject(AuthService),
       profileService = inject(ProfileService),
       userSettingsService = inject(UserSettingsService),
+      targetLevelService = inject(TargetLevelService),
     ) => ({
       // profilePage
       // --------------------------------------------------------------------
@@ -114,6 +116,7 @@ export const ProfileStore = signalStore(
         try {
           const settings = { targetLevel: store.draftLevel(), examDate: store.draftExamDate() };
           await userSettingsService.set(uid, settings);
+          targetLevelService.set(settings.targetLevel);
           patchState(store, {
             targetLevel: settings.targetLevel,
             examDate: settings.examDate,

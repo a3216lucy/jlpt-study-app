@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { QuizStore } from '../../quiz.store';
 import { VocabAudioService } from '../../vocab-audio.service';
 // Models
-import type { VocabEntry, VocabQuizOption } from '../../quiz.model';
+import type { VocabEntry, VocabQuizOption, VocabQuizType } from '../../quiz.model';
 
 @Component({
   selector: 'app-vocab-quiz-question',
@@ -22,6 +22,18 @@ export class VocabQuizQuestionComponent {
   // --------------------------------------------------------------------
   speakEntry(entry: VocabEntry): void {
     this.audio.speak(entry);
+  }
+
+  typeLabel(type: VocabQuizType): string {
+    return { 'word-meaning': '看單字選意思', 'meaning-word': '看意思選單字', 'word-reading': '看單字選讀音' }[type];
+  }
+
+  typeHint(type: VocabQuizType): string {
+    return {
+      'word-meaning': '選出最符合的中文意思',
+      'meaning-word': '選出符合這個意思的單字',
+      'word-reading': '選出這個單字的讀音',
+    }[type];
   }
 
   optionLetter(index: number): string {

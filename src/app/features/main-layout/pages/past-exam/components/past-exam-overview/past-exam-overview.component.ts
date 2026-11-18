@@ -5,11 +5,14 @@ import type { PastExamEntry, PastExamSection } from '@core/config/past-exam-cata
 import type { JlptLevel } from '@core/models/vocab.model';
 // Store
 import { PastExamStore } from '../../past-exam.store';
+// Components
+import { PastExamAttemptsComponent } from '../past-exam-attempts/past-exam-attempts.component';
 
 const CATEGORY_ICON: Record<string, string> = {
   grammar: 'fa-pen',
   vocabulary: 'fa-book',
   reading: 'fa-file-lines',
+  listening: 'fa-headphones',
 };
 
 @Component({
@@ -17,6 +20,7 @@ const CATEGORY_ICON: Record<string, string> = {
   templateUrl: './past-exam-overview.component.html',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [PastExamAttemptsComponent],
 })
 export class PastExamOverviewComponent {
   // Dependencies

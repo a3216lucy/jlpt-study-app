@@ -1,0 +1,193 @@
+@if (question(); as q) {
+  <ng-template #head>
+    <span class="w-fit rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent">
+      問 {{ store.positionInStage() + 1 }}
+    </span>
+    @if (isListening()) {
+      <p class="font-heading text-base font-bold text-ink sm:text-lg">
+        聴解 問題{{ q.problemNumber }}　{{ q.problemLabel }}・{{ q.questionText }}
+      </p>
+      <p class="text-xs text-text-muted">音檔請另外播放，聽完在這裡選答案。</p>
+      @for (img of q.images ?? []; track img) {
+        <button type="button" (click)="openImage(img)" class="group relative w-full max-w-xl cursor-zoom-in self-center" aria-label="放大圖片">
+          <img [src]="img" alt="題目附圖" class="w-full rounded-md border border-border bg-white" />
+          <span class="absolute bottom-2 right-2 flex items-center gap-1 rounded-full bg-ink/70 px-2.5 py-1 text-[11px] font-bold text-white">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>放大
+          </span>
+        </button>
+      }
+    } @else if (isSort()) {
+      <app-past-exam-sort-pad [question]="q" />
+    } @else if (!cloze()) {
+      <p class="whitespace-pre-line font-heading text-base font-bold leading-relaxed text-ink sm:text-lg" [innerHTML]="stemText()"></p>
+    }
+    <!-- 中文翻譯：練習作答後、回顧時才顯示；實際演練不顯示 -->
+    @if (store.revealed() && q.questionTranslation) {
+      <p class="text-sm text-text-secondary">{{ q.questionTranslation }}</p>
+    }
+  </ng-template>
+
+  <ng-template #options>
+    @if (isListening() && !store.revealed()) {
+      @if (q.printedOptions; as printed) {
+        <!-- 題本有印選項：顯示原文（和真實考試一樣） -->
+        <div class="flex flex-col gap-2">
+          @for (option of q.options; track option.id) {
+            <button
+              type="button"
+              [disabled]="locked()"
+              (click)="store.selectOption(option)"
+              [class]="
+                'flex items-center gap-3 rounded-lg border-2 px-4 py-3 text-left text-sm font-medium transition disabled:cursor-default ' +
+                optionCardClass(option)
+              "
+            >
+              <span [class]="'flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ' + optionPrefixClass(option)">
+                {{ $index + 1 }}
+              </span>
+              <span>{{ printed[$index] }}</span>
+            </button>
+          }
+        </div>
+      } @else {
+      <!-- 答題卡：只有號碼 -->
+      <div [class]="'grid gap-3 ' + (q.options.length === 3 ? 'grid-cols-3' : 'grid-cols-4')">
+        @for (option of q.options; track option.id) {
+          <button
+            type="button"
+            [disabled]="locked()"
+            (click)="store.selectOption(option)"
+            [class]="
+              'flex h-14 items-center justify-center rounded-lg border-2 font-heading text-xl font-bold transition disabled:cursor-default ' +
+              optionCardClass(option)
+            "
+          >
+            {{ $index + 1 }}
+          </button>
+        }
+      </div>
+      }
+    } @else {
+    <div [class]="passage() || cloze() || isListening() ? 'flex flex-col gap-2' : 'grid grid-cols-1 gap-3 sm:grid-cols-2'">
+      @for (option of q.options; track option.id) {
+        <button
+          type="button"
+          [disabled]="locked()"
+          (click)="store.selectOption(option)"
+          [class]="
+            'flex items-center gap-3 rounded-lg border-2 px-4 py-3 text-left text-sm font-medium transition disabled:cursor-default ' +
+            optionCardClass(option)
+          "
+        >
+          <span
+            [class]="
+              'flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ' +
+              optionPrefixClass(option)
+            "
+          >
+            {{ $index + 1 }}
+          </span>
+          @if (isListening()) {
+            <span class="leading-8 [&_rt]:text-[0.55em] [&_rt]:font-normal [&_rt]:text-text-muted" [innerHTML]="option.text | parenFurigana"></span>
+          } @else {
+            <span>{{ option.text }}</span>
+          }
+        </button>
+      }
+    </div>
+    }
+  </ng-template>
+
+  <ng-template #feedback>
+    @if (store.revealed()) {
+      <div
+        [class]="
+          'flex flex-col gap-3 rounded-lg border p-4 sm:p-5 ' +
+          (isCorrect() ? 'border-[#5E9C86] bg-matcha-soft/50' : 'border-accent/30 bg-accent-soft/30')
+        "
+      >
+        <p [class]="'font-heading text-sm font-bold ' + (isCorrect() ? 'text-[#2F6F5A]' : 'text-accent')">
+          @if (store.selectedOptionId() === null) {
+            未作答　正解是 {{ correctNumber() }}
+          } @else if (isCorrect()) {
+            <i class="fa-solid fa-circle-check mr-1"></i>答對了
+          } @else {
+            <i class="fa-solid fa-circle-xmark mr-1"></i>答錯了　正解是 {{ correctNumber() }}
+          }
+        </p>
+        <app-past-exam-explanation [explanation]="q.explanation" />
+      </div>
+    }
+  </ng-template>
+
+  @if (cloze(); as c) {
+    <!-- 文章の文法：整篇文章（可捲動）＋目前這題的選項 -->
+    <div class="flex flex-col gap-4 lg:flex-row lg:items-start">
+      <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-3 sm:p-5 lg:sticky lg:top-4 lg:w-3/5">
+        <p class="font-heading text-sm font-bold text-ink">本文</p>
+        @if (c.intro) {
+          <p class="hidden rounded-md bg-bg px-3 py-2 text-xs text-text-muted sm:block">{{ c.intro }}</p>
+        }
+        <div #clozeBox class="relative max-h-[28vh] overflow-y-auto pr-1 sm:max-h-[36vh] lg:max-h-[72vh]">
+          <p class="whitespace-pre-line text-[13px] leading-7 text-ink sm:text-sm" [innerHTML]="c.html"></p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3 lg:w-2/5">
+        <p class="flex items-center gap-2 text-sm text-text-secondary">
+          <span class="rounded-full bg-accent-soft px-2.5 py-0.5 text-xs font-bold text-accent">問 {{ store.positionInStage() + 1 }}</span>
+          選出填入紅色空格的答案
+        </p>
+        @if (store.revealed() && q.questionTranslation) {
+          <p class="rounded-lg bg-bg px-3.5 py-2.5 text-sm text-text-secondary">{{ q.questionTranslation }}</p>
+        }
+        <ng-container [ngTemplateOutlet]="options" />
+        <ng-container [ngTemplateOutlet]="feedback" />
+      </div>
+    </div>
+  } @else if (passage(); as p) {
+    <!-- 読解：左右分割 -->
+    <div class="flex flex-col gap-4 lg:flex-row lg:items-start">
+      <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4 sm:p-5 lg:w-1/2">
+        <p class="font-heading text-sm font-bold text-ink">本文</p>
+        @if (p.intro) {
+          <p class="rounded-md bg-bg px-3 py-2 text-xs text-text-muted">{{ p.intro }}</p>
+        }
+        <p class="whitespace-pre-line text-sm leading-7 text-ink">{{ p.passage }}</p>
+      </div>
+
+      <div class="flex flex-col gap-3 lg:w-1/2">
+        <div class="flex flex-col gap-2 rounded-lg border border-border bg-surface p-4 sm:p-5">
+          <ng-container [ngTemplateOutlet]="head" />
+        </div>
+        <ng-container [ngTemplateOutlet]="options" />
+        <ng-container [ngTemplateOutlet]="feedback" />
+      </div>
+    </div>
+  } @else {
+    <!-- 語彙／文法：單題 -->
+    <div class="flex flex-col gap-3 rounded-lg border border-border bg-surface p-4 sm:p-5">
+      <ng-container [ngTemplateOutlet]="head" />
+    </div>
+    <ng-container [ngTemplateOutlet]="options" />
+    <ng-container [ngTemplateOutlet]="feedback" />
+  }
+}
+
+@if (zoomedImage(); as src) {
+  <div class="fixed inset-0 z-[60] flex flex-col bg-black/90" role="dialog" aria-label="圖片放大檢視">
+    <div class="flex items-center justify-between px-4 py-3 text-white">
+      <span class="text-xs">點圖片可{{ zoomLevel() === 1 ? '放大' : '縮小' }}，放大後可上下左右捲動</span>
+      <button type="button" (click)="closeImage()" class="rounded-full bg-white/15 px-4 py-1.5 text-sm font-bold">關閉</button>
+    </div>
+    <div class="min-h-0 flex-1 overflow-auto px-3 pb-6">
+      <img
+        [src]="src"
+        alt="題目附圖（放大）"
+        [style.width.%]="zoomLevel() * 100"
+        [class]="'mx-auto max-w-none rounded-md bg-white ' + (zoomLevel() === 1 ? 'cursor-zoom-in' : 'cursor-zoom-out')"
+        (click)="toggleZoom()"
+      />
+    </div>
+  </div>
+}

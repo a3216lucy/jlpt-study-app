@@ -21,4 +21,10 @@ export class VocabPlanPanelComponent {
   // --------------------------------------------------------------------
   readonly goalOptions = [5, 10, 15, 20];
   readonly levelOptions = VOCAB_LEVELS;
+
+  /** 自訂每日新單字數（1–500） */
+  onDailyInput(event: Event): void {
+    const n = Math.round(Number((event.target as HTMLInputElement).value));
+    if (Number.isFinite(n) && n >= 1) this.store.setCreatePlanDaily(Math.min(n, 500));
+  }
 }

@@ -26,6 +26,8 @@ export class LearningRecordService {
     score: number;
     total: number;
     wrongQuestionIds: string[];
+    /** 作答模式（練習／實際演練），舊資料沒有 */
+    mode?: 'practice' | 'mock';
   }): Promise<void> {
     const uid = this.uid;
     if (!uid) return;

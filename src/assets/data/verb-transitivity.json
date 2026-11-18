@@ -12,16 +12,1926 @@
     }
   ],
   "pairs": [
-    { "jidoushi": "開く（あく）", "tadoushi": "開ける（あける）", "meaning": "開", "rule": "～く⇔～ける" },
-    { "jidoushi": "閉まる（しまる）", "tadoushi": "閉める（しめる）", "meaning": "關", "rule": "～まる⇔～める" },
-    { "jidoushi": "始まる（はじまる）", "tadoushi": "始める（はじめる）", "meaning": "開始", "rule": "～まる⇔～める" },
-    { "jidoushi": "集まる（あつまる）", "tadoushi": "集める（あつめる）", "meaning": "聚集", "rule": "～まる⇔～める" },
-    { "jidoushi": "決まる（きまる）", "tadoushi": "決める（きめる）", "meaning": "決定", "rule": "～まる⇔～める" },
-    { "jidoushi": "変わる（かわる）", "tadoushi": "変える（かえる）", "meaning": "改變", "rule": "～わる⇔～える" },
-    { "jidoushi": "上がる（あがる）", "tadoushi": "上げる（あげる）", "meaning": "上升／舉起", "rule": "～がる⇔～げる" },
-    { "jidoushi": "入る（はいる）", "tadoushi": "入れる（いれる）", "meaning": "進入／放入", "rule": "～る⇔～れる" },
-    { "jidoushi": "出る（でる）", "tadoushi": "出す（だす）", "meaning": "出去／拿出", "rule": "～る⇔～す" },
-    { "jidoushi": "付く（つく）", "tadoushi": "付ける（つける）", "meaning": "附著／裝上", "rule": "～く⇔～ける" }
+    {
+      "jidoushi": "閉まる",
+      "jidoushiKana": "しまる",
+      "tadoushi": "閉める",
+      "tadoushiKana": "しめる",
+      "meaning": "關閉",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "始まる",
+      "jidoushiKana": "はじまる",
+      "tadoushi": "始める",
+      "tadoushiKana": "はじめる",
+      "meaning": "開始",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "集まる",
+      "jidoushiKana": "あつまる",
+      "tadoushi": "集める",
+      "tadoushiKana": "あつめる",
+      "meaning": "聚集",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "決まる",
+      "jidoushiKana": "きまる",
+      "tadoushi": "決める",
+      "tadoushiKana": "きめる",
+      "meaning": "決定",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "止まる",
+      "jidoushiKana": "とまる",
+      "tadoushi": "止める",
+      "tadoushiKana": "とめる",
+      "meaning": "停止",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "温まる",
+      "jidoushiKana": "あたたまる",
+      "tadoushi": "温める",
+      "tadoushiKana": "あたためる",
+      "meaning": "變暖／加熱",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "染まる",
+      "jidoushiKana": "そまる",
+      "tadoushi": "染める",
+      "tadoushiKana": "そめる",
+      "meaning": "染上",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "上がる",
+      "jidoushiKana": "あがる",
+      "tadoushi": "上げる",
+      "tadoushiKana": "あげる",
+      "meaning": "上升／舉起",
+      "rule": "～がる⇔～げる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "下がる",
+      "jidoushiKana": "さがる",
+      "tadoushi": "下げる",
+      "tadoushiKana": "さげる",
+      "meaning": "下降／降低",
+      "rule": "～がる⇔～げる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "曲がる",
+      "jidoushiKana": "まがる",
+      "tadoushi": "曲げる",
+      "tadoushiKana": "まげる",
+      "meaning": "彎曲",
+      "rule": "～がる⇔～げる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "広がる",
+      "jidoushiKana": "ひろがる",
+      "tadoushi": "広げる",
+      "tadoushiKana": "ひろげる",
+      "meaning": "擴大／攤開",
+      "rule": "～がる⇔～げる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "変わる",
+      "jidoushiKana": "かわる",
+      "tadoushi": "変える",
+      "tadoushiKana": "かえる",
+      "meaning": "改變",
+      "rule": "～わる⇔～える",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "加わる",
+      "jidoushiKana": "くわわる",
+      "tadoushi": "加える",
+      "tadoushiKana": "くわえる",
+      "meaning": "加入",
+      "rule": "～わる⇔～える",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "伝わる",
+      "jidoushiKana": "つたわる",
+      "tadoushi": "伝える",
+      "tadoushiKana": "つたえる",
+      "meaning": "傳達",
+      "rule": "～わる⇔～える",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "入る",
+      "jidoushiKana": "はいる",
+      "tadoushi": "入れる",
+      "tadoushiKana": "いれる",
+      "meaning": "進入／放入",
+      "rule": "～る⇔～れる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "立つ",
+      "jidoushiKana": "たつ",
+      "tadoushi": "立てる",
+      "tadoushiKana": "たてる",
+      "meaning": "站立／豎起",
+      "rule": "～つ⇔～てる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "建つ",
+      "jidoushiKana": "たつ",
+      "tadoushi": "建てる",
+      "tadoushiKana": "たてる",
+      "meaning": "蓋好／建造",
+      "rule": "～つ⇔～てる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "育つ",
+      "jidoushiKana": "そだつ",
+      "tadoushi": "育てる",
+      "tadoushiKana": "そだてる",
+      "meaning": "成長／養育",
+      "rule": "～つ⇔～てる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "当たる",
+      "jidoushiKana": "あたる",
+      "tadoushi": "当てる",
+      "tadoushiKana": "あてる",
+      "meaning": "擊中／命中",
+      "rule": "～たる⇔～てる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "並ぶ",
+      "jidoushiKana": "ならぶ",
+      "tadoushi": "並べる",
+      "tadoushiKana": "ならべる",
+      "meaning": "排列",
+      "rule": "～ぶ⇔～べる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "進む",
+      "jidoushiKana": "すすむ",
+      "tadoushi": "進める",
+      "tadoushiKana": "すすめる",
+      "meaning": "前進／推進",
+      "rule": "～む⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "見つかる",
+      "jidoushiKana": "みつかる",
+      "tadoushi": "見つける",
+      "tadoushiKana": "みつける",
+      "meaning": "找到",
+      "rule": "～かる⇔～ける",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "掛かる",
+      "jidoushiKana": "かかる",
+      "tadoushi": "掛ける",
+      "tadoushiKana": "かける",
+      "meaning": "掛上／花費",
+      "rule": "～かる⇔～ける",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "助かる",
+      "jidoushiKana": "たすかる",
+      "tadoushi": "助ける",
+      "tadoushiKana": "たすける",
+      "meaning": "得救／幫助",
+      "rule": "～かる⇔～ける",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "貯まる",
+      "jidoushiKana": "たまる",
+      "tadoushi": "貯める",
+      "tadoushiKana": "ためる",
+      "meaning": "積存／存（錢）",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "溜まる",
+      "jidoushiKana": "たまる",
+      "tadoushi": "溜める",
+      "tadoushiKana": "ためる",
+      "meaning": "堆積／積攢",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "固まる",
+      "jidoushiKana": "かたまる",
+      "tadoushi": "固める",
+      "tadoushiKana": "かためる",
+      "meaning": "變硬／使凝固",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "まとまる",
+      "jidoushiKana": "まとまる",
+      "tadoushi": "まとめる",
+      "tadoushiKana": "まとめる",
+      "meaning": "整合、談妥／整理、彙整",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "重なる",
+      "jidoushiKana": "かさなる",
+      "tadoushi": "重ねる",
+      "tadoushiKana": "かさねる",
+      "meaning": "重疊／疊起",
+      "rule": "～なる⇔～ねる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "詰まる",
+      "jidoushiKana": "つまる",
+      "tadoushi": "詰める",
+      "tadoushiKana": "つめる",
+      "meaning": "堵塞、塞滿／填塞",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "埋まる",
+      "jidoushiKana": "うまる",
+      "tadoushi": "埋める",
+      "tadoushiKana": "うめる",
+      "meaning": "被埋、填滿／埋、填",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "収まる",
+      "jidoushiKana": "おさまる",
+      "tadoushi": "収める",
+      "tadoushiKana": "おさめる",
+      "meaning": "收進、平息／收納、獲得",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "治まる",
+      "jidoushiKana": "おさまる",
+      "tadoushi": "治める",
+      "tadoushiKana": "おさめる",
+      "meaning": "平息、安定／治理、平定",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "納まる",
+      "jidoushiKana": "おさまる",
+      "tadoushi": "納める",
+      "tadoushiKana": "おさめる",
+      "meaning": "繳納、納入／交納、放進",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "縮まる",
+      "jidoushiKana": "ちぢまる",
+      "tadoushi": "縮める",
+      "tadoushiKana": "ちぢめる",
+      "meaning": "縮短／縮短、縮小",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "深まる",
+      "jidoushiKana": "ふかまる",
+      "tadoushi": "深める",
+      "tadoushiKana": "ふかめる",
+      "meaning": "加深／加深",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "高まる",
+      "jidoushiKana": "たかまる",
+      "tadoushi": "高める",
+      "tadoushiKana": "たかめる",
+      "meaning": "高漲／提高",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "強まる",
+      "jidoushiKana": "つよまる",
+      "tadoushi": "強める",
+      "tadoushiKana": "つよめる",
+      "meaning": "變強／加強",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "弱まる",
+      "jidoushiKana": "よわまる",
+      "tadoushi": "弱める",
+      "tadoushiKana": "よわめる",
+      "meaning": "變弱／減弱",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "早まる",
+      "jidoushiKana": "はやまる",
+      "tadoushi": "早める",
+      "tadoushiKana": "はやめる",
+      "meaning": "提前、操之過急／提前、加快",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "丸まる",
+      "jidoushiKana": "まるまる",
+      "tadoushi": "丸める",
+      "tadoushiKana": "まるめる",
+      "meaning": "變圓、捲成一團／弄圓、捲起",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "定まる",
+      "jidoushiKana": "さだまる",
+      "tadoushi": "定める",
+      "tadoushiKana": "さだめる",
+      "meaning": "確定／制定、決定",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "薄まる",
+      "jidoushiKana": "うすまる",
+      "tadoushi": "薄める",
+      "tadoushiKana": "うすめる",
+      "meaning": "變淡／稀釋",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "広まる",
+      "jidoushiKana": "ひろまる",
+      "tadoushi": "広める",
+      "tadoushiKana": "ひろめる",
+      "meaning": "傳開、普及／推廣、傳播",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "狭まる",
+      "jidoushiKana": "せばまる",
+      "tadoushi": "狭める",
+      "tadoushiKana": "せばめる",
+      "meaning": "變窄／縮小、使變窄",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "静まる",
+      "jidoushiKana": "しずまる",
+      "tadoushi": "静める",
+      "tadoushiKana": "しずめる",
+      "meaning": "平靜下來／使平靜",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "留まる",
+      "jidoushiKana": "とどまる",
+      "tadoushi": "留める",
+      "tadoushiKana": "とどめる",
+      "meaning": "停留／留住、固定",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "泊まる",
+      "jidoushiKana": "とまる",
+      "tadoushi": "泊める",
+      "tadoushiKana": "とめる",
+      "meaning": "投宿／留宿",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "混ざる",
+      "jidoushiKana": "まざる",
+      "tadoushi": "混ぜる",
+      "tadoushiKana": "まぜる",
+      "meaning": "混合／攪拌、混入",
+      "rule": "～ざる⇔～ぜる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "絡まる",
+      "jidoushiKana": "からまる",
+      "tadoushi": "絡める",
+      "tadoushiKana": "からめる",
+      "meaning": "纏繞／使纏繞、交織",
+      "rule": "～まる⇔～める",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "備わる",
+      "jidoushiKana": "そなわる",
+      "tadoushi": "備える",
+      "tadoushiKana": "そなえる",
+      "meaning": "具備／準備、配備",
+      "rule": "～わる⇔～える",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "授かる",
+      "jidoushiKana": "さずかる",
+      "tadoushi": "授ける",
+      "tadoushiKana": "さずける",
+      "meaning": "被賜予／授予",
+      "rule": "～かる⇔～ける",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "預かる",
+      "jidoushiKana": "あずかる",
+      "tadoushi": "預ける",
+      "tadoushiKana": "あずける",
+      "meaning": "保管／寄放、託付",
+      "rule": "～かる⇔～ける",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "儲かる",
+      "jidoushiKana": "もうかる",
+      "tadoushi": "儲ける",
+      "tadoushiKana": "もうける",
+      "meaning": "賺錢、有賺頭／賺取",
+      "rule": "～かる⇔～ける",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "架かる",
+      "jidoushiKana": "かかる",
+      "tadoushi": "架ける",
+      "tadoushiKana": "かける",
+      "meaning": "架設（橋等）／架設",
+      "rule": "～かる⇔～ける",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "引っ掛かる",
+      "jidoushiKana": "ひっかかる",
+      "tadoushi": "引っ掛ける",
+      "tadoushiKana": "ひっかける",
+      "meaning": "被勾住／勾住、披上",
+      "rule": "～かる⇔～ける",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "浸かる",
+      "jidoushiKana": "つかる",
+      "tadoushi": "浸ける",
+      "tadoushiKana": "つける",
+      "meaning": "浸泡／浸泡",
+      "rule": "～かる⇔～ける",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "漬かる",
+      "jidoushiKana": "つかる",
+      "tadoushi": "漬ける",
+      "tadoushiKana": "つける",
+      "meaning": "醃好／醃漬",
+      "rule": "～かる⇔～ける",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": true
+    },
+    {
+      "jidoushi": "揚がる",
+      "jidoushiKana": "あがる",
+      "tadoushi": "揚げる",
+      "tadoushiKana": "あげる",
+      "meaning": "炸好／油炸",
+      "rule": "～がる⇔～げる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "繋がる",
+      "jidoushiKana": "つながる",
+      "tadoushi": "繋げる",
+      "tadoushiKana": "つなげる",
+      "meaning": "連接、相連／連結",
+      "rule": "～がる⇔～げる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "連なる",
+      "jidoushiKana": "つらなる",
+      "tadoushi": "連ねる",
+      "tadoushiKana": "つらねる",
+      "meaning": "成排、連綿／使成排、列舉",
+      "rule": "～なる⇔～ねる",
+      "family": "自動詞 ～aる → 他動詞 ～eる（最常見）",
+      "hot": false
+    },
+    {
+      "jidoushi": "開く",
+      "jidoushiKana": "あく",
+      "tadoushi": "開ける",
+      "tadoushiKana": "あける",
+      "meaning": "打開",
+      "rule": "～く⇔～ける",
+      "family": "自動詞 ～く → 他動詞 ～ける",
+      "hot": false
+    },
+    {
+      "jidoushi": "付く",
+      "jidoushiKana": "つく",
+      "tadoushi": "付ける",
+      "tadoushiKana": "つける",
+      "meaning": "附著／開（燈）",
+      "rule": "～く⇔～ける",
+      "family": "自動詞 ～く → 他動詞 ～ける",
+      "hot": true
+    },
+    {
+      "jidoushi": "続く",
+      "jidoushiKana": "つづく",
+      "tadoushi": "続ける",
+      "tadoushiKana": "つづける",
+      "meaning": "持續",
+      "rule": "～く⇔～ける",
+      "family": "自動詞 ～く → 他動詞 ～ける",
+      "hot": false
+    },
+    {
+      "jidoushi": "届く",
+      "jidoushiKana": "とどく",
+      "tadoushi": "届ける",
+      "tadoushiKana": "とどける",
+      "meaning": "送到",
+      "rule": "～く⇔～ける",
+      "family": "自動詞 ～く → 他動詞 ～ける",
+      "hot": true
+    },
+    {
+      "jidoushi": "空く",
+      "jidoushiKana": "あく",
+      "tadoushi": "空ける",
+      "tadoushiKana": "あける",
+      "meaning": "空出來",
+      "rule": "～く⇔～ける",
+      "family": "自動詞 ～く → 他動詞 ～ける",
+      "hot": false
+    },
+    {
+      "jidoushi": "傾く",
+      "jidoushiKana": "かたむく",
+      "tadoushi": "傾ける",
+      "tadoushiKana": "かたむける",
+      "meaning": "傾斜／使傾斜、傾注",
+      "rule": "～く⇔～ける",
+      "family": "自動詞 ～く → 他動詞 ～ける",
+      "hot": true
+    },
+    {
+      "jidoushi": "向く",
+      "jidoushiKana": "むく",
+      "tadoushi": "向ける",
+      "tadoushiKana": "むける",
+      "meaning": "朝向／使朝向、轉向",
+      "rule": "～く⇔～ける",
+      "family": "自動詞 ～く → 他動詞 ～ける",
+      "hot": false
+    },
+    {
+      "jidoushi": "着く",
+      "jidoushiKana": "つく",
+      "tadoushi": "着ける",
+      "tadoushiKana": "つける",
+      "meaning": "到達／穿戴、靠（岸）",
+      "rule": "～く⇔～ける",
+      "family": "自動詞 ～く → 他動詞 ～ける",
+      "hot": true
+    },
+    {
+      "jidoushi": "近づく",
+      "jidoushiKana": "ちかづく",
+      "tadoushi": "近づける",
+      "tadoushiKana": "ちかづける",
+      "meaning": "靠近／使靠近",
+      "rule": "～く⇔～ける",
+      "family": "自動詞 ～く → 他動詞 ～ける",
+      "hot": false
+    },
+    {
+      "jidoushi": "落ち着く",
+      "jidoushiKana": "おちつく",
+      "tadoushi": "落ち着ける",
+      "tadoushiKana": "おちつける",
+      "meaning": "冷靜下來／使安定",
+      "rule": "～く⇔～ける",
+      "family": "自動詞 ～く → 他動詞 ～ける",
+      "hot": true
+    },
+    {
+      "jidoushi": "片付く",
+      "jidoushiKana": "かたづく",
+      "tadoushi": "片付ける",
+      "tadoushiKana": "かたづける",
+      "meaning": "整齊、解決／整理、收拾",
+      "rule": "～く⇔～ける",
+      "family": "自動詞 ～く → 他動詞 ～ける",
+      "hot": true
+    },
+    {
+      "jidoushi": "壊れる",
+      "jidoushiKana": "こわれる",
+      "tadoushi": "壊す",
+      "tadoushiKana": "こわす",
+      "meaning": "壞掉／弄壞",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "倒れる",
+      "jidoushiKana": "たおれる",
+      "tadoushi": "倒す",
+      "tadoushiKana": "たおす",
+      "meaning": "倒下／推倒",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "外れる",
+      "jidoushiKana": "はずれる",
+      "tadoushi": "外す",
+      "tadoushiKana": "はずす",
+      "meaning": "脫落／拆下",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "汚れる",
+      "jidoushiKana": "よごれる",
+      "tadoushi": "汚す",
+      "tadoushiKana": "よごす",
+      "meaning": "髒／弄髒",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "流れる",
+      "jidoushiKana": "ながれる",
+      "tadoushi": "流す",
+      "tadoushiKana": "ながす",
+      "meaning": "流動／沖走",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "隠れる",
+      "jidoushiKana": "かくれる",
+      "tadoushi": "隠す",
+      "tadoushiKana": "かくす",
+      "meaning": "躲藏／隱藏",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "離れる",
+      "jidoushiKana": "はなれる",
+      "tadoushi": "離す",
+      "tadoushiKana": "はなす",
+      "meaning": "離開／放開",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "現れる",
+      "jidoushiKana": "あらわれる",
+      "tadoushi": "現す",
+      "tadoushiKana": "あらわす",
+      "meaning": "出現／顯現",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "落ちる",
+      "jidoushiKana": "おちる",
+      "tadoushi": "落とす",
+      "tadoushiKana": "おとす",
+      "meaning": "掉落",
+      "rule": "～ちる⇔～とす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "起きる",
+      "jidoushiKana": "おきる",
+      "tadoushi": "起こす",
+      "tadoushiKana": "おこす",
+      "meaning": "起來／叫醒",
+      "rule": "～きる⇔～こす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "降りる",
+      "jidoushiKana": "おりる",
+      "tadoushi": "降ろす",
+      "tadoushiKana": "おろす",
+      "meaning": "下來／卸下",
+      "rule": "～りる⇔～ろす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "増える",
+      "jidoushiKana": "ふえる",
+      "tadoushi": "増やす",
+      "tadoushiKana": "ふやす",
+      "meaning": "增加",
+      "rule": "～える⇔～やす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "燃える",
+      "jidoushiKana": "もえる",
+      "tadoushi": "燃やす",
+      "tadoushiKana": "もやす",
+      "meaning": "燃燒",
+      "rule": "～える⇔～やす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "冷える",
+      "jidoushiKana": "ひえる",
+      "tadoushi": "冷やす",
+      "tadoushiKana": "ひやす",
+      "meaning": "變冷／冰鎮",
+      "rule": "～える⇔～やす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "消える",
+      "jidoushiKana": "きえる",
+      "tadoushi": "消す",
+      "tadoushiKana": "けす",
+      "meaning": "消失／關掉",
+      "rule": "～える⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "濡れる",
+      "jidoushiKana": "ぬれる",
+      "tadoushi": "濡らす",
+      "tadoushiKana": "ぬらす",
+      "meaning": "濕／弄濕",
+      "rule": "～れる⇔～らす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "焦げる",
+      "jidoushiKana": "こげる",
+      "tadoushi": "焦がす",
+      "tadoushiKana": "こがす",
+      "meaning": "燒焦／弄焦",
+      "rule": "～げる⇔～がす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "崩れる",
+      "jidoushiKana": "くずれる",
+      "tadoushi": "崩す",
+      "tadoushiKana": "くずす",
+      "meaning": "崩塌／拆毀、弄垮",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "潰れる",
+      "jidoushiKana": "つぶれる",
+      "tadoushi": "潰す",
+      "tadoushiKana": "つぶす",
+      "meaning": "壓壞、倒閉／壓碎、弄垮",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "表れる",
+      "jidoushiKana": "あらわれる",
+      "tadoushi": "表す",
+      "tadoushiKana": "あらわす",
+      "meaning": "表現出／表達",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "伸びる",
+      "jidoushiKana": "のびる",
+      "tadoushi": "伸ばす",
+      "tadoushiKana": "のばす",
+      "meaning": "變長、成長／拉長、伸展",
+      "rule": "～びる⇔～ばす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "慣れる",
+      "jidoushiKana": "なれる",
+      "tadoushi": "慣らす",
+      "tadoushiKana": "ならす",
+      "meaning": "習慣／使習慣",
+      "rule": "～れる⇔～らす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "冷める",
+      "jidoushiKana": "さめる",
+      "tadoushi": "冷ます",
+      "tadoushiKana": "さます",
+      "meaning": "變涼、冷卻／弄涼",
+      "rule": "～める⇔～ます",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "覚める",
+      "jidoushiKana": "さめる",
+      "tadoushi": "覚ます",
+      "tadoushiKana": "さます",
+      "meaning": "醒來／弄醒、使清醒",
+      "rule": "～める⇔～ます",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "荒れる",
+      "jidoushiKana": "あれる",
+      "tadoushi": "荒らす",
+      "tadoushiKana": "あらす",
+      "meaning": "荒廢、粗糙／破壞、糟蹋",
+      "rule": "～れる⇔～らす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "枯れる",
+      "jidoushiKana": "かれる",
+      "tadoushi": "枯らす",
+      "tadoushiKana": "からす",
+      "meaning": "枯萎／使枯死",
+      "rule": "～れる⇔～らす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "乱れる",
+      "jidoushiKana": "みだれる",
+      "tadoushi": "乱す",
+      "tadoushiKana": "みだす",
+      "meaning": "紊亂／弄亂",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "晴れる",
+      "jidoushiKana": "はれる",
+      "tadoushi": "晴らす",
+      "tadoushiKana": "はらす",
+      "meaning": "放晴／消除（疑慮、怨氣）",
+      "rule": "～れる⇔～らす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "腫れる",
+      "jidoushiKana": "はれる",
+      "tadoushi": "腫らす",
+      "tadoushiKana": "はらす",
+      "meaning": "腫起來／弄腫",
+      "rule": "～れる⇔～らす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "漏れる",
+      "jidoushiKana": "もれる",
+      "tadoushi": "漏らす",
+      "tadoushiKana": "もらす",
+      "meaning": "漏出／洩漏",
+      "rule": "～れる⇔～らす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "零れる",
+      "jidoushiKana": "こぼれる",
+      "tadoushi": "零す",
+      "tadoushiKana": "こぼす",
+      "meaning": "灑出／灑出、發牢騷",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "垂れる",
+      "jidoushiKana": "たれる",
+      "tadoushi": "垂らす",
+      "tadoushiKana": "たらす",
+      "meaning": "下垂、滴落／使下垂、滴",
+      "rule": "～れる⇔～らす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "逸れる",
+      "jidoushiKana": "それる",
+      "tadoushi": "逸らす",
+      "tadoushiKana": "そらす",
+      "meaning": "偏離／使偏離、移開",
+      "rule": "～れる⇔～らす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "遅れる",
+      "jidoushiKana": "おくれる",
+      "tadoushi": "遅らす",
+      "tadoushiKana": "おくらす",
+      "meaning": "遲到、落後／延後、使慢",
+      "rule": "～れる⇔～らす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "逃げる",
+      "jidoushiKana": "にげる",
+      "tadoushi": "逃がす",
+      "tadoushiKana": "にがす",
+      "meaning": "逃跑／放走、錯過",
+      "rule": "～げる⇔～がす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "溶ける",
+      "jidoushiKana": "とける",
+      "tadoushi": "溶かす",
+      "tadoushiKana": "とかす",
+      "meaning": "融化、溶解／使融化",
+      "rule": "～ける⇔～かす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "負ける",
+      "jidoushiKana": "まける",
+      "tadoushi": "負かす",
+      "tadoushiKana": "まかす",
+      "meaning": "輸／打敗",
+      "rule": "～ける⇔～かす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": true
+    },
+    {
+      "jidoushi": "揺れる",
+      "jidoushiKana": "ゆれる",
+      "tadoushi": "揺らす",
+      "tadoushiKana": "ゆらす",
+      "meaning": "搖晃／搖動",
+      "rule": "～れる⇔～らす",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "剥がれる",
+      "jidoushiKana": "はがれる",
+      "tadoushi": "剥がす",
+      "tadoushiKana": "はがす",
+      "meaning": "剝落／剝下、撕下",
+      "rule": "～れる⇔～す",
+      "family": "自動詞 ～eる → 他動詞 ～す",
+      "hot": false
+    },
+    {
+      "jidoushi": "出る",
+      "jidoushiKana": "でる",
+      "tadoushi": "出す",
+      "tadoushiKana": "だす",
+      "meaning": "出去／拿出",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "直る",
+      "jidoushiKana": "なおる",
+      "tadoushi": "直す",
+      "tadoushiKana": "なおす",
+      "meaning": "修好／修理",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "治る",
+      "jidoushiKana": "なおる",
+      "tadoushi": "治す",
+      "tadoushiKana": "なおす",
+      "meaning": "痊癒／治療",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "戻る",
+      "jidoushiKana": "もどる",
+      "tadoushi": "戻す",
+      "tadoushiKana": "もどす",
+      "meaning": "返回／放回",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "返る",
+      "jidoushiKana": "かえる",
+      "tadoushi": "返す",
+      "tadoushiKana": "かえす",
+      "meaning": "歸還",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "回る",
+      "jidoushiKana": "まわる",
+      "tadoushi": "回す",
+      "tadoushiKana": "まわす",
+      "meaning": "轉動",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "通る",
+      "jidoushiKana": "とおる",
+      "tadoushi": "通す",
+      "tadoushiKana": "とおす",
+      "meaning": "通過",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "渡る",
+      "jidoushiKana": "わたる",
+      "tadoushi": "渡す",
+      "tadoushiKana": "わたす",
+      "meaning": "渡過／交給",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "残る",
+      "jidoushiKana": "のこる",
+      "tadoushi": "残す",
+      "tadoushiKana": "のこす",
+      "meaning": "剩下／留下",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "移る",
+      "jidoushiKana": "うつる",
+      "tadoushi": "移す",
+      "tadoushiKana": "うつす",
+      "meaning": "移動",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "動く",
+      "jidoushiKana": "うごく",
+      "tadoushi": "動かす",
+      "tadoushiKana": "うごかす",
+      "meaning": "動／使動",
+      "rule": "～く⇔～かす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "乾く",
+      "jidoushiKana": "かわく",
+      "tadoushi": "乾かす",
+      "tadoushiKana": "かわかす",
+      "meaning": "乾／弄乾",
+      "rule": "～く⇔～かす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "沸く",
+      "jidoushiKana": "わく",
+      "tadoushi": "沸かす",
+      "tadoushiKana": "わかす",
+      "meaning": "煮沸",
+      "rule": "～く⇔～かす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "減る",
+      "jidoushiKana": "へる",
+      "tadoushi": "減らす",
+      "tadoushiKana": "へらす",
+      "meaning": "減少",
+      "rule": "～る⇔～らす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "泣く",
+      "jidoushiKana": "なく",
+      "tadoushi": "泣かす",
+      "tadoushiKana": "なかす",
+      "meaning": "哭／弄哭",
+      "rule": "～く⇔～かす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "驚く",
+      "jidoushiKana": "おどろく",
+      "tadoushi": "驚かす",
+      "tadoushiKana": "おどろかす",
+      "meaning": "吃驚／嚇人、使驚訝",
+      "rule": "～く⇔～かす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "困る",
+      "jidoushiKana": "こまる",
+      "tadoushi": "困らせる",
+      "tadoushiKana": "こまらせる",
+      "meaning": "為難、困擾／使為難、讓人困擾",
+      "rule": "～る⇔～らせる",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "余る",
+      "jidoushiKana": "あまる",
+      "tadoushi": "余す",
+      "tadoushiKana": "あます",
+      "meaning": "剩餘／留下、剩下",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "散る",
+      "jidoushiKana": "ちる",
+      "tadoushi": "散らす",
+      "tadoushiKana": "ちらす",
+      "meaning": "散落／使散開、撒",
+      "rule": "～る⇔～らす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "散らかる",
+      "jidoushiKana": "ちらかる",
+      "tadoushi": "散らかす",
+      "tadoushiKana": "ちらかす",
+      "meaning": "散亂／弄亂",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "映る",
+      "jidoushiKana": "うつる",
+      "tadoushi": "映す",
+      "tadoushiKana": "うつす",
+      "meaning": "映照、映出／映照、放映",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "写る",
+      "jidoushiKana": "うつる",
+      "tadoushi": "写す",
+      "tadoushiKana": "うつす",
+      "meaning": "拍進照片／拍攝、抄寫",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "起こる",
+      "jidoushiKana": "おこる",
+      "tadoushi": "起こす",
+      "tadoushiKana": "おこす",
+      "meaning": "發生／引起、叫醒",
+      "rule": "～る⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "腐る",
+      "jidoushiKana": "くさる",
+      "tadoushi": "腐らす",
+      "tadoushiKana": "くさらす",
+      "meaning": "腐壞／使腐壞",
+      "rule": "～る⇔～らす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "凍る",
+      "jidoushiKana": "こおる",
+      "tadoushi": "凍らす",
+      "tadoushiKana": "こおらす",
+      "meaning": "結冰／使結冰、冷凍",
+      "rule": "～る⇔～らす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "湿る",
+      "jidoushiKana": "しめる",
+      "tadoushi": "湿らす",
+      "tadoushiKana": "しめらす",
+      "meaning": "潮濕／弄濕",
+      "rule": "～る⇔～らす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "乗る",
+      "jidoushiKana": "のる",
+      "tadoushi": "乗せる",
+      "tadoushiKana": "のせる",
+      "meaning": "搭乘／使搭乘、載運",
+      "rule": "～る⇔～せる",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "載る",
+      "jidoushiKana": "のる",
+      "tadoushi": "載せる",
+      "tadoushiKana": "のせる",
+      "meaning": "被登載、放在上面／刊登、放上",
+      "rule": "～る⇔～せる",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "寄る",
+      "jidoushiKana": "よる",
+      "tadoushi": "寄せる",
+      "tadoushiKana": "よせる",
+      "meaning": "靠近／使靠近、寄",
+      "rule": "～る⇔～せる",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "刺さる",
+      "jidoushiKana": "ささる",
+      "tadoushi": "刺す",
+      "tadoushiKana": "さす",
+      "meaning": "扎進／刺、扎",
+      "rule": "～さる⇔～す",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "塞がる",
+      "jidoushiKana": "ふさがる",
+      "tadoushi": "塞ぐ",
+      "tadoushiKana": "ふさぐ",
+      "meaning": "被堵住、佔用／堵住、遮住",
+      "rule": "～がる⇔～ぐ",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "転がる",
+      "jidoushiKana": "ころがる",
+      "tadoushi": "転がす",
+      "tadoushiKana": "ころがす",
+      "meaning": "滾動／使滾動",
+      "rule": "～がる⇔～がす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "滑る",
+      "jidoushiKana": "すべる",
+      "tadoushi": "滑らす",
+      "tadoushiKana": "すべらす",
+      "meaning": "滑／使滑動、失言",
+      "rule": "～る⇔～らす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "飛ぶ",
+      "jidoushiKana": "とぶ",
+      "tadoushi": "飛ばす",
+      "tadoushiKana": "とばす",
+      "meaning": "飛／使飛、吹飛",
+      "rule": "～ぶ⇔～ばす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "鳴る",
+      "jidoushiKana": "なる",
+      "tadoushi": "鳴らす",
+      "tadoushiKana": "ならす",
+      "meaning": "響／使響、敲響",
+      "rule": "～る⇔～らす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "照る",
+      "jidoushiKana": "てる",
+      "tadoushi": "照らす",
+      "tadoushiKana": "てらす",
+      "meaning": "照耀／照亮",
+      "rule": "～る⇔～らす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "満ちる",
+      "jidoushiKana": "みちる",
+      "tadoushi": "満たす",
+      "tadoushiKana": "みたす",
+      "meaning": "充滿／填滿、滿足",
+      "rule": "～ちる⇔～たす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": false
+    },
+    {
+      "jidoushi": "過ぎる",
+      "jidoushiKana": "すぎる",
+      "tadoushi": "過ごす",
+      "tadoushiKana": "すごす",
+      "meaning": "經過／度過",
+      "rule": "～ぎる⇔～ごす",
+      "family": "自動詞 ～る／～く → 他動詞 ～す／～かす／～らす",
+      "hot": true
+    },
+    {
+      "jidoushi": "割れる",
+      "jidoushiKana": "われる",
+      "tadoushi": "割る",
+      "tadoushiKana": "わる",
+      "meaning": "破裂／打破",
+      "rule": "～れる⇔～る",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": true
+    },
+    {
+      "jidoushi": "切れる",
+      "jidoushiKana": "きれる",
+      "tadoushi": "切る",
+      "tadoushiKana": "きる",
+      "meaning": "斷／切",
+      "rule": "～れる⇔～る",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": false
+    },
+    {
+      "jidoushi": "折れる",
+      "jidoushiKana": "おれる",
+      "tadoushi": "折る",
+      "tadoushiKana": "おる",
+      "meaning": "折斷",
+      "rule": "～れる⇔～る",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": false
+    },
+    {
+      "jidoushi": "破れる",
+      "jidoushiKana": "やぶれる",
+      "tadoushi": "破る",
+      "tadoushiKana": "やぶる",
+      "meaning": "破／撕破",
+      "rule": "～れる⇔～る",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": true
+    },
+    {
+      "jidoushi": "分かれる",
+      "jidoushiKana": "わかれる",
+      "tadoushi": "分ける",
+      "tadoushiKana": "わける",
+      "meaning": "分開／分類",
+      "rule": "～れる⇔～ける",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": false
+    },
+    {
+      "jidoushi": "抜ける",
+      "jidoushiKana": "ぬける",
+      "tadoushi": "抜く",
+      "tadoushiKana": "ぬく",
+      "meaning": "脫落／拔出",
+      "rule": "～ける⇔～く",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": false
+    },
+    {
+      "jidoushi": "焼ける",
+      "jidoushiKana": "やける",
+      "tadoushi": "焼く",
+      "tadoushiKana": "やく",
+      "meaning": "烤熟／燒",
+      "rule": "～ける⇔～く",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": true
+    },
+    {
+      "jidoushi": "解ける",
+      "jidoushiKana": "とける",
+      "tadoushi": "解く",
+      "tadoushiKana": "とく",
+      "meaning": "解開",
+      "rule": "～ける⇔～く",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": true
+    },
+    {
+      "jidoushi": "取れる",
+      "jidoushiKana": "とれる",
+      "tadoushi": "取る",
+      "tadoushiKana": "とる",
+      "meaning": "脫落、掉下／拿取",
+      "rule": "～れる⇔～る",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": true
+    },
+    {
+      "jidoushi": "裂ける",
+      "jidoushiKana": "さける",
+      "tadoushi": "裂く",
+      "tadoushiKana": "さく",
+      "meaning": "裂開／撕裂",
+      "rule": "～ける⇔～く",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": true
+    },
+    {
+      "jidoushi": "煮える",
+      "jidoushiKana": "にえる",
+      "tadoushi": "煮る",
+      "tadoushiKana": "にる",
+      "meaning": "煮熟／煮",
+      "rule": "～える⇔～る",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": false
+    },
+    {
+      "jidoushi": "炊ける",
+      "jidoushiKana": "たける",
+      "tadoushi": "炊く",
+      "tadoushiKana": "たく",
+      "meaning": "煮好（飯）／煮（飯）",
+      "rule": "～ける⇔～く",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": false
+    },
+    {
+      "jidoushi": "剥ける",
+      "jidoushiKana": "むける",
+      "tadoushi": "剥く",
+      "tadoushiKana": "むく",
+      "meaning": "剝落、脫皮／剝（皮）",
+      "rule": "～ける⇔～く",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": false
+    },
+    {
+      "jidoushi": "欠ける",
+      "jidoushiKana": "かける",
+      "tadoushi": "欠く",
+      "tadoushiKana": "かく",
+      "meaning": "缺損／缺少、弄缺",
+      "rule": "～ける⇔～く",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": true
+    },
+    {
+      "jidoushi": "砕ける",
+      "jidoushiKana": "くだける",
+      "tadoushi": "砕く",
+      "tadoushiKana": "くだく",
+      "meaning": "碎裂／打碎",
+      "rule": "～ける⇔～く",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": false
+    },
+    {
+      "jidoushi": "売れる",
+      "jidoushiKana": "うれる",
+      "tadoushi": "売る",
+      "tadoushiKana": "うる",
+      "meaning": "暢銷／賣",
+      "rule": "～れる⇔～る",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": false
+    },
+    {
+      "jidoushi": "脱げる",
+      "jidoushiKana": "ぬげる",
+      "tadoushi": "脱ぐ",
+      "tadoushiKana": "ぬぐ",
+      "meaning": "（鞋、衣）脫落／脫",
+      "rule": "～げる⇔～ぐ",
+      "family": "他動詞比較短：自動詞 ～eる → 他動詞 ～る／～く",
+      "hot": false
+    },
+    {
+      "jidoushi": "揃う",
+      "jidoushiKana": "そろう",
+      "tadoushi": "揃える",
+      "tadoushiKana": "そろえる",
+      "meaning": "齊全、一致／備齊、使一致",
+      "rule": "～う⇔～える",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "整う",
+      "jidoushiKana": "ととのう",
+      "tadoushi": "整える",
+      "tadoushiKana": "ととのえる",
+      "meaning": "齊備、整齊／整理、備齊",
+      "rule": "～う⇔～える",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "合う",
+      "jidoushiKana": "あう",
+      "tadoushi": "合わせる",
+      "tadoushiKana": "あわせる",
+      "meaning": "合、符合／使合、配合",
+      "rule": "～う⇔～わせる",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "間に合う",
+      "jidoushiKana": "まにあう",
+      "tadoushi": "間に合わせる",
+      "tadoushiKana": "まにあわせる",
+      "meaning": "來得及／趕上、湊合",
+      "rule": "～う⇔～わせる",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "笑う",
+      "jidoushiKana": "わらう",
+      "tadoushi": "笑わせる",
+      "tadoushiKana": "わらわせる",
+      "meaning": "笑／逗笑",
+      "rule": "～う⇔～わせる",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "狂う",
+      "jidoushiKana": "くるう",
+      "tadoushi": "狂わせる",
+      "tadoushiKana": "くるわせる",
+      "meaning": "發狂、失準／使失常、打亂",
+      "rule": "～う⇔～わせる",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "浮かぶ",
+      "jidoushiKana": "うかぶ",
+      "tadoushi": "浮かべる",
+      "tadoushiKana": "うかべる",
+      "meaning": "浮現、漂浮／使浮起、露出",
+      "rule": "～ぶ⇔～べる",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "喜ぶ",
+      "jidoushiKana": "よろこぶ",
+      "tadoushi": "喜ばせる",
+      "tadoushiKana": "よろこばせる",
+      "meaning": "高興／使高興",
+      "rule": "～ぶ⇔～ばせる",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "沈む",
+      "jidoushiKana": "しずむ",
+      "tadoushi": "沈める",
+      "tadoushiKana": "しずめる",
+      "meaning": "下沉／使下沉",
+      "rule": "～む⇔～める",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "縮む",
+      "jidoushiKana": "ちぢむ",
+      "tadoushi": "縮める",
+      "tadoushiKana": "ちぢめる",
+      "meaning": "縮小、縮短／縮小、縮短",
+      "rule": "～む⇔～める",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": true
+    },
+    {
+      "jidoushi": "痛む",
+      "jidoushiKana": "いたむ",
+      "tadoushi": "痛める",
+      "tadoushiKana": "いためる",
+      "meaning": "疼痛／弄痛、損傷",
+      "rule": "～む⇔～める",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "苦しむ",
+      "jidoushiKana": "くるしむ",
+      "tadoushi": "苦しめる",
+      "tadoushiKana": "くるしめる",
+      "meaning": "受苦／使痛苦、折磨",
+      "rule": "～む⇔～める",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": true
+    },
+    {
+      "jidoushi": "休む",
+      "jidoushiKana": "やすむ",
+      "tadoushi": "休める",
+      "tadoushiKana": "やすめる",
+      "meaning": "休息／使休息、停下",
+      "rule": "～む⇔～める",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": true
+    },
+    {
+      "jidoushi": "緩む",
+      "jidoushiKana": "ゆるむ",
+      "tadoushi": "緩める",
+      "tadoushiKana": "ゆるめる",
+      "meaning": "鬆弛／放鬆、放寬",
+      "rule": "～む⇔～める",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "歪む",
+      "jidoushiKana": "ゆがむ",
+      "tadoushi": "歪める",
+      "tadoushiKana": "ゆがめる",
+      "meaning": "歪曲／弄歪、扭曲",
+      "rule": "～む⇔～める",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "引っ込む",
+      "jidoushiKana": "ひっこむ",
+      "tadoushi": "引っ込める",
+      "tadoushiKana": "ひっこめる",
+      "meaning": "縮進去、凹陷／縮回、收回",
+      "rule": "～む⇔～める",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "済む",
+      "jidoushiKana": "すむ",
+      "tadoushi": "済ます",
+      "tadoushiKana": "すます",
+      "meaning": "完成、了結／弄完、應付過去",
+      "rule": "～む⇔～ます",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": true
+    },
+    {
+      "jidoushi": "膨らむ",
+      "jidoushiKana": "ふくらむ",
+      "tadoushi": "膨らます",
+      "tadoushiKana": "ふくらます",
+      "meaning": "膨脹／使膨脹、吹大",
+      "rule": "～む⇔～ます",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "励む",
+      "jidoushiKana": "はげむ",
+      "tadoushi": "励ます",
+      "tadoushiKana": "はげます",
+      "meaning": "努力／鼓勵",
+      "rule": "～む⇔～ます",
+      "family": "自動詞 ～う／～む／～ぶ → 他動詞 ～える／～める／～べる／～ます",
+      "hot": false
+    },
+    {
+      "jidoushi": "見える",
+      "jidoushiKana": "みえる",
+      "tadoushi": "見る",
+      "tadoushiKana": "みる",
+      "meaning": "看得見／看",
+      "rule": "不規則",
+      "family": "不規則・其他對應",
+      "hot": false
+    },
+    {
+      "jidoushi": "聞こえる",
+      "jidoushiKana": "きこえる",
+      "tadoushi": "聞く",
+      "tadoushiKana": "きく",
+      "meaning": "聽得見／聽",
+      "rule": "不規則",
+      "family": "不規則・其他對應",
+      "hot": false
+    },
+    {
+      "jidoushi": "生まれる",
+      "jidoushiKana": "うまれる",
+      "tadoushi": "生む",
+      "tadoushiKana": "うむ",
+      "meaning": "出生／生、產",
+      "rule": "不規則",
+      "family": "不規則・其他對應",
+      "hot": true
+    },
+    {
+      "jidoushi": "死ぬ",
+      "jidoushiKana": "しぬ",
+      "tadoushi": "殺す",
+      "tadoushiKana": "ころす",
+      "meaning": "死／殺",
+      "rule": "不規則",
+      "family": "不規則・其他對應",
+      "hot": false
+    },
+    {
+      "jidoushi": "積もる",
+      "jidoushiKana": "つもる",
+      "tadoushi": "積む",
+      "tadoushiKana": "つむ",
+      "meaning": "堆積／堆放、累積",
+      "rule": "不規則",
+      "family": "不規則・其他對應",
+      "hot": true
+    },
+    {
+      "jidoushi": "挟まる",
+      "jidoushiKana": "はさまる",
+      "tadoushi": "挟む",
+      "tadoushiKana": "はさむ",
+      "meaning": "夾住／夾、插",
+      "rule": "不規則",
+      "family": "不規則・其他對應",
+      "hot": false
+    },
+    {
+      "jidoushi": "捕まる",
+      "jidoushiKana": "つかまる",
+      "tadoushi": "捕まえる",
+      "tadoushiKana": "つかまえる",
+      "meaning": "被抓到／抓住",
+      "rule": "不規則",
+      "family": "不規則・其他對應",
+      "hot": false
+    }
   ],
   "suffixCards": [
     {

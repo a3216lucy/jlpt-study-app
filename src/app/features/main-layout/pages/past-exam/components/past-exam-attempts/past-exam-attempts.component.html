@@ -1,0 +1,44 @@
+@if (attempts().length > 0) {
+  <div class="flex flex-col gap-1.5">
+    <p class="text-xs font-bold text-text-muted">作答紀錄</p>
+    @for (a of visible(); track a.id) {
+      <button
+        type="button"
+        (click)="open(a)"
+        [disabled]="store.loading()"
+        class="flex items-center justify-between gap-2 rounded-md border border-border bg-surface px-3 py-2 text-left transition hover:border-accent/40 disabled:opacity-60"
+      >
+        <span class="flex min-w-0 flex-col">
+          <span class="flex flex-wrap items-center gap-1.5 text-sm font-bold text-ink">
+            {{ a.mode === 'mock' ? '實演' : '練習' }} 第 {{ a.attemptNo }} 次
+            @if (a.mode === 'practice') {
+              <span class="rounded-full bg-bg px-2 py-0.5 text-[11px] font-medium text-text-secondary">{{ scopeText(a) }}</span>
+            }
+          </span>
+          <span class="text-[11px] text-text-muted">{{ dateText(a) }}</span>
+        </span>
+        @if (a.status === 'in-progress') {
+          <span class="flex shrink-0 items-center gap-1 rounded-full bg-accent-soft px-2.5 py-1 text-xs font-bold text-accent">
+            進行中 {{ answeredCount(a) }}/{{ a.total }}・繼續
+          </span>
+        } @else {
+          <span class="shrink-0 text-right">
+            <span [class]="'font-heading text-sm font-bold ' + (percent(a) >= 60 ? 'text-[#2F6F5A]' : 'text-accent')">
+              {{ percent(a) }}%
+            </span>
+            <span class="block text-[11px] text-text-muted">{{ a.score }}/{{ a.total }}・錯 {{ a.wrongQuestionIds.length }}</span>
+          </span>
+        }
+      </button>
+    }
+    @if (hiddenCount() > 0) {
+      <button
+        type="button"
+        (click)="showAll.set(!showAll())"
+        class="self-start text-xs font-bold text-accent"
+      >
+        {{ showAll() ? '收合' : '顯示全部（還有 ' + hiddenCount() + ' 筆）' }}
+      </button>
+    }
+  </div>
+}

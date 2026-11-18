@@ -1,5 +1,5 @@
 // Cores
-import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal, OnInit, inject } from '@angular/core';
 // Angular
 import { RouterLink } from '@angular/router';
 // Store
@@ -25,6 +25,19 @@ export class SentenceReviewPage implements OnInit {
   // Constants
   // --------------------------------------------------------------------
   readonly levels: JlptLevel[] = ['N1', 'N2', 'N3', 'N4', 'N5'];
+
+  /** 手機版搜尋框是否展開（平板以上一律顯示） */
+  readonly searchOpen = signal(false);
+
+  openSearch(input: HTMLInputElement): void {
+    this.searchOpen.set(true);
+    setTimeout(() => input.focus());
+  }
+
+  closeSearch(): void {
+    this.store.setSearchQuery('');
+    this.searchOpen.set(false);
+  }
 
   // Lifecycle
   // --------------------------------------------------------------------

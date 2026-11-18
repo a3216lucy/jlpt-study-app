@@ -24,8 +24,8 @@ export const QUICK_ENTRIES: QuickEntry[] = [
     iconColor: 'text-accent',
     iconBg: 'bg-accent-soft',
     label: '錯題複習',
-    routerLink: null,
-    comingSoon: true,
+    routerLink: '/past-exam',
+    comingSoon: false,
   },
   {
     id: 'flashcard',
@@ -34,6 +34,15 @@ export const QUICK_ENTRIES: QuickEntry[] = [
     iconBg: 'bg-matcha-soft',
     label: '卡牌背誦',
     routerLink: '/vocab',
+    comingSoon: false,
+  },
+  {
+    id: 'sentence-patterns',
+    icon: 'fa-quote-right',
+    iconColor: 'text-accent',
+    iconBg: 'bg-accent-soft',
+    label: '句型複習',
+    routerLink: '/sentence-patterns',
     comingSoon: false,
   },
   {

@@ -1,11 +1,42 @@
 <div
   [class]="
-    'flex flex-col gap-1 rounded-lg border border-border bg-surface p-3 transition sm:w-64 sm:shrink-0 ' +
+    'flex flex-col gap-1 transition sm:w-64 sm:shrink-0 sm:rounded-lg sm:border sm:border-border sm:bg-surface sm:p-3 ' +
     (store.isSearching() ? 'opacity-50' : '')
   "
 >
-  <p class="px-2 py-1 text-xs font-bold text-text-muted">句型分類</p>
-  <div class="flex gap-1.5 overflow-x-auto pb-1 sm:flex-col sm:overflow-visible sm:pb-0">
+  <p class="hidden px-2 py-1 text-xs font-bold text-text-muted sm:block">句型分類</p>
+  <!-- 手機：下拉選單 -->
+  <div class="relative sm:hidden">
+    <select
+      (change)="onSelect($event)"
+      [disabled]="store.isSearching()"
+      aria-label="選擇句型分類"
+      class="w-full cursor-pointer appearance-none rounded-md border border-border bg-bg py-2.5 pl-3 pr-9 text-sm font-bold text-ink focus:border-accent focus:outline-none disabled:opacity-60"
+    >
+      <option value="__all__" [selected]="store.isAllSelected()">全部（{{ totalCount() }}）</option>
+      @for (group of store.displayGroups(); track group.id) {
+        <option [value]="group.id" [selected]="store.selectedGroup()?.id === group.id">
+          {{ group.title }}（{{ group.patterns.length }}）
+        </option>
+      }
+    </select>
+    <i class="fa-solid fa-chevron-down pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-xs text-text-muted"></i>
+  </div>
+
+  <!-- 平板以上：側欄清單 -->
+  <div class="hidden gap-1.5 sm:flex sm:flex-col">
+    <button
+      type="button"
+      (click)="store.selectGroup('__all__')"
+      [disabled]="store.isSearching()"
+      [class]="
+        'flex shrink-0 items-center justify-between gap-3 rounded-md px-3 py-2 text-left text-sm transition sm:shrink ' +
+        (store.isAllSelected() && !store.isSearching() ? 'bg-accent-soft font-bold text-accent' : 'text-text-secondary hover:bg-bg')
+      "
+    >
+      <span class="whitespace-nowrap">全部</span>
+      <span class="text-xs text-text-muted">{{ totalCount() }}</span>
+    </button>
     @for (group of store.displayGroups(); track group.id) {
       <button
         type="button"
@@ -26,7 +57,7 @@
       </button>
     }
   </div>
-  <div class="mt-1 flex items-center gap-1.5 rounded-md bg-bg px-3 py-2 text-xs font-bold text-accent">
+  <div class="mt-1 hidden items-center gap-1.5 rounded-md bg-bg px-3 py-2 text-xs font-bold text-accent sm:flex">
     <i class="fa-solid fa-bookmark"></i> 已收藏句型 {{ store.bookmarkedCount() }} 個
   </div>
 </div>

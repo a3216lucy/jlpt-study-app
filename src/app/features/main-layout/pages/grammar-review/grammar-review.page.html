@@ -1,31 +1,25 @@
 <div class="flex flex-col gap-4 pb-8 sm:gap-5 lg:gap-6">
-  <!-- Header -->
-  <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-    <div class="flex flex-col gap-1 sm:gap-1.5">
-      <div class="flex items-center gap-2">
-        <h1 class="font-heading text-xl font-bold text-ink sm:text-2xl lg:text-[26px]">文法</h1>
-        <span class="rounded-full bg-matcha-soft px-2.5 py-1 text-xs font-bold text-matcha">全級別通用</span>
-      </div>
-      @switch (store.activeTab()) {
-        @case ('conjugation') {
-          <p class="text-sm text-text-secondary">動詞活用、敬語與文法規則速查，全級別通用，不分 N1–N5</p>
-        }
-        @case ('keigo') {
-          <p class="text-sm text-text-secondary">尊敬語・謙讓語・丁寧語的分類、作法與特殊動詞速查</p>
-        }
-        @case ('transitivity') {
-          <p class="text-sm text-text-secondary">自動詞（～が）與他動詞（～を）的成對整理與變化規律</p>
-        }
-        @case ('rules') {
-          <p class="text-sm text-text-secondary">音便、活用形變化的規則說明，理解「為什麼這樣變」</p>
-        }
-        @case ('compound-verb') {
-          <p class="text-sm text-text-secondary">複合動詞 8 大分類規則與代表例，完整單字請到「單詞」頁查看</p>
-        }
-      }
+  <!-- Header（手機搜尋展開時，整列換成搜尋框） -->
+  <div [class]="'flex items-center justify-between gap-3 ' + (searchOpen() ? 'hidden sm:flex' : '')">
+    <div class="flex items-center gap-2">
+      <h1 class="font-heading text-xl font-bold text-ink sm:text-2xl lg:text-[26px]">文法</h1>
+      <span class="rounded-full bg-matcha-soft px-2.5 py-1 text-xs font-bold text-matcha">全級別通用</span>
     </div>
 
-    <div class="relative w-full sm:w-72">
+    <button
+      type="button"
+      (click)="openSearch(searchInput)"
+      aria-label="搜尋"
+      [class]="
+        'flex h-8 w-8 items-center justify-center rounded-full border text-sm transition sm:hidden ' +
+        (store.searchQuery() ? 'border-border bg-accent-soft text-accent' : 'border-border bg-bg text-accent')
+      "
+    >
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <!-- 平板以上：搜尋框一直顯示 -->
+    <div class="relative hidden w-72 sm:block">
       <i class="fa-solid fa-magnifying-glass pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-xs text-text-muted"></i>
       <input
         type="text"
@@ -37,62 +31,69 @@
     </div>
   </div>
 
-  <!-- Tabs -->
-  <div class="flex gap-1 overflow-x-auto rounded-full border border-border bg-surface p-1">
-    <button
-      type="button"
-      (click)="store.switchTab('conjugation')"
-      [class]="
-        'shrink-0 rounded-full px-4 py-2 text-sm font-bold transition ' +
-        (store.activeTab() === 'conjugation' ? 'bg-accent-soft text-accent' : 'text-text-secondary hover:text-ink')
-      "
-    >
-      動詞活用
+  <!-- 手機：點放大鏡才展開的搜尋框 -->
+  <div [class]="'relative sm:hidden ' + (searchOpen() ? '' : 'hidden')">
+    <i class="fa-solid fa-magnifying-glass pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-xs text-text-muted"></i>
+    <input
+      #searchInput
+      type="text"
+      [value]="store.searchQuery()"
+      (input)="store.setSearch($any($event.target).value)"
+      [placeholder]="searchPlaceholder()"
+      class="w-full rounded-full border border-border bg-surface py-2.5 pl-9 pr-11 text-sm text-ink outline-none placeholder:text-text-muted focus:border-accent/40"
+    />
+    <button type="button" (click)="closeSearch()" aria-label="關閉搜尋" class="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-text-muted">
+      <i class="fa-solid fa-xmark"></i>
     </button>
-    <button
-      type="button"
-      (click)="store.switchTab('keigo')"
-      [class]="
-        'shrink-0 rounded-full px-4 py-2 text-sm font-bold transition ' +
-        (store.activeTab() === 'keigo' ? 'bg-accent-soft text-accent' : 'text-text-secondary hover:text-ink')
-      "
+  </div>
+
+  <!-- Tabs（手機：下拉選單） -->
+  <div class="relative sm:hidden">
+    <select
+      (change)="onTabSelect($event)"
+      aria-label="選擇分頁"
+      class="w-full cursor-pointer appearance-none rounded-full border border-border bg-surface py-3 pl-5 pr-11 text-sm font-bold text-accent focus:border-accent focus:outline-none"
     >
-      敬語
-    </button>
-    <button
-      type="button"
-      (click)="store.switchTab('transitivity')"
-      [class]="
-        'shrink-0 rounded-full px-4 py-2 text-sm font-bold transition ' +
-        (store.activeTab() === 'transitivity' ? 'bg-accent-soft text-accent' : 'text-text-secondary hover:text-ink')
-      "
-    >
-      自他動詞
-    </button>
-    <button
-      type="button"
-      (click)="store.switchTab('rules')"
-      [class]="
-        'shrink-0 rounded-full px-4 py-2 text-sm font-bold transition ' +
-        (store.activeTab() === 'rules' ? 'bg-accent-soft text-accent' : 'text-text-secondary hover:text-ink')
-      "
-    >
-      活用規則
-    </button>
-    <button
-      type="button"
-      (click)="store.switchTab('compound-verb')"
-      [class]="
-        'shrink-0 rounded-full px-4 py-2 text-sm font-bold transition ' +
-        (store.activeTab() === 'compound-verb' ? 'bg-accent-soft text-accent' : 'text-text-secondary hover:text-ink')
-      "
-    >
-      複合動詞
-    </button>
+      @for (t of tabOptions; track t.value) {
+        <option [value]="t.value" [selected]="store.activeTab() === t.value">{{ t.label }}</option>
+      }
+    </select>
+    <i class="fa-solid fa-chevron-down pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-xs text-text-muted"></i>
+  </div>
+
+  <!-- Tabs（平板以上） -->
+  <div class="hidden gap-1 overflow-x-auto rounded-full border border-border bg-surface p-1 sm:flex">
+    @for (t of tabOptions; track t.value) {
+      <button
+        type="button"
+        (click)="store.switchTab(t.value)"
+        [class]="
+          'shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-sm font-bold transition ' +
+          (store.activeTab() === t.value ? 'bg-accent-soft text-accent' : 'text-text-secondary hover:text-ink')
+        "
+      >
+        {{ t.label }}
+      </button>
+    }
   </div>
 
   @if (store.activeTab() === 'conjugation') {
     <app-grammar-conjugation-tab />
+  }
+  @if (store.activeTab() === 'style') {
+    <app-grammar-notes-tab [sections]="styleSections" />
+  }
+  @if (store.activeTab() === 'conjunction') {
+    <app-grammar-notes-tab [sections]="conjunctionSections" />
+  }
+  @if (store.activeTab() === 'particle') {
+    <app-grammar-notes-tab [sections]="particleSections" />
+  }
+  @if (store.activeTab() === 'sort') {
+    <app-grammar-notes-tab [sections]="sortSections" />
+  }
+  @if (store.activeTab() === 'give') {
+    <app-grammar-notes-tab [sections]="giveSections" />
   }
   @if (store.activeTab() === 'keigo') {
     <app-grammar-keigo-tab />
@@ -100,10 +101,13 @@
   @if (store.activeTab() === 'transitivity') {
     <app-grammar-transitivity-tab />
   }
-  @if (store.activeTab() === 'rules') {
-    <app-grammar-rules-tab />
-  }
   @if (store.activeTab() === 'compound-verb') {
     <app-grammar-compound-verb-tab />
+  }
+  @if (store.activeTab() === 'affix') {
+    <app-grammar-affix-tab />
+  }
+  @if (store.activeTab() === 'onomatopoeia') {
+    <app-grammar-onomatopoeia-tab />
   }
 </div>

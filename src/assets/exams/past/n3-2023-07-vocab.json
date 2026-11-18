@@ -15,14 +15,34 @@
       "questionText": "毎日復習したので、よくできるようになった。",
       "questionTranslation": "因為每天複習，所以越來越會了。",
       "options": [
-        {"id": "n3-2023-07-v-01-a", "text": "ふしゅう", "isCorrect": false},
-        {"id": "n3-2023-07-v-01-b", "text": "れんしゅう", "isCorrect": false},
-        {"id": "n3-2023-07-v-01-c", "text": "ふくしゅう", "isCorrect": true},
-        {"id": "n3-2023-07-v-01-d", "text": "れいしゅう", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-01-a",
+          "text": "ふしゅう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-01-b",
+          "text": "れんしゅう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-01-c",
+          "text": "ふくしゅう",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-01-d",
+          "text": "れいしゅう",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-01-c",
-      "explanation": "復習（ふくしゅう）＝複習、回顧所學。「復（ふく）」＋「習（しゅう）」。反義：予習（よしゅう）＝預習。",
-      "tags": ["reading", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：復習（ふくしゅう）＝複習。「習」讀長音「しゅう」，「復」讀「ふく」；反義是予習（よしゅう）。其他選項是相近字詞的讀音陷阱。\n【選項解析】\n×1 ふしゅう：無此詞；「復」不讀「ふ」\n○3 ふくしゅう：復習＝複習已學內容，與題意「每天複習」吻合\n×2 れんしゅう：練習（れんしゅう）＝練習，是另一個詞，漢字不同\n×4 れいしゅう：無此詞；「復」不讀「れい」",
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 1,
       "problemLabel": "漢字読み"
     },
@@ -35,14 +55,34 @@
       "questionText": "小型のラジオが欲しいです。",
       "questionTranslation": "我想要小型收音機。",
       "options": [
-        {"id": "n3-2023-07-v-02-a", "text": "こかた", "isCorrect": false},
-        {"id": "n3-2023-07-v-02-b", "text": "しょうがた", "isCorrect": false},
-        {"id": "n3-2023-07-v-02-c", "text": "こがた", "isCorrect": true},
-        {"id": "n3-2023-07-v-02-d", "text": "しょうかた", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-02-a",
+          "text": "こかた",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-02-b",
+          "text": "しょうがた",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-02-c",
+          "text": "こがた",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-02-d",
+          "text": "しょうかた",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-02-c",
-      "explanation": "小型（こがた）＝小型、小尺寸。「小（こ）」是特殊訓讀，不讀「しょう」。常用：小型車（こがたしゃ）、小型犬（こがたけん）。",
-      "tags": ["reading", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：小型（こがた）＝小型。「小」在此讀「こ」（小型・小包・小鳥），不讀「しょう」；「型」讀濁音「がた」，要注意連濁。\n【選項解析】\n×1 こかた：「型」應連濁為「がた」，清音不成詞\n×2 しょうがた：「小」在此不讀「しょう」，無此讀法\n○3 こがた：小型＝小尺寸，「小型のラジオ」＝小型收音機\n×4 しょうかた：「小」「型」讀法皆錯，無此詞",
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 1,
       "problemLabel": "漢字読み"
     },
@@ -55,14 +95,34 @@
       "questionText": "理由もないのに、人を疑ってはいけない。",
       "questionTranslation": "沒有理由就不可以懷疑別人。",
       "options": [
-        {"id": "n3-2023-07-v-03-a", "text": "きらって", "isCorrect": false},
-        {"id": "n3-2023-07-v-03-b", "text": "こわがって", "isCorrect": false},
-        {"id": "n3-2023-07-v-03-c", "text": "しかって", "isCorrect": false},
-        {"id": "n3-2023-07-v-03-d", "text": "うたがって", "isCorrect": true}
+        {
+          "id": "n3-2023-07-v-03-a",
+          "text": "きらって",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-03-b",
+          "text": "こわがって",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-03-c",
+          "text": "しかって",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-03-d",
+          "text": "うたがって",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2023-07-v-03-d",
-      "explanation": "疑う（うたがう）＝懷疑、質疑。「疑」讀「うたが」，不要與「嫌う（きらう）」或「怒る（おこる）」混淆。",
-      "tags": ["reading", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：疑う（うたがう）＝懷疑。「疑」訓讀「うたが（う）」，其他選項是形近或語意相關的動詞，與「理由もないのに〜してはいけない」不搭。\n【選項解析】\n×1 きらって：嫌う（きらう）＝討厭，漢字是「嫌」\n×2 こわがって：怖がる（こわがる）＝害怕，漢字是「怖」\n×3 しかって：叱る（しかる）＝責罵，漢字是「叱」\n○4 うたがって：疑う＝懷疑，「沒理由就懷疑別人」語意通順",
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 1,
       "problemLabel": "漢字読み"
     },
@@ -75,14 +135,34 @@
       "questionText": "ここから先は道が細くなっている。",
       "questionTranslation": "從這裡開始道路變細了。",
       "options": [
-        {"id": "n3-2023-07-v-04-a", "text": "ひろく", "isCorrect": false},
-        {"id": "n3-2023-07-v-04-b", "text": "ふとく", "isCorrect": false},
-        {"id": "n3-2023-07-v-04-c", "text": "せまく", "isCorrect": false},
-        {"id": "n3-2023-07-v-04-d", "text": "ほそく", "isCorrect": true}
+        {
+          "id": "n3-2023-07-v-04-a",
+          "text": "ひろく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-04-b",
+          "text": "ふとく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-04-c",
+          "text": "せまく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-04-d",
+          "text": "ほそく",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2023-07-v-04-d",
-      "explanation": "細い（ほそい）＝細、纖細。「太い（ふとい）」是「粗」，「広い（ひろい）」是「寬」，「狭い（せまい）」是「窄」。細い＝纖細（用於線、道路等）。",
-      "tags": ["reading", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：細い（ほそい）＝細。與「太い（ふとい）」成對，注意「広い／狭い」是寬窄，不是粗細；道路變窄也可用「細い」。\n【選項解析】\n×1 ひろく：広い（ひろい）＝寬廣，漢字是「広」\n×2 ふとく：太い（ふとい）＝粗，與「細」相反\n×3 せまく：狭い（せまい）＝狹窄，漢字是「狭」，意思雖近但讀音不同\n○4 ほそく：細い的連用形，「道が細くなっている」＝路變細（窄）了",
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 1,
       "problemLabel": "漢字読み"
     },
@@ -95,14 +175,34 @@
       "questionText": "川井さんは明日、退院するそうです。",
       "questionTranslation": "聽說川井先生明天要出院了。",
       "options": [
-        {"id": "n3-2023-07-v-05-a", "text": "たいいん", "isCorrect": true},
-        {"id": "n3-2023-07-v-05-b", "text": "たんいん", "isCorrect": false},
-        {"id": "n3-2023-07-v-05-c", "text": "だいいん", "isCorrect": false},
-        {"id": "n3-2023-07-v-05-d", "text": "だんいん", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-05-a",
+          "text": "たいいん",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-05-b",
+          "text": "たんいん",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-05-c",
+          "text": "だいいん",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-05-d",
+          "text": "だんいん",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-05-a",
-      "explanation": "退院（たいいん）＝出院。「退（たい）」清音。反義：入院（にゅういん）＝住院。",
-      "tags": ["reading", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：退院（たいいん）＝出院。「退」讀「たい」，「院」讀「いん」，皆為清音；反義詞是入院（にゅういん）。\n【選項解析】\n○1 たいいん：退院＝出院，「明日、退院する」語意正確\n×2 たんいん：無此詞；「退」不讀「たん」\n×3 だいいん：無此詞；「退」是清音「たい」，不濁化\n×4 だんいん：無此詞；「退」不讀「だん」",
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 1,
       "problemLabel": "漢字読み"
     },
@@ -115,14 +215,34 @@
       "questionText": "パーティーには夫婦で参加します。",
       "questionTranslation": "夫妻一起參加派對。",
       "options": [
-        {"id": "n3-2023-07-v-06-a", "text": "ふうふう", "isCorrect": false},
-        {"id": "n3-2023-07-v-06-b", "text": "ふうふ", "isCorrect": true},
-        {"id": "n3-2023-07-v-06-c", "text": "ふうう", "isCorrect": false},
-        {"id": "n3-2023-07-v-06-d", "text": "ふふ", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-06-a",
+          "text": "ふうふう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-06-b",
+          "text": "ふうふ",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-06-c",
+          "text": "ふうう",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-06-d",
+          "text": "ふふ",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-06-b",
-      "explanation": "夫婦（ふうふ）＝夫妻、夫妻倆。「夫（ふう）」「婦（ふ）」。注意不是「ふうふう」（哈氣聲）也不是「ふふ」。",
-      "tags": ["reading", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：夫婦（ふうふ）＝夫妻。「夫」在此讀「ふう」（長音），「婦」讀「ふ」，合起來「ふうふ」；容易誤讀成重複音。\n【選項解析】\n×1 ふうふう：擬態語（吹氣、喘氣貌），不是「夫婦」\n○2 ふうふ：夫婦＝夫妻，「夫婦で参加します」＝夫妻一起參加\n×3 ふうう：無此詞\n×4 ふふ：無此詞；「夫」要讀長音「ふう」",
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 1,
       "problemLabel": "漢字読み"
     },
@@ -135,14 +255,34 @@
       "questionText": "留守の間に誰か来たようだ。",
       "questionTranslation": "在不在家的時間裡好像有人來了。",
       "options": [
-        {"id": "n3-2023-07-v-07-a", "text": "るしゅ", "isCorrect": false},
-        {"id": "n3-2023-07-v-07-b", "text": "るす", "isCorrect": true},
-        {"id": "n3-2023-07-v-07-c", "text": "りゅうす", "isCorrect": false},
-        {"id": "n3-2023-07-v-07-d", "text": "りゅうしゅ", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-07-a",
+          "text": "るしゅ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-07-b",
+          "text": "るす",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-07-c",
+          "text": "りゅうす",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-07-d",
+          "text": "りゅうしゅ",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-07-b",
-      "explanation": "留守（るす）＝不在家、外出中。「留守番（るすばん）」＝看家。注意讀法「る・す」，不是「りゅうす」。",
-      "tags": ["reading", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：留守（るす）＝不在家。屬於特殊讀音，「留」讀「る」、「守」讀「す」；常見「留守番（るすばん）」「留守電」。\n【選項解析】\n×1 るしゅ：「守」在此不讀「しゅ」，無此詞\n○2 るす：留守＝外出不在家，「留守の間に誰か来た」＝不在家時有人來過\n×3 りゅうす：無此詞；「留」讀「りゅう」是別的詞（留学）的讀法，此處不用\n×4 りゅうしゅ：無此詞",
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 1,
       "problemLabel": "漢字読み"
     },
@@ -155,14 +295,34 @@
       "questionText": "これは、とても高価な花瓶だそうです。",
       "questionTranslation": "聽說這是非常昂貴的花瓶。",
       "options": [
-        {"id": "n3-2023-07-v-08-a", "text": "こうか", "isCorrect": true},
-        {"id": "n3-2023-07-v-08-b", "text": "ごうか", "isCorrect": false},
-        {"id": "n3-2023-07-v-08-c", "text": "こうが", "isCorrect": false},
-        {"id": "n3-2023-07-v-08-d", "text": "ごうが", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-08-a",
+          "text": "こうか",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-08-b",
+          "text": "ごうか",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-08-c",
+          "text": "こうが",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-08-d",
+          "text": "ごうが",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-08-a",
-      "explanation": "高価（こうか）＝高價、昂貴。「高（こう）」清音，「価（か）」清音。勿混淆「豪華（ごうか）」＝豪華（是指奢華，非高價）。",
-      "tags": ["reading", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：高価（こうか）＝價格高、昂貴。「高」讀「こう」、「価」讀「か」皆清音；陷阱是濁音的「ごうか（豪華）」＝華麗，意思不同。\n【選項解析】\n○1 こうか：高価＝高價，「高価な花瓶」＝昂貴的花瓶\n×2 ごうか：豪華（ごうか）＝豪華，是另一個詞，漢字不同\n×3 こうが：無此詞；「価」是「か」，不濁化\n×4 ごうが：無此詞",
+      "tags": [
+        "reading",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 1,
       "problemLabel": "漢字読み"
     },
@@ -175,14 +335,34 @@
       "questionText": "彼はたんきだ。",
       "questionTranslation": "他很暴躁。",
       "options": [
-        {"id": "n3-2023-07-v-09-a", "text": "男気", "isCorrect": false},
-        {"id": "n3-2023-07-v-09-b", "text": "単気", "isCorrect": false},
-        {"id": "n3-2023-07-v-09-c", "text": "短気", "isCorrect": true},
-        {"id": "n3-2023-07-v-09-d", "text": "断気", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-09-a",
+          "text": "男気",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-09-b",
+          "text": "単気",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-09-c",
+          "text": "短気",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-09-d",
+          "text": "断気",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-09-c",
-      "explanation": "短気（たんき）＝性急、暴躁易怒。「短（たん）」＝短，「気（き）」＝性格，即「性子短」→暴躁。反義：気が長い＝有耐心。",
-      "tags": ["writing", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：短気（たんき）＝性急、沒耐心、易怒。「短い」＋「気」，反義是「気が長い」。其他選項是形近的漢字，不成詞。\n【選項解析】\n×1 男気：「おとこぎ」，指男子氣概，讀音不同\n×2 単気：無此詞\n○3 短気：性子急、易發脾氣，「彼は短気だ」＝他性子急\n×4 断気：無此詞",
+      "tags": [
+        "writing",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 2,
       "problemLabel": "漢字表記"
     },
@@ -191,18 +371,38 @@
       "level": "N3",
       "category": "vocabulary",
       "type": "sentence-fill",
-      "prompt": "【問題2 漢字】下線部のことばを漢字で書くとき、最もよいものを選びなさい。",
+      "prompt": "【問題2 漢字】＿＿のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
       "questionText": "上田さんは少ししんぱいしているようだ。",
-      "questionTranslation": "上田先生好像有點擔心。",
+      "questionTranslation": "",
       "options": [
-        {"id": "n3-2023-07-v-10-a", "text": "心静", "isCorrect": false},
-        {"id": "n3-2023-07-v-10-b", "text": "心配", "isCorrect": true},
-        {"id": "n3-2023-07-v-10-c", "text": "信配", "isCorrect": false},
-        {"id": "n3-2023-07-v-10-d", "text": "信静", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-10-a",
+          "text": "心酔",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-10-b",
+          "text": "心配",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-10-c",
+          "text": "信配",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-10-d",
+          "text": "信酔",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-10-b",
-      "explanation": "心配（しんぱい）＝擔心、掛念。「心（しん）」「配（ぱい→はい）」。慣用：心配する＝擔心、心配事（しんぱいごと）＝煩惱。",
-      "tags": ["writing", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：心配（しんぱい）＝擔心。「配」在此濁化為「ぱい」要整體記；注意「信」「心」的形近混淆，「心酔」是另一個詞。\n【選項解析】\n×1 心酔：心酔（しんすい）＝心醉、傾倒，讀音意思皆不同\n○2 心配：擔心，「少し心配している」語意通順\n×3 信配：無此詞\n×4 信酔：無此詞",
+      "tags": [
+        "writing",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 2,
       "problemLabel": "漢字表記"
     },
@@ -211,18 +411,38 @@
       "level": "N3",
       "category": "vocabulary",
       "type": "sentence-fill",
-      "prompt": "【問題2 漢字】下線部のことばを漢字で書くとき、最もよいものを選びなさい。",
-      "questionText": "次はこれをたいてください。",
-      "questionTranslation": "接下來請煮這個（飯）。",
+      "prompt": "【問題2 漢字】＿＿のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+      "questionText": "次はこれをやいてください。",
+      "questionTranslation": "",
       "options": [
-        {"id": "n3-2023-07-v-11-a", "text": "焼いて", "isCorrect": false},
-        {"id": "n3-2023-07-v-11-b", "text": "燃いて", "isCorrect": false},
-        {"id": "n3-2023-07-v-11-c", "text": "煙いて", "isCorrect": false},
-        {"id": "n3-2023-07-v-11-d", "text": "炊いて", "isCorrect": true}
+        {
+          "id": "n3-2023-07-v-11-a",
+          "text": "焼いて",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-11-b",
+          "text": "燃いて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-11-c",
+          "text": "煙いて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-11-d",
+          "text": "炊いて",
+          "isCorrect": false
+        }
       ],
-      "correctAnswer": "n3-2023-07-v-11-d",
-      "explanation": "炊く（たく）＝炊煮（米飯）。「炊飯器（すいはんき）」＝電鍋。「焼く（やく）」是烤/煎，讀音「やいて」，與本題「たいて」不同。",
-      "tags": ["writing", "kanji", "n3-vocab"],
+      "correctAnswer": "n3-2023-07-v-11-a",
+      "explanation": "💡 重點：「やく」寫作「焼く」＝烤、燒、煎，「やいて」是其て形。「炊く（たく）」是煮飯，讀音不同；「燃」「煙」都不能這樣讀。\n【選項解析】\n○1 焼いて：焼く（やく）＝烤、煎、燒，て形「焼いて」讀やいて\n×2 燃いて：「燃」讀「もえる／もやす」，沒有「やいて」的用法\n×3 煙いて：「煙」讀「けむり」，無此動詞用法\n×4 炊いて：炊く（たく）＝煮（飯），て形讀「たいて」，不是「やいて」",
+      "tags": [
+        "writing",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 2,
       "problemLabel": "漢字表記"
     },
@@ -235,14 +455,34 @@
       "questionText": "明日、かならず来てください。",
       "questionTranslation": "明天請務必來。",
       "options": [
-        {"id": "n3-2023-07-v-12-a", "text": "確ず", "isCorrect": false},
-        {"id": "n3-2023-07-v-12-b", "text": "要ず", "isCorrect": false},
-        {"id": "n3-2023-07-v-12-c", "text": "必ず", "isCorrect": true},
-        {"id": "n3-2023-07-v-12-d", "text": "直ず", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-12-a",
+          "text": "確ず",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-12-b",
+          "text": "要ず",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-12-c",
+          "text": "必ず",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-12-d",
+          "text": "直ず",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-12-c",
-      "explanation": "必ず（かならず）＝一定、務必。「必（かなら）」的訓讀。「決して〜ない」和「必ず」都表達強調，但前者接否定，後者接肯定。",
-      "tags": ["writing", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：必ず（かならず）＝一定、務必，常見於「必ず〜てください」。注意「必」字，其他選項是形近或語意相近的虛構字。\n【選項解析】\n×1 確ず：無此詞；「確か（たしか）」才用「確」\n×2 要ず：無此詞；「要」讀「よう／かなめ」\n○3 必ず：一定、務必，「かならず来てください」＝請一定要來\n×4 直ず：無此詞；「直」讀「なおす／ちょく」",
+      "tags": [
+        "writing",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 2,
       "problemLabel": "漢字表記"
     },
@@ -255,14 +495,34 @@
       "questionText": "私の学校はせいふくがありません。",
       "questionTranslation": "我的學校沒有制服。",
       "options": [
-        {"id": "n3-2023-07-v-13-a", "text": "清衣", "isCorrect": false},
-        {"id": "n3-2023-07-v-13-b", "text": "制衣", "isCorrect": false},
-        {"id": "n3-2023-07-v-13-c", "text": "清服", "isCorrect": false},
-        {"id": "n3-2023-07-v-13-d", "text": "制服", "isCorrect": true}
+        {
+          "id": "n3-2023-07-v-13-a",
+          "text": "清衣",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-13-b",
+          "text": "制衣",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-13-c",
+          "text": "清服",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-13-d",
+          "text": "制服",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2023-07-v-13-d",
-      "explanation": "制服（せいふく）＝制服、校服。「制（せい）」＋「服（ふく）」。「清」讀「せい/きよ」，「清服」不存在。",
-      "tags": ["writing", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：制服（せいふく）＝制服。「制」是制度、規定之意，「服」是衣服；「制」「清」字形易混。\n【選項解析】\n×1 清衣：無此詞\n×2 制衣：無此詞；衣服類詞彙需配「服」\n×3 清服：無此詞；「清」讀「せい／きよい」，不是制服\n○4 制服：校服、制服，「学校にせいふくがない」＝學校沒有制服",
+      "tags": [
+        "writing",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 2,
       "problemLabel": "漢字表記"
     },
@@ -275,14 +535,34 @@
       "questionText": "探していたやっきょくが、やっと見つかりました。",
       "questionTranslation": "一直在找的藥局，終於找到了。",
       "options": [
-        {"id": "n3-2023-07-v-14-a", "text": "薬局", "isCorrect": true},
-        {"id": "n3-2023-07-v-14-b", "text": "栗曲", "isCorrect": false},
-        {"id": "n3-2023-07-v-14-c", "text": "楽局", "isCorrect": false},
-        {"id": "n3-2023-07-v-14-d", "text": "楽曲", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-14-a",
+          "text": "薬局",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-14-b",
+          "text": "栗曲",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-14-c",
+          "text": "楽局",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-14-d",
+          "text": "楽曲",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-14-a",
-      "explanation": "薬局（やっきょく）＝藥局、藥房。「薬（やく）」「局（きょく）」→連濁為やっきょく。注意「楽曲（がっきょく）」是樂曲，讀音不同。",
-      "tags": ["writing", "kanji", "n3-vocab"],
+      "explanation": "💡 重點：薬局（やっきょく）＝藥局。「薬（やく）」＋「局（きょく）」，因促音化變成「やっきょく」；陷阱是讀音相近的「楽曲（がっきょく）」。\n【選項解析】\n○1 薬局：藥局，「探していた薬局が見つかった」語意通順\n×2 栗曲：無此詞；「栗」是栗子、「曲」是曲調，字形近似的虛構\n×3 楽局：無此詞；「楽」與「薬」形近\n×4 楽曲：楽曲（がっきょく）＝樂曲，讀音不同、意思也不合",
+      "tags": [
+        "writing",
+        "kanji",
+        "n3-vocab"
+      ],
       "problemNumber": 2,
       "problemLabel": "漢字表記"
     },
@@ -295,14 +575,34 @@
       "questionText": "雨が降ってきましたが、私の家は近いので、傘がなくても（　）です。",
       "questionTranslation": "雖然下雨了，但因為我家很近，所以沒有雨傘也（　　）。",
       "options": [
-        {"id": "n3-2023-07-v-15-a", "text": "平気", "isCorrect": true},
-        {"id": "n3-2023-07-v-15-b", "text": "安全", "isCorrect": false},
-        {"id": "n3-2023-07-v-15-c", "text": "正常", "isCorrect": false},
-        {"id": "n3-2023-07-v-15-d", "text": "十分", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-15-a",
+          "text": "平気",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-15-b",
+          "text": "安全",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-15-c",
+          "text": "正常",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-15-d",
+          "text": "十分",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-15-a",
-      "explanation": "平気（へいき）＝沒關係、不在乎。「雨でも平気」＝下雨也無所謂。「安全」是安全，「正常」是正常，「十分」是充分，都不符合「沒差/不在意」的語意。",
-      "tags": ["vocabulary", "context", "n3-vocab"],
+      "explanation": "💡 重點：平気（へいき）＝不在乎、沒關係、無所謂。「傘がなくても平気」表示「沒有傘也沒關係」。其他詞無法表達這種態度。\n【選項解析】\n○1 平気：不在意、沒問題，「傘がなくても平気だ」＝沒傘也沒關係\n×2 安全：安全，指沒有危險；沒傘與安全與否無關，語意不通\n×3 正常：正常，指狀態如常；不能用來表示「沒傘也無所謂」\n×4 十分：充分、足夠；「傘がなくても十分だ」搭配不自然",
+      "tags": [
+        "vocabulary",
+        "context",
+        "n3-vocab"
+      ],
       "problemNumber": 3,
       "problemLabel": "文脈規定"
     },
@@ -315,14 +615,34 @@
       "questionText": "仕事で疲れているときは、夕飯を作るのが（　）ので、外食することが多い。",
       "questionTranslation": "工作疲憊的時候，因為做晚飯（　　），所以常常外食。",
       "options": [
-        {"id": "n3-2023-07-v-16-a", "text": "だらしない", "isCorrect": false},
-        {"id": "n3-2023-07-v-16-b", "text": "めんどうくさい", "isCorrect": true},
-        {"id": "n3-2023-07-v-16-c", "text": "くわしい", "isCorrect": false},
-        {"id": "n3-2023-07-v-16-d", "text": "にくらしい", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-16-a",
+          "text": "だらしない",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-16-b",
+          "text": "めんどうくさい",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-16-c",
+          "text": "くわしい",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-16-d",
+          "text": "にくらしい",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-16-b",
-      "explanation": "めんどうくさい＝麻煩、懶得做。疲累時嫌做飯麻煩→外食。「だらしない」＝邋遢；「くわしい」＝詳細了解；「にくらしい」＝討厭、可恨。",
-      "tags": ["vocabulary", "context", "n3-vocab"],
+      "explanation": "💡 重點：面倒くさい（めんどうくさい）＝嫌麻煩、懶得做。「疲れているとき〜作るのが（　）ので外食」＝累時嫌做飯麻煩。形容詞的語意要符合因果。\n【選項解析】\n×1 だらしない：散漫、邋遢；不能形容「做飯這件事」本身\n○2 めんどうくさい：麻煩、懶得做，因覺得麻煩所以外食，因果通順\n×3 くわしい：詳細、熟悉；「作るのがくわしい」不通\n×4 にくらしい：可恨、討人厭；與疲累而外食的因果不合",
+      "tags": [
+        "vocabulary",
+        "context",
+        "n3-vocab"
+      ],
       "problemNumber": 3,
       "problemLabel": "文脈規定"
     },
@@ -335,14 +655,34 @@
       "questionText": "ゆうべはほとんど寝ていないので、今日は眠くて何度も（　）が出てしまう。",
       "questionTranslation": "昨晚幾乎沒睡，今天因為太睏，一直打（　　）。",
       "options": [
-        {"id": "n3-2023-07-v-17-a", "text": "しゃっくり", "isCorrect": false},
-        {"id": "n3-2023-07-v-17-b", "text": "くしゃみ", "isCorrect": false},
-        {"id": "n3-2023-07-v-17-c", "text": "せき", "isCorrect": false},
-        {"id": "n3-2023-07-v-17-d", "text": "あくび", "isCorrect": true}
+        {
+          "id": "n3-2023-07-v-17-a",
+          "text": "しゃっくり",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-17-b",
+          "text": "くしゃみ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-17-c",
+          "text": "せき",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-17-d",
+          "text": "あくび",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2023-07-v-17-d",
-      "explanation": "あくび＝哈欠、打呵欠。眠くてあくびが出る＝因為瞌睡打哈欠。「しゃっくり」＝打嗝；「くしゃみ」＝打噴嚏；「せき」＝咳嗽。",
-      "tags": ["vocabulary", "context", "n3-vocab"],
+      "explanation": "💡 重點：あくびが出る＝打哈欠，是固定搭配。睡眠不足時打哈欠；其他生理現象（嗝、噴嚏、咳嗽）與睏無關。\n【選項解析】\n×1 しゃっくり：打嗝，與睏無關，且搭配是「しゃっくりが出る」但語意不合\n×2 くしゃみ：打噴嚏，與感冒、過敏有關，與睏無關\n×3 せき：咳嗽，與睏無關\n○4 あくび：哈欠，「眠くてあくびが出る」＝因為睏而打哈欠",
+      "tags": [
+        "vocabulary",
+        "context",
+        "n3-vocab"
+      ],
       "problemNumber": 3,
       "problemLabel": "文脈規定"
     },
@@ -355,14 +695,34 @@
       "questionText": "「私の国の社会問題」という（　）で、レポートを書くことになった。",
       "questionTranslation": "以「我國的社會問題」為（　　），寫了一篇報告。",
       "options": [
-        {"id": "n3-2023-07-v-18-a", "text": "デザイン", "isCorrect": false},
-        {"id": "n3-2023-07-v-18-b", "text": "テーマ", "isCorrect": true},
-        {"id": "n3-2023-07-v-18-c", "text": "サイン", "isCorrect": false},
-        {"id": "n3-2023-07-v-18-d", "text": "ルール", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-18-a",
+          "text": "デザイン",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-18-b",
+          "text": "テーマ",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-18-c",
+          "text": "サイン",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-18-d",
+          "text": "ルール",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-18-b",
-      "explanation": "テーマ（theme）＝主題、題目。報告的主題（テーマ）用「私の国の社会問題」。「デザイン」＝設計；「サイン」＝簽名；「ルール」＝規則。",
-      "tags": ["vocabulary", "context", "n3-vocab"],
+      "explanation": "💡 重點：テーマ＝主題、題目。「〜というテーマでレポートを書く」是固定說法。其他外來語意思都不符。\n【選項解析】\n×1 デザイン：設計；「という設計で報告」不通\n○2 テーマ：主題，「私の国の社会問題というテーマ」＝以我國社會問題為主題\n×3 サイン：簽名、記號；不能作為報告內容\n×4 ルール：規則；與報告題目無關",
+      "tags": [
+        "vocabulary",
+        "context",
+        "n3-vocab"
+      ],
       "problemNumber": 3,
       "problemLabel": "文脈規定"
     },
@@ -375,14 +735,34 @@
       "questionText": "この季節は、昼と夜の気温の（　）が大きい。",
       "questionTranslation": "這個季節，白天和夜晚的氣溫（　　）很大。",
       "options": [
-        {"id": "n3-2023-07-v-19-a", "text": "台", "isCorrect": false},
-        {"id": "n3-2023-07-v-19-b", "text": "段", "isCorrect": false},
-        {"id": "n3-2023-07-v-19-c", "text": "差", "isCorrect": true},
-        {"id": "n3-2023-07-v-19-d", "text": "列", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-19-a",
+          "text": "台",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-19-b",
+          "text": "段",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-19-c",
+          "text": "差",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-19-d",
+          "text": "列",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-19-c",
-      "explanation": "差（さ）＝差距、差異。「気温の差が大きい」＝溫差大。「温度差（おんどさ）」是N3常考詞。「台・段・列」都不能表示「差距」。",
-      "tags": ["vocabulary", "context", "n3-vocab"],
+      "explanation": "💡 重點：「気温の差」＝氣溫差。「差（さ）」表示差距，「差が大きい」是常見搭配；台、段、列是量詞或排列詞，不表示差異。\n【選項解析】\n×1 台：量詞（車、機器）或台座，不表示差距\n×2 段：段、階段、等級；「気温の段」不成立\n○3 差：差距，「昼と夜の気温の差が大きい」＝日夜溫差大\n×4 列：隊列，「気温の列」不成立",
+      "tags": [
+        "vocabulary",
+        "context",
+        "n3-vocab"
+      ],
       "problemNumber": 3,
       "problemLabel": "文脈規定"
     },
@@ -395,14 +775,34 @@
       "questionText": "（　）して、鍵をかけないで家を出てしまった。",
       "questionTranslation": "（　　）了，沒鎖門就出門了。",
       "options": [
-        {"id": "n3-2023-07-v-20-a", "text": "はっきり", "isCorrect": false},
-        {"id": "n3-2023-07-v-20-b", "text": "しっかり", "isCorrect": false},
-        {"id": "n3-2023-07-v-20-c", "text": "ぴったり", "isCorrect": false},
-        {"id": "n3-2023-07-v-20-d", "text": "うっかり", "isCorrect": true}
+        {
+          "id": "n3-2023-07-v-20-a",
+          "text": "はっきり",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-20-b",
+          "text": "しっかり",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-20-c",
+          "text": "ぴったり",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-20-d",
+          "text": "うっかり",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2023-07-v-20-d",
-      "explanation": "うっかり＝不小心、一時疏忽。うっかりして鍵を忘れる＝一不留神忘了鎖門。「はっきり」＝清楚；「しっかり」＝確實、緊緊地；「ぴったり」＝剛好、緊貼。",
-      "tags": ["vocabulary", "context", "n3-vocab"],
+      "explanation": "💡 重點：うっかり（する）＝一不留神、不小心。後句「鍵をかけないで出てしまった」是無意中的疏忽，正好符合；其他副詞缺少「疏忽」的意思。\n【選項解析】\n×1 はっきり：清楚、明確；「はっきりして」不能表示疏忽\n×2 しっかり：牢牢地、確實；與忘記鎖門語意相反\n×3 ぴったり：剛好、緊貼；語意不合\n○4 うっかり：一時疏忽，「うっかりして鍵をかけないで出てしまった」通順",
+      "tags": [
+        "vocabulary",
+        "context",
+        "n3-vocab"
+      ],
       "problemNumber": 3,
       "problemLabel": "文脈規定"
     },
@@ -415,14 +815,34 @@
       "questionText": "まだ空席が少しあるので、今なら予約は（　）です。",
       "questionTranslation": "還有少許空位，現在的話預約（　　）。",
       "options": [
-        {"id": "n3-2023-07-v-21-a", "text": "完全", "isCorrect": false},
-        {"id": "n3-2023-07-v-21-b", "text": "無駄", "isCorrect": false},
-        {"id": "n3-2023-07-v-21-c", "text": "可能", "isCorrect": true},
-        {"id": "n3-2023-07-v-21-d", "text": "平等", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-21-a",
+          "text": "完全",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-21-b",
+          "text": "無駄",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-21-c",
+          "text": "可能",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-21-d",
+          "text": "平等",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-21-c",
-      "explanation": "可能（かのう）＝可能、辦得到。「予約が可能」＝可以預約。「完全」＝完全；「無駄」＝浪費、白費；「平等」＝平等。",
-      "tags": ["vocabulary", "context", "n3-vocab"],
+      "explanation": "💡 重點：可能（かのう）＝可能、可以。「予約は可能です」＝可以預約；注意與前半「空席が少しある」的因果關係。\n【選項解析】\n×1 完全：完全、完整；「予約は完全です」不通\n×2 無駄：白費、浪費；與還有空位可以預約矛盾\n○3 可能：可以辦到，因為還有空位，所以現在預約是可行的\n×4 平等：平等；與預約無關",
+      "tags": [
+        "vocabulary",
+        "context",
+        "n3-vocab"
+      ],
       "problemNumber": 3,
       "problemLabel": "文脈規定"
     },
@@ -435,14 +855,34 @@
       "questionText": "私のパソコンは古いので、（　）が遅い。",
       "questionTranslation": "我的電腦很舊，所以（　　）很慢。",
       "options": [
-        {"id": "n3-2023-07-v-22-a", "text": "行動", "isCorrect": false},
-        {"id": "n3-2023-07-v-22-b", "text": "活動", "isCorrect": false},
-        {"id": "n3-2023-07-v-22-c", "text": "動作", "isCorrect": true},
-        {"id": "n3-2023-07-v-22-d", "text": "運動", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-22-a",
+          "text": "行動",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-22-b",
+          "text": "活動",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-22-c",
+          "text": "動作",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-22-d",
+          "text": "運動",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-22-c",
-      "explanation": "動作（どうさ）＝運作、動作。「パソコンの動作が遅い」＝電腦運作緩慢。「行動」＝行動（人的）；「活動」＝活動；「運動」＝運動（身體）。",
-      "tags": ["vocabulary", "context", "n3-vocab"],
+      "explanation": "💡 重點：動作（どうさ）＝（機器的）運作、動作。「パソコンの動作が遅い」是電腦跑得慢的固定說法；「行動」「活動」「運動」主體多是人。\n【選項解析】\n×1 行動：行動，指人的行為；不用於電腦\n×2 活動：活動；「パソコンの活動」不自然\n○3 動作：機器或身體的動作，「動作が遅い」＝運作慢\n×4 運動：運動、體育活動；不能形容電腦",
+      "tags": [
+        "vocabulary",
+        "context",
+        "n3-vocab"
+      ],
       "problemNumber": 3,
       "problemLabel": "文脈規定"
     },
@@ -455,14 +895,34 @@
       "questionText": "来週の説明会は、今日の12時が申し込みの（　）だ。",
       "questionTranslation": "下週說明會的報名（　　）是今天中午12點。",
       "options": [
-        {"id": "n3-2023-07-v-23-a", "text": "期限", "isCorrect": true},
-        {"id": "n3-2023-07-v-23-b", "text": "期間", "isCorrect": false},
-        {"id": "n3-2023-07-v-23-c", "text": "日程", "isCorrect": false},
-        {"id": "n3-2023-07-v-23-d", "text": "日常", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-23-a",
+          "text": "期限",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-23-b",
+          "text": "期間",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-23-c",
+          "text": "日程",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-23-d",
+          "text": "日常",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-23-a",
-      "explanation": "期限（きげん）＝期限、截止時間。「申し込みの期限」＝報名截止。「期間」＝期間（一段時間）；「日程」＝日程、行程；「日常」＝日常。",
-      "tags": ["vocabulary", "context", "n3-vocab"],
+      "explanation": "💡 重點：期限（きげん）＝期限、截止日。「申し込みの期限」是固定搭配，指「最後的時間點」；「期間」指一段時間，不是截止點。\n【選項解析】\n○1 期限：截止期限，「今日の12時が申し込みの期限だ」＝今天12點是報名截止\n×2 期間：期間，指一段時間；與「12時」這個時間點不搭\n×3 日程：日程、行程表；不是截止點\n×4 日常：日常、平常；語意不合",
+      "tags": [
+        "vocabulary",
+        "context",
+        "n3-vocab"
+      ],
       "problemNumber": 3,
       "problemLabel": "文脈規定"
     },
@@ -475,14 +935,34 @@
       "questionText": "外国で生活するのは楽しいが、ときどき国の料理が（　）なる。",
       "questionTranslation": "在外國生活雖然有趣，但有時會（　　）國內的料理。",
       "options": [
-        {"id": "n3-2023-07-v-24-a", "text": "恋しく", "isCorrect": true},
-        {"id": "n3-2023-07-v-24-b", "text": "親しく", "isCorrect": false},
-        {"id": "n3-2023-07-v-24-c", "text": "苦しく", "isCorrect": false},
-        {"id": "n3-2023-07-v-24-d", "text": "貧しく", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-24-a",
+          "text": "恋しく",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-24-b",
+          "text": "親しく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-24-c",
+          "text": "苦しく",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-24-d",
+          "text": "貧しく",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-24-a",
-      "explanation": "恋しい（こいしい）＝想念的、令人懷念的。「国の料理が恋しくなる」＝開始想念家鄉的食物。「親しい」＝親近；「苦しい」＝痛苦；「貧しい」＝貧窮。",
-      "tags": ["vocabulary", "context", "n3-vocab"],
+      "explanation": "💡 重點：恋しい（こいしい）＝思念、懷念。「国の料理が恋しくなる」＝開始想念家鄉菜。其他形容詞雖形似（し形容詞），語意皆不符。\n【選項解析】\n○1 恋しく：思念的，「恋しくなる」＝變得想念，符合「在國外想家鄉料理」\n×2 親しく：親近、親密；用於人際關係，不能接料理\n×3 苦しく：痛苦、難受；與想念料理語意不合\n×4 貧しく：貧窮；與料理無關",
+      "tags": [
+        "vocabulary",
+        "context",
+        "n3-vocab"
+      ],
       "problemNumber": 3,
       "problemLabel": "文脈規定"
     },
@@ -495,14 +975,34 @@
       "questionText": "夫とは、3年間（　）から結婚しました。",
       "questionTranslation": "和丈夫（　　）了3年之後結婚了。",
       "options": [
-        {"id": "n3-2023-07-v-25-a", "text": "取り囲んで", "isCorrect": false},
-        {"id": "n3-2023-07-v-25-b", "text": "引き受けて", "isCorrect": false},
-        {"id": "n3-2023-07-v-25-c", "text": "思いついて", "isCorrect": false},
-        {"id": "n3-2023-07-v-25-d", "text": "付き合って", "isCorrect": true}
+        {
+          "id": "n3-2023-07-v-25-a",
+          "text": "取り囲んで",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-25-b",
+          "text": "引き受けて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-25-c",
+          "text": "思いついて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-25-d",
+          "text": "付き合って",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2023-07-v-25-d",
-      "explanation": "付き合う（つきあう）＝交往、約會。「3年間付き合ってから結婚」＝交往3年後結婚。「取り囲む」＝包圍；「引き受ける」＝接受、承擔；「思いつく」＝想到、浮現。",
-      "tags": ["vocabulary", "context", "n3-vocab"],
+      "explanation": "💡 重點：付き合う（つきあう）＝交往、來往。「3年間付き合ってから結婚した」是自然順序；其他動詞都不能與「夫」「結婚」連接。\n【選項解析】\n×1 取り囲んで：包圍；不能表示與丈夫的關係\n×2 引き受けて：接受、承擔；與「3年間〜から結婚」不通\n×3 思いついて：想到、突然想起；語意不合\n○4 付き合って：交往，「夫と3年間付き合ってから結婚した」通順",
+      "tags": [
+        "vocabulary",
+        "context",
+        "n3-vocab"
+      ],
       "problemNumber": 3,
       "problemLabel": "文脈規定"
     },
@@ -515,14 +1015,34 @@
       "questionText": "その部屋にある家具のサイズを聞いてきてください。",
       "questionTranslation": "請去詢問那個房間的家具（　　）。",
       "options": [
-        {"id": "n3-2023-07-v-26-a", "text": "重さ", "isCorrect": false},
-        {"id": "n3-2023-07-v-26-b", "text": "数", "isCorrect": false},
-        {"id": "n3-2023-07-v-26-c", "text": "形", "isCorrect": false},
-        {"id": "n3-2023-07-v-26-d", "text": "大きさ", "isCorrect": true}
+        {
+          "id": "n3-2023-07-v-26-a",
+          "text": "重さ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-26-b",
+          "text": "数",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-26-c",
+          "text": "形",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-26-d",
+          "text": "大きさ",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2023-07-v-26-d",
-      "explanation": "サイズ（size）＝尺寸、大小 → 大きさ。「サイズを聞く」＝詢問尺寸大小。「重さ」＝重量；「数」＝數量；「形」＝形狀。",
-      "tags": ["vocabulary", "synonym", "n3-vocab"],
+      "explanation": "💡 重點：サイズ＝尺寸、大小，可用「大きさ」換說。其他選項（重量、數量、形狀）都不是尺寸。\n【選項解析】\n×1 重さ：重量；サイズ指大小，不是重量\n×2 数：數量；與大小不同\n×3 形：形狀；サイズ不是形狀\n○4 大きさ：大小，與「サイズ」同義，「家具のサイズを聞く」＝詢問家具的大小",
+      "tags": [
+        "vocabulary",
+        "synonym",
+        "n3-vocab"
+      ],
       "problemNumber": 4,
       "problemLabel": "類義語"
     },
@@ -535,14 +1055,34 @@
       "questionText": "この部分を暗記してください。",
       "questionTranslation": "請把這個部分（　　）。",
       "options": [
-        {"id": "n3-2023-07-v-27-a", "text": "読んで", "isCorrect": false},
-        {"id": "n3-2023-07-v-27-b", "text": "書いて", "isCorrect": false},
-        {"id": "n3-2023-07-v-27-c", "text": "覚えて", "isCorrect": true},
-        {"id": "n3-2023-07-v-27-d", "text": "教えて", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-27-a",
+          "text": "読んで",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-27-b",
+          "text": "書いて",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-27-c",
+          "text": "覚えて",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-27-d",
+          "text": "教えて",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-27-c",
-      "explanation": "暗記（あんき）＝背誦、記憶 → 覚える。「暗記する」是「完全記住」的意思，與「覚える（記住）」最接近。",
-      "tags": ["vocabulary", "synonym", "n3-vocab"],
+      "explanation": "💡 重點：暗記（あんき）する＝背下來、記住（用記憶學起來），最接近「覚える」。其他動詞不涉及「記住」這件事。\n【選項解析】\n×1 読んで：讀；暗記不只是閱讀\n×2 書いて：寫；暗記不等於書寫\n○3 覚えて：記住，與「暗記して」最接近\n×4 教えて：教、告知；與記憶方向相反",
+      "tags": [
+        "vocabulary",
+        "synonym",
+        "n3-vocab"
+      ],
       "problemNumber": 4,
       "problemLabel": "類義語"
     },
@@ -555,14 +1095,34 @@
       "questionText": "伊藤さんは魚を料理するのが得意なようだ。",
       "questionTranslation": "伊藤先生好像很（　　）做魚料理。",
       "options": [
-        {"id": "n3-2023-07-v-28-a", "text": "あまり好きじゃない", "isCorrect": false},
-        {"id": "n3-2023-07-v-28-b", "text": "あまり上手じゃない", "isCorrect": false},
-        {"id": "n3-2023-07-v-28-c", "text": "とても好きな", "isCorrect": false},
-        {"id": "n3-2023-07-v-28-d", "text": "とても上手な", "isCorrect": true}
+        {
+          "id": "n3-2023-07-v-28-a",
+          "text": "あまり好きじゃない",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-28-b",
+          "text": "あまり上手じゃない",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-28-c",
+          "text": "とても好きな",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-28-d",
+          "text": "とても上手な",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2023-07-v-28-d",
-      "explanation": "得意（とくい）＝擅長 → とても上手な。「得意」強調技能高超，選「とても上手な（非常在行）」。「とても好きな」只是喜歡，不一定擅長。",
-      "tags": ["vocabulary", "synonym", "n3-vocab"],
+      "explanation": "💡 重點：得意（とくい）な＝擅長、拿手。「料理するのが得意」＝很會做菜，可換成「とても上手な」。與「好き」不同，「得意」重點在技能高。\n【選項解析】\n×1 あまり好きじゃない：不太喜歡；與「得意」相反\n×2 あまり上手じゃない：不太擅長；與「得意」相反\n×3 とても好きな：非常喜歡；「得意」重點是技能，不是喜好\n○4 とても上手な：非常擅長，與「得意」同義",
+      "tags": [
+        "vocabulary",
+        "synonym",
+        "n3-vocab"
+      ],
       "problemNumber": 4,
       "problemLabel": "類義語"
     },
@@ -575,14 +1135,34 @@
       "questionText": "誰にでも欠点はあると思う。",
       "questionTranslation": "我認為每個人都有（　　）。",
       "options": [
-        {"id": "n3-2023-07-v-29-a", "text": "つまらないところ", "isCorrect": false},
-        {"id": "n3-2023-07-v-29-b", "text": "よくないところ", "isCorrect": true},
-        {"id": "n3-2023-07-v-29-c", "text": "間違えるところ", "isCorrect": false},
-        {"id": "n3-2023-07-v-29-d", "text": "忘れるところ", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-29-a",
+          "text": "つまらないところ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-29-b",
+          "text": "よくないところ",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-29-c",
+          "text": "間違えるところ",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-29-d",
+          "text": "忘れるところ",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-29-b",
-      "explanation": "欠点（けってん）＝缺點 → よくないところ（不好的地方）。「欠点」是「不足、缺陷」之意，與「よくないところ」最接近。",
-      "tags": ["vocabulary", "synonym", "n3-vocab"],
+      "explanation": "💡 重點：欠点（けってん）＝缺點、不足之處，可換成「よくないところ」。其他選項是不重要、出錯或遺忘，語意不符。\n【選項解析】\n×1 つまらないところ：無趣的地方；與缺點不完全相同\n○2 よくないところ：不好的地方，與「欠点」同義\n×3 間違えるところ：容易出錯的地方；只是缺點的一種，非同義\n×4 忘れるところ：容易忘記的地方；語意過窄",
+      "tags": [
+        "vocabulary",
+        "synonym",
+        "n3-vocab"
+      ],
       "problemNumber": 4,
       "problemLabel": "類義語"
     },
@@ -595,14 +1175,34 @@
       "questionText": "そんなにどならないでください。",
       "questionTranslation": "請不要那樣（　　）。",
       "options": [
-        {"id": "n3-2023-07-v-30-a", "text": "大声で怒らないで", "isCorrect": true},
-        {"id": "n3-2023-07-v-30-b", "text": "強く押さないで", "isCorrect": false},
-        {"id": "n3-2023-07-v-30-c", "text": "たくさん食べないで", "isCorrect": false},
-        {"id": "n3-2023-07-v-30-d", "text": "早く歩かないで", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-30-a",
+          "text": "大声で怒らないで",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-30-b",
+          "text": "強く押さないで",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-30-c",
+          "text": "たくさん食べないで",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-30-d",
+          "text": "早く歩かないで",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-30-a",
-      "explanation": "どなる＝大聲吼叫、大聲責罵 → 大声で怒る（大聲生氣）。「どなる」是指大聲呵斥、吼叫的意思。",
-      "tags": ["vocabulary", "synonym", "n3-vocab"],
+      "explanation": "💡 重點：どなる＝大聲吼叫、大聲斥罵。強調音量大且帶怒氣，換成「大声で怒る」最接近；其他選項是推、吃、走等動作，與聲音無關。\n【選項解析】\n○1 大声で怒らないで：大聲生氣；與「どならないで」同義\n×2 強く押さないで：不要用力推；與聲音無關\n×3 たくさん食べないで：不要吃太多；語意無關\n×4 早く歩かないで：不要走太快；語意無關",
+      "tags": [
+        "vocabulary",
+        "synonym",
+        "n3-vocab"
+      ],
       "problemNumber": 4,
       "problemLabel": "類義語"
     },
@@ -615,14 +1215,34 @@
       "questionText": "進歩",
       "questionTranslation": "進步",
       "options": [
-        {"id": "n3-2023-07-v-31-a", "text": "この会社は社長が一人で始めたが、今は大きな会社に進歩した。", "isCorrect": false},
-        {"id": "n3-2023-07-v-31-b", "text": "技術が進歩して、人々の生活は便利になった。", "isCorrect": true},
-        {"id": "n3-2023-07-v-31-c", "text": "病気が治って、食欲もだんだん進歩してきた。", "isCorrect": false},
-        {"id": "n3-2023-07-v-31-d", "text": "アパートの家賃が進歩して、来年から5000円高くなるそうだ。", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-31-a",
+          "text": "この会社は社長が一人で始めたが、今は大きな会社に進歩した。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-31-b",
+          "text": "技術が進歩して、人々の生活は便利になった。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-31-c",
+          "text": "病気が治って、食欲もだんだん進歩してきた。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-31-d",
+          "text": "アパートの家賃が進歩して、来年から5000円高くなるそうだ。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-31-b",
-      "explanation": "進歩（しんぽ）＝進步（技術・文明等持續改善）。技術が進歩する（技術進步）是標準用法。選A：「会社に進歩した」語意錯誤，應用「成長した」；選C：病気回復應用「回復した」；選D：家賃上漲應用「上がって」。",
-      "tags": ["vocabulary", "usage", "n3-vocab"],
+      "explanation": "💡 重點：進歩（しんぽ）＝進步，指技術、能力等往更好的方向前進。「技術が進歩する」是典型用法；規模變大要用「成長」，食慾要用「増す／出る」，租金要用「上がる」。\n【選項解析】\n×1 この会社は社長が一人で始めたが、今は大きな会社に進歩した。：公司變大是「成長した」，不是進歩\n○2 技術が進歩して、人々の生活は便利になった。：技術進步，生活變便利，用法正確\n×3 病気が治って、食欲もだんだん進歩してきた。：食慾恢復應用「出てきた」「戻ってきた」\n×4 アパートの家賃が進歩して、来年から5000円高くなるそうだ。：租金上漲應用「上がって」",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n3-vocab"
+      ],
       "problemNumber": 5,
       "problemLabel": "用法"
     },
@@ -635,14 +1255,34 @@
       "questionText": "話しかける",
       "questionTranslation": "主動跟人說話",
       "options": [
-        {"id": "n3-2023-07-v-32-a", "text": "昨日、駅で観光客に英語で話しかけられた。", "isCorrect": true},
-        {"id": "n3-2023-07-v-32-b", "text": "次の旅行の行き先は、家族と話しかけて決めようと思う。", "isCorrect": false},
-        {"id": "n3-2023-07-v-32-c", "text": "名前を話しかけるので、呼ばれた人は手を挙げてください。", "isCorrect": false},
-        {"id": "n3-2023-07-v-32-d", "text": "先輩にお土産をあげて、お礼を話しかけられました。", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-32-a",
+          "text": "昨日、駅で観光客に英語で話しかけられた。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-32-b",
+          "text": "次の旅行の行き先は、家族と話しかけて決めようと思う。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-32-c",
+          "text": "名前を話しかけるので、呼ばれた人は手を挙げてください。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-32-d",
+          "text": "先輩にお土産をあげて、お礼を話しかけられました。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-32-a",
-      "explanation": "話しかける＝主動跟某人搭話。「観光客に英語で話しかけられた」＝被觀光客用英文搭話（受身形）。選B應用「相談して」；選C應用「呼ぶ/名前を読む」；選D應用「言われました」。",
-      "tags": ["vocabulary", "usage", "n3-vocab"],
+      "explanation": "💡 重點：話しかける＝主動向人搭話，常用「Aに話しかける」，被動可說「話しかけられる」。與「相談する」「呼ぶ」「言う」用法不同。\n【選項解析】\n○1 昨日、駅で観光客に英語で話しかけられた。：昨天在車站被觀光客用英語搭話，用法正確\n×2 次の旅行の行き先は、家族と話しかけて決めようと思う。：與家人討論應用「相談して」「話し合って」\n×3 名前を話しかけるので、呼ばれた人は手を挙げてください。：叫名字應用「呼ぶ」\n×4 先輩にお土産をあげて、お礼を話しかけられました。：說謝謝應用「言われました」",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n3-vocab"
+      ],
       "problemNumber": 5,
       "problemLabel": "用法"
     },
@@ -655,14 +1295,34 @@
       "questionText": "交流",
       "questionTranslation": "交流、互動",
       "options": [
-        {"id": "n3-2023-07-v-33-a", "text": "二つの色が交流して、きれいなピンク色になりました。", "isCorrect": false},
-        {"id": "n3-2023-07-v-33-b", "text": "このドレッシングは、野菜と交流するとおいしいですね。", "isCorrect": false},
-        {"id": "n3-2023-07-v-33-c", "text": "息子の学校は、海外の人たちと交流する機会が多いようだ。", "isCorrect": true},
-        {"id": "n3-2023-07-v-33-d", "text": "この引き出しには、兄の物と私の物が交流している。", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-33-a",
+          "text": "二つの色が交流して、きれいなピンク色になりました。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-33-b",
+          "text": "このドレッシングは、野菜と交流するとおいしいですね。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-33-c",
+          "text": "息子の学校は、海外の人たちと交流する機会が多いようだ。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-33-d",
+          "text": "この引き出しには、兄の物と私の物が交流している。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-33-c",
-      "explanation": "交流（こうりゅう）＝（人や文化の）交流。「海外の人たちと交流する」＝與外國人進行交流。選A「色が交流」應用「混ざって」；選B「野菜と交流」應用「混ぜる」；選D應用「混ざっている」。",
-      "tags": ["vocabulary", "usage", "n3-vocab"],
+      "explanation": "💡 重點：交流（こうりゅう）＝人或團體之間互相往來、交流。「海外の人と交流する」是典型用法；色彩混合、食材拌在一起、物品放在一起都不是「交流」。\n【選項解析】\n×1 二つの色が交流して、きれいなピンク色になりました。：顏色混合應用「混ざって」\n×2 このドレッシングは、野菜と交流するとおいしいですね。：配菜吃應用「合う」「一緒に食べる」\n○3 息子の学校は、海外の人たちと交流する機会が多いようだ。：與外國人交流，用法正確\n×4 この引き出しには、兄の物と私の物が交流している。：東西混在一起應用「混ざっている」「入っている」",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n3-vocab"
+      ],
       "problemNumber": 5,
       "problemLabel": "用法"
     },
@@ -675,14 +1335,34 @@
       "questionText": "渋滞",
       "questionTranslation": "塞車、堵塞",
       "options": [
-        {"id": "n3-2023-07-v-34-a", "text": "新しい家の工事が渋滞していて、なかなか引っ越せない。", "isCorrect": false},
-        {"id": "n3-2023-07-v-34-b", "text": "事故で道が渋滞していたので、遅刻してしまった。", "isCorrect": true},
-        {"id": "n3-2023-07-v-34-c", "text": "最近仕事が忙しくて、ストレスが渋滞している。", "isCorrect": false},
-        {"id": "n3-2023-07-v-34-d", "text": "この商品はあまり売れないので、倉庫の中で渋滞している。", "isCorrect": false}
+        {
+          "id": "n3-2023-07-v-34-a",
+          "text": "新しい家の工事が渋滞していて、なかなか引っ越せない。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-34-b",
+          "text": "事故で道が渋滞していたので、遅刻してしまった。",
+          "isCorrect": true
+        },
+        {
+          "id": "n3-2023-07-v-34-c",
+          "text": "最近仕事が忙しくて、ストレスが渋滞している。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-34-d",
+          "text": "この商品はあまり売れないので、倉庫の中で渋滞している。",
+          "isCorrect": false
+        }
       ],
       "correctAnswer": "n3-2023-07-v-34-b",
-      "explanation": "渋滞（じゅうたい）＝（道路）塞車、交通堵塞。「道が渋滞する」是標準用法。選A「工事が渋滞」應用「遅れていて」；選C「ストレスが渋滞」語意不通；選D「倉庫で渋滞」應用「在庫が余っている」。",
-      "tags": ["vocabulary", "usage", "n3-vocab"],
+      "explanation": "💡 重點：渋滞（じゅうたい）＝塞車、停滯不前。最常用於「道が渋滞する」；工程延誤、壓力、庫存積壓不用「渋滞」。\n【選項解析】\n×1 新しい家の工事が渋滞していて、なかなか引っ越せない。：工程延誤應用「遅れて」\n○2 事故で道が渋滞していたので、遅刻してしまった。：因事故塞車而遲到，用法正確\n×3 最近仕事が忙しくて、ストレスが渋滞している。：壓力累積應用「たまっている」\n×4 この商品はあまり売れないので、倉庫の中で渋滞している。：貨品滯銷堆積應用「たまっている」「余っている」",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n3-vocab"
+      ],
       "problemNumber": 5,
       "problemLabel": "用法"
     },
@@ -695,14 +1375,34 @@
       "questionText": "にこにこ",
       "questionTranslation": "笑瞇瞇、微笑",
       "options": [
-        {"id": "n3-2023-07-v-35-a", "text": "ガソリンが少なくなって、車が途中で止まりそうでにこにこした。", "isCorrect": false},
-        {"id": "n3-2023-07-v-35-b", "text": "大勢の前で歌ったとき、緊張して胸がにこにこした。", "isCorrect": false},
-        {"id": "n3-2023-07-v-35-c", "text": "昨日から具合が悪くて、今朝も頭が少しにこにこしている。", "isCorrect": false},
-        {"id": "n3-2023-07-v-35-d", "text": "遊んでいる私たちを見て、祖母はうれしそうにこにこしていた。", "isCorrect": true}
+        {
+          "id": "n3-2023-07-v-35-a",
+          "text": "ガソリンが少なくなって、車が途中で止まりそうでにこにこした。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-35-b",
+          "text": "大勢の前で歌ったとき、緊張して胸がにこにこした。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-35-c",
+          "text": "昨日から具合が悪くて、今朝も頭が少しにこにこしている。",
+          "isCorrect": false
+        },
+        {
+          "id": "n3-2023-07-v-35-d",
+          "text": "遊んでいる私たちを見て、祖母はうれしそうにこにこしていた。",
+          "isCorrect": true
+        }
       ],
       "correctAnswer": "n3-2023-07-v-35-d",
-      "explanation": "にこにこ＝笑瞇瞇（滿面笑容的樣子）。「うれしそうにこにこしていた」＝高興地笑瞇瞇的。選A車快沒油應用「どきどきした」；選B緊張應用「どきどきした」；選C頭不舒服應用「ずきずきしている」。",
-      "tags": ["vocabulary", "usage", "n3-vocab"],
+      "explanation": "💡 重點：にこにこ＝笑瞇瞇、露出笑容的樣子，常用「にこにこ（と）笑う／している」。心跳、頭痛、害怕分別用「どきどき」「ずきずき」等擬態語。\n【選項解析】\n×1 ガソリンが少なくなって、車が途中で止まりそうでにこにこした。：不安的心情應用「どきどきした」\n×2 大勢の前で歌ったとき、緊張して胸がにこにこした。：緊張心跳應用「どきどきした」\n×3 昨日から具合が悪くて、今朝も頭が少しにこにこしている。：頭痛應用「ずきずきしている」\n○4 遊んでいる私たちを見て、祖母はうれしそうにこにこしていた。：奶奶高興地笑瞇瞇，用法正確",
+      "tags": [
+        "vocabulary",
+        "usage",
+        "n3-vocab"
+      ],
       "problemNumber": 5,
       "problemLabel": "用法"
     }

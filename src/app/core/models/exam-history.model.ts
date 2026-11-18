@@ -14,6 +14,8 @@ export interface ExamHistoryEntry {
   total: number;
   /** 答錯的題目 id 清單，供錯題複習使用 */
   wrongQuestionIds: string[];
+  /** 作答模式；舊紀錄沒有此欄位 */
+  mode?: 'practice' | 'mock';
   /** 完成作答的時間 */
   completedAt: Timestamp;
   /** 顯示用：考卷標題 */
